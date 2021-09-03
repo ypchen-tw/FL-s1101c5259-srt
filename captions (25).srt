@@ -1,0 +1,5900 @@
+1
+00:00:02,399 --> 00:00:07,120
+last time we talked about
+
+2
+00:00:04,560 --> 00:00:10,160
+the relationship among classes of
+
+3
+00:00:07,120 --> 00:00:11,840
+languages like
+
+4
+00:00:10,160 --> 00:00:16,759
+like the
+
+5
+00:00:11,840 --> 00:00:16,759
+diagram shows in figure 4.10
+
+6
+00:00:16,800 --> 00:00:22,240
+and last time we proved that
+
+7
+00:00:20,320 --> 00:00:25,119
+decidable
+
+8
+00:00:22,240 --> 00:00:28,320
+and to recognizable are different
+
+9
+00:00:25,119 --> 00:00:29,679
+classes and of course by definition we
+
+10
+00:00:28,320 --> 00:00:33,200
+know that
+
+11
+00:00:29,679 --> 00:00:35,920
+two indecidable languages are within two
+
+12
+00:00:33,200 --> 00:00:38,719
+recognizable languages and
+
+13
+00:00:35,920 --> 00:00:40,640
+we approved
+
+14
+00:00:38,719 --> 00:00:42,840
+a
+
+15
+00:00:40,640 --> 00:00:44,719
+language here which is
+
+16
+00:00:42,840 --> 00:00:46,239
+atm
+
+17
+00:00:44,719 --> 00:00:48,239
+okay
+
+18
+00:00:46,239 --> 00:00:52,640
+so
+
+19
+00:00:48,239 --> 00:00:55,360
+in theory we can think about that atm is
+
+20
+00:00:52,640 --> 00:00:57,039
+is an undecidable but two recognizable
+
+21
+00:00:55,360 --> 00:00:59,840
+languages
+
+22
+00:00:57,039 --> 00:00:59,840
+then
+
+23
+00:01:01,199 --> 00:01:05,040
+currently we uh to currently
+
+24
+00:01:04,080 --> 00:01:08,000
+turn
+
+25
+00:01:05,040 --> 00:01:09,040
+turin recognizable
+
+26
+00:01:08,000 --> 00:01:10,000
+is the
+
+27
+00:01:09,040 --> 00:01:11,040
+uh
+
+28
+00:01:10,000 --> 00:01:12,960
+let's say
+
+29
+00:01:11,040 --> 00:01:16,320
+largest
+
+30
+00:01:12,960 --> 00:01:19,200
+class of languages that we know
+
+31
+00:01:16,320 --> 00:01:20,720
+we can find turing machine which is you
+
+32
+00:01:19,200 --> 00:01:23,040
+know
+
+33
+00:01:20,720 --> 00:01:25,040
+a way of computation
+
+34
+00:01:23,040 --> 00:01:26,560
+to handle although
+
+35
+00:01:25,040 --> 00:01:27,520
+recognizable
+
+36
+00:01:26,560 --> 00:01:30,240
+as we
+
+37
+00:01:27,520 --> 00:01:34,079
+discussed last time recognizable
+
+38
+00:01:30,240 --> 00:01:36,240
+languages are not really considered
+
+39
+00:01:34,079 --> 00:01:37,840
+computable
+
+40
+00:01:36,240 --> 00:01:41,680
+in
+
+41
+00:01:37,840 --> 00:01:43,439
+practice right so because
+
+42
+00:01:41,680 --> 00:01:45,360
+given any
+
+43
+00:01:43,439 --> 00:01:46,079
+problem instances
+
+44
+00:01:45,360 --> 00:01:48,960
+the
+
+45
+00:01:46,079 --> 00:01:50,640
+the language uh the er the algorithm or
+
+46
+00:01:48,960 --> 00:01:55,200
+the turing machine
+
+47
+00:01:50,640 --> 00:01:56,719
+might not be able to answer that
+
+48
+00:01:55,200 --> 00:01:58,960
+so
+
+49
+00:01:56,719 --> 00:02:02,640
+anyway but
+
+50
+00:01:58,960 --> 00:02:05,920
+the next question is that
+
+51
+00:02:02,640 --> 00:02:07,280
+as we as we asked before the next
+
+52
+00:02:05,920 --> 00:02:11,119
+question is
+
+53
+00:02:07,280 --> 00:02:11,119
+is turin recognizable
+
+54
+00:02:12,959 --> 00:02:19,440
+all the possible languages
+
+55
+00:02:15,760 --> 00:02:20,480
+is the class of to recognizable
+
+56
+00:02:19,440 --> 00:02:23,200
+all
+
+57
+00:02:20,480 --> 00:02:24,720
+contents all possible
+
+58
+00:02:23,200 --> 00:02:25,599
+languages
+
+59
+00:02:24,720 --> 00:02:27,840
+okay
+
+60
+00:02:25,599 --> 00:02:29,440
+so that's the next question
+
+61
+00:02:27,840 --> 00:02:32,480
+then
+
+62
+00:02:29,440 --> 00:02:36,160
+for the uh figure here
+
+63
+00:02:32,480 --> 00:02:37,599
+that question can be translated to let's
+
+64
+00:02:36,160 --> 00:02:39,680
+say
+
+65
+00:02:37,599 --> 00:02:41,760
+is there any language
+
+66
+00:02:39,680 --> 00:02:43,360
+is there any languages
+
+67
+00:02:41,760 --> 00:02:45,519
+outside
+
+68
+00:02:43,360 --> 00:02:47,760
+of
+
+69
+00:02:45,519 --> 00:02:49,519
+turin recognizable
+
+70
+00:02:47,760 --> 00:02:52,000
+is there anything
+
+71
+00:02:49,519 --> 00:02:54,080
+outside of the
+
+72
+00:02:52,000 --> 00:02:56,080
+biggest largest
+
+73
+00:02:54,080 --> 00:02:58,800
+eclipse eclipse
+
+74
+00:02:56,080 --> 00:03:00,239
+that's the question okay
+
+75
+00:02:58,800 --> 00:03:01,200
+so
+
+76
+00:03:00,239 --> 00:03:03,280
+uh
+
+77
+00:03:01,200 --> 00:03:06,400
+that's what we want to
+
+78
+00:03:03,280 --> 00:03:08,640
+discuss in this lecture
+
+79
+00:03:06,400 --> 00:03:10,640
+apparently
+
+80
+00:03:08,640 --> 00:03:12,319
+you've guessed yes there are something
+
+81
+00:03:10,640 --> 00:03:15,840
+there right but
+
+82
+00:03:12,319 --> 00:03:16,640
+that's what we are discussing right now
+
+83
+00:03:15,840 --> 00:03:21,280
+so
+
+84
+00:03:16,640 --> 00:03:22,560
+before we do that we need to have some
+
+85
+00:03:21,280 --> 00:03:25,840
+uh
+
+86
+00:03:22,560 --> 00:03:28,640
+mathematical tools mathematical weapons
+
+87
+00:03:25,840 --> 00:03:30,879
+in our arsenal so that we can use it to
+
+88
+00:03:28,640 --> 00:03:33,920
+do the discussion okay
+
+89
+00:03:30,879 --> 00:03:33,920
+so uh
+
+90
+00:03:34,239 --> 00:03:39,519
+what we want to introduce is
+
+91
+00:03:36,560 --> 00:03:40,680
+called the diagonalization method
+
+92
+00:03:39,519 --> 00:03:43,040
+okay the
+
+93
+00:03:40,680 --> 00:03:45,920
+diagonalization method
+
+94
+00:03:43,040 --> 00:03:48,480
+well firstly we want to
+
+95
+00:03:45,920 --> 00:03:52,159
+introduce a way
+
+96
+00:03:48,480 --> 00:03:54,239
+to measure the sizes of infinite set
+
+97
+00:03:52,159 --> 00:03:55,200
+of infinite sets
+
+98
+00:03:54,239 --> 00:03:56,400
+okay
+
+99
+00:03:55,200 --> 00:03:59,120
+so
+
+100
+00:03:56,400 --> 00:04:00,480
+let's say if you have two
+
+101
+00:03:59,120 --> 00:04:02,560
+sets
+
+102
+00:04:00,480 --> 00:04:06,000
+can you compare
+
+103
+00:04:02,560 --> 00:04:08,159
+or can you say that uh this set
+
+104
+00:04:06,000 --> 00:04:10,400
+has more members than
+
+105
+00:04:08,159 --> 00:04:11,920
+the other
+
+106
+00:04:10,400 --> 00:04:13,519
+so let's
+
+107
+00:04:11,920 --> 00:04:15,360
+give an example here
+
+108
+00:04:13,519 --> 00:04:17,840
+let's say
+
+109
+00:04:15,360 --> 00:04:19,759
+you have two
+
+110
+00:04:17,840 --> 00:04:21,040
+you have two balls
+
+111
+00:04:19,759 --> 00:04:22,720
+okay
+
+112
+00:04:21,040 --> 00:04:25,040
+and
+
+113
+00:04:22,720 --> 00:04:27,600
+there are green beans
+
+114
+00:04:25,040 --> 00:04:30,240
+they are green beans
+
+115
+00:04:27,600 --> 00:04:31,600
+in the
+
+116
+00:04:30,240 --> 00:04:32,800
+in the left
+
+117
+00:04:31,600 --> 00:04:36,320
+ball
+
+118
+00:04:32,800 --> 00:04:37,360
+and red beans in the right
+
+119
+00:04:36,320 --> 00:04:39,759
+ball
+
+120
+00:04:37,360 --> 00:04:41,600
+okay
+
+121
+00:04:39,759 --> 00:04:44,560
+then
+
+122
+00:04:41,600 --> 00:04:44,560
+if i ask you
+
+123
+00:04:44,880 --> 00:04:48,320
+which one has more beans
+
+124
+00:04:48,400 --> 00:04:51,520
+you have more green beans or you have
+
+125
+00:04:50,720 --> 00:04:54,759
+more
+
+126
+00:04:51,520 --> 00:04:54,759
+red beans
+
+127
+00:04:56,400 --> 00:05:00,720
+then if you try to answer this question
+
+128
+00:04:58,639 --> 00:05:02,800
+there are many
+
+129
+00:05:00,720 --> 00:05:04,639
+or several ways you can
+
+130
+00:05:02,800 --> 00:05:07,600
+go uh you can do
+
+131
+00:05:04,639 --> 00:05:10,400
+you can answer my question
+
+132
+00:05:07,600 --> 00:05:14,080
+the easiest way is that or someone said
+
+133
+00:05:10,400 --> 00:05:15,120
+we can count the number of the beans
+
+134
+00:05:14,080 --> 00:05:17,759
+right
+
+135
+00:05:15,120 --> 00:05:20,720
+so you can
+
+136
+00:05:17,759 --> 00:05:22,720
+get all the beans out of like
+
+137
+00:05:20,720 --> 00:05:25,440
+let's say left ball
+
+138
+00:05:22,720 --> 00:05:26,560
+and then you count how many green beans
+
+139
+00:05:25,440 --> 00:05:29,840
+in the bowl
+
+140
+00:05:26,560 --> 00:05:31,360
+for example we have one two three four
+
+141
+00:05:29,840 --> 00:05:32,320
+five beans
+
+142
+00:05:31,360 --> 00:05:35,759
+okay
+
+143
+00:05:32,320 --> 00:05:39,120
+then you do the same thing to the
+
+144
+00:05:35,759 --> 00:05:41,440
+red beans in the right bowl so maybe you
+
+145
+00:05:39,120 --> 00:05:43,680
+get like
+
+146
+00:05:41,440 --> 00:05:45,440
+one two three four
+
+147
+00:05:43,680 --> 00:05:47,120
+six beans
+
+148
+00:05:45,440 --> 00:05:48,960
+then you tell me that
+
+149
+00:05:47,120 --> 00:05:52,639
+okay we have more
+
+150
+00:05:48,960 --> 00:05:55,199
+red beans than we have
+
+151
+00:05:52,639 --> 00:05:55,199
+green beans
+
+152
+00:05:55,280 --> 00:06:00,639
+right so that's one way to do
+
+153
+00:05:58,720 --> 00:06:02,000
+and you will find that
+
+154
+00:06:00,639 --> 00:06:03,280
+this thing
+
+155
+00:06:02,000 --> 00:06:06,160
+will only
+
+156
+00:06:03,280 --> 00:06:10,160
+i mean the procedure we just talked
+
+157
+00:06:06,160 --> 00:06:11,680
+about can only be applied to finite set
+
+158
+00:06:10,160 --> 00:06:14,160
+and of course
+
+159
+00:06:11,680 --> 00:06:16,960
+all possible finite sets can be compared
+
+160
+00:06:14,160 --> 00:06:19,440
+this way since they are finite you can
+
+161
+00:06:16,960 --> 00:06:21,039
+just count how many of them and you
+
+162
+00:06:19,440 --> 00:06:24,000
+compare the number
+
+163
+00:06:21,039 --> 00:06:27,280
+directly if you have like
+
+164
+00:06:24,000 --> 00:06:30,319
+one two three four five then you said
+
+165
+00:06:27,280 --> 00:06:32,319
+they we have same numbers of
+
+166
+00:06:30,319 --> 00:06:35,680
+green beans and red beans
+
+167
+00:06:32,319 --> 00:06:38,800
+right something like that
+
+168
+00:06:35,680 --> 00:06:38,800
+okay then
+
+169
+00:06:40,080 --> 00:06:45,919
+sadly such
+
+170
+00:06:41,919 --> 00:06:48,960
+a procedure cannot be carried over to
+
+171
+00:06:45,919 --> 00:06:50,960
+handle infinite sets okay
+
+172
+00:06:48,960 --> 00:06:52,000
+to handle infinite set
+
+173
+00:06:50,960 --> 00:06:55,280
+because
+
+174
+00:06:52,000 --> 00:06:57,120
+for infinite sets there is no
+
+175
+00:06:55,280 --> 00:06:59,599
+you know number
+
+176
+00:06:57,120 --> 00:07:01,520
+of elements
+
+177
+00:06:59,599 --> 00:07:04,319
+infinite is a
+
+178
+00:07:01,520 --> 00:07:06,560
+is an abstract concept regarding you
+
+179
+00:07:04,319 --> 00:07:06,560
+know
+
+180
+00:07:08,080 --> 00:07:12,479
+there is no
+
+181
+00:07:09,919 --> 00:07:12,479
+definite
+
+182
+00:07:12,720 --> 00:07:18,160
+or a constant for the measurement for
+
+183
+00:07:15,360 --> 00:07:20,319
+that the size of that set
+
+184
+00:07:18,160 --> 00:07:20,319
+so
+
+185
+00:07:21,759 --> 00:07:26,639
+you cannot say how many or you cannot
+
+186
+00:07:24,639 --> 00:07:30,400
+say okay i
+
+187
+00:07:26,639 --> 00:07:32,639
+uh there is a there is a finite uh
+
+188
+00:07:30,400 --> 00:07:36,080
+quantity
+
+189
+00:07:32,639 --> 00:07:39,440
+can be uh or uh the number of the
+
+190
+00:07:36,080 --> 00:07:42,560
+elements can be bounded by by
+
+191
+00:07:39,440 --> 00:07:44,639
+by some finite quantity
+
+192
+00:07:42,560 --> 00:07:46,000
+so that's infinite
+
+193
+00:07:44,639 --> 00:07:47,840
+and
+
+194
+00:07:46,000 --> 00:07:50,080
+we need to find a way
+
+195
+00:07:47,840 --> 00:07:50,080
+to
+
+196
+00:07:50,639 --> 00:07:55,599
+measure or to compare sizes of infinite
+
+197
+00:07:53,840 --> 00:07:57,440
+sets
+
+198
+00:07:55,599 --> 00:08:00,400
+then we
+
+199
+00:07:57,440 --> 00:08:02,560
+can go back to our finite sets and start
+
+200
+00:08:00,400 --> 00:08:06,560
+from there again
+
+201
+00:08:02,560 --> 00:08:09,520
+let's say back to my example here
+
+202
+00:08:06,560 --> 00:08:13,280
+another possible way to compare
+
+203
+00:08:09,520 --> 00:08:15,440
+the beans in the bowls are
+
+204
+00:08:13,280 --> 00:08:18,080
+let's imagine that
+
+205
+00:08:15,440 --> 00:08:19,599
+you uh
+
+206
+00:08:18,080 --> 00:08:20,800
+you use your
+
+207
+00:08:19,599 --> 00:08:22,240
+left hand
+
+208
+00:08:20,800 --> 00:08:24,639
+to
+
+209
+00:08:22,240 --> 00:08:26,960
+pick up one
+
+210
+00:08:24,639 --> 00:08:28,400
+green bean
+
+211
+00:08:26,960 --> 00:08:30,400
+and the one
+
+212
+00:08:28,400 --> 00:08:33,760
+and use your right hand
+
+213
+00:08:30,400 --> 00:08:37,440
+to pick up one red bean at the same time
+
+214
+00:08:33,760 --> 00:08:38,719
+and then you throw them away
+
+215
+00:08:37,440 --> 00:08:41,680
+okay
+
+216
+00:08:38,719 --> 00:08:43,519
+and you repeat this again so you pick up
+
+217
+00:08:41,680 --> 00:08:46,240
+another red bean
+
+218
+00:08:43,519 --> 00:08:48,320
+sorry green bean here and another red
+
+219
+00:08:46,240 --> 00:08:51,120
+bean here
+
+220
+00:08:48,320 --> 00:08:52,880
+at the same time and
+
+221
+00:08:51,120 --> 00:08:56,320
+throw them away
+
+222
+00:08:52,880 --> 00:08:56,320
+and then repeat that again
+
+223
+00:08:56,959 --> 00:09:01,920
+and repeat that again
+
+224
+00:08:59,600 --> 00:09:01,920
+okay
+
+225
+00:09:02,160 --> 00:09:07,279
+so you
+
+226
+00:09:03,600 --> 00:09:10,480
+keep you keep repeating this procedure
+
+227
+00:09:07,279 --> 00:09:13,200
+repeat and repeat and repeat and repeat
+
+228
+00:09:10,480 --> 00:09:13,200
+what will happen
+
+229
+00:09:13,680 --> 00:09:17,839
+as our example here for example here
+
+230
+00:09:16,399 --> 00:09:20,880
+then finally
+
+231
+00:09:17,839 --> 00:09:24,000
+you will have a you will have an empty
+
+232
+00:09:20,880 --> 00:09:25,920
+left ball but you have
+
+233
+00:09:24,000 --> 00:09:29,120
+one more
+
+234
+00:09:25,920 --> 00:09:32,480
+red bean in the rifle right
+
+235
+00:09:29,120 --> 00:09:35,680
+so we can say that
+
+236
+00:09:32,480 --> 00:09:37,839
+we have more red beans than we have
+
+237
+00:09:35,680 --> 00:09:38,880
+green beans
+
+238
+00:09:37,839 --> 00:09:40,080
+right
+
+239
+00:09:38,880 --> 00:09:42,560
+if
+
+240
+00:09:40,080 --> 00:09:44,720
+they have the same
+
+241
+00:09:42,560 --> 00:09:45,600
+the the numbers of the beans are the
+
+242
+00:09:44,720 --> 00:09:48,000
+same
+
+243
+00:09:45,600 --> 00:09:50,880
+then you won't have this one
+
+244
+00:09:48,000 --> 00:09:52,399
+you will
+
+245
+00:09:50,880 --> 00:09:53,279
+empty
+
+246
+00:09:52,399 --> 00:09:55,200
+them
+
+247
+00:09:53,279 --> 00:09:59,279
+at the same time
+
+248
+00:09:55,200 --> 00:09:59,279
+right you make them empty
+
+249
+00:09:59,440 --> 00:10:03,680
+the lesbian
+
+250
+00:10:01,360 --> 00:10:07,279
+you the lesbians
+
+251
+00:10:03,680 --> 00:10:10,640
+you throw them away at the same time and
+
+252
+00:10:07,279 --> 00:10:13,519
+you got two empty bowls at the same time
+
+253
+00:10:10,640 --> 00:10:19,240
+then you can say that we have
+
+254
+00:10:13,519 --> 00:10:19,240
+same numbers of red and green beans
+
+255
+00:10:20,959 --> 00:10:26,480
+so you will find okay this is another
+
+256
+00:10:24,000 --> 00:10:29,040
+way to compare the size of
+
+257
+00:10:26,480 --> 00:10:30,800
+currency finite set
+
+258
+00:10:29,040 --> 00:10:34,079
+but you will
+
+259
+00:10:30,800 --> 00:10:36,480
+such a procedure can be extend
+
+260
+00:10:34,079 --> 00:10:40,160
+can be extended to
+
+261
+00:10:36,480 --> 00:10:41,360
+compare the sizes of infinite set
+
+262
+00:10:40,160 --> 00:10:43,279
+okay
+
+263
+00:10:41,360 --> 00:10:44,880
+so
+
+264
+00:10:43,279 --> 00:10:45,600
+we define that
+
+265
+00:10:44,880 --> 00:10:46,399
+we
+
+266
+00:10:45,600 --> 00:10:48,240
+use
+
+267
+00:10:46,399 --> 00:10:50,240
+you can think of that
+
+268
+00:10:48,240 --> 00:10:51,519
+when we pick up
+
+269
+00:10:50,240 --> 00:10:54,399
+one
+
+270
+00:10:51,519 --> 00:10:57,600
+when we pick up one green bean
+
+271
+00:10:54,399 --> 00:11:01,399
+and one red bean
+
+272
+00:10:57,600 --> 00:11:01,399
+we do a mapping
+
+273
+00:11:02,399 --> 00:11:06,590
+we always use the mapping in mathematics
+
+274
+00:11:06,160 --> 00:11:07,920
+to
+
+275
+00:11:06,590 --> 00:11:10,640
+[Music]
+
+276
+00:11:07,920 --> 00:11:13,120
+theorize the concept of picking two
+
+277
+00:11:10,640 --> 00:11:15,120
+beans from the two balls at the same
+
+278
+00:11:13,120 --> 00:11:16,320
+time okay
+
+279
+00:11:15,120 --> 00:11:18,320
+so
+
+280
+00:11:16,320 --> 00:11:21,040
+we already have a mathematics
+
+281
+00:11:18,320 --> 00:11:22,880
+construction and everybody should
+
+282
+00:11:21,040 --> 00:11:25,680
+uh
+
+283
+00:11:22,880 --> 00:11:27,519
+should be quite familiar with that which
+
+284
+00:11:25,680 --> 00:11:28,399
+is function
+
+285
+00:11:27,519 --> 00:11:31,360
+okay
+
+286
+00:11:28,399 --> 00:11:34,640
+we think of left one
+
+287
+00:11:31,360 --> 00:11:35,760
+that our green beans
+
+288
+00:11:34,640 --> 00:11:38,000
+and
+
+289
+00:11:35,760 --> 00:11:40,640
+on the left and
+
+290
+00:11:38,000 --> 00:11:43,839
+our red beans on the right and we use a
+
+291
+00:11:40,640 --> 00:11:43,839
+function mapping
+
+292
+00:11:45,120 --> 00:11:47,360
+this domain
+
+293
+00:11:46,640 --> 00:11:50,000
+to
+
+294
+00:11:47,360 --> 00:11:51,200
+this domain
+
+295
+00:11:50,000 --> 00:11:53,279
+okay
+
+296
+00:11:51,200 --> 00:11:56,920
+so
+
+297
+00:11:53,279 --> 00:11:56,920
+the f here
+
+298
+00:11:57,279 --> 00:12:01,040
+is that
+
+299
+00:11:58,480 --> 00:12:02,160
+abstract mapping
+
+300
+00:12:01,040 --> 00:12:05,519
+okay
+
+301
+00:12:02,160 --> 00:12:05,519
+so every bin
+
+302
+00:12:05,600 --> 00:12:08,639
+in the level
+
+303
+00:12:09,040 --> 00:12:14,240
+we map two
+
+304
+00:12:11,920 --> 00:12:14,240
+pin
+
+305
+00:12:16,079 --> 00:12:20,399
+in the right uh
+
+306
+00:12:17,839 --> 00:12:22,880
+right ball
+
+307
+00:12:20,399 --> 00:12:25,839
+so this is fx
+
+308
+00:12:22,880 --> 00:12:29,440
+and every red bean sorry green bean
+
+309
+00:12:25,839 --> 00:12:29,440
+leftover we map to one
+
+310
+00:12:31,360 --> 00:12:34,079
+in a rival
+
+311
+00:12:34,320 --> 00:12:37,680
+and
+
+312
+00:12:36,079 --> 00:12:39,279
+since uh
+
+313
+00:12:37,680 --> 00:12:42,000
+and we define
+
+314
+00:12:39,279 --> 00:12:44,399
+one to one
+
+315
+00:12:42,000 --> 00:12:46,560
+function that means
+
+316
+00:12:44,399 --> 00:12:49,040
+different
+
+317
+00:12:46,560 --> 00:12:51,360
+different
+
+318
+00:12:49,040 --> 00:12:52,800
+green beans in the left wall
+
+319
+00:12:51,360 --> 00:12:55,519
+we map two
+
+320
+00:12:52,800 --> 00:12:59,200
+different beans in the right bowl
+
+321
+00:12:55,519 --> 00:13:04,079
+okay so that we call one two one
+
+322
+00:12:59,200 --> 00:13:08,079
+and actually we need reverse thing that
+
+323
+00:13:04,079 --> 00:13:09,839
+we need reverse one but
+
+324
+00:13:08,079 --> 00:13:11,440
+we don't uh
+
+325
+00:13:09,839 --> 00:13:13,839
+i should rephrase that
+
+326
+00:13:11,440 --> 00:13:15,360
+we actually need
+
+327
+00:13:13,839 --> 00:13:18,320
+both direction
+
+328
+00:13:15,360 --> 00:13:21,120
+because you use your both hand
+
+329
+00:13:18,320 --> 00:13:24,720
+pick up two beans one in left and one in
+
+330
+00:13:21,120 --> 00:13:27,920
+right together right so we need
+
+331
+00:13:24,720 --> 00:13:30,560
+both direction but
+
+332
+00:13:27,920 --> 00:13:30,560
+we don't need
+
+333
+00:13:31,360 --> 00:13:38,000
+this direction here because
+
+334
+00:13:34,639 --> 00:13:41,920
+functions the definition of functions
+
+335
+00:13:38,000 --> 00:13:41,920
+in mathematics already
+
+336
+00:13:42,800 --> 00:13:50,639
+already took care of that for us
+
+337
+00:13:46,079 --> 00:13:52,880
+because functions cannot map one
+
+338
+00:13:50,639 --> 00:13:54,079
+two
+
+339
+00:13:52,880 --> 00:13:55,839
+two
+
+340
+00:13:54,079 --> 00:13:58,800
+different
+
+341
+00:13:55,839 --> 00:13:58,800
+things right
+
+342
+00:13:59,279 --> 00:14:03,680
+this is not a function
+
+343
+00:14:02,560 --> 00:14:06,320
+when we talk
+
+344
+00:14:03,680 --> 00:14:08,639
+talk about the fun a function we have
+
+345
+00:14:06,320 --> 00:14:08,639
+only
+
+346
+00:14:08,959 --> 00:14:13,440
+something like this
+
+347
+00:14:11,120 --> 00:14:13,440
+or
+
+348
+00:14:13,839 --> 00:14:20,720
+something like this right
+
+349
+00:14:17,680 --> 00:14:20,720
+it's 1 to 1
+
+350
+00:14:21,360 --> 00:14:24,959
+is
+
+351
+00:14:22,160 --> 00:14:24,959
+many to 1
+
+352
+00:14:25,839 --> 00:14:32,880
+so that's in the definition of function
+
+353
+00:14:28,560 --> 00:14:32,880
+we don't have one too many
+
+354
+00:14:33,040 --> 00:14:37,519
+if you want to define something
+
+355
+00:14:35,279 --> 00:14:40,000
+conte uh include one too many that's
+
+356
+00:14:37,519 --> 00:14:41,440
+another function when we talk about a
+
+357
+00:14:40,000 --> 00:14:43,279
+function
+
+358
+00:14:41,440 --> 00:14:44,639
+we don't have this situation we only
+
+359
+00:14:43,279 --> 00:14:45,519
+have these two
+
+360
+00:14:44,639 --> 00:14:48,240
+and
+
+361
+00:14:45,519 --> 00:14:52,959
+now we need to implement what is
+
+362
+00:14:48,240 --> 00:14:52,959
+described as you use your both hands
+
+363
+00:14:53,360 --> 00:14:57,279
+to pick up
+
+364
+00:14:54,639 --> 00:15:00,800
+bins in both balls
+
+365
+00:14:57,279 --> 00:15:01,380
+so we want this one that's why we only
+
+366
+00:15:00,800 --> 00:15:02,800
+need to
+
+367
+00:15:01,380 --> 00:15:05,839
+[Music]
+
+368
+00:15:02,800 --> 00:15:08,560
+do the restriction like this then we can
+
+369
+00:15:05,839 --> 00:15:08,560
+ensure that
+
+370
+00:15:08,639 --> 00:15:14,079
+it's a one-to-one
+
+371
+00:15:11,199 --> 00:15:16,800
+function that that would that will
+
+372
+00:15:14,079 --> 00:15:18,480
+implement what i described
+
+373
+00:15:16,800 --> 00:15:21,360
+we pick two beans
+
+374
+00:15:18,480 --> 00:15:23,440
+throw them away together
+
+375
+00:15:21,360 --> 00:15:24,839
+okay
+
+376
+00:15:23,440 --> 00:15:26,399
+okay
+
+377
+00:15:24,839 --> 00:15:29,040
+then
+
+378
+00:15:26,399 --> 00:15:29,040
+we need to
+
+379
+00:15:30,880 --> 00:15:33,120
+make
+
+380
+00:15:33,360 --> 00:15:36,800
+all bins
+
+381
+00:15:34,720 --> 00:15:38,480
+out
+
+382
+00:15:36,800 --> 00:15:41,480
+together
+
+383
+00:15:38,480 --> 00:15:41,480
+so
+
+384
+00:15:42,160 --> 00:15:44,720
+we say
+
+385
+00:15:44,959 --> 00:15:50,480
+the left hand ball is a and the rehabble
+
+386
+00:15:48,720 --> 00:15:52,320
+is b
+
+387
+00:15:50,480 --> 00:15:53,279
+for all b
+
+388
+00:15:52,320 --> 00:15:56,800
+in b
+
+389
+00:15:53,279 --> 00:15:58,880
+so for all red beans in the right
+
+390
+00:15:56,800 --> 00:16:01,120
+bowl
+
+391
+00:15:58,880 --> 00:16:03,839
+there is
+
+392
+00:16:01,120 --> 00:16:06,079
+a green bean mapped to that
+
+393
+00:16:03,839 --> 00:16:07,360
+for example this one map to this one and
+
+394
+00:16:06,079 --> 00:16:09,920
+the map one
+
+395
+00:16:07,360 --> 00:16:11,759
+this one map to that one
+
+396
+00:16:09,920 --> 00:16:15,839
+okay
+
+397
+00:16:11,759 --> 00:16:17,440
+so for all red beans
+
+398
+00:16:15,839 --> 00:16:20,000
+for all red beans
+
+399
+00:16:17,440 --> 00:16:22,480
+there is a green bean mapped to that
+
+400
+00:16:20,000 --> 00:16:24,079
+there's a green bean
+
+401
+00:16:22,480 --> 00:16:25,360
+map to that
+
+402
+00:16:24,079 --> 00:16:27,600
+we call it
+
+403
+00:16:25,360 --> 00:16:30,320
+angchu
+
+404
+00:16:27,600 --> 00:16:34,839
+and for uh for the same reason we also
+
+405
+00:16:30,320 --> 00:16:38,000
+need a reverse reverse situation that
+
+406
+00:16:34,839 --> 00:16:40,959
+o green beans
+
+407
+00:16:38,000 --> 00:16:44,639
+map 2 red beans right but
+
+408
+00:16:40,959 --> 00:16:47,199
+function the definition of function also
+
+409
+00:16:44,639 --> 00:16:48,959
+took care of that
+
+410
+00:16:47,199 --> 00:16:52,720
+okay
+
+411
+00:16:48,959 --> 00:16:55,600
+since our function is one green beam
+
+412
+00:16:52,720 --> 00:16:56,320
+mapped to a red bean
+
+413
+00:16:55,600 --> 00:16:58,959
+so
+
+414
+00:16:56,320 --> 00:17:00,000
+every green bean map to some red bean
+
+415
+00:16:58,959 --> 00:17:01,680
+right
+
+416
+00:17:00,000 --> 00:17:04,559
+every green beans
+
+417
+00:17:01,680 --> 00:17:08,160
+every grape in green been mapped to some
+
+418
+00:17:04,559 --> 00:17:10,480
+wrapping so we already have that inside
+
+419
+00:17:08,160 --> 00:17:13,439
+the definition of the function
+
+420
+00:17:10,480 --> 00:17:14,880
+so we only need to describe our
+
+421
+00:17:13,439 --> 00:17:16,720
+restrict
+
+422
+00:17:14,880 --> 00:17:20,880
+mega constraint here
+
+423
+00:17:16,720 --> 00:17:20,880
+to say that all red bean
+
+424
+00:17:21,039 --> 00:17:26,880
+have been mapped
+
+425
+00:17:22,720 --> 00:17:28,720
+each red bean has been mapped by
+
+426
+00:17:26,880 --> 00:17:29,600
+some green bean
+
+427
+00:17:28,720 --> 00:17:32,080
+right
+
+428
+00:17:29,600 --> 00:17:37,600
+so that's why
+
+429
+00:17:32,080 --> 00:17:37,600
+we said that all the red beans
+
+430
+00:17:40,320 --> 00:17:45,200
+can be mapped by
+
+431
+00:17:42,640 --> 00:17:49,280
+some green bean
+
+432
+00:17:45,200 --> 00:17:49,280
+and if you if the function
+
+433
+00:17:50,320 --> 00:17:54,720
+satisfy
+
+434
+00:17:51,760 --> 00:17:57,520
+these two satisfies these two
+
+435
+00:17:54,720 --> 00:17:59,200
+criteria at the same time
+
+436
+00:17:57,520 --> 00:18:00,559
+so different
+
+437
+00:17:59,200 --> 00:18:03,039
+green beans
+
+438
+00:18:00,559 --> 00:18:06,480
+mapped to different red bean
+
+439
+00:18:03,039 --> 00:18:07,600
+and all the red beans
+
+440
+00:18:06,480 --> 00:18:10,400
+each
+
+441
+00:18:07,600 --> 00:18:14,000
+well all the red beans
+
+442
+00:18:10,400 --> 00:18:16,799
+has been mapped have been mapped
+
+443
+00:18:14,000 --> 00:18:19,679
+we said that such a function
+
+444
+00:18:16,799 --> 00:18:19,679
+such a function
+
+445
+00:18:21,200 --> 00:18:26,480
+such a function
+
+446
+00:18:23,360 --> 00:18:29,679
+is a correspondence
+
+447
+00:18:26,480 --> 00:18:33,280
+which is one two one and on two
+
+448
+00:18:29,679 --> 00:18:34,000
+okay and we then we consider
+
+449
+00:18:33,280 --> 00:18:37,360
+a
+
+450
+00:18:34,000 --> 00:18:40,160
+the set the infinite set of actually
+
+451
+00:18:37,360 --> 00:18:41,440
+finite or infinite they both they both
+
+452
+00:18:40,160 --> 00:18:42,400
+work
+
+453
+00:18:41,440 --> 00:18:44,559
+the
+
+454
+00:18:42,400 --> 00:18:48,720
+set a and the set b
+
+455
+00:18:44,559 --> 00:18:48,720
+are of the same size
+
+456
+00:18:49,440 --> 00:18:52,880
+okay
+
+457
+00:18:50,559 --> 00:18:55,200
+so it's kind of a long definition but
+
+458
+00:18:52,880 --> 00:18:56,640
+that's repeated pretty pretty quickly
+
+459
+00:18:55,200 --> 00:18:59,440
+again
+
+460
+00:18:56,640 --> 00:19:01,760
+so if you have if we have two infinite
+
+461
+00:18:59,440 --> 00:19:03,360
+sets actually infinite or finite doesn't
+
+462
+00:19:01,760 --> 00:19:06,000
+matter
+
+463
+00:19:03,360 --> 00:19:08,240
+we can use the same
+
+464
+00:19:06,000 --> 00:19:11,200
+definition to handle both finite and
+
+465
+00:19:08,240 --> 00:19:12,559
+infinite sets okay so we have a two set
+
+466
+00:19:11,200 --> 00:19:16,400
+and b
+
+467
+00:19:12,559 --> 00:19:16,400
+if we can find a function
+
+468
+00:19:16,559 --> 00:19:22,000
+mapping
+
+469
+00:19:18,320 --> 00:19:23,120
+a to b mapping from a to b
+
+470
+00:19:22,000 --> 00:19:24,480
+and
+
+471
+00:19:23,120 --> 00:19:26,640
+the function
+
+472
+00:19:24,480 --> 00:19:28,000
+is one to one
+
+473
+00:19:26,640 --> 00:19:30,799
+that means
+
+474
+00:19:28,000 --> 00:19:33,360
+different elements in a
+
+475
+00:19:30,799 --> 00:19:36,240
+map to different
+
+476
+00:19:33,360 --> 00:19:37,360
+elements in b
+
+477
+00:19:36,240 --> 00:19:38,640
+and
+
+478
+00:19:37,360 --> 00:19:40,480
+onto
+
+479
+00:19:38,640 --> 00:19:44,240
+that means
+
+480
+00:19:40,480 --> 00:19:44,240
+all elements in b
+
+481
+00:19:44,480 --> 00:19:50,480
+have been mapped
+
+482
+00:19:47,280 --> 00:19:52,640
+then we call the function
+
+483
+00:19:50,480 --> 00:19:55,760
+one two one and r2
+
+484
+00:19:52,640 --> 00:19:57,200
+if such a function exists
+
+485
+00:19:55,760 --> 00:19:58,799
+then we say that
+
+486
+00:19:57,200 --> 00:20:00,799
+the size of a
+
+487
+00:19:58,799 --> 00:20:02,400
+and the size of b
+
+488
+00:20:00,799 --> 00:20:04,240
+are the same
+
+489
+00:20:02,400 --> 00:20:05,640
+and such a function
+
+490
+00:20:04,240 --> 00:20:10,000
+is called
+
+491
+00:20:05,640 --> 00:20:10,000
+correspondence between a and b
+
+492
+00:20:10,159 --> 00:20:13,600
+okay
+
+493
+00:20:11,760 --> 00:20:15,120
+so we can use
+
+494
+00:20:13,600 --> 00:20:19,840
+such a
+
+495
+00:20:15,120 --> 00:20:23,360
+concept to compare the size of
+
+496
+00:20:19,840 --> 00:20:25,600
+of course either finite or infinite sets
+
+497
+00:20:23,360 --> 00:20:25,600
+okay
+
+498
+00:20:26,000 --> 00:20:30,559
+so let's define one more thing
+
+499
+00:20:29,200 --> 00:20:32,480
+we say that
+
+500
+00:20:30,559 --> 00:20:35,120
+a set a
+
+501
+00:20:32,480 --> 00:20:38,320
+is countable
+
+502
+00:20:35,120 --> 00:20:41,840
+okay we say that a is countable
+
+503
+00:20:38,320 --> 00:20:44,159
+if either it is finite
+
+504
+00:20:41,840 --> 00:20:45,679
+because for finance that you can
+
+505
+00:20:44,159 --> 00:20:48,799
+actually
+
+506
+00:20:45,679 --> 00:20:51,600
+what is count
+
+507
+00:20:48,799 --> 00:20:52,559
+counter is like you uh
+
+508
+00:20:51,600 --> 00:20:55,840
+name
+
+509
+00:20:52,559 --> 00:20:58,960
+each element with a unique number like
+
+510
+00:20:55,840 --> 00:21:01,520
+one the first one two the second one
+
+511
+00:20:58,960 --> 00:21:03,200
+three the third one four the fourth one
+
+512
+00:21:01,520 --> 00:21:05,360
+etc etc
+
+513
+00:21:03,200 --> 00:21:10,400
+so you can name each
+
+514
+00:21:05,360 --> 00:21:13,039
+element one two three four five
+
+515
+00:21:10,400 --> 00:21:14,880
+you can count you can count
+
+516
+00:21:13,039 --> 00:21:17,760
+the elements in a set
+
+517
+00:21:14,880 --> 00:21:19,520
+so a set is countable means you can
+
+518
+00:21:17,760 --> 00:21:22,080
+count elements
+
+519
+00:21:19,520 --> 00:21:25,120
+don't think about all sets are countable
+
+520
+00:21:22,080 --> 00:21:25,120
+okay there are
+
+521
+00:21:25,840 --> 00:21:29,600
+sets that
+
+522
+00:21:27,360 --> 00:21:32,080
+that is not countable okay anyway we
+
+523
+00:21:29,600 --> 00:21:33,360
+will prove that but
+
+524
+00:21:32,080 --> 00:21:34,720
+firstly
+
+525
+00:21:33,360 --> 00:21:38,720
+if uh
+
+526
+00:21:34,720 --> 00:21:41,039
+if a set is finite reset it is countable
+
+527
+00:21:38,720 --> 00:21:41,039
+or
+
+528
+00:21:41,919 --> 00:21:50,240
+for infinite sets the set has same size
+
+529
+00:21:46,880 --> 00:21:52,960
+as the natural numbers we also say
+
+530
+00:21:50,240 --> 00:21:54,960
+it is countable why because
+
+531
+00:21:52,960 --> 00:21:58,080
+since they are
+
+532
+00:21:54,960 --> 00:22:01,679
+since the set has same size as n that
+
+533
+00:21:58,080 --> 00:22:04,640
+means there is a one to one and on two
+
+534
+00:22:01,679 --> 00:22:08,320
+mapping from n to that set
+
+535
+00:22:04,640 --> 00:22:11,520
+then you just need to count from the
+
+536
+00:22:08,320 --> 00:22:12,559
+the element mapped with
+
+537
+00:22:11,520 --> 00:22:16,400
+one
+
+538
+00:22:12,559 --> 00:22:20,240
+you count it as first and the elements
+
+539
+00:22:16,400 --> 00:22:22,720
+uh mapped by two you count it as second
+
+540
+00:22:20,240 --> 00:22:25,520
+etc then you can count the whole set
+
+541
+00:22:22,720 --> 00:22:28,159
+right so why it is countable although it
+
+542
+00:22:25,520 --> 00:22:32,400
+is infinite we consider
+
+543
+00:22:28,159 --> 00:22:34,720
+this kind of infinite state countable
+
+544
+00:22:32,400 --> 00:22:34,720
+okay
+
+545
+00:22:34,960 --> 00:22:37,200
+so
+
+546
+00:22:37,600 --> 00:22:43,600
+let's have some example here
+
+547
+00:22:40,720 --> 00:22:46,400
+so the first example is that
+
+548
+00:22:43,600 --> 00:22:47,600
+we want to prove that
+
+549
+00:22:46,400 --> 00:22:49,280
+even
+
+550
+00:22:47,600 --> 00:22:50,720
+natural numbers
+
+551
+00:22:49,280 --> 00:22:56,799
+okay that is
+
+552
+00:22:50,720 --> 00:22:59,200
+2 4 6 8 10 12 14 etc
+
+553
+00:22:56,799 --> 00:23:02,320
+we want to prove
+
+554
+00:22:59,200 --> 00:23:07,120
+even numbers even natural numbers
+
+555
+00:23:02,320 --> 00:23:08,960
+has the same size as natural numbers
+
+556
+00:23:07,120 --> 00:23:11,919
+which is you know
+
+557
+00:23:08,960 --> 00:23:13,919
+one two three four five six seven
+
+558
+00:23:11,919 --> 00:23:16,640
+etc
+
+559
+00:23:13,919 --> 00:23:17,679
+well it's kind of uh counterintuitive
+
+560
+00:23:16,640 --> 00:23:20,080
+because
+
+561
+00:23:17,679 --> 00:23:22,880
+the intuition
+
+562
+00:23:20,080 --> 00:23:25,679
+may just tell us that even numbers even
+
+563
+00:23:22,880 --> 00:23:27,360
+natural numbers are fewer
+
+564
+00:23:25,679 --> 00:23:29,840
+actually half
+
+565
+00:23:27,360 --> 00:23:32,880
+of the natural numbers how can we say
+
+566
+00:23:29,840 --> 00:23:36,000
+that they have the same size
+
+567
+00:23:32,880 --> 00:23:37,600
+right that's weird but according to our
+
+568
+00:23:36,000 --> 00:23:40,559
+definition
+
+569
+00:23:37,600 --> 00:23:43,039
+according to our definition
+
+570
+00:23:40,559 --> 00:23:45,120
+we have to accept that they are of the
+
+571
+00:23:43,039 --> 00:23:47,679
+same size because
+
+572
+00:23:45,120 --> 00:23:49,440
+that's the only way
+
+573
+00:23:47,679 --> 00:23:52,640
+we can extend
+
+574
+00:23:49,440 --> 00:23:54,559
+the comparison of size of sets from
+
+575
+00:23:52,640 --> 00:23:56,559
+finances to
+
+576
+00:23:54,559 --> 00:23:59,120
+infinite set well well i shouldn't say
+
+577
+00:23:56,559 --> 00:24:01,360
+the only way but that's the way we adopt
+
+578
+00:23:59,120 --> 00:24:03,760
+it adopt right now
+
+579
+00:24:01,360 --> 00:24:07,200
+okay maybe there are other ways
+
+580
+00:24:03,760 --> 00:24:08,240
+actually but we are using that
+
+581
+00:24:07,200 --> 00:24:09,679
+uh
+
+582
+00:24:08,240 --> 00:24:10,799
+using the
+
+583
+00:24:09,679 --> 00:24:12,559
+you
+
+584
+00:24:10,799 --> 00:24:14,320
+we are using that way
+
+585
+00:24:12,559 --> 00:24:16,559
+right now
+
+586
+00:24:14,320 --> 00:24:18,400
+so
+
+587
+00:24:16,559 --> 00:24:20,159
+to prove
+
+588
+00:24:18,400 --> 00:24:22,320
+natural numbers and the even natural
+
+589
+00:24:20,159 --> 00:24:23,520
+numbers are of
+
+590
+00:24:22,320 --> 00:24:25,919
+the same
+
+591
+00:24:23,520 --> 00:24:28,080
+have the same size we need to find the
+
+592
+00:24:25,919 --> 00:24:30,240
+correspondence which is the one to one
+
+593
+00:24:28,080 --> 00:24:31,120
+and onto function between the two sets
+
+594
+00:24:30,240 --> 00:24:34,960
+right
+
+595
+00:24:31,120 --> 00:24:39,520
+so the function is easy we map each
+
+596
+00:24:34,960 --> 00:24:39,520
+we map each natural number to
+
+597
+00:24:40,960 --> 00:24:46,559
+itself times two
+
+598
+00:24:43,120 --> 00:24:50,000
+right so that's what we said here
+
+599
+00:24:46,559 --> 00:24:51,279
+and map2n
+
+600
+00:24:50,000 --> 00:24:52,159
+in this way
+
+601
+00:24:51,279 --> 00:24:54,000
+two
+
+602
+00:24:52,159 --> 00:24:58,000
+map to four
+
+603
+00:24:54,000 --> 00:25:00,480
+three map26 etc right
+
+604
+00:24:58,000 --> 00:25:02,480
+and you will find that it is a one to
+
+605
+00:25:00,480 --> 00:25:07,039
+one because
+
+606
+00:25:02,480 --> 00:25:07,039
+x when x and y are different
+
+607
+00:25:07,200 --> 00:25:12,480
+we have
+
+608
+00:25:09,919 --> 00:25:12,480
+different
+
+609
+00:25:13,360 --> 00:25:18,400
+red beans right we have different green
+
+610
+00:25:16,080 --> 00:25:20,000
+beans we have different red beans
+
+611
+00:25:18,400 --> 00:25:23,039
+so that's one to one
+
+612
+00:25:20,000 --> 00:25:26,400
+and of course all
+
+613
+00:25:23,039 --> 00:25:30,720
+all natural all even natural numbers
+
+614
+00:25:26,400 --> 00:25:30,720
+are mapped for every
+
+615
+00:25:34,400 --> 00:25:38,799
+natural numbers
+
+616
+00:25:36,640 --> 00:25:39,760
+you know there is some
+
+617
+00:25:38,799 --> 00:25:44,159
+thing
+
+618
+00:25:39,760 --> 00:25:45,440
+some natural numbers actually which is
+
+619
+00:25:44,159 --> 00:25:47,120
+half of the
+
+620
+00:25:45,440 --> 00:25:48,240
+number right
+
+621
+00:25:47,120 --> 00:25:49,360
+in
+
+622
+00:25:48,240 --> 00:25:53,600
+n
+
+623
+00:25:49,360 --> 00:25:53,600
+such that f of x
+
+624
+00:25:54,080 --> 00:25:57,600
+is
+
+625
+00:25:54,840 --> 00:25:59,840
+y so
+
+626
+00:25:57,600 --> 00:26:01,600
+the course the function here is one to
+
+627
+00:25:59,840 --> 00:26:03,039
+one and on two so we call it
+
+628
+00:26:01,600 --> 00:26:04,320
+correspondence
+
+629
+00:26:03,039 --> 00:26:07,440
+and
+
+630
+00:26:04,320 --> 00:26:07,440
+we conclude that
+
+631
+00:26:07,600 --> 00:26:11,520
+the set of natural numbers
+
+632
+00:26:09,760 --> 00:26:14,480
+and the set of even
+
+633
+00:26:11,520 --> 00:26:16,480
+even natural numbers are
+
+634
+00:26:14,480 --> 00:26:18,960
+of the same size
+
+635
+00:26:16,480 --> 00:26:22,000
+according to our definition
+
+636
+00:26:18,960 --> 00:26:24,080
+okay that's the first
+
+637
+00:26:22,000 --> 00:26:25,520
+example here
+
+638
+00:26:24,080 --> 00:26:28,240
+and let's
+
+639
+00:26:25,520 --> 00:26:29,840
+take a look at another example that we
+
+640
+00:26:28,240 --> 00:26:32,240
+want to
+
+641
+00:26:29,840 --> 00:26:35,120
+prove that
+
+642
+00:26:32,240 --> 00:26:36,880
+nature numbers and
+
+643
+00:26:35,120 --> 00:26:39,760
+rational numbers
+
+644
+00:26:36,880 --> 00:26:41,679
+okay what is the rational numbers if for
+
+645
+00:26:39,760 --> 00:26:43,360
+simplicity that's considered only
+
+646
+00:26:41,679 --> 00:26:45,600
+positive
+
+647
+00:26:43,360 --> 00:26:45,600
+or
+
+648
+00:26:47,200 --> 00:26:49,440
+we
+
+649
+00:26:50,840 --> 00:26:54,320
+consider only
+
+650
+00:26:59,600 --> 00:27:04,840
+for for rational numbers it can be
+
+651
+00:27:02,559 --> 00:27:09,440
+written as
+
+652
+00:27:04,840 --> 00:27:09,440
+two integers uh
+
+653
+00:27:10,080 --> 00:27:16,000
+divided by let's say m divided by n
+
+654
+00:27:13,520 --> 00:27:17,039
+right that's the definition of rational
+
+655
+00:27:16,000 --> 00:27:20,240
+numbers
+
+656
+00:27:17,039 --> 00:27:25,919
+and for simplicity we current we we now
+
+657
+00:27:20,240 --> 00:27:26,640
+uh consider only m in n and n in also in
+
+658
+00:27:25,919 --> 00:27:29,200
+n
+
+659
+00:27:26,640 --> 00:27:31,600
+okay we don't consider all possible uh
+
+660
+00:27:29,200 --> 00:27:34,480
+including negative integers let's
+
+661
+00:27:31,600 --> 00:27:34,480
+consider only
+
+662
+00:27:36,559 --> 00:27:40,799
+rational rational numbers as
+
+663
+00:27:39,200 --> 00:27:42,159
+in this form
+
+664
+00:27:40,799 --> 00:27:44,399
+okay
+
+665
+00:27:42,159 --> 00:27:44,399
+then
+
+666
+00:27:44,640 --> 00:27:50,399
+if we find if we can find a one-to-one
+
+667
+00:27:48,640 --> 00:27:53,279
+and the n2
+
+668
+00:27:50,399 --> 00:27:56,000
+function between n and q which is
+
+669
+00:27:53,279 --> 00:27:58,240
+rational numbers then we prove that they
+
+670
+00:27:56,000 --> 00:27:59,120
+are of the same size they have the same
+
+671
+00:27:58,240 --> 00:28:00,159
+size
+
+672
+00:27:59,120 --> 00:28:02,480
+even
+
+673
+00:28:00,159 --> 00:28:04,880
+intuitively
+
+674
+00:28:02,480 --> 00:28:07,440
+you know we think
+
+675
+00:28:04,880 --> 00:28:09,840
+rational numbers should be more uh be
+
+676
+00:28:07,440 --> 00:28:12,000
+more that the num uh
+
+677
+00:28:09,840 --> 00:28:14,240
+there should be more rational numbers
+
+678
+00:28:12,000 --> 00:28:14,240
+than
+
+679
+00:28:14,720 --> 00:28:20,320
+natural numbers right because two
+
+680
+00:28:17,520 --> 00:28:23,200
+natural numbers composite one
+
+681
+00:28:20,320 --> 00:28:25,039
+rational numbers there should be more
+
+682
+00:28:23,200 --> 00:28:26,000
+rational numbers
+
+683
+00:28:25,039 --> 00:28:28,240
+but
+
+684
+00:28:26,000 --> 00:28:31,440
+we can easily find
+
+685
+00:28:28,240 --> 00:28:34,399
+a correspondence how do we do that
+
+686
+00:28:31,440 --> 00:28:37,360
+we think of you know
+
+687
+00:28:34,399 --> 00:28:37,360
+two uh
+
+688
+00:28:37,760 --> 00:28:46,480
+x's here so this one is n this one is m
+
+689
+00:28:42,399 --> 00:28:46,480
+okay they are integer so
+
+690
+00:28:46,799 --> 00:28:53,520
+you can easily find that all rational
+
+691
+00:28:50,000 --> 00:28:56,159
+numbers let's say uh in this form
+
+692
+00:28:53,520 --> 00:28:58,000
+will be in the plan
+
+693
+00:28:56,159 --> 00:29:00,399
+spent by n
+
+694
+00:28:58,000 --> 00:29:02,320
+axis and the n axis
+
+695
+00:29:00,399 --> 00:29:05,360
+right
+
+696
+00:29:02,320 --> 00:29:09,919
+then we can say that
+
+697
+00:29:05,360 --> 00:29:12,640
+the first uh we can start to count all
+
+698
+00:29:09,919 --> 00:29:16,159
+rational numbers as the first one
+
+699
+00:29:12,640 --> 00:29:17,679
+right then we count
+
+700
+00:29:16,159 --> 00:29:20,080
+second one
+
+701
+00:29:17,679 --> 00:29:22,720
+we count third one
+
+702
+00:29:20,080 --> 00:29:24,480
+then go back to count
+
+703
+00:29:22,720 --> 00:29:27,760
+fourth one
+
+704
+00:29:24,480 --> 00:29:31,120
+and we can skip the one we already count
+
+705
+00:29:27,760 --> 00:29:32,480
+right and five
+
+706
+00:29:31,120 --> 00:29:35,360
+number five
+
+707
+00:29:32,480 --> 00:29:37,039
+number six number seven number eight
+
+708
+00:29:35,360 --> 00:29:38,960
+number nine
+
+709
+00:29:37,039 --> 00:29:40,480
+and then ten
+
+710
+00:29:38,960 --> 00:29:41,440
+11
+
+711
+00:29:40,480 --> 00:29:43,440
+and
+
+712
+00:29:41,440 --> 00:29:46,080
+etc
+
+713
+00:29:43,440 --> 00:29:46,080
+etc
+
+714
+00:29:47,760 --> 00:29:52,240
+so
+
+715
+00:29:48,880 --> 00:29:54,880
+it is possible that
+
+716
+00:29:52,240 --> 00:29:57,440
+we have a not possible we
+
+717
+00:29:54,880 --> 00:29:59,760
+provide the possibility of the
+
+718
+00:29:57,440 --> 00:30:02,559
+correspondence between
+
+719
+00:29:59,760 --> 00:30:02,559
+n and q
+
+720
+00:30:03,840 --> 00:30:08,240
+okay
+
+721
+00:30:05,760 --> 00:30:10,559
+so that's why we have to admit that
+
+722
+00:30:08,240 --> 00:30:12,159
+according to the definition according to
+
+723
+00:30:10,559 --> 00:30:14,559
+the judge
+
+724
+00:30:12,159 --> 00:30:17,440
+criteria here
+
+725
+00:30:14,559 --> 00:30:18,960
+we have to admit that
+
+726
+00:30:17,440 --> 00:30:21,120
+n and q
+
+727
+00:30:18,960 --> 00:30:24,480
+have the same size
+
+728
+00:30:21,120 --> 00:30:24,480
+okay have the same size
+
+729
+00:30:30,480 --> 00:30:34,080
+so that's
+
+730
+00:30:31,679 --> 00:30:34,080
+another
+
+731
+00:30:34,840 --> 00:30:39,520
+counterintuitive conclusions
+
+732
+00:30:37,440 --> 00:30:41,039
+here
+
+733
+00:30:39,520 --> 00:30:42,960
+[Applause]
+
+734
+00:30:41,039 --> 00:30:43,840
+okay so
+
+735
+00:30:42,960 --> 00:30:45,440
+that's
+
+736
+00:30:43,840 --> 00:30:46,720
+is there any
+
+737
+00:30:45,440 --> 00:30:50,159
+set
+
+738
+00:30:46,720 --> 00:30:51,360
+uh uncountable
+
+739
+00:30:50,159 --> 00:30:52,159
+larger
+
+740
+00:30:51,360 --> 00:30:53,520
+than
+
+741
+00:30:52,159 --> 00:30:55,279
+natural numbers
+
+742
+00:30:53,520 --> 00:30:58,720
+of course there are
+
+743
+00:30:55,279 --> 00:31:01,519
+and let's see the
+
+744
+00:30:58,720 --> 00:31:01,519
+theorem here
+
+745
+00:31:01,679 --> 00:31:08,000
+we want to prove that the set of
+
+746
+00:31:04,960 --> 00:31:09,840
+the set of real numbers
+
+747
+00:31:08,000 --> 00:31:11,279
+is uncountable
+
+748
+00:31:09,840 --> 00:31:13,600
+that means
+
+749
+00:31:11,279 --> 00:31:16,240
+there exists
+
+750
+00:31:13,600 --> 00:31:18,399
+no correspondence
+
+751
+00:31:16,240 --> 00:31:20,480
+between n and r
+
+752
+00:31:18,399 --> 00:31:22,880
+natural numbers and
+
+753
+00:31:20,480 --> 00:31:26,480
+real numbers
+
+754
+00:31:22,880 --> 00:31:29,679
+okay as we already uh use the argument
+
+755
+00:31:26,480 --> 00:31:29,679
+many times that
+
+756
+00:31:30,799 --> 00:31:34,720
+we
+
+757
+00:31:31,519 --> 00:31:36,399
+we are unable to find the correspondence
+
+758
+00:31:34,720 --> 00:31:39,039
+doesn't mean
+
+759
+00:31:36,399 --> 00:31:41,120
+others cannot do this
+
+760
+00:31:39,039 --> 00:31:43,760
+uh find the correspondence right maybe
+
+761
+00:31:41,120 --> 00:31:46,480
+they are smarter they can really find
+
+762
+00:31:43,760 --> 00:31:49,279
+the correspondence so we have we need to
+
+763
+00:31:46,480 --> 00:31:51,600
+have some arguments which is absolutely
+
+764
+00:31:49,279 --> 00:31:53,440
+convincing
+
+765
+00:31:51,600 --> 00:31:55,679
+to prove
+
+766
+00:31:53,440 --> 00:31:56,799
+it's not possible
+
+767
+00:31:55,679 --> 00:32:00,320
+okay
+
+768
+00:31:56,799 --> 00:32:01,360
+so we use the same technique again let's
+
+769
+00:32:00,320 --> 00:32:03,200
+say
+
+770
+00:32:01,360 --> 00:32:04,880
+we assume that
+
+771
+00:32:03,200 --> 00:32:07,279
+we assume not
+
+772
+00:32:04,880 --> 00:32:08,399
+r is countable
+
+773
+00:32:07,279 --> 00:32:11,360
+okay
+
+774
+00:32:08,399 --> 00:32:11,360
+let's assume it
+
+775
+00:32:12,080 --> 00:32:16,559
+what means by r uh is countable what
+
+776
+00:32:15,360 --> 00:32:18,720
+means by
+
+777
+00:32:16,559 --> 00:32:19,919
+real numbers the set of real numbers is
+
+778
+00:32:18,720 --> 00:32:21,440
+countable
+
+779
+00:32:19,919 --> 00:32:23,600
+that means
+
+780
+00:32:21,440 --> 00:32:26,159
+there exists
+
+781
+00:32:23,600 --> 00:32:27,519
+a one two one and on two functions
+
+782
+00:32:26,159 --> 00:32:30,080
+between
+
+783
+00:32:27,519 --> 00:32:32,559
+natural numbers and real numbers right
+
+784
+00:32:30,080 --> 00:32:34,480
+there exists a correspondence
+
+785
+00:32:32,559 --> 00:32:36,880
+okay so
+
+786
+00:32:34,480 --> 00:32:40,399
+let's assume the correspondence look
+
+787
+00:32:36,880 --> 00:32:42,559
+like this way no the first
+
+788
+00:32:40,399 --> 00:32:45,200
+real numbers this is one
+
+789
+00:32:42,559 --> 00:32:47,840
+the second real number is this one the
+
+790
+00:32:45,200 --> 00:32:51,039
+third real number is this one the fourth
+
+791
+00:32:47,840 --> 00:32:55,039
+real number is this one etc right
+
+792
+00:32:51,039 --> 00:32:57,919
+etc there there and and most importantly
+
+793
+00:32:55,039 --> 00:33:00,720
+firstly they are one to one right
+
+794
+00:32:57,919 --> 00:33:00,720
+one two one
+
+795
+00:33:00,799 --> 00:33:06,640
+and secondly
+
+796
+00:33:04,080 --> 00:33:08,880
+on two so that's all
+
+797
+00:33:06,640 --> 00:33:11,919
+real numbers
+
+798
+00:33:08,880 --> 00:33:15,360
+right that's all real numbers no
+
+799
+00:33:11,919 --> 00:33:17,360
+no one real number is uh
+
+800
+00:33:15,360 --> 00:33:19,760
+outside of this uh
+
+801
+00:33:17,360 --> 00:33:21,440
+table
+
+802
+00:33:19,760 --> 00:33:23,440
+however
+
+803
+00:33:21,440 --> 00:33:26,880
+however
+
+804
+00:33:23,440 --> 00:33:28,559
+someone look at the table and
+
+805
+00:33:26,880 --> 00:33:31,600
+say that
+
+806
+00:33:28,559 --> 00:33:32,960
+let me put the integer part 0
+
+807
+00:33:31,600 --> 00:33:34,000
+okay
+
+808
+00:33:32,960 --> 00:33:37,360
+and
+
+809
+00:33:34,000 --> 00:33:40,640
+let's take the first
+
+810
+00:33:37,360 --> 00:33:42,000
+in the first digit of the first real
+
+811
+00:33:40,640 --> 00:33:44,720
+number
+
+812
+00:33:42,000 --> 00:33:47,039
+and change it for example that's changed
+
+813
+00:33:44,720 --> 00:33:50,000
+to four
+
+814
+00:33:47,039 --> 00:33:52,480
+and let me take the second digit of the
+
+815
+00:33:50,000 --> 00:33:55,600
+second real number
+
+816
+00:33:52,480 --> 00:33:56,480
+and change it for example six
+
+817
+00:33:55,600 --> 00:33:58,399
+okay
+
+818
+00:33:56,480 --> 00:34:00,799
+and take the third
+
+819
+00:33:58,399 --> 00:34:03,519
+digit of the third
+
+820
+00:34:00,799 --> 00:34:05,039
+real number and change it
+
+821
+00:34:03,519 --> 00:34:07,039
+four
+
+822
+00:34:05,039 --> 00:34:10,079
+and then fourth
+
+823
+00:34:07,039 --> 00:34:13,440
+digit of the fourth
+
+824
+00:34:10,079 --> 00:34:17,040
+real number for example change to one
+
+825
+00:34:13,440 --> 00:34:20,639
+and we keep doing this so
+
+826
+00:34:17,040 --> 00:34:23,280
+the fifth number and of the fifth real
+
+827
+00:34:20,639 --> 00:34:26,320
+number uh fifth digit of the fifth real
+
+828
+00:34:23,280 --> 00:34:28,159
+number and change to something else
+
+829
+00:34:26,320 --> 00:34:30,399
+not zero okay
+
+830
+00:34:28,159 --> 00:34:32,560
+i shouldn't use it
+
+831
+00:34:30,399 --> 00:34:35,760
+change to something else
+
+832
+00:34:32,560 --> 00:34:38,480
+and also this one let's do it again
+
+833
+00:34:35,760 --> 00:34:39,599
+and this one let's do it again
+
+834
+00:34:38,480 --> 00:34:41,599
+and
+
+835
+00:34:39,599 --> 00:34:43,919
+etcetera
+
+836
+00:34:41,599 --> 00:34:43,919
+right
+
+837
+00:34:44,399 --> 00:34:49,280
+then you will find something
+
+838
+00:34:48,079 --> 00:34:51,919
+weird
+
+839
+00:34:49,280 --> 00:34:53,919
+we have a contradiction here
+
+840
+00:34:51,919 --> 00:34:55,839
+what what contradiction
+
+841
+00:34:53,919 --> 00:34:57,520
+you can see
+
+842
+00:34:55,839 --> 00:35:00,839
+this number
+
+843
+00:34:57,520 --> 00:35:04,240
+is definitely a real
+
+844
+00:35:00,839 --> 00:35:05,520
+number right this number is definitely a
+
+845
+00:35:04,240 --> 00:35:07,359
+real number
+
+846
+00:35:05,520 --> 00:35:08,720
+but
+
+847
+00:35:07,359 --> 00:35:11,680
+let's say x
+
+848
+00:35:08,720 --> 00:35:14,160
+but x here
+
+849
+00:35:11,680 --> 00:35:15,200
+is not
+
+850
+00:35:14,160 --> 00:35:17,839
+in
+
+851
+00:35:15,200 --> 00:35:17,839
+the table
+
+852
+00:35:18,079 --> 00:35:22,640
+why
+
+853
+00:35:19,200 --> 00:35:27,680
+because you will find that the x here
+
+854
+00:35:22,640 --> 00:35:31,359
+has at least a one digit difference
+
+855
+00:35:27,680 --> 00:35:34,880
+between all the members on the table all
+
+856
+00:35:31,359 --> 00:35:35,920
+the real numbers on the table
+
+857
+00:35:34,880 --> 00:35:36,880
+x is
+
+858
+00:35:35,920 --> 00:35:39,520
+not
+
+859
+00:35:36,880 --> 00:35:41,599
+x is not the first one
+
+860
+00:35:39,520 --> 00:35:43,040
+first real number because the first
+
+861
+00:35:41,599 --> 00:35:45,440
+digit is different
+
+862
+00:35:43,040 --> 00:35:47,839
+x is not the second real number on the
+
+863
+00:35:45,440 --> 00:35:50,480
+table because the second digit
+
+864
+00:35:47,839 --> 00:35:51,680
+is different at least the second digit
+
+865
+00:35:50,480 --> 00:35:53,520
+is different
+
+866
+00:35:51,680 --> 00:35:55,359
+and it is not
+
+867
+00:35:53,520 --> 00:35:59,440
+i
+
+868
+00:35:55,359 --> 00:36:00,320
+element on the table because
+
+869
+00:35:59,440 --> 00:36:05,119
+i
+
+870
+00:36:00,320 --> 00:36:06,880
+at least five digit is different
+
+871
+00:36:05,119 --> 00:36:09,440
+so
+
+872
+00:36:06,880 --> 00:36:10,640
+you tell me that or someone tell you
+
+873
+00:36:09,440 --> 00:36:13,200
+that
+
+874
+00:36:10,640 --> 00:36:15,760
+the table contains
+
+875
+00:36:13,200 --> 00:36:19,119
+all the real numbers
+
+876
+00:36:15,760 --> 00:36:23,119
+while you can find one real number out
+
+877
+00:36:19,119 --> 00:36:27,040
+of the table but not in the table
+
+878
+00:36:23,119 --> 00:36:30,880
+so apparently it's a contradiction
+
+879
+00:36:27,040 --> 00:36:32,240
+that's why r cannot be countable
+
+880
+00:36:30,880 --> 00:36:35,040
+because
+
+881
+00:36:32,240 --> 00:36:36,480
+as long as anyone couldn't r is
+
+882
+00:36:35,040 --> 00:36:39,280
+countable
+
+883
+00:36:36,480 --> 00:36:41,839
+that correspondence
+
+884
+00:36:39,280 --> 00:36:41,839
+it's wrong
+
+885
+00:36:42,560 --> 00:36:47,200
+okay another chorus that correspondence
+
+886
+00:36:44,960 --> 00:36:50,000
+must be wrong there exists no
+
+887
+00:36:47,200 --> 00:36:53,520
+correspondence
+
+888
+00:36:50,000 --> 00:36:57,119
+for real numbers to be
+
+889
+00:36:53,520 --> 00:36:59,359
+the same size as natural number
+
+890
+00:36:57,119 --> 00:37:00,240
+okay
+
+891
+00:36:59,359 --> 00:37:04,400
+so
+
+892
+00:37:00,240 --> 00:37:06,400
+you will find that what we are doing is
+
+893
+00:37:04,400 --> 00:37:08,400
+finding the first
+
+894
+00:37:06,400 --> 00:37:11,599
+using the first digit of the first
+
+895
+00:37:08,400 --> 00:37:14,480
+element first real number and the second
+
+896
+00:37:11,599 --> 00:37:17,359
+of the second third of the third
+
+897
+00:37:14,480 --> 00:37:20,880
+fourth of the first etc
+
+898
+00:37:17,359 --> 00:37:20,880
+so that's a diagonal
+
+899
+00:37:20,960 --> 00:37:25,920
+and we do a diagonalization here
+
+900
+00:37:24,720 --> 00:37:27,040
+that's why
+
+901
+00:37:25,920 --> 00:37:29,440
+we
+
+902
+00:37:27,040 --> 00:37:32,800
+say that it is
+
+903
+00:37:29,440 --> 00:37:35,280
+the diagonalization method because we
+
+904
+00:37:32,800 --> 00:37:37,280
+you we are using the property of
+
+905
+00:37:35,280 --> 00:37:40,320
+diagonalization
+
+906
+00:37:37,280 --> 00:37:41,119
+or like that diagonal
+
+907
+00:37:40,320 --> 00:37:43,119
+okay
+
+908
+00:37:41,119 --> 00:37:44,320
+of course they are for this proof there
+
+909
+00:37:43,119 --> 00:37:47,839
+are some
+
+910
+00:37:44,320 --> 00:37:50,320
+rules about how to change the digit
+
+911
+00:37:47,839 --> 00:37:51,920
+one two four five two six there are some
+
+912
+00:37:50,320 --> 00:37:54,560
+other rules you can
+
+913
+00:37:51,920 --> 00:37:57,839
+refer to the textbook but
+
+914
+00:37:54,560 --> 00:37:59,920
+concepts are the same that
+
+915
+00:37:57,839 --> 00:38:01,920
+we can always
+
+916
+00:37:59,920 --> 00:38:05,520
+going through a diagonal
+
+917
+00:38:01,920 --> 00:38:07,359
+and come up with some elements which is
+
+918
+00:38:05,520 --> 00:38:10,079
+not on the table
+
+919
+00:38:07,359 --> 00:38:14,079
+and therefore to prove that this kind of
+
+920
+00:38:10,079 --> 00:38:17,119
+table such a table cannot be
+
+921
+00:38:14,079 --> 00:38:18,640
+written down cannot exist
+
+922
+00:38:17,119 --> 00:38:21,839
+okay
+
+923
+00:38:18,640 --> 00:38:25,599
+so that's uh
+
+924
+00:38:21,839 --> 00:38:28,240
+the proof for theorem 4.17 r is
+
+925
+00:38:25,599 --> 00:38:28,240
+uncountable
+
+926
+00:38:30,000 --> 00:38:33,000
+okay
+
+927
+00:38:33,200 --> 00:38:36,880
+then
+
+928
+00:38:34,079 --> 00:38:38,560
+we can use the same
+
+929
+00:38:36,880 --> 00:38:40,960
+technique
+
+930
+00:38:38,560 --> 00:38:43,119
+to prove that
+
+931
+00:38:40,960 --> 00:38:47,440
+there are languages
+
+932
+00:38:43,119 --> 00:38:48,960
+that are not even turian recognizable
+
+933
+00:38:47,440 --> 00:38:52,079
+okay
+
+934
+00:38:48,960 --> 00:38:53,920
+some languages are not too recognizable
+
+935
+00:38:52,079 --> 00:38:56,800
+we want to prove that
+
+936
+00:38:53,920 --> 00:38:56,800
+how do we prove it
+
+937
+00:38:57,119 --> 00:39:01,000
+let's consider alphabets
+
+938
+00:39:01,200 --> 00:39:07,440
+zero one and don't forget that zero one
+
+939
+00:39:04,560 --> 00:39:09,839
+here are just two symbols not integer
+
+940
+00:39:07,440 --> 00:39:12,480
+zero and one okay
+
+941
+00:39:09,839 --> 00:39:14,480
+you can come you can also uh think
+
+942
+00:39:12,480 --> 00:39:17,280
+consider a b
+
+943
+00:39:14,480 --> 00:39:18,000
+instead of 0 1 maybe it's easier for you
+
+944
+00:39:17,280 --> 00:39:20,640
+but
+
+945
+00:39:18,000 --> 00:39:24,560
+doesn't matter
+
+946
+00:39:20,640 --> 00:39:27,440
+as long as you have an alphabet
+
+947
+00:39:24,560 --> 00:39:30,240
+you can enumerate all possible strings
+
+948
+00:39:27,440 --> 00:39:34,160
+right so
+
+949
+00:39:30,240 --> 00:39:37,359
+then zero empty string length one zero
+
+950
+00:39:34,160 --> 00:39:39,200
+one length two zero zero zero one one
+
+951
+00:39:37,359 --> 00:39:40,720
+zero one one
+
+952
+00:39:39,200 --> 00:39:43,520
+then three
+
+953
+00:39:40,720 --> 00:39:44,720
+there are eight of them right and then
+
+954
+00:39:43,520 --> 00:39:48,079
+four five
+
+955
+00:39:44,720 --> 00:39:50,720
+six seven and etc etc you can
+
+956
+00:39:48,079 --> 00:39:54,079
+enumerate them
+
+957
+00:39:50,720 --> 00:39:56,640
+and what is the language
+
+958
+00:39:54,079 --> 00:39:58,480
+what is the language on the alphabet
+
+959
+00:39:56,640 --> 00:39:59,280
+a set of strings
+
+960
+00:39:58,480 --> 00:40:02,880
+right
+
+961
+00:39:59,280 --> 00:40:06,400
+so any language is a
+
+962
+00:40:02,880 --> 00:40:07,440
+possible subset of sigma star
+
+963
+00:40:06,400 --> 00:40:10,160
+let's say
+
+964
+00:40:07,440 --> 00:40:14,400
+we have a language
+
+965
+00:40:10,160 --> 00:40:18,480
+the string of the language is 0 0 0 0 1
+
+966
+00:40:14,400 --> 00:40:20,400
+0 0 0 0 1 etc right
+
+967
+00:40:18,480 --> 00:40:23,640
+and then we use
+
+968
+00:40:20,400 --> 00:40:23,640
+we use
+
+969
+00:40:26,400 --> 00:40:29,359
+a spatial
+
+970
+00:40:29,599 --> 00:40:34,640
+that's the vector or
+
+971
+00:40:32,079 --> 00:40:36,839
+zero one string to
+
+972
+00:40:34,640 --> 00:40:39,440
+represent that
+
+973
+00:40:36,839 --> 00:40:41,599
+language okay
+
+974
+00:40:39,440 --> 00:40:44,079
+how do we use a
+
+975
+00:40:41,599 --> 00:40:45,280
+0 1 or binary string to represent the
+
+976
+00:40:44,079 --> 00:40:47,200
+language
+
+977
+00:40:45,280 --> 00:40:49,359
+it's pretty easy that
+
+978
+00:40:47,200 --> 00:40:52,560
+if the language a
+
+979
+00:40:49,359 --> 00:40:53,839
+has no
+
+980
+00:40:52,560 --> 00:40:56,480
+epsilon
+
+981
+00:40:53,839 --> 00:40:59,040
+we write 0 here
+
+982
+00:40:56,480 --> 00:41:02,720
+now you see that the 0 here is not the
+
+983
+00:40:59,040 --> 00:41:03,839
+alphabet 0 not the symbol 0. the 0 here
+
+984
+00:41:02,720 --> 00:41:08,079
+means
+
+985
+00:41:03,839 --> 00:41:09,680
+language a has no epsilon has no empty
+
+986
+00:41:08,079 --> 00:41:13,040
+string okay
+
+987
+00:41:09,680 --> 00:41:14,160
+then language a has zero so we have one
+
+988
+00:41:13,040 --> 00:41:15,520
+here
+
+989
+00:41:14,160 --> 00:41:18,079
+no one
+
+990
+00:41:15,520 --> 00:41:19,359
+zero here
+
+991
+00:41:18,079 --> 00:41:22,720
+zero zero
+
+992
+00:41:19,359 --> 00:41:26,640
+one here zero one yes so one here there
+
+993
+00:41:22,720 --> 00:41:30,160
+is no one zero in a zero here there's no
+
+994
+00:41:26,640 --> 00:41:33,599
+uh one one a zero here there is zero
+
+995
+00:41:30,160 --> 00:41:36,079
+zero zero here in a so one here
+
+996
+00:41:33,599 --> 00:41:38,400
+one here etc
+
+997
+00:41:36,079 --> 00:41:38,400
+okay
+
+998
+00:41:38,800 --> 00:41:43,920
+then you can find that
+
+999
+00:41:40,720 --> 00:41:43,920
+all possible
+
+1000
+00:41:44,079 --> 00:41:49,520
+subset of sigma star
+
+1001
+00:41:47,200 --> 00:41:51,520
+we can use
+
+1002
+00:41:49,520 --> 00:41:54,079
+such a string
+
+1003
+00:41:51,520 --> 00:41:56,720
+to represent
+
+1004
+00:41:54,079 --> 00:41:56,720
+the language
+
+1005
+00:41:56,880 --> 00:41:59,880
+right
+
+1006
+00:42:02,640 --> 00:42:07,839
+then we prove that
+
+1007
+00:42:05,119 --> 00:42:10,640
+the number of languages
+
+1008
+00:42:07,839 --> 00:42:12,960
+the number of languages
+
+1009
+00:42:10,640 --> 00:42:14,640
+are uncountable
+
+1010
+00:42:12,960 --> 00:42:18,160
+how do we prove that
+
+1011
+00:42:14,640 --> 00:42:19,839
+firstly we assume that
+
+1012
+00:42:18,160 --> 00:42:21,119
+languages
+
+1013
+00:42:19,839 --> 00:42:25,520
+are countable
+
+1014
+00:42:21,119 --> 00:42:25,520
+then you can have a table like
+
+1015
+00:42:26,480 --> 00:42:31,560
+then you can you can have a table like
+
+1016
+00:42:32,960 --> 00:42:38,079
+the first language the second language
+
+1017
+00:42:35,440 --> 00:42:40,319
+the third language the fourth language
+
+1018
+00:42:38,079 --> 00:42:42,800
+etc right
+
+1019
+00:42:40,319 --> 00:42:44,560
+and then
+
+1020
+00:42:42,800 --> 00:42:50,400
+for the first language
+
+1021
+00:42:44,560 --> 00:42:54,480
+that would be 0 0 1 1 0 1 etc etc right
+
+1022
+00:42:50,400 --> 00:42:54,480
+and for the second one maybe it's like
+
+1023
+00:42:55,440 --> 00:43:00,319
+etc and then for the third language you
+
+1024
+00:42:58,240 --> 00:43:03,680
+have also a one
+
+1025
+00:43:00,319 --> 00:43:05,440
+zero one string representation for the
+
+1026
+00:43:03,680 --> 00:43:09,119
+first one
+
+1027
+00:43:05,440 --> 00:43:09,119
+maybe like this
+
+1028
+00:43:09,920 --> 00:43:14,800
+and remember that since we are assuming
+
+1029
+00:43:12,240 --> 00:43:16,960
+all languages are countable
+
+1030
+00:43:14,800 --> 00:43:17,920
+accountable so
+
+1031
+00:43:16,960 --> 00:43:21,119
+that
+
+1032
+00:43:17,920 --> 00:43:23,079
+all the languages are here
+
+1033
+00:43:21,119 --> 00:43:25,599
+then using
+
+1034
+00:43:23,079 --> 00:43:28,800
+diagonalization method
+
+1035
+00:43:25,599 --> 00:43:32,079
+we can have one language
+
+1036
+00:43:28,800 --> 00:43:36,319
+if you encounter zero you make it one if
+
+1037
+00:43:32,079 --> 00:43:36,319
+your counter is one then make it zero
+
+1038
+00:43:37,359 --> 00:43:43,920
+and you do this one for example 1 1 1 0
+
+1039
+00:43:42,240 --> 00:43:45,520
+etc
+
+1040
+00:43:43,920 --> 00:43:48,640
+and you will find
+
+1041
+00:43:45,520 --> 00:43:48,640
+this language
+
+1042
+00:43:50,079 --> 00:43:54,000
+is not
+
+1043
+00:43:52,079 --> 00:43:56,160
+in
+
+1044
+00:43:54,000 --> 00:43:58,880
+the left-hand side of the table
+
+1045
+00:43:56,160 --> 00:44:00,000
+right it's not on the table
+
+1046
+00:43:58,880 --> 00:44:02,640
+so
+
+1047
+00:44:00,000 --> 00:44:04,400
+that means such a correspondence doesn't
+
+1048
+00:44:02,640 --> 00:44:05,520
+exist
+
+1049
+00:44:04,400 --> 00:44:08,400
+so
+
+1050
+00:44:05,520 --> 00:44:11,280
+all possible languages are
+
+1051
+00:44:08,400 --> 00:44:11,280
+infinitely
+
+1052
+00:44:11,440 --> 00:44:15,359
+actually uncountably infinite
+
+1053
+00:44:14,000 --> 00:44:18,800
+yes
+
+1054
+00:44:15,359 --> 00:44:20,560
+they cannot be countable so their
+
+1055
+00:44:18,800 --> 00:44:23,440
+size
+
+1056
+00:44:20,560 --> 00:44:25,200
+is larger than the size of natural
+
+1057
+00:44:23,440 --> 00:44:27,200
+numbers
+
+1058
+00:44:25,200 --> 00:44:28,960
+okay
+
+1059
+00:44:27,200 --> 00:44:31,359
+but we know that
+
+1060
+00:44:28,960 --> 00:44:35,520
+for turing machine
+
+1061
+00:44:31,359 --> 00:44:36,720
+tuning machines are apparently countable
+
+1062
+00:44:35,520 --> 00:44:39,280
+why
+
+1063
+00:44:36,720 --> 00:44:41,839
+because turning machine
+
+1064
+00:44:39,280 --> 00:44:43,760
+has an encoding
+
+1065
+00:44:41,839 --> 00:44:45,440
+as a strings
+
+1066
+00:44:43,760 --> 00:44:48,079
+right
+
+1067
+00:44:45,440 --> 00:44:50,960
+if you think of all the programs you
+
+1068
+00:44:48,079 --> 00:44:54,160
+write your programs are
+
+1069
+00:44:50,960 --> 00:44:56,480
+you know encodings of some file
+
+1070
+00:44:54,160 --> 00:44:58,000
+so there must be encodings for tuning
+
+1071
+00:44:56,480 --> 00:45:00,960
+machines
+
+1072
+00:44:58,000 --> 00:45:04,119
+and as long as you fix
+
+1073
+00:45:00,960 --> 00:45:04,119
+the alphabet
+
+1074
+00:45:04,800 --> 00:45:09,920
+all strings
+
+1075
+00:45:07,280 --> 00:45:11,200
+that can be generated by that alphabet
+
+1076
+00:45:09,920 --> 00:45:14,319
+is countable
+
+1077
+00:45:11,200 --> 00:45:17,200
+you count from length one sorry length
+
+1078
+00:45:14,319 --> 00:45:19,359
+zero then one length two then three
+
+1079
+00:45:17,200 --> 00:45:21,599
+right
+
+1080
+00:45:19,359 --> 00:45:21,599
+so
+
+1081
+00:45:21,920 --> 00:45:28,000
+the number of languages are
+
+1082
+00:45:25,839 --> 00:45:30,720
+much actually much larger than the
+
+1083
+00:45:28,000 --> 00:45:32,400
+number of two machines
+
+1084
+00:45:30,720 --> 00:45:34,960
+so we know that
+
+1085
+00:45:32,400 --> 00:45:38,079
+there must be some languages
+
+1086
+00:45:34,960 --> 00:45:41,119
+are not touring recognizable even you
+
+1087
+00:45:38,079 --> 00:45:44,720
+consider all possible turing machines
+
+1088
+00:45:41,119 --> 00:45:48,160
+there are more language than that
+
+1089
+00:45:44,720 --> 00:45:51,200
+right so even each turing machine if you
+
+1090
+00:45:48,160 --> 00:45:52,000
+consider each string as a turing machine
+
+1091
+00:45:51,200 --> 00:45:55,040
+and
+
+1092
+00:45:52,000 --> 00:45:58,480
+recognize some language even recognize
+
+1093
+00:45:55,040 --> 00:45:58,480
+different language sorry
+
+1094
+00:45:58,960 --> 00:46:03,599
+even each
+
+1095
+00:46:00,560 --> 00:46:06,880
+individual string as a tuning machine
+
+1096
+00:46:03,599 --> 00:46:08,480
+mapped to an unique language the number
+
+1097
+00:46:06,880 --> 00:46:10,800
+of languages
+
+1098
+00:46:08,480 --> 00:46:14,000
+is still much larger
+
+1099
+00:46:10,800 --> 00:46:15,839
+so there are some languages that are not
+
+1100
+00:46:14,000 --> 00:46:18,160
+too recognizable
+
+1101
+00:46:15,839 --> 00:46:18,160
+okay
+
+1102
+00:46:18,400 --> 00:46:22,720
+so
+
+1103
+00:46:19,440 --> 00:46:22,720
+we've proved that
+
+1104
+00:46:23,440 --> 00:46:27,520
+by using
+
+1105
+00:46:25,760 --> 00:46:30,560
+size
+
+1106
+00:46:27,520 --> 00:46:33,440
+to prove serum 4.18
+
+1107
+00:46:30,560 --> 00:46:35,520
+that some languages are not purely
+
+1108
+00:46:33,440 --> 00:46:39,359
+recognizable
+
+1109
+00:46:35,520 --> 00:46:42,880
+because the numbers of languages
+
+1110
+00:46:39,359 --> 00:46:44,720
+the number of languages is much larger
+
+1111
+00:46:42,880 --> 00:46:46,319
+than the number of possible turing
+
+1112
+00:46:44,720 --> 00:46:48,000
+machines
+
+1113
+00:46:46,319 --> 00:46:50,800
+okay
+
+1114
+00:46:48,000 --> 00:46:50,800
+so that means
+
+1115
+00:46:52,160 --> 00:46:56,480
+there are
+
+1116
+00:46:53,920 --> 00:46:59,760
+something out there
+
+1117
+00:46:56,480 --> 00:46:59,760
+okay there are something
+
+1118
+00:47:00,800 --> 00:47:06,400
+but you know slightly different than
+
+1119
+00:47:03,599 --> 00:47:09,200
+what we've previously done
+
+1120
+00:47:06,400 --> 00:47:11,119
+we have an extent instance here we have
+
+1121
+00:47:09,200 --> 00:47:12,560
+an instance here we have an instance
+
+1122
+00:47:11,119 --> 00:47:14,400
+here right
+
+1123
+00:47:12,560 --> 00:47:16,400
+but now we know that okay there are
+
+1124
+00:47:14,400 --> 00:47:20,400
+something out there but
+
+1125
+00:47:16,400 --> 00:47:20,400
+can you give me an example
+
+1126
+00:47:20,800 --> 00:47:26,000
+yes we do so let's
+
+1127
+00:47:23,599 --> 00:47:28,400
+have an example here that we want to
+
+1128
+00:47:26,000 --> 00:47:28,400
+prove
+
+1129
+00:47:28,720 --> 00:47:31,920
+we want to prove
+
+1130
+00:47:30,319 --> 00:47:34,720
+an
+
+1131
+00:47:31,920 --> 00:47:34,720
+example of
+
+1132
+00:47:34,960 --> 00:47:41,440
+touring unrecognizable language
+
+1133
+00:47:38,480 --> 00:47:46,440
+so firstly let's define
+
+1134
+00:47:41,440 --> 00:47:46,440
+a language is code to unrecognizable
+
+1135
+00:47:46,960 --> 00:47:51,400
+if the language is
+
+1136
+00:47:54,640 --> 00:47:59,200
+if uh it is the complement
+
+1137
+00:47:57,599 --> 00:48:03,200
+of a
+
+1138
+00:47:59,200 --> 00:48:03,200
+turin recognizable language
+
+1139
+00:48:03,599 --> 00:48:07,200
+okay
+
+1140
+00:48:05,040 --> 00:48:09,359
+so let's say
+
+1141
+00:48:07,200 --> 00:48:10,720
+if there is a language a
+
+1142
+00:48:09,359 --> 00:48:15,280
+then we said
+
+1143
+00:48:10,720 --> 00:48:15,280
+a is called recognizable
+
+1144
+00:48:16,640 --> 00:48:22,400
+that means
+
+1145
+00:48:18,640 --> 00:48:26,400
+a bar is too recognizable
+
+1146
+00:48:22,400 --> 00:48:29,520
+because a is the complement of a bar and
+
+1147
+00:48:26,400 --> 00:48:31,200
+the a bar is too recognizable in this
+
+1148
+00:48:29,520 --> 00:48:32,559
+case we say
+
+1149
+00:48:31,200 --> 00:48:34,880
+a
+
+1150
+00:48:32,559 --> 00:48:38,240
+is too recognizable
+
+1151
+00:48:34,880 --> 00:48:40,800
+actually you will see code
+
+1152
+00:48:38,240 --> 00:48:40,800
+something
+
+1153
+00:48:41,440 --> 00:48:45,599
+in many definitions that means
+
+1154
+00:48:46,160 --> 00:48:50,240
+if a
+
+1155
+00:48:47,359 --> 00:48:52,160
+is co x
+
+1156
+00:48:50,240 --> 00:48:54,800
+that means a
+
+1157
+00:48:52,160 --> 00:48:57,520
+is a complement of
+
+1158
+00:48:54,800 --> 00:48:59,520
+some instance of x
+
+1159
+00:48:57,520 --> 00:49:02,480
+so in this case
+
+1160
+00:48:59,520 --> 00:49:05,839
+x is too recognizable so when we say
+
+1161
+00:49:02,480 --> 00:49:07,520
+language a is called recognizable that
+
+1162
+00:49:05,839 --> 00:49:10,160
+means
+
+1163
+00:49:07,520 --> 00:49:13,359
+a bar is too recognizable
+
+1164
+00:49:10,160 --> 00:49:15,599
+and a is the complement of a bar so we
+
+1165
+00:49:13,359 --> 00:49:19,119
+call
+
+1166
+00:49:15,599 --> 00:49:19,920
+a is code to recognizable
+
+1167
+00:49:19,119 --> 00:49:24,160
+so
+
+1168
+00:49:19,920 --> 00:49:25,760
+have a have this definition for
+
+1169
+00:49:24,160 --> 00:49:30,160
+uh
+
+1170
+00:49:25,760 --> 00:49:31,040
+first to describe theorem 4.22 easier
+
+1171
+00:49:30,160 --> 00:49:35,040
+that
+
+1172
+00:49:31,040 --> 00:49:39,760
+let's say a language is decidable
+
+1173
+00:49:35,040 --> 00:49:42,640
+if and only if okay if and only
+
+1174
+00:49:39,760 --> 00:49:45,599
+the language is tuned recognizable and
+
+1175
+00:49:42,640 --> 00:49:47,440
+culturally recognizable
+
+1176
+00:49:45,599 --> 00:49:48,559
+okay
+
+1177
+00:49:47,440 --> 00:49:50,960
+so
+
+1178
+00:49:48,559 --> 00:49:54,160
+let's prove the theorem first let's
+
+1179
+00:49:50,960 --> 00:49:54,160
+prove the theorem first
+
+1180
+00:49:55,119 --> 00:49:58,800
+if
+
+1181
+00:49:56,720 --> 00:50:01,680
+a language a
+
+1182
+00:49:58,800 --> 00:50:01,680
+a language a
+
+1183
+00:50:01,920 --> 00:50:05,599
+is too recognizable
+
+1184
+00:50:10,079 --> 00:50:14,240
+if language a is too recognizable
+
+1185
+00:50:17,440 --> 00:50:19,760
+then
+
+1186
+00:50:20,079 --> 00:50:22,240
+and
+
+1187
+00:50:23,599 --> 00:50:26,599
+sorry
+
+1188
+00:50:34,610 --> 00:50:37,800
+[Applause]
+
+1189
+00:50:40,880 --> 00:50:45,280
+if language a is decidable
+
+1190
+00:50:48,559 --> 00:50:52,880
+if language a is decidable
+
+1191
+00:50:53,359 --> 00:50:58,720
+then
+
+1192
+00:50:55,680 --> 00:51:00,640
+there is a turing machine m
+
+1193
+00:50:58,720 --> 00:51:01,680
+as a decider
+
+1194
+00:51:00,640 --> 00:51:03,440
+right
+
+1195
+00:51:01,680 --> 00:51:05,359
+and the two machine
+
+1196
+00:51:03,440 --> 00:51:08,400
+m
+
+1197
+00:51:05,359 --> 00:51:11,440
+since it is a decider so it is the
+
+1198
+00:51:08,400 --> 00:51:14,960
+recognizer so firstly a is to
+
+1199
+00:51:11,440 --> 00:51:14,960
+recognizable right
+
+1200
+00:51:15,200 --> 00:51:21,119
+and since m is a decider
+
+1201
+00:51:17,520 --> 00:51:24,000
+you just need to switch the
+
+1202
+00:51:21,119 --> 00:51:27,520
+accept state
+
+1203
+00:51:24,000 --> 00:51:27,520
+and reject state
+
+1204
+00:51:28,000 --> 00:51:34,319
+you make the decider for a bar
+
+1205
+00:51:32,319 --> 00:51:35,760
+right
+
+1206
+00:51:34,319 --> 00:51:39,760
+so
+
+1207
+00:51:35,760 --> 00:51:41,839
+the decider n prime for a bar
+
+1208
+00:51:39,760 --> 00:51:42,559
+is the recognizer
+
+1209
+00:51:41,839 --> 00:51:45,599
+of
+
+1210
+00:51:42,559 --> 00:51:48,400
+the complement of a
+
+1211
+00:51:45,599 --> 00:51:52,160
+so since a is also
+
+1212
+00:51:48,400 --> 00:51:54,319
+since a bar is a recognizable a is
+
+1213
+00:51:52,160 --> 00:51:57,200
+called recognizable
+
+1214
+00:51:54,319 --> 00:51:59,599
+so we prove this direction
+
+1215
+00:51:57,200 --> 00:52:00,960
+if a language is designable that's
+
+1216
+00:51:59,599 --> 00:52:04,079
+decider
+
+1217
+00:52:00,960 --> 00:52:07,280
+you can directly use it as recognizer
+
+1218
+00:52:04,079 --> 00:52:07,280
+and you with
+
+1219
+00:52:07,760 --> 00:52:14,800
+a small modification you can use it as
+
+1220
+00:52:11,760 --> 00:52:17,440
+the recognizer of its complement
+
+1221
+00:52:14,800 --> 00:52:19,839
+so if the language's complement is
+
+1222
+00:52:17,440 --> 00:52:22,640
+recognizable that language is called
+
+1223
+00:52:19,839 --> 00:52:22,640
+recognizable
+
+1224
+00:52:23,920 --> 00:52:27,680
+okay
+
+1225
+00:52:25,359 --> 00:52:27,680
+and
+
+1226
+00:52:28,079 --> 00:52:33,680
+for the reverse direction if a language
+
+1227
+00:52:30,720 --> 00:52:36,400
+is too recognizable
+
+1228
+00:52:33,680 --> 00:52:38,880
+then you will have a machine as its
+
+1229
+00:52:36,400 --> 00:52:40,480
+recognizer
+
+1230
+00:52:38,880 --> 00:52:43,760
+and
+
+1231
+00:52:40,480 --> 00:52:46,800
+code to recognizable that means
+
+1232
+00:52:43,760 --> 00:52:49,680
+the complement of that language
+
+1233
+00:52:46,800 --> 00:52:50,720
+is recognizable so you have a recognizer
+
+1234
+00:52:49,680 --> 00:52:54,160
+for
+
+1235
+00:52:50,720 --> 00:52:54,160
+the complement right
+
+1236
+00:52:56,640 --> 00:52:59,680
+and then
+
+1237
+00:52:57,839 --> 00:53:01,440
+we can use
+
+1238
+00:52:59,680 --> 00:53:03,280
+these two
+
+1239
+00:53:01,440 --> 00:53:05,680
+turing machine
+
+1240
+00:53:03,280 --> 00:53:05,680
+because
+
+1241
+00:53:05,839 --> 00:53:10,240
+the two language here is all possible
+
+1242
+00:53:08,319 --> 00:53:13,119
+strings right
+
+1243
+00:53:10,240 --> 00:53:16,400
+then we can use the two tuning machine
+
+1244
+00:53:13,119 --> 00:53:18,640
+to make the decider for a
+
+1245
+00:53:16,400 --> 00:53:19,839
+how do we do that we can do that this
+
+1246
+00:53:18,640 --> 00:53:24,079
+way
+
+1247
+00:53:19,839 --> 00:53:25,520
+we construct m on all possible strings
+
+1248
+00:53:24,079 --> 00:53:30,720
+we run
+
+1249
+00:53:25,520 --> 00:53:32,079
+m1 and m2 which is m a and m a bar as i
+
+1250
+00:53:30,720 --> 00:53:33,359
+have on the
+
+1251
+00:53:32,079 --> 00:53:34,960
+slide
+
+1252
+00:53:33,359 --> 00:53:38,079
+in parallel
+
+1253
+00:53:34,960 --> 00:53:40,000
+but what that means by in parallel
+
+1254
+00:53:38,079 --> 00:53:45,119
+you cannot do it like
+
+1255
+00:53:40,000 --> 00:53:46,160
+you put w in a to see the answer then
+
+1256
+00:53:45,119 --> 00:53:48,240
+in
+
+1257
+00:53:46,160 --> 00:53:50,559
+m a bar to see the answer you cannot do
+
+1258
+00:53:48,240 --> 00:53:52,559
+that because one of them may not give
+
+1259
+00:53:50,559 --> 00:53:54,000
+you an answer because they are only
+
+1260
+00:53:52,559 --> 00:53:56,640
+recognizer
+
+1261
+00:53:54,000 --> 00:53:59,760
+so you do that in parallel by parallel
+
+1262
+00:53:56,640 --> 00:54:02,400
+means we do that alternatively
+
+1263
+00:53:59,760 --> 00:54:02,400
+so we
+
+1264
+00:54:02,559 --> 00:54:08,800
+simulate m a and the n a prime
+
+1265
+00:54:06,240 --> 00:54:10,319
+together but by together that we have a
+
+1266
+00:54:08,800 --> 00:54:13,520
+machine
+
+1267
+00:54:10,319 --> 00:54:15,760
+run one step of ma simulate one step and
+
+1268
+00:54:13,520 --> 00:54:18,160
+the simulate one step and simulate one
+
+1269
+00:54:15,760 --> 00:54:19,440
+step simulate one state
+
+1270
+00:54:18,160 --> 00:54:21,920
+so
+
+1271
+00:54:19,440 --> 00:54:24,640
+every machine goes one step goes one
+
+1272
+00:54:21,920 --> 00:54:26,319
+step something like that then eventually
+
+1273
+00:54:24,640 --> 00:54:28,160
+one of them will
+
+1274
+00:54:26,319 --> 00:54:29,040
+accept the string
+
+1275
+00:54:28,160 --> 00:54:33,200
+right
+
+1276
+00:54:29,040 --> 00:54:36,319
+if m a or m one accepts you know that
+
+1277
+00:54:33,200 --> 00:54:39,280
+w is in a
+
+1278
+00:54:36,319 --> 00:54:43,280
+then this machine accepts
+
+1279
+00:54:39,280 --> 00:54:46,559
+if m2 which is a bar here accepts that
+
+1280
+00:54:43,280 --> 00:54:47,920
+means w is in a bar
+
+1281
+00:54:46,559 --> 00:54:49,280
+so we
+
+1282
+00:54:47,920 --> 00:54:50,880
+reject
+
+1283
+00:54:49,280 --> 00:54:54,240
+and as i said
+
+1284
+00:54:50,880 --> 00:54:56,400
+a the union of a a buys all possible
+
+1285
+00:54:54,240 --> 00:54:58,880
+strings so eventually
+
+1286
+00:54:56,400 --> 00:55:00,720
+one of the process will stop and give
+
+1287
+00:54:58,880 --> 00:55:04,079
+you accept
+
+1288
+00:55:00,720 --> 00:55:07,359
+then we can construct our recognizer
+
+1289
+00:55:04,079 --> 00:55:09,599
+sorry decider for a this way
+
+1290
+00:55:07,359 --> 00:55:11,119
+okay
+
+1291
+00:55:09,599 --> 00:55:13,599
+so after
+
+1292
+00:55:11,119 --> 00:55:16,079
+we have this we can
+
+1293
+00:55:13,599 --> 00:55:18,960
+have a
+
+1294
+00:55:16,079 --> 00:55:18,960
+we can have a
+
+1295
+00:55:19,119 --> 00:55:23,760
+concrete example
+
+1296
+00:55:20,400 --> 00:55:25,280
+outside to recognizable okay that would
+
+1297
+00:55:23,760 --> 00:55:27,839
+be
+
+1298
+00:55:25,280 --> 00:55:29,680
+atm bar
+
+1299
+00:55:27,839 --> 00:55:30,640
+okay atm bar
+
+1300
+00:55:29,680 --> 00:55:34,319
+why
+
+1301
+00:55:30,640 --> 00:55:35,520
+because we know that atm
+
+1302
+00:55:34,319 --> 00:55:37,680
+is
+
+1303
+00:55:35,520 --> 00:55:40,240
+turin recognizable
+
+1304
+00:55:37,680 --> 00:55:44,079
+we already proved that right
+
+1305
+00:55:40,240 --> 00:55:46,640
+so if atm bar
+
+1306
+00:55:44,079 --> 00:55:49,920
+is to recognizable 2
+
+1307
+00:55:46,640 --> 00:55:52,880
+then atm would be decidable according to
+
+1308
+00:55:49,920 --> 00:55:54,079
+jiren 4.22 right
+
+1309
+00:55:52,880 --> 00:55:55,760
+so
+
+1310
+00:55:54,079 --> 00:55:58,480
+atm bar
+
+1311
+00:55:55,760 --> 00:55:58,480
+must be
+
+1312
+00:55:58,720 --> 00:56:03,200
+during unrecognizable or let's say must
+
+1313
+00:56:01,680 --> 00:56:05,359
+not be
+
+1314
+00:56:03,200 --> 00:56:06,960
+turin recognizable
+
+1315
+00:56:05,359 --> 00:56:08,240
+according to
+
+1316
+00:56:06,960 --> 00:56:10,559
+theorem
+
+1317
+00:56:08,240 --> 00:56:11,599
+4.22
+
+1318
+00:56:10,559 --> 00:56:14,160
+okay
+
+1319
+00:56:11,599 --> 00:56:16,799
+so now we have a concrete example
+
+1320
+00:56:14,160 --> 00:56:19,760
+outside of recognizable that
+
+1321
+00:56:16,799 --> 00:56:19,760
+atm bar
+
+1322
+00:56:21,359 --> 00:56:28,000
+because we already proved atn as
+
+1323
+00:56:24,319 --> 00:56:29,520
+recognizable but undecidable so atm bar
+
+1324
+00:56:28,000 --> 00:56:30,880
+must
+
+1325
+00:56:29,520 --> 00:56:33,119
+not be
+
+1326
+00:56:30,880 --> 00:56:34,960
+recognizable
+
+1327
+00:56:33,119 --> 00:56:37,119
+okay
+
+1328
+00:56:34,960 --> 00:56:41,040
+okay we can have another concrete
+
+1329
+00:56:37,119 --> 00:56:41,040
+example here that's defined that
+
+1330
+00:56:42,240 --> 00:56:45,240
+we
+
+1331
+00:56:45,760 --> 00:56:50,799
+we enumerate all zero one string this
+
+1332
+00:56:48,480 --> 00:56:52,400
+way okay let's just construct another
+
+1333
+00:56:50,799 --> 00:56:55,599
+language here
+
+1334
+00:56:52,400 --> 00:56:57,839
+so let's say if we have alphabet
+
+1335
+00:56:55,599 --> 00:57:00,400
+zero
+
+1336
+00:56:57,839 --> 00:57:01,200
+we have alphabet zero one
+
+1337
+00:57:00,400 --> 00:57:03,520
+so
+
+1338
+00:57:01,200 --> 00:57:06,000
+we make the first one
+
+1339
+00:57:03,520 --> 00:57:08,079
+we enumerate all possible strings and
+
+1340
+00:57:06,000 --> 00:57:10,319
+the first one is empty
+
+1341
+00:57:08,079 --> 00:57:12,640
+empty string the second one is zero
+
+1342
+00:57:10,319 --> 00:57:15,520
+third one is one etc
+
+1343
+00:57:12,640 --> 00:57:17,119
+then you will find an interesting
+
+1344
+00:57:15,520 --> 00:57:18,799
+uh
+
+1345
+00:57:17,119 --> 00:57:22,960
+interesting
+
+1346
+00:57:18,799 --> 00:57:24,319
+relationship here that the ninth string
+
+1347
+00:57:22,960 --> 00:57:25,200
+is
+
+1348
+00:57:24,319 --> 00:57:26,799
+one
+
+1349
+00:57:25,200 --> 00:57:29,119
+zero zero
+
+1350
+00:57:26,799 --> 00:57:30,160
+one which is nine
+
+1351
+00:57:29,119 --> 00:57:30,960
+okay
+
+1352
+00:57:30,160 --> 00:57:33,359
+so
+
+1353
+00:57:30,960 --> 00:57:35,040
+like this one the six strings
+
+1354
+00:57:33,359 --> 00:57:36,559
+you put one
+
+1355
+00:57:35,040 --> 00:57:39,280
+in front of
+
+1356
+00:57:36,559 --> 00:57:40,799
+the string here one one zero that will
+
+1357
+00:57:39,280 --> 00:57:42,960
+be 6.
+
+1358
+00:57:40,799 --> 00:57:45,440
+so you can
+
+1359
+00:57:42,960 --> 00:57:49,760
+directly like
+
+1360
+00:57:45,440 --> 00:57:52,319
+written down all possible for example
+
+1361
+00:57:49,760 --> 00:57:52,319
+this one
+
+1362
+00:57:52,880 --> 00:57:56,960
+you can have the binary
+
+1363
+00:57:55,520 --> 00:57:58,240
+representation
+
+1364
+00:57:56,960 --> 00:58:00,000
+here
+
+1365
+00:57:58,240 --> 00:58:02,799
+and
+
+1366
+00:58:00,000 --> 00:58:05,359
+put one here
+
+1367
+00:58:02,799 --> 00:58:08,240
+oh sorry and remove the first one then
+
+1368
+00:58:05,359 --> 00:58:10,240
+you know that binary string okay it's
+
+1369
+00:58:08,240 --> 00:58:12,640
+very easy to
+
+1370
+00:58:10,240 --> 00:58:14,720
+have that
+
+1371
+00:58:12,640 --> 00:58:16,640
+so
+
+1372
+00:58:14,720 --> 00:58:19,280
+we can say that
+
+1373
+00:58:16,640 --> 00:58:21,920
+that's defined
+
+1374
+00:58:19,280 --> 00:58:25,520
+let's define a language you like we
+
+1375
+00:58:21,920 --> 00:58:27,280
+consider every binance binary string a
+
+1376
+00:58:25,520 --> 00:58:29,680
+turing machine
+
+1377
+00:58:27,280 --> 00:58:32,640
+of course some of them are evaluating
+
+1378
+00:58:29,680 --> 00:58:35,119
+machine so we consider that kind of
+
+1379
+00:58:32,640 --> 00:58:37,839
+invalid turing machine accepts no
+
+1380
+00:58:35,119 --> 00:58:40,799
+strings okay
+
+1381
+00:58:37,839 --> 00:58:43,920
+but main but there will be some binary
+
+1382
+00:58:40,799 --> 00:58:46,960
+strings representing valid turing
+
+1383
+00:58:43,920 --> 00:58:51,599
+machines legal tuning machines
+
+1384
+00:58:46,960 --> 00:58:53,760
+so we define that there's a language ld
+
+1385
+00:58:51,599 --> 00:58:55,839
+for those wi
+
+1386
+00:58:53,760 --> 00:58:58,640
+considered as
+
+1387
+00:58:55,839 --> 00:59:01,359
+turing string turing machine
+
+1388
+00:58:58,640 --> 00:59:02,319
+does not accept
+
+1389
+00:59:01,359 --> 00:59:05,440
+the
+
+1390
+00:59:02,319 --> 00:59:09,680
+itself as input
+
+1391
+00:59:05,440 --> 00:59:12,720
+if wi as a tune machine does not accept
+
+1392
+00:59:09,680 --> 00:59:14,079
+itself as to as input
+
+1393
+00:59:12,720 --> 00:59:17,200
+we say that
+
+1394
+00:59:14,079 --> 00:59:19,359
+the language is in the string is in this
+
+1395
+00:59:17,200 --> 00:59:23,200
+language
+
+1396
+00:59:19,359 --> 00:59:23,200
+a string is in this language
+
+1397
+00:59:25,119 --> 00:59:29,440
+by defining
+
+1398
+00:59:26,559 --> 00:59:30,559
+ld this way we can prove the theorem
+
+1399
+00:59:29,440 --> 00:59:33,520
+that
+
+1400
+00:59:30,559 --> 00:59:38,960
+there is no tier machine
+
+1401
+00:59:33,520 --> 00:59:38,960
+accepts this particular language
+
+1402
+00:59:39,520 --> 00:59:43,839
+but except here is recognized
+
+1403
+00:59:45,280 --> 00:59:48,480
+okay
+
+1404
+00:59:46,400 --> 00:59:49,520
+there is no transmission recognize ld
+
+1405
+00:59:48,480 --> 00:59:52,319
+why
+
+1406
+00:59:49,520 --> 00:59:54,880
+because you can simply
+
+1407
+00:59:52,319 --> 00:59:55,760
+have a diagonalization method to prove
+
+1408
+00:59:54,880 --> 00:59:58,079
+it
+
+1409
+00:59:55,760 --> 00:59:58,079
+like
+
+1410
+00:59:58,640 --> 01:00:03,839
+each binary string considered as a
+
+1411
+01:00:01,040 --> 01:00:06,880
+machine and compared to
+
+1412
+01:00:03,839 --> 01:00:10,960
+its own as input
+
+1413
+01:00:06,880 --> 01:00:12,240
+if let's say machine one accept
+
+1414
+01:00:10,960 --> 01:00:15,440
+string one
+
+1415
+01:00:12,240 --> 01:00:16,240
+we have one here otherwise we have zero
+
+1416
+01:00:15,440 --> 01:00:20,880
+here
+
+1417
+01:00:16,240 --> 01:00:23,520
+then imagine that we have zero one as
+
+1418
+01:00:20,880 --> 01:00:26,319
+zero not except
+
+1419
+01:00:23,520 --> 01:00:27,520
+one except
+
+1420
+01:00:26,319 --> 01:00:29,520
+here
+
+1421
+01:00:27,520 --> 01:00:30,960
+then collect
+
+1422
+01:00:29,520 --> 01:00:33,280
+the diagonal
+
+1423
+01:00:30,960 --> 01:00:34,160
+diagonal here
+
+1424
+01:00:33,280 --> 01:00:38,240
+and
+
+1425
+01:00:34,160 --> 01:00:42,720
+put 0 into ld that's the definition of
+
+1426
+01:00:38,240 --> 01:00:45,119
+rld so in this case rld would have
+
+1427
+01:00:42,720 --> 01:00:49,839
+w1 because 0 here
+
+1428
+01:00:45,119 --> 01:00:50,640
+and no w2 no w3 w4 because 0 here
+
+1429
+01:00:49,839 --> 01:00:52,640
+and
+
+1430
+01:00:50,640 --> 01:00:54,640
+etc
+
+1431
+01:00:52,640 --> 01:00:57,280
+and you will easily
+
+1432
+01:00:54,640 --> 01:00:58,799
+conclude that there is no machine
+
+1433
+01:00:57,280 --> 01:01:01,680
+there's no machine
+
+1434
+01:00:58,799 --> 01:01:05,200
+recognize this language why
+
+1435
+01:01:01,680 --> 01:01:07,440
+because for this language
+
+1436
+01:01:05,200 --> 01:01:10,720
+you can find
+
+1437
+01:01:07,440 --> 01:01:12,400
+there uh let's say if you say that
+
+1438
+01:01:10,720 --> 01:01:16,720
+the i
+
+1439
+01:01:12,400 --> 01:01:19,520
+the ice machine let's say this one
+
+1440
+01:01:16,720 --> 01:01:22,079
+the ice machine
+
+1441
+01:01:19,520 --> 01:01:24,960
+recognize this language
+
+1442
+01:01:22,079 --> 01:01:26,799
+i would say you are wrong why
+
+1443
+01:01:24,960 --> 01:01:28,319
+because you just need to
+
+1444
+01:01:26,799 --> 01:01:31,040
+check the i
+
+1445
+01:01:28,319 --> 01:01:31,040
+string here
+
+1446
+01:01:31,119 --> 01:01:35,119
+if this machine
+
+1447
+01:01:33,280 --> 01:01:36,960
+wi
+
+1448
+01:01:35,119 --> 01:01:38,480
+accepts
+
+1449
+01:01:36,960 --> 01:01:42,079
+wi
+
+1450
+01:01:38,480 --> 01:01:43,920
+then wi will not in the language
+
+1451
+01:01:42,079 --> 01:01:47,520
+so it's not
+
+1452
+01:01:43,920 --> 01:01:49,280
+recognized by the by the ice machine
+
+1453
+01:01:47,520 --> 01:01:50,400
+on the other hand
+
+1454
+01:01:49,280 --> 01:01:52,880
+if
+
+1455
+01:01:50,400 --> 01:01:59,920
+the if machine
+
+1456
+01:01:52,880 --> 01:02:03,039
+does not accept wi then wi will be in ld
+
+1457
+01:01:59,920 --> 01:02:05,440
+again so if machine
+
+1458
+01:02:03,039 --> 01:02:06,400
+does not recognize aod
+
+1459
+01:02:05,440 --> 01:02:09,839
+so
+
+1460
+01:02:06,400 --> 01:02:12,160
+by define lt
+
+1461
+01:02:09,839 --> 01:02:14,559
+this way
+
+1462
+01:02:12,160 --> 01:02:16,559
+we define a language
+
+1463
+01:02:14,559 --> 01:02:20,280
+recognized by
+
+1464
+01:02:16,559 --> 01:02:20,280
+no turing machines
+
+1465
+01:02:20,799 --> 01:02:25,440
+so
+
+1466
+01:02:21,680 --> 01:02:26,960
+led is not too recognizable
+
+1467
+01:02:25,440 --> 01:02:29,599
+so in this way
+
+1468
+01:02:26,960 --> 01:02:31,839
+we have two examples
+
+1469
+01:02:29,599 --> 01:02:36,240
+outside of
+
+1470
+01:02:31,839 --> 01:02:38,160
+two recognizable one is what a t
+
+1471
+01:02:36,240 --> 01:02:41,039
+m bar
+
+1472
+01:02:38,160 --> 01:02:42,160
+and the other one is ld
+
+1473
+01:02:41,039 --> 01:02:44,640
+okay
+
+1474
+01:02:42,160 --> 01:02:48,839
+so now we have two concrete example
+
+1475
+01:02:44,640 --> 01:02:48,839
+outside of two recognizable
+

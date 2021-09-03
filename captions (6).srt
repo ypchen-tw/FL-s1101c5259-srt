@@ -1,0 +1,3596 @@
+1
+00:00:01,199 --> 00:00:05,279
+okay we have introduced
+
+2
+00:00:03,199 --> 00:00:07,520
+uh non-different music final automata
+
+3
+00:00:05,279 --> 00:00:11,360
+didn't miss the final automata
+
+4
+00:00:07,520 --> 00:00:13,840
+uh in a way we are trying to use
+
+5
+00:00:11,360 --> 00:00:14,920
+computational models or machines to
+
+6
+00:00:13,840 --> 00:00:18,320
+specify
+
+7
+00:00:14,920 --> 00:00:21,680
+languages and don't forget that
+
+8
+00:00:18,320 --> 00:00:24,480
+languages are problems and the strings
+
+9
+00:00:21,680 --> 00:00:25,359
+in the language is the problem instances
+
+10
+00:00:24,480 --> 00:00:28,640
+of that
+
+11
+00:00:25,359 --> 00:00:31,519
+of those problems and
+
+12
+00:00:28,640 --> 00:00:32,399
+using a machine to indicate languages is
+
+13
+00:00:31,519 --> 00:00:36,320
+like
+
+14
+00:00:32,399 --> 00:00:39,360
+we have a machine here and you ask
+
+15
+00:00:36,320 --> 00:00:44,320
+it to process some string right
+
+16
+00:00:39,360 --> 00:00:47,600
+it will either accept or not and
+
+17
+00:00:44,320 --> 00:00:50,239
+when it accept the string and all the
+
+18
+00:00:47,600 --> 00:00:53,120
+string can be accepted by the machine
+
+19
+00:00:50,239 --> 00:00:55,120
+we use the notation error of m to
+
+20
+00:00:53,120 --> 00:00:58,559
+indicate that set
+
+21
+00:00:55,120 --> 00:01:03,600
+right that means the machine in
+
+22
+00:00:58,559 --> 00:01:07,760
+our concept the machine can
+
+23
+00:01:03,600 --> 00:01:11,520
+solve this particular problem
+
+24
+00:01:07,760 --> 00:01:14,799
+which is represented by the language of
+
+25
+00:01:11,520 --> 00:01:18,720
+that particular machine
+
+26
+00:01:14,799 --> 00:01:21,680
+so that's why we
+
+27
+00:01:18,720 --> 00:01:23,360
+use the computational model to define
+
+28
+00:01:21,680 --> 00:01:26,479
+computation
+
+29
+00:01:23,360 --> 00:01:30,159
+and to reflect which kind of
+
+30
+00:01:26,479 --> 00:01:33,680
+language can be handled by the machine
+
+31
+00:01:30,159 --> 00:01:37,040
+so previously we named the language
+
+32
+00:01:33,680 --> 00:01:38,960
+can be handled by either
+
+33
+00:01:37,040 --> 00:01:40,720
+deterministic final automata or
+
+34
+00:01:38,960 --> 00:01:41,759
+equivalent non-deterministic final
+
+35
+00:01:40,720 --> 00:01:44,880
+automata
+
+36
+00:01:41,759 --> 00:01:47,920
+we name that language regular language
+
+37
+00:01:44,880 --> 00:01:52,000
+okay so in the previous
+
+38
+00:01:47,920 --> 00:01:55,680
+sections the regular
+
+39
+00:01:52,000 --> 00:01:59,759
+comes from nowhere actually but
+
+40
+00:01:55,680 --> 00:02:02,560
+here we think of uh we think of the
+
+41
+00:01:59,759 --> 00:02:02,960
+language another way okay we not think
+
+42
+00:02:02,560 --> 00:02:06,799
+of
+
+43
+00:02:02,960 --> 00:02:10,239
+we uh try to express the language
+
+44
+00:02:06,799 --> 00:02:11,200
+in another way see in previously we
+
+45
+00:02:10,239 --> 00:02:14,480
+defined
+
+46
+00:02:11,200 --> 00:02:15,280
+a dfa and actually what we want to
+
+47
+00:02:14,480 --> 00:02:19,120
+discuss
+
+48
+00:02:15,280 --> 00:02:23,120
+is the language of that machine
+
+49
+00:02:19,120 --> 00:02:24,800
+so give you a dfa you exactly have the
+
+50
+00:02:23,120 --> 00:02:27,920
+details of that machine
+
+51
+00:02:24,800 --> 00:02:30,000
+you have the source code but what this
+
+52
+00:02:27,920 --> 00:02:32,400
+machine can do you actually have no
+
+53
+00:02:30,000 --> 00:02:32,400
+idea
+
+54
+00:02:34,080 --> 00:02:41,280
+however we can discuss the language
+
+55
+00:02:37,599 --> 00:02:45,440
+of that machine in that indirect way
+
+56
+00:02:41,280 --> 00:02:45,440
+so in this section we try to
+
+57
+00:02:47,200 --> 00:02:54,959
+design expressions
+
+58
+00:02:50,879 --> 00:02:58,640
+to directly express
+
+59
+00:02:54,959 --> 00:03:02,159
+languages okay so
+
+60
+00:02:58,640 --> 00:03:05,599
+what we want to do here is called
+
+61
+00:03:02,159 --> 00:03:10,239
+is called regular expressions
+
+62
+00:03:05,599 --> 00:03:13,280
+okay and as i said we want to
+
+63
+00:03:10,239 --> 00:03:16,640
+design some way
+
+64
+00:03:13,280 --> 00:03:20,319
+to indicate to specify
+
+65
+00:03:16,640 --> 00:03:20,319
+some language directly
+
+66
+00:03:21,040 --> 00:03:30,000
+so recall something
+
+67
+00:03:25,680 --> 00:03:30,000
+is a regular expression if
+
+68
+00:03:31,440 --> 00:03:34,560
+it goes with
+
+69
+00:03:35,680 --> 00:03:42,480
+the definition here okay
+
+70
+00:03:39,680 --> 00:03:42,480
+and before
+
+71
+00:03:43,120 --> 00:03:50,560
+we define a language we need to have a
+
+72
+00:03:46,879 --> 00:03:53,840
+alphabet first okay we need to have
+
+73
+00:03:50,560 --> 00:03:54,799
+alphabet first so let's say if the
+
+74
+00:03:53,840 --> 00:03:58,319
+alphabet
+
+75
+00:03:54,799 --> 00:04:01,680
+is like let's say zero
+
+76
+00:03:58,319 --> 00:04:04,480
+and one okay
+
+77
+00:04:01,680 --> 00:04:04,959
+so don't forget that zero and one here
+
+78
+00:04:04,480 --> 00:04:07,200
+is not
+
+79
+00:04:04,959 --> 00:04:08,879
+integers zero and one it's just you know
+
+80
+00:04:07,200 --> 00:04:12,799
+we use zero the symbol and
+
+81
+00:04:08,879 --> 00:04:18,239
+one symbol to to to specify two symbols
+
+82
+00:04:12,799 --> 00:04:18,239
+okay zero and one here we define
+
+83
+00:04:18,479 --> 00:04:27,680
+regular expressions for this alphabet
+
+84
+00:04:23,360 --> 00:04:31,040
+and pay attention here
+
+85
+00:04:27,680 --> 00:04:35,759
+every symbol every symbol
+
+86
+00:04:31,040 --> 00:04:39,919
+in this alphabet we make it
+
+87
+00:04:35,759 --> 00:04:43,440
+a regular expression
+
+88
+00:04:39,919 --> 00:04:46,560
+okay so again that's zero
+
+89
+00:04:43,440 --> 00:04:49,600
+you might mistake it with
+
+90
+00:04:46,560 --> 00:04:52,400
+integer zero as i said it's not it's
+
+91
+00:04:49,600 --> 00:04:55,600
+just a symbol
+
+92
+00:04:52,400 --> 00:04:58,639
+the simple zero here we
+
+93
+00:04:55,600 --> 00:05:01,600
+make it a regular expression
+
+94
+00:04:58,639 --> 00:05:02,639
+that means we overload the meaning of
+
+95
+00:05:01,600 --> 00:05:06,560
+that symbol
+
+96
+00:05:02,639 --> 00:05:09,039
+again okay so in this case we use
+
+97
+00:05:06,560 --> 00:05:09,039
+0
+
+98
+00:05:09,600 --> 00:05:17,039
+as a regular expression
+
+99
+00:05:13,759 --> 00:05:19,280
+so the 0 here is not integer 0 it's not
+
+100
+00:05:17,039 --> 00:05:21,759
+the symbol 0 in the alphabet
+
+101
+00:05:19,280 --> 00:05:21,759
+it's a
+
+102
+00:05:22,320 --> 00:05:27,600
+regular expression
+
+103
+00:05:25,759 --> 00:05:29,120
+and the purpose to have regular
+
+104
+00:05:27,600 --> 00:05:32,960
+expression is to
+
+105
+00:05:29,120 --> 00:05:34,560
+express language right
+
+106
+00:05:32,960 --> 00:05:36,880
+always remember that a regular
+
+107
+00:05:34,560 --> 00:05:40,000
+expression represents
+
+108
+00:05:36,880 --> 00:05:43,600
+a language which is a set of strings
+
+109
+00:05:40,000 --> 00:05:47,840
+okay so when zero here
+
+110
+00:05:43,600 --> 00:05:51,759
+as an as a regular expression
+
+111
+00:05:47,840 --> 00:05:56,160
+what language it represents
+
+112
+00:05:51,759 --> 00:06:00,000
+we define that when we use a symbol
+
+113
+00:05:56,160 --> 00:06:04,960
+here from some alphabet
+
+114
+00:06:00,000 --> 00:06:08,880
+we make the symbol regular expression
+
+115
+00:06:04,960 --> 00:06:12,319
+we make the symbol regular expression
+
+116
+00:06:08,880 --> 00:06:17,520
+the regular expression
+
+117
+00:06:12,319 --> 00:06:17,520
+indicates specifies the language
+
+118
+00:06:18,000 --> 00:06:22,560
+of one string language is a set of
+
+119
+00:06:22,000 --> 00:06:26,639
+strings
+
+120
+00:06:22,560 --> 00:06:29,840
+right and the language specified
+
+121
+00:06:26,639 --> 00:06:34,080
+for this example the language specified
+
+122
+00:06:29,840 --> 00:06:37,840
+by zero as the regular expression
+
+123
+00:06:34,080 --> 00:06:41,759
+is a set of string containing
+
+124
+00:06:37,840 --> 00:06:44,479
+only one string which one
+
+125
+00:06:41,759 --> 00:06:44,479
+the one
+
+126
+00:06:44,880 --> 00:06:49,840
+contains only one simple
+
+127
+00:06:50,319 --> 00:06:52,560
+of
+
+128
+00:06:53,520 --> 00:07:02,160
+the alphabet which is this
+
+129
+00:06:57,919 --> 00:07:07,759
+regular expression okay so
+
+130
+00:07:02,160 --> 00:07:07,759
+when we write this way the zero here
+
+131
+00:07:07,919 --> 00:07:11,520
+it is actually a string
+
+132
+00:07:11,680 --> 00:07:20,319
+a string of length one and that
+
+133
+00:07:15,039 --> 00:07:20,319
+one symbol is the symbol zero
+
+134
+00:07:20,560 --> 00:07:25,759
+okay well in for some reason it's pretty
+
+135
+00:07:24,160 --> 00:07:30,720
+confusing for many people
+
+136
+00:07:25,759 --> 00:07:34,880
+but you need to understand that
+
+137
+00:07:30,720 --> 00:07:39,280
+in addition to integer 0 i use here
+
+138
+00:07:34,880 --> 00:07:43,280
+there are actually three meanings
+
+139
+00:07:39,280 --> 00:07:44,720
+or or you can think of it as the data
+
+140
+00:07:43,280 --> 00:07:47,919
+type
+
+141
+00:07:44,720 --> 00:07:51,280
+in like java c plus plus
+
+142
+00:07:47,919 --> 00:07:54,479
+in that way you have the same name
+
+143
+00:07:51,280 --> 00:07:57,759
+but when it is
+
+144
+00:07:54,479 --> 00:08:00,879
+considered as different data type they
+
+145
+00:07:57,759 --> 00:08:04,479
+are different okay so
+
+146
+00:08:00,879 --> 00:08:09,039
+the first meaning here is that
+
+147
+00:08:04,479 --> 00:08:09,039
+in alphabet it's symbol
+
+148
+00:08:09,680 --> 00:08:18,639
+okay and as regular expression
+
+149
+00:08:15,360 --> 00:08:21,360
+the data type are let's say regular
+
+150
+00:08:18,639 --> 00:08:21,360
+expression
+
+151
+00:08:21,840 --> 00:08:29,120
+or we use you know program language
+
+152
+00:08:25,360 --> 00:08:29,120
+reg exp
+
+153
+00:08:30,160 --> 00:08:38,399
+the third one is here the zero here
+
+154
+00:08:34,719 --> 00:08:41,839
+is string not a symbol it's a string
+
+155
+00:08:38,399 --> 00:08:45,680
+but a string of lens one that one
+
+156
+00:08:41,839 --> 00:08:48,880
+is the symbol zero okay
+
+157
+00:08:45,680 --> 00:08:52,320
+so to understand
+
+158
+00:08:48,880 --> 00:08:53,200
+the first definition you need to know
+
+159
+00:08:52,320 --> 00:08:56,800
+that
+
+160
+00:08:53,200 --> 00:08:56,800
+from an alphabet here
+
+161
+00:08:57,040 --> 00:09:01,360
+the a here is a symbol
+
+162
+00:09:01,519 --> 00:09:08,320
+from the alphabet okay and we make
+
+163
+00:09:05,279 --> 00:09:11,120
+the exactly same symbol we
+
+164
+00:09:08,320 --> 00:09:11,839
+overload the meaning of the exact same
+
+165
+00:09:11,120 --> 00:09:15,920
+symbol
+
+166
+00:09:11,839 --> 00:09:20,560
+as regular expression
+
+167
+00:09:15,920 --> 00:09:23,839
+okay and the regular expression
+
+168
+00:09:20,560 --> 00:09:24,640
+here the language of the regular
+
+169
+00:09:23,839 --> 00:09:28,959
+expressions
+
+170
+00:09:24,640 --> 00:09:32,160
+here is a set of strings
+
+171
+00:09:28,959 --> 00:09:35,839
+which contains only one string and
+
+172
+00:09:32,160 --> 00:09:40,640
+that string so here
+
+173
+00:09:35,839 --> 00:09:40,640
+is the string
+
+174
+00:09:40,959 --> 00:09:48,839
+and that string is a
+
+175
+00:09:44,959 --> 00:09:51,839
+sorry is a
+
+176
+00:09:48,839 --> 00:09:51,839
+and
+
+177
+00:09:53,519 --> 00:10:00,480
+okay so that means
+
+178
+00:09:57,360 --> 00:10:00,480
+for an alphabet
+
+179
+00:10:00,880 --> 00:10:07,279
+zero one we use
+
+180
+00:10:04,000 --> 00:10:10,720
+the first definition to create
+
+181
+00:10:07,279 --> 00:10:10,720
+a regular expression 0
+
+182
+00:10:10,800 --> 00:10:18,480
+and when 0 is the regular expression
+
+183
+00:10:15,120 --> 00:10:19,279
+the language specified by the regular
+
+184
+00:10:18,480 --> 00:10:22,880
+expression
+
+185
+00:10:19,279 --> 00:10:26,800
+is one sorry zero
+
+186
+00:10:22,880 --> 00:10:26,800
+the string only this string
+
+187
+00:10:26,959 --> 00:10:33,360
+the set of only this string and also
+
+188
+00:10:30,160 --> 00:10:33,680
+we also make one as regular expression
+
+189
+00:10:33,360 --> 00:10:38,720
+and
+
+190
+00:10:33,680 --> 00:10:38,720
+it indicates this
+
+191
+00:10:38,880 --> 00:10:47,040
+language okay so that one here
+
+192
+00:10:42,399 --> 00:10:50,720
+is a string
+
+193
+00:10:47,040 --> 00:10:54,079
+then we also make epsilon which
+
+194
+00:10:50,720 --> 00:10:57,920
+we are using to indicate a
+
+195
+00:10:54,079 --> 00:11:00,399
+empty string we also make it
+
+196
+00:10:57,920 --> 00:11:01,600
+as a regular language that's a regular
+
+197
+00:11:00,399 --> 00:11:04,399
+expression
+
+198
+00:11:01,600 --> 00:11:05,440
+when it is a regular expression the
+
+199
+00:11:04,399 --> 00:11:09,120
+language of
+
+200
+00:11:05,440 --> 00:11:12,720
+this regular expression is
+
+201
+00:11:09,120 --> 00:11:16,560
+this language
+
+202
+00:11:12,720 --> 00:11:20,160
+which is a set of strings
+
+203
+00:11:16,560 --> 00:11:23,519
+and this set has only
+
+204
+00:11:20,160 --> 00:11:29,839
+one string which is
+
+205
+00:11:23,519 --> 00:11:29,839
+empty string okay
+
+206
+00:11:38,079 --> 00:11:47,519
+okay so further
+
+207
+00:11:43,839 --> 00:11:53,200
+we make empty set the symbol for
+
+208
+00:11:47,519 --> 00:11:53,200
+empty set as regular expression
+
+209
+00:11:53,519 --> 00:11:57,839
+and as regular expression
+
+210
+00:11:58,000 --> 00:12:07,519
+this regular expression indicates
+
+211
+00:12:01,920 --> 00:12:07,519
+empty set okay empty set
+
+212
+00:12:07,600 --> 00:12:10,880
+although there are no same symbol on the
+
+213
+00:12:09,920 --> 00:12:14,720
+slide
+
+214
+00:12:10,880 --> 00:12:16,959
+but they are actually different
+
+215
+00:12:14,720 --> 00:12:18,079
+they are of different types data types
+
+216
+00:12:16,959 --> 00:12:21,839
+they are of different
+
+217
+00:12:18,079 --> 00:12:21,839
+you know meanings
+
+218
+00:12:21,920 --> 00:12:30,800
+so the
+
+219
+00:12:25,360 --> 00:12:30,800
+three definition here creates
+
+220
+00:12:32,240 --> 00:12:34,880
+so many
+
+221
+00:12:35,600 --> 00:12:44,240
+regular expressions for a given alphabet
+
+222
+00:12:41,120 --> 00:12:46,000
+right so in our case here zero and one
+
+223
+00:12:44,240 --> 00:12:49,760
+we have four
+
+224
+00:12:46,000 --> 00:12:53,279
+uh regular expression
+
+225
+00:12:49,760 --> 00:12:57,519
+and you can you can easily
+
+226
+00:12:53,279 --> 00:13:01,839
+find that this regular expression
+
+227
+00:12:57,519 --> 00:13:04,880
+defines the language
+
+228
+00:13:01,839 --> 00:13:07,360
+containing zero member
+
+229
+00:13:04,880 --> 00:13:08,800
+that is no member okay the zero here is
+
+230
+00:13:07,360 --> 00:13:11,920
+really really integer
+
+231
+00:13:08,800 --> 00:13:15,839
+zero and
+
+232
+00:13:11,920 --> 00:13:18,880
+these two these two
+
+233
+00:13:15,839 --> 00:13:23,519
+definition defines
+
+234
+00:13:18,880 --> 00:13:23,519
+regular expressions indicating
+
+235
+00:13:25,920 --> 00:13:33,040
+set of strings that contains only
+
+236
+00:13:29,040 --> 00:13:36,160
+one strings right
+
+237
+00:13:33,040 --> 00:13:39,519
+this is one string okay and
+
+238
+00:13:36,160 --> 00:13:39,519
+this is one string two
+
+239
+00:13:39,839 --> 00:13:48,800
+and here the second rule
+
+240
+00:13:44,800 --> 00:13:52,320
+defines the regular expression indicates
+
+241
+00:13:48,800 --> 00:13:54,959
+set of strings containing one string
+
+242
+00:13:52,320 --> 00:13:56,800
+but that string the length of that
+
+243
+00:13:54,959 --> 00:13:59,600
+string
+
+244
+00:13:56,800 --> 00:13:59,600
+is zero
+
+245
+00:14:01,279 --> 00:14:09,199
+then the first definition
+
+246
+00:14:05,519 --> 00:14:12,000
+defines all
+
+247
+00:14:09,199 --> 00:14:13,680
+regular expressions for the given
+
+248
+00:14:12,000 --> 00:14:16,720
+alphabet
+
+249
+00:14:13,680 --> 00:14:17,120
+contains one string and the length of
+
+250
+00:14:16,720 --> 00:14:21,600
+this
+
+251
+00:14:17,120 --> 00:14:21,600
+string is one
+
+252
+00:14:22,079 --> 00:14:28,880
+okay so our first
+
+253
+00:14:25,279 --> 00:14:32,480
+sorry our basic case is
+
+254
+00:14:28,880 --> 00:14:36,480
+covered languages
+
+255
+00:14:32,480 --> 00:14:41,040
+has no member that would be this one
+
+256
+00:14:36,480 --> 00:14:44,320
+and the languages have only one members
+
+257
+00:14:41,040 --> 00:14:48,320
+and the one members the length zero
+
+258
+00:14:44,320 --> 00:14:48,320
+and one all of them
+
+259
+00:14:56,839 --> 00:14:59,839
+okay
+
+260
+00:15:05,680 --> 00:15:13,199
+okay then
+
+261
+00:15:08,800 --> 00:15:17,120
+given an alphabet here
+
+262
+00:15:13,199 --> 00:15:21,519
+we use the three rules
+
+263
+00:15:17,120 --> 00:15:24,480
+to cover the basic regular expressions
+
+264
+00:15:21,519 --> 00:15:26,639
+oh by the way someone might ask what's
+
+265
+00:15:24,480 --> 00:15:27,839
+the difference what's the difference
+
+266
+00:15:26,639 --> 00:15:31,199
+between
+
+267
+00:15:27,839 --> 00:15:34,959
+empty set and empty string well
+
+268
+00:15:31,199 --> 00:15:36,800
+it is a very difficult question because
+
+269
+00:15:34,959 --> 00:15:38,000
+they are totally different they are
+
+270
+00:15:36,800 --> 00:15:41,839
+nothing
+
+271
+00:15:38,000 --> 00:15:47,360
+alike okay empty set
+
+272
+00:15:41,839 --> 00:15:50,560
+is a set contain nothing
+
+273
+00:15:47,360 --> 00:15:53,759
+but empty string is a string
+
+274
+00:15:50,560 --> 00:15:57,440
+contains nothing they are
+
+275
+00:15:53,759 --> 00:16:01,120
+you know totally different concept
+
+276
+00:15:57,440 --> 00:16:04,560
+so it's like you don't have
+
+277
+00:16:01,120 --> 00:16:07,120
+bank account and
+
+278
+00:16:04,560 --> 00:16:08,639
+you have a bank account but you have no
+
+279
+00:16:07,120 --> 00:16:11,759
+money in it
+
+280
+00:16:08,639 --> 00:16:12,880
+see that's totally different okay so
+
+281
+00:16:11,759 --> 00:16:16,959
+that's a
+
+282
+00:16:12,880 --> 00:16:19,920
+similar situation here anyway
+
+283
+00:16:16,959 --> 00:16:21,199
+so based on the three uh basic
+
+284
+00:16:19,920 --> 00:16:24,480
+definition
+
+285
+00:16:21,199 --> 00:16:24,480
+we use three
+
+286
+00:16:27,360 --> 00:16:34,000
+more slightly more complicated
+
+287
+00:16:30,800 --> 00:16:39,040
+definition to add
+
+288
+00:16:34,000 --> 00:16:42,160
+the variation of regular expressions
+
+289
+00:16:39,040 --> 00:16:45,360
+so firstly we use
+
+290
+00:16:42,160 --> 00:16:50,000
+the operator let's call it cup
+
+291
+00:16:45,360 --> 00:16:54,560
+okay cup we use the operator cup here
+
+292
+00:16:50,000 --> 00:16:58,240
+to make new regular expressions
+
+293
+00:16:54,560 --> 00:17:02,839
+so whenever r1 and r2
+
+294
+00:16:58,240 --> 00:17:07,760
+are regular expressions we say that
+
+295
+00:17:02,839 --> 00:17:10,799
+r1 cup r2
+
+296
+00:17:07,760 --> 00:17:13,919
+is also a regular expression
+
+297
+00:17:10,799 --> 00:17:17,439
+see that's our definition since
+
+298
+00:17:13,919 --> 00:17:20,880
+it is a regular expression what is
+
+299
+00:17:17,439 --> 00:17:24,640
+this regular expression
+
+300
+00:17:20,880 --> 00:17:28,160
+means or what language is represented
+
+301
+00:17:24,640 --> 00:17:32,000
+is indicated by this
+
+302
+00:17:28,160 --> 00:17:34,960
+this regular expression
+
+303
+00:17:32,000 --> 00:17:36,000
+it will be since r1 is a regular
+
+304
+00:17:34,960 --> 00:17:39,120
+expression
+
+305
+00:17:36,000 --> 00:17:42,240
+so r1 really indicates some
+
+306
+00:17:39,120 --> 00:17:45,520
+language right which is set of strings
+
+307
+00:17:42,240 --> 00:17:49,520
+and the same thing goes to r2
+
+308
+00:17:45,520 --> 00:17:52,880
+right so we say that when you
+
+309
+00:17:49,520 --> 00:17:55,919
+use cup operator to connect r1 and
+
+310
+00:17:52,880 --> 00:17:58,720
+r2 the language the
+
+311
+00:17:55,919 --> 00:17:59,440
+language of the new regular expression
+
+312
+00:17:58,720 --> 00:18:03,520
+here
+
+313
+00:17:59,440 --> 00:18:08,080
+is the language of a one
+
+314
+00:18:03,520 --> 00:18:12,240
+union with language of r2
+
+315
+00:18:08,080 --> 00:18:12,240
+so that's why we write it this way
+
+316
+00:18:12,840 --> 00:18:20,480
+okay so for the same
+
+317
+00:18:16,240 --> 00:18:23,520
+style of definition we defined that
+
+318
+00:18:20,480 --> 00:18:25,840
+circle is another operator to construct
+
+319
+00:18:23,520 --> 00:18:29,600
+a more complicated
+
+320
+00:18:25,840 --> 00:18:30,960
+regular expressions so when r1 and r2
+
+321
+00:18:29,600 --> 00:18:34,400
+are regular expressions
+
+322
+00:18:30,960 --> 00:18:37,600
+we write r1 circle r2
+
+323
+00:18:34,400 --> 00:18:41,760
+as a regular expression and such
+
+324
+00:18:37,600 --> 00:18:45,039
+a regular expression indicates specifies
+
+325
+00:18:41,760 --> 00:18:48,880
+the language of r1
+
+326
+00:18:45,039 --> 00:18:52,320
+concatenates with language of r2
+
+327
+00:18:48,880 --> 00:18:56,880
+so goes to the final one
+
+328
+00:18:52,320 --> 00:19:00,320
+if we do a star here if r1 is a regular
+
+329
+00:18:56,880 --> 00:19:03,200
+regular expression r1 star
+
+330
+00:19:00,320 --> 00:19:03,840
+is also a regular expression and the
+
+331
+00:19:03,200 --> 00:19:07,600
+language
+
+332
+00:19:03,840 --> 00:19:12,080
+indicated by r1 star
+
+333
+00:19:07,600 --> 00:19:15,200
+is the language of r1
+
+334
+00:19:12,080 --> 00:19:18,320
+with the star operation
+
+335
+00:19:15,200 --> 00:19:21,760
+okay and don't remember
+
+336
+00:19:18,320 --> 00:19:25,840
+sorry don't forget that
+
+337
+00:19:21,760 --> 00:19:25,840
+parenthesis here
+
+338
+00:19:26,960 --> 00:19:33,200
+parentheses here is not
+
+339
+00:19:30,080 --> 00:19:34,799
+basically is not in the definition of
+
+340
+00:19:33,200 --> 00:19:38,080
+regular expressions
+
+341
+00:19:34,799 --> 00:19:41,919
+parenthesis here is you know expressing
+
+342
+00:19:38,080 --> 00:19:44,960
+the uh priority of cabin
+
+343
+00:19:41,919 --> 00:19:50,559
+combination or operations
+
+344
+00:19:44,960 --> 00:19:50,559
+that's it so it's a common mechanism
+
+345
+00:19:50,840 --> 00:19:53,840
+okay
+
+346
+00:19:57,280 --> 00:20:04,880
+so you see we
+
+347
+00:20:01,600 --> 00:20:06,080
+for any given alphabet we use three
+
+348
+00:20:04,880 --> 00:20:09,440
+basic definition
+
+349
+00:20:06,080 --> 00:20:12,559
+to define basic
+
+350
+00:20:09,440 --> 00:20:15,840
+regular expression then we use
+
+351
+00:20:12,559 --> 00:20:19,440
+three operators cup circle
+
+352
+00:20:15,840 --> 00:20:23,280
+and star to make to make
+
+353
+00:20:19,440 --> 00:20:26,400
+regular expression more complicated okay
+
+354
+00:20:23,280 --> 00:20:28,960
+let's see some example examples in the
+
+355
+00:20:26,400 --> 00:20:28,960
+textbook
+
+356
+00:20:31,760 --> 00:20:38,799
+okay so these are examples from
+
+357
+00:20:34,960 --> 00:20:42,000
+the textbook and assume that
+
+358
+00:20:38,799 --> 00:20:46,000
+the alphabet is 0 1 and
+
+359
+00:20:42,000 --> 00:20:47,360
+again they are not integers 0 and 1 they
+
+360
+00:20:46,000 --> 00:20:51,360
+are just you know 0
+
+361
+00:20:47,360 --> 00:20:54,480
+and 1 as symbols so
+
+362
+00:20:51,360 --> 00:20:57,840
+according to the basic
+
+363
+00:20:54,480 --> 00:21:01,760
+definitions we know that if we consider
+
+364
+00:20:57,840 --> 00:21:05,200
+one as an a regular expression
+
+365
+00:21:01,760 --> 00:21:08,559
+the language indicated by zero
+
+366
+00:21:05,200 --> 00:21:11,600
+what is
+
+367
+00:21:08,559 --> 00:21:16,320
+this set contains only
+
+368
+00:21:11,600 --> 00:21:19,760
+one string of zero which is a string
+
+369
+00:21:16,320 --> 00:21:22,559
+and also we have
+
+370
+00:21:19,760 --> 00:21:23,440
+1 as regular expression we have this
+
+371
+00:21:22,559 --> 00:21:27,200
+language
+
+372
+00:21:23,440 --> 00:21:30,559
+okay so you see then
+
+373
+00:21:27,200 --> 00:21:33,840
+when we write 0 star
+
+374
+00:21:30,559 --> 00:21:36,880
+1 0 star and
+
+375
+00:21:33,840 --> 00:21:40,320
+please note that we usually
+
+376
+00:21:36,880 --> 00:21:44,400
+ignore circle
+
+377
+00:21:40,320 --> 00:21:49,520
+in here and the circle in here
+
+378
+00:21:44,400 --> 00:21:52,559
+okay so the whole regular expression
+
+379
+00:21:49,520 --> 00:21:56,159
+is actually zero
+
+380
+00:21:52,559 --> 00:21:59,280
+star which is a regular expression right
+
+381
+00:21:56,159 --> 00:22:02,240
+and the circle one circle
+
+382
+00:21:59,280 --> 00:22:02,240
+zero star
+
+383
+00:22:02,400 --> 00:22:10,559
+we usually consider circle operation
+
+384
+00:22:06,159 --> 00:22:13,280
+is more like multiplication
+
+385
+00:22:10,559 --> 00:22:15,039
+why because it's a concatenation right
+
+386
+00:22:13,280 --> 00:22:18,159
+and you can see some interesting
+
+387
+00:22:15,039 --> 00:22:21,360
+uh properties like if you have a string
+
+388
+00:22:18,159 --> 00:22:23,840
+one zero zero one
+
+389
+00:22:21,360 --> 00:22:24,640
+and the con the length of the string is
+
+390
+00:22:23,840 --> 00:22:28,720
+four
+
+391
+00:22:24,640 --> 00:22:32,159
+right and you contain it with
+
+392
+00:22:28,720 --> 00:22:35,760
+1 0 1 then the length is
+
+393
+00:22:32,159 --> 00:22:39,520
+2 so the length
+
+394
+00:22:35,760 --> 00:22:42,720
+after concatenation will be 6
+
+395
+00:22:39,520 --> 00:22:46,159
+right that'll be one zero zero one
+
+396
+00:22:42,720 --> 00:22:49,360
+zero one and
+
+397
+00:22:46,159 --> 00:22:52,480
+it's like uh uh exponential
+
+398
+00:22:49,360 --> 00:22:57,919
+uh like a power law stuff like that so
+
+399
+00:22:52,480 --> 00:22:57,919
+combination is likely
+
+400
+00:22:58,400 --> 00:23:02,240
+to be considered something similar to
+
+401
+00:23:00,880 --> 00:23:06,000
+multiplication
+
+402
+00:23:02,240 --> 00:23:09,600
+and we can also consider cup here
+
+403
+00:23:06,000 --> 00:23:10,400
+more or less like addition okay so it's
+
+404
+00:23:09,600 --> 00:23:14,880
+multiplication
+
+405
+00:23:10,400 --> 00:23:14,880
+addition that's why we usually ignore
+
+406
+00:23:16,000 --> 00:23:23,200
+circle here okay so in that case
+
+407
+00:23:20,159 --> 00:23:27,200
+we have this one so
+
+408
+00:23:23,200 --> 00:23:30,640
+for zero star what is the language
+
+409
+00:23:27,200 --> 00:23:34,159
+that would be this language
+
+410
+00:23:30,640 --> 00:23:37,440
+doing the operation right so
+
+411
+00:23:34,159 --> 00:23:42,640
+you know it's like this and
+
+412
+00:23:37,440 --> 00:23:42,640
+what will this be this will be
+
+413
+00:23:43,760 --> 00:23:51,440
+artificial epsilon right and
+
+414
+00:23:47,440 --> 00:23:55,600
+itself and
+
+415
+00:23:51,440 --> 00:24:00,240
+square cubic
+
+416
+00:23:55,600 --> 00:24:05,120
+and the fourth power and so on
+
+417
+00:24:00,240 --> 00:24:08,240
+okay and also
+
+418
+00:24:05,120 --> 00:24:12,000
+when we concatenate this
+
+419
+00:24:08,240 --> 00:24:16,840
+language with this one
+
+420
+00:24:12,000 --> 00:24:19,440
+and it's cell the the visual star
+
+421
+00:24:16,840 --> 00:24:25,200
+again
+
+422
+00:24:19,440 --> 00:24:25,200
+what will be the resulting
+
+423
+00:24:25,840 --> 00:24:33,600
+language you can easily see that
+
+424
+00:24:30,080 --> 00:24:37,120
+you will have all strings that contains
+
+425
+00:24:33,600 --> 00:24:39,919
+exactly a single one
+
+426
+00:24:37,120 --> 00:24:42,320
+right so doing concatenation and
+
+427
+00:24:39,919 --> 00:24:45,360
+combination here
+
+428
+00:24:42,320 --> 00:24:48,400
+you will have the string containing
+
+429
+00:24:45,360 --> 00:24:51,760
+exactly a single one described
+
+430
+00:24:48,400 --> 00:24:56,960
+by this regular expression
+
+431
+00:24:51,760 --> 00:25:00,799
+okay then not part of the
+
+432
+00:24:56,960 --> 00:25:04,400
+regular expression definition but
+
+433
+00:25:00,799 --> 00:25:07,840
+it's more or less like a
+
+434
+00:25:04,400 --> 00:25:11,279
+syntax sugar we use
+
+435
+00:25:07,840 --> 00:25:15,279
+sigma itself see sigma here
+
+436
+00:25:11,279 --> 00:25:18,799
+is a set which is our alphabet the
+
+437
+00:25:15,279 --> 00:25:21,840
+set of symbols but
+
+438
+00:25:18,799 --> 00:25:25,120
+we use sigma here as the
+
+439
+00:25:21,840 --> 00:25:25,840
+syntax syntax sugar to indicate a
+
+440
+00:25:25,120 --> 00:25:29,440
+regular
+
+441
+00:25:25,840 --> 00:25:32,640
+expression and what is that sigma
+
+442
+00:25:29,440 --> 00:25:37,440
+here the language of sigma here
+
+443
+00:25:32,640 --> 00:25:41,760
+is actually the language
+
+444
+00:25:37,440 --> 00:25:44,400
+of all symbols as regular expressions
+
+445
+00:25:41,760 --> 00:25:46,400
+in the alphabet so that will be
+
+446
+00:25:44,400 --> 00:25:49,600
+[Music]
+
+447
+00:25:46,400 --> 00:25:53,279
+this language and remember that
+
+448
+00:25:49,600 --> 00:25:57,360
+0 here is a string one here is a string
+
+449
+00:25:53,279 --> 00:26:00,480
+okay so you can think of that
+
+450
+00:25:57,360 --> 00:26:03,520
+sigma as regular expression means
+
+451
+00:26:00,480 --> 00:26:06,720
+all possible strings
+
+452
+00:26:03,520 --> 00:26:10,080
+composed by the alphabet of
+
+453
+00:26:06,720 --> 00:26:13,840
+length one okay so
+
+454
+00:26:10,080 --> 00:26:18,080
+if you have a sigma a
+
+455
+00:26:13,840 --> 00:26:21,360
+b c then
+
+456
+00:26:18,080 --> 00:26:22,240
+as a regular expression this regular
+
+457
+00:26:21,360 --> 00:26:25,360
+expression
+
+458
+00:26:22,240 --> 00:26:28,960
+means a b
+
+459
+00:26:25,360 --> 00:26:32,480
+c the string of the set of the strings
+
+460
+00:26:28,960 --> 00:26:35,919
+and each string is length one so
+
+461
+00:26:32,480 --> 00:26:40,000
+the a here is the extreme b here is a
+
+462
+00:26:35,919 --> 00:26:40,000
+string and c here is a string okay
+
+463
+00:26:40,159 --> 00:26:48,000
+so what is sigma star
+
+464
+00:26:44,320 --> 00:26:48,000
+in this case in in
+
+465
+00:26:48,320 --> 00:26:52,559
+in what i just described you can think
+
+466
+00:26:50,799 --> 00:26:56,480
+of sigma star
+
+467
+00:26:52,559 --> 00:26:56,480
+what is
+
+468
+00:26:59,200 --> 00:27:03,760
+empty string artificial right
+
+469
+00:27:01,520 --> 00:27:07,039
+artificially created
+
+470
+00:27:03,760 --> 00:27:11,039
+empty string
+
+471
+00:27:07,039 --> 00:27:14,880
+sorry union sigma itself
+
+472
+00:27:11,039 --> 00:27:18,960
+union sigma squared union
+
+473
+00:27:14,880 --> 00:27:22,480
+sigma cubic and so on to infinity
+
+474
+00:27:18,960 --> 00:27:22,480
+then that will be
+
+475
+00:27:22,880 --> 00:27:30,240
+sigma right and that's for the
+
+476
+00:27:26,640 --> 00:27:36,159
+0 1 example here so
+
+477
+00:27:30,240 --> 00:27:39,279
+sigma itself 0 1 right what is square
+
+478
+00:27:36,159 --> 00:27:42,880
+0 0 0 1
+
+479
+00:27:39,279 --> 00:27:46,559
+1 0 1 1
+
+480
+00:27:42,880 --> 00:27:51,279
+all the string of length 2 composed
+
+481
+00:27:46,559 --> 00:27:54,559
+from the symbols of sigma and for square
+
+482
+00:27:51,279 --> 00:27:58,000
+0 0 0 0 0
+
+483
+00:27:54,559 --> 00:28:02,159
+1 0 1 0 0
+
+484
+00:27:58,000 --> 00:28:05,200
+1 1 0 sorry
+
+485
+00:28:02,159 --> 00:28:09,279
+1 0 0 1 0 1 1
+
+486
+00:28:05,200 --> 00:28:12,559
+1 0 and 1 1 1 all strings
+
+487
+00:28:09,279 --> 00:28:16,320
+of length 3 composed
+
+488
+00:28:12,559 --> 00:28:18,559
+by symbols in sigma
+
+489
+00:28:16,320 --> 00:28:18,559
+so
+
+490
+00:28:19,760 --> 00:28:25,120
+it is a very very very convenient way to
+
+491
+00:28:23,919 --> 00:28:28,640
+indicate
+
+492
+00:28:25,120 --> 00:28:32,559
+for a given alphabet
+
+493
+00:28:28,640 --> 00:28:32,559
+all possible strings
+
+494
+00:28:32,960 --> 00:28:37,039
+composed by the symbols of the given
+
+495
+00:28:35,520 --> 00:28:40,720
+alphabet
+
+496
+00:28:37,039 --> 00:28:43,600
+you actually already seen such
+
+497
+00:28:40,720 --> 00:28:44,559
+definition in our previous previous
+
+498
+00:28:43,600 --> 00:28:48,240
+slides
+
+499
+00:28:44,559 --> 00:28:52,880
+so that's why we write
+
+500
+00:28:48,240 --> 00:28:59,840
+sigma star as all possible strings
+
+501
+00:28:52,880 --> 00:28:59,840
+from the given alphabet
+
+502
+00:29:01,200 --> 00:29:04,000
+so that's why
+
+503
+00:29:06,720 --> 00:29:11,200
+that's why this regular expression
+
+504
+00:29:11,279 --> 00:29:17,200
+it indicates the string that has at
+
+505
+00:29:14,559 --> 00:29:21,200
+least the one
+
+506
+00:29:17,200 --> 00:29:26,000
+the string has at least one is the one
+
+507
+00:29:21,200 --> 00:29:30,799
+one okay another
+
+508
+00:29:26,000 --> 00:29:30,799
+definition here is the plus okay
+
+509
+00:29:30,880 --> 00:29:35,360
+so plus what is plus let's say if you
+
+510
+00:29:34,159 --> 00:29:38,880
+have
+
+511
+00:29:35,360 --> 00:29:42,399
+star that means a 0
+
+512
+00:29:38,880 --> 00:29:45,679
+a 1 a 2
+
+513
+00:29:42,399 --> 00:29:49,200
+a 3 etc
+
+514
+00:29:45,679 --> 00:29:52,320
+and the star sorry plus
+
+515
+00:29:49,200 --> 00:29:56,559
+is the same thing without this one
+
+516
+00:29:52,320 --> 00:30:00,880
+okay so plus is a1 a2
+
+517
+00:29:56,559 --> 00:30:03,200
+a3 et cetera
+
+518
+00:30:00,880 --> 00:30:03,200
+okay
+
+519
+00:30:03,919 --> 00:30:12,480
+so that's the plus and
+
+520
+00:30:09,840 --> 00:30:14,480
+it is interesting to see some uh
+
+521
+00:30:12,480 --> 00:30:19,679
+property here that
+
+522
+00:30:14,480 --> 00:30:19,679
+see if we have
+
+523
+00:30:20,840 --> 00:30:26,720
+this
+
+524
+00:30:22,720 --> 00:30:32,080
+regular expression then you can see that
+
+525
+00:30:26,720 --> 00:30:32,080
+the regular expression is zero one star
+
+526
+00:30:32,320 --> 00:30:39,520
+cup epsilon one star
+
+527
+00:30:36,240 --> 00:30:42,960
+right but since
+
+528
+00:30:39,520 --> 00:30:46,000
+epsilon the regular expression epsilon
+
+529
+00:30:42,960 --> 00:30:49,039
+means the set
+
+530
+00:30:46,000 --> 00:30:53,120
+of one string
+
+531
+00:30:49,039 --> 00:30:56,480
+empty string and concatenate
+
+532
+00:30:53,120 --> 00:30:59,679
+with what is one star that will be
+
+533
+00:30:56,480 --> 00:31:03,279
+epsilon 1 1 1
+
+534
+00:30:59,679 --> 00:31:06,399
+1 1 1 etc right
+
+535
+00:31:03,279 --> 00:31:09,600
+so what is the result of this one it is
+
+536
+00:31:06,399 --> 00:31:13,120
+exactly this one right
+
+537
+00:31:09,600 --> 00:31:15,440
+because every string
+
+538
+00:31:13,120 --> 00:31:17,039
+if you have an empty string in front of
+
+539
+00:31:15,440 --> 00:31:20,720
+every string is
+
+540
+00:31:17,039 --> 00:31:24,399
+nothing changed right
+
+541
+00:31:20,720 --> 00:31:27,679
+so epsom
+
+542
+00:31:24,399 --> 00:31:33,840
+as a regular expression put in front of
+
+543
+00:31:27,679 --> 00:31:33,840
+our back of any regular expressions
+
+544
+00:31:34,240 --> 00:31:38,799
+there will be no change so f zone one
+
+545
+00:31:38,000 --> 00:31:41,919
+star
+
+546
+00:31:38,799 --> 00:31:45,519
+is one star one star
+
+547
+00:31:41,919 --> 00:31:49,440
+f song is one star
+
+548
+00:31:45,519 --> 00:31:49,440
+so it's very like the
+
+549
+00:31:51,120 --> 00:31:57,919
+unit element for multiplication
+
+550
+00:31:54,399 --> 00:32:02,080
+right because like 5 times 1 is 5
+
+551
+00:31:57,919 --> 00:32:04,559
+1 times 5 is 5. so it's like
+
+552
+00:32:02,080 --> 00:32:06,159
+this one is concatenation and this one
+
+553
+00:32:04,559 --> 00:32:09,760
+is epsilon
+
+554
+00:32:06,159 --> 00:32:14,159
+so it's like that and
+
+555
+00:32:09,760 --> 00:32:16,799
+for empty set
+
+556
+00:32:14,159 --> 00:32:18,080
+well it's slightly more interesting
+
+557
+00:32:16,799 --> 00:32:20,960
+because
+
+558
+00:32:18,080 --> 00:32:23,679
+one star what is one star the language
+
+559
+00:32:20,960 --> 00:32:27,039
+of one star will be
+
+560
+00:32:23,679 --> 00:32:30,480
+epsilon 1 1 1 1 1 1
+
+561
+00:32:27,039 --> 00:32:33,519
+etc right and you concur
+
+562
+00:32:30,480 --> 00:32:36,640
+it with nothing
+
+563
+00:32:33,519 --> 00:32:38,640
+remember it's nothing so what will be
+
+564
+00:32:36,640 --> 00:32:42,559
+the result of this one
+
+565
+00:32:38,640 --> 00:32:46,880
+it will be nothing why
+
+566
+00:32:42,559 --> 00:32:48,720
+because the empty set cannot give any
+
+567
+00:32:46,880 --> 00:32:50,799
+elements for you to do the cartesian
+
+568
+00:32:48,720 --> 00:32:53,760
+product or contamination
+
+569
+00:32:50,799 --> 00:32:54,399
+so there will be no result no results
+
+570
+00:32:53,760 --> 00:32:57,519
+for this
+
+571
+00:32:54,399 --> 00:33:01,440
+as a set so that would be an empty set
+
+572
+00:32:57,519 --> 00:33:02,880
+by definition then it creates something
+
+573
+00:33:01,440 --> 00:33:06,320
+like
+
+574
+00:33:02,880 --> 00:33:09,440
+if you concatenate with
+
+575
+00:33:06,320 --> 00:33:12,640
+empty set as regular expression
+
+576
+00:33:09,440 --> 00:33:17,440
+the result is always
+
+577
+00:33:12,640 --> 00:33:20,480
+empty set so it's also very like uh
+
+578
+00:33:17,440 --> 00:33:23,519
+it's similar to phi times
+
+579
+00:33:20,480 --> 00:33:26,559
+zero becomes zero it's 0
+
+580
+00:33:23,519 --> 00:33:29,840
+times 5 becomes 0 and
+
+581
+00:33:26,559 --> 00:33:33,600
+any integer times with
+
+582
+00:33:29,840 --> 00:33:37,039
+0 the result is 0.
+
+583
+00:33:33,600 --> 00:33:40,960
+what is what is it called
+
+584
+00:33:37,039 --> 00:33:44,480
+and it is called annihilation element
+
+585
+00:33:40,960 --> 00:33:45,200
+annihilation element it destroys
+
+586
+00:33:44,480 --> 00:33:48,720
+everything
+
+587
+00:33:45,200 --> 00:33:48,720
+concatenated with it right
+
+588
+00:33:49,039 --> 00:33:56,320
+and well finally artificially
+
+589
+00:33:53,279 --> 00:33:56,320
+pretty artificially
+
+590
+00:33:56,720 --> 00:34:04,480
+if we do start on empty set
+
+591
+00:34:00,480 --> 00:34:06,559
+as regular expressions all right
+
+592
+00:34:04,480 --> 00:34:08,000
+what is the language here so by
+
+593
+00:34:06,559 --> 00:34:11,440
+definition
+
+594
+00:34:08,000 --> 00:34:14,800
+star empty
+
+595
+00:34:11,440 --> 00:34:14,800
+doing start will be
+
+596
+00:34:16,639 --> 00:34:25,520
+this right then
+
+597
+00:34:20,320 --> 00:34:29,440
+that will be what is this empty set
+
+598
+00:34:25,520 --> 00:34:30,399
+and the doing star sorry that i should
+
+599
+00:34:29,440 --> 00:34:34,159
+do one more
+
+600
+00:34:30,399 --> 00:34:37,200
+like this then
+
+601
+00:34:34,159 --> 00:34:40,800
+you will have artificial
+
+602
+00:34:37,200 --> 00:34:44,320
+this one right union
+
+603
+00:34:40,800 --> 00:34:49,440
+star zero uh sorry mt 0
+
+604
+00:34:44,320 --> 00:34:52,720
+mt itself and empty twice empty
+
+605
+00:34:49,440 --> 00:34:56,639
+cubic etc
+
+606
+00:34:52,720 --> 00:35:00,839
+all these are you know nothing
+
+607
+00:34:56,639 --> 00:35:04,400
+but this one is artificially
+
+608
+00:35:00,839 --> 00:35:07,839
+inserted so the final result would be
+
+609
+00:35:04,400 --> 00:35:12,800
+this that's why we have
+
+610
+00:35:07,839 --> 00:35:16,800
+this here it's pretty artificial that
+
+611
+00:35:12,800 --> 00:35:20,160
+you you have an empty set and
+
+612
+00:35:16,800 --> 00:35:22,640
+after doing the operation the empty set
+
+613
+00:35:20,160 --> 00:35:23,839
+has one string which is empty string out
+
+614
+00:35:22,640 --> 00:35:27,040
+of nowhere
+
+615
+00:35:23,839 --> 00:35:30,000
+okay so that's it so that's a
+
+616
+00:35:27,040 --> 00:35:31,359
+artificial definition for the result of
+
+617
+00:35:30,000 --> 00:35:34,320
+the star operation
+
+618
+00:35:31,359 --> 00:35:34,960
+you always have inserted the empty
+
+619
+00:35:34,320 --> 00:35:39,920
+string
+
+620
+00:35:34,960 --> 00:35:39,920
+here so
+
+621
+00:35:40,720 --> 00:35:44,960
+now we can say that it it is pretty
+
+622
+00:35:43,920 --> 00:35:48,000
+straightforward that
+
+623
+00:35:44,960 --> 00:35:52,400
+using regular expression
+
+624
+00:35:48,000 --> 00:35:55,440
+can be we can use regular expression to
+
+625
+00:35:52,400 --> 00:35:58,960
+specify specify
+
+626
+00:35:55,440 --> 00:36:01,839
+languages you can use the cup
+
+627
+00:35:58,960 --> 00:36:02,480
+and the circle and the star operators to
+
+628
+00:36:01,839 --> 00:36:06,560
+make
+
+629
+00:36:02,480 --> 00:36:06,560
+a regular expression pretty you know
+
+630
+00:36:10,839 --> 00:36:17,200
+complicated okay now we have defined
+
+631
+00:36:13,760 --> 00:36:21,280
+our regular expressions and
+
+632
+00:36:17,200 --> 00:36:23,839
+if you think about it you can easily uh
+
+633
+00:36:21,280 --> 00:36:23,839
+find that
+
+634
+00:36:24,960 --> 00:36:31,839
+for the three basic definition
+
+635
+00:36:28,720 --> 00:36:35,040
+here this one is
+
+636
+00:36:31,839 --> 00:36:38,560
+indicates the well uh empty set
+
+637
+00:36:35,040 --> 00:36:41,839
+which is a string but nothing
+
+638
+00:36:38,560 --> 00:36:46,160
+oh sorry which is a set with no
+
+639
+00:36:41,839 --> 00:36:49,839
+elements in it right empty set
+
+640
+00:36:46,160 --> 00:36:53,200
+and it is apparently
+
+641
+00:36:49,839 --> 00:36:56,480
+a regular language why because
+
+642
+00:36:53,200 --> 00:36:59,040
+you can have some
+
+643
+00:36:56,480 --> 00:36:59,920
+finite automata without any accept
+
+644
+00:36:59,040 --> 00:37:02,560
+states
+
+645
+00:36:59,920 --> 00:37:04,320
+then that final automata recognized
+
+646
+00:37:02,560 --> 00:37:09,200
+empty set
+
+647
+00:37:04,320 --> 00:37:12,079
+and this one is also regular language
+
+648
+00:37:09,200 --> 00:37:13,119
+and this one is also regular language we
+
+649
+00:37:12,079 --> 00:37:16,160
+will
+
+650
+00:37:13,119 --> 00:37:20,079
+prove that later
+
+651
+00:37:16,160 --> 00:37:22,480
+and since all these
+
+652
+00:37:20,079 --> 00:37:24,960
+three more complicated regular
+
+653
+00:37:22,480 --> 00:37:28,160
+expressions
+
+654
+00:37:24,960 --> 00:37:28,640
+we already proved the closure property
+
+655
+00:37:28,160 --> 00:37:31,200
+of
+
+656
+00:37:28,640 --> 00:37:33,440
+regular expressions at regular languages
+
+657
+00:37:31,200 --> 00:37:33,440
+of
+
+658
+00:37:33,599 --> 00:37:37,839
+with these operations and
+
+659
+00:37:38,240 --> 00:37:41,760
+you probably can see the connection
+
+660
+00:37:40,320 --> 00:37:44,480
+between
+
+661
+00:37:41,760 --> 00:37:44,880
+finite automata and regular expressions
+
+662
+00:37:44,480 --> 00:37:48,560
+and
+
+663
+00:37:44,880 --> 00:37:50,960
+you are not wrong so we want to
+
+664
+00:37:48,560 --> 00:37:52,160
+prove the equivalence with final
+
+665
+00:37:50,960 --> 00:37:54,880
+automata
+
+666
+00:37:52,160 --> 00:37:56,000
+okay and don't forget that every time
+
+667
+00:37:54,880 --> 00:37:59,680
+you see the word
+
+668
+00:37:56,000 --> 00:38:03,839
+equivalence equivalent you need to
+
+669
+00:37:59,680 --> 00:38:04,240
+understand how to judge the equivalent
+
+670
+00:38:03,839 --> 00:38:07,520
+and
+
+671
+00:38:04,240 --> 00:38:11,599
+here is also that we want to say
+
+672
+00:38:07,520 --> 00:38:15,760
+some language okay some language
+
+673
+00:38:11,599 --> 00:38:18,320
+if it is regular what is
+
+674
+00:38:15,760 --> 00:38:19,359
+what does that mean our definition says
+
+675
+00:38:18,320 --> 00:38:22,960
+that a language
+
+676
+00:38:19,359 --> 00:38:26,880
+is regular because some
+
+677
+00:38:22,960 --> 00:38:28,880
+finite automata can recognize it right
+
+678
+00:38:26,880 --> 00:38:30,560
+okay now we want to prove that a
+
+679
+00:38:28,880 --> 00:38:34,720
+language is regular
+
+680
+00:38:30,560 --> 00:38:38,800
+if and only only if you can use
+
+681
+00:38:34,720 --> 00:38:42,160
+regular expression to describe it
+
+682
+00:38:38,800 --> 00:38:46,160
+okay so the language
+
+683
+00:38:42,160 --> 00:38:49,280
+can be recognized by
+
+684
+00:38:46,160 --> 00:38:52,400
+some final automata such language
+
+685
+00:38:49,280 --> 00:38:56,320
+can be described by some regular
+
+686
+00:38:52,400 --> 00:38:59,680
+expression that's why that's what we
+
+687
+00:38:56,320 --> 00:39:03,520
+mean by equivalence
+
+688
+00:38:59,680 --> 00:39:06,960
+equivalence okay so
+
+689
+00:39:03,520 --> 00:39:10,160
+there are two part of it if
+
+690
+00:39:06,960 --> 00:39:13,359
+and only if okay
+
+691
+00:39:10,160 --> 00:39:13,359
+so firstly
+
+692
+00:39:13,760 --> 00:39:20,480
+we prove one direction here that
+
+693
+00:39:16,960 --> 00:39:21,280
+if a language is described by a regular
+
+694
+00:39:20,480 --> 00:39:24,240
+expression
+
+695
+00:39:21,280 --> 00:39:25,599
+that means arbitrarily you write some
+
+696
+00:39:24,240 --> 00:39:28,880
+regular expression
+
+697
+00:39:25,599 --> 00:39:32,000
+like what this will stop 1
+
+698
+00:39:28,880 --> 00:39:37,119
+1 0
+
+699
+00:39:32,000 --> 00:39:40,079
+1 star 0 0 1 something like this
+
+700
+00:39:37,119 --> 00:39:43,040
+the regular expression the language
+
+701
+00:39:40,079 --> 00:39:46,160
+described by the regular expression
+
+702
+00:39:43,040 --> 00:39:50,480
+it is regular
+
+703
+00:39:46,160 --> 00:39:53,520
+that means we can find a finite automata
+
+704
+00:39:50,480 --> 00:39:55,920
+to recognize this language that
+
+705
+00:39:53,520 --> 00:39:57,680
+means the language of the final automata
+
+706
+00:39:55,920 --> 00:40:00,240
+is exactly
+
+707
+00:39:57,680 --> 00:40:01,200
+the language of the regular expression
+
+708
+00:40:00,240 --> 00:40:04,160
+that means
+
+709
+00:40:01,200 --> 00:40:04,160
+every string
+
+710
+00:40:04,319 --> 00:40:12,000
+in this set will be accepted by
+
+711
+00:40:08,400 --> 00:40:15,839
+the machine here and every string not
+
+712
+00:40:12,000 --> 00:40:19,040
+in this set will not be
+
+713
+00:40:15,839 --> 00:40:22,160
+accepted by the final automata
+
+714
+00:40:19,040 --> 00:40:26,480
+okay then
+
+715
+00:40:22,160 --> 00:40:28,960
+how do we uh prove this direction
+
+716
+00:40:26,480 --> 00:40:29,760
+it is quite easy we start from the
+
+717
+00:40:28,960 --> 00:40:32,960
+definition
+
+718
+00:40:29,760 --> 00:40:36,960
+of the regular expression
+
+719
+00:40:32,960 --> 00:40:40,960
+so for
+
+720
+00:40:36,960 --> 00:40:43,359
+and alphabet we make every symbol in
+
+721
+00:40:40,960 --> 00:40:46,880
+that alphabet a regular expression
+
+722
+00:40:43,359 --> 00:40:46,880
+right so
+
+723
+00:40:47,680 --> 00:40:55,359
+for a single alphabet regular expression
+
+724
+00:40:51,359 --> 00:40:58,160
+the language is a string
+
+725
+00:40:55,359 --> 00:40:59,119
+of length one and the dot string is
+
+726
+00:40:58,160 --> 00:41:03,920
+exactly
+
+727
+00:40:59,119 --> 00:41:07,119
+the alphabet so for each alphabet we can
+
+728
+00:41:03,920 --> 00:41:09,599
+design an nfa
+
+729
+00:41:07,119 --> 00:41:10,640
+a non-deterministic final automata like
+
+730
+00:41:09,599 --> 00:41:14,400
+this
+
+731
+00:41:10,640 --> 00:41:17,680
+right so
+
+732
+00:41:14,400 --> 00:41:21,200
+stop right stop start state and
+
+733
+00:41:17,680 --> 00:41:26,079
+accept states and consume
+
+734
+00:41:21,200 --> 00:41:29,760
+one symbol you can easily see that
+
+735
+00:41:26,079 --> 00:41:33,599
+such an fa recognize
+
+736
+00:41:29,760 --> 00:41:36,800
+exactly this language
+
+737
+00:41:33,599 --> 00:41:39,599
+okay exactly this language and as we
+
+738
+00:41:36,800 --> 00:41:41,680
+uh discussed we cannot use diagram
+
+739
+00:41:39,599 --> 00:41:42,160
+although or visualization here we need
+
+740
+00:41:41,680 --> 00:41:45,760
+to
+
+741
+00:41:42,160 --> 00:41:48,160
+formally describe this machine so
+
+742
+00:41:45,760 --> 00:41:50,720
+that's formally described this machine
+
+743
+00:41:48,160 --> 00:41:54,319
+let's say
+
+744
+00:41:50,720 --> 00:41:57,040
+the machine has two states namely
+
+745
+00:41:54,319 --> 00:41:57,040
+q1
+
+746
+00:41:58,560 --> 00:42:06,400
+q1 and q2 and
+
+747
+00:42:02,640 --> 00:42:09,760
+the sigma is given and
+
+748
+00:42:06,400 --> 00:42:13,200
+q1 is the star state and only q2
+
+749
+00:42:09,760 --> 00:42:17,839
+are is in the accept states
+
+750
+00:42:13,200 --> 00:42:17,839
+and the transition function is that
+
+751
+00:42:18,000 --> 00:42:23,839
+at q1 the input signal
+
+752
+00:42:21,119 --> 00:42:25,680
+input symbol is a goes to q2 that would
+
+753
+00:42:23,839 --> 00:42:29,359
+be this transition
+
+754
+00:42:25,680 --> 00:42:32,960
+otherwise everything goes to
+
+755
+00:42:29,359 --> 00:42:34,240
+nowhere okay otherwise everything goes
+
+756
+00:42:32,960 --> 00:42:36,000
+to nowhere
+
+757
+00:42:34,240 --> 00:42:38,560
+so that would be the formal description
+
+758
+00:42:36,000 --> 00:42:42,000
+of this
+
+759
+00:42:38,560 --> 00:42:45,040
+nfa and according to our
+
+760
+00:42:42,000 --> 00:42:48,240
+our result we know that this language
+
+761
+00:42:45,040 --> 00:42:49,760
+can be recognized by nfa it can be
+
+762
+00:42:48,240 --> 00:42:53,359
+recognized by dfa
+
+763
+00:42:49,760 --> 00:42:54,560
+therefore all possible regular
+
+764
+00:42:53,359 --> 00:42:57,040
+expression in this
+
+765
+00:42:54,560 --> 00:42:57,040
+form
+
+766
+00:42:57,760 --> 00:43:06,400
+well gives a regular language right okay
+
+767
+00:43:02,319 --> 00:43:09,839
+so for the second for the second
+
+768
+00:43:06,400 --> 00:43:12,720
+uh definition we use m
+
+769
+00:43:09,839 --> 00:43:14,720
+epsilon as the regular expression the
+
+770
+00:43:12,720 --> 00:43:17,839
+language for that
+
+771
+00:43:14,720 --> 00:43:20,160
+regular expression is a
+
+772
+00:43:17,839 --> 00:43:21,440
+set of string containing only an empty
+
+773
+00:43:20,160 --> 00:43:24,560
+string right
+
+774
+00:43:21,440 --> 00:43:27,920
+then we we design
+
+775
+00:43:24,560 --> 00:43:30,000
+this nfa for modi we can write this this
+
+776
+00:43:27,920 --> 00:43:33,760
+way
+
+777
+00:43:30,000 --> 00:43:33,760
+sorry that would be
+
+778
+00:43:34,079 --> 00:43:42,640
+too many lines so only this one
+
+779
+00:43:39,200 --> 00:43:47,359
+and you can see that this nfa
+
+780
+00:43:42,640 --> 00:43:50,640
+recognize exactly this language
+
+781
+00:43:47,359 --> 00:43:54,079
+right if you have one symbol then
+
+782
+00:43:50,640 --> 00:43:57,520
+it will not recognize it it starts from
+
+783
+00:43:54,079 --> 00:44:01,040
+this state but any one symbol any
+
+784
+00:43:57,520 --> 00:44:04,720
+if you input anything any empty thing
+
+785
+00:44:01,040 --> 00:44:06,160
+then goes nowhere and it doesn't accept
+
+786
+00:44:04,720 --> 00:44:10,319
+that string
+
+787
+00:44:06,160 --> 00:44:13,359
+right you can also uh refer to the
+
+788
+00:44:10,319 --> 00:44:17,599
+definition of acceptance of strings
+
+789
+00:44:13,359 --> 00:44:21,440
+that'll be pretty important
+
+790
+00:44:17,599 --> 00:44:25,280
+so that's our nfa here
+
+791
+00:44:21,440 --> 00:44:28,240
+and finally as we already described
+
+792
+00:44:25,280 --> 00:44:29,200
+if we use empty set as regular
+
+793
+00:44:28,240 --> 00:44:31,680
+expression
+
+794
+00:44:29,200 --> 00:44:34,400
+then the language is empty set and
+
+795
+00:44:31,680 --> 00:44:38,000
+pretty easy you just design
+
+796
+00:44:34,400 --> 00:44:42,079
+an nfa without accept states
+
+797
+00:44:38,000 --> 00:44:42,079
+so formally we describe it this way
+
+798
+00:44:42,720 --> 00:44:52,240
+then see empty set is also regular
+
+799
+00:44:48,240 --> 00:44:56,240
+and actually any
+
+800
+00:44:52,240 --> 00:44:58,000
+finite set of strings
+
+801
+00:44:56,240 --> 00:44:59,520
+are regular because you just need to
+
+802
+00:44:58,000 --> 00:45:03,200
+expand everything
+
+803
+00:44:59,520 --> 00:45:05,520
+and write it as dfa and the state
+
+804
+00:45:03,200 --> 00:45:06,240
+must be finite because you have finite
+
+805
+00:45:05,520 --> 00:45:08,800
+string
+
+806
+00:45:06,240 --> 00:45:10,800
+string or finite length then everything
+
+807
+00:45:08,800 --> 00:45:14,160
+is regular
+
+808
+00:45:10,800 --> 00:45:17,440
+okay so we have
+
+809
+00:45:14,160 --> 00:45:19,920
+three basic
+
+810
+00:45:17,440 --> 00:45:20,640
+regular expression and we already proved
+
+811
+00:45:19,920 --> 00:45:24,640
+that
+
+812
+00:45:20,640 --> 00:45:26,640
+with the three basic definition
+
+813
+00:45:24,640 --> 00:45:28,720
+with the regular expressions defined by
+
+814
+00:45:26,640 --> 00:45:33,440
+the three basic definitions
+
+815
+00:45:28,720 --> 00:45:38,400
+all the language described are regular
+
+816
+00:45:33,440 --> 00:45:42,079
+right then our proof is basically
+
+817
+00:45:38,400 --> 00:45:45,520
+finished why because
+
+818
+00:45:42,079 --> 00:45:49,920
+we define the cup operator
+
+819
+00:45:45,520 --> 00:45:54,160
+as the union of two languages
+
+820
+00:45:49,920 --> 00:45:58,960
+and we know that we already proved that
+
+821
+00:45:54,160 --> 00:45:58,960
+the class of regular languages is
+
+822
+00:45:59,200 --> 00:46:06,160
+is closed under the union operation
+
+823
+00:46:02,720 --> 00:46:09,280
+right so we already prove it
+
+824
+00:46:06,160 --> 00:46:09,280
+and we also
+
+825
+00:46:09,920 --> 00:46:13,359
+already prove it because concatenation
+
+826
+00:46:12,400 --> 00:46:16,560
+we already
+
+827
+00:46:13,359 --> 00:46:18,640
+proved the crucial property right also
+
+828
+00:46:16,560 --> 00:46:23,119
+star operation
+
+829
+00:46:18,640 --> 00:46:23,119
+see so it goes like
+
+830
+00:46:26,720 --> 00:46:34,800
+we any of languages described
+
+831
+00:46:31,280 --> 00:46:38,720
+by the first three definition
+
+832
+00:46:34,800 --> 00:46:42,000
+are regular and we know that
+
+833
+00:46:38,720 --> 00:46:45,359
+any regular languages operated
+
+834
+00:46:42,000 --> 00:46:49,599
+with the three operations
+
+835
+00:46:45,359 --> 00:46:54,240
+here will result in regular languages
+
+836
+00:46:49,599 --> 00:46:54,240
+so that's why we know that
+
+837
+00:46:55,119 --> 00:46:59,440
+a language is described by a regular
+
+838
+00:46:57,920 --> 00:47:03,680
+expression
+
+839
+00:46:59,440 --> 00:47:06,560
+it must be regular okay so
+
+840
+00:47:03,680 --> 00:47:07,839
+that's our proof and we can have an
+
+841
+00:47:06,560 --> 00:47:10,640
+example here
+
+842
+00:47:07,839 --> 00:47:12,640
+for example if you have alphabets a and
+
+843
+00:47:10,640 --> 00:47:16,240
+b
+
+844
+00:47:12,640 --> 00:47:20,079
+okay a and b then we use
+
+845
+00:47:16,240 --> 00:47:25,119
+a as regular expression
+
+846
+00:47:20,079 --> 00:47:27,680
+then what is the regular expression
+
+847
+00:47:25,119 --> 00:47:28,800
+what language is the rig will be the
+
+848
+00:47:27,680 --> 00:47:30,480
+regular explaining
+
+849
+00:47:28,800 --> 00:47:32,480
+regular expression described that will
+
+850
+00:47:30,480 --> 00:47:36,160
+be a right
+
+851
+00:47:32,480 --> 00:47:39,760
+and the corresponding nfa is like this
+
+852
+00:47:36,160 --> 00:47:43,760
+and the same thing goes for b
+
+853
+00:47:39,760 --> 00:47:47,599
+and if we use a circle to
+
+854
+00:47:43,760 --> 00:47:49,280
+construct a slightly more complicated
+
+855
+00:47:47,599 --> 00:47:52,319
+regular expression
+
+856
+00:47:49,280 --> 00:47:55,599
+like what is the language
+
+857
+00:47:52,319 --> 00:47:59,280
+that would be a b
+
+858
+00:47:55,599 --> 00:48:02,200
+right and
+
+859
+00:47:59,280 --> 00:48:03,440
+according to our proof we just need to
+
+860
+00:48:02,200 --> 00:48:07,520
+concatenate
+
+861
+00:48:03,440 --> 00:48:11,680
+the two machine and
+
+862
+00:48:07,520 --> 00:48:15,839
+remove the acceptance here right
+
+863
+00:48:11,680 --> 00:48:17,920
+and add one epson transition here
+
+864
+00:48:15,839 --> 00:48:19,440
+and the process has been described in
+
+865
+00:48:17,920 --> 00:48:22,240
+the previous proof
+
+866
+00:48:19,440 --> 00:48:23,599
+so that would be the concatenation then
+
+867
+00:48:22,240 --> 00:48:28,000
+doing a union
+
+868
+00:48:23,599 --> 00:48:31,040
+so see then we can control the machine
+
+869
+00:48:28,000 --> 00:48:31,040
+to recognize
+
+870
+00:48:32,000 --> 00:48:39,200
+to the language language of
+
+871
+00:48:35,760 --> 00:48:42,000
+two languages
+
+872
+00:48:39,200 --> 00:48:43,359
+the union of two languages described by
+
+873
+00:48:42,000 --> 00:48:46,640
+a regular expression
+
+874
+00:48:43,359 --> 00:48:50,800
+so we copy this part and copy
+
+875
+00:48:46,640 --> 00:48:54,480
+this part as one new
+
+876
+00:48:50,800 --> 00:48:57,839
+start state and epsilon
+
+877
+00:48:54,480 --> 00:49:00,319
+transition right then we do
+
+878
+00:48:57,839 --> 00:49:01,200
+a star operation on this one how do we
+
+879
+00:49:00,319 --> 00:49:04,559
+do that
+
+880
+00:49:01,200 --> 00:49:05,920
+we copy the whole thing here we copy the
+
+881
+00:49:04,559 --> 00:49:08,960
+whole thing here
+
+882
+00:49:05,920 --> 00:49:13,280
+then add one more start state
+
+883
+00:49:08,960 --> 00:49:17,520
+also a new accept state and abstrom
+
+884
+00:49:13,280 --> 00:49:21,359
+absolute absolute then create this one
+
+885
+00:49:17,520 --> 00:49:24,960
+so as you see any way you write
+
+886
+00:49:21,359 --> 00:49:28,839
+your design you developed
+
+887
+00:49:24,960 --> 00:49:30,160
+a valid regular expression you can
+
+888
+00:49:28,839 --> 00:49:32,119
+easily
+
+889
+00:49:30,160 --> 00:49:34,720
+create the corresponding
+
+890
+00:49:32,119 --> 00:49:38,000
+non-deterministic finite automata
+
+891
+00:49:34,720 --> 00:49:38,960
+for that regular expression so any
+
+892
+00:49:38,000 --> 00:49:42,000
+language
+
+893
+00:49:38,960 --> 00:49:45,200
+that can be described by
+
+894
+00:49:42,000 --> 00:49:48,880
+regular expressions are
+
+895
+00:49:45,200 --> 00:49:52,800
+regular because by definition we can
+
+896
+00:49:48,880 --> 00:49:55,440
+have the corresponding nfa
+
+897
+00:49:52,800 --> 00:49:55,440
+right away
+
+898
+00:49:56,400 --> 00:50:09,119
+okay so that's about it
+
+899
+00:49:59,680 --> 00:50:09,119
+for this hour
+

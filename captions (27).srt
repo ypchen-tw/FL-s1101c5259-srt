@@ -1,0 +1,6676 @@
+1
+00:00:00,799 --> 00:00:05,759
+now we will introduce reductions via
+
+2
+00:00:03,199 --> 00:00:06,720
+computation histories the computation
+
+3
+00:00:05,759 --> 00:00:10,000
+history
+
+4
+00:00:06,720 --> 00:00:13,200
+for a two machine on input is simply
+
+5
+00:00:10,000 --> 00:00:15,519
+the sequence of configurations
+
+6
+00:00:13,200 --> 00:00:17,600
+that the machine goes through as it
+
+7
+00:00:15,519 --> 00:00:19,600
+processes the input
+
+8
+00:00:17,600 --> 00:00:21,840
+we actually have seen
+
+9
+00:00:19,600 --> 00:00:24,160
+computation history before
+
+10
+00:00:21,840 --> 00:00:25,199
+like the one
+
+11
+00:00:24,160 --> 00:00:27,680
+we
+
+12
+00:00:25,199 --> 00:00:30,080
+encountered on
+
+13
+00:00:27,680 --> 00:00:33,360
+chapter three when we change when we
+
+14
+00:00:30,080 --> 00:00:37,200
+trace the machine to process uh
+
+15
+00:00:33,360 --> 00:00:39,280
+the input string zero zero zero zero
+
+16
+00:00:37,200 --> 00:00:43,040
+so
+
+17
+00:00:39,280 --> 00:00:47,200
+this one is the starting configuration
+
+18
+00:00:43,040 --> 00:00:48,480
+and after one transition it goes to this
+
+19
+00:00:47,200 --> 00:00:49,840
+configuration
+
+20
+00:00:48,480 --> 00:00:53,039
+then
+
+21
+00:00:49,840 --> 00:00:54,800
+after the second transit uh transition
+
+22
+00:00:53,039 --> 00:00:56,160
+it goes to
+
+23
+00:00:54,800 --> 00:00:59,440
+this
+
+24
+00:00:56,160 --> 00:01:00,719
+configuration and so on and finally it
+
+25
+00:00:59,440 --> 00:01:01,920
+stops
+
+26
+00:01:00,719 --> 00:01:04,479
+at the
+
+27
+00:01:01,920 --> 00:01:05,360
+accepting configuration
+
+28
+00:01:04,479 --> 00:01:06,720
+right
+
+29
+00:01:05,360 --> 00:01:08,400
+so
+
+30
+00:01:06,720 --> 00:01:09,680
+the whole
+
+31
+00:01:08,400 --> 00:01:10,960
+sequence
+
+32
+00:01:09,680 --> 00:01:12,640
+of
+
+33
+00:01:10,960 --> 00:01:14,159
+configurations
+
+34
+00:01:12,640 --> 00:01:16,880
+is called
+
+35
+00:01:14,159 --> 00:01:18,880
+computation history
+
+36
+00:01:16,880 --> 00:01:20,880
+so
+
+37
+00:01:18,880 --> 00:01:23,759
+computation history
+
+38
+00:01:20,880 --> 00:01:26,799
+is simply the sequence of configurations
+
+39
+00:01:23,759 --> 00:01:28,799
+that the machine goes through as it
+
+40
+00:01:26,799 --> 00:01:31,119
+processes the input
+
+41
+00:01:28,799 --> 00:01:31,119
+okay
+
+42
+00:01:33,260 --> 00:01:36,799
+[Applause]
+
+43
+00:01:34,560 --> 00:01:36,799
+so
+
+44
+00:01:37,520 --> 00:01:42,240
+and accepting config
+
+45
+00:01:39,600 --> 00:01:45,520
+and accepting computation history for
+
+46
+00:01:42,240 --> 00:01:48,159
+machine m on the input string w
+
+47
+00:01:45,520 --> 00:01:51,920
+is a sequence of configurations
+
+48
+00:01:48,159 --> 00:01:56,719
+let's say c1 c2
+
+49
+00:01:51,920 --> 00:02:00,960
+2cl where c1 is the start configuration
+
+50
+00:01:56,719 --> 00:02:03,920
+of n on w and the serial cl is n
+
+51
+00:02:00,960 --> 00:02:06,399
+accepting configuration of n
+
+52
+00:02:03,920 --> 00:02:09,440
+and we
+
+53
+00:02:06,399 --> 00:02:13,120
+have defined accepting configuration
+
+54
+00:02:09,440 --> 00:02:16,239
+right that that is any configuration
+
+55
+00:02:13,120 --> 00:02:19,280
+with the state uh with the
+
+56
+00:02:16,239 --> 00:02:20,959
+with the accept state
+
+57
+00:02:19,280 --> 00:02:23,200
+and then each
+
+58
+00:02:20,959 --> 00:02:26,720
+ci
+
+59
+00:02:23,200 --> 00:02:29,840
+legally follows from ci minus 1
+
+60
+00:02:26,720 --> 00:02:34,720
+according to the rules which
+
+61
+00:02:29,840 --> 00:02:34,720
+defined by the transition function of m
+
+62
+00:02:35,200 --> 00:02:37,680
+so
+
+63
+00:02:36,400 --> 00:02:40,720
+and accepting
+
+64
+00:02:37,680 --> 00:02:40,720
+computation history
+
+65
+00:02:41,040 --> 00:02:45,920
+for m on w is
+
+66
+00:02:43,760 --> 00:02:48,640
+like we just uh
+
+67
+00:02:45,920 --> 00:02:48,640
+saw on
+
+68
+00:02:48,879 --> 00:02:52,480
+m2 running on
+
+69
+00:02:52,720 --> 00:03:00,159
+input string 0 0 0 0 it is that is an
+
+70
+00:02:57,280 --> 00:03:02,640
+accepting computation history for m2 on
+
+71
+00:03:00,159 --> 00:03:03,519
+0 0 0 0
+
+72
+00:03:02,640 --> 00:03:06,239
+and then
+
+73
+00:03:03,519 --> 00:03:09,120
+if the
+
+74
+00:03:06,239 --> 00:03:11,440
+final configuration is a rejecting
+
+75
+00:03:09,120 --> 00:03:16,400
+configuration that is any configuration
+
+76
+00:03:11,440 --> 00:03:16,400
+with the rejecting state reject state
+
+77
+00:03:17,280 --> 00:03:24,640
+then the whole uh sequence we call we
+
+78
+00:03:22,080 --> 00:03:28,000
+we call the whole sequence of rejecting
+
+79
+00:03:24,640 --> 00:03:29,760
+computation history for m on w
+
+80
+00:03:28,000 --> 00:03:31,760
+okay
+
+81
+00:03:29,760 --> 00:03:34,640
+so after defining the computation
+
+82
+00:03:31,760 --> 00:03:36,000
+history let's define a new
+
+83
+00:03:34,640 --> 00:03:39,760
+well a
+
+84
+00:03:36,000 --> 00:03:41,519
+slightly new type of machine which is
+
+85
+00:03:39,760 --> 00:03:44,080
+called
+
+86
+00:03:41,519 --> 00:03:46,000
+a linear bounded
+
+87
+00:03:44,080 --> 00:03:49,120
+automaton
+
+88
+00:03:46,000 --> 00:03:53,840
+okay a linear bounded automaton a linear
+
+89
+00:03:49,120 --> 00:03:57,519
+boundary automaton or we say that lba
+
+90
+00:03:53,840 --> 00:04:00,640
+is a restricted type of tuned machine so
+
+91
+00:03:57,519 --> 00:04:01,760
+basically it is turing machine okay it
+
+92
+00:04:00,640 --> 00:04:03,599
+shares
+
+93
+00:04:01,760 --> 00:04:05,280
+the fundamental definitions of two
+
+94
+00:04:03,599 --> 00:04:06,319
+machines
+
+95
+00:04:05,280 --> 00:04:08,480
+and
+
+96
+00:04:06,319 --> 00:04:12,159
+it is a restricted type of two machine
+
+97
+00:04:08,480 --> 00:04:15,760
+wherein the tape head the tape head
+
+98
+00:04:12,159 --> 00:04:20,079
+isn't permitted to move off the portion
+
+99
+00:04:15,760 --> 00:04:20,079
+of the tape containing the input
+
+100
+00:04:20,560 --> 00:04:22,880
+okay
+
+101
+00:04:23,199 --> 00:04:26,400
+so
+
+102
+00:04:24,160 --> 00:04:27,360
+perhaps it's easier for you to think of
+
+103
+00:04:26,400 --> 00:04:31,040
+this
+
+104
+00:04:27,360 --> 00:04:31,840
+you have a turing machine okay
+
+105
+00:04:31,040 --> 00:04:33,680
+a
+
+106
+00:04:31,840 --> 00:04:36,720
+regular turing machine
+
+107
+00:04:33,680 --> 00:04:38,479
+and you put
+
+108
+00:04:36,720 --> 00:04:39,919
+your input
+
+109
+00:04:38,479 --> 00:04:44,479
+on the tape
+
+110
+00:04:39,919 --> 00:04:44,479
+right the input on the tape and
+
+111
+00:04:45,120 --> 00:04:50,240
+when you
+
+112
+00:04:46,639 --> 00:04:53,120
+after you put the input on the tape and
+
+113
+00:04:50,240 --> 00:04:54,160
+when you want to put the machine at that
+
+114
+00:04:53,120 --> 00:04:57,600
+moment
+
+115
+00:04:54,160 --> 00:05:01,280
+you cut off the tape here
+
+116
+00:04:57,600 --> 00:05:02,560
+so there is no more infinite tape in
+
+117
+00:05:01,280 --> 00:05:05,759
+this case
+
+118
+00:05:02,560 --> 00:05:09,840
+and everything is as usual the most the
+
+119
+00:05:05,759 --> 00:05:12,560
+machine can you know can uh read write
+
+120
+00:05:09,840 --> 00:05:14,720
+the tape and move the
+
+121
+00:05:12,560 --> 00:05:17,600
+head left and right
+
+122
+00:05:14,720 --> 00:05:19,039
+unless it goes to left
+
+123
+00:05:17,600 --> 00:05:21,199
+it will stop here
+
+124
+00:05:19,039 --> 00:05:22,720
+if here it goes to right it will stop
+
+125
+00:05:21,199 --> 00:05:25,120
+here that's it
+
+126
+00:05:22,720 --> 00:05:26,240
+so
+
+127
+00:05:25,120 --> 00:05:29,199
+if
+
+128
+00:05:26,240 --> 00:05:31,440
+you use the machine this way and the
+
+129
+00:05:29,199 --> 00:05:33,919
+restriction that
+
+130
+00:05:31,440 --> 00:05:36,560
+when after you put the input on the tape
+
+131
+00:05:33,919 --> 00:05:37,440
+you cut off the tape
+
+132
+00:05:36,560 --> 00:05:39,120
+so
+
+133
+00:05:37,440 --> 00:05:41,759
+before you
+
+134
+00:05:39,120 --> 00:05:44,560
+well the concept is before
+
+135
+00:05:41,759 --> 00:05:46,479
+you put the input the input string
+
+136
+00:05:44,560 --> 00:05:47,280
+the type is infinite
+
+137
+00:05:46,479 --> 00:05:48,720
+so
+
+138
+00:05:47,280 --> 00:05:50,560
+you can put
+
+139
+00:05:48,720 --> 00:05:53,600
+an arbitrary
+
+140
+00:05:50,560 --> 00:05:54,720
+length of input string
+
+141
+00:05:53,600 --> 00:05:55,919
+okay
+
+142
+00:05:54,720 --> 00:06:00,960
+we have
+
+143
+00:05:55,919 --> 00:06:00,960
+sufficiently long tape for any
+
+144
+00:06:01,199 --> 00:06:05,360
+length
+
+145
+00:06:02,160 --> 00:06:08,240
+of input swing but after you put the
+
+146
+00:06:05,360 --> 00:06:11,039
+input string on the tape
+
+147
+00:06:08,240 --> 00:06:12,720
+the tab is cut off
+
+148
+00:06:11,039 --> 00:06:15,199
+so you only have
+
+149
+00:06:12,720 --> 00:06:17,520
+the length of the input string
+
+150
+00:06:15,199 --> 00:06:17,520
+tape
+
+151
+00:06:17,600 --> 00:06:22,560
+to manipulate
+
+152
+00:06:19,360 --> 00:06:24,000
+so this kind of tune machine we call
+
+153
+00:06:22,560 --> 00:06:26,880
+lba
+
+154
+00:06:24,000 --> 00:06:28,000
+okay so lba
+
+155
+00:06:26,880 --> 00:06:30,160
+and
+
+156
+00:06:28,000 --> 00:06:32,400
+if you uh think
+
+157
+00:06:30,160 --> 00:06:36,400
+again for the
+
+158
+00:06:32,400 --> 00:06:38,800
+for many languages we have uh proved to
+
+159
+00:06:36,400 --> 00:06:40,639
+be decidable
+
+160
+00:06:38,800 --> 00:06:46,160
+including
+
+161
+00:06:40,639 --> 00:06:49,840
+adfa acfg edfa ecfg and
+
+162
+00:06:46,160 --> 00:06:49,840
+every context-free language
+
+163
+00:06:50,639 --> 00:06:54,720
+basically
+
+164
+00:06:52,080 --> 00:06:57,280
+you don't need extra table
+
+165
+00:06:54,720 --> 00:07:01,520
+okay basically in those proof
+
+166
+00:06:57,280 --> 00:07:03,360
+you don't really need extra tape
+
+167
+00:07:01,520 --> 00:07:06,639
+okay
+
+168
+00:07:03,360 --> 00:07:09,360
+or in a way you can
+
+169
+00:07:06,639 --> 00:07:09,360
+think of that
+
+170
+00:07:09,440 --> 00:07:11,840
+you can
+
+171
+00:07:12,319 --> 00:07:17,039
+by using some programming technique
+
+172
+00:07:15,199 --> 00:07:19,360
+you don't need to
+
+173
+00:07:17,039 --> 00:07:20,479
+use
+
+174
+00:07:19,360 --> 00:07:23,120
+a
+
+175
+00:07:20,479 --> 00:07:24,000
+tape extra to the length of the input
+
+176
+00:07:23,120 --> 00:07:27,680
+string
+
+177
+00:07:24,000 --> 00:07:31,599
+so lba can be used to decide
+
+178
+00:07:27,680 --> 00:07:36,160
+the languages we listed here okay so lba
+
+179
+00:07:31,599 --> 00:07:39,440
+is you know also quite powerful but
+
+180
+00:07:36,160 --> 00:07:41,759
+it doesn't have when run when when uh
+
+181
+00:07:39,440 --> 00:07:45,919
+during operation it doesn't
+
+182
+00:07:41,759 --> 00:07:47,120
+has it doesn't have infinite tape
+
+183
+00:07:45,919 --> 00:07:49,360
+but
+
+184
+00:07:47,120 --> 00:07:51,919
+to decide many many languages you
+
+185
+00:07:49,360 --> 00:07:55,360
+actually don't need extra extra tape
+
+186
+00:07:51,919 --> 00:07:57,440
+space so lba is some kind of restricted
+
+187
+00:07:55,360 --> 00:07:58,400
+type of tool machine
+
+188
+00:07:57,440 --> 00:08:00,560
+okay
+
+189
+00:07:58,400 --> 00:08:02,479
+so according to this type of machine
+
+190
+00:08:00,560 --> 00:08:04,960
+let's
+
+191
+00:08:02,479 --> 00:08:08,800
+talk about the language regarding this
+
+192
+00:08:04,960 --> 00:08:11,440
+type of of machine okay so let's define
+
+193
+00:08:08,800 --> 00:08:13,840
+alba
+
+194
+00:08:11,440 --> 00:08:15,680
+so it's very interesting that for
+
+195
+00:08:13,840 --> 00:08:18,080
+alba
+
+196
+00:08:15,680 --> 00:08:19,440
+what is aroba first
+
+197
+00:08:18,080 --> 00:08:22,639
+give you
+
+198
+00:08:19,440 --> 00:08:26,319
+the input string
+
+199
+00:08:22,639 --> 00:08:28,720
+has two parts the first part is an lba
+
+200
+00:08:26,319 --> 00:08:30,879
+and the second part is the input for
+
+201
+00:08:28,720 --> 00:08:32,640
+that lba and
+
+202
+00:08:30,879 --> 00:08:34,959
+if there will be a accept the input
+
+203
+00:08:32,640 --> 00:08:34,959
+string
+
+204
+00:08:35,519 --> 00:08:38,399
+the pair of n
+
+205
+00:08:37,279 --> 00:08:41,279
+w
+
+206
+00:08:38,399 --> 00:08:43,440
+is a string of
+
+207
+00:08:41,279 --> 00:08:45,760
+in a lba
+
+208
+00:08:43,440 --> 00:08:45,760
+okay
+
+209
+00:08:47,200 --> 00:08:52,640
+and we know that
+
+210
+00:08:49,440 --> 00:08:54,240
+atm is undecidable right atm is
+
+211
+00:08:52,640 --> 00:08:56,560
+undecidable
+
+212
+00:08:54,240 --> 00:08:59,839
+but how about aoba
+
+213
+00:08:56,560 --> 00:09:01,200
+actually we can prove that aoba is
+
+214
+00:08:59,839 --> 00:09:02,880
+decidable
+
+215
+00:09:01,200 --> 00:09:05,600
+it's decidable
+
+216
+00:09:02,880 --> 00:09:07,360
+okay how do we prove that we can just
+
+217
+00:09:05,600 --> 00:09:10,480
+count everything
+
+218
+00:09:07,360 --> 00:09:10,480
+so that m
+
+219
+00:09:10,560 --> 00:09:14,800
+b
+
+220
+00:09:11,920 --> 00:09:16,000
+lba with q state
+
+221
+00:09:14,800 --> 00:09:19,600
+and
+
+222
+00:09:16,000 --> 00:09:25,200
+in the tape alphabet which is you know
+
+223
+00:09:19,600 --> 00:09:25,200
+gamma capital gamma there are g
+
+224
+00:09:26,160 --> 00:09:31,360
+type symbols
+
+225
+00:09:27,680 --> 00:09:33,680
+and don't forget that for tuning machine
+
+226
+00:09:31,360 --> 00:09:33,680
+the
+
+227
+00:09:33,839 --> 00:09:39,360
+alphabet
+
+228
+00:09:35,600 --> 00:09:40,480
+is included in gamma right
+
+229
+00:09:39,360 --> 00:09:43,120
+so
+
+230
+00:09:40,480 --> 00:09:46,080
+gamma contains all possible symbols
+
+231
+00:09:43,120 --> 00:09:50,000
+written on the tape
+
+232
+00:09:46,080 --> 00:09:52,880
+we can simply calculate that since after
+
+233
+00:09:50,000 --> 00:09:54,160
+you put in the input string
+
+234
+00:09:52,880 --> 00:09:57,920
+let's say
+
+235
+00:09:54,160 --> 00:10:01,760
+in the length of your input string is n
+
+236
+00:09:57,920 --> 00:10:03,200
+then you can think of that each symbol
+
+237
+00:10:01,760 --> 00:10:05,360
+here
+
+238
+00:10:03,200 --> 00:10:06,880
+there are
+
+239
+00:10:05,360 --> 00:10:09,279
+g
+
+240
+00:10:06,880 --> 00:10:12,480
+possibilities
+
+241
+00:10:09,279 --> 00:10:13,360
+right and you have n
+
+242
+00:10:12,480 --> 00:10:16,839
+so
+
+243
+00:10:13,360 --> 00:10:20,320
+total possible tab content
+
+244
+00:10:16,839 --> 00:10:22,800
+is g to the nth power
+
+245
+00:10:20,320 --> 00:10:24,560
+and then
+
+246
+00:10:22,800 --> 00:10:25,440
+you might have
+
+247
+00:10:24,560 --> 00:10:27,920
+q
+
+248
+00:10:25,440 --> 00:10:27,920
+states
+
+249
+00:10:28,000 --> 00:10:34,480
+and you will re your
+
+250
+00:10:30,720 --> 00:10:37,680
+head reading writing head
+
+251
+00:10:34,480 --> 00:10:38,640
+the position possible position is n
+
+252
+00:10:37,680 --> 00:10:41,519
+because
+
+253
+00:10:38,640 --> 00:10:42,720
+the length of the table is in right
+
+254
+00:10:41,519 --> 00:10:46,279
+so
+
+255
+00:10:42,720 --> 00:10:49,680
+that's all possible
+
+256
+00:10:46,279 --> 00:10:53,680
+configurations for an lba
+
+257
+00:10:49,680 --> 00:10:56,399
+running on a string w
+
+258
+00:10:53,680 --> 00:10:59,839
+and why this
+
+259
+00:10:56,399 --> 00:11:01,040
+why this quantity is important
+
+260
+00:10:59,839 --> 00:11:02,399
+because
+
+261
+00:11:01,040 --> 00:11:05,680
+talking about
+
+262
+00:11:02,399 --> 00:11:09,200
+if aoba is decidable means
+
+263
+00:11:05,680 --> 00:11:10,640
+can you design a turing machine to
+
+264
+00:11:09,200 --> 00:11:12,560
+decide
+
+265
+00:11:10,640 --> 00:11:16,320
+some input
+
+266
+00:11:12,560 --> 00:11:17,600
+in lba in aoba or not
+
+267
+00:11:16,320 --> 00:11:20,880
+right
+
+268
+00:11:17,600 --> 00:11:23,120
+so we write since we are using a turing
+
+269
+00:11:20,880 --> 00:11:25,279
+machine
+
+270
+00:11:23,120 --> 00:11:28,480
+we have infinite tape
+
+271
+00:11:25,279 --> 00:11:29,640
+so we can record
+
+272
+00:11:28,480 --> 00:11:33,760
+all
+
+273
+00:11:29,640 --> 00:11:38,959
+configurations when we simulate an
+
+274
+00:11:33,760 --> 00:11:38,959
+lba running on the input w
+
+275
+00:11:39,360 --> 00:11:44,399
+then if we simulate a tree machine on
+
+276
+00:11:42,160 --> 00:11:46,000
+the string it is possible it runs
+
+277
+00:11:44,399 --> 00:11:46,959
+forever right
+
+278
+00:11:46,000 --> 00:11:50,959
+but
+
+279
+00:11:46,959 --> 00:11:53,279
+when we simulate lba on
+
+280
+00:11:50,959 --> 00:11:56,720
+an input string
+
+281
+00:11:53,279 --> 00:11:59,839
+lba may be
+
+282
+00:11:56,720 --> 00:12:02,399
+well lbn may still possible run forever
+
+283
+00:11:59,839 --> 00:12:04,720
+but we will know that
+
+284
+00:12:02,399 --> 00:12:06,160
+why because
+
+285
+00:12:04,720 --> 00:12:07,120
+there
+
+286
+00:12:06,160 --> 00:12:10,079
+are
+
+287
+00:12:07,120 --> 00:12:13,839
+finite although this may be a very big
+
+288
+00:12:10,079 --> 00:12:18,320
+number but it is finite lba
+
+289
+00:12:13,839 --> 00:12:20,959
+has only finite possible configurations
+
+290
+00:12:18,320 --> 00:12:22,880
+so you can think of that
+
+291
+00:12:20,959 --> 00:12:25,920
+when lba
+
+292
+00:12:22,880 --> 00:12:29,519
+run one step one step one step
+
+293
+00:12:25,920 --> 00:12:32,399
+if it goes into a loop
+
+294
+00:12:29,519 --> 00:12:33,680
+it must be something like
+
+295
+00:12:32,399 --> 00:12:34,800
+go back
+
+296
+00:12:33,680 --> 00:12:38,240
+to
+
+297
+00:12:34,800 --> 00:12:40,079
+some previous configurations
+
+298
+00:12:38,240 --> 00:12:41,200
+right
+
+299
+00:12:40,079 --> 00:12:43,519
+and again
+
+300
+00:12:41,200 --> 00:12:46,320
+you will find that this technique cannot
+
+301
+00:12:43,519 --> 00:12:48,240
+be used to regulate turing machines
+
+302
+00:12:46,320 --> 00:12:50,880
+because i have
+
+303
+00:12:48,240 --> 00:12:53,920
+described that it is possible for a
+
+304
+00:12:50,880 --> 00:12:56,639
+turing machine your head
+
+305
+00:12:53,920 --> 00:12:58,959
+keep going right and you have infinite
+
+306
+00:12:56,639 --> 00:13:00,160
+tape right so your configuration will
+
+307
+00:12:58,959 --> 00:13:02,320
+never
+
+308
+00:13:00,160 --> 00:13:04,639
+be repeated that's possible
+
+309
+00:13:02,320 --> 00:13:08,800
+so such a technique doesn't work on
+
+310
+00:13:04,639 --> 00:13:12,320
+regular tm but it works on lba because
+
+311
+00:13:08,800 --> 00:13:13,920
+lba has only finite configurations
+
+312
+00:13:12,320 --> 00:13:16,480
+any
+
+313
+00:13:13,920 --> 00:13:18,880
+infinite
+
+314
+00:13:16,480 --> 00:13:21,440
+sequence of configuration will have
+
+315
+00:13:18,880 --> 00:13:23,279
+repeat will have repeated will have
+
+316
+00:13:21,440 --> 00:13:25,839
+duplicated
+
+317
+00:13:23,279 --> 00:13:28,639
+configurations and if we are using a
+
+318
+00:13:25,839 --> 00:13:30,880
+turing machine to watch
+
+319
+00:13:28,639 --> 00:13:33,760
+to simulate
+
+320
+00:13:30,880 --> 00:13:35,839
+to simulate an lba running on
+
+321
+00:13:33,760 --> 00:13:38,959
+an input string and watch the sequence
+
+322
+00:13:35,839 --> 00:13:41,279
+we will detect the infinite loop
+
+323
+00:13:38,959 --> 00:13:42,079
+we will be able to detect it
+
+324
+00:13:41,279 --> 00:13:42,959
+so
+
+325
+00:13:42,079 --> 00:13:46,720
+if
+
+326
+00:13:42,959 --> 00:13:48,399
+we detect the loop we know that
+
+327
+00:13:46,720 --> 00:13:51,760
+the mw
+
+328
+00:13:48,399 --> 00:13:55,199
+is not in lpa because
+
+329
+00:13:51,760 --> 00:13:57,279
+it will never accept w right
+
+330
+00:13:55,199 --> 00:14:01,760
+other than this possibility there will
+
+331
+00:13:57,279 --> 00:14:02,959
+be a either rejected w or accept w so
+
+332
+00:14:01,760 --> 00:14:06,160
+we
+
+333
+00:14:02,959 --> 00:14:08,480
+are able to design a tuning machine to
+
+334
+00:14:06,160 --> 00:14:10,320
+decide
+
+335
+00:14:08,480 --> 00:14:12,480
+alba
+
+336
+00:14:10,320 --> 00:14:14,160
+so lba
+
+337
+00:14:12,480 --> 00:14:16,560
+is decidable
+
+338
+00:14:14,160 --> 00:14:17,440
+that is the proof
+
+339
+00:14:16,560 --> 00:14:18,959
+okay
+
+340
+00:14:17,440 --> 00:14:21,199
+so simply put
+
+341
+00:14:18,959 --> 00:14:25,120
+because the number of all possible
+
+342
+00:14:21,199 --> 00:14:27,360
+configurations can be exactly computed
+
+343
+00:14:25,120 --> 00:14:30,399
+and the looping of a machine can
+
+344
+00:14:27,360 --> 00:14:33,279
+therefore be determined so we can
+
+345
+00:14:30,399 --> 00:14:37,120
+determine the three possibilities first
+
+346
+00:14:33,279 --> 00:14:40,240
+accept no problem reject no problem and
+
+347
+00:14:37,120 --> 00:14:44,680
+runs forever still no problem
+
+348
+00:14:40,240 --> 00:14:44,680
+okay that's why aoba
+
+349
+00:14:45,120 --> 00:14:49,199
+lba
+
+350
+00:14:46,399 --> 00:14:49,199
+is decidable
+
+351
+00:14:50,880 --> 00:14:56,959
+okay so to be formally
+
+352
+00:14:53,760 --> 00:14:58,800
+to formally prove that you can
+
+353
+00:14:56,959 --> 00:15:01,680
+refer to the
+
+354
+00:14:58,800 --> 00:15:03,040
+construction here we can construct a
+
+355
+00:15:01,680 --> 00:15:05,680
+turing machine
+
+356
+00:15:03,040 --> 00:15:08,959
+and simulate m
+
+357
+00:15:05,680 --> 00:15:10,959
+on w well in the in textbook it just
+
+358
+00:15:08,959 --> 00:15:13,760
+simulates so many steps
+
+359
+00:15:10,959 --> 00:15:16,639
+okay then
+
+360
+00:15:13,760 --> 00:15:17,839
+if m will hold it will hold within this
+
+361
+00:15:16,639 --> 00:15:21,440
+step
+
+362
+00:15:17,839 --> 00:15:24,720
+either accept or reject otherwise
+
+363
+00:15:21,440 --> 00:15:27,120
+it will run forever okay so that's a
+
+364
+00:15:24,720 --> 00:15:28,800
+simple concept for eoba
+
+365
+00:15:27,120 --> 00:15:30,000
+however
+
+366
+00:15:28,800 --> 00:15:34,079
+how about
+
+367
+00:15:30,000 --> 00:15:34,959
+oh sorry aoba however how about elba
+
+368
+00:15:34,079 --> 00:15:37,600
+that's
+
+369
+00:15:34,959 --> 00:15:38,959
+given an lba and
+
+370
+00:15:37,600 --> 00:15:41,680
+the machine
+
+371
+00:15:38,959 --> 00:15:44,320
+recognized the language of the
+
+372
+00:15:41,680 --> 00:15:46,160
+machine is empty set
+
+373
+00:15:44,320 --> 00:15:49,519
+and we can prove that
+
+374
+00:15:46,160 --> 00:15:52,480
+elba is undecidable
+
+375
+00:15:49,519 --> 00:15:52,480
+that's interesting
+
+376
+00:15:53,199 --> 00:15:56,399
+let's prove it first
+
+377
+00:15:55,360 --> 00:15:58,480
+so
+
+378
+00:15:56,399 --> 00:15:59,920
+the proof idea is that
+
+379
+00:15:58,480 --> 00:16:01,040
+we want to
+
+380
+00:15:59,920 --> 00:16:02,639
+use
+
+381
+00:16:01,040 --> 00:16:05,680
+the decider
+
+382
+00:16:02,639 --> 00:16:09,519
+for elba
+
+383
+00:16:05,680 --> 00:16:10,959
+okay we assume that the decider for eoba
+
+384
+00:16:09,519 --> 00:16:12,399
+exists
+
+385
+00:16:10,959 --> 00:16:15,040
+so we assume
+
+386
+00:16:12,399 --> 00:16:18,000
+eoba is decidable
+
+387
+00:16:15,040 --> 00:16:21,360
+since eoba is decidable
+
+388
+00:16:18,000 --> 00:16:23,839
+we can use that decider
+
+389
+00:16:21,360 --> 00:16:23,839
+to
+
+390
+00:16:24,079 --> 00:16:28,000
+decide atm
+
+391
+00:16:27,120 --> 00:16:30,320
+okay
+
+392
+00:16:28,000 --> 00:16:31,279
+that's the interesting part
+
+393
+00:16:30,320 --> 00:16:33,600
+so
+
+394
+00:16:31,279 --> 00:16:34,720
+think about it
+
+395
+00:16:33,600 --> 00:16:37,680
+when you
+
+396
+00:16:34,720 --> 00:16:39,920
+have a turing machine
+
+397
+00:16:37,680 --> 00:16:39,920
+and
+
+398
+00:16:41,120 --> 00:16:49,279
+a input string w for that turing machine
+
+399
+00:16:45,199 --> 00:16:51,920
+it is possible to construct
+
+400
+00:16:49,279 --> 00:16:55,680
+and lba let's call it b
+
+401
+00:16:51,920 --> 00:17:01,360
+okay we construct an lba b
+
+402
+00:16:55,680 --> 00:17:06,160
+according to the given m and w
+
+403
+00:17:01,360 --> 00:17:09,839
+according to the given n and w
+
+404
+00:17:06,160 --> 00:17:09,839
+why because you can
+
+405
+00:17:10,000 --> 00:17:14,720
+you can think of the lba
+
+406
+00:17:13,120 --> 00:17:16,720
+expect
+
+407
+00:17:14,720 --> 00:17:19,679
+expect
+
+408
+00:17:16,720 --> 00:17:22,319
+an input string
+
+409
+00:17:19,679 --> 00:17:22,319
+of which
+
+410
+00:17:22,959 --> 00:17:28,319
+and
+
+411
+00:17:25,120 --> 00:17:28,319
+the content of which
+
+412
+00:17:28,880 --> 00:17:32,400
+is
+
+413
+00:17:30,400 --> 00:17:34,400
+the accepting
+
+414
+00:17:32,400 --> 00:17:36,080
+computation history
+
+415
+00:17:34,400 --> 00:17:39,120
+of n
+
+416
+00:17:36,080 --> 00:17:39,120
+running on w
+
+417
+00:17:39,440 --> 00:17:43,840
+you see the the interesting part is that
+
+418
+00:17:42,320 --> 00:17:48,240
+we don't know
+
+419
+00:17:43,840 --> 00:17:52,720
+whether or not the accepting computation
+
+420
+00:17:48,240 --> 00:17:56,720
+history of nmw exists
+
+421
+00:17:52,720 --> 00:18:00,400
+but if you are presented the computation
+
+422
+00:17:56,720 --> 00:18:01,440
+history you can examine it
+
+423
+00:18:00,400 --> 00:18:04,080
+right
+
+424
+00:18:01,440 --> 00:18:05,919
+so we can't shock
+
+425
+00:18:04,080 --> 00:18:08,160
+or simply
+
+426
+00:18:05,919 --> 00:18:10,000
+you can think of we construct a turing
+
+427
+00:18:08,160 --> 00:18:13,280
+machine b
+
+428
+00:18:10,000 --> 00:18:16,080
+but you know that when b
+
+429
+00:18:13,280 --> 00:18:18,000
+gets its own input
+
+430
+00:18:16,080 --> 00:18:20,000
+there is no need
+
+431
+00:18:18,000 --> 00:18:21,440
+for extra
+
+432
+00:18:20,000 --> 00:18:24,880
+tape so
+
+433
+00:18:21,440 --> 00:18:28,559
+b is effectively an lba
+
+434
+00:18:24,880 --> 00:18:29,600
+and then b just need to check if the
+
+435
+00:18:28,559 --> 00:18:30,799
+first
+
+436
+00:18:29,600 --> 00:18:33,760
+symbol
+
+437
+00:18:30,799 --> 00:18:35,919
+is the separator is a separator
+
+438
+00:18:33,760 --> 00:18:38,160
+and
+
+439
+00:18:35,919 --> 00:18:40,240
+then
+
+440
+00:18:38,160 --> 00:18:43,440
+follows
+
+441
+00:18:40,240 --> 00:18:44,960
+the starting configuration of m
+
+442
+00:18:43,440 --> 00:18:48,240
+on w
+
+443
+00:18:44,960 --> 00:18:51,520
+if no reject okay
+
+444
+00:18:48,240 --> 00:18:53,679
+if yes then check if
+
+445
+00:18:51,520 --> 00:18:57,440
+the starting com start configuration
+
+446
+00:18:53,679 --> 00:19:01,039
+follows followed by a separator
+
+447
+00:18:57,440 --> 00:19:01,039
+and followed by
+
+448
+00:19:01,280 --> 00:19:05,360
+the configuration c2
+
+449
+00:19:08,000 --> 00:19:13,280
+which is
+
+450
+00:19:09,600 --> 00:19:14,320
+the legal proof the legal
+
+451
+00:19:13,280 --> 00:19:15,600
+move
+
+452
+00:19:14,320 --> 00:19:17,760
+of
+
+453
+00:19:15,600 --> 00:19:17,760
+n
+
+454
+00:19:18,720 --> 00:19:25,679
+we can just check
+
+455
+00:19:22,080 --> 00:19:28,320
+the transition function of n regarding
+
+456
+00:19:25,679 --> 00:19:31,200
+the difference between the two
+
+457
+00:19:28,320 --> 00:19:34,880
+configurations right just like we trace
+
+458
+00:19:31,200 --> 00:19:34,880
+the two machine m2
+
+459
+00:19:34,960 --> 00:19:38,960
+in chapter three
+
+460
+00:19:37,039 --> 00:19:40,640
+okay so
+
+461
+00:19:38,960 --> 00:19:43,280
+you can
+
+462
+00:19:40,640 --> 00:19:44,480
+surely
+
+463
+00:19:43,280 --> 00:19:49,120
+check
+
+464
+00:19:44,480 --> 00:19:50,480
+if two con configuration or two strings
+
+465
+00:19:49,120 --> 00:19:53,360
+are
+
+466
+00:19:50,480 --> 00:19:57,039
+converted configuration c i
+
+467
+00:19:53,360 --> 00:19:59,440
+minus 1 to c i according to
+
+468
+00:19:57,039 --> 00:19:59,440
+m's
+
+469
+00:19:59,840 --> 00:20:02,720
+transition function
+
+470
+00:20:01,440 --> 00:20:05,120
+right
+
+471
+00:20:02,720 --> 00:20:09,280
+and all these
+
+472
+00:20:05,120 --> 00:20:10,960
+only require you have the your head goes
+
+473
+00:20:09,280 --> 00:20:14,320
+forward
+
+474
+00:20:10,960 --> 00:20:16,720
+back and forward back and forward on the
+
+475
+00:20:14,320 --> 00:20:18,000
+input tape there is no need for extra
+
+476
+00:20:16,720 --> 00:20:20,880
+space
+
+477
+00:20:18,000 --> 00:20:24,320
+okay so if you have a turing machine
+
+478
+00:20:20,880 --> 00:20:25,600
+it it can surely do this kind of
+
+479
+00:20:24,320 --> 00:20:28,559
+processing
+
+480
+00:20:25,600 --> 00:20:32,320
+so after you check if
+
+481
+00:20:28,559 --> 00:20:32,320
+everything goes wrong you just
+
+482
+00:20:32,400 --> 00:20:35,520
+reject this string
+
+483
+00:20:34,480 --> 00:20:36,559
+right
+
+484
+00:20:35,520 --> 00:20:41,039
+then
+
+485
+00:20:36,559 --> 00:20:42,240
+you can check each step of m on w
+
+486
+00:20:41,039 --> 00:20:43,360
+after
+
+487
+00:20:42,240 --> 00:20:45,280
+you get
+
+488
+00:20:43,360 --> 00:20:46,840
+an acceptance
+
+489
+00:20:45,280 --> 00:20:50,000
+accepting
+
+490
+00:20:46,840 --> 00:20:52,400
+configuration then you know
+
+491
+00:20:50,000 --> 00:20:53,760
+the whole string
+
+492
+00:20:52,400 --> 00:20:55,280
+is the
+
+493
+00:20:53,760 --> 00:20:58,880
+accepting
+
+494
+00:20:55,280 --> 00:21:01,280
+accepting com computation history of n
+
+495
+00:20:58,880 --> 00:21:04,640
+on w
+
+496
+00:21:01,280 --> 00:21:05,919
+right you don't know whether or not it
+
+497
+00:21:04,640 --> 00:21:06,880
+exists
+
+498
+00:21:05,919 --> 00:21:10,240
+but
+
+499
+00:21:06,880 --> 00:21:13,360
+if someone put on your input tape you
+
+500
+00:21:10,240 --> 00:21:14,320
+can surely decide it you can surely
+
+501
+00:21:13,360 --> 00:21:18,640
+knows
+
+502
+00:21:14,320 --> 00:21:22,240
+you can surely know it is
+
+503
+00:21:18,640 --> 00:21:24,720
+the accepting computation history
+
+504
+00:21:22,240 --> 00:21:27,039
+that's what lba do
+
+505
+00:21:24,720 --> 00:21:27,760
+that lba only check
+
+506
+00:21:27,039 --> 00:21:29,760
+if
+
+507
+00:21:27,760 --> 00:21:30,960
+the input string
+
+508
+00:21:29,760 --> 00:21:33,200
+for it
+
+509
+00:21:30,960 --> 00:21:35,520
+is the accepting
+
+510
+00:21:33,200 --> 00:21:38,320
+computation history of
+
+511
+00:21:35,520 --> 00:21:38,320
+m on w
+
+512
+00:21:39,520 --> 00:21:43,960
+okay
+
+513
+00:21:40,960 --> 00:21:43,960
+so
+
+514
+00:21:47,520 --> 00:21:54,240
+when we
+
+515
+00:21:49,200 --> 00:21:57,039
+are given m and w we construct an
+
+516
+00:21:54,240 --> 00:22:00,000
+lba
+
+517
+00:21:57,039 --> 00:22:06,080
+from the given mnw
+
+518
+00:22:00,000 --> 00:22:06,080
+and which will accept only one string
+
+519
+00:22:07,840 --> 00:22:12,320
+which is
+
+520
+00:22:09,440 --> 00:22:14,320
+the accepting computation history of m
+
+521
+00:22:12,320 --> 00:22:15,120
+and w
+
+522
+00:22:14,320 --> 00:22:15,840
+but
+
+523
+00:22:15,120 --> 00:22:18,559
+see
+
+524
+00:22:15,840 --> 00:22:19,520
+as i said we don't know whether that
+
+525
+00:22:18,559 --> 00:22:21,280
+string
+
+526
+00:22:19,520 --> 00:22:26,159
+exists
+
+527
+00:22:21,280 --> 00:22:29,120
+so the interesting part is arrow of b
+
+528
+00:22:26,159 --> 00:22:30,400
+is empty set
+
+529
+00:22:29,120 --> 00:22:31,440
+if
+
+530
+00:22:30,400 --> 00:22:33,679
+m
+
+531
+00:22:31,440 --> 00:22:35,440
+does not accept
+
+532
+00:22:33,679 --> 00:22:38,240
+w
+
+533
+00:22:35,440 --> 00:22:38,240
+l of b
+
+534
+00:22:38,840 --> 00:22:47,600
+is a set of only one string
+
+535
+00:22:43,520 --> 00:22:52,000
+and this three this string is exactly
+
+536
+00:22:47,600 --> 00:22:54,480
+the accepting computation history of m
+
+537
+00:22:52,000 --> 00:22:57,120
+and w
+
+538
+00:22:54,480 --> 00:23:01,600
+and therefore it's not
+
+539
+00:22:57,120 --> 00:23:03,760
+empty set if n except w
+
+540
+00:23:01,600 --> 00:23:07,200
+right
+
+541
+00:23:03,760 --> 00:23:11,200
+so we basically still
+
+542
+00:23:07,200 --> 00:23:14,400
+use and accept w or net
+
+543
+00:23:11,200 --> 00:23:16,880
+as a switch to change to determine the
+
+544
+00:23:14,400 --> 00:23:19,039
+behavior of b
+
+545
+00:23:16,880 --> 00:23:19,039
+but
+
+546
+00:23:19,440 --> 00:23:23,760
+we
+
+547
+00:23:21,679 --> 00:23:24,720
+let
+
+548
+00:23:23,760 --> 00:23:26,720
+the
+
+549
+00:23:24,720 --> 00:23:28,320
+assumed to
+
+550
+00:23:26,720 --> 00:23:30,880
+exist
+
+551
+00:23:28,320 --> 00:23:32,640
+decided for elba
+
+552
+00:23:30,880 --> 00:23:37,360
+to determine
+
+553
+00:23:32,640 --> 00:23:40,640
+whether or not the lba reconstructed
+
+554
+00:23:37,360 --> 00:23:42,320
+of which the language is empty set or
+
+555
+00:23:40,640 --> 00:23:46,559
+not
+
+556
+00:23:42,320 --> 00:23:50,960
+if it is not an mps empty set if the
+
+557
+00:23:46,559 --> 00:23:54,240
+elba decider reject that means
+
+558
+00:23:50,960 --> 00:23:56,559
+the language of b is not
+
+559
+00:23:54,240 --> 00:23:59,200
+an empty set then we know
+
+560
+00:23:56,559 --> 00:24:01,600
+the only string accepted
+
+561
+00:23:59,200 --> 00:24:04,320
+possibly accepted by b
+
+562
+00:24:01,600 --> 00:24:07,520
+is the accepting computation history of
+
+563
+00:24:04,320 --> 00:24:10,960
+m on n l sorry m on w
+
+564
+00:24:07,520 --> 00:24:13,440
+that means m accepts w because
+
+565
+00:24:10,960 --> 00:24:14,320
+that's the definition right
+
+566
+00:24:13,440 --> 00:24:15,679
+then
+
+567
+00:24:14,320 --> 00:24:17,120
+we accept
+
+568
+00:24:15,679 --> 00:24:19,440
+so s
+
+569
+00:24:17,120 --> 00:24:20,640
+accept its input
+
+570
+00:24:19,440 --> 00:24:22,880
+if r
+
+571
+00:24:20,640 --> 00:24:24,799
+accepts that means
+
+572
+00:24:22,880 --> 00:24:26,320
+l of b
+
+573
+00:24:24,799 --> 00:24:29,039
+is empty set
+
+574
+00:24:26,320 --> 00:24:30,400
+right so we know
+
+575
+00:24:29,039 --> 00:24:33,520
+and the
+
+576
+00:24:30,400 --> 00:24:36,080
+the accepting computational history of m
+
+577
+00:24:33,520 --> 00:24:37,200
+on w doesn't exist
+
+578
+00:24:36,080 --> 00:24:40,799
+so
+
+579
+00:24:37,200 --> 00:24:43,200
+either m reject w or m enters you know
+
+580
+00:24:40,799 --> 00:24:44,240
+in infinite loop or runs forever we
+
+581
+00:24:43,200 --> 00:24:46,400
+don't know
+
+582
+00:24:44,240 --> 00:24:49,840
+anyway the the accepting computation
+
+583
+00:24:46,400 --> 00:24:51,360
+history does not exist so m does not
+
+584
+00:24:49,840 --> 00:24:56,880
+accept w
+
+585
+00:24:51,360 --> 00:24:56,880
+then we reject s reject its own input
+
+586
+00:24:57,200 --> 00:25:00,200
+okay
+
+587
+00:25:01,279 --> 00:25:03,520
+so
+
+588
+00:25:05,919 --> 00:25:11,360
+we proved that if
+
+589
+00:25:07,919 --> 00:25:12,640
+a decider for elba exists
+
+590
+00:25:11,360 --> 00:25:16,960
+we can
+
+591
+00:25:12,640 --> 00:25:17,679
+use it to construct decider for atn
+
+592
+00:25:16,960 --> 00:25:19,600
+but
+
+593
+00:25:17,679 --> 00:25:22,400
+you know that's a contradiction because
+
+594
+00:25:19,600 --> 00:25:24,080
+we already know we cannot have a decider
+
+595
+00:25:22,400 --> 00:25:27,679
+for atm so
+
+596
+00:25:24,080 --> 00:25:29,440
+uh decided for eoba does not exist
+
+597
+00:25:27,679 --> 00:25:31,919
+okay so eoba
+
+598
+00:25:29,440 --> 00:25:35,120
+is undecidable
+
+599
+00:25:31,919 --> 00:25:35,120
+so uh to
+
+600
+00:25:35,200 --> 00:25:39,520
+describe more detail you can see that
+
+601
+00:25:38,799 --> 00:25:44,640
+we
+
+602
+00:25:39,520 --> 00:25:47,039
+the elba only need to check if q
+
+603
+00:25:44,640 --> 00:25:49,360
+3a
+
+604
+00:25:47,039 --> 00:25:50,799
+of the transition function m
+
+605
+00:25:49,360 --> 00:25:55,159
+does it
+
+606
+00:25:50,799 --> 00:25:55,159
+have the transition to
+
+607
+00:25:56,320 --> 00:25:59,840
+q5
+
+608
+00:25:58,880 --> 00:26:02,320
+and
+
+609
+00:25:59,840 --> 00:26:04,320
+change to x and
+
+610
+00:26:02,320 --> 00:26:05,120
+goes right
+
+611
+00:26:04,320 --> 00:26:06,400
+right
+
+612
+00:26:05,120 --> 00:26:08,159
+if there is
+
+613
+00:26:06,400 --> 00:26:09,360
+such transition
+
+614
+00:26:08,159 --> 00:26:11,600
+then
+
+615
+00:26:09,360 --> 00:26:13,440
+c i
+
+616
+00:26:11,600 --> 00:26:16,640
+is uh
+
+617
+00:26:13,440 --> 00:26:19,200
+or i should say c i plus 1 is a legal
+
+618
+00:26:16,640 --> 00:26:20,640
+move from c i
+
+619
+00:26:19,200 --> 00:26:21,840
+so it is
+
+620
+00:26:20,640 --> 00:26:23,919
+straight
+
+621
+00:26:21,840 --> 00:26:25,679
+it is quite straightforward to implement
+
+622
+00:26:23,919 --> 00:26:26,720
+a checking
+
+623
+00:26:25,679 --> 00:26:28,480
+like that
+
+624
+00:26:26,720 --> 00:26:30,159
+we don't know the answer but we can
+
+625
+00:26:28,480 --> 00:26:33,520
+check the answer
+
+626
+00:26:30,159 --> 00:26:36,520
+okay so that's the eoba
+
+627
+00:26:33,520 --> 00:26:36,520
+and
+
+628
+00:26:38,320 --> 00:26:40,960
+now
+
+629
+00:26:39,360 --> 00:26:43,039
+let's uh
+
+630
+00:26:40,960 --> 00:26:47,120
+have a quick review here it's very
+
+631
+00:26:43,039 --> 00:26:48,799
+interesting so for dfa we know that
+
+632
+00:26:47,120 --> 00:26:50,080
+a dfa
+
+633
+00:26:48,799 --> 00:26:53,080
+right
+
+634
+00:26:50,080 --> 00:26:53,080
+edfa
+
+635
+00:26:53,279 --> 00:26:58,960
+and eq
+
+636
+00:26:56,159 --> 00:26:58,960
+dfa
+
+637
+00:26:59,120 --> 00:27:03,360
+and
+
+638
+00:27:00,480 --> 00:27:03,360
+acfg
+
+639
+00:27:03,480 --> 00:27:08,000
+ecfg
+
+640
+00:27:05,279 --> 00:27:10,640
+and the eq
+
+641
+00:27:08,000 --> 00:27:14,000
+cfg
+
+642
+00:27:10,640 --> 00:27:15,279
+and we have atn
+
+643
+00:27:14,000 --> 00:27:17,360
+etn
+
+644
+00:27:15,279 --> 00:27:18,799
+and the eq
+
+645
+00:27:17,360 --> 00:27:22,720
+tn
+
+646
+00:27:18,799 --> 00:27:25,279
+now we have a lba
+
+647
+00:27:22,720 --> 00:27:28,399
+elba
+
+648
+00:27:25,279 --> 00:27:30,159
+of course we didn't introduce eql va
+
+649
+00:27:28,399 --> 00:27:32,080
+right
+
+650
+00:27:30,159 --> 00:27:34,320
+and we didn't prove
+
+651
+00:27:32,080 --> 00:27:35,840
+eq cfg
+
+652
+00:27:34,320 --> 00:27:37,120
+so
+
+653
+00:27:35,840 --> 00:27:38,720
+uh
+
+654
+00:27:37,120 --> 00:27:41,200
+but we can
+
+655
+00:27:38,720 --> 00:27:43,440
+according to what we already know
+
+656
+00:27:41,200 --> 00:27:46,080
+so we know
+
+657
+00:27:43,440 --> 00:27:49,760
+atm is undecidable
+
+658
+00:27:46,080 --> 00:27:53,279
+right and we know aoba is decidable but
+
+659
+00:27:49,760 --> 00:27:56,799
+eoba is undecidable
+
+660
+00:27:53,279 --> 00:27:58,960
+although we didn't prove eq cfg to be
+
+661
+00:27:56,799 --> 00:28:02,000
+undecidable but we have
+
+662
+00:27:58,960 --> 00:28:04,799
+talked about that in chapter four right
+
+663
+00:28:02,000 --> 00:28:06,480
+and we know eq dfa
+
+664
+00:28:04,799 --> 00:28:07,600
+is decidable
+
+665
+00:28:06,480 --> 00:28:08,720
+okay
+
+666
+00:28:07,600 --> 00:28:10,880
+so
+
+667
+00:28:08,720 --> 00:28:13,039
+it is it's uh uh
+
+668
+00:28:10,880 --> 00:28:15,279
+well interesting to me
+
+669
+00:28:13,039 --> 00:28:20,480
+uh comparison
+
+670
+00:28:15,279 --> 00:28:22,159
+uh table here so dfa cfg a uh lba turing
+
+671
+00:28:20,480 --> 00:28:23,279
+machine
+
+672
+00:28:22,159 --> 00:28:25,120
+they
+
+673
+00:28:23,279 --> 00:28:27,440
+the different languages regarding their
+
+674
+00:28:25,120 --> 00:28:30,240
+behavior behavior and
+
+675
+00:28:27,440 --> 00:28:33,760
+we can see that you know they the
+
+676
+00:28:30,240 --> 00:28:37,520
+computational power and how to uh the
+
+677
+00:28:33,760 --> 00:28:40,559
+related language has some similar uh
+
+678
+00:28:37,520 --> 00:28:43,039
+some interesting property here
+
+679
+00:28:40,559 --> 00:28:46,159
+so the line here
+
+680
+00:28:43,039 --> 00:28:49,679
+here is undecidable and
+
+681
+00:28:46,159 --> 00:28:50,880
+there is decidable okay so kind of
+
+682
+00:28:49,679 --> 00:28:52,080
+interesting
+
+683
+00:28:50,880 --> 00:28:53,919
+anyway
+
+684
+00:28:52,080 --> 00:28:56,159
+so let's use the
+
+685
+00:28:53,919 --> 00:29:00,159
+technique to prove one more language
+
+686
+00:28:56,159 --> 00:29:00,159
+that that is ocf g
+
+687
+00:29:03,840 --> 00:29:12,480
+we know ecfg means give you and
+
+688
+00:29:08,320 --> 00:29:16,080
+give you a context-free grammar
+
+689
+00:29:12,480 --> 00:29:16,080
+if the context-free grammar
+
+690
+00:29:17,360 --> 00:29:22,000
+can generate
+
+691
+00:29:19,120 --> 00:29:25,039
+no terminal strings right
+
+692
+00:29:22,000 --> 00:29:27,279
+and then ocfg here is that
+
+693
+00:29:25,039 --> 00:29:30,000
+give you a contextual grammar can you
+
+694
+00:29:27,279 --> 00:29:32,320
+determine that
+
+695
+00:29:30,000 --> 00:29:33,360
+the language of the contextry grammar is
+
+696
+00:29:32,320 --> 00:29:35,200
+all
+
+697
+00:29:33,360 --> 00:29:39,039
+possible
+
+698
+00:29:35,200 --> 00:29:41,440
+it's the set of all possible strings
+
+699
+00:29:39,039 --> 00:29:44,880
+well we can determine
+
+700
+00:29:41,440 --> 00:29:47,440
+we can decide ecfg but we want to prove
+
+701
+00:29:44,880 --> 00:29:51,520
+that we cannot decide
+
+702
+00:29:47,440 --> 00:29:55,080
+all cfg so all cfg is undecidable
+
+703
+00:29:51,520 --> 00:29:55,080
+okay it's undecidable
+
+704
+00:29:55,120 --> 00:29:59,679
+then
+
+705
+00:29:56,240 --> 00:30:03,120
+we can now use the same
+
+706
+00:29:59,679 --> 00:30:04,000
+way as we did for eoba
+
+707
+00:30:03,120 --> 00:30:07,120
+and
+
+708
+00:30:04,000 --> 00:30:09,440
+we want we want that
+
+709
+00:30:07,120 --> 00:30:11,039
+if ocfg
+
+710
+00:30:09,440 --> 00:30:14,080
+is decidable
+
+711
+00:30:11,039 --> 00:30:17,600
+then we can use that decider
+
+712
+00:30:14,080 --> 00:30:19,200
+we can use that decider to decide
+
+713
+00:30:17,600 --> 00:30:20,559
+atm
+
+714
+00:30:19,200 --> 00:30:25,279
+okay
+
+715
+00:30:20,559 --> 00:30:25,279
+and the proof idea is quite similar
+
+716
+00:30:25,600 --> 00:30:28,880
+firstly we uh
+
+717
+00:30:29,840 --> 00:30:36,799
+since we want to build a decider for atm
+
+718
+00:30:33,039 --> 00:30:40,000
+so we have a turing machine
+
+719
+00:30:36,799 --> 00:30:41,520
+and the input is machine and
+
+720
+00:30:40,000 --> 00:30:45,440
+input right
+
+721
+00:30:41,520 --> 00:30:46,960
+so this one is s input and the w is m's
+
+722
+00:30:45,440 --> 00:30:48,840
+input
+
+723
+00:30:46,960 --> 00:30:52,159
+and when we are given
+
+724
+00:30:48,840 --> 00:30:53,760
+mw we can surely because we have the
+
+725
+00:30:52,159 --> 00:30:56,080
+details of m
+
+726
+00:30:53,760 --> 00:30:56,960
+we can surely build up
+
+727
+00:30:56,080 --> 00:30:59,600
+the
+
+728
+00:30:56,960 --> 00:30:59,600
+pda
+
+729
+00:31:00,159 --> 00:31:08,640
+and remember that pda is intrinsically
+
+730
+00:31:03,720 --> 00:31:08,640
+non-deterministic so it can fork
+
+731
+00:31:08,880 --> 00:31:12,320
+many many many
+
+732
+00:31:10,799 --> 00:31:13,519
+sufficient
+
+733
+00:31:12,320 --> 00:31:14,399
+branches
+
+734
+00:31:13,519 --> 00:31:16,399
+right
+
+735
+00:31:14,399 --> 00:31:19,039
+and all branches
+
+736
+00:31:16,399 --> 00:31:22,240
+you have a stake to use
+
+737
+00:31:19,039 --> 00:31:22,240
+so imagine that
+
+738
+00:31:22,320 --> 00:31:26,880
+we want the pda
+
+739
+00:31:24,480 --> 00:31:28,399
+to reject reject
+
+740
+00:31:26,880 --> 00:31:30,159
+to reject
+
+741
+00:31:28,399 --> 00:31:32,080
+one string
+
+742
+00:31:30,159 --> 00:31:34,880
+which one
+
+743
+00:31:32,080 --> 00:31:34,880
+the string
+
+744
+00:31:35,279 --> 00:31:40,640
+is
+
+745
+00:31:36,320 --> 00:31:43,200
+the accepting computation history of m
+
+746
+00:31:40,640 --> 00:31:44,840
+on w
+
+747
+00:31:43,200 --> 00:31:47,760
+we want to reject
+
+748
+00:31:44,840 --> 00:31:50,159
+it and why do we want to reject it
+
+749
+00:31:47,760 --> 00:31:53,360
+because don't forget that the property
+
+750
+00:31:50,159 --> 00:31:56,480
+of non-deterministic computation
+
+751
+00:31:53,360 --> 00:31:59,039
+any brand sheet any computation
+
+752
+00:31:56,480 --> 00:32:00,960
+computation branch except then the whole
+
+753
+00:31:59,039 --> 00:32:02,000
+machine accepts
+
+754
+00:32:00,960 --> 00:32:03,120
+right
+
+755
+00:32:02,000 --> 00:32:04,880
+in a way
+
+756
+00:32:03,120 --> 00:32:06,720
+that is a
+
+757
+00:32:04,880 --> 00:32:08,240
+that is an or
+
+758
+00:32:06,720 --> 00:32:09,919
+relationship
+
+759
+00:32:08,240 --> 00:32:12,320
+right because
+
+760
+00:32:09,919 --> 00:32:16,000
+as long as one
+
+761
+00:32:12,320 --> 00:32:18,320
+computation branch accepts
+
+762
+00:32:16,000 --> 00:32:20,159
+there's no need for others to accept or
+
+763
+00:32:18,320 --> 00:32:24,640
+reject because the whole machine is
+
+764
+00:32:20,159 --> 00:32:24,640
+considered accepting that string
+
+765
+00:32:25,039 --> 00:32:29,919
+but
+
+766
+00:32:26,720 --> 00:32:31,279
+any one computation history of a pda can
+
+767
+00:32:29,919 --> 00:32:34,799
+only finish
+
+768
+00:32:31,279 --> 00:32:38,000
+some limited task
+
+769
+00:32:34,799 --> 00:32:38,000
+it is easy to
+
+770
+00:32:39,039 --> 00:32:43,039
+understand that
+
+771
+00:32:41,039 --> 00:32:45,919
+it is uh we can
+
+772
+00:32:43,039 --> 00:32:47,760
+use pda's stack
+
+773
+00:32:45,919 --> 00:32:49,600
+to
+
+774
+00:32:47,760 --> 00:32:51,840
+push
+
+775
+00:32:49,600 --> 00:32:53,279
+c1
+
+776
+00:32:51,840 --> 00:32:54,399
+onto the stick
+
+777
+00:32:53,279 --> 00:32:57,519
+right
+
+778
+00:32:54,399 --> 00:33:00,240
+so c1 will be
+
+779
+00:32:57,519 --> 00:33:02,559
+if c1 look like this
+
+780
+00:33:00,240 --> 00:33:04,640
+then on the stack
+
+781
+00:33:02,559 --> 00:33:06,000
+it will be look like
+
+782
+00:33:04,640 --> 00:33:07,200
+see the
+
+783
+00:33:06,000 --> 00:33:09,440
+arrow
+
+784
+00:33:07,200 --> 00:33:10,640
+look like this
+
+785
+00:33:09,440 --> 00:33:14,480
+c1
+
+786
+00:33:10,640 --> 00:33:16,720
+then it is possible to check
+
+787
+00:33:14,480 --> 00:33:18,480
+with the reverse
+
+788
+00:33:16,720 --> 00:33:19,919
+direction c2
+
+789
+00:33:18,480 --> 00:33:23,039
+right
+
+790
+00:33:19,919 --> 00:33:25,360
+you pop a symbol and check
+
+791
+00:33:23,039 --> 00:33:26,240
+the input string and the consumer input
+
+792
+00:33:25,360 --> 00:33:28,320
+string
+
+793
+00:33:26,240 --> 00:33:34,880
+and the check if
+
+794
+00:33:28,320 --> 00:33:34,880
+from c1 to c sorry yes to from c1 to c2
+
+795
+00:33:36,320 --> 00:33:38,960
+is that
+
+796
+00:33:37,440 --> 00:33:42,080
+a legal move
+
+797
+00:33:38,960 --> 00:33:44,799
+of m on w you can check that because you
+
+798
+00:33:42,080 --> 00:33:48,799
+can embed the
+
+799
+00:33:44,799 --> 00:33:50,960
+transition function into the pds state
+
+800
+00:33:48,799 --> 00:33:54,240
+and the transient function is a finite
+
+801
+00:33:50,960 --> 00:33:56,080
+possibility right so you can do that
+
+802
+00:33:54,240 --> 00:33:57,919
+and
+
+803
+00:33:56,080 --> 00:34:01,039
+by using the stack
+
+804
+00:33:57,919 --> 00:34:03,600
+you can check the reverse direction
+
+805
+00:34:01,039 --> 00:34:05,200
+configurations
+
+806
+00:34:03,600 --> 00:34:06,559
+okay
+
+807
+00:34:05,200 --> 00:34:07,440
+so we can
+
+808
+00:34:06,559 --> 00:34:09,520
+that
+
+809
+00:34:07,440 --> 00:34:13,520
+we can fork
+
+810
+00:34:09,520 --> 00:34:13,520
+computational branch to check
+
+811
+00:34:13,839 --> 00:34:20,720
+a pair of configurations
+
+812
+00:34:17,200 --> 00:34:22,079
+is it legal from c1 to c2r
+
+813
+00:34:20,720 --> 00:34:27,119
+and
+
+814
+00:34:22,079 --> 00:34:28,960
+is is it legal from c2 r to c3
+
+815
+00:34:27,119 --> 00:34:32,480
+because you see
+
+816
+00:34:28,960 --> 00:34:33,359
+for c2r you have something like this
+
+817
+00:34:32,480 --> 00:34:35,359
+then
+
+818
+00:34:33,359 --> 00:34:40,000
+the top
+
+819
+00:34:35,359 --> 00:34:40,800
+top you can check that by using pda
+
+820
+00:34:40,000 --> 00:34:43,359
+right
+
+821
+00:34:40,800 --> 00:34:45,599
+and then a branch check this pair a
+
+822
+00:34:43,359 --> 00:34:47,119
+branch check this pair a branch check
+
+823
+00:34:45,599 --> 00:34:49,520
+this
+
+824
+00:34:47,119 --> 00:34:52,000
+this pair and so on
+
+825
+00:34:49,520 --> 00:34:53,679
+so it is possible
+
+826
+00:34:52,000 --> 00:34:54,879
+it is possible
+
+827
+00:34:53,679 --> 00:34:56,960
+to check
+
+828
+00:34:54,879 --> 00:35:00,560
+if ci
+
+829
+00:34:56,960 --> 00:35:04,800
+legally goes to ci plus one
+
+830
+00:35:00,560 --> 00:35:07,119
+by using pdas many many many
+
+831
+00:35:04,800 --> 00:35:09,920
+computational branches
+
+832
+00:35:07,119 --> 00:35:11,680
+and then we have a branch check
+
+833
+00:35:09,920 --> 00:35:12,640
+if c1
+
+834
+00:35:11,680 --> 00:35:14,560
+is
+
+835
+00:35:12,640 --> 00:35:18,480
+starting configuration
+
+836
+00:35:14,560 --> 00:35:19,200
+and the see another branch check if cl
+
+837
+00:35:18,480 --> 00:35:21,760
+is
+
+838
+00:35:19,200 --> 00:35:24,800
+accepting configuration
+
+839
+00:35:21,760 --> 00:35:27,280
+okay so you have many branches one
+
+840
+00:35:24,800 --> 00:35:30,560
+responsible for checking this one and
+
+841
+00:35:27,280 --> 00:35:34,000
+the one checking this one and
+
+842
+00:35:30,560 --> 00:35:38,240
+many branches check a pair check a pair
+
+843
+00:35:34,000 --> 00:35:42,480
+check a pair right and so on
+
+844
+00:35:38,240 --> 00:35:44,800
+as long as any one of the check
+
+845
+00:35:42,480 --> 00:35:46,720
+fails okay
+
+846
+00:35:44,800 --> 00:35:49,440
+fails
+
+847
+00:35:46,720 --> 00:35:51,760
+any one of these
+
+848
+00:35:49,440 --> 00:35:55,280
+massive checks fails
+
+849
+00:35:51,760 --> 00:35:58,800
+you accept our pda
+
+850
+00:35:55,280 --> 00:36:00,960
+accept its input
+
+851
+00:35:58,800 --> 00:36:02,400
+okay
+
+852
+00:36:00,960 --> 00:36:05,040
+so
+
+853
+00:36:02,400 --> 00:36:07,280
+it's easy to know that
+
+854
+00:36:05,040 --> 00:36:09,599
+only
+
+855
+00:36:07,280 --> 00:36:11,280
+the accepting
+
+856
+00:36:09,599 --> 00:36:13,680
+configuration
+
+857
+00:36:11,280 --> 00:36:17,680
+accepting
+
+858
+00:36:13,680 --> 00:36:20,240
+accepting computation history of mlw
+
+859
+00:36:17,680 --> 00:36:22,960
+will be reject
+
+860
+00:36:20,240 --> 00:36:26,320
+will be rejected by the pda we
+
+861
+00:36:22,960 --> 00:36:28,960
+constructed right
+
+862
+00:36:26,320 --> 00:36:30,720
+so if you have no problem
+
+863
+00:36:28,960 --> 00:36:33,760
+then
+
+864
+00:36:30,720 --> 00:36:36,640
+we convert the pda
+
+865
+00:36:33,760 --> 00:36:37,599
+constructed for mrw
+
+866
+00:36:36,640 --> 00:36:40,599
+to
+
+867
+00:36:37,599 --> 00:36:40,599
+cfg
+
+868
+00:36:41,119 --> 00:36:45,280
+then we will have a cfg
+
+869
+00:36:45,599 --> 00:36:49,280
+like
+
+870
+00:36:46,960 --> 00:36:50,480
+l of g
+
+871
+00:36:49,280 --> 00:36:53,440
+is
+
+872
+00:36:50,480 --> 00:36:54,960
+all possible string
+
+873
+00:36:53,440 --> 00:36:58,640
+if
+
+874
+00:36:54,960 --> 00:37:00,320
+m does not accept w
+
+875
+00:36:58,640 --> 00:37:02,960
+right
+
+876
+00:37:00,320 --> 00:37:06,480
+because if m does not
+
+877
+00:37:02,960 --> 00:37:10,240
+accept w our pda will reject all
+
+878
+00:37:06,480 --> 00:37:13,839
+possible strings because there is no
+
+879
+00:37:10,240 --> 00:37:15,680
+accepting computation history of 4n on w
+
+880
+00:37:13,839 --> 00:37:17,280
+exist
+
+881
+00:37:15,680 --> 00:37:22,920
+and the converted
+
+882
+00:37:17,280 --> 00:37:22,920
+context-free grammar will be able to
+
+883
+00:37:22,960 --> 00:37:28,160
+generate all possible strings
+
+884
+00:37:25,839 --> 00:37:30,480
+otherwise
+
+885
+00:37:28,160 --> 00:37:31,440
+f g
+
+886
+00:37:30,480 --> 00:37:34,800
+is
+
+887
+00:37:31,440 --> 00:37:37,800
+all possible strings
+
+888
+00:37:34,800 --> 00:37:37,800
+except
+
+889
+00:37:37,839 --> 00:37:41,359
+the
+
+890
+00:37:38,880 --> 00:37:42,320
+computation history
+
+891
+00:37:41,359 --> 00:37:45,119
+in
+
+892
+00:37:42,320 --> 00:37:45,119
+you know uh
+
+893
+00:37:45,440 --> 00:37:50,560
+reverse order every other configuration
+
+894
+00:37:48,560 --> 00:37:53,760
+written in reverse order
+
+895
+00:37:50,560 --> 00:37:54,640
+other than this string
+
+896
+00:37:53,760 --> 00:37:58,480
+so
+
+897
+00:37:54,640 --> 00:38:01,440
+if m accepts w the accepting
+
+898
+00:37:58,480 --> 00:38:04,800
+computation history exists
+
+899
+00:38:01,440 --> 00:38:06,480
+then pda will reject that string and the
+
+900
+00:38:04,800 --> 00:38:09,119
+converted
+
+901
+00:38:06,480 --> 00:38:12,880
+grammar from the pda will generate
+
+902
+00:38:09,119 --> 00:38:16,079
+everything except this string
+
+903
+00:38:12,880 --> 00:38:16,079
+therefore it's not
+
+904
+00:38:16,320 --> 00:38:22,400
+it's not all possible string right
+
+905
+00:38:20,160 --> 00:38:22,400
+so
+
+906
+00:38:22,480 --> 00:38:25,280
+we can use
+
+907
+00:38:25,599 --> 00:38:29,200
+the decider for
+
+908
+00:38:27,520 --> 00:38:30,640
+all
+
+909
+00:38:29,200 --> 00:38:33,440
+c f
+
+910
+00:38:30,640 --> 00:38:36,720
+g
+
+911
+00:38:33,440 --> 00:38:41,200
+to check if a given grammar
+
+912
+00:38:36,720 --> 00:38:41,200
+can generate all possible string or not
+
+913
+00:38:43,920 --> 00:38:47,359
+if
+
+914
+00:38:45,760 --> 00:38:50,240
+the grammar can generate all possible
+
+915
+00:38:47,359 --> 00:38:53,200
+string that means
+
+916
+00:38:50,240 --> 00:38:56,240
+the given m and w
+
+917
+00:38:53,200 --> 00:38:57,839
+and will not accept w then our decider
+
+918
+00:38:56,240 --> 00:38:58,839
+for atm can
+
+919
+00:38:57,839 --> 00:39:02,079
+answer
+
+920
+00:38:58,839 --> 00:39:04,320
+reject otherwise we can answer accept
+
+921
+00:39:02,079 --> 00:39:07,440
+because we know
+
+922
+00:39:04,320 --> 00:39:10,079
+the accepting computation history for n
+
+923
+00:39:07,440 --> 00:39:10,960
+on w exists
+
+924
+00:39:10,079 --> 00:39:15,359
+right
+
+925
+00:39:10,960 --> 00:39:17,760
+so all ocfg is undecidable because
+
+926
+00:39:15,359 --> 00:39:20,160
+its decider cannot
+
+927
+00:39:17,760 --> 00:39:20,160
+exist
+
+928
+00:39:20,400 --> 00:39:22,640
+okay
+
+929
+00:39:25,920 --> 00:39:31,599
+and finally we want to introduce a
+
+930
+00:39:28,880 --> 00:39:34,880
+simple undecidable problem
+
+931
+00:39:31,599 --> 00:39:37,599
+also using the skill
+
+932
+00:39:34,880 --> 00:39:39,760
+of reductions via
+
+933
+00:39:37,599 --> 00:39:42,000
+computation history
+
+934
+00:39:39,760 --> 00:39:44,720
+and firstly the problem we
+
+935
+00:39:42,000 --> 00:39:46,320
+want to talk about is pcp
+
+936
+00:39:44,720 --> 00:39:49,359
+what is pcp
+
+937
+00:39:46,320 --> 00:39:50,160
+which is uh post correspondence problem
+
+938
+00:39:49,359 --> 00:39:52,160
+okay
+
+939
+00:39:50,160 --> 00:39:53,839
+post here is
+
+940
+00:39:52,160 --> 00:39:56,800
+a less than
+
+941
+00:39:53,839 --> 00:40:01,119
+the less than of the scatter so he
+
+942
+00:39:56,800 --> 00:40:05,040
+proposed the problem and what is a pcp
+
+943
+00:40:01,119 --> 00:40:08,480
+a pt a pcp is a collection of dominoes
+
+944
+00:40:05,040 --> 00:40:11,119
+like this one we have first domino top
+
+945
+00:40:08,480 --> 00:40:14,400
+is b bottom is ca
+
+946
+00:40:11,119 --> 00:40:15,760
+and the second type of domino tub is a
+
+947
+00:40:14,400 --> 00:40:18,160
+second c
+
+948
+00:40:15,760 --> 00:40:20,079
+a b etc
+
+949
+00:40:18,160 --> 00:40:22,960
+and
+
+950
+00:40:20,079 --> 00:40:27,760
+we have infinite
+
+951
+00:40:22,960 --> 00:40:30,640
+copy of you know every type of dominoes
+
+952
+00:40:27,760 --> 00:40:32,160
+we have infinite copies
+
+953
+00:40:30,640 --> 00:40:34,800
+and what is the
+
+954
+00:40:32,160 --> 00:40:38,319
+problem here the problem here is that is
+
+955
+00:40:34,800 --> 00:40:40,319
+it possible to find a match
+
+956
+00:40:38,319 --> 00:40:41,359
+is it possible to find a match
+
+957
+00:40:40,319 --> 00:40:43,920
+so
+
+958
+00:40:41,359 --> 00:40:46,079
+for this particular instance
+
+959
+00:40:43,920 --> 00:40:50,319
+yes there is a match
+
+960
+00:40:46,079 --> 00:40:51,599
+if we put the second type first type
+
+961
+00:40:50,319 --> 00:40:54,960
+third type
+
+962
+00:40:51,599 --> 00:40:58,079
+second type again and fourth type
+
+963
+00:40:54,960 --> 00:41:03,920
+you will find the top string is
+
+964
+00:40:58,079 --> 00:41:08,000
+a c a a b c a a a b c and the top of the
+
+965
+00:41:03,920 --> 00:41:10,960
+string is also a b c a a a b c
+
+966
+00:41:08,000 --> 00:41:12,000
+that's a match okay
+
+967
+00:41:10,960 --> 00:41:13,040
+and
+
+968
+00:41:12,000 --> 00:41:15,280
+for
+
+969
+00:41:13,040 --> 00:41:18,079
+for some instance
+
+970
+00:41:15,280 --> 00:41:21,280
+like this one we can determine that it's
+
+971
+00:41:18,079 --> 00:41:23,200
+not possible to have a match
+
+972
+00:41:21,280 --> 00:41:26,640
+because for this one
+
+973
+00:41:23,200 --> 00:41:29,200
+top is always longer than bottom
+
+974
+00:41:26,640 --> 00:41:30,960
+so it's not possible to have a match
+
+975
+00:41:29,200 --> 00:41:34,880
+so that's called
+
+976
+00:41:30,960 --> 00:41:37,599
+post correspondence problem okay
+
+977
+00:41:34,880 --> 00:41:38,960
+and formally we can describe
+
+978
+00:41:37,599 --> 00:41:41,200
+pcps
+
+979
+00:41:38,960 --> 00:41:42,880
+you have
+
+980
+00:41:41,200 --> 00:41:45,040
+k
+
+981
+00:41:42,880 --> 00:41:47,520
+instance of pcp
+
+982
+00:41:45,040 --> 00:41:49,040
+is that you have k
+
+983
+00:41:47,520 --> 00:41:51,839
+dominoes
+
+984
+00:41:49,040 --> 00:41:53,680
+is there a string sorry is there is
+
+985
+00:41:51,839 --> 00:41:55,040
+there a sequence
+
+986
+00:41:53,680 --> 00:41:56,720
+exist
+
+987
+00:41:55,040 --> 00:41:59,359
+such that
+
+988
+00:41:56,720 --> 00:41:59,359
+the top
+
+989
+00:42:00,000 --> 00:42:05,839
+the top of the sequence of the dominoes
+
+990
+00:42:03,760 --> 00:42:07,040
+the uh the top string of the sequence of
+
+991
+00:42:05,839 --> 00:42:09,839
+the dominoes
+
+992
+00:42:07,040 --> 00:42:12,000
+is equal is identical to that of the
+
+993
+00:42:09,839 --> 00:42:15,200
+bottom string
+
+994
+00:42:12,000 --> 00:42:17,920
+okay so that's the formal description
+
+995
+00:42:15,200 --> 00:42:20,240
+and to
+
+996
+00:42:17,920 --> 00:42:22,560
+use our tier machine
+
+997
+00:42:20,240 --> 00:42:25,280
+terminology to describe pcp we can say
+
+998
+00:42:22,560 --> 00:42:27,839
+that pcp
+
+999
+00:42:25,280 --> 00:42:30,480
+is an instance with a match
+
+1000
+00:42:27,839 --> 00:42:34,160
+and can we write a program to determine
+
+1001
+00:42:30,480 --> 00:42:36,480
+that the instance with a match
+
+1002
+00:42:34,160 --> 00:42:36,480
+okay
+
+1003
+00:42:36,720 --> 00:42:41,359
+now we want to prove that actually pcp
+
+1004
+00:42:39,680 --> 00:42:45,520
+is undecidable
+
+1005
+00:42:41,359 --> 00:42:47,760
+okay pcp is undecidable so the idea is
+
+1006
+00:42:45,520 --> 00:42:52,319
+that we are
+
+1007
+00:42:47,760 --> 00:42:56,800
+we want to use a decider for pcp
+
+1008
+00:42:52,319 --> 00:43:01,200
+as decided for pcp to help us to
+
+1009
+00:42:56,800 --> 00:43:05,359
+decide atm again yes atm
+
+1010
+00:43:01,200 --> 00:43:08,800
+so given turing machine m and input w
+
+1011
+00:43:05,359 --> 00:43:13,280
+let's construct a pcp
+
+1012
+00:43:08,800 --> 00:43:17,200
+and then that pcp has the property that
+
+1013
+00:43:13,280 --> 00:43:19,599
+if the pcp we constructed has a match
+
+1014
+00:43:17,200 --> 00:43:21,119
+then m accept w
+
+1015
+00:43:19,599 --> 00:43:24,839
+otherwise
+
+1016
+00:43:21,119 --> 00:43:28,319
+m does not accept w
+
+1017
+00:43:24,839 --> 00:43:30,640
+okay so we have uh
+
+1018
+00:43:28,319 --> 00:43:32,079
+three technical points here
+
+1019
+00:43:30,640 --> 00:43:34,640
+first
+
+1020
+00:43:32,079 --> 00:43:38,560
+we assume that
+
+1021
+00:43:34,640 --> 00:43:42,000
+when m running on w it never attempts to
+
+1022
+00:43:38,560 --> 00:43:43,359
+move its head off the left hand end of
+
+1023
+00:43:42,000 --> 00:43:46,319
+the tape
+
+1024
+00:43:43,359 --> 00:43:47,920
+okay that's our first assumption
+
+1025
+00:43:46,319 --> 00:43:50,880
+and
+
+1026
+00:43:47,920 --> 00:43:54,400
+actually you can
+
+1027
+00:43:50,880 --> 00:43:57,520
+use another if if the m
+
+1028
+00:43:54,400 --> 00:43:59,680
+you are given really does it
+
+1029
+00:43:57,520 --> 00:44:03,200
+you can write a turing machine to
+
+1030
+00:43:59,680 --> 00:44:06,079
+simulate it first and detect this event
+
+1031
+00:44:03,200 --> 00:44:09,200
+and do some correspond corresponding
+
+1032
+00:44:06,079 --> 00:44:11,440
+action to
+
+1033
+00:44:09,200 --> 00:44:14,400
+handle it okay so that's not really a
+
+1034
+00:44:11,440 --> 00:44:16,000
+problem so we just for convenience
+
+1035
+00:44:14,400 --> 00:44:19,359
+we assume
+
+1036
+00:44:16,000 --> 00:44:20,560
+the behavior mw is like this
+
+1037
+00:44:19,359 --> 00:44:23,440
+and then
+
+1038
+00:44:20,560 --> 00:44:25,760
+if the input string is you know nothing
+
+1039
+00:44:23,440 --> 00:44:28,079
+is empty string we put
+
+1040
+00:44:25,760 --> 00:44:29,520
+blank
+
+1041
+00:44:28,079 --> 00:44:31,359
+in place of the string to do the
+
+1042
+00:44:29,520 --> 00:44:32,800
+construction i think that's not a
+
+1043
+00:44:31,359 --> 00:44:35,960
+problem right
+
+1044
+00:44:32,800 --> 00:44:35,960
+and then
+
+1045
+00:44:36,319 --> 00:44:39,520
+we talk about
+
+1046
+00:44:39,599 --> 00:44:45,920
+a modified version of pcp first for
+
+1047
+00:44:42,640 --> 00:44:52,240
+simplicity and then
+
+1048
+00:44:45,920 --> 00:44:52,240
+we change we change or we modify the
+
+1049
+00:44:52,480 --> 00:44:56,560
+changed pcp
+
+1050
+00:44:54,720 --> 00:44:57,440
+back to the normal version
+
+1051
+00:44:56,560 --> 00:44:58,640
+okay
+
+1052
+00:44:57,440 --> 00:45:02,000
+so
+
+1053
+00:44:58,640 --> 00:45:05,520
+the modified version of pcp is like we
+
+1054
+00:45:02,000 --> 00:45:07,440
+require that a match start with the
+
+1055
+00:45:05,520 --> 00:45:08,800
+first domino
+
+1056
+00:45:07,440 --> 00:45:12,319
+okay
+
+1057
+00:45:08,800 --> 00:45:16,560
+so in the original version of pcp or
+
+1058
+00:45:12,319 --> 00:45:19,280
+regular version of pcp there is no need
+
+1059
+00:45:16,560 --> 00:45:22,000
+to start from the first domino see this
+
+1060
+00:45:19,280 --> 00:45:24,480
+match is the second first
+
+1061
+00:45:22,000 --> 00:45:27,200
+third second fourth
+
+1062
+00:45:24,480 --> 00:45:28,160
+right so there is no need to start from
+
+1063
+00:45:27,200 --> 00:45:31,760
+the first
+
+1064
+00:45:28,160 --> 00:45:35,040
+but for simplicity in our proof we
+
+1065
+00:45:31,760 --> 00:45:36,480
+require this first then we remove the
+
+1066
+00:45:35,040 --> 00:45:37,520
+requirement
+
+1067
+00:45:36,480 --> 00:45:39,680
+okay
+
+1068
+00:45:37,520 --> 00:45:42,240
+and we call the
+
+1069
+00:45:39,680 --> 00:45:44,240
+modified
+
+1070
+00:45:42,240 --> 00:45:45,760
+pcp
+
+1071
+00:45:44,240 --> 00:45:49,440
+as
+
+1072
+00:45:45,760 --> 00:45:52,160
+there's an instance of pcp you have to
+
+1073
+00:45:49,440 --> 00:45:56,319
+start the match have two starts we have
+
+1074
+00:45:52,160 --> 00:45:56,319
+to start with the first domino
+
+1075
+00:45:56,800 --> 00:46:01,119
+okay so with the three
+
+1076
+00:45:59,200 --> 00:46:06,240
+technical points
+
+1077
+00:46:01,119 --> 00:46:06,240
+let's build up the decider for atm
+
+1078
+00:46:11,440 --> 00:46:16,800
+let's say
+
+1079
+00:46:12,720 --> 00:46:18,480
+assume that there is a decider for pcp
+
+1080
+00:46:16,800 --> 00:46:22,400
+r
+
+1081
+00:46:18,480 --> 00:46:23,920
+actually mpcp but you know pcp
+
+1082
+00:46:22,400 --> 00:46:26,880
+okay
+
+1083
+00:46:23,920 --> 00:46:30,240
+we want to con we want to construct
+
+1084
+00:46:26,880 --> 00:46:32,560
+construct the decider for atm
+
+1085
+00:46:30,240 --> 00:46:32,560
+and
+
+1086
+00:46:33,520 --> 00:46:40,640
+for atm we will
+
+1087
+00:46:35,839 --> 00:46:42,880
+for atm for instance of atm we will have
+
+1088
+00:46:40,640 --> 00:46:45,200
+n and w right
+
+1089
+00:46:42,880 --> 00:46:47,440
+and the m is a turing machine so we will
+
+1090
+00:46:45,200 --> 00:46:50,880
+have everything regarding that turing
+
+1091
+00:46:47,440 --> 00:46:53,920
+machine and we will have w
+
+1092
+00:46:50,880 --> 00:46:57,040
+as the input string
+
+1093
+00:46:53,920 --> 00:46:58,960
+firstly we construct
+
+1094
+00:46:57,040 --> 00:47:00,480
+the first
+
+1095
+00:46:58,960 --> 00:47:03,760
+domino
+
+1096
+00:47:00,480 --> 00:47:05,200
+which is you know t1b1 here
+
+1097
+00:47:03,760 --> 00:47:06,800
+so we put
+
+1098
+00:47:05,200 --> 00:47:08,079
+a separator
+
+1099
+00:47:06,800 --> 00:47:11,359
+on the top
+
+1100
+00:47:08,079 --> 00:47:12,880
+and a separator on the button
+
+1101
+00:47:11,359 --> 00:47:16,160
+and then
+
+1102
+00:47:12,880 --> 00:47:18,079
+starts configuration
+
+1103
+00:47:16,160 --> 00:47:20,800
+and separator
+
+1104
+00:47:18,079 --> 00:47:20,800
+on the bottom
+
+1105
+00:47:20,880 --> 00:47:26,640
+okay
+
+1106
+00:47:23,040 --> 00:47:29,200
+so that's our first domino
+
+1107
+00:47:26,640 --> 00:47:32,319
+so since we require that
+
+1108
+00:47:29,200 --> 00:47:36,640
+the match must be stopped we must start
+
+1109
+00:47:32,319 --> 00:47:41,680
+with the first one so we imagine that
+
+1110
+00:47:36,640 --> 00:47:43,839
+we put first domino here
+
+1111
+00:47:41,680 --> 00:47:47,280
+and then you can find that
+
+1112
+00:47:43,839 --> 00:47:51,760
+the string on the top is a separator and
+
+1113
+00:47:47,280 --> 00:47:53,920
+on the bottom is one separator and then
+
+1114
+00:47:51,760 --> 00:47:56,319
+starting configuration
+
+1115
+00:47:53,920 --> 00:47:56,319
+and then
+
+1116
+00:47:56,559 --> 00:47:59,839
+another separator
+
+1117
+00:47:59,040 --> 00:48:02,079
+so
+
+1118
+00:47:59,839 --> 00:48:04,880
+start from this situation
+
+1119
+00:48:02,079 --> 00:48:09,200
+okay so that's our first domino
+
+1120
+00:48:04,880 --> 00:48:09,200
+and then second domino
+
+1121
+00:48:09,280 --> 00:48:12,559
+well not really second
+
+1122
+00:48:11,440 --> 00:48:15,440
+second
+
+1123
+00:48:12,559 --> 00:48:16,240
+category or second part of the domino is
+
+1124
+00:48:15,440 --> 00:48:19,280
+that
+
+1125
+00:48:16,240 --> 00:48:20,559
+for every since we have the spec of the
+
+1126
+00:48:19,280 --> 00:48:23,200
+two machine
+
+1127
+00:48:20,559 --> 00:48:23,200
+for every
+
+1128
+00:48:23,280 --> 00:48:27,119
+going right transition
+
+1129
+00:48:29,280 --> 00:48:32,599
+we put
+
+1130
+00:48:35,520 --> 00:48:40,960
+dominoes like this into
+
+1131
+00:48:38,720 --> 00:48:43,200
+a pcp
+
+1132
+00:48:40,960 --> 00:48:45,920
+so if
+
+1133
+00:48:43,200 --> 00:48:49,119
+there is a transition q
+
+1134
+00:48:45,920 --> 00:48:52,800
+reading a
+
+1135
+00:48:49,119 --> 00:48:56,400
+change q to r and the reading b
+
+1136
+00:48:52,800 --> 00:48:58,079
+and head go into the right direction
+
+1137
+00:48:56,400 --> 00:49:00,079
+we put one
+
+1138
+00:48:58,079 --> 00:49:01,520
+domino q
+
+1139
+00:49:00,079 --> 00:49:03,680
+a
+
+1140
+00:49:01,520 --> 00:49:06,000
+b r
+
+1141
+00:49:03,680 --> 00:49:06,000
+okay
+
+1142
+00:49:06,240 --> 00:49:12,720
+and if there are
+
+1143
+00:49:09,200 --> 00:49:12,720
+transitions goes left
+
+1144
+00:49:12,800 --> 00:49:15,359
+we put
+
+1145
+00:49:15,680 --> 00:49:18,720
+q
+
+1146
+00:49:16,480 --> 00:49:18,720
+a
+
+1147
+00:49:20,079 --> 00:49:26,480
+b because a change to b right
+
+1148
+00:49:22,960 --> 00:49:27,280
+and your head goes to left
+
+1149
+00:49:26,480 --> 00:49:30,720
+but
+
+1150
+00:49:27,280 --> 00:49:33,040
+for this part and this part
+
+1151
+00:49:30,720 --> 00:49:36,160
+you need to fill in
+
+1152
+00:49:33,040 --> 00:49:37,839
+all possible
+
+1153
+00:49:36,160 --> 00:49:39,920
+tab symbols
+
+1154
+00:49:37,839 --> 00:49:41,440
+okay
+
+1155
+00:49:39,920 --> 00:49:43,680
+so
+
+1156
+00:49:41,440 --> 00:49:46,800
+for part two
+
+1157
+00:49:43,680 --> 00:49:46,800
+if there are
+
+1158
+00:49:48,240 --> 00:49:53,520
+you actually create
+
+1159
+00:49:50,559 --> 00:49:53,520
+the number of
+
+1160
+00:49:54,319 --> 00:49:58,960
+the transitions goes right
+
+1161
+00:49:57,040 --> 00:50:02,559
+dominoes
+
+1162
+00:49:58,960 --> 00:50:03,680
+but for part 3 you will create the
+
+1163
+00:50:02,559 --> 00:50:05,200
+number
+
+1164
+00:50:03,680 --> 00:50:07,680
+of
+
+1165
+00:50:05,200 --> 00:50:09,040
+transitions goes left
+
+1166
+00:50:07,680 --> 00:50:11,440
+times
+
+1167
+00:50:09,040 --> 00:50:15,599
+the number of tab symbol
+
+1168
+00:50:11,440 --> 00:50:17,760
+dominoes because you need to fill
+
+1169
+00:50:15,599 --> 00:50:20,079
+symbol c here
+
+1170
+00:50:17,760 --> 00:50:22,000
+with every
+
+1171
+00:50:20,079 --> 00:50:23,200
+with all
+
+1172
+00:50:22,000 --> 00:50:24,720
+symbols
+
+1173
+00:50:23,200 --> 00:50:26,880
+in
+
+1174
+00:50:24,720 --> 00:50:28,720
+type symbols
+
+1175
+00:50:26,880 --> 00:50:30,960
+okay
+
+1176
+00:50:28,720 --> 00:50:30,960
+so
+
+1177
+00:50:32,800 --> 00:50:37,680
+and for part four for every
+
+1178
+00:50:35,280 --> 00:50:40,800
+simple
+
+1179
+00:50:37,680 --> 00:50:43,359
+in tab symbol we put a domino like this
+
+1180
+00:50:40,800 --> 00:50:46,000
+into our collection
+
+1181
+00:50:43,359 --> 00:50:48,079
+so you see if we don't
+
+1182
+00:50:46,000 --> 00:50:52,000
+if we don't require
+
+1183
+00:50:48,079 --> 00:50:56,160
+the match start from the first domino
+
+1184
+00:50:52,000 --> 00:50:57,599
+then the domino in part 4 alone
+
+1185
+00:50:56,160 --> 00:51:00,000
+gives a match
+
+1186
+00:50:57,599 --> 00:51:02,559
+right that's why we need to
+
+1187
+00:51:00,000 --> 00:51:06,079
+we need to limit we need to restrict
+
+1188
+00:51:02,559 --> 00:51:09,520
+that the match must start
+
+1189
+00:51:06,079 --> 00:51:10,400
+from the first domino and for part 5 we
+
+1190
+00:51:09,520 --> 00:51:13,119
+put
+
+1191
+00:51:10,400 --> 00:51:14,400
+separator separator and
+
+1192
+00:51:13,119 --> 00:51:17,599
+blank
+
+1193
+00:51:14,400 --> 00:51:17,599
+separator separator
+
+1194
+00:51:18,160 --> 00:51:25,359
+and for part 6 for every symbol in type
+
+1195
+00:51:22,079 --> 00:51:25,359
+symbol we put
+
+1196
+00:51:26,079 --> 00:51:31,599
+this symbol q accept accept and the q
+
+1197
+00:51:28,960 --> 00:51:33,440
+accept this symbol and this symbol
+
+1198
+00:51:31,599 --> 00:51:38,079
+and finally
+
+1199
+00:51:33,440 --> 00:51:42,720
+the last part we add these domino
+
+1200
+00:51:38,079 --> 00:51:42,720
+we add these domino into collection
+
+1201
+00:51:43,200 --> 00:51:46,640
+and
+
+1202
+00:51:44,160 --> 00:51:49,200
+checking all the parts you will find
+
+1203
+00:51:46,640 --> 00:51:51,280
+something interesting that
+
+1204
+00:51:49,200 --> 00:51:53,440
+first part we have starting
+
+1205
+00:51:51,280 --> 00:51:55,839
+configuration right
+
+1206
+00:51:53,440 --> 00:51:55,839
+and then
+
+1207
+00:51:55,920 --> 00:52:01,920
+part two path three
+
+1208
+00:51:57,920 --> 00:52:05,680
+reflects the transition of the
+
+1209
+00:52:01,920 --> 00:52:07,200
+two of the given two machine n
+
+1210
+00:52:05,680 --> 00:52:08,880
+and then
+
+1211
+00:52:07,200 --> 00:52:11,760
+part four
+
+1212
+00:52:08,880 --> 00:52:12,960
+is just you know copy the tape content
+
+1213
+00:52:11,760 --> 00:52:14,880
+path five
+
+1214
+00:52:12,960 --> 00:52:17,200
+copy the separator
+
+1215
+00:52:14,880 --> 00:52:19,359
+and part six
+
+1216
+00:52:17,200 --> 00:52:21,040
+remove
+
+1217
+00:52:19,359 --> 00:52:24,319
+tape symbol
+
+1218
+00:52:21,040 --> 00:52:24,319
+and then part 7
+
+1219
+00:52:26,640 --> 00:52:33,760
+give enough balanced separators
+
+1220
+00:52:30,240 --> 00:52:36,160
+because you will you can see that
+
+1221
+00:52:33,760 --> 00:52:38,640
+part one has two separators on the
+
+1222
+00:52:36,160 --> 00:52:42,720
+bottom and the one on the top
+
+1223
+00:52:38,640 --> 00:52:43,760
+and other parts of the dominoes
+
+1224
+00:52:42,720 --> 00:52:47,440
+either
+
+1225
+00:52:43,760 --> 00:52:50,880
+no separator or same number of separator
+
+1226
+00:52:47,440 --> 00:52:51,839
+so it will never have a match
+
+1227
+00:52:50,880 --> 00:52:56,319
+right
+
+1228
+00:52:51,839 --> 00:52:56,319
+only that we have something like this
+
+1229
+00:52:59,440 --> 00:53:01,520
+okay
+
+1230
+00:53:00,640 --> 00:53:03,920
+so
+
+1231
+00:53:01,520 --> 00:53:06,640
+let's have an example here
+
+1232
+00:53:03,920 --> 00:53:07,760
+so if there if you are given a turing
+
+1233
+00:53:06,640 --> 00:53:11,599
+machine
+
+1234
+00:53:07,760 --> 00:53:13,119
+with type symbol 0 1 2 and blank
+
+1235
+00:53:11,599 --> 00:53:15,599
+and start from
+
+1236
+00:53:13,119 --> 00:53:16,960
+0 1 0 0
+
+1237
+00:53:15,599 --> 00:53:20,880
+then
+
+1238
+00:53:16,960 --> 00:53:23,280
+we put the starting configuration as the
+
+1239
+00:53:20,880 --> 00:53:25,280
+first domino
+
+1240
+00:53:23,280 --> 00:53:26,960
+so
+
+1241
+00:53:25,280 --> 00:53:29,920
+since the
+
+1242
+00:53:26,960 --> 00:53:31,280
+match required starting from
+
+1243
+00:53:29,920 --> 00:53:34,319
+t1 b1
+
+1244
+00:53:31,280 --> 00:53:35,440
+so we will have string like this
+
+1245
+00:53:34,319 --> 00:53:37,599
+okay
+
+1246
+00:53:35,440 --> 00:53:39,520
+then think about it
+
+1247
+00:53:37,599 --> 00:53:41,680
+you want to match
+
+1248
+00:53:39,520 --> 00:53:43,280
+the string
+
+1249
+00:53:41,680 --> 00:53:46,400
+right
+
+1250
+00:53:43,280 --> 00:53:47,440
+then it's matched so you want to put q0
+
+1251
+00:53:46,400 --> 00:53:50,559
+here
+
+1252
+00:53:47,440 --> 00:53:52,880
+0 here right
+
+1253
+00:53:50,559 --> 00:53:56,800
+what domino will have something like
+
+1254
+00:53:52,880 --> 00:53:58,240
+this and q0 is a state right so you need
+
+1255
+00:53:56,800 --> 00:54:00,720
+to check
+
+1256
+00:53:58,240 --> 00:54:04,079
+if the machine has a transition
+
+1257
+00:54:00,720 --> 00:54:09,440
+q 0 q 0 and 0
+
+1258
+00:54:04,079 --> 00:54:10,640
+make q 0 q 7 and make 0 2 and
+
+1259
+00:54:09,440 --> 00:54:11,599
+goes right
+
+1260
+00:54:10,640 --> 00:54:14,480
+so
+
+1261
+00:54:11,599 --> 00:54:16,880
+in our collection there will be a domino
+
+1262
+00:54:14,480 --> 00:54:18,079
+q 0 0
+
+1263
+00:54:16,880 --> 00:54:20,960
+and what
+
+1264
+00:54:18,079 --> 00:54:21,760
+goes right right so 0 becomes 2 and the
+
+1265
+00:54:20,960 --> 00:54:25,200
+q
+
+1266
+00:54:21,760 --> 00:54:28,559
+7 will have this one so
+
+1267
+00:54:25,200 --> 00:54:32,160
+we will have this one in the collection
+
+1268
+00:54:28,559 --> 00:54:36,640
+and in order to match q0 so you use this
+
+1269
+00:54:32,160 --> 00:54:37,599
+one use the q0 here to match q0 here
+
+1270
+00:54:36,640 --> 00:54:41,359
+right
+
+1271
+00:54:37,599 --> 00:54:45,359
+and since you used this one
+
+1272
+00:54:41,359 --> 00:54:47,680
+there will be two q7
+
+1273
+00:54:45,359 --> 00:54:48,880
+growing on the bottom
+
+1274
+00:54:47,680 --> 00:54:50,559
+right
+
+1275
+00:54:48,880 --> 00:54:52,640
+and then we just
+
+1276
+00:54:50,559 --> 00:54:54,880
+we have matched this
+
+1277
+00:54:52,640 --> 00:54:56,640
+then we just use
+
+1278
+00:54:54,880 --> 00:54:58,799
+part 4
+
+1279
+00:54:56,640 --> 00:55:01,280
+to copy tab content
+
+1280
+00:54:58,799 --> 00:55:04,480
+to copy type content
+
+1281
+00:55:01,280 --> 00:55:07,040
+to copy tab content and use part
+
+1282
+00:55:04,480 --> 00:55:09,359
+5 i guess to copy
+
+1283
+00:55:07,040 --> 00:55:12,559
+separator
+
+1284
+00:55:09,359 --> 00:55:13,920
+so you see the interesting thing is that
+
+1285
+00:55:12,559 --> 00:55:17,359
+in order
+
+1286
+00:55:13,920 --> 00:55:18,839
+for the design of our dominoes here in
+
+1287
+00:55:17,359 --> 00:55:22,559
+order to
+
+1288
+00:55:18,839 --> 00:55:25,119
+match top with the bottom
+
+1289
+00:55:22,559 --> 00:55:25,119
+you will
+
+1290
+00:55:25,200 --> 00:55:28,799
+simulate one
+
+1291
+00:55:27,680 --> 00:55:33,119
+move
+
+1292
+00:55:28,799 --> 00:55:35,760
+one transition of that two machine
+
+1293
+00:55:33,119 --> 00:55:37,280
+on the input w
+
+1294
+00:55:35,760 --> 00:55:40,319
+right
+
+1295
+00:55:37,280 --> 00:55:42,880
+so you will be able to do the trying to
+
+1296
+00:55:40,319 --> 00:55:45,599
+do the match and keep going and keep
+
+1297
+00:55:42,880 --> 00:55:46,839
+going and keep going
+
+1298
+00:55:45,599 --> 00:55:51,520
+and let's
+
+1299
+00:55:46,839 --> 00:55:53,040
+say so from this one and the two we just
+
+1300
+00:55:51,520 --> 00:55:54,799
+copied
+
+1301
+00:55:53,040 --> 00:55:57,440
+using par 4
+
+1302
+00:55:54,799 --> 00:55:58,640
+and assuming that there is a
+
+1303
+00:55:57,440 --> 00:56:00,640
+q1
+
+1304
+00:55:58,640 --> 00:56:01,359
+sorry q7 1
+
+1305
+00:56:00,640 --> 00:56:04,559
+and
+
+1306
+00:56:01,359 --> 00:56:06,319
+q05 going to write that would be this
+
+1307
+00:56:04,559 --> 00:56:10,480
+kind of domino so the same thing
+
+1308
+00:56:06,319 --> 00:56:13,839
+happened in order to match q17 you use
+
+1309
+00:56:10,480 --> 00:56:16,559
+this domino so q17 okay but
+
+1310
+00:56:13,839 --> 00:56:18,880
+you will have 0 q5 here
+
+1311
+00:56:16,559 --> 00:56:22,960
+then again copy
+
+1312
+00:56:18,880 --> 00:56:24,319
+type content copy separator you go one
+
+1313
+00:56:22,960 --> 00:56:26,640
+step
+
+1314
+00:56:24,319 --> 00:56:26,640
+again
+
+1315
+00:56:26,720 --> 00:56:31,760
+see
+
+1316
+00:56:27,599 --> 00:56:33,200
+when you try to match in the domino you
+
+1317
+00:56:31,760 --> 00:56:35,359
+are simulating
+
+1318
+00:56:33,200 --> 00:56:36,720
+the turing machine if you
+
+1319
+00:56:35,359 --> 00:56:39,520
+do this way
+
+1320
+00:56:36,720 --> 00:56:40,960
+and let's have another example here if
+
+1321
+00:56:39,520 --> 00:56:44,880
+there is a
+
+1322
+00:56:40,960 --> 00:56:45,920
+left going transition like this one
+
+1323
+00:56:44,880 --> 00:56:48,720
+then
+
+1324
+00:56:45,920 --> 00:56:48,720
+remember that
+
+1325
+00:56:49,119 --> 00:56:53,200
+q
+
+1326
+00:56:50,319 --> 00:56:56,240
+five zero
+
+1327
+00:56:53,200 --> 00:56:59,359
+q five become q zero uh sorry q nine but
+
+1328
+00:56:56,240 --> 00:57:00,079
+it will go left so q9
+
+1329
+00:56:59,359 --> 00:57:02,480
+and
+
+1330
+00:57:00,079 --> 00:57:05,359
+zero becomes two this one becomes two
+
+1331
+00:57:02,480 --> 00:57:07,200
+and you need to fill all possible type
+
+1332
+00:57:05,359 --> 00:57:09,200
+symbols here
+
+1333
+00:57:07,200 --> 00:57:13,200
+so for the turing machine we have right
+
+1334
+00:57:09,200 --> 00:57:16,480
+now as an example the type symbol is
+
+1335
+00:57:13,200 --> 00:57:19,200
+0 1 2 blank right
+
+1336
+00:57:16,480 --> 00:57:21,440
+so for this transition
+
+1337
+00:57:19,200 --> 00:57:23,200
+we have
+
+1338
+00:57:21,440 --> 00:57:25,520
+four
+
+1339
+00:57:23,200 --> 00:57:27,119
+dominoes
+
+1340
+00:57:25,520 --> 00:57:28,240
+so
+
+1341
+00:57:27,119 --> 00:57:31,839
+copy
+
+1342
+00:57:28,240 --> 00:57:36,319
+type symbol cup uh sorry
+
+1343
+00:57:31,839 --> 00:57:37,280
+we know that q 0 0 q 5 we can use this
+
+1344
+00:57:36,319 --> 00:57:38,400
+one
+
+1345
+00:57:37,280 --> 00:57:42,480
+so
+
+1346
+00:57:38,400 --> 00:57:44,000
+match this one and have
+
+1347
+00:57:42,480 --> 00:57:45,920
+these on the bottom
+
+1348
+00:57:44,000 --> 00:57:47,359
+then copy zero
+
+1349
+00:57:45,920 --> 00:57:50,000
+copy separate
+
+1350
+00:57:47,359 --> 00:57:52,000
+so we go one more step
+
+1351
+00:57:50,000 --> 00:57:53,760
+of the two machine
+
+1352
+00:57:52,000 --> 00:57:57,200
+so as i said
+
+1353
+00:57:53,760 --> 00:58:00,000
+we can go on and on and on and on
+
+1354
+00:57:57,200 --> 00:58:02,160
+and assume that okay
+
+1355
+00:58:00,000 --> 00:58:03,839
+if the let's say
+
+1356
+00:58:02,160 --> 00:58:06,720
+if the
+
+1357
+00:58:03,839 --> 00:58:11,760
+machine n on w will never
+
+1358
+00:58:06,720 --> 00:58:14,079
+stop or machine and actually reject w
+
+1359
+00:58:11,760 --> 00:58:16,079
+then you will not have a match you will
+
+1360
+00:58:14,079 --> 00:58:18,400
+never have a match because there's no
+
+1361
+00:58:16,079 --> 00:58:21,920
+dominoes for you to finish the match
+
+1362
+00:58:18,400 --> 00:58:24,640
+right so that's first thing the second
+
+1363
+00:58:21,920 --> 00:58:27,920
+thing is assuming that
+
+1364
+00:58:24,640 --> 00:58:27,920
+after some steps
+
+1365
+00:58:28,000 --> 00:58:33,119
+the machine actually goes to accept
+
+1366
+00:58:31,599 --> 00:58:34,839
+like this one
+
+1367
+00:58:33,119 --> 00:58:37,839
+so from starting
+
+1368
+00:58:34,839 --> 00:58:42,319
+configuration the second one to
+
+1369
+00:58:37,839 --> 00:58:44,000
+this one so c1 c2 to cl is a accepting
+
+1370
+00:58:42,319 --> 00:58:45,760
+computation history
+
+1371
+00:58:44,000 --> 00:58:46,720
+let's assuming that
+
+1372
+00:58:45,760 --> 00:58:48,880
+then
+
+1373
+00:58:46,720 --> 00:58:50,640
+starting from this point
+
+1374
+00:58:48,880 --> 00:58:54,240
+starting from this point
+
+1375
+00:58:50,640 --> 00:58:56,640
+we can use the dominoes in part
+
+1376
+00:58:54,240 --> 00:59:00,160
+seven and six
+
+1377
+00:58:56,640 --> 00:59:02,000
+to gradually finish the match
+
+1378
+00:59:00,160 --> 00:59:04,160
+how do we do that
+
+1379
+00:59:02,000 --> 00:59:06,480
+for example you actually have many ways
+
+1380
+00:59:04,160 --> 00:59:09,680
+but for example
+
+1381
+00:59:06,480 --> 00:59:11,680
+we copy the tape we copy the tab content
+
+1382
+00:59:09,680 --> 00:59:14,079
+here and here
+
+1383
+00:59:11,680 --> 00:59:16,079
+and then we use the
+
+1384
+00:59:14,079 --> 00:59:20,480
+uh
+
+1385
+00:59:16,079 --> 00:59:22,000
+we use the dominoes for part
+
+1386
+00:59:20,480 --> 00:59:24,160
+6
+
+1387
+00:59:22,000 --> 00:59:25,440
+to match this one
+
+1388
+00:59:24,160 --> 00:59:28,559
+but
+
+1389
+00:59:25,440 --> 00:59:30,799
+the button only goes one except
+
+1390
+00:59:28,559 --> 00:59:33,119
+so you see
+
+1391
+00:59:30,799 --> 00:59:34,880
+we match this one match this one but
+
+1392
+00:59:33,119 --> 00:59:37,359
+here
+
+1393
+00:59:34,880 --> 00:59:39,119
+we eliminate a zero
+
+1394
+00:59:37,359 --> 00:59:41,200
+one zero one
+
+1395
+00:59:39,119 --> 00:59:44,000
+symbol zero right
+
+1396
+00:59:41,200 --> 00:59:47,119
+then we still match
+
+1397
+00:59:44,000 --> 00:59:48,559
+two and the match separator
+
+1398
+00:59:47,119 --> 00:59:51,839
+so
+
+1399
+00:59:48,559 --> 00:59:54,640
+one tab symbol
+
+1400
+00:59:51,839 --> 00:59:57,119
+eliminate removed
+
+1401
+00:59:54,640 --> 00:59:58,559
+so keep going this you can remove all
+
+1402
+00:59:57,119 --> 01:00:01,520
+tab symbols
+
+1403
+00:59:58,559 --> 01:00:06,799
+and finally you have
+
+1404
+01:00:01,520 --> 01:00:07,599
+only q accept and the separator left
+
+1405
+01:00:06,799 --> 01:00:09,119
+then
+
+1406
+01:00:07,599 --> 01:00:10,559
+now
+
+1407
+01:00:09,119 --> 01:00:13,280
+is the
+
+1408
+01:00:10,559 --> 01:00:16,640
+opportunity to use
+
+1409
+01:00:13,280 --> 01:00:18,319
+the domino of sec uh part seven
+
+1410
+01:00:16,640 --> 01:00:20,000
+so
+
+1411
+01:00:18,319 --> 01:00:22,319
+we finally
+
+1412
+01:00:20,000 --> 01:00:22,319
+use
+
+1413
+01:00:22,799 --> 01:00:27,119
+these tape as this domino
+
+1414
+01:00:25,920 --> 01:00:28,160
+of
+
+1415
+01:00:27,119 --> 01:00:32,000
+7
+
+1416
+01:00:28,160 --> 01:00:32,960
+to finish the match that will be a match
+
+1417
+01:00:32,000 --> 01:00:33,839
+right
+
+1418
+01:00:32,960 --> 01:00:36,720
+so
+
+1419
+01:00:33,839 --> 01:00:39,119
+we will have something like
+
+1420
+01:00:36,720 --> 01:00:41,599
+this so the top string and the bottom
+
+1421
+01:00:39,119 --> 01:00:45,760
+string is a match
+
+1422
+01:00:41,599 --> 01:00:46,880
+and this only happens when a match
+
+1423
+01:00:45,760 --> 01:00:52,079
+oh sorry
+
+1424
+01:00:46,880 --> 01:00:53,839
+when the machine m on w and her when
+
+1425
+01:00:52,079 --> 01:00:56,079
+m enters
+
+1426
+01:00:53,839 --> 01:00:57,200
+q accept
+
+1427
+01:00:56,079 --> 01:01:00,559
+during
+
+1428
+01:00:57,200 --> 01:01:01,440
+processing w
+
+1429
+01:01:00,559 --> 01:01:03,040
+right
+
+1430
+01:01:01,440 --> 01:01:05,200
+so our
+
+1431
+01:01:03,040 --> 01:01:08,720
+modified pcp
+
+1432
+01:01:05,200 --> 01:01:08,720
+or modified pcp
+
+1433
+01:01:09,680 --> 01:01:11,680
+can
+
+1434
+01:01:10,140 --> 01:01:14,720
+[Music]
+
+1435
+01:01:11,680 --> 01:01:18,559
+have a match if and only if
+
+1436
+01:01:14,720 --> 01:01:21,839
+m the given machine m running on w
+
+1437
+01:01:18,559 --> 01:01:21,839
+and accepts w
+
+1438
+01:01:22,559 --> 01:01:25,599
+right
+
+1439
+01:01:23,839 --> 01:01:28,400
+because
+
+1440
+01:01:25,599 --> 01:01:30,960
+m accept w there is a accepting
+
+1441
+01:01:28,400 --> 01:01:33,359
+computation history
+
+1442
+01:01:30,960 --> 01:01:37,040
+and that accepting computation history
+
+1443
+01:01:33,359 --> 01:01:38,480
+is exactly the match of our mpcp
+
+1444
+01:01:37,040 --> 01:01:40,960
+on the other hand
+
+1445
+01:01:38,480 --> 01:01:44,160
+if our mpcp has a match
+
+1446
+01:01:40,960 --> 01:01:47,040
+that that must be caused by
+
+1447
+01:01:44,160 --> 01:01:49,359
+the machine enters q accept
+
+1448
+01:01:47,040 --> 01:01:50,839
+because there is no other design for q
+
+1449
+01:01:49,359 --> 01:01:54,960
+reject right
+
+1450
+01:01:50,839 --> 01:01:56,480
+so we can we if we have
+
+1451
+01:01:54,960 --> 01:01:59,039
+if we have
+
+1452
+01:01:56,480 --> 01:02:02,799
+a decider for mpcp
+
+1453
+01:01:59,039 --> 01:02:05,680
+we can use that to construct atm decider
+
+1454
+01:02:02,799 --> 01:02:09,520
+so mpcp is undecidable
+
+1455
+01:02:05,680 --> 01:02:12,480
+but actually we can further remove
+
+1456
+01:02:09,520 --> 01:02:12,480
+the requirement
+
+1457
+01:02:12,559 --> 01:02:17,440
+to match with
+
+1458
+01:02:14,960 --> 01:02:20,480
+for the match to start with
+
+1459
+01:02:17,440 --> 01:02:22,799
+t1 b1
+
+1460
+01:02:20,480 --> 01:02:25,200
+after let's say
+
+1461
+01:02:22,799 --> 01:02:26,720
+after we have
+
+1462
+01:02:25,200 --> 01:02:30,400
+the set of
+
+1463
+01:02:26,720 --> 01:02:32,839
+our dominoes of mpcp
+
+1464
+01:02:30,400 --> 01:02:35,280
+we can convert them
+
+1465
+01:02:32,839 --> 01:02:39,920
+into an other
+
+1466
+01:02:35,280 --> 01:02:42,880
+set of dominoes but that is a pcp that
+
+1467
+01:02:39,920 --> 01:02:43,760
+is we don't need we don't require
+
+1468
+01:02:42,880 --> 01:02:47,359
+to
+
+1469
+01:02:43,760 --> 01:02:49,039
+have a match from the first domino
+
+1470
+01:02:47,359 --> 01:02:52,480
+how do we do that
+
+1471
+01:02:49,039 --> 01:02:54,720
+that's for simplicity we introduce
+
+1472
+01:02:52,480 --> 01:02:56,480
+a notation
+
+1473
+01:02:54,720 --> 01:02:59,039
+like this
+
+1474
+01:02:56,480 --> 01:03:00,960
+if we have
+
+1475
+01:02:59,039 --> 01:03:02,799
+this notation
+
+1476
+01:03:00,960 --> 01:03:04,000
+in front of a string
+
+1477
+01:03:02,799 --> 01:03:08,079
+that means
+
+1478
+01:03:04,000 --> 01:03:11,440
+we put star in every symbol in front of
+
+1479
+01:03:08,079 --> 01:03:15,440
+every symbol of that string
+
+1480
+01:03:11,440 --> 01:03:16,640
+and also if it put behind
+
+1481
+01:03:15,440 --> 01:03:19,599
+the string
+
+1482
+01:03:16,640 --> 01:03:19,599
+we put stars
+
+1483
+01:03:20,240 --> 01:03:23,599
+behind every symbol
+
+1484
+01:03:22,720 --> 01:03:27,440
+or
+
+1485
+01:03:23,599 --> 01:03:29,520
+if we have the same both on both sides
+
+1486
+01:03:27,440 --> 01:03:33,280
+then we have star like this
+
+1487
+01:03:29,520 --> 01:03:35,680
+okay so that's a easy notation for us to
+
+1488
+01:03:33,280 --> 01:03:38,000
+change a string
+
+1489
+01:03:35,680 --> 01:03:38,000
+then
+
+1490
+01:03:39,039 --> 01:03:44,880
+then for a set of dominoes as
+
+1491
+01:03:43,039 --> 01:03:47,599
+mpcp
+
+1492
+01:03:44,880 --> 01:03:49,599
+so remember that
+
+1493
+01:03:47,599 --> 01:03:51,680
+for this
+
+1494
+01:03:49,599 --> 01:03:54,480
+collection of dominoes
+
+1495
+01:03:51,680 --> 01:03:58,480
+the match required
+
+1496
+01:03:54,480 --> 01:03:59,440
+to start with t1 v1
+
+1497
+01:03:58,480 --> 01:04:02,160
+then
+
+1498
+01:03:59,440 --> 01:04:03,839
+firstly we copy
+
+1499
+01:04:02,160 --> 01:04:07,599
+we copy
+
+1500
+01:04:03,839 --> 01:04:07,599
+all dominoes like this
+
+1501
+01:04:08,799 --> 01:04:12,880
+and
+
+1502
+01:04:10,079 --> 01:04:15,039
+for the top we put
+
+1503
+01:04:12,880 --> 01:04:17,680
+sorry i shouldn't use this one
+
+1504
+01:04:15,039 --> 01:04:20,240
+for the top we put
+
+1505
+01:04:17,680 --> 01:04:23,039
+we change the top string like this and
+
+1506
+01:04:20,240 --> 01:04:24,559
+change the bottom string like this
+
+1507
+01:04:23,039 --> 01:04:27,200
+okay
+
+1508
+01:04:24,559 --> 01:04:29,280
+so that's the first step so if you have
+
+1509
+01:04:27,200 --> 01:04:31,359
+k dominoes we
+
+1510
+01:04:29,280 --> 01:04:35,200
+copy it and change the top string and
+
+1511
+01:04:31,359 --> 01:04:36,640
+the bottom string with k dominoes
+
+1512
+01:04:35,200 --> 01:04:39,760
+then we
+
+1513
+01:04:36,640 --> 01:04:41,839
+add two extra dominoes
+
+1514
+01:04:39,760 --> 01:04:45,760
+the first one is
+
+1515
+01:04:41,839 --> 01:04:48,960
+also the copy of the first domino but
+
+1516
+01:04:45,760 --> 01:04:51,119
+we change the top string
+
+1517
+01:04:48,960 --> 01:04:53,599
+like this and change the button string
+
+1518
+01:04:51,119 --> 01:04:53,599
+like this
+
+1519
+01:04:53,680 --> 01:04:57,039
+and finally
+
+1520
+01:04:55,200 --> 01:04:58,240
+another new
+
+1521
+01:04:57,039 --> 01:04:59,119
+dominoes
+
+1522
+01:04:58,240 --> 01:05:03,359
+is
+
+1523
+01:04:59,119 --> 01:05:06,480
+we introduce yet another symbol
+
+1524
+01:05:03,359 --> 01:05:07,359
+and then have a star here
+
+1525
+01:05:06,480 --> 01:05:08,480
+okay
+
+1526
+01:05:07,359 --> 01:05:11,119
+so that's it
+
+1527
+01:05:08,480 --> 01:05:13,280
+we have done the conversion
+
+1528
+01:05:11,119 --> 01:05:16,319
+and you will see
+
+1529
+01:05:13,280 --> 01:05:18,000
+it's pretty straightforward that why
+
+1530
+01:05:16,319 --> 01:05:20,480
+for these
+
+1531
+01:05:18,000 --> 01:05:24,000
+collection of dominoes
+
+1532
+01:05:20,480 --> 01:05:26,799
+we don't need we don't need to specify
+
+1533
+01:05:24,000 --> 01:05:29,359
+that okay you have to start from the
+
+1534
+01:05:26,799 --> 01:05:29,359
+first one
+
+1535
+01:05:29,440 --> 01:05:31,520
+okay
+
+1536
+01:05:30,400 --> 01:05:33,680
+because
+
+1537
+01:05:31,520 --> 01:05:36,720
+let's say
+
+1538
+01:05:33,680 --> 01:05:40,000
+because if there is
+
+1539
+01:05:36,720 --> 01:05:41,520
+a match it must start from this one
+
+1540
+01:05:40,000 --> 01:05:43,920
+otherwise it
+
+1541
+01:05:41,520 --> 01:05:46,000
+won't happen
+
+1542
+01:05:43,920 --> 01:05:47,440
+but it doesn't matter we want to prove
+
+1543
+01:05:46,000 --> 01:05:48,319
+that
+
+1544
+01:05:47,440 --> 01:05:50,799
+if
+
+1545
+01:05:48,319 --> 01:05:53,520
+the modified the pcp here
+
+1546
+01:05:50,799 --> 01:05:53,520
+has a match
+
+1547
+01:05:53,839 --> 01:05:56,160
+then
+
+1548
+01:05:56,319 --> 01:06:02,839
+the converted pcp regular pcp here has a
+
+1549
+01:06:00,240 --> 01:06:06,799
+match and the vice versa
+
+1550
+01:06:02,839 --> 01:06:09,280
+okay and it's pretty easy to see that if
+
+1551
+01:06:06,799 --> 01:06:10,480
+there is a match according to the
+
+1552
+01:06:09,280 --> 01:06:11,760
+definition
+
+1553
+01:06:10,480 --> 01:06:13,280
+that will be
+
+1554
+01:06:11,760 --> 01:06:14,640
+i1
+
+1555
+01:06:13,280 --> 01:06:16,319
+i2
+
+1556
+01:06:14,640 --> 01:06:18,720
+i3
+
+1557
+01:06:16,319 --> 01:06:18,910
+il right and
+
+1558
+01:06:18,720 --> 01:06:22,039
+t
+
+1559
+01:06:18,910 --> 01:06:24,000
+[Music]
+
+1560
+01:06:22,039 --> 01:06:26,520
+ti1
+
+1561
+01:06:24,000 --> 01:06:28,480
+ti2
+
+1562
+01:06:26,520 --> 01:06:30,559
+ti3
+
+1563
+01:06:28,480 --> 01:06:31,440
+til
+
+1564
+01:06:30,559 --> 01:06:37,359
+at
+
+1565
+01:06:31,440 --> 01:06:37,359
+it's identical to b i 1 b i 2
+
+1566
+01:06:38,240 --> 01:06:44,240
+through b i l that's definition right
+
+1567
+01:06:43,200 --> 01:06:45,760
+and
+
+1568
+01:06:44,240 --> 01:06:48,160
+for the
+
+1569
+01:06:45,760 --> 01:06:51,599
+modified uh pcp
+
+1570
+01:06:48,160 --> 01:06:53,119
+it must start with t1 so that's say
+
+1571
+01:06:51,599 --> 01:06:57,119
+one
+
+1572
+01:06:53,119 --> 01:06:58,319
+a modified pcp mesh is like this
+
+1573
+01:06:57,119 --> 01:06:59,680
+and
+
+1574
+01:06:58,319 --> 01:07:03,119
+this match
+
+1575
+01:06:59,680 --> 01:07:05,599
+must exist for these converted dominoes
+
+1576
+01:07:03,119 --> 01:07:05,599
+because
+
+1577
+01:07:06,000 --> 01:07:10,240
+you
+
+1578
+01:07:08,160 --> 01:07:12,079
+use this one
+
+1579
+01:07:10,240 --> 01:07:13,520
+as this
+
+1580
+01:07:12,079 --> 01:07:14,799
+and you will get
+
+1581
+01:07:13,520 --> 01:07:17,280
+e here
+
+1582
+01:07:14,799 --> 01:07:19,039
+and everyone you just select it from
+
+1583
+01:07:17,280 --> 01:07:22,480
+this area
+
+1584
+01:07:19,039 --> 01:07:25,440
+and finally you put the final one
+
+1585
+01:07:22,480 --> 01:07:27,280
+here and here
+
+1586
+01:07:25,440 --> 01:07:28,480
+so
+
+1587
+01:07:27,280 --> 01:07:31,680
+the match
+
+1588
+01:07:28,480 --> 01:07:33,280
+for the original folder npcp
+
+1589
+01:07:31,680 --> 01:07:35,839
+can
+
+1590
+01:07:33,280 --> 01:07:37,760
+that you have a match in the converted
+
+1591
+01:07:35,839 --> 01:07:39,920
+pcp
+
+1592
+01:07:37,760 --> 01:07:40,880
+on the other hand
+
+1593
+01:07:39,920 --> 01:07:43,680
+for
+
+1594
+01:07:40,880 --> 01:07:45,599
+the converted pcp if there is a match
+
+1595
+01:07:43,680 --> 01:07:48,960
+if there is a match
+
+1596
+01:07:45,599 --> 01:07:53,200
+you can be surely know that it will
+
+1597
+01:07:48,960 --> 01:07:55,200
+although we are not we we don't require
+
+1598
+01:07:53,200 --> 01:07:56,640
+start the match start from the first
+
+1599
+01:07:55,200 --> 01:07:58,319
+domino but
+
+1600
+01:07:56,640 --> 01:08:01,039
+it has to
+
+1601
+01:07:58,319 --> 01:08:03,839
+right because if you don't really you
+
+1602
+01:08:01,039 --> 01:08:06,480
+don't you don't start from this one
+
+1603
+01:08:03,839 --> 01:08:07,920
+you will not have a match because all
+
+1604
+01:08:06,480 --> 01:08:10,640
+other
+
+1605
+01:08:07,920 --> 01:08:13,359
+button string has no star
+
+1606
+01:08:10,640 --> 01:08:15,119
+so it's it's not possible to start from
+
+1607
+01:08:13,359 --> 01:08:18,159
+other ones
+
+1608
+01:08:15,119 --> 01:08:20,719
+but we will not require that okay
+
+1609
+01:08:18,159 --> 01:08:25,279
+so start from this one there will be a
+
+1610
+01:08:20,719 --> 01:08:27,600
+match end with the last one right
+
+1611
+01:08:25,279 --> 01:08:29,279
+because
+
+1612
+01:08:27,600 --> 01:08:30,799
+start from this one
+
+1613
+01:08:29,279 --> 01:08:33,600
+the star
+
+1614
+01:08:30,799 --> 01:08:36,000
+the star will always
+
+1615
+01:08:33,600 --> 01:08:38,080
+you you will always have more star on
+
+1616
+01:08:36,000 --> 01:08:40,960
+the bottom
+
+1617
+01:08:38,080 --> 01:08:42,239
+you must close with
+
+1618
+01:08:40,960 --> 01:08:44,799
+the last one
+
+1619
+01:08:42,239 --> 01:08:45,920
+to balance the number of star
+
+1620
+01:08:44,799 --> 01:08:49,040
+then
+
+1621
+01:08:45,920 --> 01:08:51,839
+if you really get a match
+
+1622
+01:08:49,040 --> 01:08:54,000
+you remove all-star and
+
+1623
+01:08:51,839 --> 01:08:55,279
+remove the last one you will have a
+
+1624
+01:08:54,000 --> 01:08:58,159
+match
+
+1625
+01:08:55,279 --> 01:09:00,000
+of the mpcp
+
+1626
+01:08:58,159 --> 01:09:02,640
+that's why
+
+1627
+01:09:00,000 --> 01:09:02,640
+that's why
+
+1628
+01:09:04,319 --> 01:09:10,319
+we can convert mpcp to
+
+1629
+01:09:07,839 --> 01:09:12,159
+regular pcp and
+
+1630
+01:09:10,319 --> 01:09:14,000
+if the
+
+1631
+01:09:12,159 --> 01:09:17,040
+mpcp has a match
+
+1632
+01:09:14,000 --> 01:09:18,839
+the regular pcp have has a match and
+
+1633
+01:09:17,040 --> 01:09:22,640
+vice versa
+
+1634
+01:09:18,839 --> 01:09:25,920
+so the whole proof is
+
+1635
+01:09:22,640 --> 01:09:25,920
+like given
+
+1636
+01:09:27,600 --> 01:09:30,000
+given
+
+1637
+01:09:30,159 --> 01:09:33,520
+m
+
+1638
+01:09:31,120 --> 01:09:35,359
+and w
+
+1639
+01:09:33,520 --> 01:09:38,159
+we construct
+
+1640
+01:09:35,359 --> 01:09:40,799
+the domino for part one
+
+1641
+01:09:38,159 --> 01:09:42,560
+part two part three
+
+1642
+01:09:40,799 --> 01:09:45,920
+four five seven
+
+1643
+01:09:42,560 --> 01:09:45,920
+then we convert
+
+1644
+01:09:47,040 --> 01:09:52,960
+through this process
+
+1645
+01:09:49,920 --> 01:09:55,920
+we convert through this process
+
+1646
+01:09:52,960 --> 01:09:58,719
+to the pcp instance
+
+1647
+01:09:55,920 --> 01:10:00,719
+so if you have a pcp
+
+1648
+01:09:58,719 --> 01:10:03,199
+decider
+
+1649
+01:10:00,719 --> 01:10:06,000
+we can use the
+
+1650
+01:10:03,199 --> 01:10:07,600
+construction procedure to construct a
+
+1651
+01:10:06,000 --> 01:10:08,480
+pcp instance
+
+1652
+01:10:07,600 --> 01:10:10,239
+then
+
+1653
+01:10:08,480 --> 01:10:13,120
+if
+
+1654
+01:10:10,239 --> 01:10:14,159
+the decider for general pcp really
+
+1655
+01:10:13,120 --> 01:10:17,360
+exists
+
+1656
+01:10:14,159 --> 01:10:19,520
+we can use that to decide our
+
+1657
+01:10:17,360 --> 01:10:22,400
+atm
+
+1658
+01:10:19,520 --> 01:10:24,640
+so atm decider can be constructed in the
+
+1659
+01:10:22,400 --> 01:10:27,360
+way we just introduced
+
+1660
+01:10:24,640 --> 01:10:29,600
+but again that's a contradiction because
+
+1661
+01:10:27,360 --> 01:10:32,880
+we know that
+
+1662
+01:10:29,600 --> 01:10:35,440
+deciders for atm cannot exist
+
+1663
+01:10:32,880 --> 01:10:37,120
+so decider for pcp
+
+1664
+01:10:35,440 --> 01:10:41,679
+cannot exist
+
+1665
+01:10:37,120 --> 01:10:43,280
+right so pcp is undecidable
+
+1666
+01:10:41,679 --> 01:10:45,920
+okay
+
+1667
+01:10:43,280 --> 01:10:47,760
+so that's our reduction via computation
+
+1668
+01:10:45,920 --> 01:10:51,560
+history and
+
+1669
+01:10:47,760 --> 01:10:51,560
+pcp sound decidable
+

@@ -1,0 +1,5020 @@
+1
+00:00:01,520 --> 00:00:06,640
+okay let's give some examples of
+
+2
+00:00:03,760 --> 00:00:06,640
+problems in p
+
+3
+00:00:06,720 --> 00:00:12,080
+we want to describe aggregates with
+
+4
+00:00:09,679 --> 00:00:15,440
+numbered stages for analysis
+
+5
+00:00:12,080 --> 00:00:18,320
+if we can establish that
+
+6
+00:00:15,440 --> 00:00:21,199
+a polynomial upper bound under
+
+7
+00:00:18,320 --> 00:00:22,160
+on the number of stages
+
+8
+00:00:21,199 --> 00:00:23,039
+exist
+
+9
+00:00:22,160 --> 00:00:25,199
+and
+
+10
+00:00:23,039 --> 00:00:26,080
+we know that
+
+11
+00:00:25,199 --> 00:00:28,000
+the
+
+12
+00:00:26,080 --> 00:00:31,599
+individual stages can be run in
+
+13
+00:00:28,000 --> 00:00:32,880
+polynomial time
+
+14
+00:00:31,599 --> 00:00:36,719
+since
+
+15
+00:00:32,880 --> 00:00:40,000
+the polynomial of a polynomial is still
+
+16
+00:00:36,719 --> 00:00:42,960
+a polynomial we can conclude that that
+
+17
+00:00:40,000 --> 00:00:46,640
+algorithm runs in
+
+18
+00:00:42,960 --> 00:00:49,200
+time of point uh
+
+19
+00:00:46,640 --> 00:00:49,200
+runs in
+
+20
+00:00:49,280 --> 00:00:54,640
+polynomial time okay
+
+21
+00:00:51,440 --> 00:00:56,960
+then we prove that that problem the
+
+22
+00:00:54,640 --> 00:00:58,480
+algorithm handles
+
+23
+00:00:56,960 --> 00:00:59,440
+is in p
+
+24
+00:00:58,480 --> 00:01:01,760
+okay
+
+25
+00:00:59,440 --> 00:01:04,799
+and here we have to
+
+26
+00:01:01,760 --> 00:01:07,360
+note that we need to use reasonable
+
+27
+00:01:04,799 --> 00:01:09,119
+encoding method
+
+28
+00:01:07,360 --> 00:01:12,240
+for the input
+
+29
+00:01:09,119 --> 00:01:14,320
+we put on the tape of two machines such
+
+30
+00:01:12,240 --> 00:01:16,240
+as that we use
+
+31
+00:01:14,320 --> 00:01:18,320
+base k
+
+32
+00:01:16,240 --> 00:01:22,080
+for any k
+
+33
+00:01:18,320 --> 00:01:25,520
+equal to or greater than 2 for integers
+
+34
+00:01:22,080 --> 00:01:27,600
+if you if you use base 1 that means to
+
+35
+00:01:25,520 --> 00:01:28,799
+represent like
+
+36
+00:01:27,600 --> 00:01:32,400
+five
+
+37
+00:01:28,799 --> 00:01:33,119
+you need to have one symbol let's say a
+
+38
+00:01:32,400 --> 00:01:34,400
+a
+
+39
+00:01:33,119 --> 00:01:35,280
+a
+
+40
+00:01:34,400 --> 00:01:36,960
+a
+
+41
+00:01:35,280 --> 00:01:42,079
+a
+
+42
+00:01:36,960 --> 00:01:44,240
+two represent five right it is an
+
+43
+00:01:42,079 --> 00:01:45,600
+unreasonable representation because we
+
+44
+00:01:44,240 --> 00:01:47,520
+have much better
+
+45
+00:01:45,600 --> 00:01:49,759
+uh representation much shorter
+
+46
+00:01:47,520 --> 00:01:50,880
+representation right as long as you use
+
+47
+00:01:49,759 --> 00:01:54,560
+a base
+
+48
+00:01:50,880 --> 00:01:58,000
+greater or equal to 2 for example 2
+
+49
+00:01:54,560 --> 00:02:00,960
+you only need to use log 2
+
+50
+00:01:58,000 --> 00:02:04,079
+of 5 plus 1 bit
+
+51
+00:02:00,960 --> 00:02:06,640
+or symbols or
+
+52
+00:02:04,079 --> 00:02:09,599
+spaces of tapes
+
+53
+00:02:06,640 --> 00:02:12,800
+to represent 5
+
+54
+00:02:09,599 --> 00:02:14,800
+that's much shorter than use base 1
+
+55
+00:02:12,800 --> 00:02:16,480
+representation
+
+56
+00:02:14,800 --> 00:02:18,720
+so remember that we need to use
+
+57
+00:02:16,480 --> 00:02:22,400
+reasonable encodings reasonable
+
+58
+00:02:18,720 --> 00:02:24,640
+representation for the input of uh two
+
+59
+00:02:22,400 --> 00:02:26,879
+machine uh sorry for the input that we
+
+60
+00:02:24,640 --> 00:02:29,840
+want to put on the three machine type
+
+61
+00:02:26,879 --> 00:02:31,120
+okay so that's very important for the
+
+62
+00:02:29,840 --> 00:02:33,360
+uh
+
+63
+00:02:31,120 --> 00:02:34,319
+for the computation for the calculation
+
+64
+00:02:33,360 --> 00:02:37,040
+here
+
+65
+00:02:34,319 --> 00:02:37,920
+so the first example we want to give is
+
+66
+00:02:37,040 --> 00:02:40,560
+the
+
+67
+00:02:37,920 --> 00:02:42,720
+is path okay past
+
+68
+00:02:40,560 --> 00:02:44,560
+so what is path
+
+69
+00:02:42,720 --> 00:02:46,400
+we have
+
+70
+00:02:44,560 --> 00:02:48,000
+a directed graph
+
+71
+00:02:46,400 --> 00:02:49,280
+which is g
+
+72
+00:02:48,000 --> 00:02:51,200
+and
+
+73
+00:02:49,280 --> 00:02:55,760
+we specify
+
+74
+00:02:51,200 --> 00:02:59,840
+the starting point s and the endpoint t
+
+75
+00:02:55,760 --> 00:03:02,319
+so that's how we represent it on the uh
+
+76
+00:02:59,840 --> 00:03:03,680
+as the turing machine input on the tape
+
+77
+00:03:02,319 --> 00:03:07,360
+you encode
+
+78
+00:03:03,680 --> 00:03:10,879
+a graph and specify the starting point
+
+79
+00:03:07,360 --> 00:03:11,920
+and also the ending endpoint
+
+80
+00:03:10,879 --> 00:03:13,280
+okay
+
+81
+00:03:11,920 --> 00:03:14,879
+to prove
+
+82
+00:03:13,280 --> 00:03:19,440
+to prove that
+
+83
+00:03:14,879 --> 00:03:21,920
+the language or the problem path is in p
+
+84
+00:03:19,440 --> 00:03:24,080
+we need to have an algorithm which can
+
+85
+00:03:21,920 --> 00:03:25,280
+correctly handle
+
+86
+00:03:24,080 --> 00:03:26,159
+the problem
+
+87
+00:03:25,280 --> 00:03:28,799
+or
+
+88
+00:03:26,159 --> 00:03:31,920
+decide the language right as in the
+
+89
+00:03:28,799 --> 00:03:34,159
+turing machine terminology we want to
+
+90
+00:03:31,920 --> 00:03:35,200
+have an algorithm to decide that
+
+91
+00:03:34,159 --> 00:03:37,760
+language
+
+92
+00:03:35,200 --> 00:03:40,319
+and we want to say that
+
+93
+00:03:37,760 --> 00:03:42,480
+the algorithm which is represented by a
+
+94
+00:03:40,319 --> 00:03:44,720
+tuning machine
+
+95
+00:03:42,480 --> 00:03:46,959
+runs in polynomial time
+
+96
+00:03:44,720 --> 00:03:47,840
+okay that's our purpose
+
+97
+00:03:46,959 --> 00:03:49,040
+so
+
+98
+00:03:47,840 --> 00:03:51,280
+here
+
+99
+00:03:49,040 --> 00:03:51,280
+uh
+
+100
+00:03:51,840 --> 00:04:00,239
+for visualization of a problem graph we
+
+101
+00:03:54,319 --> 00:04:02,560
+can say that given a graph g you have uh
+
+102
+00:04:00,239 --> 00:04:06,239
+you have some
+
+103
+00:04:02,560 --> 00:04:08,480
+verdicts and also edges and since it's
+
+104
+00:04:06,239 --> 00:04:10,000
+since the graph we are talking about is
+
+105
+00:04:08,480 --> 00:04:14,159
+a direct graph
+
+106
+00:04:10,000 --> 00:04:16,000
+the h is directed h right over arc and
+
+107
+00:04:14,159 --> 00:04:17,759
+you specify some
+
+108
+00:04:16,000 --> 00:04:19,919
+starting point and
+
+109
+00:04:17,759 --> 00:04:22,720
+end point so
+
+110
+00:04:19,919 --> 00:04:25,199
+if the given directive graph and the
+
+111
+00:04:22,720 --> 00:04:26,800
+specified snt
+
+112
+00:04:25,199 --> 00:04:30,639
+there is a
+
+113
+00:04:26,800 --> 00:04:31,600
+path directly to pass from s to t on
+
+114
+00:04:30,639 --> 00:04:32,880
+g
+
+115
+00:04:31,600 --> 00:04:36,080
+then
+
+116
+00:04:32,880 --> 00:04:37,199
+such input string is in path otherwise
+
+117
+00:04:36,080 --> 00:04:39,199
+it's not
+
+118
+00:04:37,199 --> 00:04:39,919
+okay otherwise it's not
+
+119
+00:04:39,199 --> 00:04:42,720
+so
+
+120
+00:04:39,919 --> 00:04:44,960
+firstly can we have a turing machine to
+
+121
+00:04:42,720 --> 00:04:45,919
+decide this language
+
+122
+00:04:44,960 --> 00:04:49,280
+okay
+
+123
+00:04:45,919 --> 00:04:52,240
+and apparently we can right and let's
+
+124
+00:04:49,280 --> 00:04:55,199
+let's see how the high level description
+
+125
+00:04:52,240 --> 00:04:58,320
+of the turing machine handle the problem
+
+126
+00:04:55,199 --> 00:05:00,639
+okay so
+
+127
+00:04:58,320 --> 00:05:03,199
+on input graph
+
+128
+00:05:00,639 --> 00:05:04,320
+s and t
+
+129
+00:05:03,199 --> 00:05:07,039
+where
+
+130
+00:05:04,320 --> 00:05:09,520
+the graph is at the vector graph and
+
+131
+00:05:07,039 --> 00:05:11,600
+s is the starting node and the key is
+
+132
+00:05:09,520 --> 00:05:14,320
+the end node right
+
+133
+00:05:11,600 --> 00:05:15,120
+so that the first
+
+134
+00:05:14,320 --> 00:05:16,479
+uh
+
+135
+00:05:15,120 --> 00:05:18,080
+that's
+
+136
+00:05:16,479 --> 00:05:22,080
+imagine that
+
+137
+00:05:18,080 --> 00:05:22,080
+on the two machine type you have
+
+138
+00:05:23,280 --> 00:05:26,960
+but what do you have here
+
+139
+00:05:24,960 --> 00:05:28,880
+you will have uh
+
+140
+00:05:26,960 --> 00:05:32,639
+at least some
+
+141
+00:05:28,880 --> 00:05:32,639
+verdicts here like uh
+
+142
+00:05:33,280 --> 00:05:36,160
+vertex 1
+
+143
+00:05:34,720 --> 00:05:37,759
+vertex 2
+
+144
+00:05:36,160 --> 00:05:40,960
+vertex 3
+
+145
+00:05:37,759 --> 00:05:40,960
+etc right
+
+146
+00:05:42,479 --> 00:05:47,199
+and then let's say we use comma to
+
+147
+00:05:44,479 --> 00:05:48,080
+separate the vertex and h then you have
+
+148
+00:05:47,199 --> 00:05:50,320
+some
+
+149
+00:05:48,080 --> 00:05:50,320
+uh
+
+150
+00:05:50,560 --> 00:05:55,840
+notation for
+
+151
+00:05:52,720 --> 00:05:57,840
+representing the uh directed edge here
+
+152
+00:05:55,840 --> 00:05:58,800
+for example we use
+
+153
+00:05:57,840 --> 00:06:01,199
+may we
+
+154
+00:05:58,800 --> 00:06:04,000
+we can probably use like
+
+155
+00:06:01,199 --> 00:06:08,639
+uh v1
+
+156
+00:06:04,000 --> 00:06:10,960
+v2 means you have h from v1 to v2 okay
+
+157
+00:06:08,639 --> 00:06:10,960
+then
+
+158
+00:06:11,280 --> 00:06:16,000
+v1
+
+159
+00:06:13,199 --> 00:06:19,520
+v4 for example
+
+160
+00:06:16,000 --> 00:06:21,840
+and you have a lot of h here
+
+161
+00:06:19,520 --> 00:06:21,840
+then
+
+162
+00:06:22,080 --> 00:06:26,160
+let's say it's a
+
+163
+00:06:23,759 --> 00:06:27,280
+it's the graph okay
+
+164
+00:06:26,160 --> 00:06:29,440
+okay
+
+165
+00:06:27,280 --> 00:06:31,199
+one more for something like that then
+
+166
+00:06:29,440 --> 00:06:34,000
+you specify s
+
+167
+00:06:31,199 --> 00:06:34,960
+let's say v4
+
+168
+00:06:34,000 --> 00:06:35,680
+and
+
+169
+00:06:34,960 --> 00:06:36,960
+t
+
+170
+00:06:35,680 --> 00:06:39,199
+like v
+
+171
+00:06:36,960 --> 00:06:40,960
+one something like this
+
+172
+00:06:39,199 --> 00:06:43,120
+okay so
+
+173
+00:06:40,960 --> 00:06:44,319
+that's the tape
+
+174
+00:06:43,120 --> 00:06:46,319
+so
+
+175
+00:06:44,319 --> 00:06:49,199
+you have two machine you have tape on
+
+176
+00:06:46,319 --> 00:06:52,720
+the type is your input you input
+
+177
+00:06:49,199 --> 00:06:53,759
+consists of a directed graph and a node
+
+178
+00:06:52,720 --> 00:06:54,639
+snt
+
+179
+00:06:53,759 --> 00:06:56,160
+okay
+
+180
+00:06:54,639 --> 00:06:58,400
+so first
+
+181
+00:06:56,160 --> 00:07:02,960
+first stage of the turing machine is
+
+182
+00:06:58,400 --> 00:07:05,520
+that we place a mark on node s
+
+183
+00:07:02,960 --> 00:07:08,080
+and you will say what is a mark well you
+
+184
+00:07:05,520 --> 00:07:08,960
+can prepare two versions of the symbols
+
+185
+00:07:08,080 --> 00:07:11,360
+right
+
+186
+00:07:08,960 --> 00:07:14,720
+so the mark may just think that you have
+
+187
+00:07:11,360 --> 00:07:17,280
+another version of like v4 here but i
+
+188
+00:07:14,720 --> 00:07:18,240
+shouldn't say ah okay that's b4 here
+
+189
+00:07:17,280 --> 00:07:22,080
+okay
+
+190
+00:07:18,240 --> 00:07:25,120
+so you change e4 to e for
+
+191
+00:07:22,080 --> 00:07:28,160
+that something like that okay that's
+
+192
+00:07:25,120 --> 00:07:29,599
+just a uh turing machine programming
+
+193
+00:07:28,160 --> 00:07:32,960
+skill
+
+194
+00:07:29,599 --> 00:07:34,639
+we mark d4 here then
+
+195
+00:07:32,960 --> 00:07:37,199
+we repeat
+
+196
+00:07:34,639 --> 00:07:39,039
+we repeat uh
+
+197
+00:07:37,199 --> 00:07:39,919
+the stage two three
+
+198
+00:07:39,039 --> 00:07:45,440
+okay
+
+199
+00:07:39,919 --> 00:07:47,120
+we scan all ages of g so we scan o h
+
+200
+00:07:45,440 --> 00:07:49,440
+of g
+
+201
+00:07:47,120 --> 00:07:52,400
+and as long as
+
+202
+00:07:49,440 --> 00:07:57,520
+an h a b
+
+203
+00:07:52,400 --> 00:07:57,520
+is found going from a marked node a
+
+204
+00:07:57,680 --> 00:08:03,520
+to n unmarked note b
+
+205
+00:08:01,360 --> 00:08:04,319
+we mark b
+
+206
+00:08:03,520 --> 00:08:07,440
+okay
+
+207
+00:08:04,319 --> 00:08:08,720
+so for example we scan b1 b2 and then we
+
+208
+00:08:07,440 --> 00:08:10,720
+scan okay
+
+209
+00:08:08,720 --> 00:08:12,400
+b1 and go back
+
+210
+00:08:10,720 --> 00:08:16,240
+to scan v1 v1
+
+211
+00:08:12,400 --> 00:08:20,160
+is not marked so we skip v1 v2
+
+212
+00:08:16,240 --> 00:08:22,479
+and we scan v1 b4 and etc for example if
+
+213
+00:08:20,160 --> 00:08:24,080
+we scan v4
+
+214
+00:08:22,479 --> 00:08:24,840
+v2
+
+215
+00:08:24,080 --> 00:08:26,560
+and
+
+216
+00:08:24,840 --> 00:08:28,479
+b4
+
+217
+00:08:26,560 --> 00:08:30,879
+is marked right
+
+218
+00:08:28,479 --> 00:08:32,560
+then we change
+
+219
+00:08:30,879 --> 00:08:34,159
+v2
+
+220
+00:08:32,560 --> 00:08:35,919
+as a marked
+
+221
+00:08:34,159 --> 00:08:38,800
+node
+
+222
+00:08:35,919 --> 00:08:41,839
+then we do we repeat the whole thing for
+
+223
+00:08:38,800 --> 00:08:44,080
+every ages in g
+
+224
+00:08:41,839 --> 00:08:44,080
+okay
+
+225
+00:08:45,360 --> 00:08:49,120
+then we repeat
+
+226
+00:08:47,120 --> 00:08:51,600
+again until
+
+227
+00:08:49,120 --> 00:08:52,399
+no additional notes
+
+228
+00:08:51,600 --> 00:08:54,480
+okay
+
+229
+00:08:52,399 --> 00:08:56,240
+so every if we scan
+
+230
+00:08:54,480 --> 00:08:59,279
+the h once
+
+231
+00:08:56,240 --> 00:08:59,279
+and the sum nodes
+
+232
+00:08:59,600 --> 00:09:04,320
+are marked during the process we need to
+
+233
+00:09:01,920 --> 00:09:06,480
+do the skin again
+
+234
+00:09:04,320 --> 00:09:09,839
+if some nodes are marked then we will do
+
+235
+00:09:06,480 --> 00:09:09,839
+that again until
+
+236
+00:09:11,200 --> 00:09:13,600
+first
+
+237
+00:09:12,800 --> 00:09:17,279
+for
+
+238
+00:09:13,600 --> 00:09:17,279
+a complete scan
+
+239
+00:09:18,720 --> 00:09:22,399
+after a complete scan we don't have
+
+240
+00:09:21,680 --> 00:09:24,959
+new
+
+241
+00:09:22,399 --> 00:09:25,839
+marked node then we stop
+
+242
+00:09:24,959 --> 00:09:29,600
+okay
+
+243
+00:09:25,839 --> 00:09:31,360
+after we stop we check if t
+
+244
+00:09:29,600 --> 00:09:35,839
+is marked
+
+245
+00:09:31,360 --> 00:09:37,519
+if it is marked then accept
+
+246
+00:09:35,839 --> 00:09:38,880
+reject
+
+247
+00:09:37,519 --> 00:09:43,440
+okay
+
+248
+00:09:38,880 --> 00:09:43,440
+so for the description you can know that
+
+249
+00:09:43,920 --> 00:09:48,560
+what does the algorithm do
+
+250
+00:09:46,720 --> 00:09:49,760
+it actually doing the something like
+
+251
+00:09:48,560 --> 00:09:51,760
+this
+
+252
+00:09:49,760 --> 00:09:52,560
+we mark s first
+
+253
+00:09:51,760 --> 00:09:55,600
+right
+
+254
+00:09:52,560 --> 00:09:59,120
+then we check all the notes sorry all
+
+255
+00:09:55,600 --> 00:10:01,120
+the edges okay we check this edge okay
+
+256
+00:09:59,120 --> 00:10:03,040
+uh i don't know what that is and we
+
+257
+00:10:01,120 --> 00:10:05,360
+check this edge we check this age we
+
+258
+00:10:03,040 --> 00:10:07,600
+check this age we check this edge and we
+
+259
+00:10:05,360 --> 00:10:10,399
+check this edge oh it
+
+260
+00:10:07,600 --> 00:10:12,000
+from s and s is marked then we mark this
+
+261
+00:10:10,399 --> 00:10:14,240
+node
+
+262
+00:10:12,000 --> 00:10:15,120
+for the same reason we mark this node
+
+263
+00:10:14,240 --> 00:10:18,480
+right
+
+264
+00:10:15,120 --> 00:10:19,839
+for so for this run we actually mark two
+
+265
+00:10:18,480 --> 00:10:22,640
+more nodes
+
+266
+00:10:19,839 --> 00:10:25,600
+it's s is marked as stage one
+
+267
+00:10:22,640 --> 00:10:28,720
+and for the first round of ages we
+
+268
+00:10:25,600 --> 00:10:30,240
+mark one more and two more
+
+269
+00:10:28,720 --> 00:10:34,560
+right
+
+270
+00:10:30,240 --> 00:10:36,480
+then you scan all the edges again right
+
+271
+00:10:34,560 --> 00:10:37,920
+and when you after you scan all the
+
+272
+00:10:36,480 --> 00:10:40,640
+edges again
+
+273
+00:10:37,920 --> 00:10:42,480
+in this case we will mark this
+
+274
+00:10:40,640 --> 00:10:46,079
+this node
+
+275
+00:10:42,480 --> 00:10:49,120
+a new node after scanning and then a new
+
+276
+00:10:46,079 --> 00:10:50,320
+node and then a new node and then a new
+
+277
+00:10:49,120 --> 00:10:53,200
+node
+
+278
+00:10:50,320 --> 00:10:53,200
+and finally
+
+279
+00:10:54,079 --> 00:10:59,200
+we start when
+
+280
+00:10:55,839 --> 00:11:00,880
+after a complete scan there is no new
+
+281
+00:10:59,200 --> 00:11:02,079
+marked node
+
+282
+00:11:00,880 --> 00:11:03,040
+generated
+
+283
+00:11:02,079 --> 00:11:04,240
+right
+
+284
+00:11:03,040 --> 00:11:07,600
+so
+
+285
+00:11:04,240 --> 00:11:09,920
+in that case after the whole thing stops
+
+286
+00:11:07,600 --> 00:11:11,680
+we check if t
+
+287
+00:11:09,920 --> 00:11:14,240
+is marked
+
+288
+00:11:11,680 --> 00:11:16,079
+that means there is a directed path
+
+289
+00:11:14,240 --> 00:11:17,279
+going from s
+
+290
+00:11:16,079 --> 00:11:18,320
+to t
+
+291
+00:11:17,279 --> 00:11:22,160
+right
+
+292
+00:11:18,320 --> 00:11:25,680
+otherwise if t is not marked
+
+293
+00:11:22,160 --> 00:11:27,200
+it is apparently that from s there is no
+
+294
+00:11:25,680 --> 00:11:28,800
+directed path
+
+295
+00:11:27,200 --> 00:11:31,040
+to t
+
+296
+00:11:28,800 --> 00:11:33,680
+that's why
+
+297
+00:11:31,040 --> 00:11:35,519
+the algorithm here
+
+298
+00:11:33,680 --> 00:11:39,360
+is correct
+
+299
+00:11:35,519 --> 00:11:42,640
+okay it is a desire for path
+
+300
+00:11:39,360 --> 00:11:45,760
+no matter how you input the string
+
+301
+00:11:42,640 --> 00:11:48,079
+it can distinguish if the string the
+
+302
+00:11:45,760 --> 00:11:48,959
+given string is in
+
+303
+00:11:48,079 --> 00:11:50,000
+pass
+
+304
+00:11:48,959 --> 00:11:52,320
+or not
+
+305
+00:11:50,000 --> 00:11:54,880
+okay and remember remember that there is
+
+306
+00:11:52,320 --> 00:11:58,320
+always a stage 0 here
+
+307
+00:11:54,880 --> 00:11:59,760
+reject all the invalid formatted strings
+
+308
+00:11:58,320 --> 00:12:02,079
+okay so
+
+309
+00:11:59,760 --> 00:12:02,079
+that's
+
+310
+00:12:03,440 --> 00:12:06,000
+that's what you know
+
+311
+00:12:04,880 --> 00:12:07,839
+and then
+
+312
+00:12:06,000 --> 00:12:10,240
+after proving the correctness of the
+
+313
+00:12:07,839 --> 00:12:12,399
+algorithm we need to analyze the
+
+314
+00:12:10,240 --> 00:12:14,959
+argument to show that it runs
+
+315
+00:12:12,399 --> 00:12:17,040
+in polynomial time okay
+
+316
+00:12:14,959 --> 00:12:20,320
+so as we just described
+
+317
+00:12:17,040 --> 00:12:21,440
+to show that firstly we need to say that
+
+318
+00:12:20,320 --> 00:12:24,720
+there is a
+
+319
+00:12:21,440 --> 00:12:26,240
+polynomial upper bound on the number of
+
+320
+00:12:24,720 --> 00:12:27,279
+stages
+
+321
+00:12:26,240 --> 00:12:29,279
+and then
+
+322
+00:12:27,279 --> 00:12:30,720
+individual stages can be wrong in
+
+323
+00:12:29,279 --> 00:12:32,880
+polynomial time
+
+324
+00:12:30,720 --> 00:12:37,040
+and don't we don't forget that the
+
+325
+00:12:32,880 --> 00:12:38,480
+polynomial here is relative to
+
+326
+00:12:37,040 --> 00:12:40,720
+the input
+
+327
+00:12:38,480 --> 00:12:43,040
+the length of the input string okay
+
+328
+00:12:40,720 --> 00:12:46,160
+that's very important okay
+
+329
+00:12:43,040 --> 00:12:48,880
+so here we say that
+
+330
+00:12:46,160 --> 00:12:51,760
+we obviously obviously we know that for
+
+331
+00:12:48,880 --> 00:12:52,959
+stage one and four
+
+332
+00:12:51,760 --> 00:12:54,639
+they only
+
+333
+00:12:52,959 --> 00:12:58,079
+uh the two
+
+334
+00:12:54,639 --> 00:12:58,880
+stages are executed only once
+
+335
+00:12:58,079 --> 00:13:00,160
+right
+
+336
+00:12:58,880 --> 00:13:01,040
+only once
+
+337
+00:13:00,160 --> 00:13:04,720
+and
+
+338
+00:13:01,040 --> 00:13:09,360
+how many times will stage three runs
+
+339
+00:13:04,720 --> 00:13:12,959
+at most m times what is m m here is the
+
+340
+00:13:09,360 --> 00:13:15,440
+number of vertex okay so
+
+341
+00:13:12,959 --> 00:13:17,519
+m here is
+
+342
+00:13:15,440 --> 00:13:20,000
+number of vertex
+
+343
+00:13:17,519 --> 00:13:21,519
+because every time you mark a new node
+
+344
+00:13:20,000 --> 00:13:22,639
+right
+
+345
+00:13:21,519 --> 00:13:23,760
+so
+
+346
+00:13:22,639 --> 00:13:26,480
+if
+
+347
+00:13:23,760 --> 00:13:29,120
+you mark all the node
+
+348
+00:13:26,480 --> 00:13:29,120
+it will stop
+
+349
+00:13:30,000 --> 00:13:34,480
+if you
+
+350
+00:13:32,160 --> 00:13:37,040
+if you if we haven't
+
+351
+00:13:34,480 --> 00:13:39,120
+mark all the nodes and stop that means
+
+352
+00:13:37,040 --> 00:13:41,199
+some node cannot be
+
+353
+00:13:39,120 --> 00:13:42,240
+reached from s
+
+354
+00:13:41,199 --> 00:13:44,959
+right
+
+355
+00:13:42,240 --> 00:13:46,399
+but eventually it will stop it will not
+
+356
+00:13:44,959 --> 00:13:49,839
+run forever
+
+357
+00:13:46,399 --> 00:13:50,720
+so at most m times that means all the
+
+358
+00:13:49,839 --> 00:13:53,680
+nodes
+
+359
+00:13:50,720 --> 00:13:54,639
+all the nodes in the graph are marked
+
+360
+00:13:53,680 --> 00:13:57,519
+okay
+
+361
+00:13:54,639 --> 00:13:59,760
+so the number of total number of stages
+
+362
+00:13:57,519 --> 00:14:03,519
+at most
+
+363
+00:13:59,760 --> 00:14:06,240
+is 1 plus 1 plus n which is stage 1
+
+364
+00:14:03,519 --> 00:14:08,720
+stage 4 and stage 3
+
+365
+00:14:06,240 --> 00:14:09,920
+okay or you can say 2 and 3 doesn't
+
+366
+00:14:08,720 --> 00:14:12,240
+matter
+
+367
+00:14:09,920 --> 00:14:12,240
+okay
+
+368
+00:14:13,440 --> 00:14:18,880
+then
+
+369
+00:14:14,399 --> 00:14:21,680
+we know that for each individual state a
+
+370
+00:14:18,880 --> 00:14:22,720
+stage for each individual stage one and
+
+371
+00:14:21,680 --> 00:14:25,040
+four
+
+372
+00:14:22,720 --> 00:14:26,480
+are easily implemented in polynomial
+
+373
+00:14:25,040 --> 00:14:28,800
+time
+
+374
+00:14:26,480 --> 00:14:32,160
+and reason on any reasonable
+
+375
+00:14:28,800 --> 00:14:36,240
+deterministic model because see for
+
+376
+00:14:32,160 --> 00:14:39,040
+one you just need to find node in g and
+
+377
+00:14:36,240 --> 00:14:39,920
+mark the node right
+
+378
+00:14:39,040 --> 00:14:45,199
+and
+
+379
+00:14:39,920 --> 00:14:48,079
+the whole type you have v you have e
+
+380
+00:14:45,199 --> 00:14:48,959
+and of course two vertex here
+
+381
+00:14:48,079 --> 00:14:50,000
+and
+
+382
+00:14:48,959 --> 00:14:54,320
+here
+
+383
+00:14:50,000 --> 00:14:56,240
+is m right and how long is here
+
+384
+00:14:54,320 --> 00:14:57,519
+at the most
+
+385
+00:14:56,240 --> 00:14:59,040
+about
+
+386
+00:14:57,519 --> 00:15:01,199
+m square
+
+387
+00:14:59,040 --> 00:15:05,760
+right at most
+
+388
+00:15:01,199 --> 00:15:05,760
+and we consider the whole thing n
+
+389
+00:15:05,920 --> 00:15:10,399
+right
+
+390
+00:15:06,880 --> 00:15:13,040
+so apparently to finish stage one you
+
+391
+00:15:10,399 --> 00:15:16,079
+just need to go through a small portion
+
+392
+00:15:13,040 --> 00:15:17,360
+okay actually you need to go over
+
+393
+00:15:16,079 --> 00:15:20,720
+the whole tape
+
+394
+00:15:17,360 --> 00:15:24,240
+and know that okay you need to mark v3
+
+395
+00:15:20,720 --> 00:15:27,519
+and you go back to mark b3
+
+396
+00:15:24,240 --> 00:15:29,040
+okay so that's about linear to the input
+
+397
+00:15:27,519 --> 00:15:30,240
+length
+
+398
+00:15:29,040 --> 00:15:33,040
+right
+
+399
+00:15:30,240 --> 00:15:34,079
+and then for stage four you just need to
+
+400
+00:15:33,040 --> 00:15:37,680
+check
+
+401
+00:15:34,079 --> 00:15:40,639
+within this part to see if t is marked
+
+402
+00:15:37,680 --> 00:15:42,560
+okay but anyway stage 4
+
+403
+00:15:40,639 --> 00:15:44,639
+stage 1 and 4
+
+404
+00:15:42,560 --> 00:15:46,240
+are easily implemented in polynomial
+
+405
+00:15:44,639 --> 00:15:48,480
+time on any
+
+406
+00:15:46,240 --> 00:15:50,480
+actually any reasonable deterministic
+
+407
+00:15:48,480 --> 00:15:52,639
+model
+
+408
+00:15:50,480 --> 00:15:56,320
+and stage 3 involves
+
+409
+00:15:52,639 --> 00:15:59,440
+a scan of the input and a test whether
+
+410
+00:15:56,320 --> 00:16:01,920
+certain nodes are marked
+
+411
+00:15:59,440 --> 00:16:03,680
+and let's say
+
+412
+00:16:01,920 --> 00:16:04,639
+when you do the scan
+
+413
+00:16:03,680 --> 00:16:06,880
+you
+
+414
+00:16:04,639 --> 00:16:09,600
+you will go the
+
+415
+00:16:06,880 --> 00:16:11,519
+you will go through this part
+
+416
+00:16:09,600 --> 00:16:15,120
+this part once
+
+417
+00:16:11,519 --> 00:16:15,120
+but every time you get a
+
+418
+00:16:16,399 --> 00:16:20,240
+directed directed age
+
+419
+00:16:18,880 --> 00:16:23,839
+you get a
+
+420
+00:16:20,240 --> 00:16:26,959
+starting point of the direct sorry uh
+
+421
+00:16:23,839 --> 00:16:28,720
+the head of the the directed edge here
+
+422
+00:16:26,959 --> 00:16:30,240
+you go
+
+423
+00:16:28,720 --> 00:16:33,120
+to
+
+424
+00:16:30,240 --> 00:16:34,000
+the node the vertex part of the graph to
+
+425
+00:16:33,120 --> 00:16:35,759
+see
+
+426
+00:16:34,000 --> 00:16:37,839
+if that is
+
+427
+00:16:35,759 --> 00:16:39,279
+marked
+
+428
+00:16:37,839 --> 00:16:40,959
+if no
+
+429
+00:16:39,279 --> 00:16:44,079
+you go
+
+430
+00:16:40,959 --> 00:16:44,959
+back here to see next
+
+431
+00:16:44,079 --> 00:16:48,480
+h
+
+432
+00:16:44,959 --> 00:16:51,680
+if yes you mark you mark this no sorry
+
+433
+00:16:48,480 --> 00:16:55,040
+then you mark
+
+434
+00:16:51,680 --> 00:16:56,800
+the tail of the directed edge
+
+435
+00:16:55,040 --> 00:17:00,079
+by the whole
+
+436
+00:16:56,800 --> 00:17:02,720
+operation here you can easily
+
+437
+00:17:00,079 --> 00:17:05,679
+uh you can imagine that it it
+
+438
+00:17:02,720 --> 00:17:08,079
+it is it can be easily implemented
+
+439
+00:17:05,679 --> 00:17:11,520
+within polynomial time
+
+440
+00:17:08,079 --> 00:17:14,240
+as to the whole length of the input as
+
+441
+00:17:11,520 --> 00:17:15,919
+within the polynomial time you can
+
+442
+00:17:14,240 --> 00:17:19,039
+finish the
+
+443
+00:17:15,919 --> 00:17:21,439
+operation of stage 3.
+
+444
+00:17:19,039 --> 00:17:22,400
+if there is no problem here then we know
+
+445
+00:17:21,439 --> 00:17:24,079
+that
+
+446
+00:17:22,400 --> 00:17:27,919
+the
+
+447
+00:17:24,079 --> 00:17:30,720
+overall the total number of stages is 1
+
+448
+00:17:27,919 --> 00:17:34,640
+plus 1 plus n that's no problem and for
+
+449
+00:17:30,720 --> 00:17:34,640
+each stage for each stage
+
+450
+00:17:35,679 --> 00:17:40,960
+the implementation can
+
+451
+00:17:37,919 --> 00:17:44,000
+the operation can be implemented
+
+452
+00:17:40,960 --> 00:17:45,440
+in polynomial time of the length of the
+
+453
+00:17:44,000 --> 00:17:46,880
+input
+
+454
+00:17:45,440 --> 00:17:47,760
+string
+
+455
+00:17:46,880 --> 00:17:49,360
+okay
+
+456
+00:17:47,760 --> 00:17:50,720
+so
+
+457
+00:17:49,360 --> 00:17:54,320
+m here
+
+458
+00:17:50,720 --> 00:17:56,559
+is a polynomial time algorithm for path
+
+459
+00:17:54,320 --> 00:17:58,840
+since the polynomial time algorithm for
+
+460
+00:17:56,559 --> 00:18:01,760
+path
+
+461
+00:17:58,840 --> 00:18:05,200
+exists language path
+
+462
+00:18:01,760 --> 00:18:06,640
+by definition is in p
+
+463
+00:18:05,200 --> 00:18:09,039
+okay
+
+464
+00:18:06,640 --> 00:18:10,320
+so that's what we are talking about
+
+465
+00:18:09,039 --> 00:18:13,039
+to prove
+
+466
+00:18:10,320 --> 00:18:17,559
+a problem or a language
+
+467
+00:18:13,039 --> 00:18:17,559
+in class b
+
+468
+00:18:29,760 --> 00:18:35,760
+so next is relative point
+
+469
+00:18:32,400 --> 00:18:35,760
+uh so relative prime
+
+470
+00:18:36,559 --> 00:18:44,720
+so for relative prime it's uh we we use
+
+471
+00:18:39,679 --> 00:18:44,720
+the famous famous euclidean algorithm
+
+472
+00:18:46,480 --> 00:18:50,400
+for
+
+473
+00:18:48,240 --> 00:18:52,799
+a chinese speaking student
+
+474
+00:18:50,400 --> 00:18:52,799
+it is
+
+475
+00:18:53,360 --> 00:18:58,480
+all right it should be known for
+
+476
+00:18:56,160 --> 00:19:00,240
+everybody i guess
+
+477
+00:18:58,480 --> 00:19:01,520
+be known to everybody
+
+478
+00:19:00,240 --> 00:19:03,280
+so
+
+479
+00:19:01,520 --> 00:19:06,799
+uh
+
+480
+00:19:03,280 --> 00:19:10,080
+we have two integers x y x and y here we
+
+481
+00:19:06,799 --> 00:19:13,200
+want to check if x and y are relative
+
+482
+00:19:10,080 --> 00:19:14,880
+are relatively prime what does that mean
+
+483
+00:19:13,200 --> 00:19:16,160
+that means
+
+484
+00:19:14,880 --> 00:19:18,160
+the
+
+485
+00:19:16,160 --> 00:19:20,880
+gcd the
+
+486
+00:19:18,160 --> 00:19:24,880
+greatest the common divisor
+
+487
+00:19:20,880 --> 00:19:28,320
+of x and y is 1.
+
+488
+00:19:24,880 --> 00:19:30,559
+except for one there is no other common
+
+489
+00:19:28,320 --> 00:19:33,679
+divisor for the two
+
+490
+00:19:30,559 --> 00:19:35,440
+uh integers okay
+
+491
+00:19:33,679 --> 00:19:38,799
+so
+
+492
+00:19:35,440 --> 00:19:40,320
+what is the euclidean algorithm if we
+
+493
+00:19:38,799 --> 00:19:42,480
+implement in
+
+494
+00:19:40,320 --> 00:19:45,840
+uh the terminology of turing machine in
+
+495
+00:19:42,480 --> 00:19:47,600
+the in as a we implement the algorithm
+
+496
+00:19:45,840 --> 00:19:48,559
+as a turing machine we can write it this
+
+497
+00:19:47,600 --> 00:19:53,039
+way
+
+498
+00:19:48,559 --> 00:19:54,720
+okay so firstly we have a
+
+499
+00:19:53,039 --> 00:19:56,720
+subroutine called here
+
+500
+00:19:54,720 --> 00:19:57,600
+okay we have a sub wrinkle here we call
+
+501
+00:19:56,720 --> 00:19:59,760
+that
+
+502
+00:19:57,600 --> 00:20:01,840
+uh e
+
+503
+00:19:59,760 --> 00:20:04,640
+and for e you get
+
+504
+00:20:01,840 --> 00:20:06,960
+uh e the input of e are two
+
+505
+00:20:04,640 --> 00:20:10,000
+natural numbers in binary let's assume
+
+506
+00:20:06,960 --> 00:20:12,320
+that okay in binary
+
+507
+00:20:10,000 --> 00:20:14,559
+we will repeat
+
+508
+00:20:12,320 --> 00:20:18,320
+the two
+
+509
+00:20:14,559 --> 00:20:21,360
+uh stages here until y
+
+510
+00:20:18,320 --> 00:20:26,000
+is zero okay until y is zero
+
+511
+00:20:21,360 --> 00:20:28,159
+so firstly we assign x mod y two x
+
+512
+00:20:26,000 --> 00:20:32,880
+that means
+
+513
+00:20:28,159 --> 00:20:36,000
+x will be assigned as the remainder
+
+514
+00:20:32,880 --> 00:20:37,200
+of x divided by y
+
+515
+00:20:36,000 --> 00:20:39,280
+okay
+
+516
+00:20:37,200 --> 00:20:40,799
+then we exchange
+
+517
+00:20:39,280 --> 00:20:42,799
+x and y
+
+518
+00:20:40,799 --> 00:20:45,520
+okay
+
+519
+00:20:42,799 --> 00:20:47,120
+if until y
+
+520
+00:20:45,520 --> 00:20:50,000
+equal to 0
+
+521
+00:20:47,120 --> 00:20:54,480
+we output x
+
+522
+00:20:50,000 --> 00:20:54,480
+okay so if you think it's very you know
+
+523
+00:20:54,880 --> 00:20:58,000
+difficult to understand you give some
+
+524
+00:20:56,720 --> 00:21:00,320
+example here
+
+525
+00:20:58,000 --> 00:21:02,640
+so let's say
+
+526
+00:21:00,320 --> 00:21:04,159
+we have
+
+527
+00:21:02,640 --> 00:21:07,200
+17 here
+
+528
+00:21:04,159 --> 00:21:09,280
+okay and eight here
+
+529
+00:21:07,200 --> 00:21:10,960
+okay so
+
+530
+00:21:09,280 --> 00:21:13,679
+we assign
+
+531
+00:21:10,960 --> 00:21:13,679
+what is uh
+
+532
+00:21:13,760 --> 00:21:16,880
+17
+
+533
+00:21:15,600 --> 00:21:18,960
+mod
+
+534
+00:21:16,880 --> 00:21:20,960
+8
+
+535
+00:21:18,960 --> 00:21:24,000
+that would be
+
+536
+00:21:20,960 --> 00:21:26,799
+17 divided three
+
+537
+00:21:24,000 --> 00:21:29,679
+17 divided by a
+
+538
+00:21:26,799 --> 00:21:31,840
+which is two
+
+539
+00:21:29,679 --> 00:21:32,799
+the remainder is one
+
+540
+00:21:31,840 --> 00:21:33,679
+right
+
+541
+00:21:32,799 --> 00:21:35,919
+okay
+
+542
+00:21:33,679 --> 00:21:35,919
+so
+
+543
+00:21:37,360 --> 00:21:40,960
+next time x
+
+544
+00:21:39,280 --> 00:21:42,159
+is one
+
+545
+00:21:40,960 --> 00:21:45,200
+and the y
+
+546
+00:21:42,159 --> 00:21:49,440
+is still eight right
+
+547
+00:21:45,200 --> 00:21:51,120
+then we exchange x y so x is eight y is
+
+548
+00:21:49,440 --> 00:21:55,120
+one
+
+549
+00:21:51,120 --> 00:21:56,400
+right then we again we assign x mod y
+
+550
+00:21:55,120 --> 00:21:58,960
+so what is
+
+551
+00:21:56,400 --> 00:22:02,720
+eight divided by 1 that will be
+
+552
+00:21:58,960 --> 00:22:04,480
+8 and the remainder is 0 right so we
+
+553
+00:22:02,720 --> 00:22:06,799
+assign x 0
+
+554
+00:22:04,480 --> 00:22:08,640
+and y still 1
+
+555
+00:22:06,799 --> 00:22:10,640
+and we exchange
+
+556
+00:22:08,640 --> 00:22:12,799
+x and y so
+
+557
+00:22:10,640 --> 00:22:14,799
+x is one
+
+558
+00:22:12,799 --> 00:22:15,760
+y is zero
+
+559
+00:22:14,799 --> 00:22:18,320
+and then
+
+560
+00:22:15,760 --> 00:22:19,919
+y is zero right so we output x that
+
+561
+00:22:18,320 --> 00:22:22,640
+would be one
+
+562
+00:22:19,919 --> 00:22:26,240
+okay so 17
+
+563
+00:22:22,640 --> 00:22:28,559
+and eight
+
+564
+00:22:26,240 --> 00:22:32,720
+are relatively prime because the
+
+565
+00:22:28,559 --> 00:22:37,440
+greatest common divisor of them is one
+
+566
+00:22:32,720 --> 00:22:38,480
+otherwise let's say if we do 16 here
+
+567
+00:22:37,440 --> 00:22:39,760
+okay
+
+568
+00:22:38,480 --> 00:22:41,840
+so
+
+569
+00:22:39,760 --> 00:22:43,520
+the same thing 16
+
+570
+00:22:41,840 --> 00:22:46,000
+mod 8
+
+571
+00:22:43,520 --> 00:22:48,799
+right so that will be
+
+572
+00:22:46,000 --> 00:22:51,440
+2 remainders 0
+
+573
+00:22:48,799 --> 00:22:54,320
+then x will be 0
+
+574
+00:22:51,440 --> 00:22:57,280
+y is 8.
+
+575
+00:22:54,320 --> 00:22:58,480
+right then we exchange x and y
+
+576
+00:22:57,280 --> 00:22:59,760
+x 8
+
+577
+00:22:58,480 --> 00:23:02,880
+y 0.
+
+578
+00:22:59,760 --> 00:23:03,760
+since y is 0 we report
+
+579
+00:23:02,880 --> 00:23:08,159
+8.
+
+580
+00:23:03,760 --> 00:23:10,559
+so 16 and 8 the greatest common divisor
+
+581
+00:23:08,159 --> 00:23:12,400
+is eight so they are not
+
+582
+00:23:10,559 --> 00:23:13,280
+relatively point
+
+583
+00:23:12,400 --> 00:23:14,240
+okay
+
+584
+00:23:13,280 --> 00:23:17,440
+so
+
+585
+00:23:14,240 --> 00:23:21,280
+this part is actually
+
+586
+00:23:17,440 --> 00:23:23,520
+the turing machine representation of
+
+587
+00:23:21,280 --> 00:23:25,919
+euclidean
+
+588
+00:23:23,520 --> 00:23:28,240
+algorithm
+
+589
+00:23:25,919 --> 00:23:28,240
+okay
+
+590
+00:23:28,400 --> 00:23:33,039
+so then we can build
+
+591
+00:23:30,640 --> 00:23:34,840
+a turing machine based on e
+
+592
+00:23:33,039 --> 00:23:37,200
+okay
+
+593
+00:23:34,840 --> 00:23:39,760
+so because uh
+
+594
+00:23:37,200 --> 00:23:42,640
+euclidean algorithm here
+
+595
+00:23:39,760 --> 00:23:44,720
+is not directly for checking relative
+
+596
+00:23:42,640 --> 00:23:47,679
+point
+
+597
+00:23:44,720 --> 00:23:50,720
+the usage of it is to
+
+598
+00:23:47,679 --> 00:23:53,520
+obtain the gcd the greatest
+
+599
+00:23:50,720 --> 00:23:54,559
+common divisor of two
+
+600
+00:23:53,520 --> 00:23:58,000
+integers
+
+601
+00:23:54,559 --> 00:24:00,000
+okay so we
+
+602
+00:23:58,000 --> 00:24:03,520
+design a tree machine
+
+603
+00:24:00,000 --> 00:24:06,080
+decider based on euclidean horizon
+
+604
+00:24:03,520 --> 00:24:07,760
+so for the input here
+
+605
+00:24:06,080 --> 00:24:08,559
+we run
+
+606
+00:24:07,760 --> 00:24:10,640
+e
+
+607
+00:24:08,559 --> 00:24:13,279
+under
+
+608
+00:24:10,640 --> 00:24:14,400
+the input directory okay
+
+609
+00:24:13,279 --> 00:24:16,559
+so
+
+610
+00:24:14,400 --> 00:24:19,279
+after running
+
+611
+00:24:16,559 --> 00:24:20,080
+the euclidean algorithm if the result is
+
+612
+00:24:19,279 --> 00:24:21,120
+one
+
+613
+00:24:20,080 --> 00:24:23,600
+that mean
+
+614
+00:24:21,120 --> 00:24:23,600
+that means
+
+615
+00:24:23,679 --> 00:24:28,240
+there is no other integers
+
+616
+00:24:27,039 --> 00:24:32,159
+can be the
+
+617
+00:24:28,240 --> 00:24:35,520
+common divisor for the two integers so
+
+618
+00:24:32,159 --> 00:24:37,760
+the two given integers x and y
+
+619
+00:24:35,520 --> 00:24:40,080
+are relatively prime
+
+620
+00:24:37,760 --> 00:24:44,960
+so we accept
+
+621
+00:24:40,080 --> 00:24:46,400
+and uh the divide the decider accept
+
+622
+00:24:44,960 --> 00:24:50,000
+otherwise
+
+623
+00:24:46,400 --> 00:24:51,840
+otherwise reject right if you uh if
+
+624
+00:24:50,000 --> 00:24:54,559
+there are any
+
+625
+00:24:51,840 --> 00:24:55,760
+other integers any integers other than
+
+626
+00:24:54,559 --> 00:24:58,240
+one
+
+627
+00:24:55,760 --> 00:25:00,159
+can be the common divisor of the two
+
+628
+00:24:58,240 --> 00:25:01,840
+integers then the two
+
+629
+00:25:00,159 --> 00:25:04,240
+integers are not
+
+630
+00:25:01,840 --> 00:25:05,520
+relatively prime
+
+631
+00:25:04,240 --> 00:25:08,240
+okay
+
+632
+00:25:05,520 --> 00:25:08,240
+so uh
+
+633
+00:25:09,200 --> 00:25:13,760
+so i guess the
+
+634
+00:25:10,799 --> 00:25:17,520
+the correctness of the algorithm here
+
+635
+00:25:13,760 --> 00:25:17,520
+the r here and e here
+
+636
+00:25:20,000 --> 00:25:23,840
+are uh
+
+637
+00:25:21,919 --> 00:25:26,720
+there's no problem with
+
+638
+00:25:23,840 --> 00:25:29,120
+correctness here so we can just
+
+639
+00:25:26,720 --> 00:25:31,440
+skip that
+
+640
+00:25:29,120 --> 00:25:31,440
+then
+
+641
+00:25:32,080 --> 00:25:35,840
+what we are interested here is the
+
+642
+00:25:34,159 --> 00:25:37,760
+running time
+
+643
+00:25:35,840 --> 00:25:39,600
+right the running time
+
+644
+00:25:37,760 --> 00:25:41,120
+and how
+
+645
+00:25:39,600 --> 00:25:43,279
+how uh
+
+646
+00:25:41,120 --> 00:25:44,480
+how fast
+
+647
+00:25:43,279 --> 00:25:46,720
+uh
+
+648
+00:25:44,480 --> 00:25:50,480
+in terms of the
+
+649
+00:25:46,720 --> 00:25:50,480
+length of the input string
+
+650
+00:25:50,960 --> 00:25:53,760
+okay
+
+651
+00:25:52,080 --> 00:25:57,520
+okay we can
+
+652
+00:25:53,760 --> 00:26:00,799
+can we uh finish the
+
+653
+00:25:57,520 --> 00:26:02,320
+algorithm execution okay
+
+654
+00:26:00,799 --> 00:26:04,720
+so
+
+655
+00:26:02,320 --> 00:26:06,799
+to analyze the time complexity of
+
+656
+00:26:04,720 --> 00:26:08,960
+euclidean algorithm
+
+657
+00:26:06,799 --> 00:26:11,440
+there's nothing to analyze for r here
+
+658
+00:26:08,960 --> 00:26:14,559
+right because the r here just
+
+659
+00:26:11,440 --> 00:26:16,799
+uh run e and the theta
+
+660
+00:26:14,559 --> 00:26:18,880
+check the results and report the
+
+661
+00:26:16,799 --> 00:26:21,360
+decision okay so
+
+662
+00:26:18,880 --> 00:26:23,120
+the uh the main algorithm here is the
+
+663
+00:26:21,360 --> 00:26:28,159
+euphemism
+
+664
+00:26:23,120 --> 00:26:28,159
+so to analyze the time complexity of e
+
+665
+00:26:29,440 --> 00:26:32,720
+we first show that
+
+666
+00:26:33,360 --> 00:26:39,279
+every
+
+667
+00:26:34,960 --> 00:26:44,400
+execution of stage 2
+
+668
+00:26:39,279 --> 00:26:46,640
+cuts the value of x by at least half
+
+669
+00:26:44,400 --> 00:26:48,640
+okay
+
+670
+00:26:46,640 --> 00:26:50,000
+so
+
+671
+00:26:48,640 --> 00:26:52,480
+there actually there are some
+
+672
+00:26:50,000 --> 00:26:53,279
+assumptions uh regarding the analysis
+
+673
+00:26:52,480 --> 00:26:55,440
+here
+
+674
+00:26:53,279 --> 00:26:57,279
+if you are doing the programming contest
+
+675
+00:26:55,440 --> 00:27:01,360
+you know that uh
+
+676
+00:26:57,279 --> 00:27:04,000
+the time complexity analysis is far
+
+677
+00:27:01,360 --> 00:27:06,400
+complicated then we will be
+
+678
+00:27:04,000 --> 00:27:08,799
+talking about we will be discussed here
+
+679
+00:27:06,400 --> 00:27:10,720
+okay so here we
+
+680
+00:27:08,799 --> 00:27:14,400
+present a highly
+
+681
+00:27:10,720 --> 00:27:16,080
+simplified version of uh time complexity
+
+682
+00:27:14,400 --> 00:27:17,120
+analysis
+
+683
+00:27:16,080 --> 00:27:18,559
+okay
+
+684
+00:27:17,120 --> 00:27:20,559
+so now here
+
+685
+00:27:18,559 --> 00:27:21,919
+we can see that
+
+686
+00:27:20,559 --> 00:27:24,320
+for the
+
+687
+00:27:21,919 --> 00:27:26,320
+simplified
+
+688
+00:27:24,320 --> 00:27:28,480
+viewpoint
+
+689
+00:27:26,320 --> 00:27:30,399
+every stage
+
+690
+00:27:28,480 --> 00:27:32,720
+repeat until y 0
+
+691
+00:27:30,399 --> 00:27:32,720
+can be
+
+692
+00:27:32,799 --> 00:27:36,320
+implemented can be run in polynomial
+
+693
+00:27:35,279 --> 00:27:37,279
+time
+
+694
+00:27:36,320 --> 00:27:38,240
+right
+
+695
+00:27:37,279 --> 00:27:41,120
+and
+
+696
+00:27:38,240 --> 00:27:43,360
+here we do a division here
+
+697
+00:27:41,120 --> 00:27:45,679
+and assign the result which is a
+
+698
+00:27:43,360 --> 00:27:48,480
+reminder of the
+
+699
+00:27:45,679 --> 00:27:50,799
+remainder of the division to x
+
+700
+00:27:48,480 --> 00:27:54,640
+so such a operation can be
+
+701
+00:27:50,799 --> 00:27:58,080
+implemented in polynomial time of
+
+702
+00:27:54,640 --> 00:28:02,480
+the length of the input right and
+
+703
+00:27:58,080 --> 00:28:05,120
+exchange x and y can also be implemented
+
+704
+00:28:02,480 --> 00:28:07,279
+in polynomial time and of course output
+
+705
+00:28:05,120 --> 00:28:09,360
+x doesn't matter
+
+706
+00:28:07,279 --> 00:28:12,480
+right you know it
+
+707
+00:28:09,360 --> 00:28:14,720
+it does doesn't read any real operation
+
+708
+00:28:12,480 --> 00:28:17,200
+here so it can be implemented in within
+
+709
+00:28:14,720 --> 00:28:20,159
+polynomial time
+
+710
+00:28:17,200 --> 00:28:23,600
+so the problem here is how many stages
+
+711
+00:28:20,159 --> 00:28:25,520
+the number of stages we want we need to
+
+712
+00:28:23,600 --> 00:28:26,880
+finish the calculation to finish the
+
+713
+00:28:25,520 --> 00:28:27,919
+computation
+
+714
+00:28:26,880 --> 00:28:31,200
+right
+
+715
+00:28:27,919 --> 00:28:32,240
+so each stage no doubt they are they can
+
+716
+00:28:31,200 --> 00:28:32,960
+be run
+
+717
+00:28:32,240 --> 00:28:34,320
+in
+
+718
+00:28:32,960 --> 00:28:36,000
+paranormal time
+
+719
+00:28:34,320 --> 00:28:38,799
+so how many stages
+
+720
+00:28:36,000 --> 00:28:41,840
+so that depends on how many loop you
+
+721
+00:28:38,799 --> 00:28:42,840
+need to finish the calculation right to
+
+722
+00:28:41,840 --> 00:28:45,840
+the
+
+723
+00:28:42,840 --> 00:28:49,039
+computation that's why we first one we
+
+724
+00:28:45,840 --> 00:28:50,880
+want to show that every execution of
+
+725
+00:28:49,039 --> 00:28:55,039
+stage two
+
+726
+00:28:50,880 --> 00:29:01,039
+probably accepts popular first okay
+
+727
+00:28:55,039 --> 00:29:01,039
+cuts the value of x by at least half
+
+728
+00:29:01,840 --> 00:29:04,080
+okay
+
+729
+00:29:08,880 --> 00:29:11,200
+so
+
+730
+00:29:11,279 --> 00:29:14,159
+stage two here
+
+731
+00:29:12,880 --> 00:29:17,279
+okay
+
+732
+00:29:14,159 --> 00:29:19,520
+and what what's interesting here is that
+
+733
+00:29:17,279 --> 00:29:21,440
+for x and y
+
+734
+00:29:19,520 --> 00:29:24,240
+two integers
+
+735
+00:29:21,440 --> 00:29:26,880
+that's enough let's analyze
+
+736
+00:29:24,240 --> 00:29:29,039
+two possible situations
+
+737
+00:29:26,880 --> 00:29:32,320
+actually only two possible situations
+
+738
+00:29:29,039 --> 00:29:33,600
+okay so first situation is that
+
+739
+00:29:32,320 --> 00:29:36,559
+let's say
+
+740
+00:29:33,600 --> 00:29:37,760
+first the situation
+
+741
+00:29:36,559 --> 00:29:40,720
+x
+
+742
+00:29:37,760 --> 00:29:42,000
+divided by two which is half x
+
+743
+00:29:40,720 --> 00:29:44,880
+okay
+
+744
+00:29:42,000 --> 00:29:46,399
+greater or equal to one
+
+745
+00:29:44,880 --> 00:29:48,480
+and the second
+
+746
+00:29:46,399 --> 00:29:49,760
+situation is that
+
+747
+00:29:48,480 --> 00:29:51,039
+half x
+
+748
+00:29:49,760 --> 00:29:52,320
+smaller
+
+749
+00:29:51,039 --> 00:29:55,360
+than y
+
+750
+00:29:52,320 --> 00:29:58,159
+less than one okay
+
+751
+00:29:55,360 --> 00:30:00,559
+well there is no other
+
+752
+00:29:58,159 --> 00:30:04,080
+possible situation here right only the
+
+753
+00:30:00,559 --> 00:30:07,600
+two let's classify the situation here
+
+754
+00:30:04,080 --> 00:30:08,640
+into these two situations two scenarios
+
+755
+00:30:07,600 --> 00:30:10,480
+okay
+
+756
+00:30:08,640 --> 00:30:13,520
+okay so
+
+757
+00:30:10,480 --> 00:30:17,520
+if half x
+
+758
+00:30:13,520 --> 00:30:17,520
+is equal to or greater than y
+
+759
+00:30:17,600 --> 00:30:20,320
+what is
+
+760
+00:30:19,120 --> 00:30:22,080
+x
+
+761
+00:30:20,320 --> 00:30:23,200
+mod
+
+762
+00:30:22,080 --> 00:30:24,559
+y
+
+763
+00:30:23,200 --> 00:30:26,880
+what is
+
+764
+00:30:24,559 --> 00:30:29,440
+the value here
+
+765
+00:30:26,880 --> 00:30:32,799
+that's a problem okay
+
+766
+00:30:29,440 --> 00:30:32,799
+then what is x mod y
+
+767
+00:30:34,480 --> 00:30:44,720
+the value of x y is x divided by y
+
+768
+00:30:41,200 --> 00:30:45,600
+the remainder of x divided by y
+
+769
+00:30:44,720 --> 00:30:50,320
+right
+
+770
+00:30:45,600 --> 00:30:53,919
+since it is the remainder
+
+771
+00:30:50,320 --> 00:30:55,600
+the value of x mod y
+
+772
+00:30:53,919 --> 00:30:58,799
+must
+
+773
+00:30:55,600 --> 00:30:58,799
+be less than y
+
+774
+00:30:59,519 --> 00:31:04,720
+right
+
+775
+00:31:01,200 --> 00:31:06,960
+it cannot be y because if it can be y
+
+776
+00:31:04,720 --> 00:31:08,320
+the ratio plus 1 right
+
+777
+00:31:06,960 --> 00:31:10,559
+so it cannot
+
+778
+00:31:08,320 --> 00:31:13,120
+be
+
+779
+00:31:10,559 --> 00:31:14,640
+greater or equal to y because it's the
+
+780
+00:31:13,120 --> 00:31:15,760
+remainder
+
+781
+00:31:14,640 --> 00:31:17,840
+okay
+
+782
+00:31:15,760 --> 00:31:21,840
+then since
+
+783
+00:31:17,840 --> 00:31:24,000
+the value here is less than y
+
+784
+00:31:21,840 --> 00:31:26,240
+see that
+
+785
+00:31:24,000 --> 00:31:31,279
+y
+
+786
+00:31:26,240 --> 00:31:31,279
+is less than or equal to what
+
+787
+00:31:31,519 --> 00:31:34,240
+f of x
+
+788
+00:31:35,519 --> 00:31:39,440
+right
+
+789
+00:31:36,480 --> 00:31:41,279
+and then we assign
+
+790
+00:31:39,440 --> 00:31:44,880
+this value
+
+791
+00:31:41,279 --> 00:31:44,880
+to our next x
+
+792
+00:31:45,039 --> 00:31:48,640
+right so
+
+793
+00:31:46,720 --> 00:31:53,120
+let's use x prime
+
+794
+00:31:48,640 --> 00:31:55,200
+here so we assign this value to next x
+
+795
+00:31:53,120 --> 00:31:58,880
+so next x
+
+796
+00:31:55,200 --> 00:32:01,840
+equal to or less than
+
+797
+00:31:58,880 --> 00:32:01,840
+half of the
+
+798
+00:32:01,919 --> 00:32:07,840
+current x
+
+799
+00:32:04,480 --> 00:32:11,120
+okay so that's the first situation
+
+800
+00:32:07,840 --> 00:32:12,799
+for the second situation here
+
+801
+00:32:11,120 --> 00:32:14,799
+what is
+
+802
+00:32:12,799 --> 00:32:16,159
+x
+
+803
+00:32:14,799 --> 00:32:17,279
+mark
+
+804
+00:32:16,159 --> 00:32:19,360
+y
+
+805
+00:32:17,279 --> 00:32:22,480
+the same question here
+
+806
+00:32:19,360 --> 00:32:23,360
+what is x my y
+
+807
+00:32:22,480 --> 00:32:28,880
+see
+
+808
+00:32:23,360 --> 00:32:30,720
+now x oh sorry now y
+
+809
+00:32:28,880 --> 00:32:32,320
+of
+
+810
+00:32:30,720 --> 00:32:34,799
+y
+
+811
+00:32:32,320 --> 00:32:38,080
+is greater than
+
+812
+00:32:34,799 --> 00:32:38,080
+half of x
+
+813
+00:32:38,559 --> 00:32:44,159
+y is greater than half of x
+
+814
+00:32:41,600 --> 00:32:46,960
+okay that that let's give an concrete
+
+815
+00:32:44,159 --> 00:32:49,679
+example so that you will uh
+
+816
+00:32:46,960 --> 00:32:50,799
+understand it easily
+
+817
+00:32:49,679 --> 00:32:54,799
+so if
+
+818
+00:32:50,799 --> 00:32:57,840
+you have a number 15
+
+819
+00:32:54,799 --> 00:33:02,080
+and the y is 8
+
+820
+00:32:57,840 --> 00:33:04,720
+a 8 is greater than half of 15 right
+
+821
+00:33:02,080 --> 00:33:06,080
+so what is
+
+822
+00:33:04,720 --> 00:33:08,080
+15 mod
+
+823
+00:33:06,080 --> 00:33:11,840
+8
+
+824
+00:33:08,080 --> 00:33:15,360
+it will be 15 minus 8
+
+825
+00:33:11,840 --> 00:33:15,360
+which is 7 right
+
+826
+00:33:15,600 --> 00:33:18,080
+because
+
+827
+00:33:16,799 --> 00:33:20,559
+y
+
+828
+00:33:18,080 --> 00:33:22,240
+is greater than half of
+
+829
+00:33:20,559 --> 00:33:23,840
+x
+
+830
+00:33:22,240 --> 00:33:26,399
+there is no other
+
+831
+00:33:23,840 --> 00:33:26,399
+integers
+
+832
+00:33:26,880 --> 00:33:29,519
+can be
+
+833
+00:33:28,159 --> 00:33:31,600
+multiplier
+
+834
+00:33:29,519 --> 00:33:32,399
+to multiply y
+
+835
+00:33:31,600 --> 00:33:35,039
+and
+
+836
+00:33:32,399 --> 00:33:37,039
+still smaller than
+
+837
+00:33:35,039 --> 00:33:39,519
+x
+
+838
+00:33:37,039 --> 00:33:43,840
+that's why x mod y
+
+839
+00:33:39,519 --> 00:33:46,640
+in under the condition that y
+
+840
+00:33:43,840 --> 00:33:48,159
+is greater than half of x
+
+841
+00:33:46,640 --> 00:33:50,240
+the remainder
+
+842
+00:33:48,159 --> 00:33:53,519
+become
+
+843
+00:33:50,240 --> 00:33:57,120
+the remainder becomes x minus one
+
+844
+00:33:53,519 --> 00:33:59,039
+okay because how large is y okay
+
+845
+00:33:57,120 --> 00:34:00,240
+so that will be
+
+846
+00:33:59,039 --> 00:34:02,880
+x
+
+847
+00:34:00,240 --> 00:34:02,880
+minus y
+
+848
+00:34:04,000 --> 00:34:10,159
+in this situation the remainder
+
+849
+00:34:06,720 --> 00:34:14,720
+is x minus y
+
+850
+00:34:10,159 --> 00:34:16,800
+again since y is larger is greater than
+
+851
+00:34:14,720 --> 00:34:18,560
+half of x
+
+852
+00:34:16,800 --> 00:34:22,879
+x minus y
+
+853
+00:34:18,560 --> 00:34:22,879
+must be less than half of x
+
+854
+00:34:23,919 --> 00:34:27,599
+right
+
+855
+00:34:25,200 --> 00:34:30,320
+because y here
+
+856
+00:34:27,599 --> 00:34:32,480
+larger than half of x
+
+857
+00:34:30,320 --> 00:34:34,399
+so x minus y
+
+858
+00:34:32,480 --> 00:34:37,520
+will be smaller
+
+859
+00:34:34,399 --> 00:34:40,000
+will be less than
+
+860
+00:34:37,520 --> 00:34:40,800
+half of x
+
+861
+00:34:40,000 --> 00:34:43,919
+so
+
+862
+00:34:40,800 --> 00:34:43,919
+our next
+
+863
+00:34:44,240 --> 00:34:48,399
+x
+
+864
+00:34:46,000 --> 00:34:50,159
+is less than
+
+865
+00:34:48,399 --> 00:34:52,560
+half of x
+
+866
+00:34:50,159 --> 00:34:53,760
+half of the current x
+
+867
+00:34:52,560 --> 00:34:55,040
+right
+
+868
+00:34:53,760 --> 00:34:59,040
+so
+
+869
+00:34:55,040 --> 00:35:00,839
+these two scenario covers all possible
+
+870
+00:34:59,040 --> 00:35:03,520
+scenarios all
+
+871
+00:35:00,839 --> 00:35:05,520
+possibilities and within
+
+872
+00:35:03,520 --> 00:35:07,920
+all possibilities
+
+873
+00:35:05,520 --> 00:35:10,079
+we know that
+
+874
+00:35:07,920 --> 00:35:12,320
+next x
+
+875
+00:35:10,079 --> 00:35:12,320
+is
+
+876
+00:35:14,000 --> 00:35:20,480
+greater than or sorry less than or equal
+
+877
+00:35:16,480 --> 00:35:21,440
+to curve half of current x
+
+878
+00:35:20,480 --> 00:35:25,200
+okay
+
+879
+00:35:21,440 --> 00:35:25,200
+so that's why we say that
+
+880
+00:35:25,760 --> 00:35:31,839
+no matter this situation the first
+
+881
+00:35:28,160 --> 00:35:31,839
+duration or the second situation
+
+882
+00:35:32,160 --> 00:35:37,599
+x drops by at least half
+
+883
+00:35:35,040 --> 00:35:40,160
+x drops by at least half
+
+884
+00:35:37,599 --> 00:35:43,160
+that's why we say so
+
+885
+00:35:40,160 --> 00:35:43,160
+okay
+
+886
+00:35:44,560 --> 00:35:50,960
+okay then for stage three
+
+887
+00:35:47,359 --> 00:35:53,119
+we just exchange x and y
+
+888
+00:35:50,960 --> 00:35:55,119
+okay we change x and y
+
+889
+00:35:53,119 --> 00:35:59,119
+and so that we
+
+890
+00:35:55,119 --> 00:36:01,040
+may we make y the next x and
+
+891
+00:35:59,119 --> 00:36:02,560
+x prime
+
+892
+00:36:01,040 --> 00:36:03,760
+the next y
+
+893
+00:36:02,560 --> 00:36:05,599
+okay
+
+894
+00:36:03,760 --> 00:36:08,160
+and how many times
+
+895
+00:36:05,599 --> 00:36:13,280
+how many times
+
+896
+00:36:08,160 --> 00:36:14,880
+uh well stage two and three executed
+
+897
+00:36:13,280 --> 00:36:17,760
+you will find that
+
+898
+00:36:14,880 --> 00:36:19,119
+the execute the number of the maximum
+
+899
+00:36:17,760 --> 00:36:20,640
+number of
+
+900
+00:36:19,119 --> 00:36:24,079
+times
+
+901
+00:36:20,640 --> 00:36:25,359
+that stage 3 and 2 are executed is the
+
+902
+00:36:24,079 --> 00:36:27,200
+lesser
+
+903
+00:36:25,359 --> 00:36:29,440
+the lesser
+
+904
+00:36:27,200 --> 00:36:29,440
+of
+
+905
+00:36:29,520 --> 00:36:36,160
+2 log base 2 x or 2 log base 2 y
+
+906
+00:36:34,960 --> 00:36:36,960
+okay
+
+907
+00:36:36,160 --> 00:36:42,480
+why
+
+908
+00:36:36,960 --> 00:36:42,480
+firstly the 2 here the 2 here is
+
+909
+00:36:43,119 --> 00:36:49,280
+because stages 2 and 3 there are two
+
+910
+00:36:46,000 --> 00:36:52,720
+stages here so the 2 there it means 2
+
+911
+00:36:49,280 --> 00:36:54,880
+stage 2 and stage 3.
+
+912
+00:36:52,720 --> 00:36:59,119
+and since we cut
+
+913
+00:36:54,880 --> 00:37:00,079
+at least half every time
+
+914
+00:36:59,119 --> 00:37:02,960
+how
+
+915
+00:37:00,079 --> 00:37:04,400
+many times you can cut
+
+916
+00:37:02,960 --> 00:37:05,440
+x
+
+917
+00:37:04,400 --> 00:37:06,480
+to
+
+918
+00:37:05,440 --> 00:37:10,000
+one
+
+919
+00:37:06,480 --> 00:37:11,920
+and the y to 1
+
+920
+00:37:10,000 --> 00:37:12,960
+that would be
+
+921
+00:37:11,920 --> 00:37:14,560
+log
+
+922
+00:37:12,960 --> 00:37:16,079
+base 2 x
+
+923
+00:37:14,560 --> 00:37:18,720
+and the log
+
+924
+00:37:16,079 --> 00:37:20,320
+base 2 1
+
+925
+00:37:18,720 --> 00:37:23,119
+right
+
+926
+00:37:20,320 --> 00:37:25,839
+because every time you cut cutting half
+
+927
+00:37:23,119 --> 00:37:28,400
+of x or next time you cut y and next
+
+928
+00:37:25,839 --> 00:37:29,920
+time you cut half uh sorry x and next
+
+929
+00:37:28,400 --> 00:37:32,480
+time y
+
+930
+00:37:29,920 --> 00:37:34,079
+and why the lesser not the
+
+931
+00:37:32,480 --> 00:37:35,119
+not the greater
+
+932
+00:37:34,079 --> 00:37:38,160
+because
+
+933
+00:37:35,119 --> 00:37:41,280
+as long as you cut one two uh
+
+934
+00:37:38,160 --> 00:37:42,560
+sorry as long as you cut one of them
+
+935
+00:37:41,280 --> 00:37:44,240
+to one
+
+936
+00:37:42,560 --> 00:37:45,920
+then the process
+
+937
+00:37:44,240 --> 00:37:48,640
+terminates right
+
+938
+00:37:45,920 --> 00:37:51,839
+no matter how large the other one is
+
+939
+00:37:48,640 --> 00:37:55,440
+for example if you have a very very
+
+940
+00:37:51,839 --> 00:37:56,960
+large x but y now is one then the
+
+941
+00:37:55,440 --> 00:37:59,440
+divisor
+
+942
+00:37:56,960 --> 00:38:01,200
+sorry the remainder will be zero so it
+
+943
+00:37:59,440 --> 00:38:03,680
+doesn't matter
+
+944
+00:38:01,200 --> 00:38:05,599
+how large the other one is
+
+945
+00:38:03,680 --> 00:38:07,200
+we only need to take care about the
+
+946
+00:38:05,599 --> 00:38:09,920
+laser right
+
+947
+00:38:07,200 --> 00:38:13,920
+so as long as one
+
+948
+00:38:09,920 --> 00:38:17,200
+big uh one of them x or y becomes one
+
+949
+00:38:13,920 --> 00:38:19,760
+then the process terminates
+
+950
+00:38:17,200 --> 00:38:22,480
+that's the key point okay so why the
+
+951
+00:38:19,760 --> 00:38:24,240
+lesser of the two because
+
+952
+00:38:22,480 --> 00:38:26,800
+as long as one
+
+953
+00:38:24,240 --> 00:38:28,640
+of them becomes one then the whole
+
+954
+00:38:26,800 --> 00:38:29,599
+process terminates
+
+955
+00:38:28,640 --> 00:38:30,400
+okay
+
+956
+00:38:29,599 --> 00:38:33,800
+so
+
+957
+00:38:30,400 --> 00:38:33,800
+we know that
+
+958
+00:38:35,119 --> 00:38:41,119
+we know that we need so many
+
+959
+00:38:38,880 --> 00:38:42,880
+or this one okay it doesn't matter so
+
+960
+00:38:41,119 --> 00:38:47,200
+many
+
+961
+00:38:42,880 --> 00:38:48,880
+stages to finish the calculation
+
+962
+00:38:47,200 --> 00:38:52,240
+then
+
+963
+00:38:48,880 --> 00:38:54,640
+probably you will think okay uh it is a
+
+964
+00:38:52,240 --> 00:38:56,800
+big o of log
+
+965
+00:38:54,640 --> 00:38:58,079
+and
+
+966
+00:38:56,800 --> 00:38:59,839
+already
+
+967
+00:38:58,079 --> 00:39:02,800
+right
+
+968
+00:38:59,839 --> 00:39:04,320
+actually wrong why because
+
+969
+00:39:02,800 --> 00:39:06,560
+the end here
+
+970
+00:39:04,320 --> 00:39:09,520
+we talk about
+
+971
+00:39:06,560 --> 00:39:09,520
+is actually
+
+972
+00:39:09,760 --> 00:39:15,839
+the length of the input string
+
+973
+00:39:14,000 --> 00:39:17,680
+and what is the length of the input
+
+974
+00:39:15,839 --> 00:39:19,520
+string here
+
+975
+00:39:17,680 --> 00:39:22,880
+as we just
+
+976
+00:39:19,520 --> 00:39:25,280
+uh discussed in the beginning of this
+
+977
+00:39:22,880 --> 00:39:26,079
+this hour
+
+978
+00:39:25,280 --> 00:39:27,359
+x
+
+979
+00:39:26,079 --> 00:39:31,520
+or y
+
+980
+00:39:27,359 --> 00:39:34,880
+are in db uh integers are integers
+
+981
+00:39:31,520 --> 00:39:36,560
+so if we consider binary representation
+
+982
+00:39:34,880 --> 00:39:38,000
+of x and y
+
+983
+00:39:36,560 --> 00:39:39,280
+how long
+
+984
+00:39:38,000 --> 00:39:40,400
+how many
+
+985
+00:39:39,280 --> 00:39:44,160
+spaces
+
+986
+00:39:40,400 --> 00:39:48,720
+on the tape will be occupied by
+
+987
+00:39:44,160 --> 00:39:51,680
+the string in representing x or y
+
+988
+00:39:48,720 --> 00:39:54,560
+for x we need
+
+989
+00:39:51,680 --> 00:39:54,560
+so many
+
+990
+00:39:54,800 --> 00:40:00,720
+and the plus one actually
+
+991
+00:39:56,480 --> 00:40:00,720
+right and for y we need
+
+992
+00:40:00,800 --> 00:40:04,480
+this many
+
+993
+00:40:02,240 --> 00:40:06,720
+types right
+
+994
+00:40:04,480 --> 00:40:06,720
+so
+
+995
+00:40:08,000 --> 00:40:13,119
+the tape the input
+
+996
+00:40:10,960 --> 00:40:16,240
+the length of the input string
+
+997
+00:40:13,119 --> 00:40:17,040
+is actually proportionate
+
+998
+00:40:16,240 --> 00:40:18,720
+okay
+
+999
+00:40:17,040 --> 00:40:20,480
+proportional
+
+1000
+00:40:18,720 --> 00:40:22,839
+to
+
+1001
+00:40:20,480 --> 00:40:26,400
+the quantity
+
+1002
+00:40:22,839 --> 00:40:29,440
+here linear to the quantity here
+
+1003
+00:40:26,400 --> 00:40:31,119
+so actually
+
+1004
+00:40:29,440 --> 00:40:35,440
+relative prime
+
+1005
+00:40:31,119 --> 00:40:39,839
+solved by euclidean horizon
+
+1006
+00:40:35,440 --> 00:40:42,319
+the execution time for euclidean horizon
+
+1007
+00:40:39,839 --> 00:40:44,720
+is linear time
+
+1008
+00:40:42,319 --> 00:40:47,359
+okay it's linear time of course it's a
+
+1009
+00:40:44,720 --> 00:40:49,440
+polynomial right because linear is the
+
+1010
+00:40:47,359 --> 00:40:52,720
+is a polynomial but
+
+1011
+00:40:49,440 --> 00:40:55,280
+more specifically is linear because the
+
+1012
+00:40:52,720 --> 00:40:58,880
+running time we need
+
+1013
+00:40:55,280 --> 00:41:02,160
+to finish the exclusion of
+
+1014
+00:40:58,880 --> 00:41:02,160
+euclidean algorithm
+
+1015
+00:41:02,319 --> 00:41:10,000
+is proportional to is linear to
+
+1016
+00:41:06,560 --> 00:41:12,160
+the length of the representation
+
+1017
+00:41:10,000 --> 00:41:13,440
+on the input of the input string on the
+
+1018
+00:41:12,160 --> 00:41:15,280
+tape
+
+1019
+00:41:13,440 --> 00:41:17,200
+okay
+
+1020
+00:41:15,280 --> 00:41:20,640
+so
+
+1021
+00:41:17,200 --> 00:41:23,599
+it's kind of important that to know that
+
+1022
+00:41:20,640 --> 00:41:25,520
+euclidean algorithm
+
+1023
+00:41:23,599 --> 00:41:29,040
+is in polynomial
+
+1024
+00:41:25,520 --> 00:41:32,240
+actually in linear not in log time
+
+1025
+00:41:29,040 --> 00:41:33,359
+logarithm time okay
+
+1026
+00:41:32,240 --> 00:41:34,720
+so
+
+1027
+00:41:33,359 --> 00:41:35,839
+if you uh
+
+1028
+00:41:34,720 --> 00:41:37,280
+that uh
+
+1029
+00:41:35,839 --> 00:41:41,280
+let's
+
+1030
+00:41:37,280 --> 00:41:44,400
+elaborate this uh a little bit further
+
+1031
+00:41:41,280 --> 00:41:47,200
+and uh let's say
+
+1032
+00:41:44,400 --> 00:41:50,960
+sometimes we need to check if uh
+
+1033
+00:41:47,200 --> 00:41:52,960
+if uh uh if a integer is composite
+
+1034
+00:41:50,960 --> 00:41:55,920
+right so for example 10
+
+1035
+00:41:52,960 --> 00:41:59,599
+you say that 10 is 2.5 that's composite
+
+1036
+00:41:55,920 --> 00:42:02,000
+right it's not a prime okay so you check
+
+1037
+00:41:59,599 --> 00:42:05,280
+let's say um
+
+1038
+00:42:02,000 --> 00:42:06,560
+100 then you can say oh 100 is 10 times
+
+1039
+00:42:05,280 --> 00:42:08,880
+10 or
+
+1040
+00:42:06,560 --> 00:42:09,760
+2 times 50 or something so it's not a
+
+1041
+00:42:08,880 --> 00:42:10,640
+prime
+
+1042
+00:42:09,760 --> 00:42:14,079
+okay
+
+1043
+00:42:10,640 --> 00:42:14,079
+and if you check something
+
+1044
+00:42:14,839 --> 00:42:19,200
+uh some and
+
+1045
+00:42:17,359 --> 00:42:21,440
+you want to check it's a point or
+
+1046
+00:42:19,200 --> 00:42:24,240
+composite
+
+1047
+00:42:21,440 --> 00:42:27,599
+what the naive way to do
+
+1048
+00:42:24,240 --> 00:42:29,440
+is to check if n can be divided by one
+
+1049
+00:42:27,599 --> 00:42:31,359
+okay one you don't need to check that
+
+1050
+00:42:29,440 --> 00:42:34,000
+okay so two
+
+1051
+00:42:31,359 --> 00:42:36,800
+three four
+
+1052
+00:42:34,000 --> 00:42:38,880
+until which number of course n minus one
+
+1053
+00:42:36,800 --> 00:42:40,720
+would do but you don't want to do that
+
+1054
+00:42:38,880 --> 00:42:43,200
+right
+
+1055
+00:42:40,720 --> 00:42:45,760
+usually we can check until
+
+1056
+00:42:43,200 --> 00:42:48,720
+square root of n
+
+1057
+00:42:45,760 --> 00:42:51,520
+right that's a theorem i guess
+
+1058
+00:42:48,720 --> 00:42:52,319
+and square root of n is like
+
+1059
+00:42:51,520 --> 00:42:54,160
+n
+
+1060
+00:42:52,319 --> 00:42:55,359
+to um
+
+1061
+00:42:54,160 --> 00:42:57,119
+0.5
+
+1062
+00:42:55,359 --> 00:42:58,400
+power right
+
+1063
+00:42:57,119 --> 00:43:00,880
+and
+
+1064
+00:42:58,400 --> 00:43:04,240
+you might think that
+
+1065
+00:43:00,880 --> 00:43:07,040
+okay it's a polynomial time algorithm
+
+1066
+00:43:04,240 --> 00:43:09,200
+but no it's not it's a it's an
+
+1067
+00:43:07,040 --> 00:43:10,480
+exponential time algorithm
+
+1068
+00:43:09,200 --> 00:43:13,119
+why
+
+1069
+00:43:10,480 --> 00:43:15,040
+don't be confused by n here
+
+1070
+00:43:13,119 --> 00:43:18,800
+and
+
+1071
+00:43:15,040 --> 00:43:22,240
+okay and the n we use in here
+
+1072
+00:43:18,800 --> 00:43:23,599
+the n we use in the big o notation
+
+1073
+00:43:22,240 --> 00:43:26,319
+usually
+
+1074
+00:43:23,599 --> 00:43:30,480
+means the length of the input string
+
+1075
+00:43:26,319 --> 00:43:31,599
+right but n here is actually the value
+
+1076
+00:43:30,480 --> 00:43:34,880
+so how
+
+1077
+00:43:31,599 --> 00:43:37,599
+many tape spaces you need to
+
+1078
+00:43:34,880 --> 00:43:41,119
+represent the value here let's change it
+
+1079
+00:43:37,599 --> 00:43:43,119
+to m okay
+
+1080
+00:43:41,119 --> 00:43:44,160
+you need log
+
+1081
+00:43:43,119 --> 00:43:47,280
+2
+
+1082
+00:43:44,160 --> 00:43:48,960
+base 2 if you use binary okay then you
+
+1083
+00:43:47,280 --> 00:43:50,160
+need so many
+
+1084
+00:43:48,960 --> 00:43:51,119
+tape space
+
+1085
+00:43:50,160 --> 00:43:52,480
+and
+
+1086
+00:43:51,119 --> 00:43:56,240
+you need
+
+1087
+00:43:52,480 --> 00:43:58,480
+so many iterations
+
+1088
+00:43:56,240 --> 00:44:02,000
+this value is
+
+1089
+00:43:58,480 --> 00:44:04,160
+an exponential value of this
+
+1090
+00:44:02,000 --> 00:44:06,960
+term
+
+1091
+00:44:04,160 --> 00:44:09,760
+so such a naive algorithm
+
+1092
+00:44:06,960 --> 00:44:11,839
+is an exponential time algorithm it's
+
+1093
+00:44:09,760 --> 00:44:14,880
+not the point of no time everything so
+
+1094
+00:44:11,839 --> 00:44:16,960
+don't be confused by
+
+1095
+00:44:14,880 --> 00:44:19,200
+the value
+
+1096
+00:44:16,960 --> 00:44:21,359
+the power of the value the polynomial of
+
+1097
+00:44:19,200 --> 00:44:22,720
+that value
+
+1098
+00:44:21,359 --> 00:44:24,960
+with
+
+1099
+00:44:22,720 --> 00:44:27,280
+what we are talking about regarding the
+
+1100
+00:44:24,960 --> 00:44:29,280
+input uh the length of the input string
+
+1101
+00:44:27,280 --> 00:44:30,480
+and the lens the input string on the
+
+1102
+00:44:29,280 --> 00:44:31,280
+tape
+
+1103
+00:44:30,480 --> 00:44:34,160
+okay
+
+1104
+00:44:31,280 --> 00:44:36,720
+so we you need to be
+
+1105
+00:44:34,160 --> 00:44:41,119
+uh you need to uh
+
+1106
+00:44:36,720 --> 00:44:41,119
+make clear of all these things okay
+
+1107
+00:44:41,440 --> 00:44:45,760
+so uh next
+
+1108
+00:44:43,839 --> 00:44:48,319
+example is that
+
+1109
+00:44:45,760 --> 00:44:51,119
+we know that uh
+
+1110
+00:44:48,319 --> 00:44:52,880
+every context free language is a member
+
+1111
+00:44:51,119 --> 00:44:55,119
+of p
+
+1112
+00:44:52,880 --> 00:44:55,119
+okay
+
+1113
+00:44:59,280 --> 00:45:02,640
+if you remember that
+
+1114
+00:45:01,200 --> 00:45:06,480
+we have a
+
+1115
+00:45:02,640 --> 00:45:08,560
+theorem that every context free language
+
+1116
+00:45:06,480 --> 00:45:10,880
+is decidable
+
+1117
+00:45:08,560 --> 00:45:13,599
+right it's decidable
+
+1118
+00:45:10,880 --> 00:45:18,200
+and how do we prove that
+
+1119
+00:45:13,599 --> 00:45:18,200
+we prove that theorem by
+
+1120
+00:45:18,400 --> 00:45:22,720
+given any
+
+1121
+00:45:20,000 --> 00:45:25,119
+context free language
+
+1122
+00:45:22,720 --> 00:45:28,880
+we design
+
+1123
+00:45:25,119 --> 00:45:31,599
+a decider for that language right
+
+1124
+00:45:28,880 --> 00:45:35,280
+now we use the same thing actually we we
+
+1125
+00:45:31,599 --> 00:45:38,640
+actually use cyk algorithm right so for
+
+1126
+00:45:35,280 --> 00:45:40,240
+any given counter speed language we have
+
+1127
+00:45:38,640 --> 00:45:42,800
+a cyk
+
+1128
+00:45:40,240 --> 00:45:45,680
+algorithm here
+
+1129
+00:45:42,800 --> 00:45:47,680
+since the algorithm can uh
+
+1130
+00:45:45,680 --> 00:45:48,880
+the algorithm here
+
+1131
+00:45:47,680 --> 00:45:51,839
+given
+
+1132
+00:45:48,880 --> 00:45:54,079
+a context-free grammar
+
+1133
+00:45:51,839 --> 00:45:57,680
+the tutoring machine here
+
+1134
+00:45:54,079 --> 00:45:59,680
+plays as the decider of that context
+
+1135
+00:45:57,680 --> 00:46:02,880
+free language
+
+1136
+00:45:59,680 --> 00:46:06,240
+then we need to analyze
+
+1137
+00:46:02,880 --> 00:46:08,240
+the running time of
+
+1138
+00:46:06,240 --> 00:46:10,000
+the turing machine here
+
+1139
+00:46:08,240 --> 00:46:12,560
+and for running time of the training
+
+1140
+00:46:10,000 --> 00:46:13,359
+machine here we do the same thing as we
+
+1141
+00:46:12,560 --> 00:46:16,319
+say
+
+1142
+00:46:13,359 --> 00:46:19,760
+as as we said in the previous analysis
+
+1143
+00:46:16,319 --> 00:46:20,800
+firstly we need to know how
+
+1144
+00:46:19,760 --> 00:46:22,079
+many
+
+1145
+00:46:20,800 --> 00:46:24,560
+total uh
+
+1146
+00:46:22,079 --> 00:46:25,760
+we need to know the total numbers of the
+
+1147
+00:46:24,560 --> 00:46:27,599
+stages
+
+1148
+00:46:25,760 --> 00:46:30,800
+and then we need to know
+
+1149
+00:46:27,599 --> 00:46:32,720
+that individual stages can be executed
+
+1150
+00:46:30,800 --> 00:46:33,839
+in polynomial time
+
+1151
+00:46:32,720 --> 00:46:36,720
+okay
+
+1152
+00:46:33,839 --> 00:46:40,160
+so let's check uh
+
+1153
+00:46:36,720 --> 00:46:41,760
+the format uh not format let's check the
+
+1154
+00:46:40,160 --> 00:46:44,079
+attribution here
+
+1155
+00:46:41,760 --> 00:46:48,480
+so i'll input
+
+1156
+00:46:44,079 --> 00:46:50,079
+w1 to wn which is which means the uh w
+
+1157
+00:46:48,480 --> 00:46:52,720
+here
+
+1158
+00:46:50,079 --> 00:46:56,000
+the length of w here is n right so you
+
+1159
+00:46:52,720 --> 00:46:58,880
+have uh the the input string contents
+
+1160
+00:46:56,000 --> 00:47:02,960
+and symbols
+
+1161
+00:46:58,880 --> 00:47:02,960
+and you will find that we have
+
+1162
+00:47:04,960 --> 00:47:09,200
+we have the
+
+1163
+00:47:07,839 --> 00:47:10,480
+loop here
+
+1164
+00:47:09,200 --> 00:47:12,319
+and also
+
+1165
+00:47:10,480 --> 00:47:13,440
+here
+
+1166
+00:47:12,319 --> 00:47:16,720
+and
+
+1167
+00:47:13,440 --> 00:47:17,599
+it's easy to see that for every
+
+1168
+00:47:16,720 --> 00:47:20,559
+uh
+
+1169
+00:47:17,599 --> 00:47:23,040
+we can ignore the loop part right
+
+1170
+00:47:20,559 --> 00:47:23,040
+so the
+
+1171
+00:47:23,200 --> 00:47:30,960
+up operation part here
+
+1172
+00:47:27,200 --> 00:47:30,960
+and operation part here
+
+1173
+00:47:31,359 --> 00:47:36,000
+apparently they can be implemented they
+
+1174
+00:47:34,160 --> 00:47:38,960
+can be implemented
+
+1175
+00:47:36,000 --> 00:47:41,760
+within polynomial time okay that's no
+
+1176
+00:47:38,960 --> 00:47:41,760
+problem with that
+
+1177
+00:47:43,200 --> 00:47:45,440
+and
+
+1178
+00:47:48,000 --> 00:47:53,359
+we need
+
+1179
+00:47:50,000 --> 00:47:54,640
+if we use what we have for
+
+1180
+00:47:53,359 --> 00:47:56,880
+uh
+
+1181
+00:47:54,640 --> 00:47:56,880
+our
+
+1182
+00:48:03,200 --> 00:48:06,880
+first and first midterm examination
+
+1183
+00:48:05,599 --> 00:48:08,160
+right
+
+1184
+00:48:06,880 --> 00:48:10,559
+you need
+
+1185
+00:48:08,160 --> 00:48:10,559
+about
+
+1186
+00:48:11,440 --> 00:48:14,240
+and
+
+1187
+00:48:12,720 --> 00:48:16,640
+by
+
+1188
+00:48:14,240 --> 00:48:18,559
+and you need to feel
+
+1189
+00:48:16,640 --> 00:48:21,280
+and by end
+
+1190
+00:48:18,559 --> 00:48:25,280
+place of course half but
+
+1191
+00:48:21,280 --> 00:48:28,000
+for the uh big o notation half of
+
+1192
+00:48:25,280 --> 00:48:32,640
+any terms half is a
+
+1193
+00:48:28,000 --> 00:48:36,559
+constant right so we have n by n square
+
+1194
+00:48:32,640 --> 00:48:40,480
+sorry n uh n squared uh blanks to fill
+
+1195
+00:48:36,559 --> 00:48:42,480
+and for every for example this one
+
+1196
+00:48:40,480 --> 00:48:43,760
+you need to check about
+
+1197
+00:48:42,480 --> 00:48:46,240
+n
+
+1198
+00:48:43,760 --> 00:48:47,599
+about n possibilities
+
+1199
+00:48:46,240 --> 00:48:50,880
+right
+
+1200
+00:48:47,599 --> 00:48:53,520
+so for this one you you need to check
+
+1201
+00:48:50,880 --> 00:48:54,640
+one the whole thing two
+
+1202
+00:48:53,520 --> 00:48:56,160
+three
+
+1203
+00:48:54,640 --> 00:48:57,839
+five
+
+1204
+00:48:56,160 --> 00:48:58,880
+four five right
+
+1205
+00:48:57,839 --> 00:49:02,559
+so
+
+1206
+00:48:58,880 --> 00:49:05,119
+the order here is like n by n
+
+1207
+00:49:02,559 --> 00:49:07,599
+and times n because
+
+1208
+00:49:05,119 --> 00:49:11,119
+to fill each blank
+
+1209
+00:49:07,599 --> 00:49:11,119
+you need to go through
+
+1210
+00:49:11,839 --> 00:49:20,640
+all possible split of the input string
+
+1211
+00:49:17,599 --> 00:49:23,760
+right if you remember how you finish the
+
+1212
+00:49:20,640 --> 00:49:25,440
+question in our first examination you
+
+1213
+00:49:23,760 --> 00:49:28,559
+know that
+
+1214
+00:49:25,440 --> 00:49:29,440
+you need to you firstly you need to fill
+
+1215
+00:49:28,559 --> 00:49:32,880
+and
+
+1216
+00:49:29,440 --> 00:49:36,480
+big o of n square
+
+1217
+00:49:32,880 --> 00:49:40,160
+yeah big o of n square blanks then for
+
+1218
+00:49:36,480 --> 00:49:44,839
+for uh to fill each of the big o of n
+
+1219
+00:49:40,160 --> 00:49:44,839
+square blanks you need to check
+
+1220
+00:49:45,680 --> 00:49:50,800
+separate like this and separate like
+
+1221
+00:49:48,400 --> 00:49:53,599
+this and separate like this
+
+1222
+00:49:50,800 --> 00:49:56,960
+about n possibilities
+
+1223
+00:49:53,599 --> 00:50:02,720
+right so you will need so many stages
+
+1224
+00:49:56,960 --> 00:50:02,720
+for that so that will become the goal of
+
+1225
+00:50:03,200 --> 00:50:06,880
+and cubic
+
+1226
+00:50:05,920 --> 00:50:09,760
+so
+
+1227
+00:50:06,880 --> 00:50:10,640
+cyc arizon
+
+1228
+00:50:09,760 --> 00:50:12,640
+can be
+
+1229
+00:50:10,640 --> 00:50:14,000
+executed in
+
+1230
+00:50:12,640 --> 00:50:17,359
+the goal of
+
+1231
+00:50:14,000 --> 00:50:21,119
+n squared sorry n cubic time so that so
+
+1232
+00:50:17,359 --> 00:50:22,079
+it is a polynomial time everything
+
+1233
+00:50:21,119 --> 00:50:25,599
+okay
+
+1234
+00:50:22,079 --> 00:50:27,280
+so that's another example of uh problems
+
+1235
+00:50:25,599 --> 00:50:30,480
+in p that means
+
+1236
+00:50:27,280 --> 00:50:32,800
+our language is in p right so that means
+
+1237
+00:50:30,480 --> 00:50:34,720
+each context free language
+
+1238
+00:50:32,800 --> 00:50:36,880
+is a member
+
+1239
+00:50:34,720 --> 00:50:39,839
+of p
+
+1240
+00:50:36,880 --> 00:50:43,760
+more specific more specifically big o of
+
+1241
+00:50:39,839 --> 00:50:46,720
+n cubic but doesn't matter we want to uh
+
+1242
+00:50:43,760 --> 00:50:48,079
+eliminate the boundary of n square and
+
+1243
+00:50:46,720 --> 00:50:50,720
+cubic
+
+1244
+00:50:48,079 --> 00:50:52,960
+even log n we make them
+
+1245
+00:50:50,720 --> 00:50:55,440
+class of p
+
+1246
+00:50:52,960 --> 00:50:56,720
+okay so that's our
+
+1247
+00:50:55,440 --> 00:50:58,240
+examples
+
+1248
+00:50:56,720 --> 00:51:01,680
+so we have
+
+1249
+00:50:58,240 --> 00:51:05,599
+all context-free languages we have a
+
+1250
+00:51:01,680 --> 00:51:08,000
+relative prime here and we have
+
+1251
+00:51:05,599 --> 00:51:09,839
+path
+
+1252
+00:51:08,000 --> 00:51:12,640
+have pessi
+
+1253
+00:51:09,839 --> 00:51:15,200
+so that's the example
+
+1254
+00:51:12,640 --> 00:51:18,760
+examples of problems in p we want to
+
+1255
+00:51:15,200 --> 00:51:18,760
+introduce you
+

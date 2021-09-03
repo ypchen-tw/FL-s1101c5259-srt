@@ -1,0 +1,5748 @@
+1
+00:00:01,680 --> 00:00:06,879
+in the beginning of chapter 5 we talked
+
+2
+00:00:04,240 --> 00:00:09,760
+about the concept of reduction
+
+3
+00:00:06,879 --> 00:00:12,160
+reducibility and we said that
+
+4
+00:00:09,760 --> 00:00:14,960
+if a problem a
+
+5
+00:00:12,160 --> 00:00:16,720
+reduces to problem b we can use a
+
+6
+00:00:14,960 --> 00:00:18,560
+solution
+
+7
+00:00:16,720 --> 00:00:20,560
+to b to solve a
+
+8
+00:00:18,560 --> 00:00:23,119
+so that's
+
+9
+00:00:20,560 --> 00:00:25,199
+basically regarding the concepts of
+
+10
+00:00:23,119 --> 00:00:28,480
+reduction and
+
+11
+00:00:25,199 --> 00:00:32,320
+we say that reducibility says nothing
+
+12
+00:00:28,480 --> 00:00:35,440
+about solving a or b alone
+
+13
+00:00:32,320 --> 00:00:36,800
+and we further introduced that
+
+14
+00:00:35,440 --> 00:00:38,480
+when a
+
+15
+00:00:36,800 --> 00:00:41,120
+is reducible to b
+
+16
+00:00:38,480 --> 00:00:44,000
+solving a cannot be harder than solving
+
+17
+00:00:41,120 --> 00:00:46,719
+b because a solution to b gives a
+
+18
+00:00:44,000 --> 00:00:48,960
+solution to a and we basically believe
+
+19
+00:00:46,719 --> 00:00:48,960
+that
+
+20
+00:00:50,719 --> 00:00:56,800
+the difficulty of problems
+
+21
+00:00:53,840 --> 00:00:59,840
+the difficulty of problems
+
+22
+00:00:56,800 --> 00:00:59,840
+cannot be
+
+23
+00:01:00,800 --> 00:01:09,200
+diminished uh diminished or reduced by
+
+24
+00:01:04,879 --> 00:01:09,200
+converting the problem itself so
+
+25
+00:01:10,560 --> 00:01:14,159
+solving a cannot be harder than solving
+
+26
+00:01:13,119 --> 00:01:15,520
+b
+
+27
+00:01:14,159 --> 00:01:17,439
+in
+
+28
+00:01:15,520 --> 00:01:19,840
+in the sense of uh in terms of the
+
+29
+00:01:17,439 --> 00:01:22,880
+relation we can know that
+
+30
+00:01:19,840 --> 00:01:25,360
+conceptually okay conceptually
+
+31
+00:01:22,880 --> 00:01:29,360
+if b is decidable
+
+32
+00:01:25,360 --> 00:01:31,920
+then we know that a is decidable because
+
+33
+00:01:29,360 --> 00:01:35,040
+solving a cannot be harder than solving
+
+34
+00:01:31,920 --> 00:01:36,799
+b also we know that a is undecidable
+
+35
+00:01:35,040 --> 00:01:40,400
+then we can know
+
+36
+00:01:36,799 --> 00:01:44,079
+b is undecidable
+
+37
+00:01:40,400 --> 00:01:45,360
+but all of these are
+
+38
+00:01:44,079 --> 00:01:46,399
+concepts
+
+39
+00:01:45,360 --> 00:01:49,360
+okay
+
+40
+00:01:46,399 --> 00:01:53,119
+and it doesn't mean that the proof we
+
+41
+00:01:49,360 --> 00:01:54,960
+we've already done in this chapter are
+
+42
+00:01:53,119 --> 00:01:57,439
+invalid
+
+43
+00:01:54,960 --> 00:02:00,560
+it doesn't mean that because the
+
+44
+00:01:57,439 --> 00:02:01,600
+validity of the proofs we have done
+
+45
+00:02:00,560 --> 00:02:03,920
+until
+
+46
+00:02:01,600 --> 00:02:03,920
+now
+
+47
+00:02:06,320 --> 00:02:11,440
+is is based on
+
+48
+00:02:09,119 --> 00:02:14,879
+uh proof by contradiction
+
+49
+00:02:11,440 --> 00:02:18,800
+we actually what we actually did
+
+50
+00:02:14,879 --> 00:02:20,800
+what we actually did are a lot of proofs
+
+51
+00:02:18,800 --> 00:02:23,920
+uh
+
+52
+00:02:20,800 --> 00:02:26,640
+proven by the technique of contradiction
+
+53
+00:02:23,920 --> 00:02:29,520
+right so it's not
+
+54
+00:02:26,640 --> 00:02:29,520
+it's not um
+
+55
+00:02:29,599 --> 00:02:33,519
+it's not about
+
+56
+00:02:30,959 --> 00:02:34,840
+using reducibility itself
+
+57
+00:02:33,519 --> 00:02:37,200
+as proving
+
+58
+00:02:34,840 --> 00:02:38,239
+uh as proven
+
+59
+00:02:37,200 --> 00:02:39,120
+technique
+
+60
+00:02:38,239 --> 00:02:40,480
+or
+
+61
+00:02:39,120 --> 00:02:41,440
+proven method
+
+62
+00:02:40,480 --> 00:02:43,760
+okay
+
+63
+00:02:41,440 --> 00:02:45,280
+so all the proofs we have done
+
+64
+00:02:43,760 --> 00:02:46,959
+are basically
+
+65
+00:02:45,280 --> 00:02:48,239
+by contradiction
+
+66
+00:02:46,959 --> 00:02:49,360
+so
+
+67
+00:02:48,239 --> 00:02:51,280
+that means
+
+68
+00:02:49,360 --> 00:02:53,760
+we want to prove
+
+69
+00:02:51,280 --> 00:02:58,640
+something is undecidable
+
+70
+00:02:53,760 --> 00:03:01,040
+we use atm or some other maybe etm
+
+71
+00:02:58,640 --> 00:03:03,519
+some other
+
+72
+00:03:01,040 --> 00:03:04,879
+known undecidable problems
+
+73
+00:03:03,519 --> 00:03:06,560
+and
+
+74
+00:03:04,879 --> 00:03:10,159
+we use b
+
+75
+00:03:06,560 --> 00:03:12,239
+to solve a that is we assume b is
+
+76
+00:03:10,159 --> 00:03:16,640
+decidable
+
+77
+00:03:12,239 --> 00:03:18,879
+then we can use b to solve a so
+
+78
+00:03:16,640 --> 00:03:20,480
+a becomes decidable that's a
+
+79
+00:03:18,879 --> 00:03:23,120
+contradiction
+
+80
+00:03:20,480 --> 00:03:25,200
+we use this kind of contradiction to
+
+81
+00:03:23,120 --> 00:03:27,920
+prove that b
+
+82
+00:03:25,200 --> 00:03:29,680
+is undecidable that's
+
+83
+00:03:27,920 --> 00:03:30,840
+about all the proof we have done in
+
+84
+00:03:29,680 --> 00:03:34,400
+chapter
+
+85
+00:03:30,840 --> 00:03:36,400
+five and here
+
+86
+00:03:34,400 --> 00:03:38,720
+in the last part of
+
+87
+00:03:36,400 --> 00:03:40,480
+chapter 5 we will be talking about
+
+88
+00:03:38,720 --> 00:03:43,440
+mapping reducibility
+
+89
+00:03:40,480 --> 00:03:45,440
+that is we will formalize
+
+90
+00:03:43,440 --> 00:03:46,640
+we will formalize
+
+91
+00:03:45,440 --> 00:03:49,519
+reduction
+
+92
+00:03:46,640 --> 00:03:52,480
+we will formalize
+
+93
+00:03:49,519 --> 00:03:53,840
+reduction and use that
+
+94
+00:03:52,480 --> 00:03:55,360
+directly
+
+95
+00:03:53,840 --> 00:03:57,519
+in the proof
+
+96
+00:03:55,360 --> 00:03:58,959
+and then we know we
+
+97
+00:03:57,519 --> 00:04:01,439
+won't
+
+98
+00:03:58,959 --> 00:04:04,080
+we won't need to use contradiction
+
+99
+00:04:01,439 --> 00:04:07,599
+anymore we only need to
+
+100
+00:04:04,080 --> 00:04:09,519
+uh give the existence of reduction then
+
+101
+00:04:07,599 --> 00:04:11,680
+everything
+
+102
+00:04:09,519 --> 00:04:14,159
+is proved okay
+
+103
+00:04:11,680 --> 00:04:16,400
+so what is mapping reducibility we say
+
+104
+00:04:14,159 --> 00:04:19,440
+that
+
+105
+00:04:16,400 --> 00:04:21,919
+being able to reduce problem a to
+
+106
+00:04:19,440 --> 00:04:24,720
+problem b by using
+
+107
+00:04:21,919 --> 00:04:27,199
+a mapping reducibility okay now we want
+
+108
+00:04:24,720 --> 00:04:28,639
+to define this term
+
+109
+00:04:27,199 --> 00:04:31,680
+means that
+
+110
+00:04:28,639 --> 00:04:34,720
+a computable function
+
+111
+00:04:31,680 --> 00:04:35,600
+which will be called reduction
+
+112
+00:04:34,720 --> 00:04:38,320
+okay
+
+113
+00:04:35,600 --> 00:04:39,680
+a computer the computable function is
+
+114
+00:04:38,320 --> 00:04:42,400
+reduction
+
+115
+00:04:39,680 --> 00:04:43,360
+if a computable function computable
+
+116
+00:04:42,400 --> 00:04:45,120
+function
+
+117
+00:04:43,360 --> 00:04:46,320
+exists that
+
+118
+00:04:45,120 --> 00:04:47,680
+converts
+
+119
+00:04:46,320 --> 00:04:48,880
+instances
+
+120
+00:04:47,680 --> 00:04:51,199
+of a
+
+121
+00:04:48,880 --> 00:04:51,199
+two
+
+122
+00:04:51,280 --> 00:04:55,680
+instances of b
+
+123
+00:04:53,919 --> 00:04:58,400
+okay
+
+124
+00:04:55,680 --> 00:05:00,720
+so let's define computable function
+
+125
+00:04:58,400 --> 00:05:03,039
+first what is computable function
+
+126
+00:05:00,720 --> 00:05:08,160
+well we go back to our computational
+
+127
+00:05:03,039 --> 00:05:11,440
+model which is turing machine right so
+
+128
+00:05:08,160 --> 00:05:14,880
+a turing machine computes a function by
+
+129
+00:05:11,440 --> 00:05:16,479
+starting with the input to the function
+
+130
+00:05:14,880 --> 00:05:19,759
+to the tape
+
+131
+00:05:16,479 --> 00:05:21,600
+okay so the same model here you have a
+
+132
+00:05:19,759 --> 00:05:23,440
+turing machine and
+
+133
+00:05:21,600 --> 00:05:25,199
+you have a tape
+
+134
+00:05:23,440 --> 00:05:29,759
+and the input string
+
+135
+00:05:25,199 --> 00:05:31,120
+is on the tape okay so that's the same
+
+136
+00:05:29,759 --> 00:05:33,440
+model here
+
+137
+00:05:31,120 --> 00:05:36,080
+and then you start the machine and the
+
+138
+00:05:33,440 --> 00:05:39,840
+machine process the string
+
+139
+00:05:36,080 --> 00:05:42,400
+but different from what we already uh we
+
+140
+00:05:39,840 --> 00:05:45,600
+are you the model we are using
+
+141
+00:05:42,400 --> 00:05:45,600
+this turing machine
+
+142
+00:05:46,720 --> 00:05:53,840
+does not uh report accept or reject
+
+143
+00:05:51,280 --> 00:05:55,840
+this type of tube machine
+
+144
+00:05:53,840 --> 00:05:57,840
+just stops
+
+145
+00:05:55,840 --> 00:06:00,479
+okay just stops so
+
+146
+00:05:57,840 --> 00:06:03,680
+after it completes the computation it
+
+147
+00:06:00,479 --> 00:06:05,759
+stops and when it stops
+
+148
+00:06:03,680 --> 00:06:10,080
+when it stops
+
+149
+00:06:05,759 --> 00:06:13,039
+what's left on the tape
+
+150
+00:06:10,080 --> 00:06:16,000
+is the output
+
+151
+00:06:13,039 --> 00:06:16,000
+of the function
+
+152
+00:06:16,400 --> 00:06:21,680
+okay so
+
+153
+00:06:19,280 --> 00:06:24,960
+imagine that you have a turing machine
+
+154
+00:06:21,680 --> 00:06:25,840
+and you input a string on the tape
+
+155
+00:06:24,960 --> 00:06:27,759
+and
+
+156
+00:06:25,840 --> 00:06:29,280
+after
+
+157
+00:06:27,759 --> 00:06:31,759
+it finishes
+
+158
+00:06:29,280 --> 00:06:33,840
+the computation
+
+159
+00:06:31,759 --> 00:06:37,680
+it stops
+
+160
+00:06:33,840 --> 00:06:39,120
+you can uh imagine that there is a
+
+161
+00:06:37,680 --> 00:06:41,440
+specific
+
+162
+00:06:39,120 --> 00:06:41,440
+state
+
+163
+00:06:41,520 --> 00:06:47,360
+maybe host state then after entering
+
+164
+00:06:44,080 --> 00:06:50,800
+that state the machine stops and what's
+
+165
+00:06:47,360 --> 00:06:52,319
+left on the tape is the function
+
+166
+00:06:50,800 --> 00:06:54,960
+is the output of the function
+
+167
+00:06:52,319 --> 00:06:57,759
+represented by the turing machine so you
+
+168
+00:06:54,960 --> 00:06:59,680
+can consider the machine
+
+169
+00:06:57,759 --> 00:07:00,960
+the function itself
+
+170
+00:06:59,680 --> 00:07:01,759
+okay
+
+171
+00:07:00,960 --> 00:07:03,440
+so
+
+172
+00:07:01,759 --> 00:07:06,080
+if you have
+
+173
+00:07:03,440 --> 00:07:06,080
+a function
+
+174
+00:07:06,720 --> 00:07:13,599
+that can be implement
+
+175
+00:07:09,199 --> 00:07:16,639
+implemented by using a turing machine
+
+176
+00:07:13,599 --> 00:07:19,759
+we call such a function
+
+177
+00:07:16,639 --> 00:07:19,759
+computable function
+
+178
+00:07:19,840 --> 00:07:23,440
+well because we are using tuning
+
+179
+00:07:21,440 --> 00:07:26,479
+machines as our computational model
+
+180
+00:07:23,440 --> 00:07:29,360
+right so what turing machine can do is
+
+181
+00:07:26,479 --> 00:07:31,520
+computation so if you have a function
+
+182
+00:07:29,360 --> 00:07:32,400
+which can be
+
+183
+00:07:31,520 --> 00:07:33,199
+done
+
+184
+00:07:32,400 --> 00:07:35,919
+with
+
+185
+00:07:33,199 --> 00:07:39,199
+turing machine by using turing machine
+
+186
+00:07:35,919 --> 00:07:41,759
+then we call that function computable
+
+187
+00:07:39,199 --> 00:07:45,199
+okay so that's a
+
+188
+00:07:41,759 --> 00:07:47,680
+that's pretty straightforward so again
+
+189
+00:07:45,199 --> 00:07:49,039
+let's say a function
+
+190
+00:07:47,680 --> 00:07:50,000
+from string
+
+191
+00:07:49,039 --> 00:07:51,280
+to
+
+192
+00:07:50,000 --> 00:07:53,280
+string
+
+193
+00:07:51,280 --> 00:07:54,400
+is a computable function
+
+194
+00:07:53,280 --> 00:07:56,319
+if
+
+195
+00:07:54,400 --> 00:07:59,440
+some turing machine n
+
+196
+00:07:56,319 --> 00:08:00,720
+on every input string w
+
+197
+00:07:59,440 --> 00:08:01,680
+holds
+
+198
+00:08:00,720 --> 00:08:05,840
+with
+
+199
+00:08:01,680 --> 00:08:05,840
+f of w on the tape
+
+200
+00:08:06,800 --> 00:08:09,039
+okay
+
+201
+00:08:10,319 --> 00:08:16,000
+so again you can define all kinds of
+
+202
+00:08:15,039 --> 00:08:19,280
+string
+
+203
+00:08:16,000 --> 00:08:22,080
+mapping to string functions right
+
+204
+00:08:19,280 --> 00:08:24,000
+as long as
+
+205
+00:08:22,080 --> 00:08:26,000
+a function
+
+206
+00:08:24,000 --> 00:08:27,680
+for a function you can find the turing
+
+207
+00:08:26,000 --> 00:08:31,599
+machine m
+
+208
+00:08:27,680 --> 00:08:31,599
+for every possible string
+
+209
+00:08:31,680 --> 00:08:36,719
+for a possible string
+
+210
+00:08:34,000 --> 00:08:39,200
+you input the string on the tape and the
+
+211
+00:08:36,719 --> 00:08:41,120
+starter machine after
+
+212
+00:08:39,200 --> 00:08:43,440
+the computation
+
+213
+00:08:41,120 --> 00:08:45,680
+the machine will leave
+
+214
+00:08:43,440 --> 00:08:49,440
+the motion will leave the output on the
+
+215
+00:08:45,680 --> 00:08:51,440
+tape then we call the function
+
+216
+00:08:49,440 --> 00:08:52,800
+computable function
+
+217
+00:08:51,440 --> 00:08:54,480
+okay
+
+218
+00:08:52,800 --> 00:08:56,959
+with the help of the
+
+219
+00:08:54,480 --> 00:08:59,360
+definition of computable function now we
+
+220
+00:08:56,959 --> 00:09:02,560
+can define
+
+221
+00:08:59,360 --> 00:09:05,360
+mapping reducibility formally
+
+222
+00:09:02,560 --> 00:09:06,839
+so we say that we say that
+
+223
+00:09:05,360 --> 00:09:10,240
+language a
+
+224
+00:09:06,839 --> 00:09:13,920
+is making reducible
+
+225
+00:09:10,240 --> 00:09:17,279
+maybe irreducible to language b
+
+226
+00:09:13,920 --> 00:09:21,120
+a language is a set of strings right so
+
+227
+00:09:17,279 --> 00:09:23,760
+a language a is maybe reducible to
+
+228
+00:09:21,120 --> 00:09:26,399
+language b
+
+229
+00:09:23,760 --> 00:09:27,760
+we were using the notation
+
+230
+00:09:26,399 --> 00:09:30,800
+like this
+
+231
+00:09:27,760 --> 00:09:33,440
+okay using a notation like this
+
+232
+00:09:30,800 --> 00:09:36,880
+because we believe that
+
+233
+00:09:33,440 --> 00:09:40,160
+you know conceptually
+
+234
+00:09:36,880 --> 00:09:41,680
+the difficulty to solve a
+
+235
+00:09:40,160 --> 00:09:43,519
+is less than
+
+236
+00:09:41,680 --> 00:09:44,720
+or equal to
+
+237
+00:09:43,519 --> 00:09:46,720
+to solve b
+
+238
+00:09:44,720 --> 00:09:49,040
+so we use the
+
+239
+00:09:46,720 --> 00:09:52,399
+symbol here and
+
+240
+00:09:49,040 --> 00:09:55,519
+we said that it's mapping reducibility
+
+241
+00:09:52,399 --> 00:09:57,760
+by using mapping reducibility
+
+242
+00:09:55,519 --> 00:10:00,880
+we said that the difficulty for solving
+
+243
+00:09:57,760 --> 00:10:02,320
+to solve a is less than or equal to soft
+
+244
+00:10:00,880 --> 00:10:04,560
+beat
+
+245
+00:10:02,320 --> 00:10:07,519
+something like that
+
+246
+00:10:04,560 --> 00:10:10,160
+so we say that language we say that the
+
+247
+00:10:07,519 --> 00:10:13,279
+language language a is maybe indivisible
+
+248
+00:10:10,160 --> 00:10:15,680
+to language b written as
+
+249
+00:10:13,279 --> 00:10:17,040
+a may be reducible to b
+
+250
+00:10:15,680 --> 00:10:20,079
+if there is
+
+251
+00:10:17,040 --> 00:10:23,040
+a computable function f
+
+252
+00:10:20,079 --> 00:10:25,200
+if there is a computable function f
+
+253
+00:10:23,040 --> 00:10:26,800
+for every
+
+254
+00:10:25,200 --> 00:10:28,240
+string here
+
+255
+00:10:26,800 --> 00:10:30,160
+if the string
+
+256
+00:10:28,240 --> 00:10:33,920
+is in a
+
+257
+00:10:30,160 --> 00:10:37,440
+then f of w is in b
+
+258
+00:10:33,920 --> 00:10:40,000
+if f of w is in b
+
+259
+00:10:37,440 --> 00:10:41,680
+w is in a
+
+260
+00:10:40,000 --> 00:10:44,079
+okay so that's a
+
+261
+00:10:41,680 --> 00:10:47,279
+if and only if
+
+262
+00:10:44,079 --> 00:10:49,120
+relation here
+
+263
+00:10:47,279 --> 00:10:50,640
+then we call the function such a
+
+264
+00:10:49,120 --> 00:10:53,200
+function
+
+265
+00:10:50,640 --> 00:10:56,560
+the reduction
+
+266
+00:10:53,200 --> 00:10:56,560
+of a to b
+
+267
+00:10:58,839 --> 00:11:02,800
+okay so again
+
+268
+00:11:02,880 --> 00:11:07,360
+the function is a computer function that
+
+269
+00:11:05,279 --> 00:11:09,519
+means there is a turing machine
+
+270
+00:11:07,360 --> 00:11:12,000
+able to
+
+271
+00:11:09,519 --> 00:11:15,839
+calculate or to compute that the
+
+272
+00:11:12,000 --> 00:11:17,680
+function okay and the requirement for
+
+273
+00:11:15,839 --> 00:11:20,720
+maybe
+
+274
+00:11:17,680 --> 00:11:24,560
+for mapping reducibility the requirement
+
+275
+00:11:20,720 --> 00:11:24,560
+for this function is only
+
+276
+00:11:24,720 --> 00:11:28,720
+such a relation
+
+277
+00:11:27,200 --> 00:11:32,320
+okay
+
+278
+00:11:28,720 --> 00:11:35,279
+don't overthink regarding the relation
+
+279
+00:11:32,320 --> 00:11:36,640
+okay the relation is as simple as it
+
+280
+00:11:35,279 --> 00:11:39,040
+seems
+
+281
+00:11:36,640 --> 00:11:41,440
+as long as the function uh the
+
+282
+00:11:39,040 --> 00:11:43,600
+input string is in a
+
+283
+00:11:41,440 --> 00:11:47,360
+the output is in b
+
+284
+00:11:43,600 --> 00:11:50,160
+and only if the input is in output is in
+
+285
+00:11:47,360 --> 00:11:52,000
+b the input
+
+286
+00:11:50,160 --> 00:11:54,800
+must must
+
+287
+00:11:52,000 --> 00:11:54,800
+be in a
+
+288
+00:11:54,839 --> 00:12:04,320
+okay what uh did i mean by overthink
+
+289
+00:12:00,320 --> 00:12:05,279
+such a relation has no unto and one to
+
+290
+00:12:04,320 --> 00:12:08,079
+one
+
+291
+00:12:05,279 --> 00:12:11,120
+don't overthink there is no unto there
+
+292
+00:12:08,079 --> 00:12:12,720
+is no one-to-one relationship here
+
+293
+00:12:11,120 --> 00:12:14,800
+that means
+
+294
+00:12:12,720 --> 00:12:16,079
+if you have a language a
+
+295
+00:12:14,800 --> 00:12:18,480
+okay
+
+296
+00:12:16,079 --> 00:12:22,839
+if you have a language a
+
+297
+00:12:18,480 --> 00:12:26,959
+and you have a language b here
+
+298
+00:12:22,839 --> 00:12:29,120
+okay this function sorry this relation
+
+299
+00:12:26,959 --> 00:12:32,320
+only talks about
+
+300
+00:12:29,120 --> 00:12:34,240
+if you have a string in a
+
+301
+00:12:32,320 --> 00:12:39,839
+this string can
+
+302
+00:12:34,240 --> 00:12:39,839
+must be mapped into something in b
+
+303
+00:12:39,920 --> 00:12:45,040
+right
+
+304
+00:12:40,959 --> 00:12:47,600
+and if you have a string out of a
+
+305
+00:12:45,040 --> 00:12:50,079
+this string must be
+
+306
+00:12:47,600 --> 00:12:54,639
+mapped to something
+
+307
+00:12:50,079 --> 00:12:56,079
+out of b and that
+
+308
+00:12:54,639 --> 00:12:58,639
+and that's it
+
+309
+00:12:56,079 --> 00:13:00,480
+nothing more
+
+310
+00:12:58,639 --> 00:13:04,480
+because uh
+
+311
+00:13:00,480 --> 00:13:06,399
+previously some students uh thought that
+
+312
+00:13:04,480 --> 00:13:09,360
+you know if uh
+
+313
+00:13:06,399 --> 00:13:11,360
+different strings
+
+314
+00:13:09,360 --> 00:13:13,360
+in a
+
+315
+00:13:11,360 --> 00:13:14,079
+should be mapped to different strings in
+
+316
+00:13:13,360 --> 00:13:14,880
+b
+
+317
+00:13:14,079 --> 00:13:18,160
+no
+
+318
+00:13:14,880 --> 00:13:20,560
+okay there is no such thing here
+
+319
+00:13:18,160 --> 00:13:22,079
+for this relation
+
+320
+00:13:20,560 --> 00:13:25,680
+it can be
+
+321
+00:13:22,079 --> 00:13:28,160
+all strings in a map to one
+
+322
+00:13:25,680 --> 00:13:31,680
+string in b
+
+323
+00:13:28,160 --> 00:13:34,720
+that's okay okay that is okay
+
+324
+00:13:31,680 --> 00:13:38,079
+and o string outside of a
+
+325
+00:13:34,720 --> 00:13:40,000
+map to some string outside of b
+
+326
+00:13:38,079 --> 00:13:42,800
+then this relation
+
+327
+00:13:40,000 --> 00:13:43,680
+is satisfied
+
+328
+00:13:42,800 --> 00:13:46,399
+okay
+
+329
+00:13:43,680 --> 00:13:50,160
+there's nothing regarding every string
+
+330
+00:13:46,399 --> 00:13:50,160
+in b must be mapped no
+
+331
+00:13:50,959 --> 00:13:53,600
+so
+
+332
+00:13:51,839 --> 00:13:54,560
+don't overthink
+
+333
+00:13:53,600 --> 00:13:56,800
+okay
+
+334
+00:13:54,560 --> 00:14:00,079
+so the relation here
+
+335
+00:13:56,800 --> 00:14:02,320
+strings in a map to strings in b
+
+336
+00:14:00,079 --> 00:14:06,000
+and
+
+337
+00:14:02,320 --> 00:14:07,040
+strings not in a map to strings not in b
+
+338
+00:14:06,000 --> 00:14:10,320
+that's it
+
+339
+00:14:07,040 --> 00:14:12,639
+okay that is it nothing more
+
+340
+00:14:10,320 --> 00:14:13,839
+don't think about uh
+
+341
+00:14:12,639 --> 00:14:18,320
+well
+
+342
+00:14:13,839 --> 00:14:20,160
+i need to map to every string in b no
+
+343
+00:14:18,320 --> 00:14:21,839
+the computable function is only
+
+344
+00:14:20,160 --> 00:14:24,000
+responsible for
+
+345
+00:14:21,839 --> 00:14:26,800
+mapping all strings in a
+
+346
+00:14:24,000 --> 00:14:30,880
+to some strings in b and authoring out
+
+347
+00:14:26,800 --> 00:14:31,920
+of a to some string out of b
+
+348
+00:14:30,880 --> 00:14:33,040
+that's
+
+349
+00:14:31,920 --> 00:14:35,279
+about it
+
+350
+00:14:33,040 --> 00:14:39,440
+there is no need to one to one
+
+351
+00:14:35,279 --> 00:14:41,760
+and ang 2 or something like that no
+
+352
+00:14:39,440 --> 00:14:45,360
+okay let's go back to the definition
+
+353
+00:14:41,760 --> 00:14:47,680
+here so again we said that a language a
+
+354
+00:14:45,360 --> 00:14:51,360
+is maybe reducible to language b
+
+355
+00:14:47,680 --> 00:14:53,040
+if there is a computable function
+
+356
+00:14:51,360 --> 00:14:55,519
+for every string
+
+357
+00:14:53,040 --> 00:14:58,639
+belongs to a mapped to
+
+358
+00:14:55,519 --> 00:15:01,360
+some string belong to b and out of a to
+
+359
+00:14:58,639 --> 00:15:04,000
+out of b okay so that's the
+
+360
+00:15:01,360 --> 00:15:07,440
+uh if and only here and we call the
+
+361
+00:15:04,000 --> 00:15:09,199
+function the reduction
+
+362
+00:15:07,440 --> 00:15:10,959
+of a to b
+
+363
+00:15:09,199 --> 00:15:13,600
+okay
+
+364
+00:15:10,959 --> 00:15:15,519
+by using such a definition
+
+365
+00:15:13,600 --> 00:15:16,800
+by using such a definition we can
+
+366
+00:15:15,519 --> 00:15:17,920
+directly
+
+367
+00:15:16,800 --> 00:15:20,240
+prove
+
+368
+00:15:17,920 --> 00:15:22,000
+a theorem here
+
+369
+00:15:20,240 --> 00:15:23,279
+5 point
+
+370
+00:15:22,000 --> 00:15:27,040
+22
+
+371
+00:15:23,279 --> 00:15:27,839
+we can say that if a may be reducible to
+
+372
+00:15:27,040 --> 00:15:28,720
+b
+
+373
+00:15:27,839 --> 00:15:31,040
+and
+
+374
+00:15:28,720 --> 00:15:33,279
+b is decidable
+
+375
+00:15:31,040 --> 00:15:35,120
+we can prove that
+
+376
+00:15:33,279 --> 00:15:36,000
+a is decidable
+
+377
+00:15:35,120 --> 00:15:38,000
+okay
+
+378
+00:15:36,000 --> 00:15:40,399
+see now we can do the proof here we
+
+379
+00:15:38,000 --> 00:15:43,680
+cannot do that in the beginning of
+
+380
+00:15:40,399 --> 00:15:45,360
+chapter 5 because we don't have
+
+381
+00:15:43,680 --> 00:15:48,240
+a definition here
+
+382
+00:15:45,360 --> 00:15:50,320
+oh by the way actually there are other
+
+383
+00:15:48,240 --> 00:15:51,600
+reduction
+
+384
+00:15:50,320 --> 00:15:54,480
+definition
+
+385
+00:15:51,600 --> 00:15:56,560
+okay some of them may
+
+386
+00:15:54,480 --> 00:15:59,120
+including the requirements of of
+
+387
+00:15:56,560 --> 00:16:00,079
+one-to-one or some other requirements
+
+388
+00:15:59,120 --> 00:16:03,600
+but
+
+389
+00:16:00,079 --> 00:16:05,839
+those are not discussed in here
+
+390
+00:16:03,600 --> 00:16:08,399
+here we only discuss about
+
+391
+00:16:05,839 --> 00:16:10,000
+mapping reducibility okay
+
+392
+00:16:08,399 --> 00:16:15,000
+so
+
+393
+00:16:10,000 --> 00:16:15,000
+let's prove uh theorem 5.22
+
+394
+00:16:15,120 --> 00:16:17,680
+the theorem
+
+395
+00:16:16,720 --> 00:16:20,800
+again
+
+396
+00:16:17,680 --> 00:16:22,320
+if a is mapping reducible b and the b is
+
+397
+00:16:20,800 --> 00:16:26,079
+decidable
+
+398
+00:16:22,320 --> 00:16:26,079
+okay given the two
+
+399
+00:16:27,680 --> 00:16:34,800
+criteria here firstly we know that b is
+
+400
+00:16:31,199 --> 00:16:37,279
+decidable right so there is a decider
+
+401
+00:16:34,800 --> 00:16:38,880
+for b we call it m that's a turing
+
+402
+00:16:37,279 --> 00:16:40,480
+machine
+
+403
+00:16:38,880 --> 00:16:43,199
+and
+
+404
+00:16:40,480 --> 00:16:46,399
+a is mapping reducible to b
+
+405
+00:16:43,199 --> 00:16:49,199
+so there is a reduction from a to b we
+
+406
+00:16:46,399 --> 00:16:51,759
+call that f and don't forget that by
+
+407
+00:16:49,199 --> 00:16:54,000
+definition f here is a computable
+
+408
+00:16:51,759 --> 00:16:57,199
+function that means
+
+409
+00:16:54,000 --> 00:17:00,320
+there is also a turing machine
+
+410
+00:16:57,199 --> 00:17:01,519
+able to compute f
+
+411
+00:17:00,320 --> 00:17:03,839
+okay
+
+412
+00:17:01,519 --> 00:17:04,799
+then you know based on the tool machine
+
+413
+00:17:03,839 --> 00:17:07,199
+here
+
+414
+00:17:04,799 --> 00:17:11,839
+based on the two machines here we can
+
+415
+00:17:07,199 --> 00:17:11,839
+construct a new turing machine and
+
+416
+00:17:12,240 --> 00:17:14,880
+for
+
+417
+00:17:13,280 --> 00:17:16,160
+its input
+
+418
+00:17:14,880 --> 00:17:18,799
+firstly
+
+419
+00:17:16,160 --> 00:17:21,120
+we call f
+
+420
+00:17:18,799 --> 00:17:22,880
+we call f
+
+421
+00:17:21,120 --> 00:17:25,839
+and
+
+422
+00:17:22,880 --> 00:17:28,960
+by definition the turing machine
+
+423
+00:17:25,839 --> 00:17:32,559
+that can compute f will
+
+424
+00:17:28,960 --> 00:17:33,760
+hold and with the output f of w on the
+
+425
+00:17:32,559 --> 00:17:36,000
+tape
+
+426
+00:17:33,760 --> 00:17:37,919
+right so imagine that
+
+427
+00:17:36,000 --> 00:17:41,039
+the machine will construct
+
+428
+00:17:37,919 --> 00:17:41,039
+for its own
+
+429
+00:17:41,120 --> 00:17:44,720
+input here
+
+430
+00:17:42,480 --> 00:17:47,760
+then after calling f
+
+431
+00:17:44,720 --> 00:17:49,360
+after calling f we will have
+
+432
+00:17:47,760 --> 00:17:50,400
+f of w
+
+433
+00:17:49,360 --> 00:17:51,600
+here
+
+434
+00:17:50,400 --> 00:17:54,720
+right
+
+435
+00:17:51,600 --> 00:17:56,880
+we you know you can simulate f and
+
+436
+00:17:54,720 --> 00:18:00,080
+the behavior becomes f and we will
+
+437
+00:17:56,880 --> 00:18:03,760
+process w and finally the machine stops
+
+438
+00:18:00,080 --> 00:18:05,760
+the machine holds we get f w on the tape
+
+439
+00:18:03,760 --> 00:18:08,000
+as output
+
+440
+00:18:05,760 --> 00:18:08,000
+okay
+
+441
+00:18:11,600 --> 00:18:15,720
+then the next step
+
+442
+00:18:16,000 --> 00:18:19,280
+we call
+
+443
+00:18:17,280 --> 00:18:21,600
+m which is
+
+444
+00:18:19,280 --> 00:18:24,080
+the decider for b
+
+445
+00:18:21,600 --> 00:18:25,120
+and f w
+
+446
+00:18:24,080 --> 00:18:28,400
+okay
+
+447
+00:18:25,120 --> 00:18:31,280
+and remember that m is a decider for b
+
+448
+00:18:28,400 --> 00:18:32,640
+so m will tell us
+
+449
+00:18:31,280 --> 00:18:34,480
+f of w
+
+450
+00:18:32,640 --> 00:18:35,520
+belongs to b
+
+451
+00:18:34,480 --> 00:18:38,080
+or
+
+452
+00:18:35,520 --> 00:18:40,840
+not belongs to b right
+
+453
+00:18:38,080 --> 00:18:42,400
+and there will be
+
+454
+00:18:40,840 --> 00:18:44,799
+uh
+
+455
+00:18:42,400 --> 00:18:46,720
+m well definitely stops because it's
+
+456
+00:18:44,799 --> 00:18:49,120
+just decider
+
+457
+00:18:46,720 --> 00:18:51,039
+so we we know there there
+
+458
+00:18:49,120 --> 00:18:54,799
+the answer is either
+
+459
+00:18:51,039 --> 00:18:58,559
+f of w in b or not
+
+460
+00:18:54,799 --> 00:18:58,559
+and according to
+
+461
+00:18:59,280 --> 00:19:06,400
+the computable function f here
+
+462
+00:19:01,600 --> 00:19:08,480
+we know that if f of w is in b we know w
+
+463
+00:19:06,400 --> 00:19:09,360
+is in a
+
+464
+00:19:08,480 --> 00:19:12,960
+if
+
+465
+00:19:09,360 --> 00:19:15,039
+f of w is not in b we know
+
+466
+00:19:12,960 --> 00:19:19,440
+w is not in a
+
+467
+00:19:15,039 --> 00:19:21,919
+right so we just output whatever m
+
+468
+00:19:19,440 --> 00:19:21,919
+output
+
+469
+00:19:22,840 --> 00:19:28,400
+then
+
+470
+00:19:24,720 --> 00:19:28,400
+and here and here
+
+471
+00:19:28,880 --> 00:19:33,360
+is clearly
+
+472
+00:19:31,440 --> 00:19:35,600
+the decider for a
+
+473
+00:19:33,360 --> 00:19:37,840
+because for its input
+
+474
+00:19:35,600 --> 00:19:42,559
+the answer of n
+
+475
+00:19:37,840 --> 00:19:43,520
+will be accept when w belongs to a
+
+476
+00:19:42,559 --> 00:19:47,440
+will be
+
+477
+00:19:43,520 --> 00:19:51,280
+and its answer will be reject well
+
+478
+00:19:47,440 --> 00:19:53,120
+when w is not in a
+
+479
+00:19:51,280 --> 00:19:54,480
+okay
+
+480
+00:19:53,120 --> 00:19:58,400
+so
+
+481
+00:19:54,480 --> 00:20:00,480
+a is decidable because we can construct
+
+482
+00:19:58,400 --> 00:20:02,880
+the decider
+
+483
+00:20:00,480 --> 00:20:02,880
+for a
+
+484
+00:20:03,600 --> 00:20:07,840
+by using
+
+485
+00:20:05,360 --> 00:20:09,760
+the computable function
+
+486
+00:20:07,840 --> 00:20:12,159
+and decider
+
+487
+00:20:09,760 --> 00:20:12,159
+for b
+
+488
+00:20:12,480 --> 00:20:16,159
+okay
+
+489
+00:20:13,919 --> 00:20:18,480
+so
+
+490
+00:20:16,159 --> 00:20:21,039
+we can also have
+
+491
+00:20:18,480 --> 00:20:24,080
+a theorem here that
+
+492
+00:20:21,039 --> 00:20:24,960
+if a is mapping reducible to b
+
+493
+00:20:24,080 --> 00:20:26,640
+and
+
+494
+00:20:24,960 --> 00:20:28,640
+we already know that
+
+495
+00:20:26,640 --> 00:20:30,400
+a is undecidable
+
+496
+00:20:28,640 --> 00:20:32,840
+we know now
+
+497
+00:20:30,400 --> 00:20:37,919
+definitely b is
+
+498
+00:20:32,840 --> 00:20:37,919
+undecidable okay b is undecidable
+
+499
+00:20:41,360 --> 00:20:43,600
+and
+
+500
+00:20:43,760 --> 00:20:50,240
+you can apply theorem 5
+
+501
+00:20:46,840 --> 00:20:51,520
+2.22 with the contradiction stuff and we
+
+502
+00:20:50,240 --> 00:20:52,640
+can know
+
+503
+00:20:51,520 --> 00:20:54,880
+this one
+
+504
+00:20:52,640 --> 00:20:54,880
+right
+
+505
+00:20:55,520 --> 00:20:58,240
+because you can always construct this
+
+506
+00:20:57,280 --> 00:20:59,120
+one
+
+507
+00:20:58,240 --> 00:21:04,000
+and
+
+508
+00:20:59,120 --> 00:21:05,679
+assume b is decidable then m exists
+
+509
+00:21:04,000 --> 00:21:09,039
+then
+
+510
+00:21:05,679 --> 00:21:12,159
+n exists and is a decider for a but you
+
+511
+00:21:09,039 --> 00:21:15,440
+already know that a is undecidable so
+
+512
+00:21:12,159 --> 00:21:16,400
+b is undecidable okay so that's about
+
+513
+00:21:15,440 --> 00:21:18,159
+the proof
+
+514
+00:21:16,400 --> 00:21:19,919
+by contradiction
+
+515
+00:21:18,159 --> 00:21:21,760
+too
+
+516
+00:21:19,919 --> 00:21:23,200
+okay now
+
+517
+00:21:21,760 --> 00:21:24,559
+by using
+
+518
+00:21:23,200 --> 00:21:26,799
+uh sorry
+
+519
+00:21:24,559 --> 00:21:29,840
+which one
+
+520
+00:21:26,799 --> 00:21:31,520
+now by using the mapping reducibility
+
+521
+00:21:29,840 --> 00:21:33,679
+the definition
+
+522
+00:21:31,520 --> 00:21:38,000
+of mechanical disability and the theorem
+
+523
+00:21:33,679 --> 00:21:38,000
+here we can re we can
+
+524
+00:21:38,640 --> 00:21:45,240
+directly prove
+
+525
+00:21:40,720 --> 00:21:45,240
+what we already have of
+
+526
+00:21:46,559 --> 00:21:50,880
+previously
+
+527
+00:21:47,760 --> 00:21:53,440
+so firstly
+
+528
+00:21:50,880 --> 00:21:53,440
+let's say
+
+529
+00:21:56,640 --> 00:22:02,640
+okay in addition to decidable we can we
+
+530
+00:21:59,679 --> 00:22:05,120
+can also do recognizable okay we can
+
+531
+00:22:02,640 --> 00:22:07,600
+also do recognizable so if a
+
+532
+00:22:05,120 --> 00:22:10,880
+is mapping reducible to b and you
+
+533
+00:22:07,600 --> 00:22:14,559
+already know that b is too recognizable
+
+534
+00:22:10,880 --> 00:22:16,080
+then a is too recognizable so
+
+535
+00:22:14,559 --> 00:22:18,159
+the same
+
+536
+00:22:16,080 --> 00:22:21,690
+the same thing goes to
+
+537
+00:22:18,159 --> 00:22:23,679
+send proof process you just need to be
+
+538
+00:22:21,690 --> 00:22:24,840
+[Music]
+
+539
+00:22:23,679 --> 00:22:26,400
+you just need
+
+540
+00:22:24,840 --> 00:22:28,320
+to
+
+541
+00:22:26,400 --> 00:22:29,280
+change the word here
+
+542
+00:22:28,320 --> 00:22:31,600
+as
+
+543
+00:22:29,280 --> 00:22:34,159
+recognizable recognizer
+
+544
+00:22:31,600 --> 00:22:36,320
+and the same thing here and the end
+
+545
+00:22:34,159 --> 00:22:38,320
+here will be
+
+546
+00:22:36,320 --> 00:22:42,000
+the recognizer for a
+
+547
+00:22:38,320 --> 00:22:43,600
+let's go through it again okay so
+
+548
+00:22:42,000 --> 00:22:44,559
+if a
+
+549
+00:22:43,600 --> 00:22:46,640
+is
+
+550
+00:22:44,559 --> 00:22:49,919
+maybe reducible to b and that you
+
+551
+00:22:46,640 --> 00:22:52,640
+already know that b is recognizable
+
+552
+00:22:49,919 --> 00:22:56,240
+then we have a transmission n as a
+
+553
+00:22:52,640 --> 00:22:59,039
+recognizer for b and also f
+
+554
+00:22:56,240 --> 00:23:02,640
+the reduction from a to b
+
+555
+00:22:59,039 --> 00:23:05,039
+then we construct n here and first the
+
+556
+00:23:02,640 --> 00:23:08,159
+first first step is to calculate to
+
+557
+00:23:05,039 --> 00:23:11,280
+compute f of w then we have f of w on
+
+558
+00:23:08,159 --> 00:23:12,159
+the tape after the machine for f
+
+559
+00:23:11,280 --> 00:23:14,240
+holds
+
+560
+00:23:12,159 --> 00:23:17,280
+right then we run
+
+561
+00:23:14,240 --> 00:23:20,080
+m on f of w
+
+562
+00:23:17,280 --> 00:23:26,080
+but here the process is a little
+
+563
+00:23:20,080 --> 00:23:26,080
+a bit different remember that now m here
+
+564
+00:23:26,159 --> 00:23:30,640
+is not decided anymore it's a recognizer
+
+565
+00:23:29,760 --> 00:23:32,480
+so
+
+566
+00:23:30,640 --> 00:23:34,159
+if you run
+
+567
+00:23:32,480 --> 00:23:38,880
+this step there will be three
+
+568
+00:23:34,159 --> 00:23:38,880
+possibilities one accept
+
+569
+00:23:39,039 --> 00:23:42,799
+right two reject
+
+570
+00:23:43,520 --> 00:23:47,039
+three runs forever
+
+571
+00:23:47,200 --> 00:23:52,640
+so if accept
+
+572
+00:23:49,440 --> 00:23:55,600
+you know that f of w
+
+573
+00:23:52,640 --> 00:23:57,200
+in b then you know that's w
+
+574
+00:23:55,600 --> 00:24:00,559
+in a
+
+575
+00:23:57,200 --> 00:24:01,200
+if reject you know that f of w is not in
+
+576
+00:24:00,559 --> 00:24:04,720
+b
+
+577
+00:24:01,200 --> 00:24:08,660
+and you know that w is not in a
+
+578
+00:24:04,720 --> 00:24:11,769
+okay actually only the first condition
+
+579
+00:24:08,660 --> 00:24:11,769
+[Music]
+
+580
+00:24:13,279 --> 00:24:18,240
+we only need the first condition to
+
+581
+00:24:15,360 --> 00:24:20,080
+fulfill to satisfy the requirement of a
+
+582
+00:24:18,240 --> 00:24:21,919
+recognizer
+
+583
+00:24:20,080 --> 00:24:23,200
+right
+
+584
+00:24:21,919 --> 00:24:25,840
+because
+
+585
+00:24:23,200 --> 00:24:27,760
+all strings in a we got the answer of
+
+586
+00:24:25,840 --> 00:24:29,279
+accept
+
+587
+00:24:27,760 --> 00:24:32,880
+okay but
+
+588
+00:24:29,279 --> 00:24:34,640
+we further had we have further have the
+
+589
+00:24:32,880 --> 00:24:37,679
+second condition that
+
+590
+00:24:34,640 --> 00:24:40,640
+if the string not in a we know that in a
+
+591
+00:24:37,679 --> 00:24:42,640
+but sometimes that's sorry not in b
+
+592
+00:24:40,640 --> 00:24:43,440
+sometimes for string another in b you
+
+593
+00:24:42,640 --> 00:24:47,840
+got
+
+594
+00:24:43,440 --> 00:24:47,840
+running for every result in this case
+
+595
+00:24:48,080 --> 00:24:51,679
+since that string is nothing a
+
+596
+00:24:50,320 --> 00:24:52,640
+and
+
+597
+00:24:51,679 --> 00:24:55,279
+n
+
+598
+00:24:52,640 --> 00:24:56,720
+also runs for error because n runs
+
+599
+00:24:55,279 --> 00:25:00,720
+forever
+
+600
+00:24:56,720 --> 00:25:01,600
+then n will never accept those
+
+601
+00:25:00,720 --> 00:25:02,480
+string
+
+602
+00:25:01,600 --> 00:25:04,880
+so
+
+603
+00:25:02,480 --> 00:25:07,120
+you know the definition of recognizer is
+
+604
+00:25:04,880 --> 00:25:10,240
+satisfied so n
+
+605
+00:25:07,120 --> 00:25:11,600
+is the recognizer for a so a is
+
+606
+00:25:10,240 --> 00:25:14,559
+recognizable
+
+607
+00:25:11,600 --> 00:25:17,760
+so basically the same content here
+
+608
+00:25:14,559 --> 00:25:19,640
+we can use to prove also
+
+609
+00:25:17,760 --> 00:25:21,279
+theorem
+
+610
+00:25:19,640 --> 00:25:24,400
+2.5.28
+
+611
+00:25:21,279 --> 00:25:25,440
+okay 5.28
+
+612
+00:25:24,400 --> 00:25:27,679
+then
+
+613
+00:25:25,440 --> 00:25:28,720
+the same thing goes to if you already
+
+614
+00:25:27,679 --> 00:25:30,080
+know that
+
+615
+00:25:28,720 --> 00:25:32,320
+a is not
+
+616
+00:25:30,080 --> 00:25:35,200
+too recognizable then b is not too
+
+617
+00:25:32,320 --> 00:25:36,559
+recognizable and also using the same
+
+618
+00:25:35,200 --> 00:25:40,240
+process for
+
+619
+00:25:36,559 --> 00:25:42,720
+uh to do proof by contradiction
+
+620
+00:25:40,240 --> 00:25:45,720
+okay to do proof by
+
+621
+00:25:42,720 --> 00:25:45,720
+contradiction
+
+622
+00:25:59,050 --> 00:26:02,300
+[Applause]
+
+623
+00:26:03,840 --> 00:26:09,039
+and let's go back to
+
+624
+00:26:06,400 --> 00:26:11,760
+visit the
+
+625
+00:26:09,039 --> 00:26:13,919
+hold the tm2 atm
+
+626
+00:26:11,760 --> 00:26:16,799
+sorry proving for the tm to be
+
+627
+00:26:13,919 --> 00:26:16,799
+undecidable
+
+628
+00:26:17,520 --> 00:26:21,600
+proof
+
+629
+00:26:19,039 --> 00:26:23,520
+remember that
+
+630
+00:26:21,600 --> 00:26:26,799
+in the
+
+631
+00:26:23,520 --> 00:26:28,960
+previously we said that if we have
+
+632
+00:26:26,799 --> 00:26:33,120
+if we have a decider
+
+633
+00:26:28,960 --> 00:26:37,120
+for hold tm if we call that decider m
+
+634
+00:26:33,120 --> 00:26:40,159
+or m is not a good symbol here that's a
+
+635
+00:26:37,120 --> 00:26:40,159
+decider n
+
+636
+00:26:40,320 --> 00:26:46,000
+then we can use n
+
+637
+00:26:42,799 --> 00:26:49,520
+to construct atm design to help us to
+
+638
+00:26:46,000 --> 00:26:53,279
+construct a decider for atm right how do
+
+639
+00:26:49,520 --> 00:26:55,440
+how how did we do that we said that
+
+640
+00:26:53,279 --> 00:26:58,720
+for
+
+641
+00:26:55,440 --> 00:27:03,600
+a pair of machine
+
+642
+00:26:58,720 --> 00:27:03,600
+for a pair of machine and input
+
+643
+00:27:04,080 --> 00:27:08,000
+we send it to
+
+644
+00:27:06,880 --> 00:27:09,279
+n
+
+645
+00:27:08,000 --> 00:27:10,960
+to check
+
+646
+00:27:09,279 --> 00:27:13,279
+if m
+
+647
+00:27:10,960 --> 00:27:16,240
+on w
+
+648
+00:27:13,279 --> 00:27:18,080
+will stop or not right because whole t
+
+649
+00:27:16,240 --> 00:27:21,679
+the decider for whole t
+
+650
+00:27:18,080 --> 00:27:22,960
+is supposed to tell us whether or not m
+
+651
+00:27:21,679 --> 00:27:24,799
+will be
+
+652
+00:27:22,960 --> 00:27:25,600
+will hold on w
+
+653
+00:27:24,799 --> 00:27:28,960
+if
+
+654
+00:27:25,600 --> 00:27:28,960
+no then we know that
+
+655
+00:27:29,200 --> 00:27:32,159
+w is not
+
+656
+00:27:32,480 --> 00:27:36,720
+w will not be accepted by n then we can
+
+657
+00:27:35,279 --> 00:27:37,919
+say no
+
+658
+00:27:36,720 --> 00:27:40,720
+if yes
+
+659
+00:27:37,919 --> 00:27:41,600
+then we really
+
+660
+00:27:40,720 --> 00:27:43,360
+do
+
+661
+00:27:41,600 --> 00:27:45,120
+simulation
+
+662
+00:27:43,360 --> 00:27:46,640
+of n on
+
+663
+00:27:45,120 --> 00:27:49,279
+w
+
+664
+00:27:46,640 --> 00:27:52,080
+and but it's a safe simulation because
+
+665
+00:27:49,279 --> 00:27:55,760
+you know it will hold right and after
+
+666
+00:27:52,080 --> 00:27:58,960
+hold we report that if m accept w we
+
+667
+00:27:55,760 --> 00:28:02,559
+accept the pair if m reject w will
+
+668
+00:27:58,960 --> 00:28:03,919
+reject the pair then such a machine is
+
+669
+00:28:02,559 --> 00:28:06,159
+definitely
+
+670
+00:28:03,919 --> 00:28:07,360
+a decider for atm
+
+671
+00:28:06,159 --> 00:28:10,799
+then we
+
+672
+00:28:07,360 --> 00:28:13,120
+as we just described the whole proof
+
+673
+00:28:10,799 --> 00:28:13,120
+here
+
+674
+00:28:13,200 --> 00:28:17,200
+is established
+
+675
+00:28:15,200 --> 00:28:19,679
+on proving
+
+676
+00:28:17,200 --> 00:28:23,600
+by contradiction
+
+677
+00:28:19,679 --> 00:28:26,159
+because atm decider cannot exist so
+
+678
+00:28:23,600 --> 00:28:28,880
+how tn decider cannot exist so whole
+
+679
+00:28:26,159 --> 00:28:30,880
+team is undecidable that's why the proof
+
+680
+00:28:28,880 --> 00:28:34,000
+is correct okay
+
+681
+00:28:30,880 --> 00:28:35,760
+and we explain the concepts regarding
+
+682
+00:28:34,000 --> 00:28:38,640
+reduction there
+
+683
+00:28:35,760 --> 00:28:41,200
+however now we have the definition
+
+684
+00:28:38,640 --> 00:28:44,320
+for mapping reduction
+
+685
+00:28:41,200 --> 00:28:46,480
+we can say that
+
+686
+00:28:44,320 --> 00:28:48,799
+as long as
+
+687
+00:28:46,480 --> 00:28:52,640
+we present
+
+688
+00:28:48,799 --> 00:28:52,640
+a computable function f
+
+689
+00:28:53,520 --> 00:29:00,559
+as long as we present
+
+690
+00:28:56,799 --> 00:29:00,559
+a computable function f
+
+691
+00:29:00,720 --> 00:29:03,279
+then
+
+692
+00:29:01,760 --> 00:29:06,320
+see here
+
+693
+00:29:03,279 --> 00:29:10,159
+go back to here
+
+694
+00:29:06,320 --> 00:29:12,880
+we said by definition we said that
+
+695
+00:29:10,159 --> 00:29:15,279
+here
+
+696
+00:29:12,880 --> 00:29:17,360
+by definition we say that a is mapping
+
+697
+00:29:15,279 --> 00:29:20,320
+reducible b
+
+698
+00:29:17,360 --> 00:29:23,279
+if there is a computable function
+
+699
+00:29:20,320 --> 00:29:27,200
+providing such
+
+700
+00:29:23,279 --> 00:29:30,640
+relation right and that's the reduction
+
+701
+00:29:27,200 --> 00:29:33,360
+so as long as such function exists
+
+702
+00:29:30,640 --> 00:29:34,720
+a is maybe reducible to b by the
+
+703
+00:29:33,360 --> 00:29:37,440
+donation
+
+704
+00:29:34,720 --> 00:29:39,360
+and we further have sorry we have
+
+705
+00:29:37,440 --> 00:29:41,200
+further have this theorem
+
+706
+00:29:39,360 --> 00:29:44,799
+describing that
+
+707
+00:29:41,200 --> 00:29:47,039
+if a is maybe irreducible to b and the
+
+708
+00:29:44,799 --> 00:29:49,440
+b is undecidable
+
+709
+00:29:47,039 --> 00:29:52,640
+a is undecidable also
+
+710
+00:29:49,440 --> 00:29:54,720
+if a is mapping reducible to b
+
+711
+00:29:52,640 --> 00:29:57,679
+a is undecidable
+
+712
+00:29:54,720 --> 00:29:59,039
+then b is undecidable
+
+713
+00:29:57,679 --> 00:30:02,799
+okay
+
+714
+00:29:59,039 --> 00:30:05,440
+so you see if we already know atm is
+
+715
+00:30:02,799 --> 00:30:07,039
+undecidable
+
+716
+00:30:05,440 --> 00:30:09,840
+we want to prove
+
+717
+00:30:07,039 --> 00:30:09,840
+anything
+
+718
+00:30:10,000 --> 00:30:13,279
+for example problem p
+
+719
+00:30:13,360 --> 00:30:21,600
+any problem here to be undecidable
+
+720
+00:30:16,880 --> 00:30:24,240
+we want to establish such relationship
+
+721
+00:30:21,600 --> 00:30:26,399
+and by the definition here we need to
+
+722
+00:30:24,240 --> 00:30:27,760
+provide the computable function
+
+723
+00:30:26,399 --> 00:30:29,679
+providing
+
+724
+00:30:27,760 --> 00:30:32,720
+this relationship
+
+725
+00:30:29,679 --> 00:30:34,799
+so as long as we find we find we
+
+726
+00:30:32,720 --> 00:30:37,120
+establish or construct a function
+
+727
+00:30:34,799 --> 00:30:41,279
+providing such relationship
+
+728
+00:30:37,120 --> 00:30:43,520
+by definition atn
+
+729
+00:30:41,279 --> 00:30:46,799
+is mapping reducible to the problem we
+
+730
+00:30:43,520 --> 00:30:49,120
+want to prove to be undecidable
+
+731
+00:30:46,799 --> 00:30:50,720
+then calling these
+
+732
+00:30:49,120 --> 00:30:54,480
+corollary
+
+733
+00:30:50,720 --> 00:30:59,840
+we prove that problem is undecidable
+
+734
+00:30:54,480 --> 00:30:59,840
+that's how it works okay so now
+
+735
+00:31:00,000 --> 00:31:06,480
+by using mapping reducibility
+
+736
+00:31:03,039 --> 00:31:09,600
+we already know atm is undecidable
+
+737
+00:31:06,480 --> 00:31:14,159
+right atm is undecidable
+
+738
+00:31:09,600 --> 00:31:17,279
+then what we want to do is to establish
+
+739
+00:31:14,159 --> 00:31:20,000
+to establish
+
+740
+00:31:17,279 --> 00:31:21,200
+this relationship
+
+741
+00:31:20,000 --> 00:31:24,080
+between
+
+742
+00:31:21,200 --> 00:31:27,519
+atm and hold tm
+
+743
+00:31:24,080 --> 00:31:28,960
+and to establish less the relationship
+
+744
+00:31:27,519 --> 00:31:32,320
+we want to
+
+745
+00:31:28,960 --> 00:31:33,279
+present we need to present a computable
+
+746
+00:31:32,320 --> 00:31:34,720
+function
+
+747
+00:31:33,279 --> 00:31:36,320
+providing
+
+748
+00:31:34,720 --> 00:31:39,360
+the relationship
+
+749
+00:31:36,320 --> 00:31:39,360
+as this
+
+750
+00:31:40,240 --> 00:31:48,000
+okay and don't forget that the uh the
+
+751
+00:31:44,000 --> 00:31:51,279
+input for the machine for atm or whole
+
+752
+00:31:48,000 --> 00:31:52,080
+tm is the whole string okay
+
+753
+00:31:51,279 --> 00:31:54,880
+so
+
+754
+00:31:52,080 --> 00:31:57,440
+as long as the given input
+
+755
+00:31:54,880 --> 00:31:59,760
+is in atm
+
+756
+00:31:57,440 --> 00:32:02,399
+if and only if
+
+757
+00:31:59,760 --> 00:32:04,159
+the output is in hold tn
+
+758
+00:32:02,399 --> 00:32:06,640
+if we can
+
+759
+00:32:04,159 --> 00:32:09,919
+establish or construct a function
+
+760
+00:32:06,640 --> 00:32:11,840
+providing this situation
+
+761
+00:32:09,919 --> 00:32:14,480
+by using the
+
+762
+00:32:11,840 --> 00:32:18,880
+corollary there and the definition of
+
+763
+00:32:14,480 --> 00:32:18,880
+mapping usability we proved that
+
+764
+00:32:18,960 --> 00:32:24,799
+the problem here is undecidable
+
+765
+00:32:22,480 --> 00:32:26,840
+then how to present
+
+766
+00:32:24,799 --> 00:32:28,480
+a computable function a convoluted
+
+767
+00:32:26,840 --> 00:32:29,440
+function
+
+768
+00:32:28,480 --> 00:32:32,960
+is
+
+769
+00:32:29,440 --> 00:32:36,159
+compute computed by a turing machine so
+
+770
+00:32:32,960 --> 00:32:37,679
+again we construct a turing machine we
+
+771
+00:32:36,159 --> 00:32:38,799
+call f here
+
+772
+00:32:37,679 --> 00:32:41,519
+okay
+
+773
+00:32:38,799 --> 00:32:45,519
+so on on input
+
+774
+00:32:41,519 --> 00:32:49,039
+a pair of machine and input string
+
+775
+00:32:45,519 --> 00:32:50,559
+let's construct another turing machine
+
+776
+00:32:49,039 --> 00:32:51,760
+okay
+
+777
+00:32:50,559 --> 00:32:53,760
+so let's
+
+778
+00:32:51,760 --> 00:32:56,960
+write the program of the turing machine
+
+779
+00:32:53,760 --> 00:32:59,200
+here on its own input
+
+780
+00:32:56,960 --> 00:33:00,799
+on its own input
+
+781
+00:32:59,200 --> 00:33:05,039
+this machine
+
+782
+00:33:00,799 --> 00:33:06,000
+simulates the given machine m here
+
+783
+00:33:05,039 --> 00:33:06,960
+on
+
+784
+00:33:06,000 --> 00:33:08,840
+its
+
+785
+00:33:06,960 --> 00:33:12,240
+own
+
+786
+00:33:08,840 --> 00:33:12,240
+input okay
+
+787
+00:33:12,799 --> 00:33:16,799
+then
+
+788
+00:33:14,799 --> 00:33:23,120
+remember that there will be three
+
+789
+00:33:16,799 --> 00:33:23,120
+possibilities okay first one if n accept
+
+790
+00:33:23,600 --> 00:33:28,159
+the input of the machine
+
+791
+00:33:27,279 --> 00:33:30,880
+then
+
+792
+00:33:28,159 --> 00:33:30,880
+we accept
+
+793
+00:33:31,200 --> 00:33:34,960
+if m rejects
+
+794
+00:33:33,279 --> 00:33:38,000
+then m prime
+
+795
+00:33:34,960 --> 00:33:40,159
+enter a loop that means
+
+796
+00:33:38,000 --> 00:33:41,600
+runs forever
+
+797
+00:33:40,159 --> 00:33:43,600
+okay
+
+798
+00:33:41,600 --> 00:33:48,159
+and there will there
+
+799
+00:33:43,600 --> 00:33:50,840
+is the third party possibility here for
+
+800
+00:33:48,159 --> 00:33:54,159
+and on w never
+
+801
+00:33:50,840 --> 00:33:56,960
+stops okay m on w
+
+802
+00:33:54,159 --> 00:33:56,960
+never stops
+
+803
+00:33:58,320 --> 00:34:01,919
+so
+
+804
+00:33:59,679 --> 00:34:04,159
+these two case will be
+
+805
+00:34:01,919 --> 00:34:07,760
+the same
+
+806
+00:34:04,159 --> 00:34:10,079
+from the outside view right because
+
+807
+00:34:07,760 --> 00:34:11,200
+no matter this case or this case you
+
+808
+00:34:10,079 --> 00:34:12,079
+will see
+
+809
+00:34:11,200 --> 00:34:13,040
+if
+
+810
+00:34:12,079 --> 00:34:17,359
+if
+
+811
+00:34:13,040 --> 00:34:21,679
+n prime is running then it runs forever
+
+812
+00:34:17,359 --> 00:34:26,159
+anyway we send the source code
+
+813
+00:34:21,679 --> 00:34:26,159
+with the input w here
+
+814
+00:34:26,399 --> 00:34:30,960
+to our output as our output
+
+815
+00:34:30,000 --> 00:34:32,720
+okay
+
+816
+00:34:30,960 --> 00:34:35,119
+so
+
+817
+00:34:32,720 --> 00:34:36,480
+don't be confused
+
+818
+00:34:35,119 --> 00:34:38,560
+by
+
+819
+00:34:36,480 --> 00:34:42,079
+this step
+
+820
+00:34:38,560 --> 00:34:42,960
+okay don't be confused confused by this
+
+821
+00:34:42,079 --> 00:34:44,480
+step
+
+822
+00:34:42,960 --> 00:34:47,359
+there is no
+
+823
+00:34:44,480 --> 00:34:48,399
+process running here
+
+824
+00:34:47,359 --> 00:34:50,639
+we are
+
+825
+00:34:48,399 --> 00:34:53,359
+writing
+
+826
+00:34:50,639 --> 00:34:55,839
+a program okay
+
+827
+00:34:53,359 --> 00:34:58,560
+all f
+
+828
+00:34:55,839 --> 00:35:00,560
+o f does
+
+829
+00:34:58,560 --> 00:35:02,480
+is writing
+
+830
+00:35:00,560 --> 00:35:05,119
+a program called
+
+831
+00:35:02,480 --> 00:35:07,119
+m prime
+
+832
+00:35:05,119 --> 00:35:08,960
+f
+
+833
+00:35:07,119 --> 00:35:10,000
+doesn't
+
+834
+00:35:08,960 --> 00:35:13,040
+run
+
+835
+00:35:10,000 --> 00:35:17,680
+m or even m prime
+
+836
+00:35:13,040 --> 00:35:19,520
+f is just a string process
+
+837
+00:35:17,680 --> 00:35:22,000
+program
+
+838
+00:35:19,520 --> 00:35:25,520
+it reads m
+
+839
+00:35:22,000 --> 00:35:29,520
+you know as a program and reads w
+
+840
+00:35:25,520 --> 00:35:30,880
+and it outputs a program code
+
+841
+00:35:29,520 --> 00:35:32,240
+of m
+
+842
+00:35:30,880 --> 00:35:33,440
+n prime
+
+843
+00:35:32,240 --> 00:35:36,640
+only that
+
+844
+00:35:33,440 --> 00:35:38,960
+the program code
+
+845
+00:35:36,640 --> 00:35:39,760
+in the program code
+
+846
+00:35:38,960 --> 00:35:41,760
+we
+
+847
+00:35:39,760 --> 00:35:43,440
+intend
+
+848
+00:35:41,760 --> 00:35:45,599
+we intend
+
+849
+00:35:43,440 --> 00:35:48,880
+to run and on x
+
+850
+00:35:45,599 --> 00:35:51,280
+but actually we didn't do that okay
+
+851
+00:35:48,880 --> 00:35:53,760
+it never happened it just runs in code
+
+852
+00:35:51,280 --> 00:35:53,760
+just like
+
+853
+00:35:54,079 --> 00:35:57,599
+you open your text
+
+854
+00:35:56,400 --> 00:36:00,240
+editor
+
+855
+00:35:57,599 --> 00:36:03,119
+and write a c program and in your
+
+856
+00:36:00,240 --> 00:36:05,520
+program you write
+
+857
+00:36:03,119 --> 00:36:05,520
+for
+
+858
+00:36:06,480 --> 00:36:10,079
+something like this
+
+859
+00:36:07,920 --> 00:36:10,960
+maybe this
+
+860
+00:36:10,079 --> 00:36:12,400
+and
+
+861
+00:36:10,960 --> 00:36:15,200
+assume that it will
+
+862
+00:36:12,400 --> 00:36:18,560
+do an infinite loop
+
+863
+00:36:15,200 --> 00:36:20,240
+okay but you you you didn't you you will
+
+864
+00:36:18,560 --> 00:36:22,800
+not
+
+865
+00:36:20,240 --> 00:36:25,599
+actually run this program
+
+866
+00:36:22,800 --> 00:36:29,040
+you just output the program code
+
+867
+00:36:25,599 --> 00:36:30,400
+okay that's the key part
+
+868
+00:36:29,040 --> 00:36:33,760
+here
+
+869
+00:36:30,400 --> 00:36:35,760
+if you are confused regarding this code
+
+870
+00:36:33,760 --> 00:36:38,800
+many students
+
+871
+00:36:35,760 --> 00:36:42,560
+in previous semesters
+
+872
+00:36:38,800 --> 00:36:44,320
+they think how did how can i write f b
+
+873
+00:36:42,560 --> 00:36:47,440
+uh since
+
+874
+00:36:44,320 --> 00:36:48,640
+m on x will possibly you know run
+
+875
+00:36:47,440 --> 00:36:52,000
+forever
+
+876
+00:36:48,640 --> 00:36:52,000
+well the point is
+
+877
+00:36:52,320 --> 00:36:57,200
+you only write down the code you didn't
+
+878
+00:36:54,880 --> 00:36:59,200
+run that program
+
+879
+00:36:57,200 --> 00:37:00,880
+okay that's the key part
+
+880
+00:36:59,200 --> 00:37:04,480
+so
+
+881
+00:37:00,880 --> 00:37:05,760
+we write a program f which read the
+
+882
+00:37:04,480 --> 00:37:06,839
+input here
+
+883
+00:37:05,760 --> 00:37:10,000
+and
+
+884
+00:37:06,839 --> 00:37:11,040
+construct a program
+
+885
+00:37:10,000 --> 00:37:14,320
+here
+
+886
+00:37:11,040 --> 00:37:16,240
+you copy m here you copy w
+
+887
+00:37:14,320 --> 00:37:18,560
+uh no
+
+888
+00:37:16,240 --> 00:37:20,320
+you copy w here
+
+889
+00:37:18,560 --> 00:37:21,440
+and you
+
+890
+00:37:20,320 --> 00:37:26,960
+output
+
+891
+00:37:21,440 --> 00:37:28,800
+and source code and w as your output and
+
+892
+00:37:26,960 --> 00:37:30,960
+your program is done
+
+893
+00:37:28,800 --> 00:37:32,800
+okay your program is done
+
+894
+00:37:30,960 --> 00:37:33,680
+nothing more to do
+
+895
+00:37:32,800 --> 00:37:35,599
+so
+
+896
+00:37:33,680 --> 00:37:37,760
+you always can
+
+897
+00:37:35,599 --> 00:37:39,040
+write down such a program
+
+898
+00:37:37,760 --> 00:37:41,599
+right
+
+899
+00:37:39,040 --> 00:37:45,040
+and we know that
+
+900
+00:37:41,599 --> 00:37:45,040
+a turing machine f here
+
+901
+00:37:45,599 --> 00:37:49,520
+for its input
+
+902
+00:37:47,520 --> 00:37:52,480
+and its output
+
+903
+00:37:49,520 --> 00:37:54,720
+the input the relationship between the
+
+904
+00:37:52,480 --> 00:37:56,400
+input and output
+
+905
+00:37:54,720 --> 00:37:57,440
+does
+
+906
+00:37:56,400 --> 00:38:00,400
+have
+
+907
+00:37:57,440 --> 00:38:01,440
+these property
+
+908
+00:38:00,400 --> 00:38:05,599
+why
+
+909
+00:38:01,440 --> 00:38:06,800
+because if it's in atm
+
+910
+00:38:05,599 --> 00:38:10,320
+that means
+
+911
+00:38:06,800 --> 00:38:11,680
+the program we write
+
+912
+00:38:10,320 --> 00:38:13,280
+well
+
+913
+00:38:11,680 --> 00:38:14,240
+stops
+
+914
+00:38:13,280 --> 00:38:16,720
+on
+
+915
+00:38:14,240 --> 00:38:16,720
+w
+
+916
+00:38:17,520 --> 00:38:20,720
+so it's well
+
+917
+00:38:19,920 --> 00:38:23,520
+in
+
+918
+00:38:20,720 --> 00:38:27,520
+hot tn right
+
+919
+00:38:23,520 --> 00:38:28,800
+and vice versa or you can think that
+
+920
+00:38:27,520 --> 00:38:33,599
+if m
+
+921
+00:38:28,800 --> 00:38:35,440
+not in atm that means either
+
+922
+00:38:33,599 --> 00:38:37,680
+enters a loop
+
+923
+00:38:35,440 --> 00:38:37,680
+or
+
+924
+00:38:37,760 --> 00:38:41,680
+these steps is a loop
+
+925
+00:38:40,880 --> 00:38:43,440
+right
+
+926
+00:38:41,680 --> 00:38:44,960
+two possibility here
+
+927
+00:38:43,440 --> 00:38:46,480
+if n
+
+928
+00:38:44,960 --> 00:38:49,920
+w the pair
+
+929
+00:38:46,480 --> 00:38:49,920
+is not in atm
+
+930
+00:38:50,079 --> 00:38:54,160
+either and reject w
+
+931
+00:38:52,160 --> 00:38:55,280
+then m prime
+
+932
+00:38:54,160 --> 00:38:56,400
+enters
+
+933
+00:38:55,280 --> 00:38:57,680
+a loop
+
+934
+00:38:56,400 --> 00:38:59,359
+itself
+
+935
+00:38:57,680 --> 00:39:03,200
+if m
+
+936
+00:38:59,359 --> 00:39:05,680
+directly runs on w as long as will be
+
+937
+00:39:03,200 --> 00:39:07,400
+well runs or ever then
+
+938
+00:39:05,680 --> 00:39:10,880
+the loop
+
+939
+00:39:07,400 --> 00:39:12,720
+automatically creates without our
+
+940
+00:39:10,880 --> 00:39:14,560
+uh
+
+941
+00:39:12,720 --> 00:39:16,000
+manipulation
+
+942
+00:39:14,560 --> 00:39:19,680
+then
+
+943
+00:39:16,000 --> 00:39:21,520
+m prime w is not
+
+944
+00:39:19,680 --> 00:39:22,880
+in whole tm
+
+945
+00:39:21,520 --> 00:39:25,200
+so uh
+
+946
+00:39:22,880 --> 00:39:26,839
+it's w here
+
+947
+00:39:25,200 --> 00:39:30,400
+so we do
+
+948
+00:39:26,839 --> 00:39:33,119
+have such a relation among the between
+
+949
+00:39:30,400 --> 00:39:36,400
+the input and output of
+
+950
+00:39:33,119 --> 00:39:36,400
+the material machine f
+
+951
+00:39:39,200 --> 00:39:43,520
+solution machine f
+
+952
+00:39:41,119 --> 00:39:45,359
+is a computable function providing such
+
+953
+00:39:43,520 --> 00:39:47,520
+relation
+
+954
+00:39:45,359 --> 00:39:49,359
+since f exists
+
+955
+00:39:47,520 --> 00:39:52,160
+so
+
+956
+00:39:49,359 --> 00:39:52,160
+according to
+
+957
+00:39:52,400 --> 00:39:57,280
+the definition here
+
+958
+00:39:54,640 --> 00:40:00,000
+and theorem here sorry now this one
+
+959
+00:39:57,280 --> 00:40:00,000
+theorem here
+
+960
+00:40:00,240 --> 00:40:04,480
+we
+
+961
+00:40:02,320 --> 00:40:05,920
+give the evidence that
+
+962
+00:40:04,480 --> 00:40:08,839
+atm
+
+963
+00:40:05,920 --> 00:40:12,640
+is membrane reusable to hold the tm
+
+964
+00:40:08,839 --> 00:40:15,599
+right that evidence is f
+
+965
+00:40:12,640 --> 00:40:18,079
+we construct it and atm is undecidable
+
+966
+00:40:15,599 --> 00:40:20,640
+so hold the tm is undecidable that's how
+
+967
+00:40:18,079 --> 00:40:22,480
+we prove the theor proof the
+
+968
+00:40:20,640 --> 00:40:26,400
+undesirability
+
+969
+00:40:22,480 --> 00:40:29,040
+of halt tn via the uh help
+
+970
+00:40:26,400 --> 00:40:30,640
+of maple disability
+
+971
+00:40:29,040 --> 00:40:33,520
+okay
+
+972
+00:40:30,640 --> 00:40:34,640
+then let's go back to the recognizable
+
+973
+00:40:33,520 --> 00:40:35,440
+part
+
+974
+00:40:34,640 --> 00:40:37,520
+and
+
+975
+00:40:35,440 --> 00:40:39,839
+we want to prove something interesting
+
+976
+00:40:37,520 --> 00:40:39,839
+that
+
+977
+00:40:43,200 --> 00:40:48,960
+eqtn
+
+978
+00:40:45,040 --> 00:40:50,560
+is neither too recognizable nor code to
+
+979
+00:40:48,960 --> 00:40:53,440
+recognizable
+
+980
+00:40:50,560 --> 00:40:56,440
+okay that means
+
+981
+00:40:53,440 --> 00:40:56,440
+eqtm
+
+982
+00:40:56,640 --> 00:41:01,839
+is not too recognizable
+
+983
+00:40:59,040 --> 00:41:05,760
+and the eqtm bar
+
+984
+00:41:01,839 --> 00:41:09,280
+is not too recognizable
+
+985
+00:41:05,760 --> 00:41:10,400
+okay so that means equity is you know
+
+986
+00:41:09,280 --> 00:41:11,920
+uh
+
+987
+00:41:10,400 --> 00:41:14,400
+super difficult
+
+988
+00:41:11,920 --> 00:41:15,440
+it's totally out of our
+
+989
+00:41:14,400 --> 00:41:17,839
+uh
+
+990
+00:41:15,440 --> 00:41:20,839
+our touch
+
+991
+00:41:17,839 --> 00:41:20,839
+so
+
+992
+00:41:21,359 --> 00:41:25,520
+sorry
+
+993
+00:41:22,560 --> 00:41:28,000
+to prove that we need to know uh we need
+
+994
+00:41:25,520 --> 00:41:29,200
+to establish something interesting
+
+995
+00:41:28,000 --> 00:41:31,520
+okay
+
+996
+00:41:29,200 --> 00:41:34,960
+so uh
+
+997
+00:41:31,520 --> 00:41:36,480
+remember that i remember i what i just
+
+998
+00:41:34,960 --> 00:41:38,880
+described that
+
+999
+00:41:36,480 --> 00:41:40,880
+maybe reducibility
+
+1000
+00:41:38,880 --> 00:41:43,280
+let's say a
+
+1001
+00:41:40,880 --> 00:41:43,280
+and b
+
+1002
+00:41:43,760 --> 00:41:50,880
+is the existence of a computable
+
+1003
+00:41:46,839 --> 00:41:52,240
+function making something a to
+
+1004
+00:41:50,880 --> 00:41:53,200
+something in b
+
+1005
+00:41:52,240 --> 00:41:56,560
+and
+
+1006
+00:41:53,200 --> 00:41:57,760
+something out of a to something
+
+1007
+00:41:56,560 --> 00:41:59,280
+out of b
+
+1008
+00:41:57,760 --> 00:42:02,960
+right
+
+1009
+00:41:59,280 --> 00:42:05,599
+nothing more okay so you have this
+
+1010
+00:42:02,960 --> 00:42:08,720
+f here
+
+1011
+00:42:05,599 --> 00:42:11,280
+so what uh then we we
+
+1012
+00:42:08,720 --> 00:42:15,599
+denote the relation like
+
+1013
+00:42:11,280 --> 00:42:17,520
+a is maybe reducible to b
+
+1014
+00:42:15,599 --> 00:42:20,079
+right
+
+1015
+00:42:17,520 --> 00:42:23,040
+okay so what's interesting
+
+1016
+00:42:20,079 --> 00:42:24,240
+here is that you see
+
+1017
+00:42:23,040 --> 00:42:25,680
+out of a
+
+1018
+00:42:24,240 --> 00:42:28,240
+out of b
+
+1019
+00:42:25,680 --> 00:42:29,680
+in a in b
+
+1020
+00:42:28,240 --> 00:42:32,720
+then
+
+1021
+00:42:29,680 --> 00:42:34,400
+exactly the same function here you don't
+
+1022
+00:42:32,720 --> 00:42:38,400
+need to change anything
+
+1023
+00:42:34,400 --> 00:42:41,920
+exactly the same function here
+
+1024
+00:42:38,400 --> 00:42:41,920
+a bar b bar
+
+1025
+00:42:42,839 --> 00:42:48,640
+right so something in a bar
+
+1026
+00:42:46,640 --> 00:42:51,359
+that is out of a
+
+1027
+00:42:48,640 --> 00:42:55,839
+will be mapped to something out of b
+
+1028
+00:42:51,359 --> 00:42:55,839
+that's something in b bar
+
+1029
+00:42:57,280 --> 00:43:01,839
+also something
+
+1030
+00:43:00,079 --> 00:43:03,839
+out of a bar
+
+1031
+00:43:01,839 --> 00:43:06,640
+that's something in a
+
+1032
+00:43:03,839 --> 00:43:10,839
+will be mapped to something in b
+
+1033
+00:43:06,640 --> 00:43:15,359
+that's something out of b bar
+
+1034
+00:43:10,839 --> 00:43:18,720
+so as long as we have the relation
+
+1035
+00:43:15,359 --> 00:43:20,720
+a is maybe reducible to b
+
+1036
+00:43:18,720 --> 00:43:24,319
+the exact
+
+1037
+00:43:20,720 --> 00:43:28,480
+the exact function
+
+1038
+00:43:24,319 --> 00:43:28,480
+provide us a
+
+1039
+00:43:30,400 --> 00:43:34,640
+bar
+
+1040
+00:43:31,280 --> 00:43:36,960
+is maybe reducible to b bar
+
+1041
+00:43:34,640 --> 00:43:36,960
+right
+
+1042
+00:43:37,040 --> 00:43:41,040
+so we shouldn't consider complements as
+
+1043
+00:43:40,160 --> 00:43:43,359
+uh
+
+1044
+00:43:41,040 --> 00:43:45,280
+negative or something or minus because
+
+1045
+00:43:43,359 --> 00:43:46,800
+they are different
+
+1046
+00:43:45,280 --> 00:43:51,760
+you see
+
+1047
+00:43:46,800 --> 00:43:51,760
+with the existence of the same function
+
+1048
+00:43:52,640 --> 00:43:57,520
+as long as we know a is mapping
+
+1049
+00:43:55,599 --> 00:44:01,920
+reducible to b
+
+1050
+00:43:57,520 --> 00:44:05,280
+we also know that a bar is maybe
+
+1051
+00:44:01,920 --> 00:44:07,520
+reducible to b bar
+
+1052
+00:44:05,280 --> 00:44:07,520
+right
+
+1053
+00:44:07,760 --> 00:44:14,880
+so that's very interesting
+
+1054
+00:44:10,240 --> 00:44:15,920
+and how is it because we can then use it
+
+1055
+00:44:14,880 --> 00:44:18,319
+with
+
+1056
+00:44:15,920 --> 00:44:20,480
+this
+
+1057
+00:44:18,319 --> 00:44:23,480
+theorem
+
+1058
+00:44:20,480 --> 00:44:23,480
+see
+
+1059
+00:44:23,920 --> 00:44:27,520
+previously we established that
+
+1060
+00:44:26,480 --> 00:44:30,079
+two
+
+1061
+00:44:27,520 --> 00:44:34,839
+languages to be
+
+1062
+00:44:30,079 --> 00:44:39,200
+not too recognizable right one is atm
+
+1063
+00:44:34,839 --> 00:44:43,599
+bar the other is what uh the other is ld
+
+1064
+00:44:39,200 --> 00:44:46,079
+right so we have two instances
+
+1065
+00:44:43,599 --> 00:44:47,280
+not too recognizable
+
+1066
+00:44:46,079 --> 00:44:50,560
+but
+
+1067
+00:44:47,280 --> 00:44:52,400
+we want to prove other languages to be
+
+1068
+00:44:50,560 --> 00:44:53,920
+not too recognizable it's kind of
+
+1069
+00:44:52,400 --> 00:44:56,560
+difficult because
+
+1070
+00:44:53,920 --> 00:44:58,640
+the concept regarding
+
+1071
+00:44:56,560 --> 00:45:01,599
+not too recognizable is that you don't
+
+1072
+00:44:58,640 --> 00:45:02,960
+even have an algorithm to correspond to
+
+1073
+00:45:01,599 --> 00:45:05,599
+that problem
+
+1074
+00:45:02,960 --> 00:45:08,079
+that's very you know abstract and very
+
+1075
+00:45:05,599 --> 00:45:10,400
+difficult concept
+
+1076
+00:45:08,079 --> 00:45:13,200
+but with the help of the
+
+1077
+00:45:10,400 --> 00:45:13,200
+theorem here
+
+1078
+00:45:13,760 --> 00:45:19,280
+we can plot atm bar here
+
+1079
+00:45:18,319 --> 00:45:22,000
+right
+
+1080
+00:45:19,280 --> 00:45:24,880
+and to prove something else
+
+1081
+00:45:22,000 --> 00:45:25,680
+not too recognizable because we know atm
+
+1082
+00:45:24,880 --> 00:45:28,640
+bar
+
+1083
+00:45:25,680 --> 00:45:30,960
+is not too recognizable and then as long
+
+1084
+00:45:28,640 --> 00:45:33,599
+as we can establish the
+
+1085
+00:45:30,960 --> 00:45:36,079
+relationship regarding atm bar with some
+
+1086
+00:45:33,599 --> 00:45:39,680
+other language we can prove some other
+
+1087
+00:45:36,079 --> 00:45:41,119
+language to be not too recognizable
+
+1088
+00:45:39,680 --> 00:45:43,040
+right
+
+1089
+00:45:41,119 --> 00:45:45,119
+but
+
+1090
+00:45:43,040 --> 00:45:47,599
+atm bar
+
+1091
+00:45:45,119 --> 00:45:50,560
+is itself
+
+1092
+00:45:47,599 --> 00:45:52,160
+difficult to understand
+
+1093
+00:45:50,560 --> 00:45:54,720
+atm is easy
+
+1094
+00:45:52,160 --> 00:45:57,280
+right because what is atm
+
+1095
+00:45:54,720 --> 00:46:00,640
+that means you have a machine
+
+1096
+00:45:57,280 --> 00:46:03,520
+input pair if the machine accepts the
+
+1097
+00:46:00,640 --> 00:46:03,520
+input then
+
+1098
+00:46:03,680 --> 00:46:06,000
+the
+
+1099
+00:46:04,880 --> 00:46:08,960
+string
+
+1100
+00:46:06,000 --> 00:46:10,640
+is in atm the language
+
+1101
+00:46:08,960 --> 00:46:11,920
+but bar
+
+1102
+00:46:10,640 --> 00:46:15,359
+not only
+
+1103
+00:46:11,920 --> 00:46:19,359
+reject not only runs forever
+
+1104
+00:46:15,359 --> 00:46:21,760
+it also contains remember that step zero
+
+1105
+00:46:19,359 --> 00:46:23,040
+you need to do you know format checking
+
+1106
+00:46:21,760 --> 00:46:25,119
+or something
+
+1107
+00:46:23,040 --> 00:46:27,760
+many other things that
+
+1108
+00:46:25,119 --> 00:46:29,119
+is not valid machine value input
+
+1109
+00:46:27,760 --> 00:46:31,520
+something like that
+
+1110
+00:46:29,119 --> 00:46:34,480
+they are all
+
+1111
+00:46:31,520 --> 00:46:38,160
+they are all in atm board
+
+1112
+00:46:34,480 --> 00:46:38,160
+so it's very difficult to
+
+1113
+00:46:39,119 --> 00:46:44,160
+catch them all in some simple sentences
+
+1114
+00:46:43,119 --> 00:46:46,000
+or
+
+1115
+00:46:44,160 --> 00:46:47,920
+concepts
+
+1116
+00:46:46,000 --> 00:46:49,359
+however
+
+1117
+00:46:47,920 --> 00:46:51,119
+according to
+
+1118
+00:46:49,359 --> 00:46:52,960
+the mapping reducibility we just
+
+1119
+00:46:51,119 --> 00:46:55,599
+described
+
+1120
+00:46:52,960 --> 00:46:57,599
+if we want to establish
+
+1121
+00:46:55,599 --> 00:47:00,960
+the relationship
+
+1122
+00:46:57,599 --> 00:47:02,240
+of atm bar of some language
+
+1123
+00:47:00,960 --> 00:47:04,400
+if we want to
+
+1124
+00:47:02,240 --> 00:47:07,359
+do this
+
+1125
+00:47:04,400 --> 00:47:10,319
+we want to find a
+
+1126
+00:47:07,359 --> 00:47:12,880
+reduction for the mapping new recipe
+
+1127
+00:47:10,319 --> 00:47:15,280
+making reduceability here
+
+1128
+00:47:12,880 --> 00:47:17,599
+the task
+
+1129
+00:47:15,280 --> 00:47:20,559
+is exactly
+
+1130
+00:47:17,599 --> 00:47:25,839
+the task is exactly
+
+1131
+00:47:20,559 --> 00:47:28,720
+finding the reduction from atm 4 bar to
+
+1132
+00:47:25,839 --> 00:47:28,720
+b bar
+
+1133
+00:47:29,040 --> 00:47:32,960
+right
+
+1134
+00:47:30,240 --> 00:47:34,559
+so double complement is the same the
+
+1135
+00:47:32,960 --> 00:47:35,839
+original
+
+1136
+00:47:34,559 --> 00:47:36,800
+language right
+
+1137
+00:47:35,839 --> 00:47:39,839
+so
+
+1138
+00:47:36,800 --> 00:47:42,480
+we can change our task
+
+1139
+00:47:39,839 --> 00:47:44,640
+to an equivalent task that
+
+1140
+00:47:42,480 --> 00:47:49,680
+if we can find
+
+1141
+00:47:44,640 --> 00:47:49,680
+a reduction from atm to
+
+1142
+00:47:50,319 --> 00:47:55,119
+some language
+
+1143
+00:47:52,400 --> 00:47:57,440
+to some language
+
+1144
+00:47:55,119 --> 00:48:01,200
+effectively
+
+1145
+00:47:57,440 --> 00:48:04,559
+or to some complements of the language
+
+1146
+00:48:01,200 --> 00:48:06,319
+if we can establish the relationship of
+
+1147
+00:48:04,559 --> 00:48:09,040
+this
+
+1148
+00:48:06,319 --> 00:48:11,200
+that is we find
+
+1149
+00:48:09,040 --> 00:48:13,200
+the computable function for doing the
+
+1150
+00:48:11,200 --> 00:48:16,160
+mapping reversibility
+
+1151
+00:48:13,200 --> 00:48:18,640
+then equivalently we find
+
+1152
+00:48:16,160 --> 00:48:22,720
+we establish
+
+1153
+00:48:18,640 --> 00:48:26,480
+atm bar is mapping reducible to b
+
+1154
+00:48:22,720 --> 00:48:26,480
+and then we prove b
+
+1155
+00:48:26,800 --> 00:48:31,200
+is
+
+1156
+00:48:28,319 --> 00:48:32,839
+not turing recognizable
+
+1157
+00:48:31,200 --> 00:48:36,319
+not too
+
+1158
+00:48:32,839 --> 00:48:36,319
+recognizable okay
+
+1159
+00:48:37,760 --> 00:48:41,920
+so
+
+1160
+00:48:39,760 --> 00:48:42,880
+go back to the question we want to solve
+
+1161
+00:48:41,920 --> 00:48:47,520
+here
+
+1162
+00:48:42,880 --> 00:48:48,880
+if we want to prove eqtm
+
+1163
+00:48:47,520 --> 00:48:52,079
+to be
+
+1164
+00:48:48,880 --> 00:48:54,160
+not too recognizable
+
+1165
+00:48:52,079 --> 00:48:55,680
+what do we need to do
+
+1166
+00:48:54,160 --> 00:48:56,800
+we need to
+
+1167
+00:48:55,680 --> 00:49:00,800
+find
+
+1168
+00:48:56,800 --> 00:49:00,800
+a reduction from atm bar
+
+1169
+00:49:00,839 --> 00:49:05,280
+to eq
+
+1170
+00:49:03,599 --> 00:49:06,640
+tn
+
+1171
+00:49:05,280 --> 00:49:09,200
+right
+
+1172
+00:49:06,640 --> 00:49:14,240
+by doing this we can
+
+1173
+00:49:09,200 --> 00:49:14,240
+prove eqtm is not too recognizable
+
+1174
+00:49:14,839 --> 00:49:21,119
+then we want to do this
+
+1175
+00:49:18,240 --> 00:49:23,359
+doing this is equivalent
+
+1176
+00:49:21,119 --> 00:49:23,359
+to
+
+1177
+00:49:23,599 --> 00:49:28,160
+doing
+
+1178
+00:49:25,920 --> 00:49:28,160
+this
+
+1179
+00:49:29,280 --> 00:49:33,520
+right
+
+1180
+00:49:31,839 --> 00:49:35,040
+so
+
+1181
+00:49:33,520 --> 00:49:37,359
+because
+
+1182
+00:49:35,040 --> 00:49:40,559
+the relationship here
+
+1183
+00:49:37,359 --> 00:49:41,920
+using the same function exactly is then
+
+1184
+00:49:40,559 --> 00:49:43,440
+function
+
+1185
+00:49:41,920 --> 00:49:47,680
+so first step
+
+1186
+00:49:43,440 --> 00:49:47,680
+we find we construct a function
+
+1187
+00:49:47,760 --> 00:49:54,319
+doing the atm mapping reducible to eqtm
+
+1188
+00:49:52,240 --> 00:49:55,559
+bar
+
+1189
+00:49:54,319 --> 00:49:59,599
+to prove
+
+1190
+00:49:55,559 --> 00:50:01,520
+eqtm is not too recognizable
+
+1191
+00:49:59,599 --> 00:50:04,240
+that's the first thing we want to do
+
+1192
+00:50:01,520 --> 00:50:05,680
+here okay don't be confused
+
+1193
+00:50:04,240 --> 00:50:08,319
+so
+
+1194
+00:50:05,680 --> 00:50:09,440
+see we now now we want to
+
+1195
+00:50:08,319 --> 00:50:13,920
+do
+
+1196
+00:50:09,440 --> 00:50:15,200
+eq atm is reducible to eqtm bar
+
+1197
+00:50:13,920 --> 00:50:17,280
+that's why
+
+1198
+00:50:15,200 --> 00:50:19,040
+okay that is why
+
+1199
+00:50:17,280 --> 00:50:21,839
+so
+
+1200
+00:50:19,040 --> 00:50:24,400
+we construct a tuning machine here
+
+1201
+00:50:21,839 --> 00:50:28,160
+on the input
+
+1202
+00:50:24,400 --> 00:50:32,319
+remember that if it's in atm we want to
+
+1203
+00:50:28,160 --> 00:50:33,200
+make something in et eqtm bar
+
+1204
+00:50:32,319 --> 00:50:35,040
+okay
+
+1205
+00:50:33,200 --> 00:50:36,160
+so
+
+1206
+00:50:35,040 --> 00:50:37,280
+we
+
+1207
+00:50:36,160 --> 00:50:41,520
+produce
+
+1208
+00:50:37,280 --> 00:50:42,880
+a turing machine m1 always reject
+
+1209
+00:50:41,520 --> 00:50:46,559
+so
+
+1210
+00:50:42,880 --> 00:50:48,000
+the language of m1 is empty set
+
+1211
+00:50:46,559 --> 00:50:52,480
+okay
+
+1212
+00:50:48,000 --> 00:50:52,480
+and we also construct two machine m2
+
+1213
+00:50:53,200 --> 00:50:58,720
+on any input doesn't matter
+
+1214
+00:50:56,079 --> 00:51:01,839
+m2 just wrong
+
+1215
+00:50:58,720 --> 00:51:04,880
+and on w
+
+1216
+00:51:01,839 --> 00:51:07,760
+and still don't be confused by
+
+1217
+00:51:04,880 --> 00:51:10,079
+by the code it's just the program code
+
+1218
+00:51:07,760 --> 00:51:11,359
+it doesn't mean that we really runs the
+
+1219
+00:51:10,079 --> 00:51:13,920
+program
+
+1220
+00:51:11,359 --> 00:51:14,800
+okay we just think about it
+
+1221
+00:51:13,920 --> 00:51:20,160
+so
+
+1222
+00:51:14,800 --> 00:51:22,400
+if n accepts w then m2 accept
+
+1223
+00:51:20,160 --> 00:51:26,079
+then what is the accept here the second
+
+1224
+00:51:22,400 --> 00:51:28,880
+accept that means m2 accept
+
+1225
+00:51:26,079 --> 00:51:32,079
+its input
+
+1226
+00:51:28,880 --> 00:51:35,200
+so doesn't matter which input as long as
+
+1227
+00:51:32,079 --> 00:51:40,000
+m except w
+
+1228
+00:51:35,200 --> 00:51:40,880
+lo of m2 is all possible string
+
+1229
+00:51:40,000 --> 00:51:44,559
+okay
+
+1230
+00:51:40,880 --> 00:51:47,680
+if m does not accept and uh does not
+
+1231
+00:51:44,559 --> 00:51:48,839
+accept w then what do we have we have l
+
+1232
+00:51:47,680 --> 00:51:52,160
+of
+
+1233
+00:51:48,839 --> 00:51:53,119
+m2 empty set
+
+1234
+00:51:52,160 --> 00:51:56,880
+right
+
+1235
+00:51:53,119 --> 00:51:57,839
+so m on w the behavior of lnw is a
+
+1236
+00:51:56,880 --> 00:52:02,000
+switch
+
+1237
+00:51:57,839 --> 00:52:03,200
+switch between these two behavior
+
+1238
+00:52:02,000 --> 00:52:05,440
+now you see
+
+1239
+00:52:03,200 --> 00:52:07,200
+if m on w
+
+1240
+00:52:05,440 --> 00:52:10,160
+m accept w
+
+1241
+00:52:07,200 --> 00:52:12,160
+if m accept w
+
+1242
+00:52:10,160 --> 00:52:15,359
+then
+
+1243
+00:52:12,160 --> 00:52:18,960
+l of m one
+
+1244
+00:52:15,359 --> 00:52:21,920
+is not l of m two because l of l1 is
+
+1245
+00:52:18,960 --> 00:52:22,960
+empty set l of m2 is all possible
+
+1246
+00:52:21,920 --> 00:52:24,079
+strings
+
+1247
+00:52:22,960 --> 00:52:26,319
+if n
+
+1248
+00:52:24,079 --> 00:52:29,680
+does not accept w
+
+1249
+00:52:26,319 --> 00:52:33,920
+whether reject or runs forever
+
+1250
+00:52:29,680 --> 00:52:37,599
+l of m1 is still empty set but
+
+1251
+00:52:33,920 --> 00:52:38,640
+l of m2 now is empty set so they are
+
+1252
+00:52:37,599 --> 00:52:40,240
+the same
+
+1253
+00:52:38,640 --> 00:52:41,680
+so
+
+1254
+00:52:40,240 --> 00:52:43,200
+m1
+
+1255
+00:52:41,680 --> 00:52:47,839
+and m2
+
+1256
+00:52:43,200 --> 00:52:47,839
+here will be in eqtm
+
+1257
+00:52:49,200 --> 00:52:56,559
+and the not in eqtm bar and here in eqtm
+
+1258
+00:52:54,240 --> 00:52:56,559
+bar
+
+1259
+00:52:57,359 --> 00:53:03,200
+right
+
+1260
+00:52:58,160 --> 00:53:04,880
+so f is able to provide such reduction
+
+1261
+00:53:03,200 --> 00:53:05,559
+from atm
+
+1262
+00:53:04,880 --> 00:53:08,400
+to
+
+1263
+00:53:05,559 --> 00:53:11,200
+eqtm bar
+
+1264
+00:53:08,400 --> 00:53:13,760
+then we know that atm
+
+1265
+00:53:11,200 --> 00:53:14,800
+is mapping reducible to
+
+1266
+00:53:13,760 --> 00:53:16,720
+eq
+
+1267
+00:53:14,800 --> 00:53:18,000
+tm bar
+
+1268
+00:53:16,720 --> 00:53:21,200
+and
+
+1269
+00:53:18,000 --> 00:53:23,200
+this function here also provides the
+
+1270
+00:53:21,200 --> 00:53:24,400
+same relation to
+
+1271
+00:53:23,200 --> 00:53:27,040
+atn
+
+1272
+00:53:24,400 --> 00:53:31,280
+is maybe reducible
+
+1273
+00:53:27,040 --> 00:53:32,640
+sorry atm bar is maybe reducible to eqtm
+
+1274
+00:53:31,280 --> 00:53:36,720
+therefore
+
+1275
+00:53:32,640 --> 00:53:39,720
+we can prove eqtm is not turin
+
+1276
+00:53:36,720 --> 00:53:39,720
+recognizable
+
+1277
+00:53:39,760 --> 00:53:45,599
+okay so that's why the proof
+
+1278
+00:53:43,280 --> 00:53:48,720
+is written this way
+
+1279
+00:53:45,599 --> 00:53:50,480
+then we also want to prove that
+
+1280
+00:53:48,720 --> 00:53:53,520
+eqtm is
+
+1281
+00:53:50,480 --> 00:53:55,119
+nowhere called recognizable that means
+
+1282
+00:53:53,520 --> 00:53:57,119
+eq
+
+1283
+00:53:55,119 --> 00:54:00,480
+m bar
+
+1284
+00:53:57,119 --> 00:54:02,960
+is not too recognizable either
+
+1285
+00:54:00,480 --> 00:54:06,000
+so we go through the same thing we
+
+1286
+00:54:02,960 --> 00:54:06,000
+provide another
+
+1287
+00:54:07,200 --> 00:54:11,119
+computable function
+
+1288
+00:54:08,800 --> 00:54:12,160
+but this time remember that we want to
+
+1289
+00:54:11,119 --> 00:54:14,640
+prove
+
+1290
+00:54:12,160 --> 00:54:17,040
+atn we want to establish the
+
+1291
+00:54:14,640 --> 00:54:18,400
+relationship that atm bar
+
+1292
+00:54:17,040 --> 00:54:21,440
+can be
+
+1293
+00:54:18,400 --> 00:54:24,240
+maybe reducible to eqtm bar
+
+1294
+00:54:21,440 --> 00:54:25,520
+to prove eqtm bar not recognizable too
+
+1295
+00:54:24,240 --> 00:54:28,800
+recognizable
+
+1296
+00:54:25,520 --> 00:54:28,800
+and the same function
+
+1297
+00:54:29,040 --> 00:54:33,920
+provides
+
+1298
+00:54:30,960 --> 00:54:33,920
+this relationship
+
+1299
+00:54:35,280 --> 00:54:38,559
+so g
+
+1300
+00:54:36,480 --> 00:54:40,480
+we using this and
+
+1301
+00:54:38,559 --> 00:54:41,760
+gets this okay
+
+1302
+00:54:40,480 --> 00:54:43,040
+so now
+
+1303
+00:54:41,760 --> 00:54:46,640
+atm
+
+1304
+00:54:43,040 --> 00:54:48,319
+if this string is in atm
+
+1305
+00:54:46,640 --> 00:54:50,319
+we change
+
+1306
+00:54:48,319 --> 00:54:53,680
+what we have m1
+
+1307
+00:54:50,319 --> 00:54:56,880
+previously to here always accept
+
+1308
+00:54:53,680 --> 00:54:58,319
+so m l of m one here is all possible
+
+1309
+00:54:56,880 --> 00:54:59,119
+strings
+
+1310
+00:54:58,319 --> 00:55:01,280
+then
+
+1311
+00:54:59,119 --> 00:55:06,160
+m two here is the same
+
+1312
+00:55:01,280 --> 00:55:07,040
+if f of m two uh if n accepts
+
+1313
+00:55:06,160 --> 00:55:11,440
+w
+
+1314
+00:55:07,040 --> 00:55:13,119
+of m2 is all possible strings otherwise
+
+1315
+00:55:11,440 --> 00:55:14,480
+is
+
+1316
+00:55:13,119 --> 00:55:17,200
+empty set
+
+1317
+00:55:14,480 --> 00:55:20,760
+so if accept
+
+1318
+00:55:17,200 --> 00:55:20,760
+they are in eqtm
+
+1319
+00:55:20,960 --> 00:55:26,319
+if not then not in
+
+1320
+00:55:23,599 --> 00:55:27,920
+eqtm
+
+1321
+00:55:26,319 --> 00:55:30,640
+so we establish
+
+1322
+00:55:27,920 --> 00:55:32,799
+the relationship like this and the same
+
+1323
+00:55:30,640 --> 00:55:36,400
+function
+
+1324
+00:55:32,799 --> 00:55:39,119
+it used the same function g here
+
+1325
+00:55:36,400 --> 00:55:41,160
+provides this relationship
+
+1326
+00:55:39,119 --> 00:55:42,799
+so we now know that
+
+1327
+00:55:41,160 --> 00:55:43,680
+eqtm
+
+1328
+00:55:42,799 --> 00:55:48,240
+bar
+
+1329
+00:55:43,680 --> 00:55:50,480
+is not too recognizable either
+
+1330
+00:55:48,240 --> 00:55:50,480
+okay
+
+1331
+00:55:50,720 --> 00:55:55,200
+so
+
+1332
+00:55:51,599 --> 00:55:58,799
+you can see in this theorem nut
+
+1333
+00:55:55,200 --> 00:55:58,799
+with the help of
+
+1334
+00:55:58,960 --> 00:56:01,960
+serum
+
+1335
+00:56:02,920 --> 00:56:10,480
+2.28 and 2.29 we only need to establish
+
+1336
+00:56:07,520 --> 00:56:13,680
+the relationship of two languages and
+
+1337
+00:56:10,480 --> 00:56:15,680
+then we can have conclusions on
+
+1338
+00:56:13,680 --> 00:56:16,799
+the other language
+
+1339
+00:56:15,680 --> 00:56:19,040
+or
+
+1340
+00:56:16,799 --> 00:56:21,359
+depends on which one you want to prove
+
+1341
+00:56:19,040 --> 00:56:21,359
+okay
+
+1342
+00:56:21,599 --> 00:56:26,880
+then according to all we have got we
+
+1343
+00:56:24,400 --> 00:56:26,880
+know that
+
+1344
+00:56:27,040 --> 00:56:32,319
+a language
+
+1345
+00:56:28,240 --> 00:56:33,599
+and its own compliment
+
+1346
+00:56:32,319 --> 00:56:35,200
+has only
+
+1347
+00:56:33,599 --> 00:56:37,760
+okay let's talk about
+
+1348
+00:56:35,200 --> 00:56:39,359
+decidable
+
+1349
+00:56:37,760 --> 00:56:42,799
+undecidable
+
+1350
+00:56:39,359 --> 00:56:45,599
+and but recognizable and outside
+
+1351
+00:56:42,799 --> 00:56:46,559
+and not recognizable okay
+
+1352
+00:56:45,599 --> 00:56:50,559
+so
+
+1353
+00:56:46,559 --> 00:56:51,680
+you have only three possibilities here
+
+1354
+00:56:50,559 --> 00:56:54,400
+it's not
+
+1355
+00:56:51,680 --> 00:56:56,400
+there are three regions one two three
+
+1356
+00:56:54,400 --> 00:56:58,880
+but it's not nine
+
+1357
+00:56:56,400 --> 00:57:00,000
+possibility there are only three
+
+1358
+00:56:58,880 --> 00:57:02,240
+that
+
+1359
+00:57:00,000 --> 00:57:04,720
+a language either
+
+1360
+00:57:02,240 --> 00:57:07,359
+complements and itself
+
+1361
+00:57:04,720 --> 00:57:09,200
+are both indecidable
+
+1362
+00:57:07,359 --> 00:57:11,760
+yeah because if
+
+1363
+00:57:09,200 --> 00:57:14,160
+a language is decidable the complement
+
+1364
+00:57:11,760 --> 00:57:16,880
+is decidable too right the same decider
+
+1365
+00:57:14,160 --> 00:57:19,200
+you only need to reverse the answer of
+
+1366
+00:57:16,880 --> 00:57:21,440
+the decider then you got
+
+1367
+00:57:19,200 --> 00:57:22,400
+decider for the complement
+
+1368
+00:57:21,440 --> 00:57:25,760
+so
+
+1369
+00:57:22,400 --> 00:57:26,799
+the language and its own complements are
+
+1370
+00:57:25,760 --> 00:57:28,960
+either
+
+1371
+00:57:26,799 --> 00:57:30,240
+both in
+
+1372
+00:57:28,960 --> 00:57:31,119
+decidable
+
+1373
+00:57:30,240 --> 00:57:33,920
+or
+
+1374
+00:57:31,119 --> 00:57:33,920
+both in
+
+1375
+00:57:34,400 --> 00:57:38,319
+not decidable sorry not recognizable
+
+1376
+00:57:37,359 --> 00:57:42,400
+like
+
+1377
+00:57:38,319 --> 00:57:46,799
+eqtm we just proved right eqtm is here
+
+1378
+00:57:42,400 --> 00:57:46,799
+eqtm bar is also here
+
+1379
+00:57:47,200 --> 00:57:51,280
+also here
+
+1380
+00:57:48,960 --> 00:57:51,280
+and
+
+1381
+00:57:52,480 --> 00:57:58,160
+the other possibility is like atn
+
+1382
+00:57:55,599 --> 00:58:01,200
+you have one in
+
+1383
+00:57:58,160 --> 00:58:03,839
+here which is undecidable but
+
+1384
+00:58:01,200 --> 00:58:06,880
+recognizable
+
+1385
+00:58:03,839 --> 00:58:08,880
+and your compliment must be outside of
+
+1386
+00:58:06,880 --> 00:58:11,119
+recognizable
+
+1387
+00:58:08,880 --> 00:58:11,119
+right
+
+1388
+00:58:12,400 --> 00:58:14,799
+because
+
+1389
+00:58:13,680 --> 00:58:16,480
+these
+
+1390
+00:58:14,799 --> 00:58:18,160
+if it
+
+1391
+00:58:16,480 --> 00:58:21,280
+falls into here
+
+1392
+00:58:18,160 --> 00:58:24,079
+then atm becomes decidable we have proof
+
+1393
+00:58:21,280 --> 00:58:25,839
+we have proved that right
+
+1394
+00:58:24,079 --> 00:58:28,000
+because if you have a
+
+1395
+00:58:25,839 --> 00:58:29,520
+language recognizable and
+
+1396
+00:58:28,000 --> 00:58:31,920
+co-recognizable
+
+1397
+00:58:29,520 --> 00:58:35,119
+that language is decidable
+
+1398
+00:58:31,920 --> 00:58:38,000
+so it cannot be in this region
+
+1399
+00:58:35,119 --> 00:58:41,839
+of course cannot be in this state region
+
+1400
+00:58:38,000 --> 00:58:44,559
+so it can only be in this region so a
+
+1401
+00:58:41,839 --> 00:58:47,200
+language and its own complement
+
+1402
+00:58:44,559 --> 00:58:49,440
+are either both decidable
+
+1403
+00:58:47,200 --> 00:58:49,440
+or
+
+1404
+00:58:49,520 --> 00:58:53,760
+neither
+
+1405
+00:58:50,559 --> 00:58:56,559
+itself nor its complement is too
+
+1406
+00:58:53,760 --> 00:58:56,559
+recognizable
+
+1407
+00:58:56,640 --> 00:59:02,240
+and over the final
+
+1408
+00:58:59,119 --> 00:59:04,559
+possibilities that one is
+
+1409
+00:59:02,240 --> 00:59:09,440
+recognizable but undecidable and the
+
+1410
+00:59:04,559 --> 00:59:11,440
+other is not even too recognizable
+
+1411
+00:59:09,440 --> 00:59:13,680
+okay
+
+1412
+00:59:11,440 --> 00:59:13,680
+so
+
+1413
+00:59:14,319 --> 00:59:18,720
+we have finished
+
+1414
+00:59:16,839 --> 00:59:21,119
+chapter 5
+
+1415
+00:59:18,720 --> 00:59:22,960
+and that's about the
+
+1416
+00:59:21,119 --> 00:59:24,640
+computability
+
+1417
+00:59:22,960 --> 00:59:27,839
+we want to talk about
+
+1418
+00:59:24,640 --> 00:59:30,400
+so using turing machine as computational
+
+1419
+00:59:27,839 --> 00:59:33,839
+model now we know
+
+1420
+00:59:30,400 --> 00:59:37,119
+we have some problems that can be
+
+1421
+00:59:33,839 --> 00:59:39,920
+in theory can be compute
+
+1422
+00:59:37,119 --> 00:59:41,200
+basically we think that uh decidable
+
+1423
+00:59:39,920 --> 00:59:43,440
+and
+
+1424
+00:59:41,200 --> 00:59:46,559
+we have some problem
+
+1425
+00:59:43,440 --> 00:59:49,520
+undecidable but recognizable well you
+
+1426
+00:59:46,559 --> 00:59:52,240
+can think you can consider it like
+
+1427
+00:59:49,520 --> 00:59:54,000
+we have a limited capability of solving
+
+1428
+00:59:52,240 --> 00:59:56,559
+such problems
+
+1429
+00:59:54,000 --> 00:59:57,839
+and finally we have a lot of problems
+
+1430
+00:59:56,559 --> 01:00:00,640
+actually
+
+1431
+00:59:57,839 --> 01:00:02,560
+not too recognizable that means we have
+
+1432
+01:00:00,640 --> 01:00:04,640
+many many many problems we
+
+1433
+01:00:02,560 --> 01:00:07,520
+[Music]
+
+1434
+01:00:04,640 --> 01:00:10,799
+to which we cannot even write any
+
+1435
+01:00:07,520 --> 01:00:14,400
+program corresponding to those problems
+
+1436
+01:00:10,799 --> 01:00:17,720
+so that's our uh discussion
+
+1437
+01:00:14,400 --> 01:00:17,720
+on computability
+

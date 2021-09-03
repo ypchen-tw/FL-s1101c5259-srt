@@ -1,0 +1,5180 @@
+1
+00:00:04,400 --> 00:00:08,400
+okay
+
+2
+00:00:05,520 --> 00:00:10,080
+once more we know that
+
+3
+00:00:08,400 --> 00:00:12,880
+context-free language
+
+4
+00:00:10,080 --> 00:00:16,000
+context languages are not all possible
+
+5
+00:00:12,880 --> 00:00:18,240
+languages given in alphabet we are going
+
+6
+00:00:16,000 --> 00:00:20,880
+to discuss the closure properties of
+
+7
+00:00:18,240 --> 00:00:22,240
+context-free languages we will try to
+
+8
+00:00:20,880 --> 00:00:25,039
+know some
+
+9
+00:00:22,240 --> 00:00:27,680
+operations under which
+
+10
+00:00:25,039 --> 00:00:28,720
+the context of languages is closed
+
+11
+00:00:27,680 --> 00:00:31,679
+okay
+
+12
+00:00:28,720 --> 00:00:34,320
+and the first operation of
+
+13
+00:00:31,679 --> 00:00:36,640
+is substitution we we are going to
+
+14
+00:00:34,320 --> 00:00:39,120
+introduce a new operation here which is
+
+15
+00:00:36,640 --> 00:00:41,520
+called uh substitution
+
+16
+00:00:39,120 --> 00:00:42,960
+a substitution uh
+
+17
+00:00:41,520 --> 00:00:46,160
+actually a substitution is a
+
+18
+00:00:42,960 --> 00:00:48,000
+generalization of the homomorphism we
+
+19
+00:00:46,160 --> 00:00:51,280
+defined in the study of regular
+
+20
+00:00:48,000 --> 00:00:53,920
+languages so you can go back to chapter
+
+21
+00:00:51,280 --> 00:00:56,480
+1 to see the definition of of hormone
+
+22
+00:00:53,920 --> 00:00:59,680
+vision so that you will know
+
+23
+00:00:56,480 --> 00:01:02,399
+why it is a generalization
+
+24
+00:00:59,680 --> 00:01:04,000
+so uh simply put
+
+25
+00:01:02,399 --> 00:01:06,479
+a substitution
+
+26
+00:01:04,000 --> 00:01:07,760
+is defined on
+
+27
+00:01:06,479 --> 00:01:11,439
+an alphabet
+
+28
+00:01:07,760 --> 00:01:14,080
+and map to a set of a string
+
+29
+00:01:11,439 --> 00:01:15,840
+a set of strings or sorry a set of
+
+30
+00:01:14,080 --> 00:01:16,960
+strings
+
+31
+00:01:15,840 --> 00:01:21,280
+so
+
+32
+00:01:16,960 --> 00:01:23,759
+for example if you have alphabet
+
+33
+00:01:21,280 --> 00:01:27,200
+0 and 1
+
+34
+00:01:23,759 --> 00:01:28,320
+and you want to map
+
+35
+00:01:27,200 --> 00:01:31,920
+to
+
+36
+00:01:28,320 --> 00:01:33,280
+another strings on another alphabet like
+
+37
+00:01:31,920 --> 00:01:35,119
+a b
+
+38
+00:01:33,280 --> 00:01:38,720
+c something like that
+
+39
+00:01:35,119 --> 00:01:40,320
+one possible substitution e may be
+
+40
+00:01:38,720 --> 00:01:44,079
+s of zero
+
+41
+00:01:40,320 --> 00:01:46,399
+map2 for example a a
+
+42
+00:01:44,079 --> 00:01:48,799
+b c a a
+
+43
+00:01:46,399 --> 00:01:51,840
+b b c something like that
+
+44
+00:01:48,799 --> 00:01:53,040
+or you map one two
+
+45
+00:01:51,840 --> 00:01:55,600
+let's say
+
+46
+00:01:53,040 --> 00:01:58,240
+a star b
+
+47
+00:01:55,600 --> 00:01:58,240
+c c
+
+48
+00:01:58,560 --> 00:02:03,840
+b something like that okay so
+
+49
+00:02:01,200 --> 00:02:06,079
+uh it is a regular expression so that
+
+50
+00:02:03,840 --> 00:02:07,520
+means you actually map two infinite
+
+51
+00:02:06,079 --> 00:02:09,520
+strings like
+
+52
+00:02:07,520 --> 00:02:11,760
+b c c b
+
+53
+00:02:09,520 --> 00:02:13,200
+a b c c b
+
+54
+00:02:11,760 --> 00:02:16,720
+a
+
+55
+00:02:13,200 --> 00:02:21,360
+square b c c b et cetera right
+
+56
+00:02:16,720 --> 00:02:22,480
+so as long as you define a map
+
+57
+00:02:21,360 --> 00:02:24,160
+of
+
+58
+00:02:22,480 --> 00:02:26,480
+each symbol
+
+59
+00:02:24,160 --> 00:02:28,480
+of an alphabet to
+
+60
+00:02:26,480 --> 00:02:31,599
+some strings
+
+61
+00:02:28,480 --> 00:02:33,280
+a set of strings then we call that
+
+62
+00:02:31,599 --> 00:02:34,640
+a substitution
+
+63
+00:02:33,280 --> 00:02:37,280
+okay
+
+64
+00:02:34,640 --> 00:02:39,840
+then
+
+65
+00:02:37,280 --> 00:02:40,640
+as long as you define a substitution you
+
+66
+00:02:39,840 --> 00:02:43,440
+can
+
+67
+00:02:40,640 --> 00:02:44,480
+extend this substitution
+
+68
+00:02:43,440 --> 00:02:47,280
+into
+
+69
+00:02:44,480 --> 00:02:48,319
+see we define on alphabet which is each
+
+70
+00:02:47,280 --> 00:02:50,720
+symbol
+
+71
+00:02:48,319 --> 00:02:52,800
+and we can be this substitution can be
+
+72
+00:02:50,720 --> 00:02:56,640
+extended into
+
+73
+00:02:52,800 --> 00:03:00,239
+strings and languages okay
+
+74
+00:02:56,640 --> 00:03:01,599
+so for strings that will be
+
+75
+00:03:00,239 --> 00:03:03,760
+given n
+
+76
+00:03:01,599 --> 00:03:05,680
+given
+
+77
+00:03:03,760 --> 00:03:10,560
+a substitution as
+
+78
+00:03:05,680 --> 00:03:12,800
+we define we extend the definition to
+
+79
+00:03:10,560 --> 00:03:14,239
+the domain of strings
+
+80
+00:03:12,800 --> 00:03:16,840
+with
+
+81
+00:03:14,239 --> 00:03:19,360
+empty string mapped to empty string
+
+82
+00:03:16,840 --> 00:03:20,720
+and each
+
+83
+00:03:19,360 --> 00:03:22,159
+strings
+
+84
+00:03:20,720 --> 00:03:24,000
+each string
+
+85
+00:03:22,159 --> 00:03:25,599
+the last one
+
+86
+00:03:24,000 --> 00:03:27,920
+map2
+
+87
+00:03:25,599 --> 00:03:29,040
+see that's the original substitution
+
+88
+00:03:27,920 --> 00:03:30,159
+here
+
+89
+00:03:29,040 --> 00:03:33,120
+and then
+
+90
+00:03:30,159 --> 00:03:34,239
+that's a recursive definition go back to
+
+91
+00:03:33,120 --> 00:03:37,360
+here
+
+92
+00:03:34,239 --> 00:03:38,879
+okay so we already explain explain such
+
+93
+00:03:37,360 --> 00:03:41,440
+extension in
+
+94
+00:03:38,879 --> 00:03:42,959
+actually the extended transition for dfi
+
+95
+00:03:41,440 --> 00:03:46,480
+nfa or
+
+96
+00:03:42,959 --> 00:03:48,080
+the extension in homomorphism right so
+
+97
+00:03:46,480 --> 00:03:50,319
+it's the same thing
+
+98
+00:03:48,080 --> 00:03:52,799
+and when we extend the
+
+99
+00:03:50,319 --> 00:03:53,920
+definition given substitution
+
+100
+00:03:52,799 --> 00:03:55,200
+to
+
+101
+00:03:53,920 --> 00:03:56,799
+languages
+
+102
+00:03:55,200 --> 00:03:57,920
+so
+
+103
+00:03:56,799 --> 00:04:00,959
+the
+
+104
+00:03:57,920 --> 00:04:02,720
+domain becomes a set of strings
+
+105
+00:04:00,959 --> 00:04:04,000
+and that's even easier
+
+106
+00:04:02,720 --> 00:04:06,560
+we just
+
+107
+00:04:04,000 --> 00:04:08,640
+get everything
+
+108
+00:04:06,560 --> 00:04:11,200
+in the string
+
+109
+00:04:08,640 --> 00:04:12,239
+sorry in every string in the language
+
+110
+00:04:11,200 --> 00:04:15,040
+and
+
+111
+00:04:12,239 --> 00:04:16,160
+map to
+
+112
+00:04:15,040 --> 00:04:18,479
+listing
+
+113
+00:04:16,160 --> 00:04:21,600
+and what is this
+
+114
+00:04:18,479 --> 00:04:24,560
+this goes back to
+
+115
+00:04:21,600 --> 00:04:25,440
+the extension here
+
+116
+00:04:24,560 --> 00:04:26,720
+okay
+
+117
+00:04:25,440 --> 00:04:30,160
+so
+
+118
+00:04:26,720 --> 00:04:32,800
+okay uh understand it as
+
+119
+00:04:30,160 --> 00:04:34,720
+you just get every string
+
+120
+00:04:32,800 --> 00:04:35,840
+from the language
+
+121
+00:04:34,720 --> 00:04:38,479
+then
+
+122
+00:04:35,840 --> 00:04:38,479
+you look up
+
+123
+00:04:39,199 --> 00:04:43,040
+what
+
+124
+00:04:40,960 --> 00:04:45,680
+uh
+
+125
+00:04:43,040 --> 00:04:47,120
+what sets of the strings can this string
+
+126
+00:04:45,680 --> 00:04:49,840
+map too
+
+127
+00:04:47,120 --> 00:04:54,000
+and then you just collect every possible
+
+128
+00:04:49,840 --> 00:04:55,600
+strings into a language then we call it
+
+129
+00:04:54,000 --> 00:04:58,400
+the substitution extension of the
+
+130
+00:04:55,600 --> 00:05:00,240
+original one okay
+
+131
+00:04:58,400 --> 00:05:02,720
+so here
+
+132
+00:05:00,240 --> 00:05:02,720
+we want to
+
+133
+00:05:02,960 --> 00:05:06,240
+prove that
+
+134
+00:05:04,240 --> 00:05:07,680
+if you have a language
+
+135
+00:05:06,240 --> 00:05:10,080
+l
+
+136
+00:05:07,680 --> 00:05:11,520
+which is a context free language over
+
+137
+00:05:10,080 --> 00:05:13,199
+some alphabet
+
+138
+00:05:11,520 --> 00:05:14,240
+sigma
+
+139
+00:05:13,199 --> 00:05:18,560
+and
+
+140
+00:05:14,240 --> 00:05:18,560
+if you have a substitution s
+
+141
+00:05:18,960 --> 00:05:23,000
+defined on sigma
+
+142
+00:05:24,000 --> 00:05:27,600
+such that
+
+143
+00:05:25,199 --> 00:05:27,600
+each
+
+144
+00:05:28,000 --> 00:05:34,240
+symbol in the alphabet sigma
+
+145
+00:05:32,160 --> 00:05:36,800
+the language
+
+146
+00:05:34,240 --> 00:05:38,639
+you mapped to
+
+147
+00:05:36,800 --> 00:05:40,639
+don't forget that
+
+148
+00:05:38,639 --> 00:05:42,400
+a set of strings
+
+149
+00:05:40,639 --> 00:05:45,360
+is a language
+
+150
+00:05:42,400 --> 00:05:46,639
+okay a set of a language is just a set
+
+151
+00:05:45,360 --> 00:05:48,000
+of strings
+
+152
+00:05:46,639 --> 00:05:49,520
+so
+
+153
+00:05:48,000 --> 00:05:51,759
+if each
+
+154
+00:05:49,520 --> 00:05:52,880
+for each other for each symbol in the
+
+155
+00:05:51,759 --> 00:05:55,840
+alphabet
+
+156
+00:05:52,880 --> 00:05:57,840
+the substitution map to some
+
+157
+00:05:55,840 --> 00:06:01,280
+context free language
+
+158
+00:05:57,840 --> 00:06:04,000
+then we can prove that
+
+159
+00:06:01,280 --> 00:06:05,600
+the whole language l beer
+
+160
+00:06:04,000 --> 00:06:09,520
+the substitution
+
+161
+00:06:05,600 --> 00:06:09,520
+with the extension like this
+
+162
+00:06:12,880 --> 00:06:16,880
+is also
+
+163
+00:06:14,479 --> 00:06:20,080
+a cfl
+
+164
+00:06:16,880 --> 00:06:22,000
+okay that's what we want to prove here
+
+165
+00:06:20,080 --> 00:06:23,840
+so how to prove that we can just
+
+166
+00:06:22,000 --> 00:06:28,160
+construct the
+
+167
+00:06:23,840 --> 00:06:29,199
+grammar for the mapped language okay
+
+168
+00:06:28,160 --> 00:06:30,400
+so
+
+169
+00:06:29,199 --> 00:06:31,680
+let's say
+
+170
+00:06:30,400 --> 00:06:34,560
+since l
+
+171
+00:06:31,680 --> 00:06:36,639
+since l is
+
+172
+00:06:34,560 --> 00:06:39,280
+a context-free language
+
+173
+00:06:36,639 --> 00:06:42,560
+there must be some context context-free
+
+174
+00:06:39,280 --> 00:06:44,080
+grammar generating that language right
+
+175
+00:06:42,560 --> 00:06:45,360
+so
+
+176
+00:06:44,080 --> 00:06:49,360
+let g
+
+177
+00:06:45,360 --> 00:06:51,840
+be the context-free grammar for l here
+
+178
+00:06:49,360 --> 00:06:55,039
+so a contextual grammar is a full tuple
+
+179
+00:06:51,840 --> 00:06:58,400
+you have variable alphabets rows and
+
+180
+00:06:55,039 --> 00:06:59,919
+stars variable one of the variable right
+
+181
+00:06:58,400 --> 00:07:03,520
+and
+
+182
+00:06:59,919 --> 00:07:05,680
+since for each symbol in the
+
+183
+00:07:03,520 --> 00:07:10,319
+alphabet
+
+184
+00:07:05,680 --> 00:07:12,479
+for each symbol in the alphabet
+
+185
+00:07:10,319 --> 00:07:15,680
+the mapped
+
+186
+00:07:12,479 --> 00:07:18,160
+language for each symbol is also
+
+187
+00:07:15,680 --> 00:07:21,199
+a countless free language right
+
+188
+00:07:18,160 --> 00:07:23,599
+so let's say there will be grammars for
+
+189
+00:07:21,199 --> 00:07:26,960
+each of them for each language so let's
+
+190
+00:07:23,599 --> 00:07:28,720
+say the grammar for symbol a
+
+191
+00:07:26,960 --> 00:07:32,080
+is this one
+
+192
+00:07:28,720 --> 00:07:38,160
+okay so if you think of a concrete
+
+193
+00:07:32,080 --> 00:07:38,960
+example like your alphabet is 0 1
+
+194
+00:07:38,160 --> 00:07:40,720
+then
+
+195
+00:07:38,960 --> 00:07:43,919
+in the proof here
+
+196
+00:07:40,720 --> 00:07:47,520
+in a proof here you have
+
+197
+00:07:43,919 --> 00:07:49,039
+l which is on sigma star a subset of
+
+198
+00:07:47,520 --> 00:07:51,680
+sigma star right
+
+199
+00:07:49,039 --> 00:07:53,360
+so you have a l and the g is the context
+
+200
+00:07:51,680 --> 00:07:54,319
+free for that l
+
+201
+00:07:53,360 --> 00:07:56,840
+then
+
+202
+00:07:54,319 --> 00:07:59,840
+you have a substitution
+
+203
+00:07:56,840 --> 00:08:01,919
+s and s of 0
+
+204
+00:07:59,840 --> 00:08:03,360
+is the language
+
+205
+00:08:01,919 --> 00:08:06,879
+you mapped
+
+206
+00:08:03,360 --> 00:08:09,280
+symbol 0 2 and s of 1
+
+207
+00:08:06,879 --> 00:08:13,520
+is the language
+
+208
+00:08:09,280 --> 00:08:14,639
+you s map 1 the symbol one two right
+
+209
+00:08:13,520 --> 00:08:16,000
+and
+
+210
+00:08:14,639 --> 00:08:20,160
+since
+
+211
+00:08:16,000 --> 00:08:22,000
+s of zero is a context free language we
+
+212
+00:08:20,160 --> 00:08:25,039
+know that there is a context free
+
+213
+00:08:22,000 --> 00:08:28,479
+grammar g zero
+
+214
+00:08:25,039 --> 00:08:31,759
+generated generating s of zero and we
+
+215
+00:08:28,479 --> 00:08:34,560
+also have another contextual grammar g1
+
+216
+00:08:31,759 --> 00:08:37,919
+generating s of one okay
+
+217
+00:08:34,560 --> 00:08:37,919
+so ga here
+
+218
+00:08:38,880 --> 00:08:44,159
+is
+
+219
+00:08:40,800 --> 00:08:45,760
+j here represents so many
+
+220
+00:08:44,159 --> 00:08:48,240
+different
+
+221
+00:08:45,760 --> 00:08:50,000
+grammars okay for each symbol in
+
+222
+00:08:48,240 --> 00:08:52,839
+alphabet
+
+223
+00:08:50,000 --> 00:08:54,720
+for each symbol here for each symbol in
+
+224
+00:08:52,839 --> 00:08:56,480
+alphabet so
+
+225
+00:08:54,720 --> 00:08:59,760
+let's construct it
+
+226
+00:08:56,480 --> 00:09:02,720
+let's construct a new grammar g prime
+
+227
+00:08:59,760 --> 00:09:03,760
+here for s of l
+
+228
+00:09:02,720 --> 00:09:06,000
+okay
+
+229
+00:09:03,760 --> 00:09:08,800
+and let's say since g prime is a
+
+230
+00:09:06,000 --> 00:09:09,920
+contextual grammar we need to explain
+
+231
+00:09:08,800 --> 00:09:11,279
+the four
+
+232
+00:09:09,920 --> 00:09:13,440
+components
+
+233
+00:09:11,279 --> 00:09:15,120
+variable
+
+234
+00:09:13,440 --> 00:09:17,760
+terminals
+
+235
+00:09:15,120 --> 00:09:20,880
+rules and star variable okay
+
+236
+00:09:17,760 --> 00:09:24,240
+so what is the b prime here
+
+237
+00:09:20,880 --> 00:09:26,399
+v prime is the union of v
+
+238
+00:09:24,240 --> 00:09:29,519
+and
+
+239
+00:09:26,399 --> 00:09:30,959
+all the a's
+
+240
+00:09:29,519 --> 00:09:33,600
+okay
+
+241
+00:09:30,959 --> 00:09:36,399
+so you have uh
+
+242
+00:09:33,600 --> 00:09:40,560
+you just need to do a union of
+
+243
+00:09:36,399 --> 00:09:43,279
+all variables of the original
+
+244
+00:09:40,560 --> 00:09:45,760
+grammar for l and o
+
+245
+00:09:43,279 --> 00:09:47,040
+variable for vas
+
+246
+00:09:45,760 --> 00:09:50,480
+or variables
+
+247
+00:09:47,040 --> 00:09:51,680
+okay so that's our v prime v prime
+
+248
+00:09:50,480 --> 00:09:54,560
+then
+
+249
+00:09:51,680 --> 00:09:58,160
+sigma prime which is the terminals for
+
+250
+00:09:54,560 --> 00:10:00,959
+the mapped language
+
+251
+00:09:58,160 --> 00:10:04,000
+that will be the union of
+
+252
+00:10:00,959 --> 00:10:06,000
+all sigma a's
+
+253
+00:10:04,000 --> 00:10:09,360
+okay or sigma x
+
+254
+00:10:06,000 --> 00:10:12,079
+and here is the ace with b
+
+255
+00:10:09,360 --> 00:10:14,399
+so that's slightly different
+
+256
+00:10:12,079 --> 00:10:16,959
+why because
+
+257
+00:10:14,399 --> 00:10:16,959
+you map
+
+258
+00:10:17,120 --> 00:10:22,399
+string in l into strings
+
+259
+00:10:20,079 --> 00:10:22,399
+on
+
+260
+00:10:23,120 --> 00:10:26,560
+the union of sigma s
+
+261
+00:10:25,600 --> 00:10:28,640
+okay
+
+262
+00:10:26,560 --> 00:10:31,640
+so that's our sigma prime
+
+263
+00:10:28,640 --> 00:10:31,640
+then
+
+264
+00:10:35,360 --> 00:10:41,839
+what is the start variable here actually
+
+265
+00:10:38,320 --> 00:10:45,120
+the start variable here is the original
+
+266
+00:10:41,839 --> 00:10:47,519
+star variable of l okay we have we don't
+
+267
+00:10:45,120 --> 00:10:49,760
+have that here but yes
+
+268
+00:10:47,519 --> 00:10:53,360
+s prime is actually s
+
+269
+00:10:49,760 --> 00:10:54,480
+then what are our rules
+
+270
+00:10:53,360 --> 00:10:56,880
+okay
+
+271
+00:10:54,480 --> 00:10:57,920
+the rules consist of
+
+272
+00:10:56,880 --> 00:11:00,480
+firstly
+
+273
+00:10:57,920 --> 00:11:03,120
+all rules in each
+
+274
+00:11:00,480 --> 00:11:05,120
+grammar for each symbol
+
+275
+00:11:03,120 --> 00:11:08,880
+okay all rules
+
+276
+00:11:05,120 --> 00:11:12,880
+in each ra that's grammars for
+
+277
+00:11:08,880 --> 00:11:15,600
+the language mapped by each symbol
+
+278
+00:11:12,880 --> 00:11:18,160
+via the substitution
+
+279
+00:11:15,600 --> 00:11:18,160
+and then
+
+280
+00:11:18,240 --> 00:11:23,600
+we copy the rules in r which is the
+
+281
+00:11:21,839 --> 00:11:24,399
+rules for
+
+282
+00:11:23,600 --> 00:11:28,079
+l
+
+283
+00:11:24,399 --> 00:11:30,480
+rules for the grammar generating l
+
+284
+00:11:28,079 --> 00:11:33,279
+but we replace
+
+285
+00:11:30,480 --> 00:11:34,959
+all terminal each terminal we replace
+
+286
+00:11:33,279 --> 00:11:36,160
+each terminal
+
+287
+00:11:34,959 --> 00:11:37,600
+with
+
+288
+00:11:36,160 --> 00:11:41,519
+sa
+
+289
+00:11:37,600 --> 00:11:43,360
+okay we replace each terminal with sa
+
+290
+00:11:41,519 --> 00:11:45,440
+let's
+
+291
+00:11:43,360 --> 00:11:47,040
+go for an example here
+
+292
+00:11:45,440 --> 00:11:49,120
+let's see
+
+293
+00:11:47,040 --> 00:11:50,959
+you have a
+
+294
+00:11:49,120 --> 00:11:53,279
+language l
+
+295
+00:11:50,959 --> 00:11:55,360
+let's say uh
+
+296
+00:11:53,279 --> 00:11:57,839
+let's say this example okay
+
+297
+00:11:55,360 --> 00:11:57,839
+so
+
+298
+00:11:57,920 --> 00:12:02,560
+and what is a grammar the grammar is as
+
+299
+00:12:02,800 --> 00:12:08,800
+epsilon right and also as 0 as
+
+300
+00:12:06,880 --> 00:12:10,959
+1 that's it
+
+301
+00:12:08,800 --> 00:12:15,120
+so this grammar can generate this
+
+302
+00:12:10,959 --> 00:12:17,360
+language let's say the language here is
+
+303
+00:12:15,120 --> 00:12:20,240
+this one and
+
+304
+00:12:17,360 --> 00:12:23,279
+the grammar here is
+
+305
+00:12:20,240 --> 00:12:26,000
+a variable only s and
+
+306
+00:12:23,279 --> 00:12:28,399
+terminal 01
+
+307
+00:12:26,000 --> 00:12:30,959
+and the rules is the two rules here
+
+308
+00:12:28,399 --> 00:12:34,000
+let's say two rows here
+
+309
+00:12:30,959 --> 00:12:34,000
+and s is our
+
+310
+00:12:35,120 --> 00:12:39,600
+star variable
+
+311
+00:12:36,880 --> 00:12:42,880
+so let's say we have a substitution for
+
+312
+00:12:39,600 --> 00:12:46,000
+zero and the map to
+
+313
+00:12:42,880 --> 00:12:48,399
+s of zero and the grammar is g zero and
+
+314
+00:12:46,000 --> 00:12:49,760
+one g one okay
+
+315
+00:12:48,399 --> 00:12:52,800
+so
+
+316
+00:12:49,760 --> 00:12:54,240
+we copy all the rules are zero
+
+317
+00:12:52,800 --> 00:12:55,360
+and the union
+
+318
+00:12:54,240 --> 00:12:57,120
+are one
+
+319
+00:12:55,360 --> 00:13:01,519
+and union what
+
+320
+00:12:57,120 --> 00:13:01,519
+the two rules but we change them
+
+321
+00:13:01,680 --> 00:13:05,040
+first rule
+
+322
+00:13:03,040 --> 00:13:07,680
+we just copy it because epsilon is
+
+323
+00:13:05,040 --> 00:13:08,720
+actual and the second rule which change
+
+324
+00:13:07,680 --> 00:13:10,320
+change
+
+325
+00:13:08,720 --> 00:13:12,560
+we change that
+
+326
+00:13:10,320 --> 00:13:14,000
+change zero to
+
+327
+00:13:12,560 --> 00:13:15,040
+s zero
+
+328
+00:13:14,000 --> 00:13:18,320
+and
+
+329
+00:13:15,040 --> 00:13:22,000
+s is s and s one okay
+
+330
+00:13:18,320 --> 00:13:24,639
+so that's it that's our
+
+331
+00:13:22,000 --> 00:13:24,639
+r prime
+
+332
+00:13:24,800 --> 00:13:30,320
+so
+
+333
+00:13:26,560 --> 00:13:33,320
+the construction is done like this
+
+334
+00:13:30,320 --> 00:13:33,320
+okay
+
+335
+00:13:34,560 --> 00:13:39,680
+so actually if you want to cut finish
+
+336
+00:13:37,519 --> 00:13:41,199
+the proof we need to
+
+337
+00:13:39,680 --> 00:13:44,000
+prove that
+
+338
+00:13:41,199 --> 00:13:44,000
+every string
+
+339
+00:13:44,320 --> 00:13:49,760
+in
+
+340
+00:13:45,279 --> 00:13:51,279
+fg prime if and only if every string in
+
+341
+00:13:49,760 --> 00:13:53,600
+s of l
+
+342
+00:13:51,279 --> 00:13:57,279
+okay we need to do the proof
+
+343
+00:13:53,600 --> 00:13:59,680
+to finish it but we omit the this part
+
+344
+00:13:57,279 --> 00:14:03,040
+and we just talk about
+
+345
+00:13:59,680 --> 00:14:04,160
+informally why it works you can think of
+
+346
+00:14:03,040 --> 00:14:05,680
+that
+
+347
+00:14:04,160 --> 00:14:08,240
+for l
+
+348
+00:14:05,680 --> 00:14:10,720
+since the grammar g
+
+349
+00:14:08,240 --> 00:14:12,639
+generated arrow that means
+
+350
+00:14:10,720 --> 00:14:13,920
+l of g
+
+351
+00:14:12,639 --> 00:14:17,279
+is l right
+
+352
+00:14:13,920 --> 00:14:19,199
+so for every string for every string in
+
+353
+00:14:17,279 --> 00:14:22,560
+l
+
+354
+00:14:19,199 --> 00:14:24,240
+you have a pass three from s which is
+
+355
+00:14:22,560 --> 00:14:27,519
+the start variable
+
+356
+00:14:24,240 --> 00:14:29,120
+you have a pass three right
+
+357
+00:14:27,519 --> 00:14:32,399
+for
+
+358
+00:14:29,120 --> 00:14:32,399
+some string in l
+
+359
+00:14:32,800 --> 00:14:35,360
+right
+
+360
+00:14:33,760 --> 00:14:37,199
+and then
+
+361
+00:14:35,360 --> 00:14:40,079
+for each symbol
+
+362
+00:14:37,199 --> 00:14:40,079
+for each symbol
+
+363
+00:14:42,639 --> 00:14:47,600
+will be mapped to a set of string
+
+364
+00:14:45,120 --> 00:14:49,839
+because for each symbol for example uh
+
+365
+00:14:47,600 --> 00:14:52,880
+this 0 is 1
+
+366
+00:14:49,839 --> 00:14:56,560
+and the 0 will be matched to match to a
+
+367
+00:14:52,880 --> 00:14:58,720
+set of string s of 0 right
+
+368
+00:14:56,560 --> 00:15:00,800
+and of course
+
+369
+00:14:58,720 --> 00:15:02,959
+this
+
+370
+00:15:00,800 --> 00:15:06,800
+set of strings is also a contextual
+
+371
+00:15:02,959 --> 00:15:09,360
+language so everything in here
+
+372
+00:15:06,800 --> 00:15:11,360
+can be generated here
+
+373
+00:15:09,360 --> 00:15:14,720
+as a right
+
+374
+00:15:11,360 --> 00:15:17,519
+so for the construction here we replace
+
+375
+00:15:14,720 --> 00:15:20,079
+zero here as s0
+
+376
+00:15:17,519 --> 00:15:21,519
+right at one here as s1
+
+377
+00:15:20,079 --> 00:15:22,320
+something like that
+
+378
+00:15:21,519 --> 00:15:24,800
+then
+
+379
+00:15:22,320 --> 00:15:28,240
+we will start here
+
+380
+00:15:24,800 --> 00:15:30,160
+to have a pass three according to
+
+381
+00:15:28,240 --> 00:15:31,199
+g zero
+
+382
+00:15:30,160 --> 00:15:33,920
+and
+
+383
+00:15:31,199 --> 00:15:38,399
+possibly generate all
+
+384
+00:15:33,920 --> 00:15:41,040
+strings of s of zero here and also s of
+
+385
+00:15:38,399 --> 00:15:42,320
+one here and here
+
+386
+00:15:41,040 --> 00:15:43,759
+so
+
+387
+00:15:42,320 --> 00:15:45,279
+that will be
+
+388
+00:15:43,759 --> 00:15:46,079
+exactly
+
+389
+00:15:45,279 --> 00:15:48,959
+s
+
+390
+00:15:46,079 --> 00:15:52,639
+of l
+
+391
+00:15:48,959 --> 00:15:52,639
+and the whole thing here
+
+392
+00:15:53,600 --> 00:15:58,720
+is a pass three
+
+393
+00:15:55,759 --> 00:16:01,839
+is a pass three start from s
+
+394
+00:15:58,720 --> 00:16:04,480
+start from s and according to
+
+395
+00:16:01,839 --> 00:16:07,199
+g prime here
+
+396
+00:16:04,480 --> 00:16:09,839
+okay so that is why
+
+397
+00:16:07,199 --> 00:16:09,839
+if you have
+
+398
+00:16:10,480 --> 00:16:15,120
+a substitution and
+
+399
+00:16:12,800 --> 00:16:16,880
+you have a contextual language and the
+
+400
+00:16:15,120 --> 00:16:19,759
+substitution for
+
+401
+00:16:16,880 --> 00:16:19,759
+each symbol
+
+402
+00:16:20,079 --> 00:16:24,000
+map to some
+
+403
+00:16:22,320 --> 00:16:26,880
+context free language
+
+404
+00:16:24,000 --> 00:16:26,880
+then the whole
+
+405
+00:16:27,199 --> 00:16:30,639
+arrow
+
+406
+00:16:28,160 --> 00:16:33,040
+will be mapped to some context free
+
+407
+00:16:30,639 --> 00:16:33,040
+language
+
+408
+00:16:33,839 --> 00:16:40,000
+okay so that's we call
+
+409
+00:16:37,440 --> 00:16:41,519
+close your property for the operation of
+
+410
+00:16:40,000 --> 00:16:43,279
+substitution
+
+411
+00:16:41,519 --> 00:16:46,800
+and remember that
+
+412
+00:16:43,279 --> 00:16:49,279
+if you don't have this criteria that
+
+413
+00:16:46,800 --> 00:16:50,800
+s of a
+
+414
+00:16:49,279 --> 00:16:52,160
+is a complex free language if you don't
+
+415
+00:16:50,800 --> 00:16:54,079
+have criteria
+
+416
+00:16:52,160 --> 00:16:57,040
+like this then
+
+417
+00:16:54,079 --> 00:16:59,279
+this theorem doesn't hold why because
+
+418
+00:16:57,040 --> 00:17:02,000
+you can think of a very easy
+
+419
+00:16:59,279 --> 00:17:04,720
+uh counter example if you
+
+420
+00:17:02,000 --> 00:17:09,199
+don't have a criteria like this
+
+421
+00:17:04,720 --> 00:17:11,039
+for example if we have a alphabet
+
+422
+00:17:09,199 --> 00:17:12,959
+zero one
+
+423
+00:17:11,039 --> 00:17:14,000
+okay
+
+424
+00:17:12,959 --> 00:17:16,000
+then
+
+425
+00:17:14,000 --> 00:17:17,199
+we have a language
+
+426
+00:17:16,000 --> 00:17:18,799
+just
+
+427
+00:17:17,199 --> 00:17:20,240
+0
+
+428
+00:17:18,799 --> 00:17:23,439
+just 0
+
+429
+00:17:20,240 --> 00:17:25,919
+and which is a string and only of length
+
+430
+00:17:23,439 --> 00:17:29,120
+1 and only 0 okay
+
+431
+00:17:25,919 --> 00:17:31,039
+then we said that we have a
+
+432
+00:17:29,120 --> 00:17:36,880
+substitution
+
+433
+00:17:31,039 --> 00:17:36,880
+s0 map to a n b n c n
+
+434
+00:17:37,200 --> 00:17:42,559
+and
+
+435
+00:17:39,440 --> 00:17:44,240
+greater or equal to 0 and s 1
+
+436
+00:17:42,559 --> 00:17:45,280
+map to
+
+437
+00:17:44,240 --> 00:17:47,200
+only
+
+438
+00:17:45,280 --> 00:17:51,679
+empty string okay
+
+439
+00:17:47,200 --> 00:17:52,880
+so is this a substitution yes it is but
+
+440
+00:17:51,679 --> 00:17:55,039
+it doesn't
+
+441
+00:17:52,880 --> 00:17:57,360
+have the property that
+
+442
+00:17:55,039 --> 00:18:00,000
+s of a is a context free language right
+
+443
+00:17:57,360 --> 00:18:02,400
+this is not we have proof that we have
+
+444
+00:18:00,000 --> 00:18:02,400
+proven
+
+445
+00:18:02,640 --> 00:18:08,160
+that language is not a context free
+
+446
+00:18:04,320 --> 00:18:10,799
+language so for language here
+
+447
+00:18:08,160 --> 00:18:13,360
+if l is this one
+
+448
+00:18:10,799 --> 00:18:15,840
+s of l what is that that would be
+
+449
+00:18:13,360 --> 00:18:15,840
+exactly
+
+450
+00:18:16,080 --> 00:18:20,000
+this language right
+
+451
+00:18:18,960 --> 00:18:21,440
+and
+
+452
+00:18:20,000 --> 00:18:24,799
+you can easily
+
+453
+00:18:21,440 --> 00:18:28,160
+know that this language is not
+
+454
+00:18:24,799 --> 00:18:29,600
+a context free language
+
+455
+00:18:28,160 --> 00:18:31,520
+so you we
+
+456
+00:18:29,600 --> 00:18:34,400
+have to have
+
+457
+00:18:31,520 --> 00:18:36,480
+criteria here even
+
+458
+00:18:34,400 --> 00:18:38,559
+l is a context free language
+
+459
+00:18:36,480 --> 00:18:40,000
+is this a context free language yes it
+
+460
+00:18:38,559 --> 00:18:41,919
+is
+
+461
+00:18:40,000 --> 00:18:44,960
+right because you have you can write a
+
+462
+00:18:41,919 --> 00:18:47,120
+grammar like s becomes 0 that's it
+
+463
+00:18:44,960 --> 00:18:48,480
+then
+
+464
+00:18:47,120 --> 00:18:50,799
+substitution
+
+465
+00:18:48,480 --> 00:18:52,720
+also need to have this property so we
+
+466
+00:18:50,799 --> 00:18:53,520
+have the closure property
+
+467
+00:18:52,720 --> 00:18:56,080
+okay
+
+468
+00:18:53,520 --> 00:18:58,320
+so that's for substitution and
+
+469
+00:18:56,080 --> 00:18:59,919
+substitution is a generalization of
+
+470
+00:18:58,320 --> 00:19:00,880
+homomorphism
+
+471
+00:18:59,919 --> 00:19:02,320
+why
+
+472
+00:19:00,880 --> 00:19:05,679
+because
+
+473
+00:19:02,320 --> 00:19:09,360
+substitute substitution is a symbol
+
+474
+00:19:05,679 --> 00:19:12,960
+mapping to a set of string
+
+475
+00:19:09,360 --> 00:19:14,720
+and the homomorphism is a simple map to
+
+476
+00:19:12,960 --> 00:19:17,120
+a string
+
+477
+00:19:14,720 --> 00:19:19,760
+and a set of string
+
+478
+00:19:17,120 --> 00:19:23,520
+you know uh if a symbol can only map to
+
+479
+00:19:19,760 --> 00:19:26,480
+one string that would be a special case
+
+480
+00:19:23,520 --> 00:19:29,679
+map into a set of strings right so
+
+481
+00:19:26,480 --> 00:19:29,679
+that's a generalization of
+
+482
+00:19:29,840 --> 00:19:36,240
+so let's see other closure properties we
+
+483
+00:19:32,720 --> 00:19:36,240
+want to check here
+
+484
+00:19:36,320 --> 00:19:39,760
+that
+
+485
+00:19:37,440 --> 00:19:43,200
+a and b
+
+486
+00:19:39,760 --> 00:19:44,000
+be context-free languages and r
+
+487
+00:19:43,200 --> 00:19:45,679
+b
+
+488
+00:19:44,000 --> 00:19:46,480
+regular language
+
+489
+00:19:45,679 --> 00:19:49,039
+okay
+
+490
+00:19:46,480 --> 00:19:52,039
+so firstly we want to prove that
+
+491
+00:19:49,039 --> 00:19:52,039
+substitution
+
+492
+00:19:52,480 --> 00:19:57,120
+has the closure property and we already
+
+493
+00:19:55,039 --> 00:19:59,840
+did okay so
+
+494
+00:19:57,120 --> 00:20:00,559
+and don't remember don't forget that
+
+495
+00:19:59,840 --> 00:20:04,919
+for
+
+496
+00:20:00,559 --> 00:20:04,919
+the substitution each
+
+497
+00:20:06,720 --> 00:20:13,039
+each language must be also cfl so we do
+
+498
+00:20:11,200 --> 00:20:14,880
+so then
+
+499
+00:20:13,039 --> 00:20:17,840
+it works
+
+500
+00:20:14,880 --> 00:20:18,880
+for closure property okay
+
+501
+00:20:17,840 --> 00:20:21,840
+then
+
+502
+00:20:18,880 --> 00:20:21,840
+we need to
+
+503
+00:20:23,200 --> 00:20:28,400
+we need to prove the
+
+504
+00:20:26,080 --> 00:20:29,440
+context of the class of context free
+
+505
+00:20:28,400 --> 00:20:32,000
+language
+
+506
+00:20:29,440 --> 00:20:33,120
+the context with languages is closed
+
+507
+00:20:32,000 --> 00:20:34,400
+under the
+
+508
+00:20:33,120 --> 00:20:35,280
+union operation
+
+509
+00:20:34,400 --> 00:20:38,320
+okay
+
+510
+00:20:35,280 --> 00:20:38,320
+so how to prove it
+
+511
+00:20:38,880 --> 00:20:43,840
+since a is a context free language
+
+512
+00:20:41,919 --> 00:20:45,679
+you have a grammar a
+
+513
+00:20:43,840 --> 00:20:48,880
+right then
+
+514
+00:20:45,679 --> 00:20:50,480
+you will have the va
+
+515
+00:20:48,880 --> 00:20:54,000
+sigma a
+
+516
+00:20:50,480 --> 00:20:54,000
+rule a and
+
+517
+00:20:54,400 --> 00:20:56,799
+star variable a
+
+518
+00:20:56,000 --> 00:21:00,480
+okay
+
+519
+00:20:56,799 --> 00:21:04,110
+and also for g sorry also for
+
+520
+00:21:00,480 --> 00:21:06,240
+grammar for language b right a b
+
+521
+00:21:04,110 --> 00:21:08,400
+[Music]
+
+522
+00:21:06,240 --> 00:21:10,000
+sigma b
+
+523
+00:21:08,400 --> 00:21:12,400
+r b
+
+524
+00:21:10,000 --> 00:21:14,000
+s b let's say
+
+525
+00:21:12,400 --> 00:21:15,600
+then
+
+526
+00:21:14,000 --> 00:21:18,559
+what is a
+
+527
+00:21:15,600 --> 00:21:22,559
+the union of a and b
+
+528
+00:21:18,559 --> 00:21:24,559
+we can easily construct a new grammar
+
+529
+00:21:22,559 --> 00:21:25,919
+and we do
+
+530
+00:21:24,559 --> 00:21:29,200
+all
+
+531
+00:21:25,919 --> 00:21:32,799
+variable union as our variable
+
+532
+00:21:29,200 --> 00:21:34,240
+and of course sigma union as our
+
+533
+00:21:32,799 --> 00:21:36,720
+alphabet
+
+534
+00:21:34,240 --> 00:21:36,720
+and then
+
+535
+00:21:37,200 --> 00:21:42,480
+we have all rules
+
+536
+00:21:40,480 --> 00:21:43,679
+add together
+
+537
+00:21:42,480 --> 00:21:46,799
+with
+
+538
+00:21:43,679 --> 00:21:48,240
+new rules or new rules
+
+539
+00:21:46,799 --> 00:21:51,039
+we need
+
+540
+00:21:48,240 --> 00:21:53,600
+a new variable okay so we need a new
+
+541
+00:21:51,039 --> 00:21:56,960
+variable
+
+542
+00:21:53,600 --> 00:21:56,960
+which is our
+
+543
+00:21:57,679 --> 00:22:04,880
+start variable for the grammar we are
+
+544
+00:22:01,679 --> 00:22:06,400
+going to construct and then
+
+545
+00:22:04,880 --> 00:22:09,919
+we union
+
+546
+00:22:06,400 --> 00:22:12,000
+r here what is r
+
+547
+00:22:09,919 --> 00:22:15,919
+r is
+
+548
+00:22:12,000 --> 00:22:17,520
+r contains two rules first rule is our s
+
+549
+00:22:15,919 --> 00:22:19,440
+may become
+
+550
+00:22:17,520 --> 00:22:24,559
+s a
+
+551
+00:22:19,440 --> 00:22:27,120
+second rule is s may become as b
+
+552
+00:22:24,559 --> 00:22:28,159
+then we finish the proof
+
+553
+00:22:27,120 --> 00:22:31,280
+right
+
+554
+00:22:28,159 --> 00:22:31,280
+why because you see
+
+555
+00:22:32,240 --> 00:22:35,919
+all strings
+
+556
+00:22:34,159 --> 00:22:37,840
+in language a
+
+557
+00:22:35,919 --> 00:22:41,039
+can be generated
+
+558
+00:22:37,840 --> 00:22:43,600
+from our star variable the first step of
+
+559
+00:22:41,039 --> 00:22:46,640
+derivation becomes s a
+
+560
+00:22:43,600 --> 00:22:49,360
+right then
+
+561
+00:22:46,640 --> 00:22:52,880
+it will become all
+
+562
+00:22:49,360 --> 00:22:52,880
+strings in a
+
+563
+00:22:53,039 --> 00:22:58,400
+and we can also go
+
+564
+00:22:55,120 --> 00:23:00,159
+this direction right uh this way
+
+565
+00:22:58,400 --> 00:23:03,120
+and it will go
+
+566
+00:23:00,159 --> 00:23:04,159
+you will derive all possible strings in
+
+567
+00:23:03,120 --> 00:23:04,960
+b
+
+568
+00:23:04,159 --> 00:23:07,440
+see
+
+569
+00:23:04,960 --> 00:23:11,200
+that's why
+
+570
+00:23:07,440 --> 00:23:15,760
+the new grammar g here the language of
+
+571
+00:23:11,200 --> 00:23:15,760
+the new grammar g here is a
+
+572
+00:23:17,520 --> 00:23:21,120
+and b
+
+573
+00:23:18,720 --> 00:23:21,120
+union
+
+574
+00:23:21,520 --> 00:23:25,679
+right actually we've seen this
+
+575
+00:23:24,320 --> 00:23:27,440
+right so
+
+576
+00:23:25,679 --> 00:23:29,520
+for uh
+
+577
+00:23:27,440 --> 00:23:32,960
+easier
+
+578
+00:23:29,520 --> 00:23:32,960
+we can write it this way
+
+579
+00:23:33,440 --> 00:23:38,960
+right so that'll be union of two regular
+
+580
+00:23:36,799 --> 00:23:40,799
+uh contextual languages
+
+581
+00:23:38,960 --> 00:23:44,159
+so as you can see
+
+582
+00:23:40,799 --> 00:23:45,440
+all context-free languages
+
+583
+00:23:44,159 --> 00:23:47,200
+can be
+
+584
+00:23:45,440 --> 00:23:50,240
+we can do the union
+
+585
+00:23:47,200 --> 00:23:51,919
+for finite context language via this
+
+586
+00:23:50,240 --> 00:23:54,400
+construction of
+
+587
+00:23:51,919 --> 00:23:54,400
+grammar
+
+588
+00:23:57,200 --> 00:24:03,039
+and you cannot do infinite because
+
+589
+00:24:00,080 --> 00:24:05,600
+you see when you do
+
+590
+00:24:03,039 --> 00:24:08,080
+the union of variables a union of
+
+591
+00:24:05,600 --> 00:24:10,320
+alphabet
+
+592
+00:24:08,080 --> 00:24:15,840
+if you have infinite context with
+
+593
+00:24:10,320 --> 00:24:18,720
+languages this number cannot be bounded
+
+594
+00:24:15,840 --> 00:24:21,679
+as a finite number it possibly goes
+
+595
+00:24:18,720 --> 00:24:25,360
+infinite so it doesn't work for infinite
+
+596
+00:24:21,679 --> 00:24:25,360
+country languages okay
+
+597
+00:24:26,159 --> 00:24:28,400
+then
+
+598
+00:24:28,799 --> 00:24:33,760
+the next operation is concatenation
+
+599
+00:24:32,400 --> 00:24:37,440
+so that's
+
+600
+00:24:33,760 --> 00:24:39,840
+very easy as we described previously
+
+601
+00:24:37,440 --> 00:24:41,520
+we have
+
+602
+00:24:39,840 --> 00:24:46,400
+ga and gb
+
+603
+00:24:41,520 --> 00:24:49,440
+right so we just need to we also uh do
+
+604
+00:24:46,400 --> 00:24:51,360
+the union of variables
+
+605
+00:24:49,440 --> 00:24:52,720
+alphabets rules and
+
+606
+00:24:51,360 --> 00:24:53,760
+stuff like that
+
+607
+00:24:52,720 --> 00:24:55,600
+and
+
+608
+00:24:53,760 --> 00:24:56,960
+we add
+
+609
+00:24:55,600 --> 00:25:00,240
+one
+
+610
+00:24:56,960 --> 00:25:02,480
+symbol sorry one variable
+
+611
+00:25:00,240 --> 00:25:02,480
+in
+
+612
+00:25:03,360 --> 00:25:06,880
+va and vb so that's our
+
+613
+00:25:06,000 --> 00:25:09,200
+uh
+
+614
+00:25:06,880 --> 00:25:12,880
+that's variable for our new grammar
+
+615
+00:25:09,200 --> 00:25:16,159
+and we copy the we we do the union on
+
+616
+00:25:12,880 --> 00:25:18,080
+alphabet then we just need to add
+
+617
+00:25:16,159 --> 00:25:21,520
+one new rule
+
+618
+00:25:18,080 --> 00:25:22,880
+as may become s a
+
+619
+00:25:21,520 --> 00:25:24,799
+s b
+
+620
+00:25:22,880 --> 00:25:28,240
+okay just one
+
+621
+00:25:24,799 --> 00:25:32,400
+and of course you need to
+
+622
+00:25:28,240 --> 00:25:35,919
+keep o rule a and row b
+
+623
+00:25:32,400 --> 00:25:37,520
+then s is our new star variable okay so
+
+624
+00:25:35,919 --> 00:25:38,880
+let's
+
+625
+00:25:37,520 --> 00:25:41,840
+do this
+
+626
+00:25:38,880 --> 00:25:43,039
+okay so that's our lingual sigma
+
+627
+00:25:41,840 --> 00:25:46,480
+grammar
+
+628
+00:25:43,039 --> 00:25:48,320
+then why it it can generate the
+
+629
+00:25:46,480 --> 00:25:50,640
+concentration of a and b
+
+630
+00:25:48,320 --> 00:25:52,960
+because you see
+
+631
+00:25:50,640 --> 00:25:56,480
+so start from our start variable here
+
+632
+00:25:52,960 --> 00:25:57,679
+the first derivation the first step of
+
+633
+00:25:56,480 --> 00:26:01,120
+derivation
+
+634
+00:25:57,679 --> 00:26:02,320
+is exactly s a as b
+
+635
+00:26:01,120 --> 00:26:05,760
+right
+
+636
+00:26:02,320 --> 00:26:06,799
+then s a may become all possible strings
+
+637
+00:26:05,760 --> 00:26:09,279
+in a
+
+638
+00:26:06,799 --> 00:26:11,360
+and s b becomes all possible strings in
+
+639
+00:26:09,279 --> 00:26:12,640
+b then
+
+640
+00:26:11,360 --> 00:26:16,240
+all this
+
+641
+00:26:12,640 --> 00:26:17,679
+is exactly the combination of a and b
+
+642
+00:26:16,240 --> 00:26:20,640
+okay
+
+643
+00:26:17,679 --> 00:26:24,799
+then if you have no problem
+
+644
+00:26:20,640 --> 00:26:27,600
+with union and concatenation
+
+645
+00:26:24,799 --> 00:26:29,279
+it's very easy to do the start start
+
+646
+00:26:27,600 --> 00:26:30,640
+operation
+
+647
+00:26:29,279 --> 00:26:32,080
+we don't even
+
+648
+00:26:30,640 --> 00:26:33,120
+need to add
+
+649
+00:26:32,080 --> 00:26:35,279
+new
+
+650
+00:26:33,120 --> 00:26:36,960
+level we just need to
+
+651
+00:26:35,279 --> 00:26:38,880
+add two
+
+652
+00:26:36,960 --> 00:26:40,799
+new rules
+
+653
+00:26:38,880 --> 00:26:42,159
+first rule is
+
+654
+00:26:40,799 --> 00:26:43,440
+sa
+
+655
+00:26:42,159 --> 00:26:45,440
+may become
+
+656
+00:26:43,440 --> 00:26:46,480
+empty string
+
+657
+00:26:45,440 --> 00:26:49,039
+right
+
+658
+00:26:46,480 --> 00:26:52,559
+because remember that for star operation
+
+659
+00:26:49,039 --> 00:26:56,080
+we have an artificial added empty string
+
+660
+00:26:52,559 --> 00:26:58,720
+into the language no matter the original
+
+661
+00:26:56,080 --> 00:27:02,400
+language has empty string or not
+
+662
+00:26:58,720 --> 00:27:04,400
+so we add this rule for that
+
+663
+00:27:02,400 --> 00:27:07,679
+then we just need to
+
+664
+00:27:04,400 --> 00:27:10,240
+add another rule to do the repeat
+
+665
+00:27:07,679 --> 00:27:13,360
+because a star
+
+666
+00:27:10,240 --> 00:27:14,720
+is what a 0 that is
+
+667
+00:27:13,360 --> 00:27:17,279
+this one
+
+668
+00:27:14,720 --> 00:27:17,279
+union
+
+669
+00:27:17,600 --> 00:27:23,120
+a right union a square
+
+670
+00:27:21,520 --> 00:27:24,480
+cubic
+
+671
+00:27:23,120 --> 00:27:25,360
+etc
+
+672
+00:27:24,480 --> 00:27:27,600
+so
+
+673
+00:27:25,360 --> 00:27:30,159
+we just need to add
+
+674
+00:27:27,600 --> 00:27:30,159
+this rule
+
+675
+00:27:31,279 --> 00:27:38,159
+then that's it right
+
+676
+00:27:34,320 --> 00:27:39,200
+because we can use this rule indefinite
+
+677
+00:27:38,159 --> 00:27:41,360
+times
+
+678
+00:27:39,200 --> 00:27:43,279
+so we can create square
+
+679
+00:27:41,360 --> 00:27:46,159
+cubic etc
+
+680
+00:27:43,279 --> 00:27:49,279
+right if you don't understand here you
+
+681
+00:27:46,159 --> 00:27:51,679
+can think that firstly
+
+682
+00:27:49,279 --> 00:27:52,880
+sn may directly become epsom right
+
+683
+00:27:51,679 --> 00:27:55,440
+that's here
+
+684
+00:27:52,880 --> 00:27:59,440
+and the sa can
+
+685
+00:27:55,440 --> 00:27:59,440
+become all strings
+
+686
+00:27:59,679 --> 00:28:02,880
+in a
+
+687
+00:28:01,200 --> 00:28:06,320
+that's here
+
+688
+00:28:02,880 --> 00:28:08,880
+right if you don't use this rule then
+
+689
+00:28:06,320 --> 00:28:12,159
+the original language can be generated
+
+690
+00:28:08,880 --> 00:28:13,440
+then you if you use this rule once
+
+691
+00:28:12,159 --> 00:28:16,000
+as a
+
+692
+00:28:13,440 --> 00:28:19,360
+as a and then you don't you don't want
+
+693
+00:28:16,000 --> 00:28:21,679
+to use this rule anymore you will get a
+
+694
+00:28:19,360 --> 00:28:21,679
+square
+
+695
+00:28:22,320 --> 00:28:26,240
+right sorry
+
+696
+00:28:25,039 --> 00:28:28,960
+square
+
+697
+00:28:26,240 --> 00:28:30,640
+then if you use this rule
+
+698
+00:28:28,960 --> 00:28:33,279
+twice like
+
+699
+00:28:30,640 --> 00:28:33,279
+first time
+
+700
+00:28:35,279 --> 00:28:40,480
+second time then you get
+
+701
+00:28:38,240 --> 00:28:41,279
+three cubic right
+
+702
+00:28:40,480 --> 00:28:44,399
+so
+
+703
+00:28:41,279 --> 00:28:48,320
+you can use the this row indefinite
+
+704
+00:28:44,399 --> 00:28:50,799
+times to create all possibility here
+
+705
+00:28:48,320 --> 00:28:52,960
+that's why
+
+706
+00:28:50,799 --> 00:28:55,200
+the class of
+
+707
+00:28:52,960 --> 00:29:00,080
+context free languages is closed under
+
+708
+00:28:55,200 --> 00:29:00,080
+the operation of star star operation
+
+709
+00:29:03,039 --> 00:29:07,200
+then next
+
+710
+00:29:04,799 --> 00:29:09,760
+the reversal
+
+711
+00:29:07,200 --> 00:29:11,679
+we've defined reversal in
+
+712
+00:29:09,760 --> 00:29:16,720
+chapter one so we don't do we don't want
+
+713
+00:29:11,679 --> 00:29:16,720
+to do that again okay so for reversal
+
+714
+00:29:16,799 --> 00:29:20,640
+in context free language is easier to
+
+715
+00:29:19,840 --> 00:29:21,840
+well
+
+716
+00:29:20,640 --> 00:29:25,200
+similarly
+
+717
+00:29:21,840 --> 00:29:28,000
+easy to prove because you just need to
+
+718
+00:29:25,200 --> 00:29:30,720
+rewrite all all the rules
+
+719
+00:29:28,000 --> 00:29:32,320
+that say you have a grammar
+
+720
+00:29:30,720 --> 00:29:34,399
+for the language a
+
+721
+00:29:32,320 --> 00:29:37,360
+and you have variable a
+
+722
+00:29:34,399 --> 00:29:39,279
+you have sigma a you have
+
+723
+00:29:37,360 --> 00:29:41,360
+row a and
+
+724
+00:29:39,279 --> 00:29:42,159
+star variable a right
+
+725
+00:29:41,360 --> 00:29:46,320
+then
+
+726
+00:29:42,159 --> 00:29:46,320
+for all the rules here you have the
+
+727
+00:29:49,279 --> 00:29:55,679
+ahead and may become a body right you
+
+728
+00:29:53,200 --> 00:29:58,720
+just need to rewrite all the rule the
+
+729
+00:29:55,679 --> 00:29:59,679
+body to the reversal then you will get
+
+730
+00:29:58,720 --> 00:30:03,919
+that
+
+731
+00:29:59,679 --> 00:30:05,200
+for expo for an e easy example like 0 1
+
+732
+00:30:03,919 --> 00:30:05,400
+and 1
+
+733
+00:30:05,200 --> 00:30:06,559
+and
+
+734
+00:30:05,400 --> 00:30:07,600
+[Music]
+
+735
+00:30:06,559 --> 00:30:08,399
+ok
+
+736
+00:30:07,600 --> 00:30:10,240
+then
+
+737
+00:30:08,399 --> 00:30:11,520
+the rule is like
+
+738
+00:30:10,240 --> 00:30:14,080
+sigma
+
+739
+00:30:11,520 --> 00:30:16,080
+zero s one right
+
+740
+00:30:14,080 --> 00:30:17,919
+then we just need to reverse
+
+741
+00:30:16,080 --> 00:30:20,559
+these and this
+
+742
+00:30:17,919 --> 00:30:22,880
+so since empty string there's no
+
+743
+00:30:20,559 --> 00:30:24,480
+difference here and
+
+744
+00:30:22,880 --> 00:30:25,520
+one as
+
+745
+00:30:24,480 --> 00:30:28,080
+visual
+
+746
+00:30:25,520 --> 00:30:31,840
+right then you will get
+
+747
+00:30:28,080 --> 00:30:31,840
+the reversal of the language
+
+748
+00:30:33,679 --> 00:30:39,200
+okay so that will be
+
+749
+00:30:35,520 --> 00:30:41,120
+assume a is here and the ar
+
+750
+00:30:39,200 --> 00:30:43,520
+is here
+
+751
+00:30:41,120 --> 00:30:45,919
+so you just need to rewrite
+
+752
+00:30:43,520 --> 00:30:49,279
+or you're not you just need to reverse
+
+753
+00:30:45,919 --> 00:30:52,720
+the body of each rule you will get
+
+754
+00:30:49,279 --> 00:30:54,880
+the reversal of that language okay so
+
+755
+00:30:52,720 --> 00:30:59,519
+the class of context-free language is
+
+756
+00:30:54,880 --> 00:30:59,519
+closed under the operation of reversal
+
+757
+00:31:00,960 --> 00:31:06,159
+okay
+
+758
+00:31:02,799 --> 00:31:08,480
+soho for homomorphism
+
+759
+00:31:06,159 --> 00:31:11,440
+well we don't really need to prove it
+
+760
+00:31:08,480 --> 00:31:14,480
+because i just described that
+
+761
+00:31:11,440 --> 00:31:16,000
+homomorphism is a special case of
+
+762
+00:31:14,480 --> 00:31:17,360
+substitution
+
+763
+00:31:16,000 --> 00:31:19,919
+and
+
+764
+00:31:17,360 --> 00:31:22,480
+if you have a for homomorphism
+
+765
+00:31:19,919 --> 00:31:24,080
+which is that
+
+766
+00:31:22,480 --> 00:31:28,399
+for every
+
+767
+00:31:24,080 --> 00:31:30,240
+symbol in the given alphabet for example
+
+768
+00:31:28,399 --> 00:31:33,519
+zero
+
+769
+00:31:30,240 --> 00:31:36,799
+the homomorphism map zero into a
+
+770
+00:31:33,519 --> 00:31:38,720
+string right for example this string a a
+
+771
+00:31:36,799 --> 00:31:40,960
+or one two
+
+772
+00:31:38,720 --> 00:31:42,559
+a b b c
+
+773
+00:31:40,960 --> 00:31:47,519
+something like that
+
+774
+00:31:42,559 --> 00:31:50,799
+and since it mapped to only one string
+
+775
+00:31:47,519 --> 00:31:53,600
+if you consider one string as a
+
+776
+00:31:50,799 --> 00:31:53,600
+set of string
+
+777
+00:31:53,760 --> 00:31:57,039
+then
+
+778
+00:31:55,360 --> 00:31:59,120
+this language
+
+779
+00:31:57,039 --> 00:32:01,279
+is
+
+780
+00:31:59,120 --> 00:32:03,519
+is a context free context free language
+
+781
+00:32:01,279 --> 00:32:06,880
+actually it's a regular language right
+
+782
+00:32:03,519 --> 00:32:08,240
+because every language has finite number
+
+783
+00:32:06,880 --> 00:32:10,960
+of strings
+
+784
+00:32:08,240 --> 00:32:13,519
+actually it's a regular language so it
+
+785
+00:32:10,960 --> 00:32:15,840
+is definitely context free language so
+
+786
+00:32:13,519 --> 00:32:18,640
+it is also context-free language
+
+787
+00:32:15,840 --> 00:32:19,679
+and then the homomorphism
+
+788
+00:32:18,640 --> 00:32:21,679
+actually
+
+789
+00:32:19,679 --> 00:32:22,640
+satisfies the definition
+
+790
+00:32:21,679 --> 00:32:26,559
+for
+
+791
+00:32:22,640 --> 00:32:29,840
+the our crucial property of substitution
+
+792
+00:32:26,559 --> 00:32:29,840
+so homomorphism
+
+793
+00:32:31,360 --> 00:32:36,080
+i should say so the class of
+
+794
+00:32:33,360 --> 00:32:40,360
+context-free languages is closed
+
+795
+00:32:36,080 --> 00:32:40,360
+under the operation of homomorphism
+
+796
+00:32:42,799 --> 00:32:46,559
+okay
+
+797
+00:32:44,000 --> 00:32:47,919
+and if you want to directly proof it it
+
+798
+00:32:46,559 --> 00:32:48,960
+you can also
+
+799
+00:32:47,919 --> 00:32:51,519
+uh
+
+800
+00:32:48,960 --> 00:32:54,640
+use that actually i'll use the
+
+801
+00:32:51,519 --> 00:32:54,640
+homomorphism here
+
+802
+00:32:54,840 --> 00:33:00,240
+okay so assume that a is a context free
+
+803
+00:32:58,399 --> 00:33:01,200
+language
+
+804
+00:33:00,240 --> 00:33:04,000
+then
+
+805
+00:33:01,200 --> 00:33:04,960
+there will be rules right
+
+806
+00:33:04,000 --> 00:33:08,240
+rules
+
+807
+00:33:04,960 --> 00:33:10,799
+then you just need to rewrite
+
+808
+00:33:08,240 --> 00:33:13,760
+within the rules you rewrite the
+
+809
+00:33:10,799 --> 00:33:13,760
+terminal part
+
+810
+00:33:13,919 --> 00:33:18,640
+and replace them with the string mapped
+
+811
+00:33:17,200 --> 00:33:19,840
+two
+
+812
+00:33:18,640 --> 00:33:22,840
+okay so
+
+813
+00:33:19,840 --> 00:33:24,559
+for exactly this example how do i do
+
+814
+00:33:22,840 --> 00:33:28,000
+that
+
+815
+00:33:24,559 --> 00:33:28,000
+again let's use the
+
+816
+00:33:28,159 --> 00:33:31,279
+language here
+
+817
+00:33:31,600 --> 00:33:36,640
+then we have two rules right
+
+818
+00:33:34,320 --> 00:33:41,120
+and epsilon is is okay there is no
+
+819
+00:33:36,640 --> 00:33:44,240
+terminals actually and for this rule
+
+820
+00:33:41,120 --> 00:33:47,840
+we replace zero as a a
+
+821
+00:33:44,240 --> 00:33:49,440
+and one as abbc so
+
+822
+00:33:47,840 --> 00:33:50,960
+we rewrite
+
+823
+00:33:49,440 --> 00:33:56,559
+a rule as
+
+824
+00:33:50,960 --> 00:33:56,559
+a s a b b c that's it
+
+825
+00:33:56,640 --> 00:34:02,799
+see for the for the rules for the bodies
+
+826
+00:34:00,080 --> 00:34:04,880
+of the rules you just need to rewrite
+
+827
+00:34:02,799 --> 00:34:07,679
+all the terminals
+
+828
+00:34:04,880 --> 00:34:11,359
+as the string that's
+
+829
+00:34:07,679 --> 00:34:12,480
+mapped to by the homomorphism then you
+
+830
+00:34:11,359 --> 00:34:14,960
+can get
+
+831
+00:34:12,480 --> 00:34:16,320
+h of a
+
+832
+00:34:14,960 --> 00:34:20,240
+and of course
+
+833
+00:34:16,320 --> 00:34:24,159
+since h of a can be described by the
+
+834
+00:34:20,240 --> 00:34:26,000
+changed by the modified rules like this
+
+835
+00:34:24,159 --> 00:34:27,040
+it is a context-free
+
+836
+00:34:26,000 --> 00:34:29,280
+language
+
+837
+00:34:27,040 --> 00:34:32,720
+okay so a class of context with
+
+838
+00:34:29,280 --> 00:34:35,839
+languages is closed under the operation
+
+839
+00:34:32,720 --> 00:34:35,839
+of homomorphism
+
+840
+00:34:38,000 --> 00:34:42,560
+okay
+
+841
+00:34:39,359 --> 00:34:45,599
+then for inverse homomorphism uh if you
+
+842
+00:34:42,560 --> 00:34:45,599
+are interested in
+
+843
+00:34:45,760 --> 00:34:50,159
+uh how to prove
+
+844
+00:34:47,599 --> 00:34:52,320
+the closure property you can look up uh
+
+845
+00:34:50,159 --> 00:34:54,879
+in on the internet we will
+
+846
+00:34:52,320 --> 00:34:56,639
+omit that proof here because we don't
+
+847
+00:34:54,879 --> 00:34:59,359
+have further use for inverse
+
+848
+00:34:56,639 --> 00:35:00,880
+homomorphism in our
+
+849
+00:34:59,359 --> 00:35:03,920
+uh
+
+850
+00:35:00,880 --> 00:35:06,160
+in our course this semester
+
+851
+00:35:03,920 --> 00:35:06,160
+and
+
+852
+00:35:06,320 --> 00:35:11,599
+and
+
+853
+00:35:08,560 --> 00:35:13,680
+the proof idea for inverse hormone is
+
+854
+00:35:11,599 --> 00:35:16,720
+basically
+
+855
+00:35:13,680 --> 00:35:19,760
+the ideas we introduce in the proof for
+
+856
+00:35:16,720 --> 00:35:22,800
+regular languages but since for inverse
+
+857
+00:35:19,760 --> 00:35:25,040
+homomorphism we we are using pda if you
+
+858
+00:35:22,800 --> 00:35:26,720
+remember
+
+859
+00:35:25,040 --> 00:35:29,440
+that
+
+860
+00:35:26,720 --> 00:35:32,480
+in regular language we use
+
+861
+00:35:29,440 --> 00:35:35,119
+dfa so that's pretty easy you just need
+
+862
+00:35:32,480 --> 00:35:36,800
+to construct a new
+
+863
+00:35:35,119 --> 00:35:39,280
+machine for that
+
+864
+00:35:36,800 --> 00:35:42,839
+but for context free language
+
+865
+00:35:39,280 --> 00:35:46,640
+we use pda here and you you need more
+
+866
+00:35:42,839 --> 00:35:49,440
+constructions and that's too much for
+
+867
+00:35:46,640 --> 00:35:51,680
+for here so i will i mean that if you
+
+868
+00:35:49,440 --> 00:35:52,880
+are interested it's pretty easy to find
+
+869
+00:35:51,680 --> 00:35:56,160
+a
+
+870
+00:35:52,880 --> 00:35:57,520
+proof on the web okay
+
+871
+00:35:56,160 --> 00:36:00,000
+so
+
+872
+00:35:57,520 --> 00:36:01,200
+next one is intersection
+
+873
+00:36:00,000 --> 00:36:03,839
+okay
+
+874
+00:36:01,200 --> 00:36:05,599
+but intersection you we will know that
+
+875
+00:36:03,839 --> 00:36:08,240
+um
+
+876
+00:36:05,599 --> 00:36:09,599
+that let's say
+
+877
+00:36:08,240 --> 00:36:10,880
+if a and b
+
+878
+00:36:09,599 --> 00:36:13,680
+are
+
+879
+00:36:10,880 --> 00:36:16,160
+regular context-free languages
+
+880
+00:36:13,680 --> 00:36:16,160
+actually
+
+881
+00:36:16,560 --> 00:36:22,240
+the intersection of two
+
+882
+00:36:19,359 --> 00:36:23,599
+context-free language
+
+883
+00:36:22,240 --> 00:36:24,720
+may not
+
+884
+00:36:23,599 --> 00:36:27,599
+maybe
+
+885
+00:36:24,720 --> 00:36:28,640
+and may not be countess three languages
+
+886
+00:36:27,599 --> 00:36:30,560
+okay
+
+887
+00:36:28,640 --> 00:36:33,200
+so firstly it may be
+
+888
+00:36:30,560 --> 00:36:35,520
+for example if you have the same context
+
+889
+00:36:33,200 --> 00:36:38,079
+free language the intersection of the
+
+890
+00:36:35,520 --> 00:36:41,040
+same language and if a is context three
+
+891
+00:36:38,079 --> 00:36:44,480
+then a the intersection of a and a is of
+
+892
+00:36:41,040 --> 00:36:46,720
+course context-free right there's no
+
+893
+00:36:44,480 --> 00:36:48,960
+need to discuss that
+
+894
+00:36:46,720 --> 00:36:51,200
+and
+
+895
+00:36:48,960 --> 00:36:54,560
+it is possible that two-context-free
+
+896
+00:36:51,200 --> 00:36:56,320
+language the
+
+897
+00:36:54,560 --> 00:36:58,960
+intersection of two context free
+
+898
+00:36:56,320 --> 00:37:01,920
+language is not context free let's give
+
+899
+00:36:58,960 --> 00:37:04,480
+uh let's have an example here okay
+
+900
+00:37:01,920 --> 00:37:08,880
+so if you remember we uh
+
+901
+00:37:04,480 --> 00:37:12,000
+last time we are pro uh we were proving
+
+902
+00:37:08,880 --> 00:37:14,079
+that there is inherently ambiguous
+
+903
+00:37:12,000 --> 00:37:17,440
+context-free languages right
+
+904
+00:37:14,079 --> 00:37:18,480
+so that that language is a
+
+905
+00:37:17,440 --> 00:37:20,240
+i
+
+906
+00:37:18,480 --> 00:37:24,480
+b j
+
+907
+00:37:20,240 --> 00:37:27,520
+c k and what
+
+908
+00:37:24,480 --> 00:37:29,359
+i equal to j or
+
+909
+00:37:27,520 --> 00:37:30,800
+j
+
+910
+00:37:29,359 --> 00:37:32,000
+equal to
+
+911
+00:37:30,800 --> 00:37:34,880
+k
+
+912
+00:37:32,000 --> 00:37:37,680
+and if you remember
+
+913
+00:37:34,880 --> 00:37:39,520
+uh we firstly proved that this language
+
+914
+00:37:37,680 --> 00:37:41,599
+is a context free language by
+
+915
+00:37:39,520 --> 00:37:44,320
+constructing the grammar right
+
+916
+00:37:41,599 --> 00:37:48,720
+so for the first part here
+
+917
+00:37:44,320 --> 00:37:52,000
+we have a become bc a may become bc b
+
+918
+00:37:48,720 --> 00:37:53,280
+may become let's say epsilon
+
+919
+00:37:52,000 --> 00:37:54,240
+a b
+
+920
+00:37:53,280 --> 00:37:56,079
+b
+
+921
+00:37:54,240 --> 00:37:57,200
+and c may become
+
+922
+00:37:56,079 --> 00:37:58,560
+epsilon
+
+923
+00:37:57,200 --> 00:37:59,599
+c a
+
+924
+00:37:58,560 --> 00:38:02,000
+right
+
+925
+00:37:59,599 --> 00:38:02,000
+and then
+
+926
+00:38:03,040 --> 00:38:05,839
+d
+
+927
+00:38:04,240 --> 00:38:07,920
+e f
+
+928
+00:38:05,839 --> 00:38:10,880
+for the second part
+
+929
+00:38:07,920 --> 00:38:12,000
+and e may become
+
+930
+00:38:10,880 --> 00:38:13,200
+let's say
+
+931
+00:38:12,000 --> 00:38:14,000
+epsilon
+
+932
+00:38:13,200 --> 00:38:15,119
+a
+
+933
+00:38:14,000 --> 00:38:17,440
+e
+
+934
+00:38:15,119 --> 00:38:19,040
+and f may become
+
+935
+00:38:17,440 --> 00:38:21,440
+epsilon
+
+936
+00:38:19,040 --> 00:38:22,320
+b f c
+
+937
+00:38:21,440 --> 00:38:25,680
+right
+
+938
+00:38:22,320 --> 00:38:30,000
+and we say that uh we can do the union
+
+939
+00:38:25,680 --> 00:38:33,280
+here so add one more variable
+
+940
+00:38:30,000 --> 00:38:35,599
+become a or d and 2 rule
+
+941
+00:38:33,280 --> 00:38:37,359
+that's union right
+
+942
+00:38:35,599 --> 00:38:40,480
+and
+
+943
+00:38:37,359 --> 00:38:40,480
+if you think about it
+
+944
+00:38:40,880 --> 00:38:45,040
+the left part
+
+945
+00:38:43,040 --> 00:38:46,400
+the left part
+
+946
+00:38:45,040 --> 00:38:47,280
+will generate
+
+947
+00:38:46,400 --> 00:38:48,160
+a
+
+948
+00:38:47,280 --> 00:38:49,040
+i
+
+949
+00:38:48,160 --> 00:38:50,560
+b
+
+950
+00:38:49,040 --> 00:38:51,359
+i c
+
+951
+00:38:50,560 --> 00:38:53,359
+j
+
+952
+00:38:51,359 --> 00:38:55,920
+right
+
+953
+00:38:53,359 --> 00:38:55,920
+and the
+
+954
+00:38:56,720 --> 00:39:01,359
+right hand side will generate a i b
+
+955
+00:39:00,480 --> 00:39:02,720
+j
+
+956
+00:39:01,359 --> 00:39:04,320
+c j
+
+957
+00:39:02,720 --> 00:39:06,640
+something like that
+
+958
+00:39:04,320 --> 00:39:09,520
+and consider
+
+959
+00:39:06,640 --> 00:39:09,520
+the language
+
+960
+00:39:10,000 --> 00:39:15,040
+of
+
+961
+00:39:12,160 --> 00:39:16,800
+constructed by doing the
+
+962
+00:39:15,040 --> 00:39:19,040
+intersection of
+
+963
+00:39:16,800 --> 00:39:22,960
+the two languages
+
+964
+00:39:19,040 --> 00:39:26,320
+okay so what do you get you will get a
+
+965
+00:39:22,960 --> 00:39:27,760
+and b and c n
+
+966
+00:39:26,320 --> 00:39:30,880
+and
+
+967
+00:39:27,760 --> 00:39:32,960
+equal to or greater than zero
+
+968
+00:39:30,880 --> 00:39:34,800
+right
+
+969
+00:39:32,960 --> 00:39:35,760
+so you see
+
+970
+00:39:34,800 --> 00:39:37,520
+two
+
+971
+00:39:35,760 --> 00:39:39,680
+regular languages
+
+972
+00:39:37,520 --> 00:39:40,960
+that's let's say uh
+
+973
+00:39:39,680 --> 00:39:42,720
+a
+
+974
+00:39:40,960 --> 00:39:44,320
+and b
+
+975
+00:39:42,720 --> 00:39:47,280
+a
+
+976
+00:39:44,320 --> 00:39:50,640
+the union of a and b is regular no
+
+977
+00:39:47,280 --> 00:39:51,920
+problem but for this particular example
+
+978
+00:39:50,640 --> 00:39:55,119
+a
+
+979
+00:39:51,920 --> 00:39:56,720
+and b the intersection of a and b is not
+
+980
+00:39:55,119 --> 00:39:58,079
+context free
+
+981
+00:39:56,720 --> 00:40:00,880
+so
+
+982
+00:39:58,079 --> 00:40:04,960
+there is no closure probability
+
+983
+00:40:00,880 --> 00:40:07,040
+generally for the intersection of two
+
+984
+00:40:04,960 --> 00:40:09,680
+context-free languages
+
+985
+00:40:07,040 --> 00:40:13,119
+okay so this one we have proved that
+
+986
+00:40:09,680 --> 00:40:13,119
+it's not contestant
+
+987
+00:40:13,839 --> 00:40:16,160
+then
+
+988
+00:40:16,480 --> 00:40:22,400
+the intersection here is not between two
+
+989
+00:40:20,079 --> 00:40:25,599
+context-free languages
+
+990
+00:40:22,400 --> 00:40:28,560
+it is a context free language
+
+991
+00:40:25,599 --> 00:40:29,680
+and a regular language
+
+992
+00:40:28,560 --> 00:40:32,319
+okay
+
+993
+00:40:29,680 --> 00:40:35,359
+so if you have a country language and a
+
+994
+00:40:32,319 --> 00:40:37,359
+regular language you can do intersection
+
+995
+00:40:35,359 --> 00:40:39,839
+of them you still get a context free
+
+996
+00:40:37,359 --> 00:40:43,280
+language okay
+
+997
+00:40:39,839 --> 00:40:43,280
+then how do we prove that
+
+998
+00:40:43,680 --> 00:40:49,359
+and we can prove that by contro using
+
+999
+00:40:46,640 --> 00:40:52,960
+pda and dfa
+
+1000
+00:40:49,359 --> 00:40:55,680
+so the proof idea is that this for a you
+
+1001
+00:40:52,960 --> 00:40:57,920
+have a pda right
+
+1002
+00:40:55,680 --> 00:41:01,440
+and what is a pda
+
+1003
+00:40:57,920 --> 00:41:02,960
+a pda is essentially
+
+1004
+00:41:01,440 --> 00:41:05,280
+an nfa
+
+1005
+00:41:02,960 --> 00:41:07,839
+right
+
+1006
+00:41:05,280 --> 00:41:07,839
+and nfa
+
+1007
+00:41:08,400 --> 00:41:11,680
+then
+
+1008
+00:41:10,160 --> 00:41:13,599
+with
+
+1009
+00:41:11,680 --> 00:41:15,599
+a stack
+
+1010
+00:41:13,599 --> 00:41:18,640
+right that's a pda
+
+1011
+00:41:15,599 --> 00:41:20,240
+and for the uh for regular language r
+
+1012
+00:41:18,640 --> 00:41:22,560
+here
+
+1013
+00:41:20,240 --> 00:41:24,160
+pdf4a
+
+1014
+00:41:22,560 --> 00:41:28,960
+okay for
+
+1015
+00:41:24,160 --> 00:41:28,960
+regular language r here you have a dfa
+
+1016
+00:41:31,839 --> 00:41:37,839
+okay so what is dfa
+
+1017
+00:41:34,400 --> 00:41:41,200
+you know that you have a star uh start
+
+1018
+00:41:37,839 --> 00:41:43,280
+start state and several states
+
+1019
+00:41:41,200 --> 00:41:45,839
+and perhaps some
+
+1020
+00:41:43,280 --> 00:41:46,880
+accept states something like that
+
+1021
+00:41:45,839 --> 00:41:48,400
+right
+
+1022
+00:41:46,880 --> 00:41:52,160
+and you just need to
+
+1023
+00:41:48,400 --> 00:41:53,119
+combine these two machines
+
+1024
+00:41:52,160 --> 00:41:55,920
+to do
+
+1025
+00:41:53,119 --> 00:41:59,119
+intersection and how to do that
+
+1026
+00:41:55,920 --> 00:42:02,400
+the construction is
+
+1027
+00:41:59,119 --> 00:42:04,400
+very similar to the first theorem we
+
+1028
+00:42:02,400 --> 00:42:06,720
+prove
+
+1029
+00:42:04,400 --> 00:42:09,359
+the closure property for
+
+1030
+00:42:06,720 --> 00:42:13,599
+regular language under the operation of
+
+1031
+00:42:09,359 --> 00:42:16,800
+union we combine two dfas right
+
+1032
+00:42:13,599 --> 00:42:19,280
+we do a cartesian product of the states
+
+1033
+00:42:16,800 --> 00:42:21,520
+of two dfas and
+
+1034
+00:42:19,280 --> 00:42:22,560
+we just combine them and look up where
+
+1035
+00:42:21,520 --> 00:42:25,440
+to go
+
+1036
+00:42:22,560 --> 00:42:27,280
+and here we do the same thing
+
+1037
+00:42:25,440 --> 00:42:30,920
+see
+
+1038
+00:42:27,280 --> 00:42:30,920
+for this uh
+
+1039
+00:42:33,119 --> 00:42:36,079
+for this state
+
+1040
+00:42:36,800 --> 00:42:40,400
+for example one
+
+1041
+00:42:38,960 --> 00:42:42,960
+and let's say
+
+1042
+00:42:40,400 --> 00:42:46,560
+uh that we have n
+
+1043
+00:42:42,960 --> 00:42:47,520
+n state here and m state here
+
+1044
+00:42:46,560 --> 00:42:49,200
+okay
+
+1045
+00:42:47,520 --> 00:42:50,800
+so
+
+1046
+00:42:49,200 --> 00:42:53,760
+we
+
+1047
+00:42:50,800 --> 00:42:56,079
+construct a state set of
+
+1048
+00:42:53,760 --> 00:42:57,520
+so many states actually we also do a
+
+1049
+00:42:56,079 --> 00:42:59,359
+cartesian product
+
+1050
+00:42:57,520 --> 00:43:01,599
+then
+
+1051
+00:42:59,359 --> 00:43:04,160
+you will have something like
+
+1052
+00:43:01,599 --> 00:43:05,839
+1 in the original
+
+1053
+00:43:04,160 --> 00:43:08,000
+pda a
+
+1054
+00:43:05,839 --> 00:43:08,000
+and
+
+1055
+00:43:08,160 --> 00:43:14,560
+1 for dfa
+
+1056
+00:43:10,960 --> 00:43:15,839
+okay then one two
+
+1057
+00:43:14,560 --> 00:43:16,880
+two one
+
+1058
+00:43:15,839 --> 00:43:18,160
+and
+
+1059
+00:43:16,880 --> 00:43:20,319
+and then two
+
+1060
+00:43:18,160 --> 00:43:23,040
+one
+
+1061
+00:43:20,319 --> 00:43:25,520
+two and
+
+1062
+00:43:23,040 --> 00:43:27,839
+and n one
+
+1063
+00:43:25,520 --> 00:43:27,839
+sorry
+
+1064
+00:43:29,520 --> 00:43:34,319
+n1
+
+1065
+00:43:32,000 --> 00:43:36,000
+and m right
+
+1066
+00:43:34,319 --> 00:43:38,560
+and for this row
+
+1067
+00:43:36,000 --> 00:43:38,560
+for rows
+
+1068
+00:43:39,200 --> 00:43:42,720
+for rows is like
+
+1069
+00:43:41,200 --> 00:43:46,400
+the dfa
+
+1070
+00:43:42,720 --> 00:43:48,000
+state for columns it's like an fa a tda
+
+1071
+00:43:46,400 --> 00:43:49,200
+state right
+
+1072
+00:43:48,000 --> 00:43:51,599
+then
+
+1073
+00:43:49,200 --> 00:43:54,480
+you just need to merge
+
+1074
+00:43:51,599 --> 00:43:56,079
+the transition function as we have
+
+1075
+00:43:54,480 --> 00:43:58,240
+in the construction
+
+1076
+00:43:56,079 --> 00:43:59,760
+for the
+
+1077
+00:43:58,240 --> 00:44:01,680
+union
+
+1078
+00:43:59,760 --> 00:44:05,520
+of two regular language
+
+1079
+00:44:01,680 --> 00:44:08,880
+okay so for example for pda's
+
+1080
+00:44:05,520 --> 00:44:10,400
+transition function it describes from
+
+1081
+00:44:08,880 --> 00:44:12,079
+some state
+
+1082
+00:44:10,400 --> 00:44:13,440
+and
+
+1083
+00:44:12,079 --> 00:44:15,680
+some symbol
+
+1084
+00:44:13,440 --> 00:44:15,680
+and
+
+1085
+00:44:16,000 --> 00:44:19,680
+you have the
+
+1086
+00:44:17,599 --> 00:44:23,800
+operation on stack
+
+1087
+00:44:19,680 --> 00:44:23,800
+and since it's a
+
+1088
+00:44:24,319 --> 00:44:29,040
+since it's a non-deterministic
+
+1089
+00:44:25,920 --> 00:44:30,319
+computation you may have several next
+
+1090
+00:44:29,040 --> 00:44:31,920
+steps right
+
+1091
+00:44:30,319 --> 00:44:33,200
+so let's say
+
+1092
+00:44:31,920 --> 00:44:37,359
+q1
+
+1093
+00:44:33,200 --> 00:44:38,160
+qi let's say you may go to q
+
+1094
+00:44:37,359 --> 00:44:39,520
+j
+
+1095
+00:44:38,160 --> 00:44:43,119
+and
+
+1096
+00:44:39,520 --> 00:44:44,640
+nothing or q
+
+1097
+00:44:43,119 --> 00:44:46,400
+k
+
+1098
+00:44:44,640 --> 00:44:48,240
+and uh push
+
+1099
+00:44:46,400 --> 00:44:50,319
+t2
+
+1100
+00:44:48,240 --> 00:44:52,160
+and etc
+
+1101
+00:44:50,319 --> 00:44:54,480
+then
+
+1102
+00:44:52,160 --> 00:44:56,160
+you just need to
+
+1103
+00:44:54,480 --> 00:45:00,480
+look at dfa
+
+1104
+00:44:56,160 --> 00:45:01,920
+dfa will have like transition
+
+1105
+00:45:00,480 --> 00:45:02,839
+uh
+
+1106
+00:45:01,920 --> 00:45:05,119
+p
+
+1107
+00:45:02,839 --> 00:45:07,280
+i a
+
+1108
+00:45:05,119 --> 00:45:10,720
+goes to well
+
+1109
+00:45:07,280 --> 00:45:10,720
+that's definitely goes to
+
+1110
+00:45:11,280 --> 00:45:14,880
+p j
+
+1111
+00:45:12,640 --> 00:45:16,480
+right because dfa you have only one way
+
+1112
+00:45:14,880 --> 00:45:17,760
+to go
+
+1113
+00:45:16,480 --> 00:45:21,440
+so
+
+1114
+00:45:17,760 --> 00:45:23,200
+you when you combine these states as one
+
+1115
+00:45:21,440 --> 00:45:27,200
+state
+
+1116
+00:45:23,200 --> 00:45:31,440
+you just and for symbol a here
+
+1117
+00:45:27,200 --> 00:45:33,200
+you just need to make the state here
+
+1118
+00:45:31,440 --> 00:45:35,680
+q j
+
+1119
+00:45:33,200 --> 00:45:36,880
+p j
+
+1120
+00:45:35,680 --> 00:45:38,240
+epsilon
+
+1121
+00:45:36,880 --> 00:45:40,079
+and
+
+1122
+00:45:38,240 --> 00:45:42,240
+q k
+
+1123
+00:45:40,079 --> 00:45:43,599
+p j
+
+1124
+00:45:42,240 --> 00:45:45,119
+t 2
+
+1125
+00:45:43,599 --> 00:45:48,640
+etc
+
+1126
+00:45:45,119 --> 00:45:50,000
+that is you just need to
+
+1127
+00:45:48,640 --> 00:45:54,000
+do
+
+1128
+00:45:50,000 --> 00:45:55,520
+essentially the original pda
+
+1129
+00:45:54,000 --> 00:45:57,839
+separation
+
+1130
+00:45:55,520 --> 00:45:59,200
+but
+
+1131
+00:45:57,839 --> 00:46:00,720
+you use
+
+1132
+00:45:59,200 --> 00:46:02,160
+your
+
+1133
+00:46:00,720 --> 00:46:04,800
+states
+
+1134
+00:46:02,160 --> 00:46:09,520
+to also keep track
+
+1135
+00:46:04,800 --> 00:46:11,119
+of the operation of that dfa
+
+1136
+00:46:09,520 --> 00:46:13,359
+okay
+
+1137
+00:46:11,119 --> 00:46:14,880
+so we are basically doing the same thing
+
+1138
+00:46:13,359 --> 00:46:16,319
+as we did
+
+1139
+00:46:14,880 --> 00:46:17,680
+for the
+
+1140
+00:46:16,319 --> 00:46:20,079
+proof in
+
+1141
+00:46:17,680 --> 00:46:22,240
+as i said the closure property of
+
+1142
+00:46:20,079 --> 00:46:25,920
+regular languages
+
+1143
+00:46:22,240 --> 00:46:25,920
+under the operation of union
+
+1144
+00:46:26,839 --> 00:46:31,440
+then
+
+1145
+00:46:28,720 --> 00:46:34,240
+you can see that since dfa
+
+1146
+00:46:31,440 --> 00:46:36,560
+has nothing to do with stack
+
+1147
+00:46:34,240 --> 00:46:38,800
+so we don't need to change or we don't
+
+1148
+00:46:36,560 --> 00:46:40,800
+need to modify anything regarding the
+
+1149
+00:46:38,800 --> 00:46:43,440
+stake operation here
+
+1150
+00:46:40,800 --> 00:46:46,640
+we go we just piggyback
+
+1151
+00:46:43,440 --> 00:46:48,400
+the situation the state transition of
+
+1152
+00:46:46,640 --> 00:46:49,599
+dfa
+
+1153
+00:46:48,400 --> 00:46:53,200
+in
+
+1154
+00:46:49,599 --> 00:46:54,800
+uh on the original essential operation
+
+1155
+00:46:53,200 --> 00:46:56,960
+of the dfa
+
+1156
+00:46:54,800 --> 00:46:57,839
+oh sorry pda
+
+1157
+00:46:56,960 --> 00:46:59,440
+then
+
+1158
+00:46:57,839 --> 00:47:01,760
+we define
+
+1159
+00:46:59,440 --> 00:47:05,760
+the accept states
+
+1160
+00:47:01,760 --> 00:47:07,200
+the accept states of our new pda
+
+1161
+00:47:05,760 --> 00:47:10,000
+as
+
+1162
+00:47:07,200 --> 00:47:13,440
+see for example this is
+
+1163
+00:47:10,000 --> 00:47:15,119
+a zoom list is two and four
+
+1164
+00:47:13,440 --> 00:47:17,359
+and
+
+1165
+00:47:15,119 --> 00:47:18,240
+it is uh
+
+1166
+00:47:17,359 --> 00:47:19,040
+one
+
+1167
+00:47:18,240 --> 00:47:20,800
+and
+
+1168
+00:47:19,040 --> 00:47:23,200
+two
+
+1169
+00:47:20,800 --> 00:47:24,880
+let's say it's not a accepted
+
+1170
+00:47:23,200 --> 00:47:27,280
+then
+
+1171
+00:47:24,880 --> 00:47:27,280
+only
+
+1172
+00:47:27,599 --> 00:47:30,240
+four one
+
+1173
+00:47:30,559 --> 00:47:33,280
+two one
+
+1174
+00:47:34,480 --> 00:47:41,119
+four two
+
+1175
+00:47:36,559 --> 00:47:42,960
+two two okay that's a it is uh accept
+
+1176
+00:47:41,119 --> 00:47:45,359
+states then it's three
+
+1177
+00:47:42,960 --> 00:47:47,040
+then four three
+
+1178
+00:47:45,359 --> 00:47:51,280
+two three
+
+1179
+00:47:47,040 --> 00:47:53,520
+so only these states
+
+1180
+00:47:51,280 --> 00:47:55,760
+as accept state
+
+1181
+00:47:53,520 --> 00:47:58,800
+then
+
+1182
+00:47:55,760 --> 00:48:01,760
+when the modified pda acceptor string
+
+1183
+00:47:58,800 --> 00:48:05,520
+you know that that dfa accepts a string
+
+1184
+00:48:01,760 --> 00:48:09,599
+and the original df pda extender string
+
+1185
+00:48:05,520 --> 00:48:11,920
+okay so the modified constructed pda can
+
+1186
+00:48:09,599 --> 00:48:12,960
+recognize the intersection
+
+1187
+00:48:11,920 --> 00:48:16,240
+of
+
+1188
+00:48:12,960 --> 00:48:18,880
+the context language a with the regular
+
+1189
+00:48:16,240 --> 00:48:21,359
+language r
+
+1190
+00:48:18,880 --> 00:48:24,800
+okay
+
+1191
+00:48:21,359 --> 00:48:24,800
+so that's why uh
+
+1192
+00:48:26,000 --> 00:48:32,720
+a class of context-free languages is
+
+1193
+00:48:28,160 --> 00:48:35,280
+closed under the intersection operation
+
+1194
+00:48:32,720 --> 00:48:36,559
+okay and that's als we also explained
+
+1195
+00:48:35,280 --> 00:48:38,880
+why
+
+1196
+00:48:36,559 --> 00:48:40,640
+two context-free languages at the
+
+1197
+00:48:38,880 --> 00:48:42,960
+intersection of two context-free
+
+1198
+00:48:40,640 --> 00:48:46,720
+languages may not
+
+1199
+00:48:42,960 --> 00:48:48,240
+be might not be context three
+
+1200
+00:48:46,720 --> 00:48:50,800
+so
+
+1201
+00:48:48,240 --> 00:48:53,359
+intersection is regarding
+
+1202
+00:48:50,800 --> 00:48:55,440
+context free languages and
+
+1203
+00:48:53,359 --> 00:48:56,720
+regular languages
+
+1204
+00:48:55,440 --> 00:48:58,640
+okay
+
+1205
+00:48:56,720 --> 00:49:01,119
+then since we have this
+
+1206
+00:48:58,640 --> 00:49:02,640
+since we have this
+
+1207
+00:49:01,119 --> 00:49:04,480
+we know that
+
+1208
+00:49:02,640 --> 00:49:06,559
+we know that
+
+1209
+00:49:04,480 --> 00:49:10,160
+context three languages
+
+1210
+00:49:06,559 --> 00:49:12,160
+oh sorry regular languages is closed uh
+
+1211
+00:49:10,160 --> 00:49:14,240
+the class of regular languages is closed
+
+1212
+00:49:12,160 --> 00:49:17,760
+under the operation of complete
+
+1213
+00:49:14,240 --> 00:49:19,200
+complement right complement
+
+1214
+00:49:17,760 --> 00:49:20,960
+we know that
+
+1215
+00:49:19,200 --> 00:49:24,160
+so
+
+1216
+00:49:20,960 --> 00:49:27,280
+we can also know that
+
+1217
+00:49:24,160 --> 00:49:30,400
+if you have a regular language r
+
+1218
+00:49:27,280 --> 00:49:33,359
+the complement of r is also regular then
+
+1219
+00:49:30,400 --> 00:49:35,520
+you can do a context free language
+
+1220
+00:49:33,359 --> 00:49:37,599
+the intersection of the context language
+
+1221
+00:49:35,520 --> 00:49:39,040
+with the complement of a regular
+
+1222
+00:49:37,599 --> 00:49:41,680
+languages
+
+1223
+00:49:39,040 --> 00:49:43,040
+of the regular language then you get
+
+1224
+00:49:41,680 --> 00:49:46,400
+the difference
+
+1225
+00:49:43,040 --> 00:49:49,359
+okay so we also know that the difference
+
+1226
+00:49:46,400 --> 00:49:52,480
+of a context-free language and a regular
+
+1227
+00:49:49,359 --> 00:49:55,440
+language is still context-free because
+
+1228
+00:49:52,480 --> 00:49:58,000
+we can construct our comp
+
+1229
+00:49:55,440 --> 00:49:59,839
+complement of r and the the intersection
+
+1230
+00:49:58,000 --> 00:50:01,760
+thing then
+
+1231
+00:49:59,839 --> 00:50:03,119
+it's closed
+
+1232
+00:50:01,760 --> 00:50:05,839
+it is still
+
+1233
+00:50:03,119 --> 00:50:08,079
+a context-free language
+
+1234
+00:50:05,839 --> 00:50:08,079
+okay
+
+1235
+00:50:08,880 --> 00:50:13,440
+then we can also know that
+
+1236
+00:50:11,040 --> 00:50:14,960
+we can also know that
+
+1237
+00:50:13,440 --> 00:50:17,920
+the complement
+
+1238
+00:50:14,960 --> 00:50:21,359
+of context free language
+
+1239
+00:50:17,920 --> 00:50:23,680
+may not be a context free language
+
+1240
+00:50:21,359 --> 00:50:23,680
+okay
+
+1241
+00:50:24,559 --> 00:50:30,160
+why
+
+1242
+00:50:25,359 --> 00:50:30,160
+because we know that a and b
+
+1243
+00:50:31,200 --> 00:50:34,880
+may not be may not be
+
+1244
+00:50:33,599 --> 00:50:37,119
+complex free
+
+1245
+00:50:34,880 --> 00:50:37,119
+right
+
+1246
+00:50:38,000 --> 00:50:42,480
+and we know that
+
+1247
+00:50:41,119 --> 00:50:44,720
+union
+
+1248
+00:50:42,480 --> 00:50:45,520
+has the cultural property
+
+1249
+00:50:44,720 --> 00:50:46,880
+so
+
+1250
+00:50:45,520 --> 00:50:48,880
+if
+
+1251
+00:50:46,880 --> 00:50:51,280
+if let's say if
+
+1252
+00:50:48,880 --> 00:50:55,200
+the complement of
+
+1253
+00:50:51,280 --> 00:50:56,160
+context free language is still a context
+
+1254
+00:50:55,200 --> 00:50:57,599
+sorry
+
+1255
+00:50:56,160 --> 00:50:59,520
+yes
+
+1256
+00:50:57,599 --> 00:51:01,200
+if the complement of a
+
+1257
+00:50:59,520 --> 00:51:03,040
+context free language is still
+
+1258
+00:51:01,200 --> 00:51:04,319
+context-free
+
+1259
+00:51:03,040 --> 00:51:08,079
+then
+
+1260
+00:51:04,319 --> 00:51:10,960
+let's say contextual language a
+
+1261
+00:51:08,079 --> 00:51:12,559
+complement is still context free if
+
+1262
+00:51:10,960 --> 00:51:13,440
+okay if
+
+1263
+00:51:12,559 --> 00:51:14,800
+and
+
+1264
+00:51:13,440 --> 00:51:16,960
+complement
+
+1265
+00:51:14,800 --> 00:51:19,280
+sorry context free language b
+
+1266
+00:51:16,960 --> 00:51:21,760
+complement of b
+
+1267
+00:51:19,280 --> 00:51:23,200
+is still context free
+
+1268
+00:51:21,760 --> 00:51:24,160
+if okay
+
+1269
+00:51:23,200 --> 00:51:26,720
+and
+
+1270
+00:51:24,160 --> 00:51:28,960
+union no problem if they are contestable
+
+1271
+00:51:26,720 --> 00:51:30,240
+language then the union is countess free
+
+1272
+00:51:28,960 --> 00:51:33,359
+right
+
+1273
+00:51:30,240 --> 00:51:33,359
+then if
+
+1274
+00:51:33,599 --> 00:51:38,960
+this the complement of this language
+
+1275
+00:51:37,200 --> 00:51:40,960
+is still context free
+
+1276
+00:51:38,960 --> 00:51:42,079
+then you get
+
+1277
+00:51:40,960 --> 00:51:43,440
+what
+
+1278
+00:51:42,079 --> 00:51:47,280
+a
+
+1279
+00:51:43,440 --> 00:51:48,880
+and b the intersection of nb that's
+
+1280
+00:51:47,280 --> 00:51:51,040
+the morgan's law
+
+1281
+00:51:48,880 --> 00:51:53,040
+right that's de morgan's rule
+
+1282
+00:51:51,040 --> 00:51:55,119
+and so
+
+1283
+00:51:53,040 --> 00:51:57,440
+the complement
+
+1284
+00:51:55,119 --> 00:51:57,440
+of
+
+1285
+00:51:57,599 --> 00:52:00,800
+context free language might not be
+
+1286
+00:51:59,440 --> 00:52:02,960
+context-free
+
+1287
+00:52:00,800 --> 00:52:06,800
+if it is
+
+1288
+00:52:02,960 --> 00:52:09,200
+context free then we should have
+
+1289
+00:52:06,800 --> 00:52:11,920
+the intersection of two context-free
+
+1290
+00:52:09,200 --> 00:52:13,760
+language is still context-free
+
+1291
+00:52:11,920 --> 00:52:18,319
+right
+
+1292
+00:52:13,760 --> 00:52:20,559
+but we know it's not so the complement
+
+1293
+00:52:18,319 --> 00:52:23,599
+there is no crucial property for the
+
+1294
+00:52:20,559 --> 00:52:26,599
+complement operation for context three
+
+1295
+00:52:23,599 --> 00:52:26,599
+languages
+

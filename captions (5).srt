@@ -1,0 +1,3812 @@
+1
+00:00:02,399 --> 00:00:06,560
+okay
+
+2
+00:00:03,280 --> 00:00:10,240
+now we have defined a new kind of
+
+3
+00:00:06,560 --> 00:00:13,280
+finite automata which is uh capable of
+
+4
+00:00:10,240 --> 00:00:15,440
+non-deterministic computation and we
+
+5
+00:00:13,280 --> 00:00:18,240
+call this kind of finite automata
+
+6
+00:00:15,440 --> 00:00:19,039
+non-deterministic finite automata and we
+
+7
+00:00:18,240 --> 00:00:22,400
+will call it
+
+8
+00:00:19,039 --> 00:00:26,240
+nfa later and also
+
+9
+00:00:22,400 --> 00:00:26,240
+we prove that
+
+10
+00:00:26,640 --> 00:00:33,760
+nfas and the dfas are equivalent
+
+11
+00:00:30,720 --> 00:00:37,200
+okay so
+
+12
+00:00:33,760 --> 00:00:39,600
+we can extend our definition of regular
+
+13
+00:00:37,200 --> 00:00:43,200
+languages
+
+14
+00:00:39,600 --> 00:00:46,640
+to the computational
+
+15
+00:00:43,200 --> 00:00:50,320
+model of an effect that means we
+
+16
+00:00:46,640 --> 00:00:54,239
+can have the result here that
+
+17
+00:00:50,320 --> 00:00:59,280
+a language is regular if and only if
+
+18
+00:00:54,239 --> 00:01:02,160
+some non-deterministic finite automata
+
+19
+00:00:59,280 --> 00:01:02,160
+recognize it
+
+20
+00:01:04,479 --> 00:01:08,400
+therefore if we want to prove some
+
+21
+00:01:07,680 --> 00:01:11,600
+language
+
+22
+00:01:08,400 --> 00:01:14,640
+is regular now in addition to
+
+23
+00:01:11,600 --> 00:01:17,680
+deterministic finite automata we can
+
+24
+00:01:14,640 --> 00:01:21,040
+use non-deterministic final automata
+
+25
+00:01:17,680 --> 00:01:22,080
+why because if we can successfully
+
+26
+00:01:21,040 --> 00:01:24,479
+construct
+
+27
+00:01:22,080 --> 00:01:25,759
+a non-deterministic finite automata to
+
+28
+00:01:24,479 --> 00:01:31,040
+recognize
+
+29
+00:01:25,759 --> 00:01:31,040
+the language we want to prove as regular
+
+30
+00:01:32,640 --> 00:01:40,720
+after we construct that nfa we can use
+
+31
+00:01:37,600 --> 00:01:43,920
+the construction procedure of
+
+32
+00:01:40,720 --> 00:01:47,840
+the proof we used in
+
+33
+00:01:43,920 --> 00:01:52,240
+theorem 1.39
+
+34
+00:01:47,840 --> 00:01:52,240
+to get the equivalent dfa
+
+35
+00:01:52,880 --> 00:02:00,240
+so we proved that language is regular
+
+36
+00:01:56,799 --> 00:02:00,560
+okay now we have this result we can use
+
+37
+00:02:00,240 --> 00:02:04,399
+it
+
+38
+00:02:00,560 --> 00:02:07,600
+to complete our proof on
+
+39
+00:02:04,399 --> 00:02:08,080
+the three regular operations the closure
+
+40
+00:02:07,600 --> 00:02:12,239
+property
+
+41
+00:02:08,080 --> 00:02:16,239
+of the three regular operations
+
+42
+00:02:12,239 --> 00:02:19,840
+so firstly we want to prove
+
+43
+00:02:16,239 --> 00:02:23,440
+the class of regular languages is closed
+
+44
+00:02:19,840 --> 00:02:28,800
+under the union operation again
+
+45
+00:02:23,440 --> 00:02:32,400
+yes which is also the theorem 1.25
+
+46
+00:02:28,800 --> 00:02:36,160
+so this time we use nfa
+
+47
+00:02:32,400 --> 00:02:39,920
+to do the proof in order to
+
+48
+00:02:36,160 --> 00:02:40,959
+use nfa to prove the closure property of
+
+49
+00:02:39,920 --> 00:02:44,879
+the union
+
+50
+00:02:40,959 --> 00:02:45,760
+operation the assumption criteria are
+
+51
+00:02:44,879 --> 00:02:49,360
+the same
+
+52
+00:02:45,760 --> 00:02:52,720
+so we have two regular languages
+
+53
+00:02:49,360 --> 00:02:56,560
+let's say it's a1 and
+
+54
+00:02:52,720 --> 00:02:56,560
+a2 okay
+
+55
+00:02:56,959 --> 00:03:03,200
+they are a1 and a2
+
+56
+00:03:00,640 --> 00:03:04,480
+they are regular languages and by
+
+57
+00:03:03,200 --> 00:03:08,080
+definition
+
+58
+00:03:04,480 --> 00:03:12,239
+we will have dfas
+
+59
+00:03:08,080 --> 00:03:15,519
+to recognize a1 and a2 respectively
+
+60
+00:03:12,239 --> 00:03:18,640
+and of course also nfa now
+
+61
+00:03:15,519 --> 00:03:22,000
+assume that n1 which is then
+
+62
+00:03:18,640 --> 00:03:26,319
+nfa recognized a1
+
+63
+00:03:22,000 --> 00:03:29,440
+and n2 recognizes a2
+
+64
+00:03:26,319 --> 00:03:32,480
+so we got n1's
+
+65
+00:03:29,440 --> 00:03:35,680
+machine details and also
+
+66
+00:03:32,480 --> 00:03:39,280
+the five tuple five components
+
+67
+00:03:35,680 --> 00:03:42,480
+of eight and two based on
+
+68
+00:03:39,280 --> 00:03:44,560
+you can consider them as uh source code
+
+69
+00:03:42,480 --> 00:03:47,599
+of n1 and n2
+
+70
+00:03:44,560 --> 00:03:49,280
+and based on the let's say source code
+
+71
+00:03:47,599 --> 00:03:52,080
+downloaded from github
+
+72
+00:03:49,280 --> 00:03:53,280
+we want to construct and here like we
+
+73
+00:03:52,080 --> 00:03:56,959
+did
+
+74
+00:03:53,280 --> 00:03:59,599
+in 1.25
+
+75
+00:03:56,959 --> 00:04:01,599
+we want to construct a new nfa here to
+
+76
+00:03:59,599 --> 00:04:05,360
+recognize the union of
+
+77
+00:04:01,599 --> 00:04:09,200
+a1 and a2 okay
+
+78
+00:04:05,360 --> 00:04:13,439
+so let's visualize n1 and 2 as the block
+
+79
+00:04:09,200 --> 00:04:17,040
+diagram as the figure on the left part
+
+80
+00:04:13,439 --> 00:04:19,919
+let's say n1 has some states
+
+81
+00:04:17,040 --> 00:04:20,799
+right and we there is a star state and
+
+82
+00:04:19,919 --> 00:04:24,639
+the sum
+
+83
+00:04:20,799 --> 00:04:27,759
+accept states and two are the same
+
+84
+00:04:24,639 --> 00:04:31,120
+and our idea is that we want to build
+
+85
+00:04:27,759 --> 00:04:34,560
+a new nfa like
+
+86
+00:04:31,120 --> 00:04:37,840
+this one mainly by
+
+87
+00:04:34,560 --> 00:04:41,759
+copy copy
+
+88
+00:04:37,840 --> 00:04:44,960
+and one and copy the whole n2 here
+
+89
+00:04:41,759 --> 00:04:48,720
+so within the two
+
+90
+00:04:44,960 --> 00:04:52,639
+block the two blocks they are
+
+91
+00:04:48,720 --> 00:04:55,680
+n1 and the n2 respectively
+
+92
+00:04:52,639 --> 00:04:56,240
+then the idea is that we want to add a
+
+93
+00:04:55,680 --> 00:04:59,199
+new
+
+94
+00:04:56,240 --> 00:05:00,720
+start state here so we add one state
+
+95
+00:04:59,199 --> 00:05:03,759
+here
+
+96
+00:05:00,720 --> 00:05:07,120
+and we have epsilon
+
+97
+00:05:03,759 --> 00:05:11,680
+epsilon transition to the star states of
+
+98
+00:05:07,120 --> 00:05:15,840
+n1 and n2
+
+99
+00:05:11,680 --> 00:05:19,199
+so as long as you are familiar with
+
+100
+00:05:15,840 --> 00:05:20,080
+the operation of non-determined finite
+
+101
+00:05:19,199 --> 00:05:23,120
+automata
+
+102
+00:05:20,080 --> 00:05:26,160
+then you know that let's say
+
+103
+00:05:23,120 --> 00:05:26,160
+when processing
+
+104
+00:05:26,400 --> 00:05:30,880
+an input string for n1
+
+105
+00:05:31,840 --> 00:05:38,000
+so for n1
+
+106
+00:05:34,880 --> 00:05:41,120
+there will be a processing tree
+
+107
+00:05:38,000 --> 00:05:43,919
+right for
+
+108
+00:05:41,120 --> 00:05:45,120
+n1 there will be a process in three like
+
+109
+00:05:43,919 --> 00:05:48,639
+this
+
+110
+00:05:45,120 --> 00:05:52,320
+and for the same input string
+
+111
+00:05:48,639 --> 00:05:57,360
+like let's say n2 will be up
+
+112
+00:05:52,320 --> 00:05:57,360
+operating like this
+
+113
+00:05:58,080 --> 00:06:05,120
+right something like this one
+
+114
+00:06:02,400 --> 00:06:06,080
+then what we want to do is we construct
+
+115
+00:06:05,120 --> 00:06:09,360
+a new machine
+
+116
+00:06:06,080 --> 00:06:13,280
+and when start processing
+
+117
+00:06:09,360 --> 00:06:17,840
+w start from the start state
+
+118
+00:06:13,280 --> 00:06:22,000
+of n start from the start state of
+
+119
+00:06:17,840 --> 00:06:25,039
+n then you don't consume
+
+120
+00:06:22,000 --> 00:06:28,479
+any input you go to
+
+121
+00:06:25,039 --> 00:06:30,880
+n1 and also n2 so
+
+122
+00:06:28,479 --> 00:06:33,600
+see that's the beauty of
+
+123
+00:06:30,880 --> 00:06:37,360
+non-deterministic computation here
+
+124
+00:06:33,600 --> 00:06:40,479
+so you see when the
+
+125
+00:06:37,360 --> 00:06:44,000
+process the thread goes to
+
+126
+00:06:40,479 --> 00:06:47,840
+these state
+
+127
+00:06:44,000 --> 00:06:50,880
+what and one will get all still the
+
+128
+00:06:47,840 --> 00:06:54,000
+original input w and
+
+129
+00:06:50,880 --> 00:06:58,080
+and to the same so you see they are well
+
+130
+00:06:54,000 --> 00:07:01,120
+they will run in parallel and
+
+131
+00:06:58,080 --> 00:07:05,199
+if any of the states here
+
+132
+00:07:01,120 --> 00:07:08,479
+is a start state then n accept w
+
+133
+00:07:05,199 --> 00:07:11,599
+and vice versa as long as one of
+
+134
+00:07:08,479 --> 00:07:14,000
+n1 or n2 accept w
+
+135
+00:07:11,599 --> 00:07:15,120
+then the whole machine whole new machine
+
+136
+00:07:14,000 --> 00:07:18,400
+accepts w
+
+137
+00:07:15,120 --> 00:07:20,720
+right so that's why we can use
+
+138
+00:07:18,400 --> 00:07:24,560
+non-deterministic final automata
+
+139
+00:07:20,720 --> 00:07:28,319
+to recognize a1 and the a2
+
+140
+00:07:24,560 --> 00:07:31,360
+i mean the union of a1 and a2
+
+141
+00:07:28,319 --> 00:07:32,080
+right so either one of either side of
+
+142
+00:07:31,360 --> 00:07:35,840
+the
+
+143
+00:07:32,080 --> 00:07:37,680
+new machine accepts the input string
+
+144
+00:07:35,840 --> 00:07:39,919
+then the whole machine accepts the input
+
+145
+00:07:37,680 --> 00:07:44,000
+string that's why
+
+146
+00:07:39,919 --> 00:07:47,039
+the newly constructed nfa
+
+147
+00:07:44,000 --> 00:07:50,319
+will recognize the union of
+
+148
+00:07:47,039 --> 00:07:53,520
+a1 and a2
+
+149
+00:07:50,319 --> 00:07:56,800
+so i think the idea here is not
+
+150
+00:07:53,520 --> 00:07:59,120
+so complicated it's actually more
+
+151
+00:07:56,800 --> 00:08:03,360
+straightforward than the dfa one
+
+152
+00:07:59,120 --> 00:08:05,840
+right then of course drawing the diagram
+
+153
+00:08:03,360 --> 00:08:05,840
+is easy
+
+154
+00:08:06,000 --> 00:08:10,840
+but we anyway still need for more
+
+155
+00:08:08,800 --> 00:08:15,280
+describe the whole
+
+156
+00:08:10,840 --> 00:08:18,639
+constructions okay so how to do that
+
+157
+00:08:15,280 --> 00:08:19,680
+it's actually easy because to construct
+
+158
+00:08:18,639 --> 00:08:22,720
+an
+
+159
+00:08:19,680 --> 00:08:26,240
+nfa we need to scr uh describe
+
+160
+00:08:22,720 --> 00:08:27,039
+in detail what are the five five
+
+161
+00:08:26,240 --> 00:08:31,520
+components
+
+162
+00:08:27,039 --> 00:08:34,959
+are what what the five components are
+
+163
+00:08:31,520 --> 00:08:35,440
+and here we also simplified the scenario
+
+164
+00:08:34,959 --> 00:08:39,440
+here
+
+165
+00:08:35,440 --> 00:08:42,640
+we assume that the two languages
+
+166
+00:08:39,440 --> 00:08:47,600
+share the same alphabet
+
+167
+00:08:42,640 --> 00:08:49,519
+in this case we don't need to
+
+168
+00:08:47,600 --> 00:08:51,600
+do the alphabet thing because they are
+
+169
+00:08:49,519 --> 00:08:55,120
+the same okay so that's
+
+170
+00:08:51,600 --> 00:08:58,080
+uh for the for one of the
+
+171
+00:08:55,120 --> 00:08:59,200
+five components okay let's take the
+
+172
+00:08:58,080 --> 00:09:02,800
+second one
+
+173
+00:08:59,200 --> 00:09:05,120
+is the states of our new machine
+
+174
+00:09:02,800 --> 00:09:05,920
+so we define the state of the new
+
+175
+00:09:05,120 --> 00:09:08,480
+machine
+
+176
+00:09:05,920 --> 00:09:09,120
+remember that we want to copy and one
+
+177
+00:09:08,480 --> 00:09:11,680
+here
+
+178
+00:09:09,120 --> 00:09:13,360
+so we want to have all the states and
+
+179
+00:09:11,680 --> 00:09:16,000
+one half
+
+180
+00:09:13,360 --> 00:09:16,720
+and we want to copy the n2 here so we
+
+181
+00:09:16,000 --> 00:09:20,880
+want to have
+
+182
+00:09:16,720 --> 00:09:20,880
+all the states and two halves
+
+183
+00:09:21,760 --> 00:09:28,240
+we want the machine to have that then
+
+184
+00:09:25,200 --> 00:09:32,080
+we add a new
+
+185
+00:09:28,240 --> 00:09:37,200
+states here state here so the
+
+186
+00:09:32,080 --> 00:09:40,880
+states of our new machine will have q0
+
+187
+00:09:37,200 --> 00:09:43,920
+and all states from
+
+188
+00:09:40,880 --> 00:09:49,200
+n1 and all states from n2
+
+189
+00:09:43,920 --> 00:09:52,399
+so we do a union of the three sets here
+
+190
+00:09:49,200 --> 00:09:52,399
+okay so uh
+
+191
+00:09:52,640 --> 00:09:57,279
+please note that here actually here we
+
+192
+00:09:56,320 --> 00:10:01,120
+have a
+
+193
+00:09:57,279 --> 00:10:04,720
+very important assumption
+
+194
+00:10:01,120 --> 00:10:06,880
+but the assumption is too easy if
+
+195
+00:10:04,720 --> 00:10:08,160
+the assumption is actually trivial for
+
+196
+00:10:06,880 --> 00:10:11,760
+mathematicians
+
+197
+00:10:08,160 --> 00:10:15,040
+so they don't uh write it
+
+198
+00:10:11,760 --> 00:10:18,880
+explicitly what assumption is that we
+
+199
+00:10:15,040 --> 00:10:22,240
+assume that q1
+
+200
+00:10:18,880 --> 00:10:25,839
+and q2
+
+201
+00:10:22,240 --> 00:10:28,959
+are disjoint that means the intersection
+
+202
+00:10:25,839 --> 00:10:32,160
+of q1 and q2
+
+203
+00:10:28,959 --> 00:10:35,279
+is nothing there is no
+
+204
+00:10:32,160 --> 00:10:38,959
+states shared by q1 and q2
+
+205
+00:10:35,279 --> 00:10:39,839
+see that's a problem that's that's a
+
+206
+00:10:38,959 --> 00:10:43,760
+problem about
+
+207
+00:10:39,839 --> 00:10:47,440
+the convention or definition of
+
+208
+00:10:43,760 --> 00:10:50,800
+mathematics because we use sets
+
+209
+00:10:47,440 --> 00:10:51,360
+to describe q1 q2 and whatever we want
+
+210
+00:10:50,800 --> 00:10:54,880
+to do
+
+211
+00:10:51,360 --> 00:10:59,360
+for the new machine instead let's say
+
+212
+00:10:54,880 --> 00:11:02,800
+if q1 you have
+
+213
+00:10:59,360 --> 00:11:06,079
+1 q 2 as its states
+
+214
+00:11:02,800 --> 00:11:09,200
+and the q 2 you have q 2 q
+
+215
+00:11:06,079 --> 00:11:13,040
+3 q 4 s it
+
+216
+00:11:09,200 --> 00:11:16,560
+states and the union what is that
+
+217
+00:11:13,040 --> 00:11:21,040
+that will be q1 q2
+
+218
+00:11:16,560 --> 00:11:24,160
+q3 and q4 right
+
+219
+00:11:21,040 --> 00:11:28,800
+but it is not what we want
+
+220
+00:11:24,160 --> 00:11:33,040
+because for example in here q2 in here
+
+221
+00:11:28,800 --> 00:11:36,640
+and q2 in here are different states
+
+222
+00:11:33,040 --> 00:11:42,160
+actually so we don't want these results
+
+223
+00:11:36,640 --> 00:11:45,760
+we want five states and the separated
+
+224
+00:11:42,160 --> 00:11:48,720
+into machines right
+
+225
+00:11:45,760 --> 00:11:49,680
+so we basically assume that there's
+
+226
+00:11:48,720 --> 00:11:53,440
+nothing
+
+227
+00:11:49,680 --> 00:11:55,600
+duplicated for q1 and q2
+
+228
+00:11:53,440 --> 00:11:57,040
+and the question you will ask is that
+
+229
+00:11:55,600 --> 00:12:00,800
+okay so
+
+230
+00:11:57,040 --> 00:12:03,839
+what if in in a way real situation
+
+231
+00:12:00,800 --> 00:12:05,839
+there are duplicate members for q1 and
+
+232
+00:12:03,839 --> 00:12:07,600
+q2 and we want to do the proof
+
+233
+00:12:05,839 --> 00:12:09,519
+and do the construction of the new
+
+234
+00:12:07,600 --> 00:12:12,320
+machine what should we do
+
+235
+00:12:09,519 --> 00:12:13,920
+that's pretty easy because remember that
+
+236
+00:12:12,320 --> 00:12:18,560
+in modern
+
+237
+00:12:13,920 --> 00:12:20,880
+programming languages there are
+
+238
+00:12:18,560 --> 00:12:22,240
+mechanisms for this one of them is
+
+239
+00:12:20,880 --> 00:12:26,000
+namespace
+
+240
+00:12:22,240 --> 00:12:29,440
+okay so you can easily
+
+241
+00:12:26,000 --> 00:12:33,200
+rename all the states here
+
+242
+00:12:29,440 --> 00:12:36,320
+as q1 underscore
+
+243
+00:12:33,200 --> 00:12:39,920
+q1 q1 underscore
+
+244
+00:12:36,320 --> 00:12:43,200
+q2 and all states for q2
+
+245
+00:12:39,920 --> 00:12:46,399
+you rename them as q2 underscore
+
+246
+00:12:43,200 --> 00:12:49,680
+q2 q2 underscore q3
+
+247
+00:12:46,399 --> 00:12:52,000
+and so on and when you do a union of the
+
+248
+00:12:49,680 --> 00:12:54,639
+two sets there will be no problem at
+
+249
+00:12:52,000 --> 00:12:56,079
+all right just like you download some
+
+250
+00:12:54,639 --> 00:12:59,279
+source code from
+
+251
+00:12:56,079 --> 00:13:00,079
+github or you copy it copy them from
+
+252
+00:12:59,279 --> 00:13:02,399
+your
+
+253
+00:13:00,079 --> 00:13:04,839
+i don't know classmates and you want to
+
+254
+00:13:02,399 --> 00:13:06,480
+put the source code together to make it
+
+255
+00:13:04,839 --> 00:13:09,440
+work
+
+256
+00:13:06,480 --> 00:13:10,480
+sometimes there will be variable name
+
+257
+00:13:09,440 --> 00:13:13,360
+problem
+
+258
+00:13:10,480 --> 00:13:15,200
+and in a way you can you know according
+
+259
+00:13:13,360 --> 00:13:18,480
+to different source files
+
+260
+00:13:15,200 --> 00:13:20,959
+you do the namespace the concept not
+
+261
+00:13:18,480 --> 00:13:21,920
+the programming language mechanism
+
+262
+00:13:20,959 --> 00:13:25,120
+itself but
+
+263
+00:13:21,920 --> 00:13:28,800
+you can do some pretty easy
+
+264
+00:13:25,120 --> 00:13:32,560
+find and replace find and re
+
+265
+00:13:28,800 --> 00:13:34,959
+replace to rename all the variables
+
+266
+00:13:32,560 --> 00:13:38,720
+uniquely for each file then there will
+
+267
+00:13:34,959 --> 00:13:38,720
+be no problems to put them together
+
+268
+00:13:39,440 --> 00:13:42,639
+although it is you know quite detailed
+
+269
+00:13:42,079 --> 00:13:44,959
+but
+
+270
+00:13:42,639 --> 00:13:45,680
+you have to know that there are
+
+271
+00:13:44,959 --> 00:13:48,959
+assumptions
+
+272
+00:13:45,680 --> 00:13:52,320
+here in the proof then
+
+273
+00:13:48,959 --> 00:13:54,000
+you will be i think you can understand
+
+274
+00:13:52,320 --> 00:13:57,279
+it better to why we write
+
+275
+00:13:54,000 --> 00:14:02,160
+the proof this way and it is a
+
+276
+00:13:57,279 --> 00:14:05,519
+important detail for non-mathematicians
+
+277
+00:14:02,160 --> 00:14:08,880
+we will also have this in later proofs
+
+278
+00:14:05,519 --> 00:14:12,240
+so i describe it
+
+279
+00:14:08,880 --> 00:14:15,120
+i try to describe it more clearly here
+
+280
+00:14:12,240 --> 00:14:16,000
+okay so we have all the states we want
+
+281
+00:14:15,120 --> 00:14:19,040
+here
+
+282
+00:14:16,000 --> 00:14:22,000
+then q0 here
+
+283
+00:14:19,040 --> 00:14:22,800
+is our new start state so we specify
+
+284
+00:14:22,000 --> 00:14:26,240
+that
+
+285
+00:14:22,800 --> 00:14:29,680
+for this for
+
+286
+00:14:26,240 --> 00:14:32,959
+another component
+
+287
+00:14:29,680 --> 00:14:36,000
+then since q1 and the q2
+
+288
+00:14:32,959 --> 00:14:39,360
+are disjoint they have no
+
+289
+00:14:36,000 --> 00:14:42,079
+duplicate members f1 f2
+
+290
+00:14:39,360 --> 00:14:42,480
+of course no duplicate member for them
+
+291
+00:14:42,079 --> 00:14:46,000
+because
+
+292
+00:14:42,480 --> 00:14:49,040
+f1 is a subset of q1 and f2 is a subset
+
+293
+00:14:46,000 --> 00:14:53,519
+of q2 so the accept states
+
+294
+00:14:49,040 --> 00:14:56,639
+of our new nfa
+
+295
+00:14:53,519 --> 00:15:00,079
+is q sorry f1
+
+296
+00:14:56,639 --> 00:15:03,279
+and f2 the union of f1 and
+
+297
+00:15:00,079 --> 00:15:06,880
+f2 okay so all the states of
+
+298
+00:15:03,279 --> 00:15:10,480
+original n1 and n2 are accepts
+
+299
+00:15:06,880 --> 00:15:11,199
+accept states of our new machine now we
+
+300
+00:15:10,480 --> 00:15:15,360
+have
+
+301
+00:15:11,199 --> 00:15:18,800
+four four components
+
+302
+00:15:15,360 --> 00:15:21,279
+the final one the essential
+
+303
+00:15:18,800 --> 00:15:22,880
+the uh the final essential one is our
+
+304
+00:15:21,279 --> 00:15:26,399
+transition function
+
+305
+00:15:22,880 --> 00:15:28,160
+for the new machine
+
+306
+00:15:26,399 --> 00:15:30,399
+and how do we write the transition
+
+307
+00:15:28,160 --> 00:15:33,600
+function remember that
+
+308
+00:15:30,399 --> 00:15:37,120
+at this stage there is
+
+309
+00:15:33,600 --> 00:15:40,240
+no transition at all okay
+
+310
+00:15:37,120 --> 00:15:43,680
+so we need to copy all
+
+311
+00:15:40,240 --> 00:15:46,800
+transitions in one
+
+312
+00:15:43,680 --> 00:15:50,240
+two here and all transitions
+
+313
+00:15:46,800 --> 00:15:53,600
+in n2 to here and add
+
+314
+00:15:50,240 --> 00:15:55,279
+this one epsilon transition ends this
+
+315
+00:15:53,600 --> 00:15:58,880
+one epsilon transition
+
+316
+00:15:55,279 --> 00:16:01,920
+okay so to copy the
+
+317
+00:15:58,880 --> 00:16:05,519
+transitions defined by n1
+
+318
+00:16:01,920 --> 00:16:09,279
+we just need to copy
+
+319
+00:16:05,519 --> 00:16:12,560
+n1's transition
+
+320
+00:16:09,279 --> 00:16:16,160
+so if the states here is
+
+321
+00:16:12,560 --> 00:16:19,360
+in original states of
+
+322
+00:16:16,160 --> 00:16:24,240
+n1 we just call delta 1 right
+
+323
+00:16:19,360 --> 00:16:24,240
+we copy all the transitions of n1
+
+324
+00:16:24,720 --> 00:16:32,560
+similarly we do that for n2
+
+325
+00:16:28,320 --> 00:16:36,399
+okay now for these two
+
+326
+00:16:32,560 --> 00:16:40,800
+block n1 and n2
+
+327
+00:16:36,399 --> 00:16:40,800
+we actually copy the whole machine
+
+328
+00:16:41,120 --> 00:16:49,519
+now we want to do
+
+329
+00:16:46,160 --> 00:16:52,800
+these these new states
+
+330
+00:16:49,519 --> 00:16:56,160
+q0 added by our construction
+
+331
+00:16:52,800 --> 00:16:59,199
+so if q here
+
+332
+00:16:56,160 --> 00:16:59,199
+is q 0
+
+333
+00:16:59,680 --> 00:17:07,520
+we add epsilon transition
+
+334
+00:17:03,600 --> 00:17:11,120
+to q1 and q2
+
+335
+00:17:07,520 --> 00:17:15,039
+okay to q1
+
+336
+00:17:11,120 --> 00:17:18,240
+what is q1 the star state of n1
+
+337
+00:17:15,039 --> 00:17:21,919
+and what is q2 the star state of
+
+338
+00:17:18,240 --> 00:17:25,760
+n2 as n2 yes
+
+339
+00:17:21,919 --> 00:17:30,640
+and for all symbols
+
+340
+00:17:25,760 --> 00:17:30,640
+remember that a symbol is
+
+341
+00:17:30,840 --> 00:17:36,320
+in
+
+342
+00:17:33,120 --> 00:17:37,360
+this alphabet which is the original
+
+343
+00:17:36,320 --> 00:17:41,440
+alphabet
+
+344
+00:17:37,360 --> 00:17:45,120
+and also possibly the empty string
+
+345
+00:17:41,440 --> 00:17:48,720
+so for o a in empty string
+
+346
+00:17:45,120 --> 00:17:52,000
+it goes to q1 and q2 and
+
+347
+00:17:48,720 --> 00:17:55,120
+otherwise nowhere
+
+348
+00:17:52,000 --> 00:17:59,200
+okay nowhere so there is no uh
+
+349
+00:17:55,120 --> 00:18:03,840
+arrow out of q0 if
+
+350
+00:17:59,200 --> 00:18:03,840
+some symbol is consumed
+
+351
+00:18:12,840 --> 00:18:18,400
+okay
+
+352
+00:18:14,400 --> 00:18:22,000
+so now you can see that for any queue
+
+353
+00:18:18,400 --> 00:18:25,360
+in the state and any symbol
+
+354
+00:18:22,000 --> 00:18:28,400
+in the alphabet of this one
+
+355
+00:18:25,360 --> 00:18:31,200
+our transition function is
+
+356
+00:18:28,400 --> 00:18:31,200
+well defined
+
+357
+00:18:32,720 --> 00:18:34,960
+so
+
+358
+00:18:36,720 --> 00:18:42,160
+the nfa is constructed and
+
+359
+00:18:40,000 --> 00:18:43,760
+it it is pretty straightforward to see
+
+360
+00:18:42,160 --> 00:18:47,120
+that and we already
+
+361
+00:18:43,760 --> 00:18:47,840
+described the reason why the newly
+
+362
+00:18:47,120 --> 00:18:51,600
+constructed
+
+363
+00:18:47,840 --> 00:18:54,880
+nfa can recognize the union
+
+364
+00:18:51,600 --> 00:18:57,360
+of a1 and a2 right because
+
+365
+00:18:54,880 --> 00:18:59,120
+you can think of that there is an input
+
+366
+00:18:57,360 --> 00:19:03,039
+stream for
+
+367
+00:18:59,120 --> 00:19:07,200
+the nfa after
+
+368
+00:19:03,039 --> 00:19:11,919
+as soon as after the machine
+
+369
+00:19:07,200 --> 00:19:16,480
+is booted then one thread
+
+370
+00:19:11,919 --> 00:19:19,760
+directly start from n1
+
+371
+00:19:16,480 --> 00:19:24,960
+star state and also at the same time
+
+372
+00:19:19,760 --> 00:19:28,160
+in parallel there is a thread here from
+
+373
+00:19:24,960 --> 00:19:32,000
+the start state of n2 and they both
+
+374
+00:19:28,160 --> 00:19:32,880
+process the input string the same input
+
+375
+00:19:32,000 --> 00:19:35,440
+string
+
+376
+00:19:32,880 --> 00:19:37,360
+right and for the property of
+
+377
+00:19:35,440 --> 00:19:40,720
+non-deterministic computation
+
+378
+00:19:37,360 --> 00:19:43,840
+as long as one one of
+
+379
+00:19:40,720 --> 00:19:46,960
+n1 of one of or one of
+
+380
+00:19:43,840 --> 00:19:50,559
+n2 except the string the whole machine
+
+381
+00:19:46,960 --> 00:19:54,559
+accept the string that is why
+
+382
+00:19:50,559 --> 00:19:59,120
+the machine accepts the union of
+
+383
+00:19:54,559 --> 00:19:59,120
+a1 and a2 okay
+
+384
+00:20:03,760 --> 00:20:10,159
+so if there is no other
+
+385
+00:20:06,960 --> 00:20:11,360
+problem here we need to make also two
+
+386
+00:20:10,159 --> 00:20:15,440
+nodes here
+
+387
+00:20:11,360 --> 00:20:19,200
+one unlike
+
+388
+00:20:15,440 --> 00:20:22,880
+unlike the proof the construction
+
+389
+00:20:19,200 --> 00:20:26,400
+we used for theorem 125
+
+390
+00:20:22,880 --> 00:20:29,760
+that is we use dfa to
+
+391
+00:20:26,400 --> 00:20:32,000
+prove the same thing the union uh the
+
+392
+00:20:29,760 --> 00:20:33,760
+closure property of the union operation
+
+393
+00:20:32,000 --> 00:20:36,880
+on regular language
+
+394
+00:20:33,760 --> 00:20:40,159
+unlike that this proof
+
+395
+00:20:36,880 --> 00:20:43,280
+cannot be extend
+
+396
+00:20:40,159 --> 00:20:46,480
+to intersection
+
+397
+00:20:43,280 --> 00:20:50,080
+okay as you see in that proof
+
+398
+00:20:46,480 --> 00:20:53,200
+it's pretty easy to transform the proof
+
+399
+00:20:50,080 --> 00:20:54,159
+to prove the colossal property of the
+
+400
+00:20:53,200 --> 00:20:59,200
+intersection
+
+401
+00:20:54,159 --> 00:21:03,600
+operation but here we cannot do that
+
+402
+00:20:59,200 --> 00:21:08,640
+because the whole machine here
+
+403
+00:21:03,600 --> 00:21:11,280
+are separated parts
+
+404
+00:21:08,640 --> 00:21:12,240
+and there is no as i described
+
+405
+00:21:11,280 --> 00:21:15,120
+previously
+
+406
+00:21:12,240 --> 00:21:16,000
+there is no communication between
+
+407
+00:21:15,120 --> 00:21:19,520
+threads or
+
+408
+00:21:16,000 --> 00:21:22,640
+processes so we cannot
+
+409
+00:21:19,520 --> 00:21:26,080
+do something like okay
+
+410
+00:21:22,640 --> 00:21:28,840
+n1 accepts the string and
+
+411
+00:21:26,080 --> 00:21:30,240
+and to accept the string we cannot do
+
+412
+00:21:28,840 --> 00:21:32,480
+that
+
+413
+00:21:30,240 --> 00:21:34,000
+with the framework with the
+
+414
+00:21:32,480 --> 00:21:38,559
+computational model
+
+415
+00:21:34,000 --> 00:21:41,840
+of nfa that's impossible so
+
+416
+00:21:38,559 --> 00:21:45,600
+at least for this construction here
+
+417
+00:21:41,840 --> 00:21:48,559
+we cannot extend to prove
+
+418
+00:21:45,600 --> 00:21:49,039
+we cannot extend this proof here to
+
+419
+00:21:48,559 --> 00:21:51,360
+prove
+
+420
+00:21:49,039 --> 00:21:53,840
+the closure property of the intersection
+
+421
+00:21:51,360 --> 00:21:58,880
+operation
+
+422
+00:21:53,840 --> 00:22:02,960
+the second note here is that
+
+423
+00:21:58,880 --> 00:22:07,200
+like that in the previous proof
+
+424
+00:22:02,960 --> 00:22:10,640
+with dfa this proof cannot
+
+425
+00:22:07,200 --> 00:22:10,640
+extend to proof
+
+426
+00:22:10,880 --> 00:22:14,400
+the closure property of the union
+
+427
+00:22:13,600 --> 00:22:18,480
+operation
+
+428
+00:22:14,400 --> 00:22:22,159
+of infinite regular languages
+
+429
+00:22:18,480 --> 00:22:25,440
+why because you see the construction
+
+430
+00:22:22,159 --> 00:22:29,120
+of our new nfa we need to
+
+431
+00:22:25,440 --> 00:22:32,720
+have so many states
+
+432
+00:22:29,120 --> 00:22:35,919
+right for n1
+
+433
+00:22:32,720 --> 00:22:40,320
+we know that it is
+
+434
+00:22:35,919 --> 00:22:44,159
+a finite number and for n2
+
+435
+00:22:40,320 --> 00:22:47,360
+it is a finite number so
+
+436
+00:22:44,159 --> 00:22:49,919
+the cardinality of our states
+
+437
+00:22:47,360 --> 00:22:50,960
+the number of our states is 1 which is
+
+438
+00:22:49,919 --> 00:22:54,000
+q0
+
+439
+00:22:50,960 --> 00:22:58,000
+and the plus a finite number plus
+
+440
+00:22:54,000 --> 00:23:01,360
+a finite number right so of course
+
+441
+00:22:58,000 --> 00:23:04,159
+the whole number will be finite and
+
+442
+00:23:01,360 --> 00:23:04,880
+the constructing machine is the finite
+
+443
+00:23:04,159 --> 00:23:08,080
+finite
+
+444
+00:23:04,880 --> 00:23:11,200
+automata but
+
+445
+00:23:08,080 --> 00:23:14,400
+if you want to
+
+446
+00:23:11,200 --> 00:23:15,360
+say that you have infinite regular
+
+447
+00:23:14,400 --> 00:23:19,360
+languages
+
+448
+00:23:15,360 --> 00:23:23,120
+then you will need to union a lot of
+
+449
+00:23:19,360 --> 00:23:27,520
+actually infinite
+
+450
+00:23:23,120 --> 00:23:31,520
+states right so in this way
+
+451
+00:23:27,520 --> 00:23:34,880
+we have no way to bound
+
+452
+00:23:31,520 --> 00:23:39,760
+we have no way to bound
+
+453
+00:23:34,880 --> 00:23:39,760
+the quantity here
+
+454
+00:23:39,840 --> 00:23:43,120
+we have no way to bound the quantity
+
+455
+00:23:42,000 --> 00:23:46,880
+here
+
+456
+00:23:43,120 --> 00:23:50,320
+so we cannot extend we cannot extend
+
+457
+00:23:46,880 --> 00:23:52,960
+the construction to prove
+
+458
+00:23:50,320 --> 00:23:53,600
+union the cultural property of union
+
+459
+00:23:52,960 --> 00:23:56,640
+operation
+
+460
+00:23:53,600 --> 00:23:58,799
+on infinite regular languages
+
+461
+00:23:56,640 --> 00:24:00,720
+that's the same as the previous
+
+462
+00:23:58,799 --> 00:24:04,480
+construction with dfa
+
+463
+00:24:00,720 --> 00:24:07,840
+okay so compare this
+
+464
+00:24:04,480 --> 00:24:11,760
+to proof i think it will be easier
+
+465
+00:24:07,840 --> 00:24:15,520
+to get yourself familiar with
+
+466
+00:24:11,760 --> 00:24:19,200
+the property of interface
+
+467
+00:24:15,520 --> 00:24:22,559
+and also dfa actually
+
+468
+00:24:19,200 --> 00:24:22,559
+okay so
+
+469
+00:24:23,520 --> 00:24:30,960
+that's a recap of you know what we
+
+470
+00:24:27,279 --> 00:24:35,360
+have already seen now
+
+471
+00:24:30,960 --> 00:24:38,640
+we can do the
+
+472
+00:24:35,360 --> 00:24:42,799
+next regular operation
+
+473
+00:24:38,640 --> 00:24:46,240
+which is concatenation here
+
+474
+00:24:42,799 --> 00:24:49,520
+previously we don't we don't know how to
+
+475
+00:24:46,240 --> 00:24:50,320
+proceed with the computation model of
+
+476
+00:24:49,520 --> 00:24:54,320
+dfa
+
+477
+00:24:50,320 --> 00:24:57,120
+right now we have a new weapon which
+
+478
+00:24:54,320 --> 00:24:58,080
+is an fa we can try to do that with an
+
+479
+00:24:57,120 --> 00:25:01,679
+fa
+
+480
+00:24:58,080 --> 00:25:02,480
+and you may ask uh okay what's the
+
+481
+00:25:01,679 --> 00:25:05,679
+difference
+
+482
+00:25:02,480 --> 00:25:06,000
+what's the difference between using nfa
+
+483
+00:25:05,679 --> 00:25:09,520
+and
+
+484
+00:25:06,000 --> 00:25:12,320
+using dfa if you remember that
+
+485
+00:25:09,520 --> 00:25:13,360
+with dfa we don't know how to split the
+
+486
+00:25:12,320 --> 00:25:16,480
+string
+
+487
+00:25:13,360 --> 00:25:18,320
+so we try the first part and the second
+
+488
+00:25:16,480 --> 00:25:22,559
+part
+
+489
+00:25:18,320 --> 00:25:23,919
+we feed the first part to the first
+
+490
+00:25:22,559 --> 00:25:25,440
+machine and the second part of the
+
+491
+00:25:23,919 --> 00:25:27,440
+second machine we don't know how to
+
+492
+00:25:25,440 --> 00:25:31,039
+split it
+
+493
+00:25:27,440 --> 00:25:32,480
+but with nfa we can what we can do we
+
+494
+00:25:31,039 --> 00:25:38,400
+can do this one
+
+495
+00:25:32,480 --> 00:25:38,400
+see if there is a input string here
+
+496
+00:25:39,279 --> 00:25:46,960
+we can try if the first
+
+497
+00:25:42,880 --> 00:25:50,159
+machine can accept this part
+
+498
+00:25:46,960 --> 00:25:54,080
+because we can just put w into
+
+499
+00:25:50,159 --> 00:25:55,039
+first machine right after putting into
+
+500
+00:25:54,080 --> 00:25:58,640
+the first machine
+
+501
+00:25:55,039 --> 00:26:00,880
+and it you know process one symbol by
+
+502
+00:25:58,640 --> 00:26:03,919
+one symbol by one symbol
+
+503
+00:26:00,880 --> 00:26:07,440
+and some states may
+
+504
+00:26:03,919 --> 00:26:10,640
+some some of the process may stay on the
+
+505
+00:26:07,440 --> 00:26:11,520
+on one of the accept states then at that
+
+506
+00:26:10,640 --> 00:26:14,640
+time
+
+507
+00:26:11,520 --> 00:26:18,640
+at that time this part
+
+508
+00:26:14,640 --> 00:26:23,600
+of the string can be accepted by
+
+509
+00:26:18,640 --> 00:26:26,640
+the first machine then we try to feed
+
+510
+00:26:23,600 --> 00:26:27,760
+the rest of the string into the second
+
+511
+00:26:26,640 --> 00:26:30,600
+machine
+
+512
+00:26:27,760 --> 00:26:32,240
+right but the beauty of
+
+513
+00:26:30,600 --> 00:26:37,840
+non-deterministic computation
+
+514
+00:26:32,240 --> 00:26:41,919
+is here that the original process
+
+515
+00:26:37,840 --> 00:26:41,919
+can still go on so
+
+516
+00:26:42,400 --> 00:26:49,279
+we have a new process doing this
+
+517
+00:26:46,240 --> 00:26:49,919
+attempt and the original process can go
+
+518
+00:26:49,279 --> 00:26:54,159
+on
+
+519
+00:26:49,919 --> 00:26:57,360
+and find an other
+
+520
+00:26:54,159 --> 00:27:00,720
+part of the input stream
+
+521
+00:26:57,360 --> 00:27:04,720
+which can be accepted by the first
+
+522
+00:27:00,720 --> 00:27:07,840
+machine and we try
+
+523
+00:27:04,720 --> 00:27:07,840
+the rest
+
+524
+00:27:08,320 --> 00:27:14,960
+and the feed them to feed these
+
+525
+00:27:11,360 --> 00:27:17,520
+symbols to the second machine
+
+526
+00:27:14,960 --> 00:27:20,080
+and that's a new process the original
+
+527
+00:27:17,520 --> 00:27:23,360
+process can still
+
+528
+00:27:20,080 --> 00:27:27,679
+goes on and we find this one
+
+529
+00:27:23,360 --> 00:27:29,279
+and every time when a part of the input
+
+530
+00:27:27,679 --> 00:27:32,240
+string can be accepted
+
+531
+00:27:29,279 --> 00:27:33,120
+by the first machine we focus new
+
+532
+00:27:32,240 --> 00:27:36,480
+process
+
+533
+00:27:33,120 --> 00:27:40,399
+and fits the rest of the input string
+
+534
+00:27:36,480 --> 00:27:41,039
+into the second machine and by repeating
+
+535
+00:27:40,399 --> 00:27:44,399
+the whole
+
+536
+00:27:41,039 --> 00:27:47,440
+process and the focusing all necessary
+
+537
+00:27:44,399 --> 00:27:50,799
+all necessary processes
+
+538
+00:27:47,440 --> 00:27:54,399
+we can try all possible
+
+539
+00:27:50,799 --> 00:27:58,960
+let's say split point
+
+540
+00:27:54,399 --> 00:28:02,320
+right for example if you have a
+
+541
+00:27:58,960 --> 00:28:04,399
+string like this and you've you just
+
+542
+00:28:02,320 --> 00:28:04,640
+need to feed the first one first machine
+
+543
+00:28:04,399 --> 00:28:07,600
+and
+
+544
+00:28:04,640 --> 00:28:08,559
+you found that okay uh one sorry zero
+
+545
+00:28:07,600 --> 00:28:10,640
+one one
+
+546
+00:28:08,559 --> 00:28:14,559
+is accept can be accepted by the first
+
+547
+00:28:10,640 --> 00:28:14,559
+machine then you focus process
+
+548
+00:28:15,760 --> 00:28:22,159
+you feed the rest of the string
+
+549
+00:28:18,960 --> 00:28:25,760
+two and two but you
+
+550
+00:28:22,159 --> 00:28:31,360
+still the original process still goes on
+
+551
+00:28:25,760 --> 00:28:34,480
+for example you find that oh
+
+552
+00:28:31,360 --> 00:28:37,840
+0 1 1 0 1 1
+
+553
+00:28:34,480 --> 00:28:41,200
+is is also accepted by the first machine
+
+554
+00:28:37,840 --> 00:28:44,080
+then you feed this one
+
+555
+00:28:41,200 --> 00:28:45,360
+to the second machine with a new fork
+
+556
+00:28:44,080 --> 00:28:49,760
+new
+
+557
+00:28:45,360 --> 00:28:52,399
+process and also you
+
+558
+00:28:49,760 --> 00:28:54,080
+continue the original process and you
+
+559
+00:28:52,399 --> 00:28:57,200
+may find that
+
+560
+00:28:54,080 --> 00:29:00,399
+okay this will be
+
+561
+00:28:57,200 --> 00:29:03,520
+another split point and you test it
+
+562
+00:29:00,399 --> 00:29:06,559
+with n2 so
+
+563
+00:29:03,520 --> 00:29:09,600
+by doing this way with the capability of
+
+564
+00:29:06,559 --> 00:29:12,880
+non-deterministic computation for the
+
+565
+00:29:09,600 --> 00:29:16,080
+operation of concatenation we can try
+
+566
+00:29:12,880 --> 00:29:19,440
+all possible three points right
+
+567
+00:29:16,080 --> 00:29:20,720
+is that interesting so how to do the
+
+568
+00:29:19,440 --> 00:29:22,799
+construction
+
+569
+00:29:20,720 --> 00:29:24,640
+it's very straightforward actually as
+
+570
+00:29:22,799 --> 00:29:27,919
+long as you understand the
+
+571
+00:29:24,640 --> 00:29:31,120
+previous proof of the union operation
+
+572
+00:29:27,919 --> 00:29:36,159
+we are doing the same thing basically
+
+573
+00:29:31,120 --> 00:29:36,159
+so now assume that
+
+574
+00:29:36,399 --> 00:29:43,760
+a1 and a2 are regular languages and
+
+575
+00:29:39,760 --> 00:29:47,039
+n1 and n2 are
+
+576
+00:29:43,760 --> 00:29:50,640
+layer recognizers so
+
+577
+00:29:47,039 --> 00:29:52,720
+n1 is here and n2 is here what we want
+
+578
+00:29:50,640 --> 00:29:56,080
+to construct
+
+579
+00:29:52,720 --> 00:29:59,360
+is a new machine and and
+
+580
+00:29:56,080 --> 00:30:03,919
+we copy all
+
+581
+00:29:59,360 --> 00:30:06,720
+and one here and the whole end to here
+
+582
+00:30:03,919 --> 00:30:07,360
+then what we want to do is in the new
+
+583
+00:30:06,720 --> 00:30:11,039
+machine
+
+584
+00:30:07,360 --> 00:30:14,799
+in a new machine the original
+
+585
+00:30:11,039 --> 00:30:18,640
+the original accept states of m1
+
+586
+00:30:14,799 --> 00:30:21,919
+is no longer accept states will be
+
+587
+00:30:18,640 --> 00:30:22,960
+are no longer accept states but the
+
+588
+00:30:21,919 --> 00:30:26,559
+original
+
+589
+00:30:22,960 --> 00:30:29,600
+accept states of n2 are still already
+
+590
+00:30:26,559 --> 00:30:32,480
+accepted of our new machine
+
+591
+00:30:29,600 --> 00:30:32,480
+okay that's the
+
+592
+00:30:32,880 --> 00:30:39,440
+some slight changes and
+
+593
+00:30:36,000 --> 00:30:43,919
+we add as i emphasize that
+
+594
+00:30:39,440 --> 00:30:46,399
+we add new
+
+595
+00:30:43,919 --> 00:30:47,919
+epsilon transition that from the
+
+596
+00:30:46,399 --> 00:30:50,960
+original
+
+597
+00:30:47,919 --> 00:30:55,120
+accept states of n1 we
+
+598
+00:30:50,960 --> 00:30:58,720
+have abstrom transition to
+
+599
+00:30:55,120 --> 00:31:01,279
+the accepts the star state of n2
+
+600
+00:30:58,720 --> 00:31:02,000
+and that's it that's our construction
+
+601
+00:31:01,279 --> 00:31:04,960
+okay
+
+602
+00:31:02,000 --> 00:31:07,120
+so n1 star states is the star state of
+
+603
+00:31:04,960 --> 00:31:10,240
+our new machine
+
+604
+00:31:07,120 --> 00:31:12,960
+so by doing this construction
+
+605
+00:31:10,240 --> 00:31:15,039
+you can easily see what i just described
+
+606
+00:31:12,960 --> 00:31:20,240
+in the previous slide that
+
+607
+00:31:15,039 --> 00:31:23,760
+if you have input string here
+
+608
+00:31:20,240 --> 00:31:27,279
+you put into our new machine right
+
+609
+00:31:23,760 --> 00:31:30,320
+so whenever the
+
+610
+00:31:27,279 --> 00:31:34,799
+input goes to for example
+
+611
+00:31:30,320 --> 00:31:34,799
+one of the process goes to here
+
+612
+00:31:35,760 --> 00:31:42,799
+then if this part
+
+613
+00:31:39,200 --> 00:31:46,320
+of the input string is putting
+
+614
+00:31:42,799 --> 00:31:49,519
+onto the original n1
+
+615
+00:31:46,320 --> 00:31:53,120
+it accepts right
+
+616
+00:31:49,519 --> 00:31:54,880
+and under our newly constructed machine
+
+617
+00:31:53,120 --> 00:31:58,240
+you can see that
+
+618
+00:31:54,880 --> 00:32:01,679
+everything is usual for the part of n1
+
+619
+00:31:58,240 --> 00:32:04,880
+but we have a new
+
+620
+00:32:01,679 --> 00:32:08,159
+epson transition into the start state of
+
+621
+00:32:04,880 --> 00:32:11,760
+n2 right so we will
+
+622
+00:32:08,159 --> 00:32:14,799
+test this part of input
+
+623
+00:32:11,760 --> 00:32:19,600
+on n2
+
+624
+00:32:14,799 --> 00:32:19,600
+so if n2 accepts then
+
+625
+00:32:19,760 --> 00:32:25,600
+it is a string by combinating
+
+626
+00:32:23,200 --> 00:32:26,399
+the string one of the string accepted by
+
+627
+00:32:25,600 --> 00:32:30,240
+n1
+
+628
+00:32:26,399 --> 00:32:34,320
+and one of the string accepted by n2
+
+629
+00:32:30,240 --> 00:32:38,640
+right but of course
+
+630
+00:32:34,320 --> 00:32:41,600
+this transition is a new
+
+631
+00:32:38,640 --> 00:32:43,120
+is a new process so original process
+
+632
+00:32:41,600 --> 00:32:48,080
+still goes on
+
+633
+00:32:43,120 --> 00:32:48,080
+right so perhaps here
+
+634
+00:32:48,880 --> 00:32:54,840
+we the the one of the uh plus
+
+635
+00:32:52,240 --> 00:32:56,640
+one of the computational branch reaches
+
+636
+00:32:54,840 --> 00:33:00,159
+here
+
+637
+00:32:56,640 --> 00:33:04,159
+again what a new process
+
+638
+00:33:00,159 --> 00:33:07,919
+is created and start from n2
+
+639
+00:33:04,159 --> 00:33:08,640
+star state so we will try this part on
+
+640
+00:33:07,919 --> 00:33:13,279
+n2 and
+
+641
+00:33:08,640 --> 00:33:13,279
+we know that this power can be accepted
+
+642
+00:33:13,600 --> 00:33:19,919
+by a one right
+
+643
+00:33:16,720 --> 00:33:21,919
+so repeating all the process here we
+
+644
+00:33:19,919 --> 00:33:25,600
+actually can
+
+645
+00:33:21,919 --> 00:33:29,279
+test all possible split points and
+
+646
+00:33:25,600 --> 00:33:32,480
+as long as one of them works
+
+647
+00:33:29,279 --> 00:33:35,360
+then we know a string
+
+648
+00:33:32,480 --> 00:33:36,159
+is a concatenation is one of the company
+
+649
+00:33:35,360 --> 00:33:39,360
+combination
+
+650
+00:33:36,159 --> 00:33:43,120
+of a1 and a2
+
+651
+00:33:39,360 --> 00:33:44,880
+right so
+
+652
+00:33:43,120 --> 00:33:48,240
+how to formally describe the
+
+653
+00:33:44,880 --> 00:33:48,240
+construction of this machine
+
+654
+00:33:49,200 --> 00:33:53,679
+again we want to construct this machine
+
+655
+00:33:51,679 --> 00:33:56,480
+here
+
+656
+00:33:53,679 --> 00:33:57,760
+we need to describe the five components
+
+657
+00:33:56,480 --> 00:34:01,039
+here
+
+658
+00:33:57,760 --> 00:34:02,640
+and of course for simplicity and without
+
+659
+00:34:01,039 --> 00:34:05,440
+loss of generality
+
+660
+00:34:02,640 --> 00:34:07,840
+we assume that they use the same
+
+661
+00:34:05,440 --> 00:34:07,840
+alphabet
+
+662
+00:34:13,280 --> 00:34:20,720
+if different alphabets are
+
+663
+00:34:16,960 --> 00:34:24,000
+are used then we will have a have many
+
+664
+00:34:20,720 --> 00:34:27,520
+entries in our transition functions but
+
+665
+00:34:24,000 --> 00:34:28,639
+uh it's not difficult to write them all
+
+666
+00:34:27,520 --> 00:34:32,000
+but
+
+667
+00:34:28,639 --> 00:34:34,320
+there will be now necessary details to
+
+668
+00:34:32,000 --> 00:34:35,040
+the proof of of this theorem because we
+
+669
+00:34:34,320 --> 00:34:37,599
+want to do
+
+670
+00:34:35,040 --> 00:34:38,960
+we want to introduce the concept of how
+
+671
+00:34:37,599 --> 00:34:41,839
+to construct a
+
+672
+00:34:38,960 --> 00:34:42,320
+machine to recognize concentration and
+
+673
+00:34:41,839 --> 00:34:45,119
+that's
+
+674
+00:34:42,320 --> 00:34:46,240
+detailed that part of detail is not
+
+675
+00:34:45,119 --> 00:34:50,159
+helpful
+
+676
+00:34:46,240 --> 00:34:51,679
+okay so firstly the state of the
+
+677
+00:34:50,159 --> 00:34:55,599
+construction uh the
+
+678
+00:34:51,679 --> 00:34:58,640
+machine will be the union of q1 and q2
+
+679
+00:34:55,599 --> 00:35:02,400
+and we we don't need extra state right
+
+680
+00:34:58,640 --> 00:35:06,000
+it's very easy and also remember that
+
+681
+00:35:02,400 --> 00:35:10,240
+q1 and q2 are assumed
+
+682
+00:35:06,000 --> 00:35:13,839
+to be disjoint the intersection of them
+
+683
+00:35:10,240 --> 00:35:17,200
+is mt set okay so we put them together
+
+684
+00:35:13,839 --> 00:35:20,320
+without causing any mass
+
+685
+00:35:17,200 --> 00:35:20,880
+then q1 which is the start state of the
+
+686
+00:35:20,320 --> 00:35:24,640
+original
+
+687
+00:35:20,880 --> 00:35:27,839
+n1 is our new start state
+
+688
+00:35:24,640 --> 00:35:31,040
+of the machine
+
+689
+00:35:27,839 --> 00:35:34,880
+and f2 which are
+
+690
+00:35:31,040 --> 00:35:36,720
+f2 which is the set of the accept states
+
+691
+00:35:34,880 --> 00:35:42,000
+of
+
+692
+00:35:36,720 --> 00:35:45,839
+n2 is our accept state
+
+693
+00:35:42,000 --> 00:35:49,920
+so finally we need to
+
+694
+00:35:45,839 --> 00:35:54,160
+deal with transition function here
+
+695
+00:35:49,920 --> 00:35:54,160
+so for any
+
+696
+00:35:54,560 --> 00:36:02,800
+q in our queue
+
+697
+00:35:57,599 --> 00:36:07,119
+let's see if q in q1
+
+698
+00:36:02,800 --> 00:36:10,839
+and not one of the accept states
+
+699
+00:36:07,119 --> 00:36:13,839
+we copy all of them
+
+700
+00:36:10,839 --> 00:36:17,040
+okay if q
+
+701
+00:36:13,839 --> 00:36:19,760
+is in f1 see
+
+702
+00:36:17,040 --> 00:36:22,640
+in the first line we didn't consider q
+
+703
+00:36:19,760 --> 00:36:25,760
+in f1 now we consider queuing f1
+
+704
+00:36:22,640 --> 00:36:29,359
+so qf1 and the symbol
+
+705
+00:36:25,760 --> 00:36:32,880
+is not epsilon we
+
+706
+00:36:29,359 --> 00:36:36,640
+also copy everything
+
+707
+00:36:32,880 --> 00:36:40,640
+and finally if killing f1
+
+708
+00:36:36,640 --> 00:36:44,320
+and epsilon for the symbol
+
+709
+00:36:40,640 --> 00:36:47,520
+we still copy everything but
+
+710
+00:36:44,320 --> 00:36:50,560
+we add one more transition
+
+711
+00:36:47,520 --> 00:36:55,839
+to the star state of n2
+
+712
+00:36:50,560 --> 00:36:55,839
+okay so this this part will be
+
+713
+00:36:56,400 --> 00:37:03,040
+many students forget
+
+714
+00:36:59,839 --> 00:37:03,680
+this part why we write the whole thing
+
+715
+00:37:03,040 --> 00:37:06,800
+this way
+
+716
+00:37:03,680 --> 00:37:10,000
+because by copy
+
+717
+00:37:06,800 --> 00:37:14,880
+the whole machine you need to keep
+
+718
+00:37:10,000 --> 00:37:18,079
+everything here and we only
+
+719
+00:37:14,880 --> 00:37:21,599
+add a new chance
+
+720
+00:37:18,079 --> 00:37:22,160
+epsilon transition and why we don't do
+
+721
+00:37:21,599 --> 00:37:25,359
+that
+
+722
+00:37:22,160 --> 00:37:28,480
+uh in other places because it is
+
+723
+00:37:25,359 --> 00:37:29,440
+quite possible that uh okay sorry i
+
+724
+00:37:28,480 --> 00:37:33,440
+should
+
+725
+00:37:29,440 --> 00:37:36,320
+say that some of uh previously someone
+
+726
+00:37:33,440 --> 00:37:38,800
+said that why do we just write something
+
+727
+00:37:36,320 --> 00:37:38,800
+like this
+
+728
+00:37:40,480 --> 00:37:48,160
+then you probably changed
+
+729
+00:37:44,079 --> 00:37:51,280
+your part you may probably change the
+
+730
+00:37:48,160 --> 00:37:53,839
+transition function of n1
+
+731
+00:37:51,280 --> 00:37:57,599
+right because it is possible that
+
+732
+00:37:53,839 --> 00:37:57,599
+originally there is an epsom
+
+733
+00:37:57,839 --> 00:38:02,960
+transition here then if you write it
+
+734
+00:38:01,760 --> 00:38:06,400
+this way
+
+735
+00:38:02,960 --> 00:38:10,480
+this transition will be you know deleted
+
+736
+00:38:06,400 --> 00:38:12,480
+actually and only f-zone two here
+
+737
+00:38:10,480 --> 00:38:13,839
+that'll be wrong because you change the
+
+738
+00:38:12,480 --> 00:38:17,119
+machine then
+
+739
+00:38:13,839 --> 00:38:20,240
+the machine is no longer n1 and
+
+740
+00:38:17,119 --> 00:38:24,000
+you know it will no longer recognize
+
+741
+00:38:20,240 --> 00:38:28,000
+a1 so you need to keep everything
+
+742
+00:38:24,000 --> 00:38:31,920
+identical to its original state so
+
+743
+00:38:28,000 --> 00:38:34,720
+copy everything and only add something
+
+744
+00:38:31,920 --> 00:38:38,400
+you want to add
+
+745
+00:38:34,720 --> 00:38:41,200
+okay then for n2
+
+746
+00:38:38,400 --> 00:38:41,839
+we just need to copy everything we don't
+
+747
+00:38:41,200 --> 00:38:45,440
+have
+
+748
+00:38:41,839 --> 00:38:45,440
+a lot of extra work to do
+
+749
+00:38:45,760 --> 00:38:48,880
+then it's done
+
+750
+00:38:49,280 --> 00:38:52,720
+so that will be the proof
+
+751
+00:38:54,240 --> 00:38:57,680
+to the theorem that the class of regular
+
+752
+00:38:56,960 --> 00:39:00,400
+languages
+
+753
+00:38:57,680 --> 00:39:01,920
+is closed under the concatenation
+
+754
+00:39:00,400 --> 00:39:04,160
+operation
+
+755
+00:39:01,920 --> 00:39:04,160
+okay
+
+756
+00:39:07,200 --> 00:39:17,119
+so finally we want to prove
+
+757
+00:39:14,400 --> 00:39:18,640
+the class of regular languages is closed
+
+758
+00:39:17,119 --> 00:39:22,320
+under the star
+
+759
+00:39:18,640 --> 00:39:22,320
+operation okay
+
+760
+00:39:22,640 --> 00:39:26,000
+and remember that what is the star
+
+761
+00:39:24,480 --> 00:39:28,640
+operation
+
+762
+00:39:26,000 --> 00:39:29,440
+the star operation is like you have a
+
+763
+00:39:28,640 --> 00:39:33,599
+language
+
+764
+00:39:29,440 --> 00:39:37,119
+right as we described previously
+
+765
+00:39:33,599 --> 00:39:39,280
+you have a language and
+
+766
+00:39:37,119 --> 00:39:40,839
+the star operation means you
+
+767
+00:39:39,280 --> 00:39:43,760
+artificially
+
+768
+00:39:40,839 --> 00:39:47,200
+add epsilon
+
+769
+00:39:43,760 --> 00:39:51,599
+let's say if the language
+
+770
+00:39:47,200 --> 00:39:53,680
+a here has no empty string
+
+771
+00:39:51,599 --> 00:39:56,720
+then after doing the star version
+
+772
+00:39:53,680 --> 00:39:59,920
+somehow there is an empty string there
+
+773
+00:39:56,720 --> 00:40:03,119
+if a here has an empty string
+
+774
+00:39:59,920 --> 00:40:07,520
+then there will be no problem right
+
+775
+00:40:03,119 --> 00:40:12,000
+anyway you add empty string here and
+
+776
+00:40:07,520 --> 00:40:15,680
+union with a itself and the union
+
+777
+00:40:12,000 --> 00:40:16,720
+a let's use this symbol here which is
+
+778
+00:40:15,680 --> 00:40:20,079
+concatenation
+
+779
+00:40:16,720 --> 00:40:25,520
+a and also a
+
+780
+00:40:20,079 --> 00:40:29,359
+concatenation oh sorry okay nation twice
+
+781
+00:40:25,520 --> 00:40:33,040
+and infinitely
+
+782
+00:40:29,359 --> 00:40:36,640
+so some uh we usually
+
+783
+00:40:33,040 --> 00:40:40,400
+denote the set here
+
+784
+00:40:36,640 --> 00:40:45,200
+as a 0 power and
+
+785
+00:40:40,400 --> 00:40:48,800
+a 1 a squared
+
+786
+00:40:45,200 --> 00:40:52,640
+a cubic
+
+787
+00:40:48,800 --> 00:40:56,000
+and so on so which is
+
+788
+00:40:52,640 --> 00:41:01,760
+i from 0 to infinity
+
+789
+00:40:56,000 --> 00:41:05,280
+a i so that would be star operation
+
+790
+00:41:01,760 --> 00:41:09,760
+and you see that star operation
+
+791
+00:41:05,280 --> 00:41:13,520
+you can actually consider star operation
+
+792
+00:41:09,760 --> 00:41:17,200
+consists of union right
+
+793
+00:41:13,520 --> 00:41:20,160
+union so we have union here
+
+794
+00:41:17,200 --> 00:41:22,000
+union here union here union here and a
+
+795
+00:41:20,160 --> 00:41:25,560
+lot of union
+
+796
+00:41:22,000 --> 00:41:30,079
+and it also consists of
+
+797
+00:41:25,560 --> 00:41:33,359
+concatenation concatenation here
+
+798
+00:41:30,079 --> 00:41:37,680
+and four or
+
+799
+00:41:33,359 --> 00:41:39,359
+at accessor so since we are we already
+
+800
+00:41:37,680 --> 00:41:43,760
+know how to construct
+
+801
+00:41:39,359 --> 00:41:47,359
+c concatenation here and
+
+802
+00:41:43,760 --> 00:41:51,119
+union here we just need to do
+
+803
+00:41:47,359 --> 00:41:54,720
+the same thing and the
+
+804
+00:41:51,119 --> 00:41:59,920
+machine is concatenate
+
+805
+00:41:54,720 --> 00:42:05,040
+with itself and doing union with itself
+
+806
+00:41:59,920 --> 00:42:07,599
+okay so what does that mean
+
+807
+00:42:05,040 --> 00:42:07,599
+that means
+
+808
+00:42:08,079 --> 00:42:15,280
+we have a regular language a1
+
+809
+00:42:11,440 --> 00:42:19,599
+and the corresponding recognizer and nfa
+
+810
+00:42:15,280 --> 00:42:23,280
+is n1 here then the five components of
+
+811
+00:42:19,599 --> 00:42:26,319
+n1 is these five components
+
+812
+00:42:23,280 --> 00:42:30,880
+then we want to construct a and
+
+813
+00:42:26,319 --> 00:42:34,160
+new nfan recognizing a one star
+
+814
+00:42:30,880 --> 00:42:37,839
+okay so firstly
+
+815
+00:42:34,160 --> 00:42:38,400
+we want to remember that a1 star what is
+
+816
+00:42:37,839 --> 00:42:42,560
+that
+
+817
+00:42:38,400 --> 00:42:44,480
+that would be a new artificial added
+
+818
+00:42:42,560 --> 00:42:48,000
+string here
+
+819
+00:42:44,480 --> 00:42:52,240
+so in order to do that we add
+
+820
+00:42:48,000 --> 00:42:54,560
+a new state here
+
+821
+00:42:52,240 --> 00:42:55,680
+and add a new state here and also the
+
+822
+00:42:54,560 --> 00:42:59,200
+new state
+
+823
+00:42:55,680 --> 00:43:01,440
+is will be the will be one of the
+
+824
+00:42:59,200 --> 00:43:02,800
+accept states in our newly constructed
+
+825
+00:43:01,440 --> 00:43:07,200
+machine
+
+826
+00:43:02,800 --> 00:43:11,119
+so we added this string here
+
+827
+00:43:07,200 --> 00:43:16,319
+then we copy the whole
+
+828
+00:43:11,119 --> 00:43:21,119
+n1 here okay copy the whole n1 here
+
+829
+00:43:16,319 --> 00:43:25,520
+so let's say at this moment
+
+830
+00:43:21,119 --> 00:43:28,720
+if we don't do any other extra stuff
+
+831
+00:43:25,520 --> 00:43:31,760
+then what will be the new machine here
+
+832
+00:43:28,720 --> 00:43:35,119
+recognized it will recognize
+
+833
+00:43:31,760 --> 00:43:40,000
+a one itself right
+
+834
+00:43:35,119 --> 00:43:42,000
+with this one
+
+835
+00:43:40,000 --> 00:43:43,119
+right because this one will be
+
+836
+00:43:42,000 --> 00:43:46,640
+recognized by
+
+837
+00:43:43,119 --> 00:43:50,079
+here and the absorb here that means
+
+838
+00:43:46,640 --> 00:43:53,280
+when the machine is booted there will be
+
+839
+00:43:50,079 --> 00:43:56,400
+two processes one
+
+840
+00:43:53,280 --> 00:44:00,000
+goes on and one
+
+841
+00:43:56,400 --> 00:44:03,440
+so it will recognize originally what
+
+842
+00:44:00,000 --> 00:44:05,920
+a one is and the list states will make
+
+843
+00:44:03,440 --> 00:44:07,119
+this string one of the recognized
+
+844
+00:44:05,920 --> 00:44:11,440
+language
+
+845
+00:44:07,119 --> 00:44:16,240
+okay so if you have no problem
+
+846
+00:44:11,440 --> 00:44:20,000
+then see that we need to
+
+847
+00:44:16,240 --> 00:44:23,520
+concatenate the machine itself back to
+
+848
+00:44:20,000 --> 00:44:24,640
+the star uh content this machine to
+
+849
+00:44:23,520 --> 00:44:29,680
+itself
+
+850
+00:44:24,640 --> 00:44:32,960
+so we just need to add
+
+851
+00:44:29,680 --> 00:44:36,000
+epson transition back to its
+
+852
+00:44:32,960 --> 00:44:40,640
+star state right
+
+853
+00:44:36,000 --> 00:44:43,760
+when we do this what will
+
+854
+00:44:40,640 --> 00:44:45,520
+uh happen it's like the conconnation
+
+855
+00:44:43,760 --> 00:44:48,839
+operation proof
+
+856
+00:44:45,520 --> 00:44:50,240
+so you see that when you have a input
+
+857
+00:44:48,839 --> 00:44:54,400
+string
+
+858
+00:44:50,240 --> 00:44:58,319
+whenever on
+
+859
+00:44:54,400 --> 00:44:59,760
+the n1 part the process goes to one of
+
+860
+00:44:58,319 --> 00:45:04,480
+the accepts
+
+861
+00:44:59,760 --> 00:45:07,599
+accept states then there will be a new
+
+862
+00:45:04,480 --> 00:45:11,520
+process focused here
+
+863
+00:45:07,599 --> 00:45:15,040
+start from the original star state
+
+864
+00:45:11,520 --> 00:45:19,280
+right so repeat the whole thing
+
+865
+00:45:15,040 --> 00:45:22,880
+it might if finally
+
+866
+00:45:19,280 --> 00:45:26,400
+this string is accepted by the machine
+
+867
+00:45:22,880 --> 00:45:30,880
+then every time every time
+
+868
+00:45:26,400 --> 00:45:35,599
+one of the acceptance is stepped on
+
+869
+00:45:30,880 --> 00:45:38,800
+means it is a split point
+
+870
+00:45:35,599 --> 00:45:41,920
+so for this particular example
+
+871
+00:45:38,800 --> 00:45:45,200
+string w is actually in
+
+872
+00:45:41,920 --> 00:45:48,800
+a 1 4 right
+
+873
+00:45:45,200 --> 00:45:52,079
+because this part in a1 this part in
+
+874
+00:45:48,800 --> 00:45:55,359
+a1 this part in a1 and
+
+875
+00:45:52,079 --> 00:45:59,119
+this part in a1 and
+
+876
+00:45:55,359 --> 00:46:02,720
+it is also possible that
+
+877
+00:45:59,119 --> 00:46:04,000
+you have like a way to separate the
+
+878
+00:46:02,720 --> 00:46:07,040
+string
+
+879
+00:46:04,000 --> 00:46:11,119
+so w may also be in a 1
+
+880
+00:46:07,040 --> 00:46:14,240
+2 something like like that but you can
+
+881
+00:46:11,119 --> 00:46:19,200
+easily know that anyway
+
+882
+00:46:14,240 --> 00:46:22,960
+as long as the input string
+
+883
+00:46:19,200 --> 00:46:26,000
+is accepted by our new machine
+
+884
+00:46:22,960 --> 00:46:28,079
+the input string is either absolute if
+
+885
+00:46:26,000 --> 00:46:30,079
+input string is epsilon then it will be
+
+886
+00:46:28,079 --> 00:46:33,599
+accepted right
+
+887
+00:46:30,079 --> 00:46:36,319
+if input string is either if the new
+
+888
+00:46:33,599 --> 00:46:38,800
+machine here accepts the string the
+
+889
+00:46:36,319 --> 00:46:42,800
+input string will either be epsilon
+
+890
+00:46:38,800 --> 00:46:46,240
+or it can be separate
+
+891
+00:46:42,800 --> 00:46:49,599
+into several segments and
+
+892
+00:46:46,240 --> 00:46:53,760
+each of them is in
+
+893
+00:46:49,599 --> 00:46:57,440
+a1 so that's
+
+894
+00:46:53,760 --> 00:47:01,200
+why we also write the
+
+895
+00:46:57,440 --> 00:47:01,200
+definition of
+
+896
+00:47:02,400 --> 00:47:06,800
+star operation oh sorry
+
+897
+00:47:08,839 --> 00:47:13,200
+like here
+
+898
+00:47:13,920 --> 00:47:16,480
+like here
+
+899
+00:47:17,280 --> 00:47:27,920
+see so that's actually the definition we
+
+900
+00:47:21,599 --> 00:47:31,520
+have in section 1.1.5
+
+901
+00:47:27,920 --> 00:47:34,720
+okay so if you have no problem regarding
+
+902
+00:47:31,520 --> 00:47:36,079
+the proof idea here the construction the
+
+903
+00:47:34,720 --> 00:47:39,599
+formal construction
+
+904
+00:47:36,079 --> 00:47:41,280
+is pretty straightforward like the
+
+905
+00:47:39,599 --> 00:47:44,240
+previous one we have
+
+906
+00:47:41,280 --> 00:47:44,240
+we just need to
+
+907
+00:47:45,680 --> 00:47:52,960
+copy everything
+
+908
+00:47:48,720 --> 00:47:55,760
+from n1 at one state which is a star
+
+909
+00:47:52,960 --> 00:47:56,640
+uh accept states also and our start new
+
+910
+00:47:55,760 --> 00:48:00,000
+start state
+
+911
+00:47:56,640 --> 00:48:01,680
+and epson to the start state
+
+912
+00:48:00,000 --> 00:48:03,200
+and the epsilon through a star state
+
+913
+00:48:01,680 --> 00:48:07,280
+epsilon through star state
+
+914
+00:48:03,200 --> 00:48:12,160
+that's it so our
+
+915
+00:48:07,280 --> 00:48:16,240
+new machine has the original q1 of n1
+
+916
+00:48:12,160 --> 00:48:20,160
+with one extra state the one extra state
+
+917
+00:48:16,240 --> 00:48:21,520
+is the star state and the accept states
+
+918
+00:48:20,160 --> 00:48:25,280
+is the original
+
+919
+00:48:21,520 --> 00:48:29,280
+accept states with one more
+
+920
+00:48:25,280 --> 00:48:32,640
+newly added q0 okay
+
+921
+00:48:29,280 --> 00:48:35,599
+then we copy every transition like
+
+922
+00:48:32,640 --> 00:48:37,280
+in the previous proof that for all
+
+923
+00:48:35,599 --> 00:48:40,000
+original states uh
+
+924
+00:48:37,280 --> 00:48:40,960
+which is not uh and accept states we
+
+925
+00:48:40,000 --> 00:48:44,319
+copy them
+
+926
+00:48:40,960 --> 00:48:47,839
+copy all the transition function and for
+
+927
+00:48:44,319 --> 00:48:50,400
+states of the accept states and apps
+
+928
+00:48:47,839 --> 00:48:51,839
+non-app song transition we copy
+
+929
+00:48:50,400 --> 00:48:55,040
+everything
+
+930
+00:48:51,839 --> 00:48:56,240
+and for this situation we still copy
+
+931
+00:48:55,040 --> 00:48:59,599
+everything
+
+932
+00:48:56,240 --> 00:49:02,640
+and add one
+
+933
+00:48:59,599 --> 00:49:07,359
+back to its star state
+
+934
+00:49:02,640 --> 00:49:10,800
+okay and for the newly
+
+935
+00:49:07,359 --> 00:49:17,839
+sorry for the original star state
+
+936
+00:49:10,800 --> 00:49:17,839
+accept state no star state yes
+
+937
+00:49:20,240 --> 00:49:29,839
+for the newly added star state here
+
+938
+00:49:26,000 --> 00:49:33,359
+we add epsilon transition
+
+939
+00:49:29,839 --> 00:49:38,480
+the original start state
+
+940
+00:49:33,359 --> 00:49:38,480
+okay so that would be this transition
+
+941
+00:49:39,040 --> 00:49:46,240
+so here is the original
+
+942
+00:49:42,960 --> 00:49:50,640
+dates back to the start star state and
+
+943
+00:49:46,240 --> 00:49:55,200
+here is our new star states
+
+944
+00:49:50,640 --> 00:50:00,559
+epsilon to the start state that's it
+
+945
+00:49:55,200 --> 00:50:04,240
+and from the new state everything else
+
+946
+00:50:00,559 --> 00:50:07,440
+noun empty symbols
+
+947
+00:50:04,240 --> 00:50:09,680
+goes nowhere okay
+
+948
+00:50:07,440 --> 00:50:10,480
+so that will be the proof formal
+
+949
+00:50:09,680 --> 00:50:13,839
+description
+
+950
+00:50:10,480 --> 00:50:13,839
+of the proof
+
+951
+00:50:16,000 --> 00:50:22,599
+to the class of regular languages is
+
+952
+00:50:19,200 --> 00:50:25,599
+closed under the star operation
+
+953
+00:50:22,599 --> 00:50:25,599
+okay
+

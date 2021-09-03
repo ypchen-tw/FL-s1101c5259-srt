@@ -1,0 +1,5684 @@
+1
+00:00:02,000 --> 00:00:06,240
+uh chapter three
+
+2
+00:00:03,760 --> 00:00:08,639
+in chapter three we introduced
+
+3
+00:00:06,240 --> 00:00:12,160
+uh turing machines
+
+4
+00:00:08,639 --> 00:00:14,719
+the definition of turing machines and uh
+
+5
+00:00:12,160 --> 00:00:17,920
+proving some proved some
+
+6
+00:00:14,719 --> 00:00:20,560
+equivalence of variance of two machines
+
+7
+00:00:17,920 --> 00:00:23,359
+so uh
+
+8
+00:00:20,560 --> 00:00:25,840
+for two machines there are
+
+9
+00:00:23,359 --> 00:00:25,840
+let's say
+
+10
+00:00:28,240 --> 00:00:32,399
+if there is a language and you can find
+
+11
+00:00:30,560 --> 00:00:34,960
+the turing machine
+
+12
+00:00:32,399 --> 00:00:37,360
+for all possible strings
+
+13
+00:00:34,960 --> 00:00:38,960
+in that language the turing machine says
+
+14
+00:00:37,360 --> 00:00:41,040
+accept
+
+15
+00:00:38,960 --> 00:00:43,280
+for strings not in that language the
+
+16
+00:00:41,040 --> 00:00:46,320
+turing machine says reject
+
+17
+00:00:43,280 --> 00:00:48,719
+if in this case we call that
+
+18
+00:00:46,320 --> 00:00:51,360
+the language is decidable or too
+
+19
+00:00:48,719 --> 00:00:54,320
+indecidable
+
+20
+00:00:51,360 --> 00:00:57,280
+if for all the strings in the language a
+
+21
+00:00:54,320 --> 00:00:58,879
+two machine can say accept but for
+
+22
+00:00:57,280 --> 00:01:01,680
+strings not in
+
+23
+00:00:58,879 --> 00:01:04,559
+the language the two machine maybe
+
+24
+00:01:01,680 --> 00:01:08,080
+says reject or
+
+25
+00:01:04,559 --> 00:01:11,439
+no answer at all and you it never stops
+
+26
+00:01:08,080 --> 00:01:13,439
+we say that such a language
+
+27
+00:01:11,439 --> 00:01:15,680
+is tuning recognizable
+
+28
+00:01:13,439 --> 00:01:18,320
+okay so
+
+29
+00:01:15,680 --> 00:01:20,640
+there will be decidable languages and
+
+30
+00:01:18,320 --> 00:01:21,920
+recognizable languages right
+
+31
+00:01:20,640 --> 00:01:24,960
+and
+
+32
+00:01:21,920 --> 00:01:26,720
+for the viewpoint of computation
+
+33
+00:01:24,960 --> 00:01:29,759
+since we consider
+
+34
+00:01:26,720 --> 00:01:32,560
+languages are problems
+
+35
+00:01:29,759 --> 00:01:36,560
+languages are proven and
+
+36
+00:01:32,560 --> 00:01:37,600
+computational models are computation
+
+37
+00:01:36,560 --> 00:01:39,520
+to
+
+38
+00:01:37,600 --> 00:01:42,000
+you know the the way you can do the
+
+39
+00:01:39,520 --> 00:01:44,479
+computation to handle or to solve the
+
+40
+00:01:42,000 --> 00:01:44,479
+problems
+
+41
+00:01:45,200 --> 00:01:48,560
+we are thinking about uh
+
+42
+00:01:49,040 --> 00:01:55,200
+decidable languages and recognizable
+
+43
+00:01:51,520 --> 00:01:57,680
+languages in a way that um
+
+44
+00:01:55,200 --> 00:02:00,719
+in practical for practical use
+
+45
+00:01:57,680 --> 00:02:03,600
+i guess many of you or basically all of
+
+46
+00:02:00,719 --> 00:02:04,560
+you may agree that decidable languages
+
+47
+00:02:03,600 --> 00:02:08,560
+are
+
+48
+00:02:04,560 --> 00:02:10,959
+really what we want right because
+
+49
+00:02:08,560 --> 00:02:11,840
+if you have a problem instance as a
+
+50
+00:02:10,959 --> 00:02:12,640
+string
+
+51
+00:02:11,840 --> 00:02:14,800
+and
+
+52
+00:02:12,640 --> 00:02:17,360
+the turing machine
+
+53
+00:02:14,800 --> 00:02:18,800
+always gives you an answer either that
+
+54
+00:02:17,360 --> 00:02:21,599
+the string
+
+55
+00:02:18,800 --> 00:02:24,000
+is in the language that is yes or the
+
+56
+00:02:21,599 --> 00:02:26,560
+string is not in a language that would
+
+57
+00:02:24,000 --> 00:02:26,560
+be a no
+
+58
+00:02:27,280 --> 00:02:29,840
+string
+
+59
+00:02:28,480 --> 00:02:32,080
+if you have
+
+60
+00:02:29,840 --> 00:02:33,040
+algorithm to handle that kind of problem
+
+61
+00:02:32,080 --> 00:02:35,760
+then
+
+62
+00:02:33,040 --> 00:02:38,720
+it is what we want so we start from
+
+63
+00:02:35,760 --> 00:02:40,080
+decidability we start from decidable
+
+64
+00:02:38,720 --> 00:02:42,239
+languages
+
+65
+00:02:40,080 --> 00:02:44,879
+then
+
+66
+00:02:42,239 --> 00:02:48,480
+we will talk about other advanced topics
+
+67
+00:02:44,879 --> 00:02:49,760
+later so from decidable languages
+
+68
+00:02:48,480 --> 00:02:51,760
+we uh
+
+69
+00:02:49,760 --> 00:02:54,400
+will introduce some
+
+70
+00:02:51,760 --> 00:02:58,080
+decidable languages concerning regular
+
+71
+00:02:54,400 --> 00:02:59,040
+languages and don't mix them all okay we
+
+72
+00:02:58,080 --> 00:03:01,599
+just
+
+73
+00:02:59,040 --> 00:03:03,120
+use some example regarding regular
+
+74
+00:03:01,599 --> 00:03:04,400
+languages as
+
+75
+00:03:03,120 --> 00:03:05,440
+decidable
+
+76
+00:03:04,400 --> 00:03:06,560
+problems
+
+77
+00:03:05,440 --> 00:03:07,440
+okay
+
+78
+00:03:06,560 --> 00:03:10,720
+so
+
+79
+00:03:07,440 --> 00:03:12,400
+the first thing we want to look at is
+
+80
+00:03:10,720 --> 00:03:13,440
+adfa
+
+81
+00:03:12,400 --> 00:03:17,040
+okay
+
+82
+00:03:13,440 --> 00:03:19,440
+so in this text in this book we use a
+
+83
+00:03:17,040 --> 00:03:23,599
+as acceptance
+
+84
+00:03:19,440 --> 00:03:26,080
+acceptance and dfa means
+
+85
+00:03:23,599 --> 00:03:28,720
+the acceptance of dfa
+
+86
+00:03:26,080 --> 00:03:30,239
+okay in a way you can imagine that we
+
+87
+00:03:28,720 --> 00:03:33,360
+can
+
+88
+00:03:30,239 --> 00:03:35,200
+we can encode a dfa
+
+89
+00:03:33,360 --> 00:03:36,560
+into a string
+
+90
+00:03:35,200 --> 00:03:38,080
+right and
+
+91
+00:03:36,560 --> 00:03:40,000
+how to imagine it
+
+92
+00:03:38,080 --> 00:03:42,239
+actually you can
+
+93
+00:03:40,000 --> 00:03:44,319
+in a way you can think of
+
+94
+00:03:42,239 --> 00:03:47,200
+encoding a machine
+
+95
+00:03:44,319 --> 00:03:51,040
+the encodings of a machine is actually a
+
+96
+00:03:47,200 --> 00:03:52,400
+program you write you can think of a dfa
+
+97
+00:03:51,040 --> 00:03:54,560
+written in
+
+98
+00:03:52,400 --> 00:03:55,680
+let's say python
+
+99
+00:03:54,560 --> 00:03:59,040
+c
+
+100
+00:03:55,680 --> 00:04:00,480
+and the python code the c code
+
+101
+00:03:59,040 --> 00:04:02,560
+is actually
+
+102
+00:04:00,480 --> 00:04:03,360
+the encoding of that machine
+
+103
+00:04:02,560 --> 00:04:04,720
+okay
+
+104
+00:04:03,360 --> 00:04:06,400
+so
+
+105
+00:04:04,720 --> 00:04:09,439
+let's say uh
+
+106
+00:04:06,400 --> 00:04:12,640
+b here is a machine which is a dfa so
+
+107
+00:04:09,439 --> 00:04:15,840
+you return it as some text file or text
+
+108
+00:04:12,640 --> 00:04:19,759
+string long text long text string
+
+109
+00:04:15,840 --> 00:04:23,520
+and you have a string the string is for
+
+110
+00:04:19,759 --> 00:04:26,800
+the dfa okay so the string is the input
+
+111
+00:04:23,520 --> 00:04:28,400
+of the dfab
+
+112
+00:04:26,800 --> 00:04:29,199
+then let's say
+
+113
+00:04:28,400 --> 00:04:31,199
+we
+
+114
+00:04:29,199 --> 00:04:34,240
+pair
+
+115
+00:04:31,199 --> 00:04:36,080
+a machine a dfab with
+
+116
+00:04:34,240 --> 00:04:38,000
+the input
+
+117
+00:04:36,080 --> 00:04:38,880
+for that machine
+
+118
+00:04:38,000 --> 00:04:40,160
+and
+
+119
+00:04:38,880 --> 00:04:41,280
+if b
+
+120
+00:04:40,160 --> 00:04:44,880
+accept
+
+121
+00:04:41,280 --> 00:04:46,960
+w we said that the whole thing here
+
+122
+00:04:44,880 --> 00:04:48,479
+the whole thing here
+
+123
+00:04:46,960 --> 00:04:50,720
+is
+
+124
+00:04:48,479 --> 00:04:50,720
+in
+
+125
+00:04:51,759 --> 00:04:53,360
+a
+
+126
+00:04:52,560 --> 00:04:56,320
+d
+
+127
+00:04:53,360 --> 00:05:00,000
+f a
+
+128
+00:04:56,320 --> 00:05:02,240
+okay is in adfa
+
+129
+00:05:00,000 --> 00:05:02,240
+so
+
+130
+00:05:03,840 --> 00:05:08,560
+we want to
+
+131
+00:05:05,440 --> 00:05:10,800
+prove that adfa is a decidable language
+
+132
+00:05:08,560 --> 00:05:13,280
+then by definition
+
+133
+00:05:10,800 --> 00:05:14,639
+we need to build up a turing machine and
+
+134
+00:05:13,280 --> 00:05:16,720
+don't forget that
+
+135
+00:05:14,639 --> 00:05:18,240
+for the transmission we want to
+
+136
+00:05:16,720 --> 00:05:21,680
+construct
+
+137
+00:05:18,240 --> 00:05:24,080
+our input is the whole string here
+
+138
+00:05:21,680 --> 00:05:27,520
+okay it's the whole string here not b
+
+139
+00:05:24,080 --> 00:05:28,400
+only not w only it's actually b and w
+
+140
+00:05:27,520 --> 00:05:31,919
+and
+
+141
+00:05:28,400 --> 00:05:34,320
+the whole string is the input of our
+
+142
+00:05:31,919 --> 00:05:35,520
+turing machine we want to build a turing
+
+143
+00:05:34,320 --> 00:05:36,840
+machine
+
+144
+00:05:35,520 --> 00:05:40,560
+for any
+
+145
+00:05:36,840 --> 00:05:43,520
+possible don't use w anyway so for any
+
+146
+00:05:40,560 --> 00:05:43,520
+possible string
+
+147
+00:05:43,759 --> 00:05:49,759
+if x is in a dfa the two machine must
+
+148
+00:05:47,759 --> 00:05:53,199
+answer accept
+
+149
+00:05:49,759 --> 00:05:54,320
+x not in adfa the machine must answer
+
+150
+00:05:53,199 --> 00:05:57,199
+reject
+
+151
+00:05:54,320 --> 00:06:00,160
+okay if we can build up such a turing
+
+152
+00:05:57,199 --> 00:06:02,080
+machine we prove that adfa is a
+
+153
+00:06:00,160 --> 00:06:03,280
+decidable language
+
+154
+00:06:02,080 --> 00:06:05,120
+so
+
+155
+00:06:03,280 --> 00:06:06,560
+let's do it okay
+
+156
+00:06:05,120 --> 00:06:09,039
+so let's say
+
+157
+00:06:06,560 --> 00:06:10,080
+we build up we construct a two machine
+
+158
+00:06:09,039 --> 00:06:12,000
+like this
+
+159
+00:06:10,080 --> 00:06:13,759
+on input
+
+160
+00:06:12,000 --> 00:06:17,440
+b and w
+
+161
+00:06:13,759 --> 00:06:19,440
+where b is a dfa and the w is a string
+
+162
+00:06:17,440 --> 00:06:23,120
+okay
+
+163
+00:06:19,440 --> 00:06:26,880
+here we need uh i must note that
+
+164
+00:06:23,120 --> 00:06:29,440
+you need to pay attention to how
+
+165
+00:06:26,880 --> 00:06:31,680
+uh the trim machine construction
+
+166
+00:06:29,440 --> 00:06:35,360
+all through this course
+
+167
+00:06:31,680 --> 00:06:40,000
+remember what i what we just said what i
+
+168
+00:06:35,360 --> 00:06:41,360
+just i just said that for any string in
+
+169
+00:06:40,000 --> 00:06:43,840
+all possible
+
+170
+00:06:41,360 --> 00:06:45,600
+for any for all possible strings
+
+171
+00:06:43,840 --> 00:06:47,759
+actually
+
+172
+00:06:45,600 --> 00:06:49,440
+the alphabet here is the turing
+
+173
+00:06:47,759 --> 00:06:51,680
+machine's input
+
+174
+00:06:49,440 --> 00:06:55,199
+alphabet right so currently maybe you
+
+175
+00:06:51,680 --> 00:06:57,520
+can consider like utf-8 utf-16 or some
+
+176
+00:06:55,199 --> 00:06:57,520
+other
+
+177
+00:06:57,919 --> 00:07:03,199
+code you can
+
+178
+00:07:00,240 --> 00:07:06,560
+use as input that doesn't matter anyway
+
+179
+00:07:03,199 --> 00:07:08,400
+for any string that's a key word here
+
+180
+00:07:06,560 --> 00:07:11,039
+so
+
+181
+00:07:08,400 --> 00:07:15,199
+we usually consider that
+
+182
+00:07:11,039 --> 00:07:16,800
+at the zeros step here there is a step
+
+183
+00:07:15,199 --> 00:07:20,639
+zero here
+
+184
+00:07:16,800 --> 00:07:22,639
+actually to filter out all
+
+185
+00:07:20,639 --> 00:07:24,319
+invalid
+
+186
+00:07:22,639 --> 00:07:26,000
+male formed
+
+187
+00:07:24,319 --> 00:07:30,479
+input okay
+
+188
+00:07:26,000 --> 00:07:33,599
+so if you have an input
+
+189
+00:07:30,479 --> 00:07:36,479
+gibberish input here then
+
+190
+00:07:33,599 --> 00:07:39,520
+the machine we can we automatically
+
+191
+00:07:36,479 --> 00:07:42,840
+consider the machine reject
+
+192
+00:07:39,520 --> 00:07:46,400
+invalid in reject strings of invalid
+
+193
+00:07:42,840 --> 00:07:46,400
+format okay
+
+194
+00:07:46,720 --> 00:07:49,759
+and we consider
+
+195
+00:07:48,319 --> 00:07:51,919
+determining
+
+196
+00:07:49,759 --> 00:07:56,400
+if the string is
+
+197
+00:07:51,919 --> 00:07:59,360
+in a valid format the string is valid
+
+198
+00:07:56,400 --> 00:08:03,120
+is a first is a first step or a zero
+
+199
+00:07:59,360 --> 00:08:05,360
+step so we don't uh write them in our
+
+200
+00:08:03,120 --> 00:08:07,919
+construction that's always a there's
+
+201
+00:08:05,360 --> 00:08:10,080
+always a check for that
+
+202
+00:08:07,919 --> 00:08:10,080
+so
+
+203
+00:08:11,120 --> 00:08:16,319
+that's why we write
+
+204
+00:08:13,440 --> 00:08:18,240
+we have the input then we focus on the
+
+205
+00:08:16,319 --> 00:08:19,840
+problem we need to solve which is to
+
+206
+00:08:18,240 --> 00:08:23,440
+determine if
+
+207
+00:08:19,840 --> 00:08:28,000
+b that given dfa can accept
+
+208
+00:08:23,440 --> 00:08:29,199
+w or not okay so where b is dfa w is a
+
+209
+00:08:28,000 --> 00:08:32,240
+string
+
+210
+00:08:29,199 --> 00:08:33,360
+any string any input string the whole
+
+211
+00:08:32,240 --> 00:08:34,560
+input string
+
+212
+00:08:33,360 --> 00:08:36,479
+not
+
+213
+00:08:34,560 --> 00:08:38,560
+formatted as
+
+214
+00:08:36,479 --> 00:08:40,800
+this
+
+215
+00:08:38,560 --> 00:08:41,680
+is automatically rejected
+
+216
+00:08:40,800 --> 00:08:44,640
+okay
+
+217
+00:08:41,680 --> 00:08:47,200
+so you can think of that all possible
+
+218
+00:08:44,640 --> 00:08:49,440
+strings of the encoding
+
+219
+00:08:47,200 --> 00:08:52,000
+of the turing machine
+
+220
+00:08:49,440 --> 00:08:56,640
+there is a
+
+221
+00:08:52,000 --> 00:08:56,640
+adfa here and others on
+
+222
+00:08:57,040 --> 00:09:00,240
+b
+
+223
+00:08:58,320 --> 00:09:05,519
+here b accept
+
+224
+00:09:00,240 --> 00:09:05,519
+w here b reject w and many
+
+225
+00:09:05,920 --> 00:09:11,279
+string of invalid format and for this
+
+226
+00:09:08,880 --> 00:09:13,839
+part we already reject them
+
+227
+00:09:11,279 --> 00:09:15,760
+okay so we don't consider them even in
+
+228
+00:09:13,839 --> 00:09:17,839
+the proof
+
+229
+00:09:15,760 --> 00:09:19,519
+always remember that but
+
+230
+00:09:17,839 --> 00:09:23,040
+reject
+
+231
+00:09:19,519 --> 00:09:25,279
+strings from this part is still
+
+232
+00:09:23,040 --> 00:09:28,240
+the task of the turing machine
+
+233
+00:09:25,279 --> 00:09:32,399
+okay it must do it
+
+234
+00:09:28,240 --> 00:09:35,040
+anyway so let's say we have a input here
+
+235
+00:09:32,399 --> 00:09:37,279
+and where b is the dfa and the w is a
+
+236
+00:09:35,040 --> 00:09:38,880
+string so our two machine just need to
+
+237
+00:09:37,279 --> 00:09:40,720
+simulate b
+
+238
+00:09:38,880 --> 00:09:41,839
+on w
+
+239
+00:09:40,720 --> 00:09:43,839
+okay
+
+240
+00:09:41,839 --> 00:09:46,399
+and the simulation
+
+241
+00:09:43,839 --> 00:09:47,440
+will always stops
+
+242
+00:09:46,399 --> 00:09:49,440
+right
+
+243
+00:09:47,440 --> 00:09:50,880
+because for
+
+244
+00:09:49,440 --> 00:09:54,160
+dfa
+
+245
+00:09:50,880 --> 00:09:57,200
+it's consume one symbol and
+
+246
+00:09:54,160 --> 00:10:00,160
+do one step and consume one symbol to
+
+247
+00:09:57,200 --> 00:10:00,959
+one step so you just need to
+
+248
+00:10:00,160 --> 00:10:02,839
+do
+
+249
+00:10:00,959 --> 00:10:06,000
+so many
+
+250
+00:10:02,839 --> 00:10:08,240
+steps of the dfab
+
+251
+00:10:06,000 --> 00:10:11,440
+then b stops
+
+252
+00:10:08,240 --> 00:10:13,040
+after b stops you check
+
+253
+00:10:11,440 --> 00:10:14,399
+if b
+
+254
+00:10:13,040 --> 00:10:15,440
+stops
+
+255
+00:10:14,399 --> 00:10:18,399
+in a
+
+256
+00:10:15,440 --> 00:10:20,240
+in an accept state
+
+257
+00:10:18,399 --> 00:10:21,839
+the machine and
+
+258
+00:10:20,240 --> 00:10:23,440
+accept
+
+259
+00:10:21,839 --> 00:10:25,760
+okay so
+
+260
+00:10:23,440 --> 00:10:28,560
+this accept
+
+261
+00:10:25,760 --> 00:10:30,079
+is for m here
+
+262
+00:10:28,560 --> 00:10:32,720
+okay
+
+263
+00:10:30,079 --> 00:10:34,160
+this accept means and
+
+264
+00:10:32,720 --> 00:10:36,320
+accept
+
+265
+00:10:34,160 --> 00:10:39,440
+sorry
+
+266
+00:10:36,320 --> 00:10:41,519
+this accept means m
+
+267
+00:10:39,440 --> 00:10:44,079
+accepts
+
+268
+00:10:41,519 --> 00:10:45,519
+its own input what is the only input
+
+269
+00:10:44,079 --> 00:10:49,920
+it's b
+
+270
+00:10:45,519 --> 00:10:51,360
+w we use oh we use
+
+271
+00:10:49,920 --> 00:10:52,959
+angle here
+
+272
+00:10:51,360 --> 00:10:54,800
+to indicate
+
+273
+00:10:52,959 --> 00:10:58,320
+these
+
+274
+00:10:54,800 --> 00:11:02,320
+uh math objects are encoded as text
+
+275
+00:10:58,320 --> 00:11:05,440
+string okay as encoded as text string oh
+
+276
+00:11:02,320 --> 00:11:09,279
+not really text but a string okay string
+
+277
+00:11:05,440 --> 00:11:11,279
+of of the alphabet of the two machine
+
+278
+00:11:09,279 --> 00:11:13,640
+if
+
+279
+00:11:11,279 --> 00:11:15,839
+b ends in a
+
+280
+00:11:13,640 --> 00:11:19,120
+non-accepting state
+
+281
+00:11:15,839 --> 00:11:21,360
+okay then of course reject and the least
+
+282
+00:11:19,120 --> 00:11:23,200
+reject means n
+
+283
+00:11:21,360 --> 00:11:24,640
+rejects
+
+284
+00:11:23,200 --> 00:11:26,839
+the whole
+
+285
+00:11:24,640 --> 00:11:31,760
+input
+
+286
+00:11:26,839 --> 00:11:31,760
+string and apparently i guess
+
+287
+00:11:32,880 --> 00:11:38,000
+we can accept that these two machine can
+
+288
+00:11:38,560 --> 00:11:45,920
+accept all strings in which b accept w
+
+289
+00:11:43,200 --> 00:11:50,320
+and reject all strings
+
+290
+00:11:45,920 --> 00:11:53,519
+in which b reject w or not except w
+
+291
+00:11:50,320 --> 00:11:56,399
+and of course as i said all in all
+
+292
+00:11:53,519 --> 00:11:58,320
+strings of invalid format will be
+
+293
+00:11:56,399 --> 00:12:02,000
+rejected so
+
+294
+00:11:58,320 --> 00:12:04,800
+and is apparently a decider for adfa
+
+295
+00:12:02,000 --> 00:12:08,079
+and by definition since
+
+296
+00:12:04,800 --> 00:12:11,360
+the decider of adfa exists
+
+297
+00:12:08,079 --> 00:12:15,279
+adfa is a decidable language
+
+298
+00:12:11,360 --> 00:12:15,279
+okay so that's how we prove it
+
+299
+00:12:17,839 --> 00:12:20,079
+okay
+
+300
+00:12:20,160 --> 00:12:24,800
+then next one
+
+301
+00:12:22,000 --> 00:12:26,240
+that'll be a and f a okay now you know
+
+302
+00:12:24,800 --> 00:12:29,279
+that a
+
+303
+00:12:26,240 --> 00:12:30,480
+is for acceptance and f a means we are
+
+304
+00:12:29,279 --> 00:12:31,839
+talking about
+
+305
+00:12:30,480 --> 00:12:34,320
+a
+
+306
+00:12:31,839 --> 00:12:36,480
+noun deterministic finite automata
+
+307
+00:12:34,320 --> 00:12:40,480
+so the same as we said
+
+308
+00:12:36,480 --> 00:12:42,880
+we have if we the string for our
+
+309
+00:12:40,480 --> 00:12:44,240
+turing machine for the termination we
+
+310
+00:12:42,880 --> 00:12:46,000
+will
+
+311
+00:12:44,240 --> 00:12:49,920
+construct
+
+312
+00:12:46,000 --> 00:12:54,720
+b is an nfa and
+
+313
+00:12:49,920 --> 00:12:57,920
+w is for nfa and if b accept w we say
+
+314
+00:12:54,720 --> 00:13:00,800
+that the whole string as our input is in
+
+315
+00:12:57,920 --> 00:13:02,320
+anfa and our two machine the two machine
+
+316
+00:13:00,800 --> 00:13:04,240
+we want to construct
+
+317
+00:13:02,320 --> 00:13:07,440
+should accept it
+
+318
+00:13:04,240 --> 00:13:08,240
+accepted it otherwise it should reject
+
+319
+00:13:07,440 --> 00:13:09,440
+it
+
+320
+00:13:08,240 --> 00:13:11,920
+okay
+
+321
+00:13:09,440 --> 00:13:14,800
+so how do we prove that actually we
+
+322
+00:13:11,920 --> 00:13:17,519
+already did in a way
+
+323
+00:13:14,800 --> 00:13:18,560
+because we have proof
+
+324
+00:13:17,519 --> 00:13:21,839
+via
+
+325
+00:13:18,560 --> 00:13:23,839
+theorem 139
+
+326
+00:13:21,839 --> 00:13:28,079
+we have proof
+
+327
+00:13:23,839 --> 00:13:32,839
+a conversion procedure can convert an fa
+
+328
+00:13:28,079 --> 00:13:36,320
+into an equivalent dfa right
+
+329
+00:13:32,839 --> 00:13:37,279
+then we just need to convert a turing
+
+330
+00:13:36,320 --> 00:13:39,440
+machine
+
+331
+00:13:37,279 --> 00:13:43,120
+on bw
+
+332
+00:13:39,440 --> 00:13:46,000
+remember that all strings
+
+333
+00:13:43,120 --> 00:13:48,320
+of invalid formats
+
+334
+00:13:46,000 --> 00:13:51,120
+will be rejected automatically so we
+
+335
+00:13:48,320 --> 00:13:52,639
+don't you know mention that anymore
+
+336
+00:13:51,120 --> 00:13:56,000
+and
+
+337
+00:13:52,639 --> 00:13:57,519
+b is nfa and w is a string
+
+338
+00:13:56,000 --> 00:13:59,279
+since b is
+
+339
+00:13:57,519 --> 00:14:00,480
+an nfa
+
+340
+00:13:59,279 --> 00:14:02,880
+we can
+
+341
+00:14:00,480 --> 00:14:05,600
+implement the procedure actually you
+
+342
+00:14:02,880 --> 00:14:07,839
+have done a procedure
+
+343
+00:14:05,600 --> 00:14:09,440
+on your own right you have you have
+
+344
+00:14:07,839 --> 00:14:12,079
+practiced that
+
+345
+00:14:09,440 --> 00:14:17,760
+to convert an nfa to dfa and you know
+
+346
+00:14:12,079 --> 00:14:20,560
+that given any well-formed nfa
+
+347
+00:14:17,760 --> 00:14:22,959
+converting it to an equivalent dfa is
+
+348
+00:14:20,560 --> 00:14:25,040
+just you know some
+
+349
+00:14:22,959 --> 00:14:27,360
+probably very
+
+350
+00:14:25,040 --> 00:14:29,279
+tedious but it's and
+
+351
+00:14:27,360 --> 00:14:31,920
+it
+
+352
+00:14:29,279 --> 00:14:33,920
+it the steps are easy
+
+353
+00:14:31,920 --> 00:14:35,760
+you just need to be careful
+
+354
+00:14:33,920 --> 00:14:38,639
+and the careful is not a problem for
+
+355
+00:14:35,760 --> 00:14:41,360
+computers right so we just use the
+
+356
+00:14:38,639 --> 00:14:42,240
+procedure to convert b
+
+357
+00:14:41,360 --> 00:14:46,240
+into
+
+358
+00:14:42,240 --> 00:14:46,240
+an equivalent dfac
+
+359
+00:14:46,880 --> 00:14:52,639
+after converting that we know we have
+
+360
+00:14:49,120 --> 00:14:54,079
+proven that we have proven that
+
+361
+00:14:52,639 --> 00:14:56,320
+any string
+
+362
+00:14:54,079 --> 00:14:58,639
+any string
+
+363
+00:14:56,320 --> 00:15:01,760
+fit into c will
+
+364
+00:14:58,639 --> 00:15:05,040
+have we will obtain the same result
+
+365
+00:15:01,760 --> 00:15:08,079
+accept or reject as we fit the string
+
+366
+00:15:05,040 --> 00:15:09,839
+into b right we have proven that so now
+
+367
+00:15:08,079 --> 00:15:12,399
+we just need to
+
+368
+00:15:09,839 --> 00:15:15,519
+we just need to use c
+
+369
+00:15:12,399 --> 00:15:18,560
+with the same input w
+
+370
+00:15:15,519 --> 00:15:21,040
+and put the whole thing
+
+371
+00:15:18,560 --> 00:15:21,040
+into
+
+372
+00:15:21,120 --> 00:15:27,199
+the turing machine we just construct for
+
+373
+00:15:24,839 --> 00:15:29,759
+adfa right
+
+374
+00:15:27,199 --> 00:15:32,160
+so our two machine you can
+
+375
+00:15:29,759 --> 00:15:34,320
+well not exactly but you can think of
+
+376
+00:15:32,160 --> 00:15:35,199
+it's like a function called
+
+377
+00:15:34,320 --> 00:15:37,279
+we
+
+378
+00:15:35,199 --> 00:15:38,560
+the two machine end here
+
+379
+00:15:37,279 --> 00:15:40,560
+calls m
+
+380
+00:15:38,560 --> 00:15:44,079
+as a function
+
+381
+00:15:40,560 --> 00:15:47,120
+as a procedure call and on
+
+382
+00:15:44,079 --> 00:15:49,920
+cw on the string cw on the whole input
+
+383
+00:15:47,120 --> 00:15:52,880
+set of cw then
+
+384
+00:15:49,920 --> 00:15:58,240
+if n accepts
+
+385
+00:15:52,880 --> 00:16:00,000
+that means and accept its input cw
+
+386
+00:15:58,240 --> 00:16:03,360
+we know that
+
+387
+00:16:00,000 --> 00:16:06,720
+that means c will accept w
+
+388
+00:16:03,360 --> 00:16:07,680
+and we know that b will accept w
+
+389
+00:16:06,720 --> 00:16:10,160
+so
+
+390
+00:16:07,680 --> 00:16:11,360
+our turn machine n
+
+391
+00:16:10,160 --> 00:16:14,480
+accepts
+
+392
+00:16:11,360 --> 00:16:16,480
+its input b w
+
+393
+00:16:14,480 --> 00:16:19,680
+otherwise
+
+394
+00:16:16,480 --> 00:16:24,399
+since m is a decider it always stops
+
+395
+00:16:19,680 --> 00:16:26,079
+with accept or reject so if not exact
+
+396
+00:16:24,399 --> 00:16:29,199
+if not accepts
+
+397
+00:16:26,079 --> 00:16:31,279
+it's reject so otherwise the two
+
+398
+00:16:29,199 --> 00:16:35,600
+machines we are constructing here just
+
+399
+00:16:31,279 --> 00:16:36,800
+need to reject its own input because we
+
+400
+00:16:35,600 --> 00:16:39,600
+know
+
+401
+00:16:36,800 --> 00:16:42,880
+c will reject w
+
+402
+00:16:39,600 --> 00:16:46,320
+then we know b will reject w so we
+
+403
+00:16:42,880 --> 00:16:48,000
+reject our input b w
+
+404
+00:16:46,320 --> 00:16:51,000
+okay
+
+405
+00:16:48,000 --> 00:16:51,000
+then
+
+406
+00:16:51,040 --> 00:16:56,880
+the two machine we construct here is a
+
+407
+00:16:53,839 --> 00:17:01,440
+designer for an fa
+
+408
+00:16:56,880 --> 00:17:01,440
+okay is a designer for an fa
+
+409
+00:17:02,399 --> 00:17:08,079
+since
+
+410
+00:17:03,600 --> 00:17:11,839
+nfa are actually decided for a and fa
+
+411
+00:17:08,079 --> 00:17:14,400
+since the designer for anfa exists nfa
+
+412
+00:17:11,839 --> 00:17:16,640
+is a decidable language
+
+413
+00:17:14,400 --> 00:17:16,640
+okay
+
+414
+00:17:17,199 --> 00:17:21,520
+so next one will be a
+
+415
+00:17:21,760 --> 00:17:24,160
+regular expression
+
+416
+00:17:23,280 --> 00:17:26,959
+okay
+
+417
+00:17:24,160 --> 00:17:28,319
+so if you have a regular expression and
+
+418
+00:17:26,959 --> 00:17:30,640
+a string
+
+419
+00:17:28,319 --> 00:17:32,880
+how do you determine that
+
+420
+00:17:30,640 --> 00:17:35,120
+that regular expression generates the
+
+421
+00:17:32,880 --> 00:17:38,080
+string w or
+
+422
+00:17:35,120 --> 00:17:41,760
+the string w is in
+
+423
+00:17:38,080 --> 00:17:41,760
+the language specified
+
+424
+00:17:42,240 --> 00:17:47,360
+of the regular string
+
+425
+00:17:44,320 --> 00:17:48,240
+how do you can you decide that
+
+426
+00:17:47,360 --> 00:17:50,559
+well
+
+427
+00:17:48,240 --> 00:17:53,120
+we want to prove that yes it is
+
+428
+00:17:50,559 --> 00:17:55,360
+decidable we can write we can write a
+
+429
+00:17:53,120 --> 00:17:58,160
+program which is a turing machine
+
+430
+00:17:55,360 --> 00:18:01,039
+besides such language
+
+431
+00:17:58,160 --> 00:18:02,240
+or you can say handle such a problem
+
+432
+00:18:01,039 --> 00:18:04,160
+okay
+
+433
+00:18:02,240 --> 00:18:06,559
+so for the same
+
+434
+00:18:04,160 --> 00:18:07,679
+procedure
+
+435
+00:18:06,559 --> 00:18:09,600
+we
+
+436
+00:18:07,679 --> 00:18:11,440
+build a tubing machine p
+
+437
+00:18:09,600 --> 00:18:14,960
+for a regular
+
+438
+00:18:11,440 --> 00:18:16,559
+expression and a string 2
+
+439
+00:18:14,960 --> 00:18:17,919
+to check
+
+440
+00:18:16,559 --> 00:18:19,200
+then
+
+441
+00:18:17,919 --> 00:18:21,520
+we use
+
+442
+00:18:19,200 --> 00:18:24,960
+the procedure we
+
+443
+00:18:21,520 --> 00:18:29,120
+have on theorem 1.45
+
+444
+00:18:24,960 --> 00:18:31,440
+to convert the regular expression into
+
+445
+00:18:29,120 --> 00:18:32,400
+an equivalent nfa
+
+446
+00:18:31,440 --> 00:18:34,799
+okay
+
+447
+00:18:32,400 --> 00:18:35,600
+if you don't remember that we we know
+
+448
+00:18:34,799 --> 00:18:37,600
+that
+
+449
+00:18:35,600 --> 00:18:40,160
+for three
+
+450
+00:18:37,600 --> 00:18:43,919
+for three basic uh regular expression
+
+451
+00:18:40,160 --> 00:18:46,160
+definition and the three advanced
+
+452
+00:18:43,919 --> 00:18:49,760
+regular expression definition we can
+
+453
+00:18:46,160 --> 00:18:51,600
+build we can build any equivalent nfa
+
+454
+00:18:49,760 --> 00:18:55,280
+for the
+
+455
+00:18:51,600 --> 00:18:57,840
+well for avail for a well-formed
+
+456
+00:18:55,280 --> 00:18:59,840
+regular expression okay so we convert
+
+457
+00:18:57,840 --> 00:19:04,160
+that
+
+458
+00:18:59,840 --> 00:19:06,080
+into a and fa uh sorry f nfa and then we
+
+459
+00:19:04,160 --> 00:19:08,840
+just need to call
+
+460
+00:19:06,080 --> 00:19:10,400
+we just need to call
+
+461
+00:19:08,840 --> 00:19:12,799
+the
+
+462
+00:19:10,400 --> 00:19:13,919
+tune machine we have on
+
+463
+00:19:12,799 --> 00:19:14,720
+a
+
+464
+00:19:13,919 --> 00:19:15,520
+and
+
+465
+00:19:14,720 --> 00:19:16,400
+f
+
+466
+00:19:15,520 --> 00:19:17,200
+a
+
+467
+00:19:16,400 --> 00:19:20,640
+right
+
+468
+00:19:17,200 --> 00:19:22,480
+on input and f a a and the corresponding
+
+469
+00:19:20,640 --> 00:19:24,799
+input w
+
+470
+00:19:22,480 --> 00:19:28,400
+so the same thing goes on here
+
+471
+00:19:24,799 --> 00:19:30,400
+if and accepts
+
+472
+00:19:28,400 --> 00:19:32,000
+our turing machine
+
+473
+00:19:30,400 --> 00:19:34,559
+for a
+
+474
+00:19:32,000 --> 00:19:37,120
+regular expression accept
+
+475
+00:19:34,559 --> 00:19:37,120
+that means
+
+476
+00:19:37,600 --> 00:19:43,679
+this regular expression r
+
+477
+00:19:40,160 --> 00:19:45,600
+really contains a given string
+
+478
+00:19:43,679 --> 00:19:47,120
+if n rejects
+
+479
+00:19:45,600 --> 00:19:53,120
+we know that
+
+480
+00:19:47,120 --> 00:19:55,520
+w is not in r so our p reject its own
+
+481
+00:19:53,120 --> 00:19:55,520
+input
+
+482
+00:19:57,280 --> 00:20:02,000
+okay
+
+483
+00:19:59,440 --> 00:20:04,400
+so that's about it again you can see how
+
+484
+00:20:02,000 --> 00:20:07,840
+mathematicians think about the problem
+
+485
+00:20:04,400 --> 00:20:11,360
+if we have solved a problem like we have
+
+486
+00:20:07,840 --> 00:20:14,720
+theorem 1.45 we just need to
+
+487
+00:20:11,360 --> 00:20:14,720
+make our problem
+
+488
+00:20:15,200 --> 00:20:20,480
+can be solved by the previous
+
+489
+00:20:18,480 --> 00:20:22,240
+solution then we
+
+490
+00:20:20,480 --> 00:20:23,679
+we prove it
+
+491
+00:20:22,240 --> 00:20:27,360
+okay
+
+492
+00:20:23,679 --> 00:20:29,200
+so again since p is the decider for
+
+493
+00:20:27,360 --> 00:20:31,840
+a regular expression
+
+494
+00:20:29,200 --> 00:20:35,840
+then a regular expression is a decidable
+
+495
+00:20:31,840 --> 00:20:35,840
+language okay we'll prove that
+
+496
+00:20:35,919 --> 00:20:40,240
+now let's see another type of problems
+
+497
+00:20:38,640 --> 00:20:44,960
+we are going
+
+498
+00:20:40,240 --> 00:20:46,840
+to prove here that's that is edfa
+
+499
+00:20:44,960 --> 00:20:48,400
+the e here
+
+500
+00:20:46,840 --> 00:20:50,880
+well
+
+501
+00:20:48,400 --> 00:20:53,679
+maybe for emptiness
+
+502
+00:20:50,880 --> 00:20:56,640
+what means by emptiness that means give
+
+503
+00:20:53,679 --> 00:20:58,080
+you a dfa
+
+504
+00:20:56,640 --> 00:20:58,960
+a dfa
+
+505
+00:20:58,080 --> 00:21:01,520
+if
+
+506
+00:20:58,960 --> 00:21:03,919
+the language recognized by this
+
+507
+00:21:01,520 --> 00:21:05,760
+particular dfa is
+
+508
+00:21:03,919 --> 00:21:07,600
+empty set
+
+509
+00:21:05,760 --> 00:21:08,400
+that means
+
+510
+00:21:07,600 --> 00:21:12,159
+this
+
+511
+00:21:08,400 --> 00:21:15,280
+this given dfa doesn't accept any string
+
+512
+00:21:12,159 --> 00:21:16,640
+okay it doesn't accept any string
+
+513
+00:21:15,280 --> 00:21:20,720
+then we say
+
+514
+00:21:16,640 --> 00:21:22,640
+the encoding for the dfa or the program
+
+515
+00:21:20,720 --> 00:21:26,159
+representing a dfa
+
+516
+00:21:22,640 --> 00:21:28,960
+of which the language is empty set
+
+517
+00:21:26,159 --> 00:21:32,159
+is in the edfa
+
+518
+00:21:28,960 --> 00:21:33,520
+edfa okay
+
+519
+00:21:32,159 --> 00:21:37,039
+all
+
+520
+00:21:33,520 --> 00:21:40,400
+dfas of which the language is empty set
+
+521
+00:21:37,039 --> 00:21:40,400
+is in edfa
+
+522
+00:21:40,960 --> 00:21:45,200
+okay so the language or the problem
+
+523
+00:21:44,240 --> 00:21:47,039
+means
+
+524
+00:21:45,200 --> 00:21:48,960
+if i give you
+
+525
+00:21:47,039 --> 00:21:51,919
+a dfa
+
+526
+00:21:48,960 --> 00:21:55,840
+for example as a python source code or
+
+527
+00:21:51,919 --> 00:21:57,200
+or as a c or c plus java source code as
+
+528
+00:21:55,840 --> 00:21:59,760
+a file
+
+529
+00:21:57,200 --> 00:22:02,720
+let me give you that file okay it is
+
+530
+00:21:59,760 --> 00:22:04,960
+possible is it possible for you to write
+
+531
+00:22:02,720 --> 00:22:07,039
+a program
+
+532
+00:22:04,960 --> 00:22:08,960
+to read in
+
+533
+00:22:07,039 --> 00:22:10,400
+the source file i gave you
+
+534
+00:22:08,960 --> 00:22:13,440
+and
+
+535
+00:22:10,400 --> 00:22:14,240
+tell me that
+
+536
+00:22:13,440 --> 00:22:15,840
+that
+
+537
+00:22:14,240 --> 00:22:17,840
+dfa
+
+538
+00:22:15,840 --> 00:22:21,280
+accept no strings
+
+539
+00:22:17,840 --> 00:22:23,280
+or that dfa accept some strings
+
+540
+00:22:21,280 --> 00:22:24,480
+can you write the program to answer that
+
+541
+00:22:23,280 --> 00:22:27,919
+question
+
+542
+00:22:24,480 --> 00:22:31,520
+that's what we are going to prove here
+
+543
+00:22:27,919 --> 00:22:34,480
+if we prove that edfa is a decidable
+
+544
+00:22:31,520 --> 00:22:36,960
+language that means you it is possible
+
+545
+00:22:34,480 --> 00:22:38,320
+for you to write a program to do this
+
+546
+00:22:36,960 --> 00:22:41,919
+otherwise
+
+547
+00:22:38,320 --> 00:22:43,919
+it's not okay so how to prove it
+
+548
+00:22:41,919 --> 00:22:46,000
+for edfa
+
+549
+00:22:43,919 --> 00:22:47,360
+then we want to uh
+
+550
+00:22:46,000 --> 00:22:50,480
+yes we want to
+
+551
+00:22:47,360 --> 00:22:52,880
+oh i want to prove it is decidable so
+
+552
+00:22:50,480 --> 00:22:54,400
+again we want to construct a turing
+
+553
+00:22:52,880 --> 00:22:56,480
+machine
+
+554
+00:22:54,400 --> 00:22:58,320
+which can decide it
+
+555
+00:22:56,480 --> 00:23:01,360
+okay
+
+556
+00:22:58,320 --> 00:23:03,440
+so we know uh according to the operation
+
+557
+00:23:01,360 --> 00:23:09,360
+of dfa we know that
+
+558
+00:23:03,440 --> 00:23:12,640
+a dfa accepts some string if and only if
+
+559
+00:23:09,360 --> 00:23:12,640
+from the start state
+
+560
+00:23:12,960 --> 00:23:21,440
+by traveling along the arrows of the dfa
+
+561
+00:23:16,960 --> 00:23:23,360
+it is possible to reach and accept state
+
+562
+00:23:21,440 --> 00:23:27,520
+right
+
+563
+00:23:23,360 --> 00:23:30,559
+remember that for dfa you have
+
+564
+00:23:27,520 --> 00:23:33,280
+many states and star states and some of
+
+565
+00:23:30,559 --> 00:23:34,400
+them are accept states right
+
+566
+00:23:33,280 --> 00:23:37,760
+then
+
+567
+00:23:34,400 --> 00:23:39,600
+if there is a path let's say if there is
+
+568
+00:23:37,760 --> 00:23:44,000
+a path
+
+569
+00:23:39,600 --> 00:23:45,440
+going from start state to accept states
+
+570
+00:23:44,000 --> 00:23:48,960
+then
+
+571
+00:23:45,440 --> 00:23:51,360
+by definition for this example ac will
+
+572
+00:23:48,960 --> 00:23:52,400
+be accepted by this dfa
+
+573
+00:23:51,360 --> 00:23:56,000
+right
+
+574
+00:23:52,400 --> 00:23:56,880
+or something like a b c
+
+575
+00:23:56,000 --> 00:23:57,840
+a
+
+576
+00:23:56,880 --> 00:24:00,080
+then
+
+577
+00:23:57,840 --> 00:24:02,559
+this then the the
+
+578
+00:24:00,080 --> 00:24:03,279
+dfa here also accept
+
+579
+00:24:02,559 --> 00:24:07,760
+b
+
+580
+00:24:03,279 --> 00:24:10,400
+a also accept a c a something like that
+
+581
+00:24:07,760 --> 00:24:13,520
+right so as long as there is a path
+
+582
+00:24:10,400 --> 00:24:16,159
+directed path from the start state to
+
+583
+00:24:13,520 --> 00:24:18,480
+any of the accept states defined by in
+
+584
+00:24:16,159 --> 00:24:21,919
+the for the dfa
+
+585
+00:24:18,480 --> 00:24:21,919
+it accepts some string
+
+586
+00:24:22,559 --> 00:24:25,200
+okay
+
+587
+00:24:23,840 --> 00:24:27,840
+so
+
+588
+00:24:25,200 --> 00:24:27,840
+we can just
+
+589
+00:24:29,360 --> 00:24:35,440
+use the following algorithm to do
+
+590
+00:24:32,480 --> 00:24:37,360
+the graph traversal okay
+
+591
+00:24:35,440 --> 00:24:40,400
+so we mark
+
+592
+00:24:37,360 --> 00:24:42,320
+first uh when we have a dfa
+
+593
+00:24:40,400 --> 00:24:46,200
+imagine that
+
+594
+00:24:42,320 --> 00:24:46,200
+we can conceptually
+
+595
+00:24:46,240 --> 00:24:50,880
+think about the dfa as the graph
+
+596
+00:24:48,960 --> 00:24:53,919
+directed graph right
+
+597
+00:24:50,880 --> 00:24:55,760
+then we mark the star state of a
+
+598
+00:24:53,919 --> 00:24:58,000
+the star state of a
+
+599
+00:24:55,760 --> 00:25:01,200
+and repeat
+
+600
+00:24:58,000 --> 00:25:04,240
+the loop here
+
+601
+00:25:01,200 --> 00:25:05,600
+from any state marked
+
+602
+00:25:04,240 --> 00:25:08,080
+we see that
+
+603
+00:25:05,600 --> 00:25:10,960
+if there is a transition
+
+604
+00:25:08,080 --> 00:25:13,360
+coming from a marked state
+
+605
+00:25:10,960 --> 00:25:17,120
+to any state
+
+606
+00:25:13,360 --> 00:25:19,600
+from sorry from any marked state
+
+607
+00:25:17,120 --> 00:25:22,720
+and to any state
+
+608
+00:25:19,600 --> 00:25:24,080
+unmarked then we mark that state okay so
+
+609
+00:25:22,720 --> 00:25:25,840
+that's it
+
+610
+00:25:24,080 --> 00:25:27,360
+this procedure is just a
+
+611
+00:25:25,840 --> 00:25:28,960
+graph traversal
+
+612
+00:25:27,360 --> 00:25:30,559
+so simply put
+
+613
+00:25:28,960 --> 00:25:33,520
+for example
+
+614
+00:25:30,559 --> 00:25:35,919
+if this is a star state then and
+
+615
+00:25:33,520 --> 00:25:39,039
+there is some
+
+616
+00:25:35,919 --> 00:25:40,080
+directed path here
+
+617
+00:25:39,039 --> 00:25:41,360
+sorry
+
+618
+00:25:40,080 --> 00:25:44,159
+like this
+
+619
+00:25:41,360 --> 00:25:45,440
+then we can we just say that we mark
+
+620
+00:25:44,159 --> 00:25:48,240
+start state
+
+621
+00:25:45,440 --> 00:25:51,840
+and there are three transitions right
+
+622
+00:25:48,240 --> 00:25:54,880
+then the three transition from a max
+
+623
+00:25:51,840 --> 00:25:58,320
+marked marks state to sum a max state we
+
+624
+00:25:54,880 --> 00:26:00,320
+mark those states then we mark those
+
+625
+00:25:58,320 --> 00:26:03,760
+state then we mark this state then we
+
+626
+00:26:00,320 --> 00:26:05,840
+mark this state we just repeat the whole
+
+627
+00:26:03,760 --> 00:26:07,760
+the whole procedure and the mark
+
+628
+00:26:05,840 --> 00:26:09,679
+unmarked state
+
+629
+00:26:07,760 --> 00:26:12,400
+and since
+
+630
+00:26:09,679 --> 00:26:14,559
+the states of a dfa
+
+631
+00:26:12,400 --> 00:26:17,200
+is finite the number of the states of
+
+632
+00:26:14,559 --> 00:26:21,679
+the of a dfa is finite it's you know
+
+633
+00:26:17,200 --> 00:26:21,679
+it's a requirement for dfa so
+
+634
+00:26:23,279 --> 00:26:28,320
+uh the loop will stop because in every
+
+635
+00:26:26,080 --> 00:26:30,080
+iteration of the loop
+
+636
+00:26:28,320 --> 00:26:32,720
+there will be
+
+637
+00:26:30,080 --> 00:26:34,720
+more than one
+
+638
+00:26:32,720 --> 00:26:36,320
+not more than one one uh there will be
+
+639
+00:26:34,720 --> 00:26:40,240
+more than zero
+
+640
+00:26:36,320 --> 00:26:41,520
+states to be marked if no if no states
+
+641
+00:26:40,240 --> 00:26:43,679
+can be marked
+
+642
+00:26:41,520 --> 00:26:46,159
+if no state can be marked the loop will
+
+643
+00:26:43,679 --> 00:26:47,679
+stop right
+
+644
+00:26:46,159 --> 00:26:50,840
+so
+
+645
+00:26:47,679 --> 00:26:52,720
+it will mark
+
+646
+00:26:50,840 --> 00:26:55,440
+either
+
+647
+00:26:52,720 --> 00:26:57,279
+marked all states connected from the
+
+648
+00:26:55,440 --> 00:27:00,000
+start state or
+
+649
+00:26:57,279 --> 00:27:02,640
+marked all possible
+
+650
+00:27:00,000 --> 00:27:06,480
+marked all possible
+
+651
+00:27:02,640 --> 00:27:08,720
+states in the dfa
+
+652
+00:27:06,480 --> 00:27:08,720
+then
+
+653
+00:27:10,000 --> 00:27:14,559
+we check
+
+654
+00:27:11,039 --> 00:27:16,000
+if any accept state is marked during the
+
+655
+00:27:14,559 --> 00:27:17,520
+process
+
+656
+00:27:16,000 --> 00:27:20,880
+if yes
+
+657
+00:27:17,520 --> 00:27:24,159
+then we know that their excel if there
+
+658
+00:27:20,880 --> 00:27:27,440
+are some paths from start state to some
+
+659
+00:27:24,159 --> 00:27:28,640
+of the accept states in the dfa so we
+
+660
+00:27:27,440 --> 00:27:30,240
+accept
+
+661
+00:27:28,640 --> 00:27:31,840
+because along
+
+662
+00:27:30,240 --> 00:27:34,080
+the arrows
+
+663
+00:27:31,840 --> 00:27:36,640
+that we collect the symbol along the
+
+664
+00:27:34,080 --> 00:27:40,240
+arrows we will know at least that those
+
+665
+00:27:36,640 --> 00:27:42,159
+strings will be accepted by that dfa
+
+666
+00:27:40,240 --> 00:27:44,480
+if absolutely
+
+667
+00:27:42,159 --> 00:27:47,520
+no accept
+
+668
+00:27:44,480 --> 00:27:52,159
+oh sorry no accept state is marked that
+
+669
+00:27:47,520 --> 00:27:54,080
+means there is no path from star state
+
+670
+00:27:52,159 --> 00:27:56,320
+so we need to
+
+671
+00:27:54,080 --> 00:27:59,919
+that means the dfa
+
+672
+00:27:56,320 --> 00:28:02,960
+recognized empty set it accepts nothing
+
+673
+00:27:59,919 --> 00:28:04,559
+no string right so t
+
+674
+00:28:02,960 --> 00:28:07,760
+accepted
+
+675
+00:28:04,559 --> 00:28:10,080
+t accepted because no accept states will
+
+676
+00:28:07,760 --> 00:28:12,240
+be reachable from the start state
+
+677
+00:28:10,080 --> 00:28:13,919
+otherwise otherwise we just need to
+
+678
+00:28:12,240 --> 00:28:17,360
+collect
+
+679
+00:28:13,919 --> 00:28:19,039
+we just need to collect the symbols on
+
+680
+00:28:17,360 --> 00:28:20,240
+the symbols
+
+681
+00:28:19,039 --> 00:28:23,120
+on the
+
+682
+00:28:20,240 --> 00:28:25,679
+arrow for example the symbol we just
+
+683
+00:28:23,120 --> 00:28:29,120
+need to collect the symbols on the arrow
+
+684
+00:28:25,679 --> 00:28:32,159
+we know that this dfa will accept those
+
+685
+00:28:29,120 --> 00:28:34,159
+strings since the dfa will accept some
+
+686
+00:28:32,159 --> 00:28:35,520
+strings that means
+
+687
+00:28:34,159 --> 00:28:37,679
+arrow of a
+
+688
+00:28:35,520 --> 00:28:39,919
+is not empty set
+
+689
+00:28:37,679 --> 00:28:39,919
+then
+
+690
+00:28:40,159 --> 00:28:45,440
+a
+
+691
+00:28:41,840 --> 00:28:48,640
+the string ace encoding will not
+
+692
+00:28:45,440 --> 00:28:49,440
+be in edfa
+
+693
+00:28:48,640 --> 00:28:50,880
+so
+
+694
+00:28:49,440 --> 00:28:52,880
+t will
+
+695
+00:28:50,880 --> 00:28:54,320
+will reject
+
+696
+00:28:52,880 --> 00:28:55,279
+its input
+
+697
+00:28:54,320 --> 00:28:56,880
+okay
+
+698
+00:28:55,279 --> 00:28:58,960
+since
+
+699
+00:28:56,880 --> 00:29:00,559
+this procedure
+
+700
+00:28:58,960 --> 00:29:02,960
+very similar to
+
+701
+00:29:00,559 --> 00:29:05,200
+the previous example we
+
+702
+00:29:02,960 --> 00:29:07,520
+uh introduced to
+
+703
+00:29:05,200 --> 00:29:09,120
+detect connected graph
+
+704
+00:29:07,520 --> 00:29:12,240
+right
+
+705
+00:29:09,120 --> 00:29:15,760
+and you can also see that as long as
+
+706
+00:29:12,240 --> 00:29:18,720
+accept states are connected from sarsat
+
+707
+00:29:15,760 --> 00:29:21,840
+then the dfa must accept some strings
+
+708
+00:29:18,720 --> 00:29:24,559
+then it will not recognize empty set and
+
+709
+00:29:21,840 --> 00:29:26,399
+will not be in edfa otherwise
+
+710
+00:29:24,559 --> 00:29:29,919
+the dfa
+
+711
+00:29:26,399 --> 00:29:31,279
+accepts no string it recognize empty set
+
+712
+00:29:29,919 --> 00:29:35,200
+then
+
+713
+00:29:31,279 --> 00:29:36,480
+the encodings of a will be in edfa and
+
+714
+00:29:35,200 --> 00:29:38,799
+the whole
+
+715
+00:29:36,480 --> 00:29:41,120
+the whole problem here the language is
+
+716
+00:29:38,799 --> 00:29:43,039
+decidable that means we can write a
+
+717
+00:29:41,120 --> 00:29:43,919
+program to decide it
+
+718
+00:29:43,039 --> 00:29:47,919
+okay
+
+719
+00:29:43,919 --> 00:29:47,919
+so that's for edfa
+
+720
+00:29:49,760 --> 00:29:52,799
+then
+
+721
+00:29:51,120 --> 00:29:54,399
+we want to check
+
+722
+00:29:52,799 --> 00:29:55,440
+the equivalence
+
+723
+00:29:54,399 --> 00:29:57,600
+eq
+
+724
+00:29:55,440 --> 00:30:00,720
+the equivalence
+
+725
+00:29:57,600 --> 00:30:02,000
+of two given dfas
+
+726
+00:30:00,720 --> 00:30:05,039
+okay
+
+727
+00:30:02,000 --> 00:30:06,799
+if you have if someone give you two dfas
+
+728
+00:30:05,039 --> 00:30:08,559
+and b
+
+729
+00:30:06,799 --> 00:30:11,440
+and xu
+
+730
+00:30:08,559 --> 00:30:13,919
+the language recognized by a and the
+
+731
+00:30:11,440 --> 00:30:15,760
+language recognized by b are they
+
+732
+00:30:13,919 --> 00:30:18,399
+identical
+
+733
+00:30:15,760 --> 00:30:19,279
+if they are
+
+734
+00:30:18,399 --> 00:30:23,120
+this
+
+735
+00:30:19,279 --> 00:30:24,799
+input string is in eqdfa otherwise it's
+
+736
+00:30:23,120 --> 00:30:25,760
+not
+
+737
+00:30:24,799 --> 00:30:29,120
+and
+
+738
+00:30:25,760 --> 00:30:31,840
+whether or not eqdfa is
+
+739
+00:30:29,120 --> 00:30:34,080
+a decidable language means that
+
+740
+00:30:31,840 --> 00:30:37,120
+whether or not we are able to write a
+
+741
+00:30:34,080 --> 00:30:39,679
+program as in turing machine
+
+742
+00:30:37,120 --> 00:30:40,640
+to decide this language
+
+743
+00:30:39,679 --> 00:30:43,440
+okay
+
+744
+00:30:40,640 --> 00:30:46,159
+so the answer here is yes so we want to
+
+745
+00:30:43,440 --> 00:30:49,200
+construct that during turing machine
+
+746
+00:30:46,159 --> 00:30:51,840
+and to control that turing machine
+
+747
+00:30:49,200 --> 00:30:52,640
+well uh we use the closure property for
+
+748
+00:30:51,840 --> 00:30:53,840
+that
+
+749
+00:30:52,640 --> 00:30:54,640
+okay
+
+750
+00:30:53,840 --> 00:30:58,240
+so
+
+751
+00:30:54,640 --> 00:30:59,279
+let's uh think about it this way
+
+752
+00:30:58,240 --> 00:31:02,480
+um
+
+753
+00:30:59,279 --> 00:31:03,519
+input a b which a and b are both the
+
+754
+00:31:02,480 --> 00:31:05,200
+face
+
+755
+00:31:03,519 --> 00:31:07,919
+okay dfas
+
+756
+00:31:05,200 --> 00:31:09,039
+and think about it
+
+757
+00:31:07,919 --> 00:31:11,760
+for
+
+758
+00:31:09,039 --> 00:31:13,919
+the uh for dfa a
+
+759
+00:31:11,760 --> 00:31:16,880
+it will recognize
+
+760
+00:31:13,919 --> 00:31:19,600
+language l of a right
+
+761
+00:31:16,880 --> 00:31:22,240
+that's uh imagine that
+
+762
+00:31:19,600 --> 00:31:25,440
+this is all possible strings and
+
+763
+00:31:22,240 --> 00:31:26,720
+the most general situation here is that
+
+764
+00:31:25,440 --> 00:31:29,360
+you have
+
+765
+00:31:26,720 --> 00:31:33,840
+l of a here
+
+766
+00:31:29,360 --> 00:31:33,840
+and you have l of b here
+
+767
+00:31:33,919 --> 00:31:37,760
+right
+
+768
+00:31:35,679 --> 00:31:39,200
+and
+
+769
+00:31:37,760 --> 00:31:40,799
+when
+
+770
+00:31:39,200 --> 00:31:43,440
+a log of a
+
+771
+00:31:40,799 --> 00:31:45,039
+and l of b
+
+772
+00:31:43,440 --> 00:31:47,840
+are identical
+
+773
+00:31:45,039 --> 00:31:50,880
+that means you don't have
+
+774
+00:31:47,840 --> 00:31:53,120
+the gray area here
+
+775
+00:31:50,880 --> 00:31:53,120
+right
+
+776
+00:31:53,200 --> 00:31:58,320
+if they are exactly the same
+
+777
+00:31:55,760 --> 00:32:01,279
+it's like this one
+
+778
+00:31:58,320 --> 00:32:04,640
+there's no gray area here
+
+779
+00:32:01,279 --> 00:32:06,799
+so what is the gray area the gray area
+
+780
+00:32:04,640 --> 00:32:06,799
+is
+
+781
+00:32:07,200 --> 00:32:11,840
+a
+
+782
+00:32:09,120 --> 00:32:11,840
+l of a
+
+783
+00:32:11,919 --> 00:32:17,039
+airbase here right
+
+784
+00:32:15,519 --> 00:32:20,240
+and
+
+785
+00:32:17,039 --> 00:32:23,279
+arrow of b complement
+
+786
+00:32:20,240 --> 00:32:25,279
+that'll be this part
+
+787
+00:32:23,279 --> 00:32:29,200
+right
+
+788
+00:32:25,279 --> 00:32:32,080
+the intersection of l of a
+
+789
+00:32:29,200 --> 00:32:34,399
+and the error of b com a complement of l
+
+790
+00:32:32,080 --> 00:32:37,279
+b is the gray area here
+
+791
+00:32:34,399 --> 00:32:39,360
+and for the same reason we have
+
+792
+00:32:37,279 --> 00:32:41,679
+l of b
+
+793
+00:32:39,360 --> 00:32:46,240
+the intersection of l of b
+
+794
+00:32:41,679 --> 00:32:46,240
+and the complement of l of a here
+
+795
+00:32:47,039 --> 00:32:55,120
+then we do the union
+
+796
+00:32:50,080 --> 00:32:57,600
+sorry we do a union of these two
+
+797
+00:32:55,120 --> 00:33:00,559
+we will have
+
+798
+00:32:57,600 --> 00:33:02,799
+the union of the gray area
+
+799
+00:33:00,559 --> 00:33:02,799
+right
+
+800
+00:33:03,840 --> 00:33:09,640
+then let's call the union of the gray
+
+801
+00:33:06,640 --> 00:33:09,640
+area
+
+802
+00:33:10,480 --> 00:33:12,720
+uh
+
+803
+00:33:11,519 --> 00:33:17,519
+a language
+
+804
+00:33:12,720 --> 00:33:22,720
+okay is it possible to construct a dfa
+
+805
+00:33:17,519 --> 00:33:22,720
+of which the language is the gray area
+
+806
+00:33:22,880 --> 00:33:26,320
+it is possible
+
+807
+00:33:24,480 --> 00:33:28,799
+why because
+
+808
+00:33:26,320 --> 00:33:29,760
+we have a here
+
+809
+00:33:28,799 --> 00:33:34,720
+right
+
+810
+00:33:29,760 --> 00:33:38,159
+and we can manipulate a to hat to give
+
+811
+00:33:34,720 --> 00:33:40,880
+a lot of a complement right we have done
+
+812
+00:33:38,159 --> 00:33:43,200
+that for commercial property proof
+
+813
+00:33:40,880 --> 00:33:46,159
+how do we do that this case is easy we
+
+814
+00:33:43,200 --> 00:33:48,320
+just need to uh change accept states to
+
+815
+00:33:46,159 --> 00:33:50,720
+non-accept states and
+
+816
+00:33:48,320 --> 00:33:53,200
+non-accepted to accept states then the
+
+817
+00:33:50,720 --> 00:33:55,760
+answer will be reversed right
+
+818
+00:33:53,200 --> 00:33:59,120
+and then we do
+
+819
+00:33:55,760 --> 00:34:00,799
+intersection with b then we get
+
+820
+00:33:59,120 --> 00:34:02,240
+this one right
+
+821
+00:34:00,799 --> 00:34:04,000
+we get
+
+822
+00:34:02,240 --> 00:34:06,000
+a prime which
+
+823
+00:34:04,000 --> 00:34:08,079
+recognized
+
+824
+00:34:06,000 --> 00:34:10,879
+error of a complement
+
+825
+00:34:08,079 --> 00:34:13,280
+and we do intersection
+
+826
+00:34:10,879 --> 00:34:16,000
+with b
+
+827
+00:34:13,280 --> 00:34:18,639
+it's a wrong notation but
+
+828
+00:34:16,000 --> 00:34:18,639
+we can do
+
+829
+00:34:19,119 --> 00:34:24,399
+a new dfa
+
+830
+00:34:22,000 --> 00:34:27,919
+recognizing such a language
+
+831
+00:34:24,399 --> 00:34:30,720
+and for the same reason we can
+
+832
+00:34:27,919 --> 00:34:32,839
+have a dfa we can construct dfa
+
+833
+00:34:30,720 --> 00:34:36,480
+recognizing this
+
+834
+00:34:32,839 --> 00:34:37,599
+language and since we have dfa
+
+835
+00:34:36,480 --> 00:34:39,679
+let's say
+
+836
+00:34:37,599 --> 00:34:43,280
+a plan b
+
+837
+00:34:39,679 --> 00:34:45,760
+recognizing this language and also a dfa
+
+838
+00:34:43,280 --> 00:34:48,639
+that say b a prime
+
+839
+00:34:45,760 --> 00:34:50,240
+recognizing this language
+
+840
+00:34:48,639 --> 00:34:53,520
+we can
+
+841
+00:34:50,240 --> 00:34:55,679
+construct a new dfa
+
+842
+00:34:53,520 --> 00:34:58,400
+c
+
+843
+00:34:55,679 --> 00:34:59,200
+by doing intersection
+
+844
+00:34:58,400 --> 00:35:02,720
+of
+
+845
+00:34:59,200 --> 00:35:05,040
+a prime b and a b prime sorry
+
+846
+00:35:02,720 --> 00:35:07,280
+b a prime right
+
+847
+00:35:05,040 --> 00:35:07,280
+oh
+
+848
+00:35:08,079 --> 00:35:15,560
+i should do this right
+
+849
+00:35:11,440 --> 00:35:15,560
+okay sorry about that
+
+850
+00:35:16,880 --> 00:35:19,839
+that'll be this
+
+851
+00:35:18,079 --> 00:35:21,200
+b prime a okay
+
+852
+00:35:19,839 --> 00:35:24,079
+so we do a
+
+853
+00:35:21,200 --> 00:35:25,520
+union which is also in a closure
+
+854
+00:35:24,079 --> 00:35:26,480
+property here
+
+855
+00:35:25,520 --> 00:35:28,839
+then
+
+856
+00:35:26,480 --> 00:35:30,560
+l of c
+
+857
+00:35:28,839 --> 00:35:32,960
+is
+
+858
+00:35:30,560 --> 00:35:35,920
+this thing
+
+859
+00:35:32,960 --> 00:35:36,960
+and why we why would we want to do that
+
+860
+00:35:35,920 --> 00:35:38,240
+because
+
+861
+00:35:36,960 --> 00:35:41,119
+after we
+
+862
+00:35:38,240 --> 00:35:43,520
+have dfac
+
+863
+00:35:41,119 --> 00:35:46,320
+after we have the fac
+
+864
+00:35:43,520 --> 00:35:47,119
+we just need to call
+
+865
+00:35:46,320 --> 00:35:48,480
+e
+
+866
+00:35:47,119 --> 00:35:51,599
+dfa
+
+867
+00:35:48,480 --> 00:35:53,760
+the transmission of edfa to check
+
+868
+00:35:51,599 --> 00:35:57,839
+if the dfac
+
+869
+00:35:53,760 --> 00:36:00,240
+the language recognized by c is
+
+870
+00:35:57,839 --> 00:36:01,839
+empty set
+
+871
+00:36:00,240 --> 00:36:03,680
+if
+
+872
+00:36:01,839 --> 00:36:06,320
+l of c
+
+873
+00:36:03,680 --> 00:36:09,119
+is empty set
+
+874
+00:36:06,320 --> 00:36:13,920
+t will accept c
+
+875
+00:36:09,119 --> 00:36:16,480
+except c as a program then
+
+876
+00:36:13,920 --> 00:36:18,160
+the two machine we are constructing
+
+877
+00:36:16,480 --> 00:36:22,240
+accepts
+
+878
+00:36:18,160 --> 00:36:25,520
+this input because these inputs are two
+
+879
+00:36:22,240 --> 00:36:28,240
+dfas of which
+
+880
+00:36:25,520 --> 00:36:29,760
+the languages are identical
+
+881
+00:36:28,240 --> 00:36:34,000
+otherwise
+
+882
+00:36:29,760 --> 00:36:37,280
+if t rejects that means l of c
+
+883
+00:36:34,000 --> 00:36:41,280
+is not empty set that means something
+
+884
+00:36:37,280 --> 00:36:44,400
+here or something here or both of them
+
+885
+00:36:41,280 --> 00:36:46,079
+then t rejects then we
+
+886
+00:36:44,400 --> 00:36:47,440
+reject
+
+887
+00:36:46,079 --> 00:36:50,079
+our input
+
+888
+00:36:47,440 --> 00:36:54,320
+because there are some strings in the
+
+889
+00:36:50,079 --> 00:36:55,280
+gray area that means l of a and error of
+
+890
+00:36:54,320 --> 00:36:58,480
+b
+
+891
+00:36:55,280 --> 00:36:59,760
+are not identical
+
+892
+00:36:58,480 --> 00:37:01,119
+see
+
+893
+00:36:59,760 --> 00:37:04,079
+via the
+
+894
+00:37:01,119 --> 00:37:04,079
+construction of
+
+895
+00:37:04,560 --> 00:37:08,880
+dfac
+
+896
+00:37:06,320 --> 00:37:13,200
+we can use
+
+897
+00:37:08,880 --> 00:37:14,400
+our two machine for edfa
+
+898
+00:37:13,200 --> 00:37:15,200
+to check
+
+899
+00:37:14,400 --> 00:37:19,920
+if
+
+900
+00:37:15,200 --> 00:37:21,440
+the the dfac recognized empty set and if
+
+901
+00:37:19,920 --> 00:37:24,079
+dfac
+
+902
+00:37:21,440 --> 00:37:26,640
+empty set then we know that
+
+903
+00:37:24,079 --> 00:37:30,000
+l of a and the l of b
+
+904
+00:37:26,640 --> 00:37:33,119
+are identical so we can decide the
+
+905
+00:37:30,000 --> 00:37:38,480
+equivalence of two given dfas
+
+906
+00:37:33,119 --> 00:37:38,480
+we can write a program to do that okay
+
+907
+00:37:38,960 --> 00:37:43,359
+so that's for dfa that's for regular
+
+908
+00:37:42,160 --> 00:37:45,520
+languages
+
+909
+00:37:43,359 --> 00:37:47,760
+let's see decidable language concerning
+
+910
+00:37:45,520 --> 00:37:50,800
+context free languages so
+
+911
+00:37:47,760 --> 00:37:54,560
+the same thing
+
+912
+00:37:50,800 --> 00:37:58,000
+acfg that means give you a grammar and a
+
+913
+00:37:54,560 --> 00:38:00,960
+string can you determine that
+
+914
+00:37:58,000 --> 00:38:02,160
+the given grammar generates the given
+
+915
+00:38:00,960 --> 00:38:04,400
+string
+
+916
+00:38:02,160 --> 00:38:06,240
+and of course you do because
+
+917
+00:38:04,400 --> 00:38:08,480
+you know that's uh
+
+918
+00:38:06,240 --> 00:38:11,680
+basically uh
+
+919
+00:38:08,480 --> 00:38:14,240
+cyk algorithm is what it does right so
+
+920
+00:38:11,680 --> 00:38:16,880
+give you a grammar you run
+
+921
+00:38:14,240 --> 00:38:20,560
+coik algorithm on that string and yes
+
+922
+00:38:16,880 --> 00:38:23,200
+yes no no you know that so it's possible
+
+923
+00:38:20,560 --> 00:38:25,839
+and here we also
+
+924
+00:38:23,200 --> 00:38:28,079
+we can also prove that
+
+925
+00:38:25,839 --> 00:38:28,079
+so
+
+926
+00:38:29,119 --> 00:38:34,800
+we build up a two machine here
+
+927
+00:38:32,480 --> 00:38:36,240
+that would be contextual grammar and a
+
+928
+00:38:34,800 --> 00:38:37,920
+string
+
+929
+00:38:36,240 --> 00:38:38,960
+so we
+
+930
+00:38:37,920 --> 00:38:41,119
+convert
+
+931
+00:38:38,960 --> 00:38:41,119
+g
+
+932
+00:38:41,599 --> 00:38:45,760
+to an equivalent grammar in chonsky
+
+933
+00:38:43,680 --> 00:38:48,720
+normal form as we
+
+934
+00:38:45,760 --> 00:38:50,560
+introduced previously right
+
+935
+00:38:48,720 --> 00:38:53,839
+and
+
+936
+00:38:50,560 --> 00:38:56,560
+here actually as i just described you
+
+937
+00:38:53,839 --> 00:39:00,320
+can run a cyk algorithm then you will
+
+938
+00:38:56,560 --> 00:39:03,200
+know the answer so that's decidable okay
+
+939
+00:39:00,320 --> 00:39:05,520
+but the step two here is more
+
+940
+00:39:03,200 --> 00:39:07,760
+well
+
+941
+00:39:05,520 --> 00:39:10,320
+a stupid but
+
+942
+00:39:07,760 --> 00:39:11,359
+safe way okay
+
+943
+00:39:10,320 --> 00:39:13,680
+we
+
+944
+00:39:11,359 --> 00:39:17,200
+try all derivations
+
+945
+00:39:13,680 --> 00:39:20,320
+with n two n plus one steps
+
+946
+00:39:17,200 --> 00:39:22,880
+where n is the length of w
+
+947
+00:39:20,320 --> 00:39:26,000
+and is the length of w
+
+948
+00:39:22,880 --> 00:39:27,680
+we try we released all possible
+
+949
+00:39:26,000 --> 00:39:29,119
+derivations
+
+950
+00:39:27,680 --> 00:39:32,320
+then
+
+951
+00:39:29,119 --> 00:39:34,400
+uh except for n equals zero
+
+952
+00:39:32,320 --> 00:39:37,040
+you know that um
+
+953
+00:39:34,400 --> 00:39:40,079
+if n equals zero you just uh list all
+
+954
+00:39:37,040 --> 00:39:44,079
+derivations with once with one step okay
+
+955
+00:39:40,079 --> 00:39:46,240
+because it is possible that uh
+
+956
+00:39:44,079 --> 00:39:49,440
+you have something like this
+
+957
+00:39:46,240 --> 00:39:49,440
+anyway then
+
+958
+00:39:49,760 --> 00:39:54,400
+by doing this we effectively effectively
+
+959
+00:39:53,440 --> 00:39:57,839
+tries
+
+960
+00:39:54,400 --> 00:39:59,200
+all uh the machine tries all possible
+
+961
+00:39:57,839 --> 00:40:02,240
+derivations
+
+962
+00:39:59,200 --> 00:40:04,079
+and the derived length
+
+963
+00:40:02,240 --> 00:40:08,000
+of n
+
+964
+00:40:04,079 --> 00:40:11,440
+so you can see that if no
+
+965
+00:40:08,000 --> 00:40:12,640
+if any of the derivation generates w
+
+966
+00:40:11,440 --> 00:40:13,680
+that means
+
+967
+00:40:12,640 --> 00:40:15,760
+from
+
+968
+00:40:13,680 --> 00:40:17,839
+the grammar the star variable of the
+
+969
+00:40:15,760 --> 00:40:20,160
+grammar
+
+970
+00:40:17,839 --> 00:40:21,119
+the terminal string w can be generated
+
+971
+00:40:20,160 --> 00:40:22,880
+so
+
+972
+00:40:21,119 --> 00:40:25,839
+we accept the string
+
+973
+00:40:22,880 --> 00:40:29,200
+we accept the input the whole input okay
+
+974
+00:40:25,839 --> 00:40:32,000
+and if not that means it is impossible
+
+975
+00:40:29,200 --> 00:40:36,240
+for the grammar to generate the given
+
+976
+00:40:32,000 --> 00:40:38,800
+terminal w so reject and the reject here
+
+977
+00:40:36,240 --> 00:40:43,040
+means as the two machines we are
+
+978
+00:40:38,800 --> 00:40:44,560
+constructing reject its own
+
+979
+00:40:43,040 --> 00:40:48,960
+input
+
+980
+00:40:44,560 --> 00:40:52,079
+okay so that's uh acfg
+
+981
+00:40:48,960 --> 00:40:53,599
+so the same thing goes to the cfg if a
+
+982
+00:40:52,079 --> 00:40:55,520
+grammar
+
+983
+00:40:53,599 --> 00:40:57,920
+given grammar
+
+984
+00:40:55,520 --> 00:41:00,000
+is it uh
+
+985
+00:40:57,920 --> 00:41:03,520
+well the grammar generates some terminal
+
+986
+00:41:00,000 --> 00:41:04,480
+string or absolutely no terminal string
+
+987
+00:41:03,520 --> 00:41:07,599
+okay
+
+988
+00:41:04,480 --> 00:41:09,520
+all the grammar generates no terminal
+
+989
+00:41:07,599 --> 00:41:13,520
+strings
+
+990
+00:41:09,520 --> 00:41:15,680
+is in ecfg okay that's mt
+
+991
+00:41:13,520 --> 00:41:17,920
+emptiness for cfg
+
+992
+00:41:15,680 --> 00:41:20,800
+is it a decidable language
+
+993
+00:41:17,920 --> 00:41:23,440
+and we want to prove that it is okay so
+
+994
+00:41:20,800 --> 00:41:25,839
+we need to construct a decider here
+
+995
+00:41:23,440 --> 00:41:28,480
+then how to construct that
+
+996
+00:41:25,839 --> 00:41:30,160
+and the uh procedure is
+
+997
+00:41:28,480 --> 00:41:33,040
+intuitive that
+
+998
+00:41:30,160 --> 00:41:36,160
+you have for example uh in the grammar
+
+999
+00:41:33,040 --> 00:41:37,760
+there are many rules right so maybe you
+
+1000
+00:41:36,160 --> 00:41:38,960
+have like a
+
+1001
+00:41:37,760 --> 00:41:40,079
+a b
+
+1002
+00:41:38,960 --> 00:41:40,880
+c
+
+1003
+00:41:40,079 --> 00:41:42,960
+d
+
+1004
+00:41:40,880 --> 00:41:45,280
+and the b
+
+1005
+00:41:42,960 --> 00:41:50,000
+a c c
+
+1006
+00:41:45,280 --> 00:41:50,880
+c d and you have c a a b
+
+1007
+00:41:50,000 --> 00:41:52,720
+d
+
+1008
+00:41:50,880 --> 00:41:54,560
+and you have d
+
+1009
+00:41:52,720 --> 00:41:57,440
+and uh let's say
+
+1010
+00:41:54,560 --> 00:42:00,160
+it's a b and you have d
+
+1011
+00:41:57,440 --> 00:42:02,720
+b or you have b can generate a b d
+
+1012
+00:42:00,160 --> 00:42:06,800
+something like that right
+
+1013
+00:42:02,720 --> 00:42:09,839
+and let's say if a is the star variable
+
+1014
+00:42:06,800 --> 00:42:13,520
+then what we want to do is that
+
+1015
+00:42:09,839 --> 00:42:14,800
+firstly mark all terminals in the rule
+
+1016
+00:42:13,520 --> 00:42:17,359
+of grammar g
+
+1017
+00:42:14,800 --> 00:42:19,280
+so let's say mark terminals marked
+
+1018
+00:42:17,359 --> 00:42:20,880
+terminals marked terminals marked
+
+1019
+00:42:19,280 --> 00:42:23,040
+terminals marked terminals marked
+
+1020
+00:42:20,880 --> 00:42:25,200
+terminals mock terminals
+
+1021
+00:42:23,040 --> 00:42:26,319
+okay then you check
+
+1022
+00:42:25,200 --> 00:42:27,920
+if
+
+1023
+00:42:26,319 --> 00:42:28,839
+there is any
+
+1024
+00:42:27,920 --> 00:42:32,960
+any
+
+1025
+00:42:28,839 --> 00:42:36,960
+rule the right hand side are all marked
+
+1026
+00:42:32,960 --> 00:42:40,240
+if yes you mark the head of that rule so
+
+1027
+00:42:36,960 --> 00:42:43,200
+for this short simple example oh okay
+
+1028
+00:42:40,240 --> 00:42:45,680
+this one for this short example let's
+
+1029
+00:42:43,200 --> 00:42:48,240
+say you say you see
+
+1030
+00:42:45,680 --> 00:42:50,400
+b may become b d
+
+1031
+00:42:48,240 --> 00:42:53,119
+the right hand side are all marked then
+
+1032
+00:42:50,400 --> 00:42:56,319
+you mark b
+
+1033
+00:42:53,119 --> 00:42:58,720
+if you marked a new head
+
+1034
+00:42:56,319 --> 00:43:00,160
+you go back to see the right hand side
+
+1035
+00:42:58,720 --> 00:43:01,040
+and the mark
+
+1036
+00:43:00,160 --> 00:43:03,280
+all
+
+1037
+00:43:01,040 --> 00:43:03,280
+the
+
+1038
+00:43:04,160 --> 00:43:10,319
+head of the variable so we have also d
+
+1039
+00:43:07,359 --> 00:43:13,359
+here right because this is all marked
+
+1040
+00:43:10,319 --> 00:43:14,960
+then we marked b
+
+1041
+00:43:13,359 --> 00:43:17,040
+b
+
+1042
+00:43:14,960 --> 00:43:18,880
+d
+
+1043
+00:43:17,040 --> 00:43:20,640
+d
+
+1044
+00:43:18,880 --> 00:43:24,480
+okay
+
+1045
+00:43:20,640 --> 00:43:27,280
+again so you got the right hand side all
+
+1046
+00:43:24,480 --> 00:43:28,079
+marked right hand side all marked
+
+1047
+00:43:27,280 --> 00:43:30,480
+then
+
+1048
+00:43:28,079 --> 00:43:31,839
+you mark the head right mark the head
+
+1049
+00:43:30,480 --> 00:43:34,160
+mark the head
+
+1050
+00:43:31,839 --> 00:43:35,200
+and then go on so
+
+1051
+00:43:34,160 --> 00:43:35,920
+c
+
+1052
+00:43:35,200 --> 00:43:38,400
+c
+
+1053
+00:43:35,920 --> 00:43:39,440
+and you it's already marked because of
+
+1054
+00:43:38,400 --> 00:43:41,040
+this
+
+1055
+00:43:39,440 --> 00:43:44,079
+right
+
+1056
+00:43:41,040 --> 00:43:46,000
+after you you mark all the variable that
+
+1057
+00:43:44,079 --> 00:43:48,800
+you can mark
+
+1058
+00:43:46,000 --> 00:43:51,040
+because the variables the rules of uh
+
+1059
+00:43:48,800 --> 00:43:54,560
+finite and the number of variables are
+
+1060
+00:43:51,040 --> 00:43:57,440
+finite so for each each uh
+
+1061
+00:43:54,560 --> 00:44:00,319
+iteration of the loop if you cannot mark
+
+1062
+00:43:57,440 --> 00:44:03,040
+anymore then you stops otherwise it will
+
+1063
+00:44:00,319 --> 00:44:04,000
+stop after all variables are marked to
+
+1064
+00:44:03,040 --> 00:44:06,160
+see
+
+1065
+00:44:04,000 --> 00:44:07,760
+not sure which one but depends on the
+
+1066
+00:44:06,160 --> 00:44:09,359
+grammar
+
+1067
+00:44:07,760 --> 00:44:11,599
+so
+
+1068
+00:44:09,359 --> 00:44:15,680
+after the loop stops
+
+1069
+00:44:11,599 --> 00:44:18,640
+you check if the start variable
+
+1070
+00:44:15,680 --> 00:44:22,400
+is marked or not
+
+1071
+00:44:18,640 --> 00:44:23,359
+if the star variable is not marked that
+
+1072
+00:44:22,400 --> 00:44:26,640
+means
+
+1073
+00:44:23,359 --> 00:44:29,440
+from the variable it is not possible to
+
+1074
+00:44:26,640 --> 00:44:33,200
+reach a terminal string
+
+1075
+00:44:29,440 --> 00:44:35,680
+so we accept r our term two machine
+
+1076
+00:44:33,200 --> 00:44:39,359
+accept the grammar g here
+
+1077
+00:44:35,680 --> 00:44:41,200
+why because what we want is f g
+
+1078
+00:44:39,359 --> 00:44:42,240
+m t set
+
+1079
+00:44:41,200 --> 00:44:45,119
+right
+
+1080
+00:44:42,240 --> 00:44:47,040
+so r except g because we know that from
+
+1081
+00:44:45,119 --> 00:44:49,200
+the start variable g
+
+1082
+00:44:47,040 --> 00:44:50,480
+it's not possible to generate terminal
+
+1083
+00:44:49,200 --> 00:44:52,000
+strings
+
+1084
+00:44:50,480 --> 00:44:55,040
+otherwise
+
+1085
+00:44:52,000 --> 00:44:57,200
+for this example we have we know from
+
+1086
+00:44:55,040 --> 00:44:57,200
+the
+
+1087
+00:44:57,440 --> 00:45:00,000
+star variable of that
+
+1088
+00:44:59,119 --> 00:45:03,599
+that
+
+1089
+00:45:00,000 --> 00:45:05,680
+of the example we have we can do this
+
+1090
+00:45:03,599 --> 00:45:07,920
+and then
+
+1091
+00:45:05,680 --> 00:45:09,359
+b become b d
+
+1092
+00:45:07,920 --> 00:45:12,640
+right
+
+1093
+00:45:09,359 --> 00:45:14,720
+and then d become d
+
+1094
+00:45:12,640 --> 00:45:16,800
+so you need just need to reverse the
+
+1095
+00:45:14,720 --> 00:45:20,319
+process of your marking
+
+1096
+00:45:16,800 --> 00:45:22,319
+and you will get at least one derivation
+
+1097
+00:45:20,319 --> 00:45:23,760
+from the variable to return to a
+
+1098
+00:45:22,319 --> 00:45:25,599
+terminal string
+
+1099
+00:45:23,760 --> 00:45:28,000
+that means
+
+1100
+00:45:25,599 --> 00:45:30,640
+the grammar can generate something so
+
+1101
+00:45:28,000 --> 00:45:33,040
+the language of the grammar is not an
+
+1102
+00:45:30,640 --> 00:45:38,319
+empty set so
+
+1103
+00:45:33,040 --> 00:45:39,280
+r reject grammar because it's not empty
+
+1104
+00:45:38,319 --> 00:45:42,079
+okay
+
+1105
+00:45:39,280 --> 00:45:44,480
+so that's why we can
+
+1106
+00:45:42,079 --> 00:45:44,480
+design
+
+1107
+00:45:45,280 --> 00:45:52,800
+a decider to decide ecfg so ecfg is a
+
+1108
+00:45:49,920 --> 00:45:55,119
+decidable language by definition
+
+1109
+00:45:52,800 --> 00:45:55,119
+okay
+
+1110
+00:45:56,480 --> 00:46:02,640
+after emptiness we want to know the
+
+1111
+00:46:00,720 --> 00:46:04,000
+equivalence eq
+
+1112
+00:46:02,640 --> 00:46:07,280
+cfg
+
+1113
+00:46:04,000 --> 00:46:09,359
+if you are given g and h
+
+1114
+00:46:07,280 --> 00:46:11,359
+as cfg
+
+1115
+00:46:09,359 --> 00:46:14,240
+can you write a program to determine
+
+1116
+00:46:11,359 --> 00:46:17,280
+that l of g and the error of edge are
+
+1117
+00:46:14,240 --> 00:46:21,760
+identical is this possible
+
+1118
+00:46:17,280 --> 00:46:24,640
+uh actually no it's not possible ecfg is
+
+1119
+00:46:21,760 --> 00:46:27,359
+actually undecidable okay but in this
+
+1120
+00:46:24,640 --> 00:46:29,040
+chapter chapter 4 we don't discuss that
+
+1121
+00:46:27,359 --> 00:46:32,480
+so
+
+1122
+00:46:29,040 --> 00:46:34,720
+we don't uh do anything about it here
+
+1123
+00:46:32,480 --> 00:46:36,079
+that's uh
+
+1124
+00:46:34,720 --> 00:46:38,119
+do the next
+
+1125
+00:46:36,079 --> 00:46:39,839
+uh theorem
+
+1126
+00:46:38,119 --> 00:46:42,800
+4.9
+
+1127
+00:46:39,839 --> 00:46:45,680
+we want to prove every context speech
+
+1128
+00:46:42,800 --> 00:46:47,520
+language is decidable
+
+1129
+00:46:45,680 --> 00:46:49,359
+okay
+
+1130
+00:46:47,520 --> 00:46:50,480
+so this is a
+
+1131
+00:46:49,359 --> 00:46:53,520
+well
+
+1132
+00:46:50,480 --> 00:46:55,520
+interesting theorem although not very
+
+1133
+00:46:53,520 --> 00:46:56,720
+difficult but it's interesting because
+
+1134
+00:46:55,520 --> 00:46:59,920
+see
+
+1135
+00:46:56,720 --> 00:47:02,160
+before this theorem what we what we are
+
+1136
+00:46:59,920 --> 00:47:03,520
+we were doing is that
+
+1137
+00:47:02,160 --> 00:47:07,079
+for a
+
+1138
+00:47:03,520 --> 00:47:07,079
+particular language
+
+1139
+00:47:12,160 --> 00:47:17,280
+we prove
+
+1140
+00:47:14,000 --> 00:47:21,599
+its decidability by construct
+
+1141
+00:47:17,280 --> 00:47:24,079
+a turing machine a specific time machine
+
+1142
+00:47:21,599 --> 00:47:25,200
+as the decider of this language that's
+
+1143
+00:47:24,079 --> 00:47:26,480
+what we
+
+1144
+00:47:25,200 --> 00:47:29,599
+did
+
+1145
+00:47:26,480 --> 00:47:31,520
+from the start of this chapter
+
+1146
+00:47:29,599 --> 00:47:36,720
+but you see that for
+
+1147
+00:47:31,520 --> 00:47:38,480
+theorem 4.9 what we want to do is
+
+1148
+00:47:36,720 --> 00:47:39,920
+prove
+
+1149
+00:47:38,480 --> 00:47:43,040
+every
+
+1150
+00:47:39,920 --> 00:47:45,119
+contest-free language is decidable
+
+1151
+00:47:43,040 --> 00:47:48,480
+right it's different right we want to
+
+1152
+00:47:45,119 --> 00:47:51,280
+prove a lot of language at the same time
+
+1153
+00:47:48,480 --> 00:47:53,119
+instead of only one
+
+1154
+00:47:51,280 --> 00:47:54,720
+see the difference now
+
+1155
+00:47:53,119 --> 00:47:56,800
+so
+
+1156
+00:47:54,720 --> 00:47:58,800
+so we want to
+
+1157
+00:47:56,800 --> 00:48:02,079
+we want to uh
+
+1158
+00:47:58,800 --> 00:48:02,079
+we need to build up
+
+1159
+00:48:02,319 --> 00:48:07,680
+two machines two machines
+
+1160
+00:48:05,440 --> 00:48:10,480
+for
+
+1161
+00:48:07,680 --> 00:48:11,920
+all the context free languages
+
+1162
+00:48:10,480 --> 00:48:14,960
+that means for
+
+1163
+00:48:11,920 --> 00:48:17,599
+you if you give me any one context free
+
+1164
+00:48:14,960 --> 00:48:21,440
+language i want i need to
+
+1165
+00:48:17,599 --> 00:48:23,599
+give you one two machine decides that's
+
+1166
+00:48:21,440 --> 00:48:25,200
+context-free language
+
+1167
+00:48:23,599 --> 00:48:26,400
+and you know that
+
+1168
+00:48:25,200 --> 00:48:28,319
+different
+
+1169
+00:48:26,400 --> 00:48:32,720
+context-free language you need different
+
+1170
+00:48:28,319 --> 00:48:34,720
+decider right such that the decider
+
+1171
+00:48:32,720 --> 00:48:36,640
+can decide the
+
+1172
+00:48:34,720 --> 00:48:38,800
+some particular
+
+1173
+00:48:36,640 --> 00:48:40,240
+cfl
+
+1174
+00:48:38,800 --> 00:48:42,559
+okay
+
+1175
+00:48:40,240 --> 00:48:45,200
+so how do we do that
+
+1176
+00:48:42,559 --> 00:48:46,160
+well not really difficult i just want to
+
+1177
+00:48:45,200 --> 00:48:48,880
+uh
+
+1178
+00:48:46,160 --> 00:48:51,440
+clarify what we are doing what what uh
+
+1179
+00:48:48,880 --> 00:48:53,599
+what we are doing is slightly different
+
+1180
+00:48:51,440 --> 00:48:55,359
+than what we were doing
+
+1181
+00:48:53,599 --> 00:48:58,400
+from this chapter
+
+1182
+00:48:55,359 --> 00:48:59,280
+and what we are doing here is still use
+
+1183
+00:48:58,400 --> 00:49:02,400
+you know
+
+1184
+00:48:59,280 --> 00:49:04,720
+some kind of uh something like
+
+1185
+00:49:02,400 --> 00:49:06,960
+cyk but that's different
+
+1186
+00:49:04,720 --> 00:49:10,720
+slightly different
+
+1187
+00:49:06,960 --> 00:49:12,640
+what we what can we do is like
+
+1188
+00:49:10,720 --> 00:49:16,000
+let's design
+
+1189
+00:49:12,640 --> 00:49:17,760
+a tuning machine mg
+
+1190
+00:49:16,000 --> 00:49:21,119
+okay
+
+1191
+00:49:17,760 --> 00:49:24,480
+let's design a tuning machine mg
+
+1192
+00:49:21,119 --> 00:49:24,480
+and the two machine mg
+
+1193
+00:49:24,640 --> 00:49:26,960
+as
+
+1194
+00:49:27,280 --> 00:49:31,520
+the
+
+1195
+00:49:28,160 --> 00:49:33,040
+procedure here
+
+1196
+00:49:31,520 --> 00:49:35,920
+it is not
+
+1197
+00:49:33,040 --> 00:49:37,839
+a complete turing machine
+
+1198
+00:49:35,920 --> 00:49:40,400
+g here
+
+1199
+00:49:37,839 --> 00:49:40,400
+g here
+
+1200
+00:49:40,559 --> 00:49:43,839
+is a
+
+1201
+00:49:42,640 --> 00:49:45,520
+is some
+
+1202
+00:49:43,839 --> 00:49:47,760
+extra data
+
+1203
+00:49:45,520 --> 00:49:47,760
+that
+
+1204
+00:49:48,160 --> 00:49:54,319
+you need to provide to make it
+
+1205
+00:49:50,960 --> 00:49:56,960
+a concrete tube machine
+
+1206
+00:49:54,319 --> 00:49:59,040
+well the concept is quite easy if you
+
+1207
+00:49:56,960 --> 00:50:02,640
+think about you know the programming
+
+1208
+00:49:59,040 --> 00:50:02,640
+language they have macro
+
+1209
+00:50:02,960 --> 00:50:07,520
+oh sorry macro right
+
+1210
+00:50:05,599 --> 00:50:09,440
+they have macro
+
+1211
+00:50:07,520 --> 00:50:10,800
+for example in
+
+1212
+00:50:09,440 --> 00:50:13,440
+c
+
+1213
+00:50:10,800 --> 00:50:15,760
+you can do a define
+
+1214
+00:50:13,440 --> 00:50:15,760
+sorry
+
+1215
+00:50:16,240 --> 00:50:22,400
+you can do something like define
+
+1216
+00:50:19,520 --> 00:50:24,480
+uh what am i doing max
+
+1217
+00:50:22,400 --> 00:50:27,520
+a b
+
+1218
+00:50:24,480 --> 00:50:30,400
+you can do that define next a b
+
+1219
+00:50:27,520 --> 00:50:32,559
+and to be what to be
+
+1220
+00:50:30,400 --> 00:50:35,359
+a
+
+1221
+00:50:32,559 --> 00:50:35,359
+larger than b
+
+1222
+00:50:36,000 --> 00:50:38,240
+if yes
+
+1223
+00:50:37,280 --> 00:50:40,240
+a
+
+1224
+00:50:38,240 --> 00:50:42,720
+otherwise
+
+1225
+00:50:40,240 --> 00:50:44,000
+sorry that's a column right
+
+1226
+00:50:42,720 --> 00:50:44,800
+otherwise
+
+1227
+00:50:44,000 --> 00:50:47,280
+b
+
+1228
+00:50:44,800 --> 00:50:49,040
+and something like this
+
+1229
+00:50:47,280 --> 00:50:50,559
+and see
+
+1230
+00:50:49,040 --> 00:50:54,800
+you use
+
+1231
+00:50:50,559 --> 00:50:55,680
+this one in your program
+
+1232
+00:50:54,800 --> 00:50:58,160
+and
+
+1233
+00:50:55,680 --> 00:51:00,160
+when it encounters
+
+1234
+00:50:58,160 --> 00:51:01,520
+next a b
+
+1235
+00:51:00,160 --> 00:51:05,520
+this part
+
+1236
+00:51:01,520 --> 00:51:05,520
+will be plugged into here
+
+1237
+00:51:05,680 --> 00:51:12,000
+and before that
+
+1238
+00:51:09,040 --> 00:51:14,400
+it is the program here is not really a
+
+1239
+00:51:12,000 --> 00:51:16,880
+com complete program it's not really a
+
+1240
+00:51:14,400 --> 00:51:20,480
+whole concrete program right
+
+1241
+00:51:16,880 --> 00:51:23,440
+only if you provide a definition here
+
+1242
+00:51:20,480 --> 00:51:26,079
+then it will be a complete program
+
+1243
+00:51:23,440 --> 00:51:30,079
+and if you you know although we don't
+
+1244
+00:51:26,079 --> 00:51:31,599
+want to do that but if you give another
+
+1245
+00:51:30,079 --> 00:51:33,839
+weird
+
+1246
+00:51:31,599 --> 00:51:36,480
+definition
+
+1247
+00:51:33,839 --> 00:51:39,200
+or just a
+
+1248
+00:51:36,480 --> 00:51:41,520
+anyway it will work as a concrete
+
+1249
+00:51:39,200 --> 00:51:42,559
+program but maybe the
+
+1250
+00:51:41,520 --> 00:51:44,720
+uh the
+
+1251
+00:51:42,559 --> 00:51:46,400
+result is wrong but
+
+1252
+00:51:44,720 --> 00:51:49,040
+it will be a concrete program so the
+
+1253
+00:51:46,400 --> 00:51:52,960
+same thing goes
+
+1254
+00:51:49,040 --> 00:51:52,960
+here g here
+
+1255
+00:51:53,040 --> 00:51:56,800
+is unknown when we write the program
+
+1256
+00:51:55,839 --> 00:51:58,319
+here
+
+1257
+00:51:56,800 --> 00:52:00,720
+so it is not
+
+1258
+00:51:58,319 --> 00:52:02,640
+a complete program it cannot be wrong
+
+1259
+00:52:00,720 --> 00:52:04,640
+unless you define g
+
+1260
+00:52:02,640 --> 00:52:07,119
+okay but
+
+1261
+00:52:04,640 --> 00:52:08,079
+after we complete this program
+
+1262
+00:52:07,119 --> 00:52:10,960
+you know
+
+1263
+00:52:08,079 --> 00:52:12,880
+someone gives you a g
+
+1264
+00:52:10,960 --> 00:52:13,839
+you just need to put g
+
+1265
+00:52:12,880 --> 00:52:15,440
+here
+
+1266
+00:52:13,839 --> 00:52:17,040
+then
+
+1267
+00:52:15,440 --> 00:52:19,520
+the
+
+1268
+00:52:17,040 --> 00:52:23,040
+program here becomes
+
+1269
+00:52:19,520 --> 00:52:25,760
+runnable becomes a concrete
+
+1270
+00:52:23,040 --> 00:52:26,640
+machine turing machine instance
+
+1271
+00:52:25,760 --> 00:52:28,319
+then
+
+1272
+00:52:26,640 --> 00:52:29,920
+this
+
+1273
+00:52:28,319 --> 00:52:35,920
+turing machine
+
+1274
+00:52:29,920 --> 00:52:35,920
+is the decider for what for l of g
+
+1275
+00:52:37,119 --> 00:52:40,160
+right
+
+1276
+00:52:38,640 --> 00:52:42,720
+so
+
+1277
+00:52:40,160 --> 00:52:47,280
+after you get a g
+
+1278
+00:52:42,720 --> 00:52:49,760
+you plug into here then mg becomes
+
+1279
+00:52:47,280 --> 00:52:51,119
+the decider of l of g
+
+1280
+00:52:49,760 --> 00:52:55,119
+that's why
+
+1281
+00:52:51,119 --> 00:52:56,400
+every context free language is decidable
+
+1282
+00:52:55,119 --> 00:52:58,800
+right
+
+1283
+00:52:56,400 --> 00:53:01,200
+because for every context language
+
+1284
+00:52:58,800 --> 00:53:05,440
+as long as you give me the context free
+
+1285
+00:53:01,200 --> 00:53:07,119
+grammar of that language then i put into
+
+1286
+00:53:05,440 --> 00:53:10,319
+the corresponding
+
+1287
+00:53:07,119 --> 00:53:12,800
+place here then
+
+1288
+00:53:10,319 --> 00:53:15,520
+the program we wrote here can be the
+
+1289
+00:53:12,800 --> 00:53:17,359
+decider of that particular
+
+1290
+00:53:15,520 --> 00:53:20,640
+language
+
+1291
+00:53:17,359 --> 00:53:22,079
+so every contest language is decidable
+
+1292
+00:53:20,640 --> 00:53:24,160
+we
+
+1293
+00:53:22,079 --> 00:53:27,440
+prove
+
+1294
+00:53:24,160 --> 00:53:30,319
+a lot of languages to be decidable at
+
+1295
+00:53:27,440 --> 00:53:33,440
+the same time with you know
+
+1296
+00:53:30,319 --> 00:53:35,440
+the flexibility of the programming skill
+
+1297
+00:53:33,440 --> 00:53:36,570
+something like that
+
+1298
+00:53:35,440 --> 00:53:38,880
+okay
+
+1299
+00:53:36,570 --> 00:53:39,839
+[Applause]
+
+1300
+00:53:38,880 --> 00:53:44,480
+so
+
+1301
+00:53:39,839 --> 00:53:46,480
+let's say after we prove
+
+1302
+00:53:44,480 --> 00:53:49,040
+this theorem
+
+1303
+00:53:46,480 --> 00:53:52,240
+what we know
+
+1304
+00:53:49,040 --> 00:53:54,480
+we go back to the language we already
+
+1305
+00:53:52,240 --> 00:53:57,839
+the class of languages we already know
+
+1306
+00:53:54,480 --> 00:54:00,800
+that firstly in chapter one we define
+
+1307
+00:53:57,839 --> 00:54:04,480
+dfa and we define that
+
+1308
+00:54:00,800 --> 00:54:06,800
+all languages recognizable by dfa
+
+1309
+00:54:04,480 --> 00:54:10,319
+is regular right
+
+1310
+00:54:06,800 --> 00:54:11,359
+that's how regular languages are defined
+
+1311
+00:54:10,319 --> 00:54:14,319
+and then
+
+1312
+00:54:11,359 --> 00:54:17,920
+we know that there are something outside
+
+1313
+00:54:14,319 --> 00:54:20,160
+of regular languages which one
+
+1314
+00:54:17,920 --> 00:54:22,880
+we have here right
+
+1315
+00:54:20,160 --> 00:54:25,280
+but this one is context free language
+
+1316
+00:54:22,880 --> 00:54:26,720
+and we can prove that context free
+
+1317
+00:54:25,280 --> 00:54:30,319
+language
+
+1318
+00:54:26,720 --> 00:54:32,160
+contains regular languages why
+
+1319
+00:54:30,319 --> 00:54:35,520
+because pda
+
+1320
+00:54:32,160 --> 00:54:38,400
+without using a stack is an is an nfa
+
+1321
+00:54:35,520 --> 00:54:39,520
+and nfa can recognize every regular
+
+1322
+00:54:38,400 --> 00:54:41,440
+languages
+
+1323
+00:54:39,520 --> 00:54:43,200
+and pda recognize
+
+1324
+00:54:41,440 --> 00:54:46,240
+context free languages
+
+1325
+00:54:43,200 --> 00:54:49,119
+and there are context free languages not
+
+1326
+00:54:46,240 --> 00:54:51,520
+regular so we know the relationship is
+
+1327
+00:54:49,119 --> 00:54:53,040
+appropriate this way
+
+1328
+00:54:51,520 --> 00:54:55,200
+okay
+
+1329
+00:54:53,040 --> 00:54:57,680
+and then we know that
+
+1330
+00:54:55,200 --> 00:55:01,440
+we just now know that
+
+1331
+00:54:57,680 --> 00:55:02,640
+every contest language is a decidable
+
+1332
+00:55:01,440 --> 00:55:03,440
+language
+
+1333
+00:55:02,640 --> 00:55:06,960
+right
+
+1334
+00:55:03,440 --> 00:55:08,960
+so context language must be within
+
+1335
+00:55:06,960 --> 00:55:11,119
+decidable
+
+1336
+00:55:08,960 --> 00:55:12,480
+right we just proof it that's what we
+
+1337
+00:55:11,119 --> 00:55:13,680
+just proved
+
+1338
+00:55:12,480 --> 00:55:14,880
+okay
+
+1339
+00:55:13,680 --> 00:55:17,200
+and then
+
+1340
+00:55:14,880 --> 00:55:19,359
+are they the same class or
+
+1341
+00:55:17,200 --> 00:55:21,359
+they are something here
+
+1342
+00:55:19,359 --> 00:55:23,359
+if there's nothing here then they are
+
+1343
+00:55:21,359 --> 00:55:25,839
+the same class otherwise if there is
+
+1344
+00:55:23,359 --> 00:55:27,520
+something here then you know the graph
+
+1345
+00:55:25,839 --> 00:55:29,760
+here is a proper
+
+1346
+00:55:27,520 --> 00:55:31,839
+uh representation of the relationship
+
+1347
+00:55:29,760 --> 00:55:34,160
+between the two classes
+
+1348
+00:55:31,839 --> 00:55:35,520
+and actually there are something here
+
+1349
+00:55:34,160 --> 00:55:37,520
+and
+
+1350
+00:55:35,520 --> 00:55:41,119
+probably many things we already know
+
+1351
+00:55:37,520 --> 00:55:42,240
+like for this example am
+
+1352
+00:55:41,119 --> 00:55:43,520
+bn
+
+1353
+00:55:42,240 --> 00:55:45,680
+cn
+
+1354
+00:55:43,520 --> 00:55:49,040
+we already proved that the language is
+
+1355
+00:55:45,680 --> 00:55:52,000
+not context-free and you can easily
+
+1356
+00:55:49,040 --> 00:55:53,040
+imagine that this language is decidable
+
+1357
+00:55:52,000 --> 00:55:56,079
+right
+
+1358
+00:55:53,040 --> 00:56:00,000
+it is very easy for turing machine to
+
+1359
+00:55:56,079 --> 00:56:01,040
+you know you give it as a aapb cc
+
+1360
+00:56:00,000 --> 00:56:02,400
+because
+
+1361
+00:56:01,040 --> 00:56:04,240
+you can just
+
+1362
+00:56:02,400 --> 00:56:06,960
+you don't need to write
+
+1363
+00:56:04,240 --> 00:56:10,640
+anything you just need to compare a one
+
+1364
+00:56:06,960 --> 00:56:14,559
+a one b one c okay back to here one a
+
+1365
+00:56:10,640 --> 00:56:16,079
+one b one c and a hit space then accept
+
+1366
+00:56:14,559 --> 00:56:20,319
+right the tool machine is a piece of
+
+1367
+00:56:16,079 --> 00:56:22,160
+cake for turing machine even a m b n c n
+
+1368
+00:56:20,319 --> 00:56:25,280
+d n or
+
+1369
+00:56:22,160 --> 00:56:27,280
+e n or f n doesn't matter for two
+
+1370
+00:56:25,280 --> 00:56:29,920
+machine all can be done
+
+1371
+00:56:27,280 --> 00:56:31,200
+right so that's decidable but not
+
+1372
+00:56:29,920 --> 00:56:34,160
+context free
+
+1373
+00:56:31,200 --> 00:56:36,880
+so that's a example here or we actually
+
+1374
+00:56:34,160 --> 00:56:38,000
+have this one
+
+1375
+00:56:36,880 --> 00:56:40,960
+w
+
+1376
+00:56:38,000 --> 00:56:42,799
+separator w w
+
+1377
+00:56:40,960 --> 00:56:44,799
+0 1 string
+
+1378
+00:56:42,799 --> 00:56:45,920
+right we have this
+
+1379
+00:56:44,799 --> 00:56:47,920
+this one
+
+1380
+00:56:45,920 --> 00:56:50,079
+or
+
+1381
+00:56:47,920 --> 00:56:52,559
+that one
+
+1382
+00:56:50,079 --> 00:56:54,960
+all these you can easily prove that they
+
+1383
+00:56:52,559 --> 00:56:58,079
+are not context free and we already
+
+1384
+00:56:54,960 --> 00:57:01,440
+proved this language to be decidable so
+
+1385
+00:56:58,079 --> 00:57:04,559
+a relationship here is okay okay
+
+1386
+00:57:01,440 --> 00:57:06,799
+then next question
+
+1387
+00:57:04,559 --> 00:57:10,400
+we know that by definition
+
+1388
+00:57:06,799 --> 00:57:13,839
+decidable must be within
+
+1389
+00:57:10,400 --> 00:57:14,559
+recognizable right because by definition
+
+1390
+00:57:13,839 --> 00:57:16,640
+what
+
+1391
+00:57:14,559 --> 00:57:18,720
+what uh the definition for decidable
+
+1392
+00:57:16,640 --> 00:57:20,880
+language is that you have decider for
+
+1393
+00:57:18,720 --> 00:57:22,720
+decider for all strings
+
+1394
+00:57:20,880 --> 00:57:25,040
+it will accept
+
+1395
+00:57:22,720 --> 00:57:25,040
+well
+
+1396
+00:57:25,359 --> 00:57:29,119
+strings in the language will be accepted
+
+1397
+00:57:27,200 --> 00:57:32,000
+and string not in a language must be
+
+1398
+00:57:29,119 --> 00:57:34,000
+rejected but for recognizable
+
+1399
+00:57:32,000 --> 00:57:35,680
+you only need to accept all the strings
+
+1400
+00:57:34,000 --> 00:57:38,720
+in the language
+
+1401
+00:57:35,680 --> 00:57:40,720
+so apparently decidable is within
+
+1402
+00:57:38,720 --> 00:57:42,640
+recognizable because
+
+1403
+00:57:40,720 --> 00:57:45,040
+any language
+
+1404
+00:57:42,640 --> 00:57:47,040
+fulfill satisfy the definition of
+
+1405
+00:57:45,040 --> 00:57:50,000
+decidable language
+
+1406
+00:57:47,040 --> 00:57:51,839
+is automatically recognizable
+
+1407
+00:57:50,000 --> 00:57:54,640
+but the problem is
+
+1408
+00:57:51,839 --> 00:57:56,799
+is there anything in this region
+
+1409
+00:57:54,640 --> 00:57:58,960
+that's the problem right
+
+1410
+00:57:56,799 --> 00:58:02,000
+if there is no there's
+
+1411
+00:57:58,960 --> 00:58:04,559
+nothing no language in this region
+
+1412
+00:58:02,000 --> 00:58:08,319
+then that means decidable and
+
+1413
+00:58:04,559 --> 00:58:10,480
+recognizable are the same class
+
+1414
+00:58:08,319 --> 00:58:13,680
+if there is something here
+
+1415
+00:58:10,480 --> 00:58:16,400
+then the relationship will be
+
+1416
+00:58:13,680 --> 00:58:17,200
+the diagram here
+
+1417
+00:58:16,400 --> 00:58:19,839
+okay
+
+1418
+00:58:17,200 --> 00:58:21,520
+so that's
+
+1419
+00:58:19,839 --> 00:58:22,480
+that is
+
+1420
+00:58:21,520 --> 00:58:27,559
+the
+
+1421
+00:58:22,480 --> 00:58:27,559
+question we need to discuss next time
+

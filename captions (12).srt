@@ -1,0 +1,3704 @@
+1
+00:00:00,880 --> 00:00:07,200
+let's get started with chapter 2
+
+2
+00:00:03,919 --> 00:00:11,040
+context-free languages in
+
+3
+00:00:07,200 --> 00:00:14,080
+chapter 1 regular languages we introduce
+
+4
+00:00:11,040 --> 00:00:16,880
+computational models like deterministic
+
+5
+00:00:14,080 --> 00:00:20,400
+final tampon
+
+6
+00:00:16,880 --> 00:00:23,519
+nfa and the regular expressions
+
+7
+00:00:20,400 --> 00:00:27,119
+and we use we use
+
+8
+00:00:23,519 --> 00:00:30,400
+chapter one mainly to introduce
+
+9
+00:00:27,119 --> 00:00:35,360
+the definition of computational models
+
+10
+00:00:30,400 --> 00:00:35,360
+and the use of computational models and
+
+11
+00:00:36,800 --> 00:00:41,760
+discussing the capability and the
+
+12
+00:00:40,879 --> 00:00:46,079
+limitation
+
+13
+00:00:41,760 --> 00:00:49,600
+of computation in a mathematical way
+
+14
+00:00:46,079 --> 00:00:53,199
+which is uh we
+
+15
+00:00:49,600 --> 00:00:57,120
+tried we we were trying to obtain
+
+16
+00:00:53,199 --> 00:01:00,320
+to obtain to explore to discover
+
+17
+00:00:57,120 --> 00:01:03,760
+knowledge via proof of
+
+18
+00:01:00,320 --> 00:01:04,400
+theorems and via discussion on closure
+
+19
+00:01:03,760 --> 00:01:08,560
+properties
+
+20
+00:01:04,400 --> 00:01:12,000
+of operations and in this chapter
+
+21
+00:01:08,560 --> 00:01:15,439
+we essentially we'll be doing
+
+22
+00:01:12,000 --> 00:01:16,479
+that all over again only that we will be
+
+23
+00:01:15,439 --> 00:01:19,920
+doing that
+
+24
+00:01:16,479 --> 00:01:23,520
+with a slightly more advanced
+
+25
+00:01:19,920 --> 00:01:26,880
+computational models okay so
+
+26
+00:01:23,520 --> 00:01:29,439
+let's get started with
+
+27
+00:01:26,880 --> 00:01:30,159
+the formal definition of context-free
+
+28
+00:01:29,439 --> 00:01:33,840
+grammars
+
+29
+00:01:30,159 --> 00:01:36,960
+first and remember that
+
+30
+00:01:33,840 --> 00:01:40,560
+in chapter one
+
+31
+00:01:36,960 --> 00:01:43,200
+we introduced regular expressions
+
+32
+00:01:40,560 --> 00:01:43,200
+i said that
+
+33
+00:01:43,920 --> 00:01:50,300
+we want to describe a language
+
+34
+00:01:47,119 --> 00:01:51,840
+in a more direct way so we
+
+35
+00:01:50,300 --> 00:01:54,880
+[Music]
+
+36
+00:01:51,840 --> 00:01:57,280
+design we designed regular expressions
+
+37
+00:01:54,880 --> 00:02:00,479
+to do that
+
+38
+00:01:57,280 --> 00:02:02,320
+in opposite of the machine way right
+
+39
+00:02:00,479 --> 00:02:04,560
+in the machine way actually our
+
+40
+00:02:02,320 --> 00:02:07,600
+definition of regular languages
+
+41
+00:02:04,560 --> 00:02:11,520
+we after we define
+
+42
+00:02:07,600 --> 00:02:14,720
+dfa and nadfa
+
+43
+00:02:11,520 --> 00:02:18,560
+in fact represents
+
+44
+00:02:14,720 --> 00:02:22,560
+a language which one the language
+
+45
+00:02:18,560 --> 00:02:24,879
+this machine recognized and this machine
+
+46
+00:02:22,560 --> 00:02:28,160
+recognizes
+
+47
+00:02:24,879 --> 00:02:31,360
+then that will be a that will be an
+
+48
+00:02:28,160 --> 00:02:34,640
+indirect way to describe or to indicate
+
+49
+00:02:31,360 --> 00:02:38,160
+to specify a language so
+
+50
+00:02:34,640 --> 00:02:41,519
+uh you can you can think of that
+
+51
+00:02:38,160 --> 00:02:42,959
+as uh there's a language there's a
+
+52
+00:02:41,519 --> 00:02:46,400
+language here
+
+53
+00:02:42,959 --> 00:02:50,400
+and using the machine is like you define
+
+54
+00:02:46,400 --> 00:02:53,519
+a dfa and the language of that dfa
+
+55
+00:02:50,400 --> 00:02:56,800
+is the language you want to specify
+
+56
+00:02:53,519 --> 00:02:58,159
+and you can also try to write a regular
+
+57
+00:02:56,800 --> 00:03:00,959
+expression
+
+58
+00:02:58,159 --> 00:03:01,920
+and the legal the regular expression
+
+59
+00:03:00,959 --> 00:03:03,920
+describe
+
+60
+00:03:01,920 --> 00:03:05,440
+the language you want to specify
+
+61
+00:03:03,920 --> 00:03:09,200
+something like that
+
+62
+00:03:05,440 --> 00:03:12,800
+and in chapter one we do this way first
+
+63
+00:03:09,200 --> 00:03:15,920
+right now we do this way first
+
+64
+00:03:12,800 --> 00:03:18,560
+okay so we want to
+
+65
+00:03:15,920 --> 00:03:19,760
+uh define something called contextual
+
+66
+00:03:18,560 --> 00:03:22,959
+grammars
+
+67
+00:03:19,760 --> 00:03:22,959
+and use grammars
+
+68
+00:03:23,120 --> 00:03:29,840
+to describe in this case
+
+69
+00:03:26,239 --> 00:03:33,200
+to generate a language in a more
+
+70
+00:03:29,840 --> 00:03:36,720
+direct way so a context with grammar
+
+71
+00:03:33,200 --> 00:03:42,000
+is a full tuple okay so there are four
+
+72
+00:03:36,720 --> 00:03:45,040
+components the first one is a finite set
+
+73
+00:03:42,000 --> 00:03:48,000
+the first one is a finite set we call
+
+74
+00:03:45,040 --> 00:03:48,319
+the variables that's why we use capital
+
+75
+00:03:48,000 --> 00:03:52,159
+v
+
+76
+00:03:48,319 --> 00:03:52,159
+here usually you can use other
+
+77
+00:03:52,560 --> 00:04:00,400
+name but we in history we use v here
+
+78
+00:03:57,840 --> 00:04:01,200
+and then the second one is also finite
+
+79
+00:04:00,400 --> 00:04:04,720
+set
+
+80
+00:04:01,200 --> 00:04:07,760
+it's actually a symbol set like
+
+81
+00:04:04,720 --> 00:04:08,959
+sigma in chapter one so we also use
+
+82
+00:04:07,760 --> 00:04:12,840
+sigma here
+
+83
+00:04:08,959 --> 00:04:15,760
+it is also the alphabet of the language
+
+84
+00:04:12,840 --> 00:04:19,519
+and sigma here must be
+
+85
+00:04:15,760 --> 00:04:23,040
+disjoint from v okay that that is
+
+86
+00:04:19,519 --> 00:04:26,880
+v intersect with
+
+87
+00:04:23,040 --> 00:04:30,240
+sigma must be empty set
+
+88
+00:04:26,880 --> 00:04:33,199
+the there cannot be a
+
+89
+00:04:30,240 --> 00:04:34,560
+same symbol in these two sets you will
+
+90
+00:04:33,199 --> 00:04:38,080
+see why
+
+91
+00:04:34,560 --> 00:04:41,680
+uh just a minute and we call sigma here
+
+92
+00:04:38,080 --> 00:04:44,880
+actually the alphabet here the terminals
+
+93
+00:04:41,680 --> 00:04:49,600
+and you will see the reason
+
+94
+00:04:44,880 --> 00:04:53,440
+a minute later so that's the two
+
+95
+00:04:49,600 --> 00:04:56,880
+major components okay the
+
+96
+00:04:53,440 --> 00:05:01,360
+fourth one is one
+
+97
+00:04:56,880 --> 00:05:04,960
+of the variables we call start variable
+
+98
+00:05:01,360 --> 00:05:09,440
+okay starbase so there is a particular
+
+99
+00:05:04,960 --> 00:05:13,039
+there is a spatial variable in v
+
+100
+00:05:09,440 --> 00:05:16,320
+like star state in the states okay so
+
+101
+00:05:13,039 --> 00:05:19,120
+there is a start variable in variable
+
+102
+00:05:16,320 --> 00:05:19,919
+set then in variables in a state of
+
+103
+00:05:19,120 --> 00:05:23,759
+variables
+
+104
+00:05:19,919 --> 00:05:27,680
+okay and the third one
+
+105
+00:05:23,759 --> 00:05:31,520
+here we use r is a finite
+
+106
+00:05:27,680 --> 00:05:34,639
+set of rules or
+
+107
+00:05:31,520 --> 00:05:38,400
+we call productions okay
+
+108
+00:05:34,639 --> 00:05:41,600
+rules or productions each rule
+
+109
+00:05:38,400 --> 00:05:45,120
+each rule is
+
+110
+00:05:41,600 --> 00:05:48,400
+a variable and
+
+111
+00:05:45,120 --> 00:05:51,840
+a string of variables and
+
+112
+00:05:48,400 --> 00:05:54,320
+terminals okay so it's a miss
+
+113
+00:05:51,840 --> 00:05:55,600
+it's a mixture of variables and
+
+114
+00:05:54,320 --> 00:05:59,840
+terminals
+
+115
+00:05:55,600 --> 00:06:03,199
+so each rule basically consists of
+
+116
+00:05:59,840 --> 00:06:07,520
+a variable in v which we call it
+
+117
+00:06:03,199 --> 00:06:12,240
+head and a symbol
+
+118
+00:06:07,520 --> 00:06:15,520
+let's say uh right arrow okay
+
+119
+00:06:12,240 --> 00:06:19,120
+and a string in
+
+120
+00:06:15,520 --> 00:06:23,360
+we use this one to
+
+121
+00:06:19,120 --> 00:06:27,520
+indicate a mixture of a mixture string
+
+122
+00:06:23,360 --> 00:06:30,960
+a mix a string of mixture or in
+
+123
+00:06:27,520 --> 00:06:34,400
+variable and also
+
+124
+00:06:30,960 --> 00:06:38,240
+terminals we call that the body
+
+125
+00:06:34,400 --> 00:06:41,680
+the robot so each rule
+
+126
+00:06:38,240 --> 00:06:41,680
+is head
+
+127
+00:06:42,720 --> 00:06:49,120
+body and the head
+
+128
+00:06:46,000 --> 00:06:52,240
+is something in v and the body
+
+129
+00:06:49,120 --> 00:06:56,639
+is some string in v
+
+130
+00:06:52,240 --> 00:07:00,080
+union with alphabet and
+
+131
+00:06:56,639 --> 00:07:03,840
+substring yes
+
+132
+00:07:00,080 --> 00:07:06,800
+so that's the definition of a
+
+133
+00:07:03,840 --> 00:07:06,800
+context free grammar
+
+134
+00:07:12,160 --> 00:07:16,800
+let's see uh let's see an example first
+
+135
+00:07:15,759 --> 00:07:19,840
+okay
+
+136
+00:07:16,800 --> 00:07:24,080
+so let's see this example
+
+137
+00:07:19,840 --> 00:07:24,080
+so context-free grammar g3
+
+138
+00:07:26,240 --> 00:07:28,639
+is a
+
+139
+00:07:29,360 --> 00:07:36,880
+for tuple right according to our specs
+
+140
+00:07:33,199 --> 00:07:40,240
+so v here only
+
+141
+00:07:36,880 --> 00:07:42,000
+has one variable and of course since you
+
+142
+00:07:40,240 --> 00:07:44,000
+have only one variable that variable
+
+143
+00:07:42,000 --> 00:07:49,280
+must be start variable
+
+144
+00:07:44,000 --> 00:07:49,280
+okay and then there the alphabet
+
+145
+00:07:49,360 --> 00:07:59,280
+has two symbols and the rule
+
+146
+00:07:54,879 --> 00:08:02,420
+has three rule first one is
+
+147
+00:07:59,280 --> 00:08:03,759
+let's call the symbol here
+
+148
+00:08:02,420 --> 00:08:06,879
+[Music]
+
+149
+00:08:03,759 --> 00:08:09,919
+i don't know it's informal uh
+
+150
+00:08:06,879 --> 00:08:13,199
+way to describe it i would like to say
+
+151
+00:08:09,919 --> 00:08:17,199
+s may become okay x
+
+152
+00:08:13,199 --> 00:08:21,120
+may become a s b
+
+153
+00:08:17,199 --> 00:08:24,400
+and the symbol here is or
+
+154
+00:08:21,120 --> 00:08:27,919
+okay or so actually
+
+155
+00:08:24,400 --> 00:08:31,599
+we write the rule set this way
+
+156
+00:08:27,919 --> 00:08:32,399
+means there are three rules so the first
+
+157
+00:08:31,599 --> 00:08:36,320
+one will be
+
+158
+00:08:32,399 --> 00:08:40,800
+s may become a as b
+
+159
+00:08:36,320 --> 00:08:44,080
+and the second one is s may become
+
+160
+00:08:40,800 --> 00:08:47,200
+ss and the third one is
+
+161
+00:08:44,080 --> 00:08:50,160
+s may become epsilon
+
+162
+00:08:47,200 --> 00:08:50,880
+which is empty string okay so you can
+
+163
+00:08:50,160 --> 00:08:54,160
+see that
+
+164
+00:08:50,880 --> 00:08:56,720
+each one is a mixture
+
+165
+00:08:54,160 --> 00:08:58,000
+is a string of the mixture of variables
+
+166
+00:08:56,720 --> 00:09:02,480
+and
+
+167
+00:08:58,000 --> 00:09:06,320
+terminals okay also alphabet
+
+168
+00:09:02,480 --> 00:09:06,320
+okay so here
+
+169
+00:09:06,839 --> 00:09:13,760
+uh you have to know that here
+
+170
+00:09:10,640 --> 00:09:17,120
+the symbol here means over and
+
+171
+00:09:13,760 --> 00:09:20,160
+it is not a part of a definition
+
+172
+00:09:17,120 --> 00:09:22,800
+of contextual grammar and
+
+173
+00:09:20,160 --> 00:09:23,680
+we write grammars this we write write
+
+174
+00:09:22,800 --> 00:09:26,640
+the rules of
+
+175
+00:09:23,680 --> 00:09:28,640
+grammar this way only for you know
+
+176
+00:09:26,640 --> 00:09:32,000
+convenience
+
+177
+00:09:28,640 --> 00:09:35,200
+so you should write grammar
+
+178
+00:09:32,000 --> 00:09:38,240
+this way it is the set
+
+179
+00:09:35,200 --> 00:09:43,120
+of the three rules and
+
+180
+00:09:38,240 --> 00:09:46,399
+also note that there since
+
+181
+00:09:43,120 --> 00:09:49,600
+r here is a set
+
+182
+00:09:46,399 --> 00:09:51,279
+of rules okay the set in the
+
+183
+00:09:49,600 --> 00:09:54,640
+mathematical sense
+
+184
+00:09:51,279 --> 00:09:58,000
+so that is a set what what do i
+
+185
+00:09:54,640 --> 00:09:59,440
+what what do i mean i mean since it is a
+
+186
+00:09:58,000 --> 00:10:02,640
+set
+
+187
+00:09:59,440 --> 00:10:06,000
+there is no odor okay
+
+188
+00:10:02,640 --> 00:10:08,959
+there no order here
+
+189
+00:10:06,000 --> 00:10:09,360
+for writing rules we must have some you
+
+190
+00:10:08,959 --> 00:10:12,480
+know
+
+191
+00:10:09,360 --> 00:10:16,320
+writing orders so we write the
+
+192
+00:10:12,480 --> 00:10:19,920
+rule first here the second rule here
+
+193
+00:10:16,320 --> 00:10:23,440
+the third row here but
+
+194
+00:10:19,920 --> 00:10:24,160
+from the viewpoint of set there is no
+
+195
+00:10:23,440 --> 00:10:27,440
+order
+
+196
+00:10:24,160 --> 00:10:30,640
+so you you cannot think of like
+
+197
+00:10:27,440 --> 00:10:33,920
+first first rule has higher
+
+198
+00:10:30,640 --> 00:10:35,120
+priority to be applied and second rule
+
+199
+00:10:33,920 --> 00:10:38,240
+has the second
+
+200
+00:10:35,120 --> 00:10:41,760
+highest priority to be applied no
+
+201
+00:10:38,240 --> 00:10:44,480
+there is no such such thing okay
+
+202
+00:10:41,760 --> 00:10:45,519
+there are three rules these are the
+
+203
+00:10:44,480 --> 00:10:48,720
+three rules
+
+204
+00:10:45,519 --> 00:10:50,079
+and there is no higher priority or lower
+
+205
+00:10:48,720 --> 00:10:53,760
+priority here
+
+206
+00:10:50,079 --> 00:10:57,920
+in the sense of mathematical set
+
+207
+00:10:53,760 --> 00:11:01,839
+okay you must be noted that
+
+208
+00:10:57,920 --> 00:11:06,880
+so there are three three rules here
+
+209
+00:11:01,839 --> 00:11:06,880
+then it is a grammar
+
+210
+00:11:07,600 --> 00:11:11,519
+the whole thing here is an example of
+
+211
+00:11:10,880 --> 00:11:15,040
+grammar
+
+212
+00:11:11,519 --> 00:11:18,079
+okay for components
+
+213
+00:11:15,040 --> 00:11:21,279
+variable terminals rule set
+
+214
+00:11:18,079 --> 00:11:23,920
+and which variable is the stuff is the
+
+215
+00:11:21,279 --> 00:11:27,680
+start variable
+
+216
+00:11:23,920 --> 00:11:30,160
+okay so that's an example of the grammar
+
+217
+00:11:27,680 --> 00:11:33,200
+of the contextual context free grammar
+
+218
+00:11:30,160 --> 00:11:33,200
+we are talking about
+
+219
+00:11:33,680 --> 00:11:35,839
+so
+
+220
+00:11:39,440 --> 00:11:47,120
+since a context with grammar
+
+221
+00:11:43,920 --> 00:11:49,680
+is as i said used to describe
+
+222
+00:11:47,120 --> 00:11:51,040
+or to generate in this chapter to
+
+223
+00:11:49,680 --> 00:11:54,160
+generate
+
+224
+00:11:51,040 --> 00:11:57,839
+a language how does the
+
+225
+00:11:54,160 --> 00:12:01,600
+generate thing go okay
+
+226
+00:11:57,839 --> 00:12:01,600
+so let's say
+
+227
+00:12:02,000 --> 00:12:11,760
+since a rule look a rule looks like
+
+228
+00:12:07,760 --> 00:12:14,480
+this form okay
+
+229
+00:12:11,760 --> 00:12:14,480
+we say that
+
+230
+00:12:15,200 --> 00:12:22,000
+uav some
+
+231
+00:12:18,480 --> 00:12:25,200
+string sound string of a mixture
+
+232
+00:12:22,000 --> 00:12:29,839
+the mixture of variables and
+
+233
+00:12:25,200 --> 00:12:32,720
+terminals some string yields
+
+234
+00:12:29,839 --> 00:12:32,720
+another string
+
+235
+00:12:35,600 --> 00:12:44,240
+we re we write this way
+
+236
+00:12:40,240 --> 00:12:44,240
+u a v
+
+237
+00:12:50,839 --> 00:12:55,760
+derives
+
+238
+00:12:52,560 --> 00:12:59,680
+oh sorry yields u
+
+239
+00:12:55,760 --> 00:13:04,560
+w v okay
+
+240
+00:12:59,680 --> 00:13:04,560
+so this string yields this
+
+241
+00:13:04,839 --> 00:13:07,839
+string
+
+242
+00:13:08,240 --> 00:13:13,279
+and if some string
+
+243
+00:13:15,040 --> 00:13:22,160
+if some string yields
+
+244
+00:13:18,480 --> 00:13:25,200
+some other string and
+
+245
+00:13:22,160 --> 00:13:29,279
+then use some other string
+
+246
+00:13:25,200 --> 00:13:32,800
+then etc finally yields
+
+247
+00:13:29,279 --> 00:13:35,839
+this string b we say that
+
+248
+00:13:32,800 --> 00:13:39,600
+u derives
+
+249
+00:13:35,839 --> 00:13:43,279
+v okay
+
+250
+00:13:39,600 --> 00:13:48,320
+and we write the derivation
+
+251
+00:13:43,279 --> 00:13:51,760
+as u derives
+
+252
+00:13:48,320 --> 00:13:57,040
+v and you can see star here
+
+253
+00:13:51,760 --> 00:13:57,040
+means the steps
+
+254
+00:13:58,079 --> 00:14:05,920
+the number of steps is 0 1 or more
+
+255
+00:14:02,399 --> 00:14:09,600
+okay so
+
+256
+00:14:05,920 --> 00:14:13,040
+u yields u1
+
+257
+00:14:09,600 --> 00:14:18,000
+u1 yields u2
+
+258
+00:14:13,040 --> 00:14:22,240
+and go on finally v we say that
+
+259
+00:14:18,000 --> 00:14:25,680
+u derives v
+
+260
+00:14:22,240 --> 00:14:28,720
+okay and apparently you can say that
+
+261
+00:14:25,680 --> 00:14:31,760
+u derives u
+
+262
+00:14:28,720 --> 00:14:34,160
+well see zero steps
+
+263
+00:14:31,760 --> 00:14:35,920
+give you the same thing it's itself
+
+264
+00:14:34,160 --> 00:14:39,279
+something like that
+
+265
+00:14:35,920 --> 00:14:40,480
+so based on this let's see the example
+
+266
+00:14:39,279 --> 00:14:45,839
+here
+
+267
+00:14:40,480 --> 00:14:45,839
+so we can say that
+
+268
+00:14:48,399 --> 00:14:55,519
+that's the arbitrarily ss
+
+269
+00:14:52,399 --> 00:14:56,160
+right because you have a rule as may
+
+270
+00:14:55,519 --> 00:15:01,279
+become
+
+271
+00:14:56,160 --> 00:15:04,959
+ss then let's say
+
+272
+00:15:01,279 --> 00:15:08,480
+s and second as that
+
+273
+00:15:04,959 --> 00:15:12,240
+that's used this row
+
+274
+00:15:08,480 --> 00:15:16,000
+a s b right
+
+275
+00:15:12,240 --> 00:15:19,120
+and of course you can say that okay the
+
+276
+00:15:16,000 --> 00:15:22,480
+let's use the second s do the
+
+277
+00:15:19,120 --> 00:15:25,519
+second rule again so s u
+
+278
+00:15:22,480 --> 00:15:28,720
+e l s a s b
+
+279
+00:15:25,519 --> 00:15:32,240
+yields s a
+
+280
+00:15:28,720 --> 00:15:35,199
+s s right
+
+281
+00:15:32,240 --> 00:15:37,120
+so you can do that arbitrarily you can
+
+282
+00:15:35,199 --> 00:15:40,560
+generate some string
+
+283
+00:15:37,120 --> 00:15:44,880
+so let's say that that make the first
+
+284
+00:15:40,560 --> 00:15:50,079
+s a s b so
+
+285
+00:15:44,880 --> 00:15:50,079
+a s s b right then
+
+286
+00:15:50,639 --> 00:15:58,399
+okay then
+
+287
+00:15:54,639 --> 00:16:01,519
+let's make the first a the first
+
+288
+00:15:58,399 --> 00:16:05,600
+s epsilon so you get
+
+289
+00:16:01,519 --> 00:16:08,959
+a b a s s b
+
+290
+00:16:05,600 --> 00:16:12,000
+okay so that's we can
+
+291
+00:16:08,959 --> 00:16:12,480
+actually do anything like this so let's
+
+292
+00:16:12,000 --> 00:16:16,079
+say
+
+293
+00:16:12,480 --> 00:16:19,440
+a b a we do uh
+
+294
+00:16:16,079 --> 00:16:23,360
+a s b again so
+
+295
+00:16:19,440 --> 00:16:27,360
+s b okay so this has become asb
+
+296
+00:16:23,360 --> 00:16:30,880
+then let's make uh all the s
+
+297
+00:16:27,360 --> 00:16:34,079
+epsilon so this string yields
+
+298
+00:16:30,880 --> 00:16:37,600
+a b a a s
+
+299
+00:16:34,079 --> 00:16:41,519
+b b okay so let's do the as
+
+300
+00:16:37,600 --> 00:16:44,639
+this as first then the second s
+
+301
+00:16:41,519 --> 00:16:48,560
+a b a a b
+
+302
+00:16:44,639 --> 00:16:52,000
+b okay then finally we get some
+
+303
+00:16:48,560 --> 00:16:55,279
+uh string of terminals only with
+
+304
+00:16:52,000 --> 00:16:57,519
+terminals okay
+
+305
+00:16:55,279 --> 00:16:58,560
+and in the process you can easily
+
+306
+00:16:57,519 --> 00:17:01,440
+observe that
+
+307
+00:16:58,560 --> 00:17:06,480
+you have many many many possibilities
+
+308
+00:17:01,440 --> 00:17:06,480
+sometimes you can do this as well with
+
+309
+00:17:07,039 --> 00:17:12,640
+applying some rules one of the three
+
+310
+00:17:10,559 --> 00:17:15,280
+arbitrarily so there are many
+
+311
+00:17:12,640 --> 00:17:18,720
+possibilities
+
+312
+00:17:15,280 --> 00:17:23,039
+okay then
+
+313
+00:17:18,720 --> 00:17:27,600
+we define that the language
+
+314
+00:17:23,039 --> 00:17:30,720
+the language of a grammar
+
+315
+00:17:27,600 --> 00:17:33,440
+so you define a conditional grammar and
+
+316
+00:17:30,720 --> 00:17:34,960
+like i said we we are we will be using
+
+317
+00:17:33,440 --> 00:17:37,760
+context-free grammar to
+
+318
+00:17:34,960 --> 00:17:38,640
+specify to generate language and what
+
+319
+00:17:37,760 --> 00:17:42,480
+language
+
+320
+00:17:38,640 --> 00:17:44,840
+does this context-free grammar generate
+
+321
+00:17:42,480 --> 00:17:47,120
+the language of the contextual grammar
+
+322
+00:17:44,840 --> 00:17:52,320
+is
+
+323
+00:17:47,120 --> 00:17:56,320
+from the start variable
+
+324
+00:17:52,320 --> 00:18:01,600
+via sum derivation
+
+325
+00:17:56,320 --> 00:18:06,080
+process all the string
+
+326
+00:18:01,600 --> 00:18:09,520
+derived from
+
+327
+00:18:06,080 --> 00:18:10,240
+the start variable okay all the terminal
+
+328
+00:18:09,520 --> 00:18:13,520
+strings
+
+329
+00:18:10,240 --> 00:18:17,200
+sorry terminal strings derived
+
+330
+00:18:13,520 --> 00:18:20,400
+from the start variable is
+
+331
+00:18:17,200 --> 00:18:23,520
+the member of the language
+
+332
+00:18:20,400 --> 00:18:24,480
+of the grammar and the language of the
+
+333
+00:18:23,520 --> 00:18:28,240
+grammar
+
+334
+00:18:24,480 --> 00:18:32,240
+is all possible
+
+335
+00:18:28,240 --> 00:18:36,240
+terminal strings derived
+
+336
+00:18:32,240 --> 00:18:40,720
+from derived according to the rules
+
+337
+00:18:36,240 --> 00:18:44,320
+described in the grammar from
+
+338
+00:18:40,720 --> 00:18:48,960
+and from the start variable
+
+339
+00:18:44,320 --> 00:18:52,480
+okay so that's the definition
+
+340
+00:18:48,960 --> 00:18:57,120
+of the language generated
+
+341
+00:18:52,480 --> 00:19:00,240
+by a context programmer
+
+342
+00:18:57,120 --> 00:19:05,440
+okay so let's go
+
+343
+00:19:00,240 --> 00:19:05,440
+to the example again so you can see that
+
+344
+00:19:05,919 --> 00:19:13,760
+what are the strings in describe
+
+345
+00:19:11,600 --> 00:19:15,120
+what are the strings in the language
+
+346
+00:19:13,760 --> 00:19:18,160
+described by
+
+347
+00:19:15,120 --> 00:19:19,600
+the grammar g3 so that we can see some
+
+348
+00:19:18,160 --> 00:19:22,799
+examples here
+
+349
+00:19:19,600 --> 00:19:26,640
+so you can see s may become
+
+350
+00:19:22,799 --> 00:19:30,320
+epsilon so we can derive from
+
+351
+00:19:26,640 --> 00:19:34,160
+s to epsilon so you know that
+
+352
+00:19:30,320 --> 00:19:38,320
+epsilon is one string
+
+353
+00:19:34,160 --> 00:19:41,760
+in g3 right
+
+354
+00:19:38,320 --> 00:19:45,039
+and let's do that like s can
+
+355
+00:19:41,760 --> 00:19:48,720
+do a s b
+
+356
+00:19:45,039 --> 00:19:52,000
+and then s become epsilon you get a b
+
+357
+00:19:48,720 --> 00:19:55,679
+right so a b and you can also
+
+358
+00:19:52,000 --> 00:19:58,799
+see that s can become a asb
+
+359
+00:19:55,679 --> 00:20:02,559
+and do that again you get a
+
+360
+00:19:58,799 --> 00:20:06,159
+a s b b then
+
+361
+00:20:02,559 --> 00:20:09,840
+has become uh epsilon
+
+362
+00:20:06,159 --> 00:20:13,120
+then the string yields a a
+
+363
+00:20:09,840 --> 00:20:16,240
+b b so a a
+
+364
+00:20:13,120 --> 00:20:19,360
+b b and apparently you know that
+
+365
+00:20:16,240 --> 00:20:24,320
+you can repeat that uh steps
+
+366
+00:20:19,360 --> 00:20:27,360
+in definite indefinite times so
+
+367
+00:20:24,320 --> 00:20:30,799
+sorry again a a a b
+
+368
+00:20:27,360 --> 00:20:36,720
+b b right
+
+369
+00:20:30,799 --> 00:20:40,799
+and etcetera here you already know
+
+370
+00:20:36,720 --> 00:20:44,159
+well if you can connect with the
+
+371
+00:20:40,799 --> 00:20:46,960
+thing we discuss in regular language see
+
+372
+00:20:44,159 --> 00:20:50,000
+if we don't have rule we don't have this
+
+373
+00:20:46,960 --> 00:20:53,200
+rule if we don't have this rule
+
+374
+00:20:50,000 --> 00:20:56,240
+the two rule the two rules here
+
+375
+00:20:53,200 --> 00:20:59,360
+already can generate
+
+376
+00:20:56,240 --> 00:21:03,840
+what a language
+
+377
+00:20:59,360 --> 00:21:03,840
+already can generate a language
+
+378
+00:21:08,480 --> 00:21:11,679
+this one right
+
+379
+00:21:13,280 --> 00:21:19,840
+because you replace a and b
+
+380
+00:21:16,400 --> 00:21:22,960
+with 1 and 0 you get that language
+
+381
+00:21:19,840 --> 00:21:26,320
+and we already proved that that language
+
+382
+00:21:22,960 --> 00:21:28,720
+is not regular language
+
+383
+00:21:26,320 --> 00:21:29,520
+right interesting but it's informal
+
+384
+00:21:28,720 --> 00:21:33,200
+let's uh
+
+385
+00:21:29,520 --> 00:21:36,799
+do that later okay
+
+386
+00:21:33,200 --> 00:21:39,919
+the language of grammar g3
+
+387
+00:21:36,799 --> 00:21:43,039
+has more right not only that
+
+388
+00:21:39,919 --> 00:21:47,280
+but has more so let's say
+
+389
+00:21:43,039 --> 00:21:50,640
+we do second rule first
+
+390
+00:21:47,280 --> 00:21:55,200
+and you can see that we
+
+391
+00:21:50,640 --> 00:21:59,600
+do the first s asp
+
+392
+00:21:55,200 --> 00:22:04,080
+and then first as epsilon
+
+393
+00:21:59,600 --> 00:22:09,120
+right and then do s b again
+
+394
+00:22:04,080 --> 00:22:09,120
+and then epsilon again you get a b a b
+
+395
+00:22:10,840 --> 00:22:15,200
+right
+
+396
+00:22:12,080 --> 00:22:18,559
+so when you has
+
+397
+00:22:15,200 --> 00:22:22,000
+this rule you can duplicate
+
+398
+00:22:18,559 --> 00:22:25,120
+two sets of the same thing
+
+399
+00:22:22,000 --> 00:22:26,820
+the same strings so you can
+
+400
+00:22:25,120 --> 00:22:28,480
+get a b
+
+401
+00:22:26,820 --> 00:22:32,159
+[Music]
+
+402
+00:22:28,480 --> 00:22:35,919
+a b right and you can also get
+
+403
+00:22:32,159 --> 00:22:39,679
+a b a b a b
+
+404
+00:22:35,919 --> 00:22:41,840
+why because you can do ss again so
+
+405
+00:22:39,679 --> 00:22:41,840
+like
+
+406
+00:22:44,559 --> 00:22:50,960
+ss right and the first s do
+
+407
+00:22:47,840 --> 00:22:54,960
+ss again you get 3s
+
+408
+00:22:50,960 --> 00:22:58,480
+right so you can easily get this one
+
+409
+00:22:54,960 --> 00:23:02,480
+and also every s
+
+410
+00:22:58,480 --> 00:23:06,240
+here can repeatedly doing
+
+411
+00:23:02,480 --> 00:23:09,360
+this part so you can get it
+
+412
+00:23:06,240 --> 00:23:12,799
+very very complicated like a
+
+413
+00:23:09,360 --> 00:23:15,200
+a b b a b or
+
+414
+00:23:12,799 --> 00:23:15,200
+a b
+
+415
+00:23:17,520 --> 00:23:24,720
+a a b b or a b
+
+416
+00:23:20,640 --> 00:23:28,000
+b a abb abb stuff like that
+
+417
+00:23:24,720 --> 00:23:32,000
+right and apparently you can
+
+418
+00:23:28,000 --> 00:23:35,120
+observe it and know that
+
+419
+00:23:32,000 --> 00:23:38,799
+since you get empty string
+
+420
+00:23:35,120 --> 00:23:42,720
+so s can disappear and you get
+
+421
+00:23:38,799 --> 00:23:46,000
+whenever you generate terminals
+
+422
+00:23:42,720 --> 00:23:49,200
+you can only generate terminals
+
+423
+00:23:46,000 --> 00:23:52,080
+via the first rule here that is
+
+424
+00:23:49,200 --> 00:23:52,080
+when a
+
+425
+00:23:52,480 --> 00:24:00,080
+appears there is a paired b
+
+426
+00:23:56,559 --> 00:24:03,760
+appears right so if you consider
+
+427
+00:24:00,080 --> 00:24:08,799
+a as the left parenthesis
+
+428
+00:24:03,760 --> 00:24:11,919
+and the b is the right parenthesis
+
+429
+00:24:08,799 --> 00:24:13,120
+you will the language of grammar 3 can
+
+430
+00:24:11,919 --> 00:24:16,559
+generate
+
+431
+00:24:13,120 --> 00:24:20,720
+all strings all strings
+
+432
+00:24:16,559 --> 00:24:25,679
+with proper nested parentheses
+
+433
+00:24:20,720 --> 00:24:28,960
+of proper nested parentheses
+
+434
+00:24:25,679 --> 00:24:33,200
+right so everything like this one
+
+435
+00:24:28,960 --> 00:24:39,120
+or this one or
+
+436
+00:24:33,200 --> 00:24:39,120
+this one or this one can be generated
+
+437
+00:24:39,279 --> 00:24:44,840
+okay so that's uh
+
+438
+00:24:42,559 --> 00:24:47,840
+that's an example of context free
+
+439
+00:24:44,840 --> 00:24:47,840
+grammar
+
+440
+00:24:50,799 --> 00:24:57,440
+and why are we talking about
+
+441
+00:24:54,159 --> 00:24:57,440
+contextual grammar or
+
+442
+00:24:58,080 --> 00:25:04,720
+what's the usage of contextual grammar
+
+443
+00:25:01,600 --> 00:25:06,240
+well grammar is not directly from
+
+444
+00:25:04,720 --> 00:25:09,520
+computational
+
+445
+00:25:06,240 --> 00:25:11,120
+theory or complexity it's actually from
+
+446
+00:25:09,520 --> 00:25:15,039
+linguistics
+
+447
+00:25:11,120 --> 00:25:18,159
+okay because we want to
+
+448
+00:25:15,039 --> 00:25:21,200
+or the scholars you know
+
+449
+00:25:18,159 --> 00:25:24,240
+those uh scholars want to understand
+
+450
+00:25:21,200 --> 00:25:25,279
+the structure of a language mainly the
+
+451
+00:25:24,240 --> 00:25:27,279
+natural languages
+
+452
+00:25:25,279 --> 00:25:29,120
+not computer programming language at
+
+453
+00:25:27,279 --> 00:25:30,480
+first they want to understand like
+
+454
+00:25:29,120 --> 00:25:33,520
+chinese english
+
+455
+00:25:30,480 --> 00:25:36,880
+or french or other languages
+
+456
+00:25:33,520 --> 00:25:39,679
+if there is any let's say structures
+
+457
+00:25:36,880 --> 00:25:39,679
+or any
+
+458
+00:25:40,480 --> 00:25:47,360
+systematic way to understand
+
+459
+00:25:43,520 --> 00:25:50,640
+a language they propose
+
+460
+00:25:47,360 --> 00:25:53,679
+a concept the concept of grammars
+
+461
+00:25:50,640 --> 00:25:57,120
+and from grammars if you
+
+462
+00:25:53,679 --> 00:26:00,159
+the grammar of natural languages are
+
+463
+00:25:57,120 --> 00:26:02,400
+well analyzed from existing you know
+
+464
+00:26:00,159 --> 00:26:05,600
+words sentences
+
+465
+00:26:02,400 --> 00:26:06,559
+after that we define all sorts of
+
+466
+00:26:05,600 --> 00:26:09,440
+grammars like
+
+467
+00:26:06,559 --> 00:26:10,320
+the contextual grammar here we are
+
+468
+00:26:09,440 --> 00:26:13,200
+introducing
+
+469
+00:26:10,320 --> 00:26:14,559
+uh the we are introducing context free
+
+470
+00:26:13,200 --> 00:26:17,840
+grammar here
+
+471
+00:26:14,559 --> 00:26:21,279
+and we use context grammar to
+
+472
+00:26:17,840 --> 00:26:23,919
+understand a sentence which is a string
+
+473
+00:26:21,279 --> 00:26:25,360
+in this case what does that mean for
+
+474
+00:26:23,919 --> 00:26:28,159
+example
+
+475
+00:26:25,360 --> 00:26:29,120
+let's go back to discuss something like
+
+476
+00:26:28,159 --> 00:26:33,360
+programming language
+
+477
+00:26:29,120 --> 00:26:36,480
+okay so for example if we have a grammar
+
+478
+00:26:33,360 --> 00:26:39,360
+g5 here then
+
+479
+00:26:36,480 --> 00:26:41,200
+of course you need to do the uh proper
+
+480
+00:26:39,360 --> 00:26:44,640
+formal definition way
+
+481
+00:26:41,200 --> 00:26:48,640
+for g5 that would be uh
+
+482
+00:26:44,640 --> 00:26:48,640
+you have a variable
+
+483
+00:26:48,720 --> 00:26:55,440
+first right you have a variable e x
+
+484
+00:26:52,159 --> 00:26:58,720
+p r you can do that as
+
+485
+00:26:55,440 --> 00:27:01,919
+variable right one variable not not z
+
+486
+00:26:58,720 --> 00:27:05,039
+x pr and two angle six
+
+487
+00:27:01,919 --> 00:27:08,320
+symbol no expr is one variable
+
+488
+00:27:05,039 --> 00:27:08,320
+all right then
+
+489
+00:27:08,720 --> 00:27:11,760
+let's say the terminals in this case
+
+490
+00:27:11,279 --> 00:27:15,200
+will be
+
+491
+00:27:11,760 --> 00:27:21,039
+plus times
+
+492
+00:27:15,200 --> 00:27:24,159
+parenthesis and a so
+
+493
+00:27:21,039 --> 00:27:27,760
+let's say plus times
+
+494
+00:27:24,159 --> 00:27:30,799
+parenthesis a
+
+495
+00:27:27,760 --> 00:27:34,159
+that's the symbol okay then we have
+
+496
+00:27:30,799 --> 00:27:37,440
+uh one two three four
+
+497
+00:27:34,159 --> 00:27:39,440
+four rules like here
+
+498
+00:27:37,440 --> 00:27:40,799
+so i don't want to write that you know
+
+499
+00:27:39,440 --> 00:27:43,840
+therefore there are four
+
+500
+00:27:40,799 --> 00:27:47,039
+rules so let's say it's our rules
+
+501
+00:27:43,840 --> 00:27:48,159
+or productions then since we have only
+
+502
+00:27:47,039 --> 00:27:50,320
+one
+
+503
+00:27:48,159 --> 00:27:52,640
+variable that variable is the start
+
+504
+00:27:50,320 --> 00:27:56,000
+variable here
+
+505
+00:27:52,640 --> 00:27:58,720
+let's get a very limited small
+
+506
+00:27:56,000 --> 00:27:59,679
+uh example of context grammar for
+
+507
+00:27:58,720 --> 00:28:02,880
+programming language
+
+508
+00:27:59,679 --> 00:28:06,159
+here okay so when we have this
+
+509
+00:28:02,880 --> 00:28:09,679
+this grammar g5 you can think of
+
+510
+00:28:06,159 --> 00:28:12,960
+we can use this grammar to write valid
+
+511
+00:28:09,679 --> 00:28:14,880
+programs what is valid program what is
+
+512
+00:28:12,960 --> 00:28:18,720
+uh
+
+513
+00:28:14,880 --> 00:28:20,720
+synthetically correct programs that is
+
+514
+00:28:18,720 --> 00:28:21,760
+when you write a program you go through
+
+515
+00:28:20,720 --> 00:28:25,120
+compiler
+
+516
+00:28:21,760 --> 00:28:27,600
+you don't have synthetical errors
+
+517
+00:28:25,120 --> 00:28:28,720
+okay you may have semantics warnings or
+
+518
+00:28:27,600 --> 00:28:31,760
+something but
+
+519
+00:28:28,720 --> 00:28:34,399
+you don't get arrows because
+
+520
+00:28:31,760 --> 00:28:35,760
+you are you will be synthetically
+
+521
+00:28:34,399 --> 00:28:38,960
+correct
+
+522
+00:28:35,760 --> 00:28:42,480
+and by synthetically correct
+
+523
+00:28:38,960 --> 00:28:45,760
+the compiler can understand basically
+
+524
+00:28:42,480 --> 00:28:50,240
+understand what your program
+
+525
+00:28:45,760 --> 00:28:52,559
+wants to do okay so for this example
+
+526
+00:28:50,240 --> 00:28:55,039
+according to this grammar according to
+
+527
+00:28:52,559 --> 00:28:58,720
+this grammar
+
+528
+00:28:55,039 --> 00:29:01,840
+you write a plus a times a
+
+529
+00:28:58,720 --> 00:29:04,880
+something like this okay so think of
+
+530
+00:29:01,840 --> 00:29:09,039
+a plus a times a is your
+
+531
+00:29:04,880 --> 00:29:12,080
+source code and how compiler
+
+532
+00:29:09,039 --> 00:29:15,360
+understands this line
+
+533
+00:29:12,080 --> 00:29:18,799
+it use the grammar
+
+534
+00:29:15,360 --> 00:29:23,279
+it tries to start from the
+
+535
+00:29:18,799 --> 00:29:27,360
+stars variable and use the derivation
+
+536
+00:29:23,279 --> 00:29:30,880
+and to construct the
+
+537
+00:29:27,360 --> 00:29:34,399
+derivation to
+
+538
+00:29:30,880 --> 00:29:36,240
+the program you wrote okay so for this
+
+539
+00:29:34,399 --> 00:29:39,440
+example
+
+540
+00:29:36,240 --> 00:29:43,919
+the compiler may understand a plus a
+
+541
+00:29:39,440 --> 00:29:47,120
+times a as c
+
+542
+00:29:43,919 --> 00:29:50,480
+start from the start variable here
+
+543
+00:29:47,120 --> 00:29:54,399
+and it applies rule2
+
+544
+00:29:50,480 --> 00:29:58,880
+first so it gets
+
+545
+00:29:54,399 --> 00:30:04,399
+expression times expression
+
+546
+00:29:58,880 --> 00:30:04,399
+right then compiler applies probably
+
+547
+00:30:05,200 --> 00:30:10,399
+this one so it becomes a that would be
+
+548
+00:30:08,559 --> 00:30:14,880
+the fourth rule
+
+549
+00:30:10,399 --> 00:30:14,880
+so you get a then
+
+550
+00:30:15,279 --> 00:30:22,320
+so let's say uh first first step
+
+551
+00:30:19,039 --> 00:30:25,840
+second step third step
+
+552
+00:30:22,320 --> 00:30:26,480
+and probably applies not probably must
+
+553
+00:30:25,840 --> 00:30:29,600
+apply
+
+554
+00:30:26,480 --> 00:30:32,799
+the first rule right then
+
+555
+00:30:29,600 --> 00:30:37,120
+you have expression plus expression
+
+556
+00:30:32,799 --> 00:30:40,399
+then let's say fourth step
+
+557
+00:30:37,120 --> 00:30:40,960
+fourth rule derive this one and oh five
+
+558
+00:30:40,399 --> 00:30:43,840
+step
+
+559
+00:30:40,960 --> 00:30:44,640
+the right this one four rule four rule
+
+560
+00:30:43,840 --> 00:30:50,559
+number four
+
+561
+00:30:44,640 --> 00:30:53,679
+okay that's one way uh to
+
+562
+00:30:50,559 --> 00:30:55,600
+understand the source code a plus a
+
+563
+00:30:53,679 --> 00:31:00,399
+times a
+
+564
+00:30:55,600 --> 00:31:04,559
+okay then okay firstly we call the
+
+565
+00:31:00,399 --> 00:31:08,559
+structure generate with the derivation
+
+566
+00:31:04,559 --> 00:31:11,360
+past three okay past three
+
+567
+00:31:08,559 --> 00:31:12,000
+so the past result is like what we have
+
+568
+00:31:11,360 --> 00:31:15,039
+now
+
+569
+00:31:12,000 --> 00:31:18,640
+on the left but
+
+570
+00:31:15,039 --> 00:31:22,080
+in a way you know that there is a
+
+571
+00:31:18,640 --> 00:31:24,960
+and there is another way to
+
+572
+00:31:22,080 --> 00:31:26,480
+derive and obtain exactly the same
+
+573
+00:31:24,960 --> 00:31:28,799
+exactly the same
+
+574
+00:31:26,480 --> 00:31:30,000
+uh terminal strings which is your source
+
+575
+00:31:28,799 --> 00:31:34,399
+code right
+
+576
+00:31:30,000 --> 00:31:37,519
+so you may first one
+
+577
+00:31:34,399 --> 00:31:40,960
+first step you have uh
+
+578
+00:31:37,519 --> 00:31:43,840
+first rule so you get one
+
+579
+00:31:40,960 --> 00:31:44,960
+expression plus expression and then the
+
+580
+00:31:43,840 --> 00:31:48,000
+second step
+
+581
+00:31:44,960 --> 00:31:51,600
+for example we do this one first
+
+582
+00:31:48,000 --> 00:31:55,679
+and then you get you apply fourth rule
+
+583
+00:31:51,600 --> 00:31:59,679
+you get a and then
+
+584
+00:31:55,679 --> 00:32:02,159
+third step you do the second
+
+585
+00:31:59,679 --> 00:32:03,519
+rule you'll get expression times the
+
+586
+00:32:02,159 --> 00:32:07,120
+expression
+
+587
+00:32:03,519 --> 00:32:11,760
+let's say so uh four step
+
+588
+00:32:07,120 --> 00:32:11,760
+you get a and the five
+
+589
+00:32:12,080 --> 00:32:16,799
+step you get a
+
+590
+00:32:17,360 --> 00:32:26,080
+okay but
+
+591
+00:32:20,880 --> 00:32:29,360
+uh then go back to what i said
+
+592
+00:32:26,080 --> 00:32:33,519
+compiler use or we use
+
+593
+00:32:29,360 --> 00:32:36,960
+grammar to derive the target string
+
+594
+00:32:33,519 --> 00:32:40,399
+and in order to understand what
+
+595
+00:32:36,960 --> 00:32:43,519
+target stem means the meaning
+
+596
+00:32:40,399 --> 00:32:47,039
+is represented by
+
+597
+00:32:43,519 --> 00:32:48,080
+past three okay so in this case you can
+
+598
+00:32:47,039 --> 00:32:51,200
+see we have
+
+599
+00:32:48,080 --> 00:32:54,320
+two totally different parts three and
+
+600
+00:32:51,200 --> 00:32:54,320
+what's wrong with this
+
+601
+00:32:55,360 --> 00:33:00,080
+the problem is since past three is the
+
+602
+00:32:58,720 --> 00:33:04,480
+meaning of the
+
+603
+00:33:00,080 --> 00:33:08,320
+sentence the string so in the left
+
+604
+00:33:04,480 --> 00:33:12,080
+in the left part your program will do
+
+605
+00:33:08,320 --> 00:33:15,919
+a plus a first
+
+606
+00:33:12,080 --> 00:33:19,279
+then do times a
+
+607
+00:33:15,919 --> 00:33:22,799
+next and on the right
+
+608
+00:33:19,279 --> 00:33:26,240
+your program will do a times a first
+
+609
+00:33:22,799 --> 00:33:30,000
+then do plus a
+
+610
+00:33:26,240 --> 00:33:33,679
+okay of course we artificially
+
+611
+00:33:30,000 --> 00:33:37,120
+impose the order of operators
+
+612
+00:33:33,679 --> 00:33:39,760
+so usual uh not usually in mathematics
+
+613
+00:33:37,120 --> 00:33:43,440
+we do
+
+614
+00:33:39,760 --> 00:33:47,120
+multi uh multiplication and the division
+
+615
+00:33:43,440 --> 00:33:50,000
+division okay anyway before
+
+616
+00:33:47,120 --> 00:33:51,200
+plus and minus before addition and
+
+617
+00:33:50,000 --> 00:33:54,240
+subtraction
+
+618
+00:33:51,200 --> 00:33:55,760
+right so we have well the order is
+
+619
+00:33:54,240 --> 00:33:58,960
+artificial but we have that
+
+620
+00:33:55,760 --> 00:33:59,360
+in mathematics so basically when you
+
+621
+00:33:58,960 --> 00:34:02,480
+write
+
+622
+00:33:59,360 --> 00:34:05,519
+a plus a times a you
+
+623
+00:34:02,480 --> 00:34:09,119
+really want should be
+
+624
+00:34:05,519 --> 00:34:13,280
+time a times a then pass a right
+
+625
+00:34:09,119 --> 00:34:16,560
+uh yeah so the right
+
+626
+00:34:13,280 --> 00:34:19,839
+path tree is what you want
+
+627
+00:34:16,560 --> 00:34:20,560
+for the program you wrote basically
+
+628
+00:34:19,839 --> 00:34:25,599
+usually
+
+629
+00:34:20,560 --> 00:34:29,599
+right and
+
+630
+00:34:25,599 --> 00:34:32,839
+you can find that so what if
+
+631
+00:34:29,599 --> 00:34:34,320
+let's say compiler misunderstand your
+
+632
+00:34:32,839 --> 00:34:36,560
+program
+
+633
+00:34:34,320 --> 00:34:38,720
+then that will be a disaster right when
+
+634
+00:34:36,560 --> 00:34:41,520
+you do the programming
+
+635
+00:34:38,720 --> 00:34:42,240
+class the homework assignment in a
+
+636
+00:34:41,520 --> 00:34:45,359
+programming
+
+637
+00:34:42,240 --> 00:34:46,000
+class in a programming course then you
+
+638
+00:34:45,359 --> 00:34:49,200
+always
+
+639
+00:34:46,000 --> 00:34:52,720
+get wrong results why because compiler
+
+640
+00:34:49,200 --> 00:34:56,960
+misunderstands you that's bad right
+
+641
+00:34:52,720 --> 00:35:00,400
+and what's the problem of this case
+
+642
+00:34:56,960 --> 00:35:02,400
+the exact case here is that
+
+643
+00:35:00,400 --> 00:35:04,800
+we have to pause tree for the same
+
+644
+00:35:02,400 --> 00:35:07,440
+terminal string
+
+645
+00:35:04,800 --> 00:35:08,640
+then you don't know which parser will be
+
+646
+00:35:07,440 --> 00:35:10,880
+chosen
+
+647
+00:35:08,640 --> 00:35:12,880
+as the understanding of your source code
+
+648
+00:35:10,880 --> 00:35:16,079
+by the compiler
+
+649
+00:35:12,880 --> 00:35:20,000
+okay so that
+
+650
+00:35:16,079 --> 00:35:20,000
+is a problem of
+
+651
+00:35:21,680 --> 00:35:29,760
+ambiguity here okay
+
+652
+00:35:25,440 --> 00:35:32,960
+and ambiguity not only
+
+653
+00:35:29,760 --> 00:35:35,839
+exists in programming languages or
+
+654
+00:35:32,960 --> 00:35:36,880
+context-free languages actually we have
+
+655
+00:35:35,839 --> 00:35:40,400
+a lot
+
+656
+00:35:36,880 --> 00:35:44,240
+many of them in natural languages okay
+
+657
+00:35:40,400 --> 00:35:47,359
+so here is some example
+
+658
+00:35:44,240 --> 00:35:50,880
+here so i saw the man
+
+659
+00:35:47,359 --> 00:35:50,880
+with the binoculars
+
+660
+00:35:51,200 --> 00:35:58,160
+and how it is ambiguous and ambiguous
+
+661
+00:35:54,800 --> 00:36:01,920
+because you saw them
+
+662
+00:35:58,160 --> 00:36:05,359
+you you saw the man you saw
+
+663
+00:36:01,920 --> 00:36:08,400
+the man with the binoculars or
+
+664
+00:36:05,359 --> 00:36:08,400
+you saw the man
+
+665
+00:36:08,800 --> 00:36:15,280
+with binoculars okay
+
+666
+00:36:12,079 --> 00:36:18,079
+so the ambiguity we discussed here
+
+667
+00:36:15,280 --> 00:36:18,960
+is caused by the structure of the
+
+668
+00:36:18,079 --> 00:36:23,040
+sentence
+
+669
+00:36:18,960 --> 00:36:23,040
+not the meaning of words
+
+670
+00:36:23,440 --> 00:36:27,920
+many ambiguity many interesting
+
+671
+00:36:25,440 --> 00:36:31,280
+ambiguity many ambiguity
+
+672
+00:36:27,920 --> 00:36:33,280
+you know funny in languages is not
+
+673
+00:36:31,280 --> 00:36:34,720
+the structural it's not unstructured
+
+674
+00:36:33,280 --> 00:36:37,119
+it's our meaning
+
+675
+00:36:34,720 --> 00:36:38,160
+so you may have a different meaning for
+
+676
+00:36:37,119 --> 00:36:42,160
+the same word
+
+677
+00:36:38,160 --> 00:36:44,560
+and it is interesting to mix them
+
+678
+00:36:42,160 --> 00:36:46,000
+but not structured and here we talk
+
+679
+00:36:44,560 --> 00:36:49,520
+about structures
+
+680
+00:36:46,000 --> 00:36:52,640
+okay structures so it is a an example
+
+681
+00:36:49,520 --> 00:36:54,720
+another example like look at that dog
+
+682
+00:36:52,640 --> 00:36:59,040
+with one eye
+
+683
+00:36:54,720 --> 00:37:02,400
+so it's dog with one eye
+
+684
+00:36:59,040 --> 00:37:05,760
+or you look at that dog with
+
+685
+00:37:02,400 --> 00:37:08,240
+one of your eye okay
+
+686
+00:37:05,760 --> 00:37:09,440
+that's the structural problem that's the
+
+687
+00:37:08,240 --> 00:37:12,480
+word all meaning
+
+688
+00:37:09,440 --> 00:37:17,760
+the word of meaning is the same
+
+689
+00:37:12,480 --> 00:37:17,760
+okay so the final
+
+690
+00:37:18,400 --> 00:37:22,320
+example in english is stolen painting
+
+691
+00:37:21,440 --> 00:37:25,440
+funk by tree
+
+692
+00:37:22,320 --> 00:37:28,480
+it's very interesting because uh i
+
+693
+00:37:25,440 --> 00:37:29,839
+i didn't find i tried i tried but i
+
+694
+00:37:28,480 --> 00:37:34,240
+didn't find the source
+
+695
+00:37:29,839 --> 00:37:37,599
+of the newspaper but rumor says that
+
+696
+00:37:34,240 --> 00:37:42,160
+this is this was a
+
+697
+00:37:37,599 --> 00:37:43,040
+an actual newspaper headline probably 97
+
+698
+00:37:42,160 --> 00:37:47,119
+or 92
+
+699
+00:37:43,040 --> 00:37:51,839
+i don't know or even 87.
+
+700
+00:37:47,119 --> 00:37:51,839
+so stolen painting
+
+701
+00:37:52,480 --> 00:38:01,520
+found by tree so there's a tree
+
+702
+00:37:57,440 --> 00:38:04,560
+with intelligence finding a painting or
+
+703
+00:38:01,520 --> 00:38:07,760
+stolen painting font
+
+704
+00:38:04,560 --> 00:38:11,359
+by the tree okay
+
+705
+00:38:07,760 --> 00:38:15,119
+beside the tree so that will be a
+
+706
+00:38:11,359 --> 00:38:16,320
+structural issue here so in natural
+
+707
+00:38:15,119 --> 00:38:19,440
+language we have
+
+708
+00:38:16,320 --> 00:38:22,480
+also the structural ambiguity here
+
+709
+00:38:19,440 --> 00:38:25,839
+and also since we have a most of
+
+710
+00:38:22,480 --> 00:38:29,359
+most of students in this class is a
+
+711
+00:38:25,839 --> 00:38:34,480
+chinese mandarin speaking including
+
+712
+00:38:29,359 --> 00:38:37,680
+myself so this is an example
+
+713
+00:38:34,480 --> 00:38:41,440
+so in this sense in this sentence
+
+714
+00:38:37,680 --> 00:38:44,560
+i guess some of you may think
+
+715
+00:38:41,440 --> 00:38:47,359
+you should wear as much as
+
+716
+00:38:44,560 --> 00:38:49,200
+possible with many as many curls as
+
+717
+00:38:47,359 --> 00:38:52,480
+possible
+
+718
+00:38:49,200 --> 00:38:53,200
+or the other part of the student may
+
+719
+00:38:52,480 --> 00:38:56,320
+think
+
+720
+00:38:53,200 --> 00:38:59,760
+you should wear as
+
+721
+00:38:56,320 --> 00:39:02,160
+few clothes as possible right
+
+722
+00:38:59,760 --> 00:39:04,800
+it is very interesting depending how
+
+723
+00:39:02,160 --> 00:39:04,800
+your brain
+
+724
+00:39:04,960 --> 00:39:13,200
+understand the structure of the sentence
+
+725
+00:39:09,359 --> 00:39:17,599
+if you think this one
+
+726
+00:39:13,200 --> 00:39:20,800
+is an adv to
+
+727
+00:39:17,599 --> 00:39:21,359
+modify that one you will think you
+
+728
+00:39:20,800 --> 00:39:24,400
+should
+
+729
+00:39:21,359 --> 00:39:27,839
+wear as less as
+
+730
+00:39:24,400 --> 00:39:30,560
+possible if you think
+
+731
+00:39:27,839 --> 00:39:30,560
+this is a
+
+732
+00:39:31,680 --> 00:39:40,320
+unit to describe many
+
+733
+00:39:36,800 --> 00:39:43,119
+you will think the sentence tells you
+
+734
+00:39:40,320 --> 00:39:44,960
+you should you should wear as many
+
+735
+00:39:43,119 --> 00:39:47,520
+clothes as possible
+
+736
+00:39:44,960 --> 00:39:48,560
+okay it's very interesting for the
+
+737
+00:39:47,520 --> 00:39:51,680
+structural
+
+738
+00:39:48,560 --> 00:39:55,680
+uh ambiguity and another
+
+739
+00:39:51,680 --> 00:39:58,240
+sentence is like this well most of you
+
+740
+00:39:55,680 --> 00:39:58,240
+may think
+
+741
+00:39:58,720 --> 00:40:05,599
+uh i think something bad actually
+
+742
+00:40:02,160 --> 00:40:06,000
+but this sentence is not about that at
+
+743
+00:40:05,599 --> 00:40:09,280
+all
+
+744
+00:40:06,000 --> 00:40:13,200
+in the first place what is that i have a
+
+745
+00:40:09,280 --> 00:40:15,760
+i have a friend he uh she said that
+
+746
+00:40:13,200 --> 00:40:16,640
+she when she was a girl she went to
+
+747
+00:40:15,760 --> 00:40:19,839
+disney
+
+748
+00:40:16,640 --> 00:40:22,640
+and see all the princes and the
+
+749
+00:40:19,839 --> 00:40:24,560
+characters in cartoon they treat her
+
+750
+00:40:22,640 --> 00:40:27,839
+like a princess
+
+751
+00:40:24,560 --> 00:40:31,119
+okay so being
+
+752
+00:40:27,839 --> 00:40:35,920
+treated as
+
+753
+00:40:31,119 --> 00:40:41,040
+the real princess feels good
+
+754
+00:40:35,920 --> 00:40:41,040
+okay but most most of you probably
+
+755
+00:40:41,520 --> 00:40:49,520
+understand this sentence as here
+
+756
+00:40:46,079 --> 00:40:52,640
+right so it's not a happy feeling but
+
+757
+00:40:49,520 --> 00:40:57,760
+you know it's ambiguity actually
+
+758
+00:40:52,640 --> 00:41:02,880
+so the final example is also interesting
+
+759
+00:40:57,760 --> 00:41:02,880
+so it's a hand dryer but
+
+760
+00:41:03,040 --> 00:41:09,040
+you may
+
+761
+00:41:07,200 --> 00:41:10,560
+understand this sentence as the
+
+762
+00:41:09,040 --> 00:41:14,560
+structure here that would be
+
+763
+00:41:10,560 --> 00:41:17,680
+mobile phone okay
+
+764
+00:41:14,560 --> 00:41:21,839
+so it's very difficult to write here
+
+765
+00:41:17,680 --> 00:41:25,280
+mobile phone so everybody try to dry
+
+766
+00:41:21,839 --> 00:41:25,280
+their mobile phone
+
+767
+00:41:25,440 --> 00:41:32,319
+although it should be hand dryer
+
+768
+00:41:29,280 --> 00:41:36,960
+or not washer sorry and dryer
+
+769
+00:41:32,319 --> 00:41:40,000
+here right so all these examples are
+
+770
+00:41:36,960 --> 00:41:43,920
+ambiguity in sentence structure and i
+
+771
+00:41:40,000 --> 00:41:43,920
+i have to say that uh
+
+772
+00:41:44,400 --> 00:41:49,839
+not many examples here not many examples
+
+773
+00:41:51,280 --> 00:41:57,040
+can be found for structural ambiguity
+
+774
+00:41:55,040 --> 00:41:59,119
+usually in natural language the
+
+775
+00:41:57,040 --> 00:42:01,440
+ambiguity rises with the
+
+776
+00:41:59,119 --> 00:42:03,599
+thematics and the meanings not structure
+
+777
+00:42:01,440 --> 00:42:08,319
+okay so these are
+
+778
+00:42:03,599 --> 00:42:12,400
+great interesting some examples
+
+779
+00:42:08,319 --> 00:42:12,400
+and let's go back here so
+
+780
+00:42:14,800 --> 00:42:18,880
+we need to handle the uh
+
+781
+00:42:20,960 --> 00:42:28,079
+link uh issues with ambiguity
+
+782
+00:42:24,480 --> 00:42:31,440
+but that's not that is not the job
+
+783
+00:42:28,079 --> 00:42:35,280
+uh for this course okay we are we need
+
+784
+00:42:31,440 --> 00:42:37,599
+in this course we just want to introduce
+
+785
+00:42:35,280 --> 00:42:38,319
+there is a sub there is such an issue
+
+786
+00:42:37,599 --> 00:42:41,680
+and
+
+787
+00:42:38,319 --> 00:42:46,880
+we study it a little bit okay
+
+788
+00:42:41,680 --> 00:42:50,160
+so what in the
+
+789
+00:42:46,880 --> 00:42:50,880
+in essence what is ambiguity ambiguity
+
+790
+00:42:50,160 --> 00:42:53,119
+basically
+
+791
+00:42:50,880 --> 00:42:53,119
+are
+
+792
+00:42:56,240 --> 00:43:00,960
+multiple parse trees more than one parse
+
+793
+00:43:00,000 --> 00:43:04,720
+trees
+
+794
+00:43:00,960 --> 00:43:07,440
+for some string
+
+795
+00:43:04,720 --> 00:43:10,560
+for the identical string you have one
+
+796
+00:43:07,440 --> 00:43:12,400
+you have two or more
+
+797
+00:43:10,560 --> 00:43:14,400
+parse trees then you don't know which
+
+798
+00:43:12,400 --> 00:43:18,000
+one is what you want
+
+799
+00:43:14,400 --> 00:43:20,480
+and what what uh
+
+800
+00:43:18,000 --> 00:43:21,359
+what what's the relation between the
+
+801
+00:43:20,480 --> 00:43:24,800
+derivation
+
+802
+00:43:21,359 --> 00:43:29,040
+and the parse trees is the
+
+803
+00:43:24,800 --> 00:43:32,160
+order of rules application
+
+804
+00:43:29,040 --> 00:43:36,079
+well you can see that for the
+
+805
+00:43:32,160 --> 00:43:39,520
+left part you can see
+
+806
+00:43:36,079 --> 00:43:42,800
+the application of the application of
+
+807
+00:43:39,520 --> 00:43:42,800
+the fourth rule here
+
+808
+00:43:43,359 --> 00:43:47,440
+right you can actually move this one
+
+809
+00:43:46,560 --> 00:43:50,720
+down
+
+810
+00:43:47,440 --> 00:43:53,599
+without changing the result right or
+
+811
+00:43:50,720 --> 00:43:55,760
+we move this one up here up to here
+
+812
+00:43:53,599 --> 00:44:01,119
+without changing the result
+
+813
+00:43:55,760 --> 00:44:04,400
+so the order of rule application
+
+814
+00:44:01,119 --> 00:44:08,160
+cannot be the
+
+815
+00:44:04,400 --> 00:44:12,640
+deciding factor and then
+
+816
+00:44:08,160 --> 00:44:16,240
+we found that if
+
+817
+00:44:12,640 --> 00:44:16,240
+we derive a string
+
+818
+00:44:16,560 --> 00:44:23,839
+if we derive a string always
+
+819
+00:44:20,000 --> 00:44:23,839
+from the
+
+820
+00:44:24,480 --> 00:44:29,040
+left most remaining variable
+
+821
+00:44:29,200 --> 00:44:35,839
+then we call such derivation left
+
+822
+00:44:32,480 --> 00:44:37,680
+most derivation okay and why
+
+823
+00:44:35,839 --> 00:44:39,520
+why do we want to define this term
+
+824
+00:44:37,680 --> 00:44:42,560
+because
+
+825
+00:44:39,520 --> 00:44:47,440
+left most derivation
+
+826
+00:44:42,560 --> 00:44:47,440
+corresponds to unique past tree
+
+827
+00:44:47,599 --> 00:44:54,560
+okay so go back to this slide
+
+828
+00:44:50,640 --> 00:44:58,319
+you can see that if you always
+
+829
+00:44:54,560 --> 00:44:58,319
+resolve the leftmost
+
+830
+00:44:59,200 --> 00:45:06,000
+variable for this example we result
+
+831
+00:45:03,200 --> 00:45:07,040
+first one only one right so that's the
+
+832
+00:45:06,000 --> 00:45:10,720
+leftmost one
+
+833
+00:45:07,040 --> 00:45:14,000
+you you you use row two
+
+834
+00:45:10,720 --> 00:45:17,119
+and then this one you must use rule
+
+835
+00:45:14,000 --> 00:45:21,440
+one and then this one
+
+836
+00:45:17,119 --> 00:45:24,319
+four four
+
+837
+00:45:21,440 --> 00:45:24,319
+and four
+
+838
+00:45:24,800 --> 00:45:29,280
+and it's the same thing with uh the
+
+839
+00:45:27,040 --> 00:45:32,720
+right side right hand side of this
+
+840
+00:45:29,280 --> 00:45:35,760
+so one
+
+841
+00:45:32,720 --> 00:45:38,960
+four this one
+
+842
+00:45:35,760 --> 00:45:42,960
+two is one four
+
+843
+00:45:38,960 --> 00:45:46,480
+four the last one right so left
+
+844
+00:45:42,960 --> 00:45:50,480
+most derivation corresponds to
+
+845
+00:45:46,480 --> 00:45:55,040
+a unique posture here
+
+846
+00:45:50,480 --> 00:45:57,280
+in this sense we can know that
+
+847
+00:45:55,040 --> 00:45:57,280
+if
+
+848
+00:45:58,640 --> 00:46:04,800
+there is a string if there is a string
+
+849
+00:46:02,880 --> 00:46:07,280
+in the grammar in the language of the
+
+850
+00:46:04,800 --> 00:46:07,280
+grammar
+
+851
+00:46:07,440 --> 00:46:14,480
+has two or more different
+
+852
+00:46:11,040 --> 00:46:17,680
+left-most derivations
+
+853
+00:46:14,480 --> 00:46:21,520
+according to that grammar that string
+
+854
+00:46:17,680 --> 00:46:24,960
+has two or more parse trees
+
+855
+00:46:21,520 --> 00:46:28,880
+then we call the string is derived
+
+856
+00:46:24,960 --> 00:46:32,000
+and ambiguously because
+
+857
+00:46:28,880 --> 00:46:35,440
+it is possible this derivation or
+
+858
+00:46:32,000 --> 00:46:38,880
+that derivation or more actually
+
+859
+00:46:35,440 --> 00:46:40,640
+and if there is a string in the language
+
+860
+00:46:38,880 --> 00:46:44,800
+of that grammar
+
+861
+00:46:40,640 --> 00:46:47,839
+is this case we call that grammar g
+
+862
+00:46:44,800 --> 00:46:51,040
+is ambiguous okay
+
+863
+00:46:47,839 --> 00:46:53,839
+so if you write a grammar
+
+864
+00:46:51,040 --> 00:46:54,880
+then the grammar represents a language
+
+865
+00:46:53,839 --> 00:46:58,480
+right
+
+866
+00:46:54,880 --> 00:47:02,640
+if in that language there is
+
+867
+00:46:58,480 --> 00:47:05,920
+one string as long as one string
+
+868
+00:47:02,640 --> 00:47:09,119
+it can be derived ambiguously
+
+869
+00:47:05,920 --> 00:47:12,880
+we call that grammar ambiguous
+
+870
+00:47:09,119 --> 00:47:16,000
+grammar okay so
+
+871
+00:47:12,880 --> 00:47:18,319
+let's say you have a context free
+
+872
+00:47:16,000 --> 00:47:22,960
+grammar g
+
+873
+00:47:18,319 --> 00:47:26,000
+and in the grammar there is a string
+
+874
+00:47:22,960 --> 00:47:28,720
+and the string has two or more
+
+875
+00:47:26,000 --> 00:47:29,839
+different leftmost duration that means
+
+876
+00:47:28,720 --> 00:47:33,839
+there are more
+
+877
+00:47:29,839 --> 00:47:37,359
+more than one pass threes
+
+878
+00:47:33,839 --> 00:47:41,440
+we call such a grammar ambiguous
+
+879
+00:47:37,359 --> 00:47:44,880
+okay and the interesting thing is
+
+880
+00:47:41,440 --> 00:47:47,920
+it is possible to write
+
+881
+00:47:44,880 --> 00:47:47,920
+an other grammar
+
+882
+00:47:48,000 --> 00:47:56,000
+describing the same language
+
+883
+00:47:52,720 --> 00:48:00,160
+that other grammar is not ambiguous
+
+884
+00:47:56,000 --> 00:48:03,359
+it is possible okay it is possible
+
+885
+00:48:00,160 --> 00:48:04,079
+but you know there is no systematic way
+
+886
+00:48:03,359 --> 00:48:08,000
+to do that
+
+887
+00:48:04,079 --> 00:48:11,839
+so we don't go into that iteration
+
+888
+00:48:08,000 --> 00:48:11,839
+so continue with our discussion
+
+889
+00:48:12,079 --> 00:48:17,520
+some for some language like this one
+
+890
+00:48:15,119 --> 00:48:21,599
+you may have an ambiguous grammar and
+
+891
+00:48:17,520 --> 00:48:24,880
+have unambiguous grammar that's possible
+
+892
+00:48:21,599 --> 00:48:28,559
+but it is possible
+
+893
+00:48:24,880 --> 00:48:31,359
+that it it is also possible that
+
+894
+00:48:28,559 --> 00:48:35,760
+there are some context-free language you
+
+895
+00:48:31,359 --> 00:48:39,359
+know described by context-free grammar
+
+896
+00:48:35,760 --> 00:48:41,680
+no matter how for the language here
+
+897
+00:48:39,359 --> 00:48:42,559
+it can be described by context-free
+
+898
+00:48:41,680 --> 00:48:45,520
+grammar right
+
+899
+00:48:42,559 --> 00:48:48,240
+like this one and also you can write a
+
+900
+00:48:45,520 --> 00:48:51,440
+lot of possible context-free grammar
+
+901
+00:48:48,240 --> 00:48:55,359
+to describe the same language let's say
+
+902
+00:48:51,440 --> 00:48:58,079
+the same language it is possible that
+
+903
+00:48:55,359 --> 00:48:58,960
+all the grammar you can write to
+
+904
+00:48:58,079 --> 00:49:03,839
+describe
+
+905
+00:48:58,960 --> 00:49:03,839
+that language is
+
+906
+00:49:04,319 --> 00:49:07,440
+each grammar you can write to describe
+
+907
+00:49:06,160 --> 00:49:10,800
+that language
+
+908
+00:49:07,440 --> 00:49:14,079
+is ambiguous grammar okay
+
+909
+00:49:10,800 --> 00:49:17,280
+it is possible so we call that
+
+910
+00:49:14,079 --> 00:49:19,599
+language that's language inherently
+
+911
+00:49:17,280 --> 00:49:23,599
+ambiguous
+
+912
+00:49:19,599 --> 00:49:26,480
+okay and we give an example here
+
+913
+00:49:23,599 --> 00:49:26,800
+so this language is a complex language
+
+914
+00:49:26,480 --> 00:49:30,160
+but
+
+915
+00:49:26,800 --> 00:49:34,000
+it is an inherently ambiguous language
+
+916
+00:49:30,160 --> 00:49:39,440
+that means any context free grammar
+
+917
+00:49:34,000 --> 00:49:39,440
+describing this language have to be
+
+918
+00:49:39,599 --> 00:49:45,920
+ambiguous okay so we got
+
+919
+00:49:42,960 --> 00:49:47,119
+we defined ambiguous grammar in
+
+920
+00:49:45,920 --> 00:49:50,960
+currently ambiguous
+
+921
+00:49:47,119 --> 00:49:50,960
+language okay
+
+922
+00:49:51,599 --> 00:49:59,760
+and we will formally prove
+
+923
+00:49:55,599 --> 00:50:04,160
+this language to be inherently ambiguous
+
+924
+00:49:59,760 --> 00:50:04,160
+in our course later
+
+925
+00:50:10,839 --> 00:50:14,559
+okay
+
+926
+00:50:12,480 --> 00:50:14,559
+you
+

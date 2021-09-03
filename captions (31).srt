@@ -1,0 +1,5020 @@
+1
+00:00:01,680 --> 00:00:06,399
+so now we are going to talk about the
+
+2
+00:00:03,840 --> 00:00:07,359
+time complexity relationship
+
+3
+00:00:06,399 --> 00:00:10,559
+for
+
+4
+00:00:07,359 --> 00:00:12,719
+the three models we have introduced in
+
+5
+00:00:10,559 --> 00:00:14,400
+uh chapter three to
+
+6
+00:00:12,719 --> 00:00:16,880
+you know to
+
+7
+00:00:14,400 --> 00:00:18,000
+investigate the difference
+
+8
+00:00:16,880 --> 00:00:20,240
+uh
+
+9
+00:00:18,000 --> 00:00:22,080
+raised by the variance of different
+
+10
+00:00:20,240 --> 00:00:24,560
+turing machine models
+
+11
+00:00:22,080 --> 00:00:27,039
+okay so the first one
+
+12
+00:00:24,560 --> 00:00:29,119
+oh okay the first two are determinatory
+
+13
+00:00:27,039 --> 00:00:30,400
+machines and the first one is our
+
+14
+00:00:29,119 --> 00:00:31,279
+fundamental
+
+15
+00:00:30,400 --> 00:00:33,200
+uh
+
+16
+00:00:31,279 --> 00:00:35,760
+type of tube machine which is a single
+
+17
+00:00:33,200 --> 00:00:37,600
+type two machine and the second one is a
+
+18
+00:00:35,760 --> 00:00:40,480
+multi-tab two machine
+
+19
+00:00:37,600 --> 00:00:44,160
+by multi-tab there are
+
+20
+00:00:40,480 --> 00:00:46,000
+uh k which is a finite number k test
+
+21
+00:00:44,160 --> 00:00:47,920
+then we are we will be talking about
+
+22
+00:00:46,000 --> 00:00:50,879
+non-deterministic emissions
+
+23
+00:00:47,920 --> 00:00:53,120
+uh okay and
+
+24
+00:00:50,879 --> 00:00:54,239
+for com computability they are all
+
+25
+00:00:53,120 --> 00:00:56,840
+equivalent
+
+26
+00:00:54,239 --> 00:00:59,280
+there is no problem with that okay for
+
+27
+00:00:56,840 --> 00:01:01,600
+computability from conversability they
+
+28
+00:00:59,280 --> 00:01:04,000
+are equivalent but for
+
+29
+00:01:01,600 --> 00:01:06,320
+time complexity they are not
+
+30
+00:01:04,000 --> 00:01:07,439
+why because they are different
+
+31
+00:01:06,320 --> 00:01:09,760
+you need
+
+32
+00:01:07,439 --> 00:01:11,439
+different steps
+
+33
+00:01:09,760 --> 00:01:15,119
+on
+
+34
+00:01:11,439 --> 00:01:18,320
+these machines to finish some job
+
+35
+00:01:15,119 --> 00:01:19,200
+by computability we we know that they
+
+36
+00:01:18,320 --> 00:01:22,799
+can
+
+37
+00:01:19,200 --> 00:01:24,960
+eventually ultimately ultimately to do
+
+38
+00:01:22,799 --> 00:01:28,080
+the same thing but
+
+39
+00:01:24,960 --> 00:01:31,759
+you need different amounts of resources
+
+40
+00:01:28,080 --> 00:01:33,600
+that's the uh difference here okay
+
+41
+00:01:31,759 --> 00:01:35,759
+so let's say
+
+42
+00:01:33,600 --> 00:01:38,159
+for theorem 7.8
+
+43
+00:01:35,759 --> 00:01:40,799
+we say that um
+
+44
+00:01:38,159 --> 00:01:41,600
+that t of n be a function
+
+45
+00:01:40,799 --> 00:01:43,600
+where
+
+46
+00:01:41,600 --> 00:01:45,439
+p of n is
+
+47
+00:01:43,600 --> 00:01:48,079
+equal to or larger
+
+48
+00:01:45,439 --> 00:01:49,040
+uh greater than n
+
+49
+00:01:48,079 --> 00:01:51,280
+every
+
+50
+00:01:49,040 --> 00:01:54,079
+t of n times
+
+51
+00:01:51,280 --> 00:01:57,520
+multi-tap dimension
+
+52
+00:01:54,079 --> 00:02:00,159
+has an equivalent
+
+53
+00:01:57,520 --> 00:02:02,880
+big o of t
+
+54
+00:02:00,159 --> 00:02:02,880
+squared
+
+55
+00:02:04,479 --> 00:02:09,280
+of n
+
+56
+00:02:05,600 --> 00:02:11,200
+times single capital machine okay
+
+57
+00:02:09,280 --> 00:02:12,959
+so firstly we need to
+
+58
+00:02:11,200 --> 00:02:17,760
+discuss a little bit about the
+
+59
+00:02:12,959 --> 00:02:17,760
+assumption here so we assume that
+
+60
+00:02:17,840 --> 00:02:21,760
+t of n
+
+61
+00:02:20,239 --> 00:02:24,560
+is
+
+62
+00:02:21,760 --> 00:02:26,879
+the complexity time complexity for a
+
+63
+00:02:24,560 --> 00:02:30,800
+multi-type dimension
+
+64
+00:02:26,879 --> 00:02:34,319
+and why do we need assumption
+
+65
+00:02:30,800 --> 00:02:37,760
+here that t of n is equal to or greater
+
+66
+00:02:34,319 --> 00:02:39,040
+than n well
+
+67
+00:02:37,760 --> 00:02:40,000
+basically
+
+68
+00:02:39,040 --> 00:02:44,480
+we
+
+69
+00:02:40,000 --> 00:02:46,560
+don't want to discuss trivial cases okay
+
+70
+00:02:44,480 --> 00:02:49,440
+or what is trivial cases and what is
+
+71
+00:02:46,560 --> 00:02:52,000
+this assumption uh
+
+72
+00:02:49,440 --> 00:02:54,239
+tells are telling us
+
+73
+00:02:52,000 --> 00:02:56,560
+since t of n
+
+74
+00:02:54,239 --> 00:02:58,159
+is the time complexity
+
+75
+00:02:56,560 --> 00:03:00,159
+or running time
+
+76
+00:02:58,159 --> 00:03:03,040
+and
+
+77
+00:03:00,159 --> 00:03:05,280
+you can always remember that there is a
+
+78
+00:03:03,040 --> 00:03:07,519
+interesting connection
+
+79
+00:03:05,280 --> 00:03:08,400
+between space
+
+80
+00:03:07,519 --> 00:03:11,120
+okay
+
+81
+00:03:08,400 --> 00:03:11,120
+tape space
+
+82
+00:03:11,200 --> 00:03:16,000
+here
+
+83
+00:03:12,800 --> 00:03:18,959
+space and time
+
+84
+00:03:16,000 --> 00:03:19,840
+which is the transition numbers
+
+85
+00:03:18,959 --> 00:03:21,360
+of
+
+86
+00:03:19,840 --> 00:03:23,040
+two machines
+
+87
+00:03:21,360 --> 00:03:25,280
+when you read
+
+88
+00:03:23,040 --> 00:03:28,159
+a symbol from
+
+89
+00:03:25,280 --> 00:03:30,000
+a type space
+
+90
+00:03:28,159 --> 00:03:32,720
+in one transition
+
+91
+00:03:30,000 --> 00:03:34,319
+you can move
+
+92
+00:03:32,720 --> 00:03:36,159
+to another space
+
+93
+00:03:34,319 --> 00:03:38,959
+of course you can also move left doesn't
+
+94
+00:03:36,159 --> 00:03:40,080
+really matter but when you want to
+
+95
+00:03:38,959 --> 00:03:40,840
+do
+
+96
+00:03:40,080 --> 00:03:43,040
+one
+
+97
+00:03:40,840 --> 00:03:48,080
+[Music]
+
+98
+00:03:43,040 --> 00:03:50,560
+tab space you need one transition steps
+
+99
+00:03:48,080 --> 00:03:51,680
+you see the connection here
+
+100
+00:03:50,560 --> 00:03:53,040
+one
+
+101
+00:03:51,680 --> 00:03:56,319
+tab space
+
+102
+00:03:53,040 --> 00:03:57,280
+one transition step
+
+103
+00:03:56,319 --> 00:04:00,080
+so
+
+104
+00:03:57,280 --> 00:04:01,040
+if you have
+
+105
+00:04:00,080 --> 00:04:02,720
+to
+
+106
+00:04:01,040 --> 00:04:04,319
+read
+
+107
+00:04:02,720 --> 00:04:07,040
+the whole
+
+108
+00:04:04,319 --> 00:04:08,560
+input string
+
+109
+00:04:07,040 --> 00:04:10,560
+at least
+
+110
+00:04:08,560 --> 00:04:12,319
+you need to go through
+
+111
+00:04:10,560 --> 00:04:13,599
+so many
+
+112
+00:04:12,319 --> 00:04:15,840
+transition
+
+113
+00:04:13,599 --> 00:04:15,840
+steps
+
+114
+00:04:16,799 --> 00:04:19,519
+okay again
+
+115
+00:04:20,320 --> 00:04:24,160
+space and time
+
+116
+00:04:22,160 --> 00:04:25,919
+has
+
+117
+00:04:24,160 --> 00:04:30,639
+a connection
+
+118
+00:04:25,919 --> 00:04:32,960
+by the operation of two machine
+
+119
+00:04:30,639 --> 00:04:34,479
+whenever
+
+120
+00:04:32,960 --> 00:04:35,600
+one symbol
+
+121
+00:04:34,479 --> 00:04:37,040
+of
+
+122
+00:04:35,600 --> 00:04:39,680
+on the tape
+
+123
+00:04:37,040 --> 00:04:39,680
+is red
+
+124
+00:04:40,639 --> 00:04:48,000
+you need one transition step to do that
+
+125
+00:04:45,360 --> 00:04:49,360
+so one step one space
+
+126
+00:04:48,000 --> 00:04:53,440
+on tape
+
+127
+00:04:49,360 --> 00:04:55,840
+so if your input string occupied
+
+128
+00:04:53,440 --> 00:04:57,919
+occupies
+
+129
+00:04:55,840 --> 00:05:01,680
+type spaces
+
+130
+00:04:57,919 --> 00:05:04,960
+then you need the machine need at least
+
+131
+00:05:01,680 --> 00:05:10,199
+and transition steps to
+
+132
+00:05:04,960 --> 00:05:10,199
+read the whole input string
+
+133
+00:05:10,880 --> 00:05:15,039
+so
+
+134
+00:05:11,919 --> 00:05:15,039
+we only care about
+
+135
+00:05:17,199 --> 00:05:20,639
+the languages
+
+136
+00:05:19,680 --> 00:05:24,960
+that
+
+137
+00:05:20,639 --> 00:05:29,120
+can be designed that can be decided
+
+138
+00:05:24,960 --> 00:05:29,120
+with reading the whole input
+
+139
+00:05:29,280 --> 00:05:35,360
+well that's not unreasonable right
+
+140
+00:05:32,000 --> 00:05:38,720
+because if a problem for you
+
+141
+00:05:35,360 --> 00:05:42,160
+to solve and you don't need to read the
+
+142
+00:05:38,720 --> 00:05:45,199
+whole problem the whole input
+
+143
+00:05:42,160 --> 00:05:46,960
+then that problem is kind of trivial or
+
+144
+00:05:45,199 --> 00:05:49,680
+you know um
+
+145
+00:05:46,960 --> 00:05:53,520
+probably meaningless or something
+
+146
+00:05:49,680 --> 00:05:58,319
+let's have another example if i give you
+
+147
+00:05:53,520 --> 00:06:01,440
+you know a midterm exam exam 1 or exam 2
+
+148
+00:05:58,319 --> 00:06:04,639
+and for some question on that exam you
+
+149
+00:06:01,440 --> 00:06:07,520
+don't need to read the question you can
+
+150
+00:06:04,639 --> 00:06:09,440
+answer that
+
+151
+00:06:07,520 --> 00:06:11,759
+then they'll be
+
+152
+00:06:09,440 --> 00:06:15,039
+not that would that would not definitely
+
+153
+00:06:11,759 --> 00:06:17,520
+not be a serious problem right because
+
+154
+00:06:15,039 --> 00:06:19,759
+you don't need them you don't need to
+
+155
+00:06:17,520 --> 00:06:22,960
+read the whole problem
+
+156
+00:06:19,759 --> 00:06:25,039
+so we discard those possibilities there
+
+157
+00:06:22,960 --> 00:06:28,479
+let's say
+
+158
+00:06:25,039 --> 00:06:29,360
+if a language defined as
+
+159
+00:06:28,479 --> 00:06:30,880
+one
+
+160
+00:06:29,360 --> 00:06:33,360
+and
+
+161
+00:06:30,880 --> 00:06:34,880
+anything
+
+162
+00:06:33,360 --> 00:06:39,600
+oh that's it
+
+163
+00:06:34,880 --> 00:06:41,680
+that's it so you only need to read one
+
+164
+00:06:39,600 --> 00:06:43,360
+accept it
+
+165
+00:06:41,680 --> 00:06:45,039
+not one
+
+166
+00:06:43,360 --> 00:06:46,479
+reject
+
+167
+00:06:45,039 --> 00:06:48,639
+then your
+
+168
+00:06:46,479 --> 00:06:51,680
+decider always need like one or two
+
+169
+00:06:48,639 --> 00:06:55,599
+steps that's a constant machine right
+
+170
+00:06:51,680 --> 00:06:57,039
+so we don't discuss that possibilities
+
+171
+00:06:55,599 --> 00:06:59,520
+that's uh
+
+172
+00:06:57,039 --> 00:07:02,639
+something too easy okay
+
+173
+00:06:59,520 --> 00:07:03,759
+so we focus on some we focus on
+
+174
+00:07:02,639 --> 00:07:05,840
+languages
+
+175
+00:07:03,759 --> 00:07:06,960
+that if you have a decider for that
+
+176
+00:07:05,840 --> 00:07:09,680
+language
+
+177
+00:07:06,960 --> 00:07:11,199
+in the worst case the decider always
+
+178
+00:07:09,680 --> 00:07:13,520
+need to read
+
+179
+00:07:11,199 --> 00:07:15,039
+the whole the whole input
+
+180
+00:07:13,520 --> 00:07:16,400
+for decision
+
+181
+00:07:15,039 --> 00:07:17,599
+otherwise
+
+182
+00:07:16,400 --> 00:07:19,599
+that would be
+
+183
+00:07:17,599 --> 00:07:21,599
+you know that the language is uh
+
+184
+00:07:19,599 --> 00:07:22,960
+basically trivial or meaningless and
+
+185
+00:07:21,599 --> 00:07:25,120
+then we don't need to we don't want to
+
+186
+00:07:22,960 --> 00:07:27,919
+talk about that
+
+187
+00:07:25,120 --> 00:07:31,440
+and actually uh
+
+188
+00:07:27,919 --> 00:07:33,039
+if you we really allowed t of n may be
+
+189
+00:07:31,440 --> 00:07:36,560
+less than n
+
+190
+00:07:33,039 --> 00:07:37,919
+there will be contradiction cases okay
+
+191
+00:07:36,560 --> 00:07:40,400
+so
+
+192
+00:07:37,919 --> 00:07:44,080
+here we are we make and we make a
+
+193
+00:07:40,400 --> 00:07:45,280
+reasonable resumption assumption that
+
+194
+00:07:44,080 --> 00:07:48,560
+you can
+
+195
+00:07:45,280 --> 00:07:49,759
+answer the question after you read whole
+
+196
+00:07:48,560 --> 00:07:53,039
+input
+
+197
+00:07:49,759 --> 00:07:54,319
+so that's why we have this part
+
+198
+00:07:53,039 --> 00:07:57,360
+okay
+
+199
+00:07:54,319 --> 00:08:00,479
+so let's uh describe the whole theorem
+
+200
+00:07:57,360 --> 00:08:02,319
+again so if there is a running time t of
+
+201
+00:08:00,479 --> 00:08:03,759
+n
+
+202
+00:08:02,319 --> 00:08:06,240
+d of n
+
+203
+00:08:03,759 --> 00:08:09,599
+larger to or greater
+
+204
+00:08:06,240 --> 00:08:11,440
+than or equal to n
+
+205
+00:08:09,599 --> 00:08:14,319
+then
+
+206
+00:08:11,440 --> 00:08:17,759
+every t of n time multi-tap to machine
+
+207
+00:08:14,319 --> 00:08:17,759
+has an equivalent
+
+208
+00:08:18,080 --> 00:08:23,919
+big o of t square of n
+
+209
+00:08:21,919 --> 00:08:24,960
+single time dimension
+
+210
+00:08:23,919 --> 00:08:27,680
+okay
+
+211
+00:08:24,960 --> 00:08:30,960
+so since it's equivalent that means
+
+212
+00:08:27,680 --> 00:08:33,360
+they finish the stand exactly same
+
+213
+00:08:30,960 --> 00:08:36,000
+computational job okay
+
+214
+00:08:33,360 --> 00:08:39,360
+so we just go back to
+
+215
+00:08:36,000 --> 00:08:41,919
+uh what is that theorem
+
+216
+00:08:39,360 --> 00:08:45,040
+3.13
+
+217
+00:08:41,919 --> 00:08:47,600
+so we use exactly the same
+
+218
+00:08:45,040 --> 00:08:50,640
+simulation turn machine and we
+
+219
+00:08:47,600 --> 00:08:51,519
+analyze how much time
+
+220
+00:08:50,640 --> 00:08:54,560
+that
+
+221
+00:08:51,519 --> 00:08:57,920
+simulation that machine needs to
+
+222
+00:08:54,560 --> 00:09:02,160
+accomplish the same task then we know
+
+223
+00:08:57,920 --> 00:09:04,399
+that the running time will be this way
+
+224
+00:09:02,160 --> 00:09:04,399
+okay
+
+225
+00:09:04,959 --> 00:09:09,839
+so uh this is the
+
+226
+00:09:07,120 --> 00:09:09,839
+figure from the
+
+227
+00:09:10,080 --> 00:09:15,040
+chapter 3 if you don't remember it we
+
+228
+00:09:13,279 --> 00:09:16,880
+actually prepare
+
+229
+00:09:15,040 --> 00:09:20,800
+we use the tape
+
+230
+00:09:16,880 --> 00:09:23,279
+one infinite tape to simulate k
+
+231
+00:09:20,800 --> 00:09:24,880
+internet tapes and k is a finite number
+
+232
+00:09:23,279 --> 00:09:28,399
+so there's no problem
+
+233
+00:09:24,880 --> 00:09:29,760
+and we have two versions for symbols on
+
+234
+00:09:28,399 --> 00:09:30,720
+each tape
+
+235
+00:09:29,760 --> 00:09:34,800
+so
+
+236
+00:09:30,720 --> 00:09:34,800
+the dotted version means that
+
+237
+00:09:35,200 --> 00:09:39,279
+the head is at that position
+
+238
+00:09:37,440 --> 00:09:40,800
+and the not started
+
+239
+00:09:39,279 --> 00:09:43,040
+version
+
+240
+00:09:40,800 --> 00:09:46,240
+means the head is not there
+
+241
+00:09:43,040 --> 00:09:47,120
+okay and we have separator for
+
+242
+00:09:46,240 --> 00:09:48,560
+tips
+
+243
+00:09:47,120 --> 00:09:50,240
+okay so that's it
+
+244
+00:09:48,560 --> 00:09:52,480
+and
+
+245
+00:09:50,240 --> 00:09:54,399
+we know that uh for the single tapping
+
+246
+00:09:52,480 --> 00:09:56,560
+machine to simulate a multi-tab two
+
+247
+00:09:54,399 --> 00:09:58,240
+machine what shield the single type two
+
+248
+00:09:56,560 --> 00:09:59,680
+machine tool
+
+249
+00:09:58,240 --> 00:10:02,720
+for every
+
+250
+00:09:59,680 --> 00:10:05,279
+transition made by the multi-tab two
+
+251
+00:10:02,720 --> 00:10:07,920
+machine the single tap to machine need
+
+252
+00:10:05,279 --> 00:10:09,680
+to scan across
+
+253
+00:10:07,920 --> 00:10:11,760
+the tape
+
+254
+00:10:09,680 --> 00:10:13,519
+okay scan across the tab
+
+255
+00:10:11,760 --> 00:10:18,320
+and collect that
+
+256
+00:10:13,519 --> 00:10:20,320
+the on the first tape one will be read
+
+257
+00:10:18,320 --> 00:10:22,160
+a will be red
+
+258
+00:10:20,320 --> 00:10:23,200
+b will be red
+
+259
+00:10:22,160 --> 00:10:25,920
+right
+
+260
+00:10:23,200 --> 00:10:28,560
+then it
+
+261
+00:10:25,920 --> 00:10:30,560
+implements
+
+262
+00:10:28,560 --> 00:10:32,880
+delta ends
+
+263
+00:10:30,560 --> 00:10:34,240
+for example it's on q
+
+264
+00:10:32,880 --> 00:10:39,200
+m
+
+265
+00:10:34,240 --> 00:10:41,920
+so q m and then read one a b
+
+266
+00:10:39,200 --> 00:10:44,240
+and check
+
+267
+00:10:41,920 --> 00:10:45,600
+where it goes
+
+268
+00:10:44,240 --> 00:10:47,360
+and
+
+269
+00:10:45,600 --> 00:10:48,880
+implements the
+
+270
+00:10:47,360 --> 00:10:50,959
+transition
+
+271
+00:10:48,880 --> 00:10:52,800
+on its own tape
+
+272
+00:10:50,959 --> 00:10:55,680
+so if u
+
+273
+00:10:52,800 --> 00:10:59,279
+r uh if m replaced
+
+274
+00:10:55,680 --> 00:11:02,560
+one as zero and the gold left
+
+275
+00:10:59,279 --> 00:11:08,320
+so it will make s will make
+
+276
+00:11:02,560 --> 00:11:09,440
+b symbol 0 and this symbol 0 dot
+
+277
+00:11:08,320 --> 00:11:12,160
+right
+
+278
+00:11:09,440 --> 00:11:12,160
+and then go
+
+279
+00:11:12,800 --> 00:11:17,120
+see the second one
+
+280
+00:11:14,399 --> 00:11:19,920
+how it will change be changed and the
+
+281
+00:11:17,120 --> 00:11:21,519
+third one and stuff like that
+
+282
+00:11:19,920 --> 00:11:23,440
+so
+
+283
+00:11:21,519 --> 00:11:25,839
+as the single tap two machine can
+
+284
+00:11:23,440 --> 00:11:27,360
+absolutely do the same test uh
+
+285
+00:11:25,839 --> 00:11:28,399
+computational job
+
+286
+00:11:27,360 --> 00:11:30,160
+with
+
+287
+00:11:28,399 --> 00:11:31,279
+well a lot of
+
+288
+00:11:30,160 --> 00:11:32,720
+a lot
+
+289
+00:11:31,279 --> 00:11:34,959
+more
+
+290
+00:11:32,720 --> 00:11:37,279
+steps
+
+291
+00:11:34,959 --> 00:11:40,399
+so analyze the steps described in
+
+292
+00:11:37,279 --> 00:11:41,600
+chapter 3 we have results like this
+
+293
+00:11:40,399 --> 00:11:44,240
+so
+
+294
+00:11:41,600 --> 00:11:44,240
+we know that
+
+295
+00:11:44,640 --> 00:11:50,240
+each active portions which
+
+296
+00:11:47,120 --> 00:11:51,920
+corresponds to the type of the multi-tab
+
+297
+00:11:50,240 --> 00:11:53,600
+2 machine
+
+298
+00:11:51,920 --> 00:11:58,079
+at the most
+
+299
+00:11:53,600 --> 00:11:58,079
+has length at most t of m
+
+300
+00:11:59,040 --> 00:12:02,079
+why
+
+301
+00:12:00,880 --> 00:12:03,839
+see
+
+302
+00:12:02,079 --> 00:12:05,519
+again
+
+303
+00:12:03,839 --> 00:12:07,360
+for tuning machine
+
+304
+00:12:05,519 --> 00:12:11,600
+for two machine
+
+305
+00:12:07,360 --> 00:12:13,920
+one tab space connects to one
+
+306
+00:12:11,600 --> 00:12:15,600
+transition step
+
+307
+00:12:13,920 --> 00:12:17,600
+don't ever forget that because that's
+
+308
+00:12:15,600 --> 00:12:19,600
+very important
+
+309
+00:12:17,600 --> 00:12:21,279
+then you see
+
+310
+00:12:19,600 --> 00:12:22,720
+t of n
+
+311
+00:12:21,279 --> 00:12:24,880
+t of n
+
+312
+00:12:22,720 --> 00:12:28,399
+t of n
+
+313
+00:12:24,880 --> 00:12:30,079
+is the running time of the multitapping
+
+314
+00:12:28,399 --> 00:12:31,519
+machine
+
+315
+00:12:30,079 --> 00:12:33,040
+what does that mean
+
+316
+00:12:31,519 --> 00:12:36,720
+that means
+
+317
+00:12:33,040 --> 00:12:39,839
+for a particular string n length of m
+
+318
+00:12:36,720 --> 00:12:39,839
+let's say
+
+319
+00:12:40,000 --> 00:12:45,279
+length of n is the input right
+
+320
+00:12:43,040 --> 00:12:45,279
+okay
+
+321
+00:12:49,200 --> 00:12:54,240
+we know that
+
+322
+00:12:50,880 --> 00:12:55,839
+t of n is the worst case
+
+323
+00:12:54,240 --> 00:12:58,240
+so the machine
+
+324
+00:12:55,839 --> 00:13:02,720
+at most
+
+325
+00:12:58,240 --> 00:13:04,480
+do t of n transition step
+
+326
+00:13:02,720 --> 00:13:08,639
+no problem there right
+
+327
+00:13:04,480 --> 00:13:12,079
+okay then since it goes at the most the
+
+328
+00:13:08,639 --> 00:13:13,279
+t over n transition step that means
+
+329
+00:13:12,079 --> 00:13:15,920
+initially
+
+330
+00:13:13,279 --> 00:13:18,079
+this tape is empty right for example you
+
+331
+00:13:15,920 --> 00:13:20,800
+have a four step
+
+332
+00:13:18,079 --> 00:13:23,600
+and initially it's empty
+
+333
+00:13:20,800 --> 00:13:25,440
+and for every step
+
+334
+00:13:23,600 --> 00:13:27,519
+executed by
+
+335
+00:13:25,440 --> 00:13:30,959
+the turing machine m here
+
+336
+00:13:27,519 --> 00:13:33,519
+the full step always write a symbol and
+
+337
+00:13:30,959 --> 00:13:36,160
+go right write a symbol and go right
+
+338
+00:13:33,519 --> 00:13:40,240
+right and similarly go right so
+
+339
+00:13:36,160 --> 00:13:40,240
+for this extreme example here
+
+340
+00:13:40,800 --> 00:13:45,120
+how long will this tab be written
+
+341
+00:13:45,360 --> 00:13:48,360
+apparently
+
+342
+00:13:48,880 --> 00:13:52,480
+at most
+
+343
+00:13:50,639 --> 00:13:53,760
+so many
+
+344
+00:13:52,480 --> 00:13:56,000
+spaces
+
+345
+00:13:53,760 --> 00:13:56,000
+right
+
+346
+00:13:56,079 --> 00:13:58,560
+so that's
+
+347
+00:13:58,959 --> 00:14:01,920
+in fact
+
+348
+00:14:00,160 --> 00:14:05,760
+an upper bound
+
+349
+00:14:01,920 --> 00:14:09,680
+of the length of the tape that will be
+
+350
+00:14:05,760 --> 00:14:09,680
+used during the computation
+
+351
+00:14:10,560 --> 00:14:15,680
+that is why we say that
+
+352
+00:14:13,600 --> 00:14:19,040
+the active portions
+
+353
+00:14:15,680 --> 00:14:22,959
+of the lens oh sorry
+
+354
+00:14:19,040 --> 00:14:26,959
+has length at the most t of n
+
+355
+00:14:22,959 --> 00:14:30,720
+because it is impossible for that tube
+
+356
+00:14:26,959 --> 00:14:34,079
+machine to go beyond t of n
+
+357
+00:14:30,720 --> 00:14:36,320
+steps because d of n is the worst case
+
+358
+00:14:34,079 --> 00:14:38,000
+okay as long as you understand this
+
+359
+00:14:36,320 --> 00:14:40,959
+point then there will be no problem
+
+360
+00:14:38,000 --> 00:14:42,839
+there because we have an upper bound t
+
+361
+00:14:40,959 --> 00:14:44,720
+of n
+
+362
+00:14:42,839 --> 00:14:47,600
+for
+
+363
+00:14:44,720 --> 00:14:48,959
+either the transition steps
+
+364
+00:14:47,600 --> 00:14:52,720
+or
+
+365
+00:14:48,959 --> 00:14:52,720
+the length of the working tape
+
+366
+00:14:53,040 --> 00:14:57,160
+okay
+
+367
+00:14:54,160 --> 00:14:57,160
+so
+
+368
+00:14:58,160 --> 00:15:04,639
+uses t of n tab cells in tl fn
+
+369
+00:15:01,680 --> 00:15:06,560
+steps that's what i just talked about
+
+370
+00:15:04,639 --> 00:15:08,000
+and you you won't be able to go beyond
+
+371
+00:15:06,560 --> 00:15:08,959
+that
+
+372
+00:15:08,000 --> 00:15:12,320
+so
+
+373
+00:15:08,959 --> 00:15:14,560
+how long
+
+374
+00:15:12,320 --> 00:15:17,839
+will be
+
+375
+00:15:14,560 --> 00:15:21,600
+our single tattoo machine
+
+376
+00:15:17,839 --> 00:15:25,360
+at the most at most you only need
+
+377
+00:15:21,600 --> 00:15:27,360
+k times t of n
+
+378
+00:15:25,360 --> 00:15:28,720
+tab cells
+
+379
+00:15:27,360 --> 00:15:32,240
+right
+
+380
+00:15:28,720 --> 00:15:33,279
+and don't forget that k is a constant
+
+381
+00:15:32,240 --> 00:15:36,160
+because
+
+382
+00:15:33,279 --> 00:15:39,199
+the machine here is you know k tips then
+
+383
+00:15:36,160 --> 00:15:40,399
+k is a constant and a finite number so k
+
+384
+00:15:39,199 --> 00:15:43,279
+will be
+
+385
+00:15:40,399 --> 00:15:46,959
+will disappear in bigger notation
+
+386
+00:15:43,279 --> 00:15:46,959
+okay anyway so
+
+387
+00:15:47,279 --> 00:15:52,000
+when again whenever
+
+388
+00:15:49,839 --> 00:15:53,519
+our single tab turing machine need to
+
+389
+00:15:52,000 --> 00:15:56,560
+scan
+
+390
+00:15:53,519 --> 00:15:59,759
+curls and reposition how many
+
+391
+00:15:56,560 --> 00:16:03,440
+how many steps will it need
+
+392
+00:15:59,759 --> 00:16:06,720
+like we go of let's write it first okay
+
+393
+00:16:03,440 --> 00:16:09,839
+k of t of n something like this
+
+394
+00:16:06,720 --> 00:16:12,480
+but k is a constant so we will have this
+
+395
+00:16:09,839 --> 00:16:14,639
+notation here
+
+396
+00:16:12,480 --> 00:16:16,959
+then you well
+
+397
+00:16:14,639 --> 00:16:19,839
+uh it will be easier to
+
+398
+00:16:16,959 --> 00:16:22,880
+read the this part of an analysis with
+
+399
+00:16:19,839 --> 00:16:25,120
+that that knowledge okay
+
+400
+00:16:22,880 --> 00:16:25,120
+so
+
+401
+00:16:25,199 --> 00:16:30,639
+scan the active portion of
+
+402
+00:16:27,759 --> 00:16:34,079
+the single tap tune machines tape we
+
+403
+00:16:30,639 --> 00:16:36,880
+need so many steps here
+
+404
+00:16:34,079 --> 00:16:38,000
+it is actually a lot but
+
+405
+00:16:36,880 --> 00:16:41,360
+many
+
+406
+00:16:38,000 --> 00:16:45,600
+factors are constant so they disappeared
+
+407
+00:16:41,360 --> 00:16:45,600
+from the big notation so we know
+
+408
+00:16:46,160 --> 00:16:52,639
+skin wants
+
+409
+00:16:48,639 --> 00:16:54,399
+you at most take so many steps for that
+
+410
+00:16:52,639 --> 00:16:55,360
+single type dimension
+
+411
+00:16:54,399 --> 00:16:56,240
+okay
+
+412
+00:16:55,360 --> 00:16:58,639
+then
+
+413
+00:16:56,240 --> 00:17:00,399
+we start to
+
+414
+00:16:58,639 --> 00:17:02,079
+in a way
+
+415
+00:17:00,399 --> 00:17:04,880
+you can think of that
+
+416
+00:17:02,079 --> 00:17:07,199
+to simulate one
+
+417
+00:17:04,880 --> 00:17:10,079
+m's step
+
+418
+00:17:07,199 --> 00:17:10,079
+simulator one
+
+419
+00:17:11,039 --> 00:17:15,520
+s need
+
+420
+00:17:12,559 --> 00:17:15,520
+so many steps
+
+421
+00:17:15,839 --> 00:17:18,640
+okay
+
+422
+00:17:17,520 --> 00:17:21,520
+so that
+
+423
+00:17:18,640 --> 00:17:22,319
+then that's pretty straightforward that
+
+424
+00:17:21,520 --> 00:17:24,880
+how
+
+425
+00:17:22,319 --> 00:17:26,000
+totally how many steps
+
+426
+00:17:24,880 --> 00:17:28,319
+s
+
+427
+00:17:26,000 --> 00:17:29,440
+need to simulate m to finish the whole
+
+428
+00:17:28,319 --> 00:17:30,880
+job
+
+429
+00:17:29,440 --> 00:17:35,600
+that would be
+
+430
+00:17:30,880 --> 00:17:35,600
+t of n times big of t of n
+
+431
+00:17:38,080 --> 00:17:41,120
+okay
+
+432
+00:17:39,440 --> 00:17:43,679
+so
+
+433
+00:17:41,120 --> 00:17:46,799
+again what is t of
+
+434
+00:17:43,679 --> 00:17:51,679
+what is big o of t of n
+
+435
+00:17:46,799 --> 00:17:54,640
+by definition there exists c and n0
+
+436
+00:17:51,679 --> 00:17:57,039
+and after n0
+
+437
+00:17:54,640 --> 00:17:58,720
+the real exact function you want to
+
+438
+00:17:57,039 --> 00:18:01,919
+describe
+
+439
+00:17:58,720 --> 00:18:05,039
+is equal to or less than c times in this
+
+440
+00:18:01,919 --> 00:18:05,039
+case t of n
+
+441
+00:18:05,120 --> 00:18:09,039
+right
+
+442
+00:18:06,160 --> 00:18:10,480
+and then you multiply t of n on both
+
+443
+00:18:09,039 --> 00:18:13,280
+sides
+
+444
+00:18:10,480 --> 00:18:18,559
+on both sides
+
+445
+00:18:13,280 --> 00:18:19,679
+you get this side become t square n
+
+446
+00:18:18,559 --> 00:18:20,799
+right
+
+447
+00:18:19,679 --> 00:18:22,160
+and then
+
+448
+00:18:20,799 --> 00:18:25,600
+you don't need to
+
+449
+00:18:22,160 --> 00:18:28,400
+find another c and n0 they
+
+450
+00:18:25,600 --> 00:18:31,679
+are still applicable
+
+451
+00:18:28,400 --> 00:18:33,600
+so the whole term the whole term here
+
+452
+00:18:31,679 --> 00:18:34,960
+can be described
+
+453
+00:18:33,600 --> 00:18:37,760
+by
+
+454
+00:18:34,960 --> 00:18:39,520
+big of t square of n
+
+455
+00:18:37,760 --> 00:18:42,799
+that's why so
+
+456
+00:18:39,520 --> 00:18:44,799
+so many steps
+
+457
+00:18:42,799 --> 00:18:46,960
+so using a single type 2 machine to
+
+458
+00:18:44,799 --> 00:18:49,360
+simulate the whole multi-type 2 machine
+
+459
+00:18:46,960 --> 00:18:49,360
+use
+
+460
+00:18:52,160 --> 00:18:55,600
+so many steps
+
+461
+00:18:54,080 --> 00:18:57,840
+okay
+
+462
+00:18:55,600 --> 00:19:00,640
+so initial stage the same thing so
+
+463
+00:18:57,840 --> 00:19:02,720
+that's why it goes to here
+
+464
+00:19:00,640 --> 00:19:05,360
+and assume that
+
+465
+00:19:02,720 --> 00:19:08,799
+t of n is larger than or
+
+466
+00:19:05,360 --> 00:19:08,799
+greater than or equal to n
+
+467
+00:19:09,280 --> 00:19:15,280
+this term dominates this term
+
+468
+00:19:13,120 --> 00:19:19,120
+okay
+
+469
+00:19:15,280 --> 00:19:19,919
+otherwise you will eliminate this one if
+
+470
+00:19:19,120 --> 00:19:21,600
+if
+
+471
+00:19:19,919 --> 00:19:23,120
+there is no such assumption and you
+
+472
+00:19:21,600 --> 00:19:27,360
+don't need the whole tab
+
+473
+00:19:23,120 --> 00:19:30,720
+then this one will be larger okay that's
+
+474
+00:19:27,360 --> 00:19:34,480
+that's not what we want we want to hand
+
+475
+00:19:30,720 --> 00:19:38,080
+deal with non-trivial languages okay
+
+476
+00:19:34,480 --> 00:19:40,480
+so we have this assumption that's why
+
+477
+00:19:38,080 --> 00:19:41,600
+this expression
+
+478
+00:19:40,480 --> 00:19:43,600
+can
+
+479
+00:19:41,600 --> 00:19:45,840
+derive
+
+480
+00:19:43,600 --> 00:19:45,840
+this
+
+481
+00:19:47,360 --> 00:19:50,360
+expression
+
+482
+00:19:59,280 --> 00:20:02,559
+okay so
+
+483
+00:20:00,799 --> 00:20:04,240
+we have that
+
+484
+00:20:02,559 --> 00:20:06,640
+again
+
+485
+00:20:04,240 --> 00:20:10,000
+that t of n be a function and we have
+
+486
+00:20:06,640 --> 00:20:12,400
+this assumption reading the whole input
+
+487
+00:20:10,000 --> 00:20:14,960
+and for every t of n time multi-tap
+
+488
+00:20:12,400 --> 00:20:16,880
+turning machine has an equivalent
+
+489
+00:20:14,960 --> 00:20:19,440
+square
+
+490
+00:20:16,880 --> 00:20:21,280
+to the machine
+
+491
+00:20:19,440 --> 00:20:24,400
+okay
+
+492
+00:20:21,280 --> 00:20:27,600
+but don't uh
+
+493
+00:20:24,400 --> 00:20:31,039
+well you need to correctly impl uh
+
+494
+00:20:27,600 --> 00:20:31,039
+interpret this theorem
+
+495
+00:20:31,760 --> 00:20:36,799
+this is
+
+496
+00:20:32,840 --> 00:20:39,200
+a default case or
+
+497
+00:20:36,799 --> 00:20:42,080
+a safe net
+
+498
+00:20:39,200 --> 00:20:43,919
+that means for every
+
+499
+00:20:42,080 --> 00:20:46,240
+t of n time
+
+500
+00:20:43,919 --> 00:20:48,480
+type to the machine
+
+501
+00:20:46,240 --> 00:20:50,240
+we know that
+
+502
+00:20:48,480 --> 00:20:52,400
+has an equivalent
+
+503
+00:20:50,240 --> 00:20:55,360
+square time transmission
+
+504
+00:20:52,400 --> 00:20:57,360
+uh single type division but
+
+505
+00:20:55,360 --> 00:21:00,320
+this one
+
+506
+00:20:57,360 --> 00:21:02,080
+might not be the best one
+
+507
+00:21:00,320 --> 00:21:05,280
+okay
+
+508
+00:21:02,080 --> 00:21:06,880
+so this theorem only tells tells you
+
+509
+00:21:05,280 --> 00:21:08,480
+there is
+
+510
+00:21:06,880 --> 00:21:11,120
+an equivalent
+
+511
+00:21:08,480 --> 00:21:11,919
+square time to a machine
+
+512
+00:21:11,120 --> 00:21:14,880
+but
+
+513
+00:21:11,919 --> 00:21:17,520
+this theorem doesn't tell you that
+
+514
+00:21:14,880 --> 00:21:19,280
+the square time tube machine is the best
+
+515
+00:21:17,520 --> 00:21:21,919
+one no
+
+516
+00:21:19,280 --> 00:21:24,960
+you can go back to see the
+
+517
+00:21:21,919 --> 00:21:27,120
+to see the example we just have
+
+518
+00:21:24,960 --> 00:21:27,120
+see
+
+519
+00:21:28,080 --> 00:21:35,440
+use a two type two machine m3
+
+520
+00:21:31,600 --> 00:21:37,520
+we know that the longing time
+
+521
+00:21:35,440 --> 00:21:38,960
+is big off and
+
+522
+00:21:37,520 --> 00:21:40,880
+right
+
+523
+00:21:38,960 --> 00:21:45,120
+in a way
+
+524
+00:21:40,880 --> 00:21:47,360
+m3 the running time of m3
+
+525
+00:21:45,120 --> 00:21:49,840
+is something like n
+
+526
+00:21:47,360 --> 00:21:51,760
+okay maybe some constant but something
+
+527
+00:21:49,840 --> 00:21:54,480
+like n
+
+528
+00:21:51,760 --> 00:21:56,480
+so by using
+
+529
+00:21:54,480 --> 00:21:59,919
+theorem 7.8
+
+530
+00:21:56,480 --> 00:22:01,120
+you will have an n square
+
+531
+00:21:59,919 --> 00:22:02,159
+two machine
+
+532
+00:22:01,120 --> 00:22:03,520
+okay
+
+533
+00:22:02,159 --> 00:22:06,240
+so
+
+534
+00:22:03,520 --> 00:22:08,400
+that this is as much as this theorem
+
+535
+00:22:06,240 --> 00:22:12,640
+tells us nothing more
+
+536
+00:22:08,400 --> 00:22:13,840
+okay this theorem doesn't tell you that
+
+537
+00:22:12,640 --> 00:22:17,600
+these
+
+538
+00:22:13,840 --> 00:22:20,720
+two machine is the best one no
+
+539
+00:22:17,600 --> 00:22:24,559
+so for this example we can better this
+
+540
+00:22:20,720 --> 00:22:27,520
+we can design a better tube machine m2
+
+541
+00:22:24,559 --> 00:22:30,320
+which is better than performed performs
+
+542
+00:22:27,520 --> 00:22:32,720
+better than n squared right which is n
+
+543
+00:22:30,320 --> 00:22:34,720
+log n
+
+544
+00:22:32,720 --> 00:22:37,200
+so
+
+545
+00:22:34,720 --> 00:22:38,640
+theorem 7.8
+
+546
+00:22:37,200 --> 00:22:42,159
+tells that
+
+547
+00:22:38,640 --> 00:22:44,320
+you can uh you can think of it this way
+
+548
+00:22:42,159 --> 00:22:46,400
+for the worst case
+
+549
+00:22:44,320 --> 00:22:48,400
+we have a squared
+
+550
+00:22:46,400 --> 00:22:49,360
+single type two machine that's the worst
+
+551
+00:22:48,400 --> 00:22:51,919
+case
+
+552
+00:22:49,360 --> 00:22:55,760
+but can you have a better one maybe
+
+553
+00:22:51,919 --> 00:22:58,320
+maybe not but this one
+
+554
+00:22:55,760 --> 00:23:01,360
+you always have
+
+555
+00:22:58,320 --> 00:23:01,360
+by hand okay
+
+556
+00:23:02,799 --> 00:23:06,799
+okay so that's the relationship
+
+557
+00:23:06,880 --> 00:23:11,600
+between a time complexity relationship
+
+558
+00:23:09,679 --> 00:23:13,360
+between single capturing machine and the
+
+559
+00:23:11,600 --> 00:23:15,440
+multi-type 2 machine
+
+560
+00:23:13,360 --> 00:23:16,400
+okay
+
+561
+00:23:15,440 --> 00:23:18,640
+then
+
+562
+00:23:16,400 --> 00:23:20,960
+we want to uh
+
+563
+00:23:18,640 --> 00:23:22,960
+check the non-deterministic machine
+
+564
+00:23:20,960 --> 00:23:24,640
+but for non-deterministic machine we
+
+565
+00:23:22,960 --> 00:23:27,280
+firstly need to
+
+566
+00:23:24,640 --> 00:23:29,679
+define a running time for the wrong uh
+
+567
+00:23:27,280 --> 00:23:32,240
+multi-tech uh sorry
+
+568
+00:23:29,679 --> 00:23:35,280
+non-deterministic machine
+
+569
+00:23:32,240 --> 00:23:37,840
+why remember that for determining
+
+570
+00:23:35,280 --> 00:23:37,840
+machine
+
+571
+00:23:38,080 --> 00:23:41,679
+the computational path is like you start
+
+572
+00:23:40,559 --> 00:23:44,720
+from the
+
+573
+00:23:41,679 --> 00:23:47,360
+starting configuration and finally you
+
+574
+00:23:44,720 --> 00:23:50,080
+get accept or reject
+
+575
+00:23:47,360 --> 00:23:53,120
+right
+
+576
+00:23:50,080 --> 00:23:56,240
+and in this case there's no
+
+577
+00:23:53,120 --> 00:23:56,240
+problem that
+
+578
+00:23:58,320 --> 00:24:03,440
+because the language is decidable the
+
+579
+00:24:00,480 --> 00:24:06,080
+machine always stops and there's no
+
+580
+00:24:03,440 --> 00:24:06,080
+problem with
+
+581
+00:24:06,240 --> 00:24:10,320
+the definition of the running time
+
+582
+00:24:08,880 --> 00:24:13,360
+and of course we said that for
+
+583
+00:24:10,320 --> 00:24:16,240
+particular length
+
+584
+00:24:13,360 --> 00:24:18,880
+we stay the running times the maximum
+
+585
+00:24:16,240 --> 00:24:22,000
+number of all possible to
+
+586
+00:24:18,880 --> 00:24:24,480
+all possible input strings right
+
+587
+00:24:22,000 --> 00:24:25,919
+but for the case of non-deterministic
+
+588
+00:24:24,480 --> 00:24:27,840
+machine
+
+589
+00:24:25,919 --> 00:24:30,400
+even for one
+
+590
+00:24:27,840 --> 00:24:30,400
+the same
+
+591
+00:24:30,960 --> 00:24:34,960
+input stream
+
+592
+00:24:32,320 --> 00:24:37,200
+you actually have many computational
+
+593
+00:24:34,960 --> 00:24:39,840
+branches like this
+
+594
+00:24:37,200 --> 00:24:40,720
+okay so
+
+595
+00:24:39,840 --> 00:24:43,840
+is
+
+596
+00:24:40,720 --> 00:24:46,720
+this one count as
+
+597
+00:24:43,840 --> 00:24:50,000
+computational steps or this one or this
+
+598
+00:24:46,720 --> 00:24:52,320
+one or this one or some other ones so we
+
+599
+00:24:50,000 --> 00:24:54,480
+need to define that
+
+600
+00:24:52,320 --> 00:24:54,480
+so
+
+601
+00:24:55,120 --> 00:24:58,559
+we
+
+602
+00:24:56,159 --> 00:24:58,559
+define
+
+603
+00:24:59,360 --> 00:25:02,480
+also the
+
+604
+00:25:01,039 --> 00:25:03,520
+worst case
+
+605
+00:25:02,480 --> 00:25:05,760
+okay
+
+606
+00:25:03,520 --> 00:25:08,559
+so you can we consider
+
+607
+00:25:05,760 --> 00:25:10,799
+the longest the computational path
+
+608
+00:25:08,559 --> 00:25:14,559
+so the worst case
+
+609
+00:25:10,799 --> 00:25:18,080
+so we define the running time for a
+
+610
+00:25:14,559 --> 00:25:18,080
+non-deterministic machine n
+
+611
+00:25:18,159 --> 00:25:22,640
+is also
+
+612
+00:25:19,679 --> 00:25:25,840
+a function from positive
+
+613
+00:25:22,640 --> 00:25:28,720
+financial number to natural number
+
+614
+00:25:25,840 --> 00:25:29,840
+and f of n is the maximum number of
+
+615
+00:25:28,720 --> 00:25:33,919
+steps
+
+616
+00:25:29,840 --> 00:25:37,120
+that n okay here
+
+617
+00:25:33,919 --> 00:25:38,640
+use this on any branches of its
+
+618
+00:25:37,120 --> 00:25:41,360
+computation
+
+619
+00:25:38,640 --> 00:25:43,039
+okay on any input of
+
+620
+00:25:41,360 --> 00:25:45,679
+length n
+
+621
+00:25:43,039 --> 00:25:48,720
+so for non-deterministic computation
+
+622
+00:25:45,679 --> 00:25:48,720
+we add
+
+623
+00:25:49,760 --> 00:25:54,240
+this part
+
+624
+00:25:51,279 --> 00:25:55,919
+to the definition
+
+625
+00:25:54,240 --> 00:25:58,720
+of course we can also use this
+
+626
+00:25:55,919 --> 00:26:01,360
+definition in determining machine
+
+627
+00:25:58,720 --> 00:26:03,919
+because there's there's only one branch
+
+628
+00:26:01,360 --> 00:26:07,120
+of computation okay so that's that also
+
+629
+00:26:03,919 --> 00:26:08,080
+applies to deterministic machine
+
+630
+00:26:07,120 --> 00:26:11,760
+okay
+
+631
+00:26:08,080 --> 00:26:14,400
+then after define this we now have a
+
+632
+00:26:11,760 --> 00:26:15,679
+clear understanding regarding
+
+633
+00:26:14,400 --> 00:26:17,600
+the
+
+634
+00:26:15,679 --> 00:26:20,640
+uh complete
+
+635
+00:26:17,600 --> 00:26:23,440
+time complexity or running time of
+
+636
+00:26:20,640 --> 00:26:24,960
+a non-deterministic machine
+
+637
+00:26:23,440 --> 00:26:27,760
+so then
+
+638
+00:26:24,960 --> 00:26:30,480
+theorem 7.11
+
+639
+00:26:27,760 --> 00:26:33,760
+that's t of n be a function
+
+640
+00:26:30,480 --> 00:26:35,360
+where t of n is equal to or greater than
+
+641
+00:26:33,760 --> 00:26:38,120
+n
+
+642
+00:26:35,360 --> 00:26:40,320
+every t of n time
+
+643
+00:26:38,120 --> 00:26:41,679
+non-determinative a single capital
+
+644
+00:26:40,320 --> 00:26:45,360
+machine
+
+645
+00:26:41,679 --> 00:26:45,360
+has an equivalent
+
+646
+00:26:45,440 --> 00:26:53,120
+q to the power of big o of t of n times
+
+647
+00:26:50,400 --> 00:26:56,000
+deterministic machine
+
+648
+00:26:53,120 --> 00:26:58,240
+and still remember that that's the worst
+
+649
+00:26:56,000 --> 00:27:01,600
+case at least that you can have a
+
+650
+00:26:58,240 --> 00:27:04,480
+deterministic machine act as this
+
+651
+00:27:01,600 --> 00:27:07,520
+but can you have better one maybe maybe
+
+652
+00:27:04,480 --> 00:27:08,320
+not but at least you have this one okay
+
+653
+00:27:07,520 --> 00:27:11,679
+don't
+
+654
+00:27:08,320 --> 00:27:11,679
+be confused with the
+
+655
+00:27:12,480 --> 00:27:16,720
+meaning of the theorem here
+
+656
+00:27:14,480 --> 00:27:16,720
+okay
+
+657
+00:27:17,039 --> 00:27:20,480
+then how do we
+
+658
+00:27:19,440 --> 00:27:21,919
+how do we
+
+659
+00:27:20,480 --> 00:27:25,760
+prove that
+
+660
+00:27:21,919 --> 00:27:27,440
+well the the proof is also go uh use the
+
+661
+00:27:25,760 --> 00:27:30,799
+simulation
+
+662
+00:27:27,440 --> 00:27:33,679
+provided in theorem 3.16
+
+663
+00:27:30,799 --> 00:27:36,159
+so the uh the textbook use the three
+
+664
+00:27:33,679 --> 00:27:38,720
+type two machine to simulate the
+
+665
+00:27:36,159 --> 00:27:41,760
+non-vitamin two machine
+
+666
+00:27:38,720 --> 00:27:43,840
+and calculate how many steps
+
+667
+00:27:41,760 --> 00:27:46,640
+needed by the single tattoo mesh
+
+668
+00:27:43,840 --> 00:27:48,799
+deterministic machine to simulate the
+
+669
+00:27:46,640 --> 00:27:49,919
+non-deterministic version
+
+670
+00:27:48,799 --> 00:27:52,159
+okay
+
+671
+00:27:49,919 --> 00:27:52,159
+but
+
+672
+00:27:53,039 --> 00:27:57,360
+it's kind of
+
+673
+00:27:54,640 --> 00:27:57,360
+easy to
+
+674
+00:27:57,520 --> 00:28:00,080
+really uh
+
+675
+00:28:00,960 --> 00:28:05,919
+to think about
+
+676
+00:28:02,960 --> 00:28:05,919
+what i uh
+
+677
+00:28:06,880 --> 00:28:09,840
+proposed to
+
+678
+00:28:08,159 --> 00:28:12,159
+simulate the
+
+679
+00:28:09,840 --> 00:28:14,559
+non-deterministic machine right so what
+
+680
+00:28:12,159 --> 00:28:17,679
+i said is that
+
+681
+00:28:14,559 --> 00:28:18,880
+you make the tape as a queue
+
+682
+00:28:17,679 --> 00:28:20,640
+and then
+
+683
+00:28:18,880 --> 00:28:22,720
+from this
+
+684
+00:28:20,640 --> 00:28:24,880
+from this configuration you know there
+
+685
+00:28:22,720 --> 00:28:27,679
+will be this configuration and this
+
+686
+00:28:24,880 --> 00:28:30,679
+configuration you push into the queue
+
+687
+00:28:27,679 --> 00:28:30,679
+then
+
+688
+00:28:31,840 --> 00:28:34,799
+like
+
+689
+00:28:33,120 --> 00:28:36,960
+this one and
+
+690
+00:28:34,799 --> 00:28:38,480
+then you pop
+
+691
+00:28:36,960 --> 00:28:41,360
+the left
+
+692
+00:28:38,480 --> 00:28:43,120
+congregation you know there are three
+
+693
+00:28:41,360 --> 00:28:44,480
+and you push into the queue then you
+
+694
+00:28:43,120 --> 00:28:46,480
+traverse this one
+
+695
+00:28:44,480 --> 00:28:50,159
+and you have these two
+
+696
+00:28:46,480 --> 00:28:52,720
+and then you suffering from it
+
+697
+00:28:50,159 --> 00:28:53,760
+so basically you can think of the whole
+
+698
+00:28:52,720 --> 00:28:55,600
+thing
+
+699
+00:28:53,760 --> 00:28:56,960
+is a b
+
+700
+00:28:55,600 --> 00:28:59,120
+f s
+
+701
+00:28:56,960 --> 00:29:02,399
+right it's a bread
+
+702
+00:28:59,120 --> 00:29:04,080
+a breast burst search
+
+703
+00:29:02,399 --> 00:29:06,320
+so
+
+704
+00:29:04,080 --> 00:29:09,760
+the whole simulation thing is a tree
+
+705
+00:29:06,320 --> 00:29:13,480
+surge so it depends on how many
+
+706
+00:29:09,760 --> 00:29:13,480
+nodes of the tree
+
+707
+00:29:13,840 --> 00:29:16,480
+okay
+
+708
+00:29:15,039 --> 00:29:18,000
+so
+
+709
+00:29:16,480 --> 00:29:19,919
+in this
+
+710
+00:29:18,000 --> 00:29:22,559
+way you can understand
+
+711
+00:29:19,919 --> 00:29:24,840
+the analysis
+
+712
+00:29:22,559 --> 00:29:26,799
+here
+
+713
+00:29:24,840 --> 00:29:28,240
+okay so
+
+714
+00:29:26,799 --> 00:29:30,720
+let's make a
+
+715
+00:29:28,240 --> 00:29:32,880
+upper bound estimation
+
+716
+00:29:30,720 --> 00:29:35,120
+we that b
+
+717
+00:29:32,880 --> 00:29:37,919
+is the maximum number
+
+718
+00:29:35,120 --> 00:29:40,559
+of the legal choices given by n's
+
+719
+00:29:37,919 --> 00:29:41,679
+transition function
+
+720
+00:29:40,559 --> 00:29:43,279
+that means
+
+721
+00:29:41,679 --> 00:29:45,919
+for some
+
+722
+00:29:43,279 --> 00:29:48,240
+transition there may be like uh three
+
+723
+00:29:45,919 --> 00:29:51,840
+choices and for some
+
+724
+00:29:48,240 --> 00:29:55,200
+transition that mean maybe two choices
+
+725
+00:29:51,840 --> 00:29:56,000
+and for some transition maybe
+
+726
+00:29:55,200 --> 00:29:57,360
+like
+
+727
+00:29:56,000 --> 00:29:59,440
+four choices
+
+728
+00:29:57,360 --> 00:30:02,480
+and assume that four
+
+729
+00:29:59,440 --> 00:30:03,440
+is the maximum number so we say that's b
+
+730
+00:30:02,480 --> 00:30:07,360
+here
+
+731
+00:30:03,440 --> 00:30:08,799
+we won't just want to estimate
+
+732
+00:30:07,360 --> 00:30:10,720
+the upper bound
+
+733
+00:30:08,799 --> 00:30:12,159
+of the three node number of the three
+
+734
+00:30:10,720 --> 00:30:13,200
+nodes
+
+735
+00:30:12,159 --> 00:30:15,600
+okay
+
+736
+00:30:13,200 --> 00:30:18,480
+so since b is the
+
+737
+00:30:15,600 --> 00:30:19,840
+let's say branching factor for you know
+
+738
+00:30:18,480 --> 00:30:23,919
+ai or
+
+739
+00:30:19,840 --> 00:30:26,320
+data structure chorus terms
+
+740
+00:30:23,919 --> 00:30:28,159
+the total number of leaves in the tree
+
+741
+00:30:26,320 --> 00:30:28,960
+is at most
+
+742
+00:30:28,159 --> 00:30:31,360
+b
+
+743
+00:30:28,960 --> 00:30:33,200
+to the
+
+744
+00:30:31,360 --> 00:30:36,559
+power of t of n
+
+745
+00:30:33,200 --> 00:30:39,520
+right that's pretty
+
+746
+00:30:36,559 --> 00:30:40,799
+straightforward because
+
+747
+00:30:39,520 --> 00:30:44,480
+in this case
+
+748
+00:30:40,799 --> 00:30:46,399
+the height is t of n right so how many
+
+749
+00:30:44,480 --> 00:30:48,399
+nodes in a tree
+
+750
+00:30:46,399 --> 00:30:51,120
+we actually we don't want to calculate
+
+751
+00:30:48,399 --> 00:30:51,840
+the same number but
+
+752
+00:30:51,120 --> 00:30:55,520
+b
+
+753
+00:30:51,840 --> 00:30:57,200
+to the power of t of n is no doubt the
+
+754
+00:30:55,520 --> 00:30:59,440
+upper bound
+
+755
+00:30:57,200 --> 00:31:02,159
+one over the upper bound for the number
+
+756
+00:30:59,440 --> 00:31:05,039
+of three nodes right
+
+757
+00:31:02,159 --> 00:31:08,799
+so as soon as we need another zoom we
+
+758
+00:31:05,039 --> 00:31:09,919
+actually need to go through every node
+
+759
+00:31:08,799 --> 00:31:11,679
+right
+
+760
+00:31:09,919 --> 00:31:14,159
+so
+
+761
+00:31:11,679 --> 00:31:14,159
+when we
+
+762
+00:31:15,519 --> 00:31:19,760
+the simulation like like i said the
+
+763
+00:31:18,640 --> 00:31:22,240
+simulation
+
+764
+00:31:19,760 --> 00:31:25,760
+explore in the tree
+
+765
+00:31:22,240 --> 00:31:26,880
+by using breakfast
+
+766
+00:31:25,760 --> 00:31:28,559
+search
+
+767
+00:31:26,880 --> 00:31:31,200
+process
+
+768
+00:31:28,559 --> 00:31:31,200
+okay so
+
+769
+00:31:31,519 --> 00:31:34,480
+how many uh
+
+770
+00:31:38,640 --> 00:31:44,480
+we can bounce the whole computation
+
+771
+00:31:42,000 --> 00:31:45,600
+and then
+
+772
+00:31:44,480 --> 00:31:49,519
+to try
+
+773
+00:31:45,600 --> 00:31:49,519
+to drop to from the
+
+774
+00:31:51,519 --> 00:31:56,240
+from the root note
+
+775
+00:31:53,360 --> 00:31:57,600
+to travel down
+
+776
+00:31:56,240 --> 00:31:59,120
+the whole thing
+
+777
+00:31:57,600 --> 00:32:01,760
+by
+
+778
+00:31:59,120 --> 00:32:02,640
+the single tattoo machine
+
+779
+00:32:01,760 --> 00:32:05,360
+we
+
+780
+00:32:02,640 --> 00:32:05,360
+need to take
+
+781
+00:32:07,360 --> 00:32:12,240
+a
+
+782
+00:32:08,799 --> 00:32:12,240
+big go of t of n
+
+783
+00:32:13,279 --> 00:32:17,519
+okay starting from a little note and
+
+784
+00:32:14,880 --> 00:32:17,519
+traveling down
+
+785
+00:32:18,559 --> 00:32:23,600
+is uh
+
+786
+00:32:19,919 --> 00:32:23,600
+for the for the uh
+
+787
+00:32:25,200 --> 00:32:29,440
+for level four uh sorry for the
+
+788
+00:32:27,840 --> 00:32:31,840
+virtual machine
+
+789
+00:32:29,440 --> 00:32:32,960
+so running time of d
+
+790
+00:32:31,840 --> 00:32:36,080
+of the
+
+791
+00:32:32,960 --> 00:32:37,039
+dimensional machine we need to simulate
+
+792
+00:32:36,080 --> 00:32:38,640
+n
+
+793
+00:32:37,039 --> 00:32:41,440
+is of course
+
+794
+00:32:38,640 --> 00:32:42,399
+big o of t
+
+795
+00:32:41,440 --> 00:32:44,399
+of n
+
+796
+00:32:42,399 --> 00:32:47,279
+times
+
+797
+00:32:44,399 --> 00:32:50,799
+so many nodes
+
+798
+00:32:47,279 --> 00:32:50,799
+right so many nodes
+
+799
+00:32:51,679 --> 00:32:55,840
+so finally
+
+800
+00:32:53,200 --> 00:32:57,120
+we change the base of the exponential
+
+801
+00:32:55,840 --> 00:33:01,600
+time
+
+802
+00:32:57,120 --> 00:33:02,880
+component we get this expression
+
+803
+00:33:01,600 --> 00:33:04,000
+okay
+
+804
+00:33:02,880 --> 00:33:05,440
+and
+
+805
+00:33:04,000 --> 00:33:07,919
+of course we don't
+
+806
+00:33:05,440 --> 00:33:08,960
+we actually don't need a
+
+807
+00:33:07,919 --> 00:33:10,880
+further
+
+808
+00:33:08,960 --> 00:33:13,120
+discussion if we
+
+809
+00:33:10,880 --> 00:33:16,559
+consider the breakfast search and
+
+810
+00:33:13,120 --> 00:33:19,200
+traversal the whole the whole tree
+
+811
+00:33:16,559 --> 00:33:20,399
+so we will have this one but
+
+812
+00:33:19,200 --> 00:33:24,120
+since the
+
+813
+00:33:20,399 --> 00:33:24,120
+proof of the textbook
+
+814
+00:33:28,399 --> 00:33:33,279
+the proof of the textbook
+
+815
+00:33:30,480 --> 00:33:36,159
+established and simulates the
+
+816
+00:33:33,279 --> 00:33:39,440
+non-deterministic
+
+817
+00:33:36,159 --> 00:33:41,840
+turing machine with a three
+
+818
+00:33:39,440 --> 00:33:43,519
+three tape two machine
+
+819
+00:33:41,840 --> 00:33:45,919
+so after
+
+820
+00:33:43,519 --> 00:33:47,760
+it's derived this
+
+821
+00:33:45,919 --> 00:33:50,480
+expression
+
+822
+00:33:47,760 --> 00:33:52,000
+it needs to consult back
+
+823
+00:33:50,480 --> 00:33:54,000
+to
+
+824
+00:33:52,000 --> 00:33:56,320
+uh okay now this one
+
+825
+00:33:54,000 --> 00:33:58,799
+to the
+
+826
+00:33:56,320 --> 00:34:02,080
+theorem seven point eight here
+
+827
+00:33:58,799 --> 00:34:05,640
+so there is a square here okay
+
+828
+00:34:02,080 --> 00:34:05,640
+so that's why
+
+829
+00:34:08,000 --> 00:34:11,520
+we need
+
+830
+00:34:09,679 --> 00:34:13,280
+this one
+
+831
+00:34:11,520 --> 00:34:14,879
+squared
+
+832
+00:34:13,280 --> 00:34:17,359
+okay
+
+833
+00:34:14,879 --> 00:34:20,879
+so since this one squared so the square
+
+834
+00:34:17,359 --> 00:34:24,240
+goes back to this one we got this one
+
+835
+00:34:20,879 --> 00:34:26,000
+and the two here is you know constant so
+
+836
+00:34:24,240 --> 00:34:28,079
+go back to the
+
+837
+00:34:26,000 --> 00:34:29,440
+expression so the same thing
+
+838
+00:34:28,079 --> 00:34:32,720
+so we know that
+
+839
+00:34:29,440 --> 00:34:35,919
+if uh for a non-deterministic machine
+
+840
+00:34:32,720 --> 00:34:38,240
+for non-deterministic machine
+
+841
+00:34:35,919 --> 00:34:40,879
+if you have a t of n-time
+
+842
+00:34:38,240 --> 00:34:44,320
+non-deterministic machine
+
+843
+00:34:40,879 --> 00:34:46,800
+in the worst case you will have a 2
+
+844
+00:34:44,320 --> 00:34:48,960
+to the big goal of t of n-time
+
+845
+00:34:46,800 --> 00:34:51,079
+deterministic deterministic machine
+
+846
+00:34:48,960 --> 00:34:54,079
+okay so that would be a
+
+847
+00:34:51,079 --> 00:34:55,760
+exponentially different
+
+848
+00:34:54,079 --> 00:34:58,880
+two machine
+
+849
+00:34:55,760 --> 00:35:01,280
+uh running time intermission and don't
+
+850
+00:34:58,880 --> 00:35:02,720
+forget that two here is not really two
+
+851
+00:35:01,280 --> 00:35:05,839
+it's a
+
+852
+00:35:02,720 --> 00:35:08,640
+we just we just want to emphasize that
+
+853
+00:35:05,839 --> 00:35:11,520
+this term goes to
+
+854
+00:35:08,640 --> 00:35:15,280
+exponential part
+
+855
+00:35:11,520 --> 00:35:17,119
+and 2 here is just a placeholder
+
+856
+00:35:15,280 --> 00:35:18,960
+there are some
+
+857
+00:35:17,119 --> 00:35:21,359
+number there
+
+858
+00:35:18,960 --> 00:35:23,680
+we don't care about which number it is
+
+859
+00:35:21,359 --> 00:35:25,680
+but we know there's a number there but
+
+860
+00:35:23,680 --> 00:35:29,040
+we have to have something there so we
+
+861
+00:35:25,680 --> 00:35:31,680
+write a 2 there okay the 2 there is not
+
+862
+00:35:29,040 --> 00:35:33,280
+really two it's just a placeholder for
+
+863
+00:35:31,680 --> 00:35:35,839
+some numbers
+
+864
+00:35:33,280 --> 00:35:38,560
+and anyway we know that the term here
+
+865
+00:35:35,839 --> 00:35:41,520
+will goes to
+
+866
+00:35:38,560 --> 00:35:42,720
+exponential part
+
+867
+00:35:41,520 --> 00:35:45,200
+remember
+
+868
+00:35:42,720 --> 00:35:48,240
+in the worst case
+
+869
+00:35:45,200 --> 00:35:48,240
+is it possible
+
+870
+00:35:48,640 --> 00:35:53,680
+is it possible
+
+871
+00:35:50,720 --> 00:35:55,920
+we have a better better situation maybe
+
+872
+00:35:53,680 --> 00:35:55,920
+but
+
+873
+00:35:57,040 --> 00:36:01,040
+the worst case is like this
+
+874
+00:35:59,440 --> 00:36:02,880
+okay
+
+875
+00:36:01,040 --> 00:36:04,800
+then after the
+
+876
+00:36:02,880 --> 00:36:07,680
+uh
+
+877
+00:36:04,800 --> 00:36:10,480
+discussion on the time complexity
+
+878
+00:36:07,680 --> 00:36:12,800
+among different
+
+879
+00:36:10,480 --> 00:36:16,079
+variants of two machine
+
+880
+00:36:12,800 --> 00:36:16,079
+we basically know that
+
+881
+00:36:18,000 --> 00:36:21,920
+single type two machine and the
+
+882
+00:36:19,599 --> 00:36:24,640
+multi-temporary machine
+
+883
+00:36:21,920 --> 00:36:27,839
+we have at most remember that at the
+
+884
+00:36:24,640 --> 00:36:31,200
+most maybe better but at most
+
+885
+00:36:27,839 --> 00:36:33,839
+and most a polynomial difference why
+
+886
+00:36:31,200 --> 00:36:34,960
+because if you have t of n turing
+
+887
+00:36:33,839 --> 00:36:38,640
+machine
+
+888
+00:36:34,960 --> 00:36:41,520
+you will have a big o of t square and
+
+889
+00:36:38,640 --> 00:36:43,599
+tuned machine at most
+
+890
+00:36:41,520 --> 00:36:47,119
+maybe you have better one but at most
+
+891
+00:36:43,599 --> 00:36:49,920
+this one right that's the worst case
+
+892
+00:36:47,119 --> 00:36:53,200
+and for non-deterministic machine if you
+
+893
+00:36:49,920 --> 00:36:54,800
+have a t of non-deterministic machine
+
+894
+00:36:53,200 --> 00:36:56,000
+at most
+
+895
+00:36:54,800 --> 00:36:58,160
+it is an
+
+896
+00:36:56,000 --> 00:36:59,599
+exponential difference
+
+897
+00:36:58,160 --> 00:37:00,720
+and you will have
+
+898
+00:36:59,599 --> 00:37:03,280
+to
+
+899
+00:37:00,720 --> 00:37:03,280
+truly
+
+900
+00:37:03,359 --> 00:37:06,240
+be go of t of n
+
+901
+00:37:04,880 --> 00:37:07,440
+your machine here
+
+902
+00:37:06,240 --> 00:37:10,400
+okay
+
+903
+00:37:07,440 --> 00:37:12,640
+maybe you will have better one but
+
+904
+00:37:10,400 --> 00:37:14,880
+that's the worst case
+
+905
+00:37:12,640 --> 00:37:14,880
+so
+
+906
+00:37:15,839 --> 00:37:21,920
+goes let's go back to what we
+
+907
+00:37:18,800 --> 00:37:24,400
+uh to the to why we want to investigate
+
+908
+00:37:21,920 --> 00:37:26,720
+the relationship among different
+
+909
+00:37:24,400 --> 00:37:29,760
+variants of turing machine
+
+910
+00:37:26,720 --> 00:37:33,760
+because if you you use different type 2
+
+911
+00:37:29,760 --> 00:37:37,280
+machine and you get different
+
+912
+00:37:33,760 --> 00:37:40,480
+results different calculated result then
+
+913
+00:37:37,280 --> 00:37:43,119
+you you cannot compare them and
+
+914
+00:37:40,480 --> 00:37:43,119
+for example
+
+915
+00:37:46,640 --> 00:37:50,800
+someone says that
+
+916
+00:37:48,240 --> 00:37:51,920
+for length for language
+
+917
+00:37:50,800 --> 00:37:55,920
+a
+
+918
+00:37:51,920 --> 00:37:58,240
+it uh we can handle that by
+
+919
+00:37:55,920 --> 00:37:59,760
+like a linear time and someone say no
+
+920
+00:37:58,240 --> 00:38:02,240
+it's n log n
+
+921
+00:37:59,760 --> 00:38:04,640
+but they are using different type of
+
+922
+00:38:02,240 --> 00:38:07,520
+machines then it's really different
+
+923
+00:38:04,640 --> 00:38:07,520
+difficult to
+
+924
+00:38:08,640 --> 00:38:14,720
+unify unify all these possible results
+
+925
+00:38:13,200 --> 00:38:16,839
+that's very bad
+
+926
+00:38:14,720 --> 00:38:20,800
+for
+
+927
+00:38:16,839 --> 00:38:23,040
+uh theoretical development okay
+
+928
+00:38:20,800 --> 00:38:23,040
+so
+
+929
+00:38:23,440 --> 00:38:28,880
+in light of what we know here we know
+
+930
+00:38:26,240 --> 00:38:31,200
+that uh single type two machine material
+
+931
+00:38:28,880 --> 00:38:33,200
+type two machine at most polynomial
+
+932
+00:38:31,200 --> 00:38:35,040
+difference and the determination
+
+933
+00:38:33,200 --> 00:38:36,720
+non-deterministic machine at the most
+
+934
+00:38:35,040 --> 00:38:38,640
+exponential difference
+
+935
+00:38:36,720 --> 00:38:41,040
+and then
+
+936
+00:38:38,640 --> 00:38:44,400
+basically we consider
+
+937
+00:38:41,040 --> 00:38:47,040
+polynomial differences in running time
+
+938
+00:38:44,400 --> 00:38:48,160
+is you know small
+
+939
+00:38:47,040 --> 00:38:50,480
+in a way
+
+940
+00:38:48,160 --> 00:38:50,480
+where
+
+941
+00:38:51,119 --> 00:38:55,680
+exponential difference considered large
+
+942
+00:38:53,760 --> 00:38:57,839
+why why do we want to think though
+
+943
+00:38:55,680 --> 00:38:58,960
+because it's pretty easy
+
+944
+00:38:57,839 --> 00:39:01,599
+for
+
+945
+00:38:58,960 --> 00:39:03,119
+for us to see the uh the growth the
+
+946
+00:39:01,599 --> 00:39:06,560
+growth rate
+
+947
+00:39:03,119 --> 00:39:08,079
+for example let's say n cubic and the
+
+948
+00:39:06,560 --> 00:39:11,440
+two to the n
+
+949
+00:39:08,079 --> 00:39:14,800
+so you say okay uh let's say and cubic
+
+950
+00:39:11,440 --> 00:39:17,040
+for n equal to one that'll be one
+
+951
+00:39:14,800 --> 00:39:18,079
+and two right so
+
+952
+00:39:17,040 --> 00:39:20,960
+n
+
+953
+00:39:18,079 --> 00:39:22,320
+one and equal to two then you've got
+
+954
+00:39:20,960 --> 00:39:24,480
+eight
+
+955
+00:39:22,320 --> 00:39:25,200
+uh sorry a other
+
+956
+00:39:24,480 --> 00:39:26,480
+and
+
+957
+00:39:25,200 --> 00:39:27,440
+four
+
+958
+00:39:26,480 --> 00:39:31,920
+right
+
+959
+00:39:27,440 --> 00:39:34,000
+and equal to 3 that'll be what 27
+
+960
+00:39:31,920 --> 00:39:35,520
+pretty fast but
+
+961
+00:39:34,000 --> 00:39:40,000
+and you see
+
+962
+00:39:35,520 --> 00:39:40,000
+it seems slow but actually
+
+963
+00:39:40,160 --> 00:39:44,240
+let's say n equal to one thousand what
+
+964
+00:39:43,280 --> 00:39:46,480
+is that
+
+965
+00:39:44,240 --> 00:39:49,520
+it's pretty easy to write this right
+
+966
+00:39:46,480 --> 00:39:51,839
+that would be nine zero
+
+967
+00:39:49,520 --> 00:39:53,839
+what is nine zero
+
+968
+00:39:51,839 --> 00:39:54,640
+thousand million right
+
+969
+00:39:53,839 --> 00:39:58,079
+but
+
+970
+00:39:54,640 --> 00:39:58,079
+how large is this part
+
+971
+00:39:58,400 --> 00:40:02,720
+i i don't know i don't even want to
+
+972
+00:40:00,480 --> 00:40:06,400
+write it right because
+
+973
+00:40:02,720 --> 00:40:09,440
+that's we can calculate how many digits
+
+974
+00:40:06,400 --> 00:40:10,720
+remember that log
+
+975
+00:40:09,440 --> 00:40:13,280
+10 bit
+
+976
+00:40:10,720 --> 00:40:14,319
+base 10 right two what is the number
+
+977
+00:40:13,280 --> 00:40:15,119
+here
+
+978
+00:40:14,319 --> 00:40:17,359
+like
+
+979
+00:40:15,119 --> 00:40:18,400
+this one
+
+980
+00:40:17,359 --> 00:40:22,800
+and
+
+981
+00:40:18,400 --> 00:40:22,800
+one thousand so you got one thousand
+
+982
+00:40:23,119 --> 00:40:28,240
+and the plus one will be 302. what is
+
+983
+00:40:25,920 --> 00:40:31,119
+302
+
+984
+00:40:28,240 --> 00:40:33,359
+2 to the 1000 the
+
+985
+00:40:31,119 --> 00:40:34,240
+value the number here
+
+986
+00:40:33,359 --> 00:40:36,839
+has
+
+987
+00:40:34,240 --> 00:40:38,720
+302
+
+988
+00:40:36,839 --> 00:40:39,680
+digits
+
+989
+00:40:38,720 --> 00:40:41,200
+okay
+
+990
+00:40:39,680 --> 00:40:44,319
+that's why
+
+991
+00:40:41,200 --> 00:40:45,280
+we consider exponential differences
+
+992
+00:40:44,319 --> 00:40:47,680
+large
+
+993
+00:40:45,280 --> 00:40:51,599
+because the growth rate
+
+994
+00:40:47,680 --> 00:40:54,720
+of exponential function
+
+995
+00:40:51,599 --> 00:40:56,480
+is terribly high
+
+996
+00:40:54,720 --> 00:40:57,440
+where
+
+997
+00:40:56,480 --> 00:40:58,240
+we
+
+998
+00:40:57,440 --> 00:40:59,680
+can
+
+999
+00:40:58,240 --> 00:41:02,720
+tolerate
+
+1000
+00:40:59,680 --> 00:41:06,240
+the growth rate for polynomials
+
+1001
+00:41:02,720 --> 00:41:07,200
+okay so that's the key idea here and
+
+1002
+00:41:06,240 --> 00:41:09,839
+then
+
+1003
+00:41:07,200 --> 00:41:09,839
+we know that
+
+1004
+00:41:10,640 --> 00:41:15,200
+all reasonable determining computational
+
+1005
+00:41:13,280 --> 00:41:17,760
+models
+
+1006
+00:41:15,200 --> 00:41:19,119
+well what does that mean
+
+1007
+00:41:17,760 --> 00:41:21,760
+that means
+
+1008
+00:41:19,119 --> 00:41:23,839
+basically we can implement
+
+1009
+00:41:21,760 --> 00:41:25,599
+in the real world
+
+1010
+00:41:23,839 --> 00:41:28,720
+okay
+
+1011
+00:41:25,599 --> 00:41:29,680
+non-deterministic computation basically
+
+1012
+00:41:28,720 --> 00:41:31,040
+um
+
+1013
+00:41:29,680 --> 00:41:34,160
+well
+
+1014
+00:41:31,040 --> 00:41:37,200
+in a way but not exactly but in a way
+
+1015
+00:41:34,160 --> 00:41:39,920
+maybe content computation or
+
+1016
+00:41:37,200 --> 00:41:42,319
+a lot of
+
+1017
+00:41:39,920 --> 00:41:43,119
+traditional computers connected
+
+1018
+00:41:42,319 --> 00:41:45,920
+with
+
+1019
+00:41:43,119 --> 00:41:47,520
+very very fast
+
+1020
+00:41:45,920 --> 00:41:49,119
+networking
+
+1021
+00:41:47,520 --> 00:41:51,359
+may
+
+1022
+00:41:49,119 --> 00:41:51,359
+uh
+
+1023
+00:41:51,680 --> 00:41:55,119
+maybe
+
+1024
+00:41:52,640 --> 00:41:57,040
+slightly close to
+
+1025
+00:41:55,119 --> 00:41:58,720
+non-deterministic competition but still
+
+1026
+00:41:57,040 --> 00:42:00,400
+not the same thing
+
+1027
+00:41:58,720 --> 00:42:01,359
+okay
+
+1028
+00:42:00,400 --> 00:42:03,200
+so
+
+1029
+00:42:01,359 --> 00:42:05,280
+reasonable deterministic computational
+
+1030
+00:42:03,200 --> 00:42:06,720
+models
+
+1031
+00:42:05,280 --> 00:42:09,560
+are
+
+1032
+00:42:06,720 --> 00:42:12,480
+practical and we found that they are
+
+1033
+00:42:09,560 --> 00:42:14,160
+polynomially equivalent
+
+1034
+00:42:12,480 --> 00:42:16,480
+by polynomial
+
+1035
+00:42:14,160 --> 00:42:18,560
+polynomial equivalent equivalent that
+
+1036
+00:42:16,480 --> 00:42:20,880
+means
+
+1037
+00:42:18,560 --> 00:42:23,040
+if you have a model one
+
+1038
+00:42:20,880 --> 00:42:25,520
+uh let's say model a single type two
+
+1039
+00:42:23,040 --> 00:42:27,839
+machine and the model b multitap turing
+
+1040
+00:42:25,520 --> 00:42:31,359
+machine
+
+1041
+00:42:27,839 --> 00:42:32,319
+if you discuss the running time
+
+1042
+00:42:31,359 --> 00:42:34,720
+with
+
+1043
+00:42:32,319 --> 00:42:38,400
+these models
+
+1044
+00:42:34,720 --> 00:42:40,720
+the result of the roaming time
+
+1045
+00:42:38,400 --> 00:42:40,720
+will
+
+1046
+00:42:40,880 --> 00:42:45,599
+differ at
+
+1047
+00:42:43,280 --> 00:42:48,079
+at most
+
+1048
+00:42:45,599 --> 00:42:51,599
+in polynomial
+
+1049
+00:42:48,079 --> 00:42:55,400
+okay so they will have at the most
+
+1050
+00:42:51,599 --> 00:42:55,400
+polynomial difference
+
+1051
+00:42:58,240 --> 00:43:00,480
+so
+
+1052
+00:43:00,560 --> 00:43:04,240
+how about
+
+1053
+00:43:02,480 --> 00:43:07,359
+we ignore
+
+1054
+00:43:04,240 --> 00:43:07,359
+the polynomial difference
+
+1055
+00:43:08,079 --> 00:43:12,880
+by
+
+1056
+00:43:09,359 --> 00:43:16,079
+well ignorance is what i use okay
+
+1057
+00:43:12,880 --> 00:43:20,000
+let's say we consider
+
+1058
+00:43:16,079 --> 00:43:20,000
+the polynomial difference
+
+1059
+00:43:20,079 --> 00:43:22,880
+is the uh
+
+1060
+00:43:25,359 --> 00:43:30,079
+or let's say we define a time complexity
+
+1061
+00:43:28,160 --> 00:43:34,319
+class
+
+1062
+00:43:30,079 --> 00:43:37,440
+including all polynomial difference
+
+1063
+00:43:34,319 --> 00:43:37,440
+then the result
+
+1064
+00:43:37,680 --> 00:43:42,560
+derived based on
+
+1065
+00:43:41,040 --> 00:43:47,200
+the reasonable deterministic
+
+1066
+00:43:42,560 --> 00:43:47,200
+computational models will be compatible
+
+1067
+00:43:47,680 --> 00:43:53,119
+okay will be compatible you you
+
+1068
+00:43:50,480 --> 00:43:54,960
+you will have the same result
+
+1069
+00:43:53,119 --> 00:43:56,560
+okay let's see the definition and go
+
+1070
+00:43:54,960 --> 00:43:59,920
+back to this question
+
+1071
+00:43:56,560 --> 00:44:02,000
+so we let's uh based on the concept here
+
+1072
+00:43:59,920 --> 00:44:03,200
+we define
+
+1073
+00:44:02,000 --> 00:44:04,960
+a class
+
+1074
+00:44:03,200 --> 00:44:06,560
+of languages
+
+1075
+00:44:04,960 --> 00:44:08,400
+that
+
+1076
+00:44:06,560 --> 00:44:11,880
+all languages
+
+1077
+00:44:08,400 --> 00:44:11,880
+are decidable
+
+1078
+00:44:12,000 --> 00:44:15,760
+in
+
+1079
+00:44:13,000 --> 00:44:16,880
+polynomial time
+
+1080
+00:44:15,760 --> 00:44:19,760
+on
+
+1081
+00:44:16,880 --> 00:44:21,200
+deterministic
+
+1082
+00:44:19,760 --> 00:44:23,839
+single tab
+
+1083
+00:44:21,200 --> 00:44:23,839
+to the machine
+
+1084
+00:44:24,079 --> 00:44:25,920
+okay
+
+1085
+00:44:24,880 --> 00:44:26,720
+again
+
+1086
+00:44:25,920 --> 00:44:30,319
+we
+
+1087
+00:44:26,720 --> 00:44:30,319
+consider a class
+
+1088
+00:44:30,800 --> 00:44:36,640
+include
+
+1089
+00:44:32,480 --> 00:44:37,839
+all languages decidable in polynomial
+
+1090
+00:44:36,640 --> 00:44:38,640
+time
+
+1091
+00:44:37,839 --> 00:44:42,000
+by
+
+1092
+00:44:38,640 --> 00:44:44,400
+determining single tap to emission
+
+1093
+00:44:42,000 --> 00:44:47,599
+in other words with the notation we
+
+1094
+00:44:44,400 --> 00:44:50,640
+already have we define the cost
+
+1095
+00:44:47,599 --> 00:44:53,280
+as union of all
+
+1096
+00:44:50,640 --> 00:44:56,720
+time complexity class of
+
+1097
+00:44:53,280 --> 00:44:58,880
+n to the power of k and for all possible
+
+1098
+00:44:56,720 --> 00:44:58,880
+k
+
+1099
+00:45:00,720 --> 00:45:06,560
+okay see then we don't
+
+1100
+00:45:04,400 --> 00:45:10,319
+we don't distinguish
+
+1101
+00:45:06,560 --> 00:45:12,560
+now we don't distinguish time
+
+1102
+00:45:10,319 --> 00:45:15,119
+like n log n
+
+1103
+00:45:12,560 --> 00:45:15,119
+oh sorry
+
+1104
+00:45:16,839 --> 00:45:19,760
+time
+
+1105
+00:45:18,560 --> 00:45:21,680
+n
+
+1106
+00:45:19,760 --> 00:45:22,720
+time and square
+
+1107
+00:45:21,680 --> 00:45:24,000
+time
+
+1108
+00:45:22,720 --> 00:45:25,680
+and
+
+1109
+00:45:24,000 --> 00:45:27,280
+cubic and stuff
+
+1110
+00:45:25,680 --> 00:45:30,480
+we don't distinguish these time
+
+1111
+00:45:27,280 --> 00:45:34,319
+compensat time complexity cost
+
+1112
+00:45:30,480 --> 00:45:36,480
+we union them all to be
+
+1113
+00:45:34,319 --> 00:45:36,480
+p
+
+1114
+00:45:37,359 --> 00:45:41,520
+okay
+
+1115
+00:45:39,280 --> 00:45:41,520
+and
+
+1116
+00:45:42,160 --> 00:45:46,480
+we discuss only
+
+1117
+00:45:43,920 --> 00:45:48,960
+a language
+
+1118
+00:45:46,480 --> 00:45:50,400
+in p or not
+
+1119
+00:45:48,960 --> 00:45:53,119
+okay
+
+1120
+00:45:50,400 --> 00:45:55,599
+why do we why do we want to do that
+
+1121
+00:45:53,119 --> 00:45:55,599
+because
+
+1122
+00:45:55,680 --> 00:45:58,560
+firstly
+
+1123
+00:45:57,119 --> 00:46:00,400
+all reasonable deterministic
+
+1124
+00:45:58,560 --> 00:46:01,920
+computational models are polynomially
+
+1125
+00:46:00,400 --> 00:46:02,720
+equivalent
+
+1126
+00:46:01,920 --> 00:46:05,920
+so
+
+1127
+00:46:02,720 --> 00:46:07,359
+if we only discuss a language in p or
+
+1128
+00:46:05,920 --> 00:46:12,160
+not
+
+1129
+00:46:07,359 --> 00:46:14,000
+we will have the same results across all
+
+1130
+00:46:12,160 --> 00:46:16,800
+reasonable deterministic computational
+
+1131
+00:46:14,000 --> 00:46:18,480
+models right
+
+1132
+00:46:16,800 --> 00:46:20,319
+so for the
+
+1133
+00:46:18,480 --> 00:46:23,200
+uh examples we
+
+1134
+00:46:20,319 --> 00:46:27,359
+have uh previously m1
+
+1135
+00:46:23,200 --> 00:46:27,359
+m2 m2 m3 for a
+
+1136
+00:46:27,680 --> 00:46:32,480
+uh
+
+1137
+00:46:29,760 --> 00:46:35,040
+even if we use different models two type
+
+1138
+00:46:32,480 --> 00:46:38,079
+two machine one type two machine
+
+1139
+00:46:35,040 --> 00:46:39,440
+we get the same result one result a is
+
+1140
+00:46:38,079 --> 00:46:42,720
+in p
+
+1141
+00:46:39,440 --> 00:46:43,680
+right because use m1 or m2 that the same
+
+1142
+00:46:42,720 --> 00:46:47,280
+model
+
+1143
+00:46:43,680 --> 00:46:48,800
+we know that a is either n square or n
+
+1144
+00:46:47,280 --> 00:46:52,240
+log n
+
+1145
+00:46:48,800 --> 00:46:53,760
+in time complexity of n square or n log
+
+1146
+00:46:52,240 --> 00:46:57,119
+n
+
+1147
+00:46:53,760 --> 00:46:58,160
+or we use m3 which is a two type theory
+
+1148
+00:46:57,119 --> 00:47:02,960
+machine
+
+1149
+00:46:58,160 --> 00:47:04,560
+we get the result that a is in time of m
+
+1150
+00:47:02,960 --> 00:47:05,839
+but if we
+
+1151
+00:47:04,560 --> 00:47:07,920
+check
+
+1152
+00:47:05,839 --> 00:47:09,599
+is a in p or not
+
+1153
+00:47:07,920 --> 00:47:11,200
+they are in p
+
+1154
+00:47:09,599 --> 00:47:13,280
+sorry the
+
+1155
+00:47:11,200 --> 00:47:16,000
+both results tells us
+
+1156
+00:47:13,280 --> 00:47:17,280
+a is in p
+
+1157
+00:47:16,000 --> 00:47:19,920
+okay
+
+1158
+00:47:17,280 --> 00:47:19,920
+that's why
+
+1159
+00:47:20,880 --> 00:47:25,200
+we found that
+
+1160
+00:47:23,280 --> 00:47:27,119
+reasonable deterministic
+
+1161
+00:47:25,200 --> 00:47:30,960
+completion models are polynomial
+
+1162
+00:47:27,119 --> 00:47:33,040
+equivalent and then we define a class p
+
+1163
+00:47:30,960 --> 00:47:36,480
+to include
+
+1164
+00:47:33,040 --> 00:47:40,240
+all languages decidable by deterministic
+
+1165
+00:47:36,480 --> 00:47:41,280
+machine in polynomial time
+
+1166
+00:47:40,240 --> 00:47:43,920
+then
+
+1167
+00:47:41,280 --> 00:47:47,599
+this class is interestingly
+
+1168
+00:47:43,920 --> 00:47:50,480
+that it is invariant for all polynomial
+
+1169
+00:47:47,599 --> 00:47:52,559
+equivalent models
+
+1170
+00:47:50,480 --> 00:47:56,319
+then we can you know bring our
+
+1171
+00:47:52,559 --> 00:47:58,720
+discussion on this this model that model
+
+1172
+00:47:56,319 --> 00:48:00,960
+or another model as long as they are
+
+1173
+00:47:58,720 --> 00:48:03,440
+polynomial equivalent
+
+1174
+00:48:00,960 --> 00:48:06,960
+the results we get are all compatible
+
+1175
+00:48:03,440 --> 00:48:07,920
+actually are equip uh are identical
+
+1176
+00:48:06,960 --> 00:48:11,119
+actually
+
+1177
+00:48:07,920 --> 00:48:11,920
+if a language is empty or not
+
+1178
+00:48:11,119 --> 00:48:13,359
+okay
+
+1179
+00:48:11,920 --> 00:48:15,280
+so that's the first
+
+1180
+00:48:13,359 --> 00:48:18,880
+first purpose
+
+1181
+00:48:15,280 --> 00:48:18,880
+and the second purpose is that
+
+1182
+00:48:19,760 --> 00:48:25,240
+for the
+
+1183
+00:48:22,240 --> 00:48:25,240
+polynomially
+
+1184
+00:48:25,520 --> 00:48:31,040
+growth the earning time growth growth
+
+1185
+00:48:28,640 --> 00:48:31,040
+ratio
+
+1186
+00:48:31,599 --> 00:48:37,920
+p
+
+1187
+00:48:33,680 --> 00:48:40,319
+basically not not uh well it's still a
+
+1188
+00:48:37,920 --> 00:48:42,760
+conceptual problem
+
+1189
+00:48:40,319 --> 00:48:44,640
+p corresponds to
+
+1190
+00:48:42,760 --> 00:48:46,559
+realistically
+
+1191
+00:48:44,640 --> 00:48:49,839
+realistically
+
+1192
+00:48:46,559 --> 00:48:49,839
+solvable problems
+
+1193
+00:48:50,720 --> 00:48:54,160
+okay
+
+1194
+00:48:51,920 --> 00:48:54,160
+so
+
+1195
+00:48:55,119 --> 00:48:59,920
+for example if you have a problem
+
+1196
+00:48:58,480 --> 00:49:03,119
+and
+
+1197
+00:48:59,920 --> 00:49:05,040
+n is the input size right
+
+1198
+00:49:03,119 --> 00:49:07,119
+if you have an algorithm which is
+
+1199
+00:49:05,040 --> 00:49:08,160
+exponentially grow
+
+1200
+00:49:07,119 --> 00:49:11,280
+then
+
+1201
+00:49:08,160 --> 00:49:14,839
+maybe a very small problem can be solved
+
+1202
+00:49:11,280 --> 00:49:14,839
+by that algorithm
+
+1203
+00:49:16,559 --> 00:49:20,720
+for larger
+
+1204
+00:49:18,079 --> 00:49:21,839
+you know even a little bit larger
+
+1205
+00:49:20,720 --> 00:49:24,559
+problem
+
+1206
+00:49:21,839 --> 00:49:27,920
+you will you won't be stopped that
+
+1207
+00:49:24,559 --> 00:49:30,319
+uh well in your lifetime or in earth
+
+1208
+00:49:27,920 --> 00:49:32,400
+lifetime stuff like that so we don't
+
+1209
+00:49:30,319 --> 00:49:34,240
+consider exponential
+
+1210
+00:49:32,400 --> 00:49:35,280
+algorithm
+
+1211
+00:49:34,240 --> 00:49:37,760
+practical
+
+1212
+00:49:35,280 --> 00:49:40,640
+but if it's a polynomial time problem
+
+1213
+00:49:37,760 --> 00:49:42,240
+then maybe you can try it
+
+1214
+00:49:40,640 --> 00:49:43,200
+so
+
+1215
+00:49:42,240 --> 00:49:46,400
+again
+
+1216
+00:49:43,200 --> 00:49:49,119
+in theory we think
+
+1217
+00:49:46,400 --> 00:49:50,400
+p corresponds to realistically solvable
+
+1218
+00:49:49,119 --> 00:49:51,680
+problem
+
+1219
+00:49:50,400 --> 00:49:54,880
+but
+
+1220
+00:49:51,680 --> 00:49:54,880
+you know it's a
+
+1221
+00:49:55,040 --> 00:50:00,319
+it's a theoretical viewpoint don't get
+
+1222
+00:49:58,400 --> 00:50:02,960
+confused by this
+
+1223
+00:50:00,319 --> 00:50:04,640
+even in p there are many problems that
+
+1224
+00:50:02,960 --> 00:50:07,680
+are not
+
+1225
+00:50:04,640 --> 00:50:09,920
+practically solvable why because if
+
+1226
+00:50:07,680 --> 00:50:12,960
+let's say n
+
+1227
+00:50:09,920 --> 00:50:13,760
+1 median
+
+1228
+00:50:12,960 --> 00:50:15,760
+well
+
+1229
+00:50:13,760 --> 00:50:17,760
+it's not pretty good uh it's not
+
+1230
+00:50:15,760 --> 00:50:20,880
+particularly solvable right
+
+1231
+00:50:17,760 --> 00:50:23,280
+if you have n to like one thousand uh
+
+1232
+00:50:20,880 --> 00:50:25,040
+you can you you will not be able to
+
+1233
+00:50:23,280 --> 00:50:27,599
+solve such a problem
+
+1234
+00:50:25,040 --> 00:50:30,240
+so
+
+1235
+00:50:27,599 --> 00:50:32,720
+how do you interpret the theoretical
+
+1236
+00:50:30,240 --> 00:50:32,720
+result
+
+1237
+00:50:34,000 --> 00:50:40,040
+it's very important to
+
+1238
+00:50:36,160 --> 00:50:40,040
+understand the
+
+1239
+00:50:40,400 --> 00:50:45,200
+content of the chapter of chapter 7 in
+
+1240
+00:50:42,960 --> 00:50:47,280
+this course okay
+
+1241
+00:50:45,200 --> 00:50:49,599
+so we will have more
+
+1242
+00:50:47,280 --> 00:50:53,200
+well cases to discuss
+
+1243
+00:50:49,599 --> 00:50:55,119
+along the uh the the chapter but don't
+
+1244
+00:50:53,200 --> 00:50:57,599
+forget that
+
+1245
+00:50:55,119 --> 00:51:01,119
+all this
+
+1246
+00:50:57,599 --> 00:51:01,119
+you need to correctly
+
+1247
+00:51:02,319 --> 00:51:06,000
+get the
+
+1248
+00:51:03,839 --> 00:51:09,680
+concept of
+
+1249
+00:51:06,000 --> 00:51:11,280
+the theoretical viewpoint then you then
+
+1250
+00:51:09,680 --> 00:51:14,640
+you can really
+
+1251
+00:51:11,280 --> 00:51:16,240
+apply the thinking in your i don't know
+
+1252
+00:51:14,640 --> 00:51:17,760
+daily job or
+
+1253
+00:51:16,240 --> 00:51:20,760
+in your task
+
+1254
+00:51:17,760 --> 00:51:20,760
+okay
+
+1255
+00:51:26,079 --> 00:51:28,160
+you
+

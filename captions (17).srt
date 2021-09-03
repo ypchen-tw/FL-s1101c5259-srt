@@ -1,0 +1,5036 @@
+1
+00:00:00,640 --> 00:00:07,200
+okay we have introduced pumping lemma
+
+2
+00:00:04,080 --> 00:00:09,040
+for context-free language so we have a
+
+3
+00:00:07,200 --> 00:00:11,519
+way to prove some
+
+4
+00:00:09,040 --> 00:00:13,120
+language not to be
+
+5
+00:00:11,519 --> 00:00:15,679
+context-free
+
+6
+00:00:13,120 --> 00:00:17,920
+now we are going to introduce
+
+7
+00:00:15,679 --> 00:00:20,400
+we are going to introduce another
+
+8
+00:00:17,920 --> 00:00:23,119
+layman for country languages which is
+
+9
+00:00:20,400 --> 00:00:25,439
+called organs lemma for context free
+
+10
+00:00:23,119 --> 00:00:26,560
+languages okay
+
+11
+00:00:25,439 --> 00:00:28,000
+and
+
+12
+00:00:26,560 --> 00:00:29,679
+unlike
+
+13
+00:00:28,000 --> 00:00:32,559
+unlike
+
+14
+00:00:29,679 --> 00:00:35,200
+my here on the road theorem for
+
+15
+00:00:32,559 --> 00:00:38,480
+regular languages
+
+16
+00:00:35,200 --> 00:00:39,840
+ogden's lemma for context free languages
+
+17
+00:00:38,480 --> 00:00:43,040
+is
+
+18
+00:00:39,840 --> 00:00:45,280
+not a sufficient and necessary condition
+
+19
+00:00:43,040 --> 00:00:48,879
+okay it is a
+
+20
+00:00:45,280 --> 00:00:49,840
+it is an advanced version of pumping
+
+21
+00:00:48,879 --> 00:00:53,360
+lemma
+
+22
+00:00:49,840 --> 00:00:55,120
+for context free languages so
+
+23
+00:00:53,360 --> 00:00:57,600
+basically you can
+
+24
+00:00:55,120 --> 00:01:00,160
+think of ogden's lima for context with
+
+25
+00:00:57,600 --> 00:01:00,160
+languages
+
+26
+00:01:00,960 --> 00:01:04,320
+providing you more
+
+27
+00:01:04,720 --> 00:01:07,119
+way
+
+28
+00:01:05,600 --> 00:01:08,000
+to
+
+29
+00:01:07,119 --> 00:01:09,439
+prove
+
+30
+00:01:08,000 --> 00:01:10,799
+another way
+
+31
+00:01:09,439 --> 00:01:14,479
+more
+
+32
+00:01:10,799 --> 00:01:16,799
+control on how you can construct the
+
+33
+00:01:14,479 --> 00:01:20,080
+counter examples okay
+
+34
+00:01:16,799 --> 00:01:22,320
+so uh let's describe the layman first
+
+35
+00:01:20,080 --> 00:01:25,680
+then we discussed the uh difference
+
+36
+00:01:22,320 --> 00:01:27,759
+between this layman and pampynema for
+
+37
+00:01:25,680 --> 00:01:30,479
+context free languages so what is
+
+38
+00:01:27,759 --> 00:01:32,960
+ogden's lemar for context free languages
+
+39
+00:01:30,479 --> 00:01:35,840
+if a line if
+
+40
+00:01:32,960 --> 00:01:40,720
+a the language a is a context free
+
+41
+00:01:35,840 --> 00:01:44,079
+language then there is a number p which
+
+42
+00:01:40,720 --> 00:01:47,040
+is basically pumping length okay
+
+43
+00:01:44,079 --> 00:01:49,840
+then there is a number p where
+
+44
+00:01:47,040 --> 00:01:51,520
+any string all strings
+
+45
+00:01:49,840 --> 00:01:54,640
+in a
+
+46
+00:01:51,520 --> 00:01:56,880
+of length at least p
+
+47
+00:01:54,640 --> 00:01:59,600
+okay you see here
+
+48
+00:01:56,880 --> 00:02:01,439
+until here is exactly the same as
+
+49
+00:01:59,600 --> 00:02:03,920
+pumping them up for context free
+
+50
+00:02:01,439 --> 00:02:05,759
+languages okay
+
+51
+00:02:03,920 --> 00:02:06,799
+here is the difference
+
+52
+00:02:05,759 --> 00:02:11,039
+in which
+
+53
+00:02:06,799 --> 00:02:12,720
+we select any p or more
+
+54
+00:02:11,039 --> 00:02:17,280
+positions
+
+55
+00:02:12,720 --> 00:02:19,599
+p or more positions to be distinguished
+
+56
+00:02:17,280 --> 00:02:21,440
+okay you can consider
+
+57
+00:02:19,599 --> 00:02:23,920
+it as
+
+58
+00:02:21,440 --> 00:02:27,040
+some position you want to look at and
+
+59
+00:02:23,920 --> 00:02:31,680
+ignoring others something like that
+
+60
+00:02:27,040 --> 00:02:37,040
+but the criteria is you have to select p
+
+61
+00:02:31,680 --> 00:02:39,440
+or more positions okay at least p at
+
+62
+00:02:37,040 --> 00:02:39,440
+least
+
+63
+00:02:40,000 --> 00:02:42,080
+p
+
+64
+00:02:43,360 --> 00:02:47,519
+at least p or more positions
+
+65
+00:02:47,680 --> 00:02:50,400
+the string s
+
+66
+00:02:49,280 --> 00:02:53,840
+may be
+
+67
+00:02:50,400 --> 00:02:56,879
+divided into five pieces
+
+68
+00:02:53,840 --> 00:02:59,440
+five pieces satisfying the following
+
+69
+00:02:56,879 --> 00:03:01,519
+conditions
+
+70
+00:02:59,440 --> 00:03:05,200
+firstly
+
+71
+00:03:01,519 --> 00:03:07,040
+the second and the fourth pieces
+
+72
+00:03:05,200 --> 00:03:10,800
+can be removed
+
+73
+00:03:07,040 --> 00:03:11,920
+which is i equals little or can be
+
+74
+00:03:10,800 --> 00:03:12,959
+pumped
+
+75
+00:03:11,920 --> 00:03:15,920
+some
+
+76
+00:03:12,959 --> 00:03:18,239
+identical to what we have in pumping
+
+77
+00:03:15,920 --> 00:03:19,599
+lemma
+
+78
+00:03:18,239 --> 00:03:22,959
+etc
+
+79
+00:03:19,599 --> 00:03:25,599
+all of them are will be still in that
+
+80
+00:03:22,959 --> 00:03:27,840
+language okay that's the first condition
+
+81
+00:03:25,599 --> 00:03:31,840
+and second condition is that
+
+82
+00:03:27,840 --> 00:03:33,920
+the second and the fourth piece
+
+83
+00:03:31,840 --> 00:03:36,640
+at least one
+
+84
+00:03:33,920 --> 00:03:38,159
+distinguished positions which you just
+
+85
+00:03:36,640 --> 00:03:40,720
+choose at
+
+86
+00:03:38,159 --> 00:03:41,920
+this step
+
+87
+00:03:40,720 --> 00:03:43,120
+okay
+
+88
+00:03:41,920 --> 00:03:45,760
+and
+
+89
+00:03:43,120 --> 00:03:47,680
+third condition is that the middle three
+
+90
+00:03:45,760 --> 00:03:49,840
+pieces head
+
+91
+00:03:47,680 --> 00:03:53,760
+has at most p
+
+92
+00:03:49,840 --> 00:03:55,599
+distinguished positions okay that's all
+
+93
+00:03:53,760 --> 00:03:56,879
+that's all organ slimmer for context
+
+94
+00:03:55,599 --> 00:03:58,640
+with languages
+
+95
+00:03:56,879 --> 00:04:01,439
+so essentially
+
+96
+00:03:58,640 --> 00:04:04,720
+it's very very similar to pumping demand
+
+97
+00:04:01,439 --> 00:04:08,000
+for complexity languages only that
+
+98
+00:04:04,720 --> 00:04:10,239
+you have one more control here you can
+
+99
+00:04:08,000 --> 00:04:11,599
+select some positions to be
+
+100
+00:04:10,239 --> 00:04:14,640
+distinguished
+
+101
+00:04:11,599 --> 00:04:18,320
+okay and the only criteria is that you
+
+102
+00:04:14,640 --> 00:04:20,000
+have to select p or more
+
+103
+00:04:18,320 --> 00:04:21,680
+let's uh
+
+104
+00:04:20,000 --> 00:04:24,479
+look at this way
+
+105
+00:04:21,680 --> 00:04:27,199
+if for any string s
+
+106
+00:04:24,479 --> 00:04:29,759
+for any string s
+
+107
+00:04:27,199 --> 00:04:33,360
+in the language
+
+108
+00:04:29,759 --> 00:04:36,000
+you select the whole string
+
+109
+00:04:33,360 --> 00:04:38,400
+okay you select the whole string since
+
+110
+00:04:36,000 --> 00:04:39,120
+the length of
+
+111
+00:04:38,400 --> 00:04:40,800
+s
+
+112
+00:04:39,120 --> 00:04:42,960
+is at least p
+
+113
+00:04:40,800 --> 00:04:44,320
+if you select the whole string every
+
+114
+00:04:42,960 --> 00:04:47,199
+symbol
+
+115
+00:04:44,320 --> 00:04:50,479
+is distinguished
+
+116
+00:04:47,199 --> 00:04:55,360
+then you can see that the whole organs
+
+117
+00:04:50,479 --> 00:04:55,360
+lemma for contextview languages becomes
+
+118
+00:04:55,440 --> 00:05:00,000
+pumping them up for context languages
+
+119
+00:04:57,520 --> 00:05:02,080
+right because if you select
+
+120
+00:05:00,000 --> 00:05:03,919
+the whole string as positions as
+
+121
+00:05:02,080 --> 00:05:06,000
+distinguished positions
+
+122
+00:05:03,919 --> 00:05:08,479
+then
+
+123
+00:05:06,000 --> 00:05:09,440
+the first condition is exactly the same
+
+124
+00:05:08,479 --> 00:05:11,360
+as
+
+125
+00:05:09,440 --> 00:05:14,320
+that's in pumping demand
+
+126
+00:05:11,360 --> 00:05:18,320
+the second condition since you select
+
+127
+00:05:14,320 --> 00:05:22,400
+all positions as distinguished so
+
+128
+00:05:18,320 --> 00:05:25,280
+the number of positions is exactly
+
+129
+00:05:22,400 --> 00:05:29,039
+the same as the depth of you know the
+
+130
+00:05:25,280 --> 00:05:31,840
+strings and also goes for
+
+131
+00:05:29,039 --> 00:05:31,840
+vxy
+
+132
+00:05:33,919 --> 00:05:39,600
+right
+
+133
+00:05:35,120 --> 00:05:41,680
+so for any select for any string in a
+
+134
+00:05:39,600 --> 00:05:45,840
+of length at least p
+
+135
+00:05:41,680 --> 00:05:45,840
+if you select all positions
+
+136
+00:05:45,919 --> 00:05:50,160
+the whole
+
+137
+00:05:46,960 --> 00:05:51,199
+octane's lemma goes back to pumping
+
+138
+00:05:50,160 --> 00:05:54,800
+lemma
+
+139
+00:05:51,199 --> 00:05:56,880
+so you see now you have a way to select
+
+140
+00:05:54,800 --> 00:05:58,720
+fewer positions
+
+141
+00:05:56,880 --> 00:06:00,160
+if your string
+
+142
+00:05:58,720 --> 00:06:03,120
+the length of your
+
+143
+00:06:00,160 --> 00:06:04,000
+s is exactly you have no choice right
+
+144
+00:06:03,120 --> 00:06:07,919
+but
+
+145
+00:06:04,000 --> 00:06:09,440
+if you have a string longer than p
+
+146
+00:06:07,919 --> 00:06:11,600
+then
+
+147
+00:06:09,440 --> 00:06:14,400
+you don't need you don't need to select
+
+148
+00:06:11,600 --> 00:06:16,720
+them oh you just need to select p or
+
+149
+00:06:14,400 --> 00:06:19,360
+more positions then
+
+150
+00:06:16,720 --> 00:06:23,280
+the lemma will work
+
+151
+00:06:19,360 --> 00:06:23,280
+so that's our control on
+
+152
+00:06:23,759 --> 00:06:29,039
+establishing control examples okay
+
+153
+00:06:27,120 --> 00:06:32,720
+so
+
+154
+00:06:29,039 --> 00:06:35,680
+let's firstly have an example
+
+155
+00:06:32,720 --> 00:06:39,199
+of this language
+
+156
+00:06:35,680 --> 00:06:40,160
+okay we will prove that
+
+157
+00:06:39,199 --> 00:06:43,039
+not really
+
+158
+00:06:40,160 --> 00:06:46,160
+yes it's proof we will prove that this
+
+159
+00:06:43,039 --> 00:06:49,199
+language can be pumped okay this
+
+160
+00:06:46,160 --> 00:06:51,039
+language satisfies pamping lemma for
+
+161
+00:06:49,199 --> 00:06:53,520
+contextual language
+
+162
+00:06:51,039 --> 00:06:56,319
+but we can use ogden's lemma for
+
+163
+00:06:53,520 --> 00:06:59,440
+contextual language to prove that this
+
+164
+00:06:56,319 --> 00:07:00,400
+language is not context-free
+
+165
+00:06:59,440 --> 00:07:01,680
+okay
+
+166
+00:07:00,400 --> 00:07:04,160
+so
+
+167
+00:07:01,680 --> 00:07:06,800
+what what is this language
+
+168
+00:07:04,160 --> 00:07:07,919
+it the string of this language composed
+
+169
+00:07:06,800 --> 00:07:10,080
+of
+
+170
+00:07:07,919 --> 00:07:15,520
+four symbols a b c d
+
+171
+00:07:10,080 --> 00:07:16,400
+and you have i a's j b k c's and l ds
+
+172
+00:07:15,520 --> 00:07:18,240
+okay
+
+173
+00:07:16,400 --> 00:07:19,440
+and
+
+174
+00:07:18,240 --> 00:07:20,800
+you either
+
+175
+00:07:19,440 --> 00:07:22,960
+have
+
+176
+00:07:20,800 --> 00:07:24,240
+no a's
+
+177
+00:07:22,960 --> 00:07:27,680
+or
+
+178
+00:07:24,240 --> 00:07:30,240
+bcd the number of bcds
+
+179
+00:07:27,680 --> 00:07:31,520
+are identical
+
+180
+00:07:30,240 --> 00:07:36,000
+so it's like
+
+181
+00:07:31,520 --> 00:07:37,280
+if you have a let's say if you have a
+
+182
+00:07:36,000 --> 00:07:41,199
+then
+
+183
+00:07:37,280 --> 00:07:41,199
+you have you have some a's
+
+184
+00:07:41,360 --> 00:07:49,120
+then you must have same number of b c d
+
+185
+00:07:47,120 --> 00:07:51,120
+okay so that's the first case
+
+186
+00:07:49,120 --> 00:07:52,000
+uh sorry it actually is the second case
+
+187
+00:07:51,120 --> 00:07:55,280
+here
+
+188
+00:07:52,000 --> 00:07:55,280
+if you don't have a
+
+189
+00:07:55,440 --> 00:08:01,280
+the number of b
+
+190
+00:07:59,120 --> 00:08:02,560
+c
+
+191
+00:08:01,280 --> 00:08:03,919
+d
+
+192
+00:08:02,560 --> 00:08:04,800
+is arbitrary
+
+193
+00:08:03,919 --> 00:08:08,240
+right
+
+194
+00:08:04,800 --> 00:08:10,400
+i equal to 0 noise then you have no
+
+195
+00:08:08,240 --> 00:08:12,400
+restriction on bcd
+
+196
+00:08:10,400 --> 00:08:13,919
+or if you have a
+
+197
+00:08:12,400 --> 00:08:15,120
+bcd
+
+198
+00:08:13,919 --> 00:08:19,360
+must be
+
+199
+00:08:15,120 --> 00:08:23,120
+of the same length okay so the language
+
+200
+00:08:19,360 --> 00:08:25,440
+the the language contains such strings
+
+201
+00:08:23,120 --> 00:08:28,319
+then let's check
+
+202
+00:08:25,440 --> 00:08:30,319
+for pumping lemurs okay for pumping
+
+203
+00:08:28,319 --> 00:08:32,719
+lemmas
+
+204
+00:08:30,319 --> 00:08:33,760
+for any
+
+205
+00:08:32,719 --> 00:08:35,839
+p
+
+206
+00:08:33,760 --> 00:08:38,640
+greater than zero and
+
+207
+00:08:35,839 --> 00:08:41,680
+any string in the language okay in this
+
+208
+00:08:38,640 --> 00:08:44,800
+language let's call it l
+
+209
+00:08:41,680 --> 00:08:44,800
+and for any string
+
+210
+00:08:45,200 --> 00:08:51,040
+there are two forms right firstly i
+
+211
+00:08:48,320 --> 00:08:52,480
+equal to zero
+
+212
+00:08:51,040 --> 00:08:55,279
+in this case
+
+213
+00:08:52,480 --> 00:08:57,519
+the string looks like
+
+214
+00:08:55,279 --> 00:09:00,000
+jb's kcd
+
+215
+00:08:57,519 --> 00:09:01,120
+kcs and lds
+
+216
+00:09:00,000 --> 00:09:04,160
+and
+
+217
+00:09:01,120 --> 00:09:05,519
+jk arrow can be any integer
+
+218
+00:09:04,160 --> 00:09:08,240
+so
+
+219
+00:09:05,519 --> 00:09:10,880
+it it apparently
+
+220
+00:09:08,240 --> 00:09:11,760
+satisfies pumping lemma
+
+221
+00:09:10,880 --> 00:09:13,760
+right
+
+222
+00:09:11,760 --> 00:09:15,279
+you can arbitrarily actually you can
+
+223
+00:09:13,760 --> 00:09:17,440
+arbitrarily
+
+224
+00:09:15,279 --> 00:09:21,120
+uh split any string
+
+225
+00:09:17,440 --> 00:09:23,040
+uh split strings like this to any five
+
+226
+00:09:21,120 --> 00:09:24,959
+pieces
+
+227
+00:09:23,040 --> 00:09:26,480
+as long as
+
+228
+00:09:24,959 --> 00:09:28,560
+you have
+
+229
+00:09:26,480 --> 00:09:31,519
+second and the
+
+230
+00:09:28,560 --> 00:09:33,519
+fourth piece none empty
+
+231
+00:09:31,519 --> 00:09:36,560
+and the middle three
+
+232
+00:09:33,519 --> 00:09:38,880
+less than p
+
+233
+00:09:36,560 --> 00:09:38,880
+then
+
+234
+00:09:39,040 --> 00:09:41,839
+you can choose
+
+235
+00:09:42,080 --> 00:09:49,519
+the middle three only one symbol
+
+236
+00:09:46,560 --> 00:09:51,680
+then it doesn't matter that
+
+237
+00:09:49,519 --> 00:09:53,200
+how you pump or remove that string
+
+238
+00:09:51,680 --> 00:09:56,480
+because
+
+239
+00:09:53,200 --> 00:09:58,160
+ijk can be any integer so
+
+240
+00:09:56,480 --> 00:10:02,240
+as long as
+
+241
+00:09:58,160 --> 00:10:04,800
+the second piece and the fourth piece
+
+242
+00:10:02,240 --> 00:10:07,120
+contains only one kind of symbol doesn't
+
+243
+00:10:04,800 --> 00:10:08,240
+matter which one but you can manipulate
+
+244
+00:10:07,120 --> 00:10:10,000
+them right
+
+245
+00:10:08,240 --> 00:10:11,040
+so
+
+246
+00:10:10,000 --> 00:10:12,959
+a string
+
+247
+00:10:11,040 --> 00:10:15,360
+of this form
+
+248
+00:10:12,959 --> 00:10:16,720
+in that language can be
+
+249
+00:10:15,360 --> 00:10:17,680
+pumped
+
+250
+00:10:16,720 --> 00:10:20,240
+okay
+
+251
+00:10:17,680 --> 00:10:22,079
+so here is an example
+
+252
+00:10:20,240 --> 00:10:24,000
+we can choose
+
+253
+00:10:22,079 --> 00:10:26,000
+the second
+
+254
+00:10:24,000 --> 00:10:27,120
+piece as b
+
+255
+00:10:26,000 --> 00:10:29,440
+and
+
+256
+00:10:27,120 --> 00:10:32,640
+x epsilon y epsilon
+
+257
+00:10:29,440 --> 00:10:34,320
+so you see only b for the middle three
+
+258
+00:10:32,640 --> 00:10:37,040
+that would be
+
+259
+00:10:34,320 --> 00:10:37,760
+the length will be less than p right
+
+260
+00:10:37,040 --> 00:10:40,000
+so
+
+261
+00:10:37,760 --> 00:10:42,800
+in this case
+
+262
+00:10:40,000 --> 00:10:47,360
+no matter what end is no matter what n
+
+263
+00:10:42,800 --> 00:10:48,720
+is the resultant string must be in l
+
+264
+00:10:47,360 --> 00:10:51,440
+right and you can
+
+265
+00:10:48,720 --> 00:10:54,880
+also do that for middle three contains
+
+266
+00:10:51,440 --> 00:10:56,560
+only one c or one d doesn't matter they
+
+267
+00:10:54,880 --> 00:10:58,480
+all work
+
+268
+00:10:56,560 --> 00:11:00,800
+okay
+
+269
+00:10:58,480 --> 00:11:02,720
+for the second
+
+270
+00:11:00,800 --> 00:11:04,959
+format of the string
+
+271
+00:11:02,720 --> 00:11:08,079
+let's say you have a
+
+272
+00:11:04,959 --> 00:11:09,680
+you have a so i is greater than zero
+
+273
+00:11:08,079 --> 00:11:10,640
+in this case
+
+274
+00:11:09,680 --> 00:11:11,360
+j
+
+275
+00:11:10,640 --> 00:11:15,760
+k
+
+276
+00:11:11,360 --> 00:11:18,240
+l are the same right okay for this kind
+
+277
+00:11:15,760 --> 00:11:20,560
+of string for this kind of string we can
+
+278
+00:11:18,240 --> 00:11:22,240
+choose the second piece
+
+279
+00:11:20,560 --> 00:11:24,480
+as one a
+
+280
+00:11:22,240 --> 00:11:26,839
+okay you have a right so
+
+281
+00:11:24,480 --> 00:11:28,880
+we have one a
+
+282
+00:11:26,839 --> 00:11:32,640
+then x
+
+283
+00:11:28,880 --> 00:11:34,160
+make uh we make x epsilon y epsilon
+
+284
+00:11:32,640 --> 00:11:37,519
+then you see
+
+285
+00:11:34,160 --> 00:11:38,640
+the string is like looks like a some a's
+
+286
+00:11:37,519 --> 00:11:39,839
+and the b
+
+287
+00:11:38,640 --> 00:11:42,560
+the same
+
+288
+00:11:39,839 --> 00:11:45,200
+number of b and the z and the d let's
+
+289
+00:11:42,560 --> 00:11:48,480
+say n n n
+
+290
+00:11:45,200 --> 00:11:52,399
+then we choose we can
+
+291
+00:11:48,480 --> 00:11:52,399
+split the string into
+
+292
+00:11:52,480 --> 00:11:54,880
+v
+
+293
+00:11:53,200 --> 00:11:57,600
+just one a
+
+294
+00:11:54,880 --> 00:12:00,480
+and anything previous
+
+295
+00:11:57,600 --> 00:12:01,519
+anything before b is u
+
+296
+00:12:00,480 --> 00:12:03,360
+and
+
+297
+00:12:01,519 --> 00:12:09,519
+x epsilon
+
+298
+00:12:03,360 --> 00:12:10,639
+y epsilon and this part that makes it c
+
+299
+00:12:09,519 --> 00:12:12,480
+okay
+
+300
+00:12:10,639 --> 00:12:16,000
+so
+
+301
+00:12:12,480 --> 00:12:19,519
+if let's say if you have only one a
+
+302
+00:12:16,000 --> 00:12:20,480
+then v is a right and the u is epsilon
+
+303
+00:12:19,519 --> 00:12:23,279
+and
+
+304
+00:12:20,480 --> 00:12:24,399
+everything the same and when you remove
+
+305
+00:12:23,279 --> 00:12:26,880
+that a
+
+306
+00:12:24,399 --> 00:12:30,079
+it doesn't matter because this part
+
+307
+00:12:26,880 --> 00:12:32,320
+falls into the first kind
+
+308
+00:12:30,079 --> 00:12:35,279
+and if you pump it
+
+309
+00:12:32,320 --> 00:12:37,600
+you may you make copies of v
+
+310
+00:12:35,279 --> 00:12:41,120
+the i i equal
+
+311
+00:12:37,600 --> 00:12:44,320
+0 something like that it doesn't matter
+
+312
+00:12:41,120 --> 00:12:47,360
+either because you can have more a
+
+313
+00:12:44,320 --> 00:12:49,920
+arbitrary number of a and since
+
+314
+00:12:47,360 --> 00:12:52,880
+b and c n
+
+315
+00:12:49,920 --> 00:12:53,760
+d n is the
+
+316
+00:12:52,880 --> 00:12:57,440
+z
+
+317
+00:12:53,760 --> 00:12:58,959
+not changed so the resultant string is
+
+318
+00:12:57,440 --> 00:13:01,200
+still in
+
+319
+00:12:58,959 --> 00:13:01,200
+l
+
+320
+00:13:01,680 --> 00:13:04,240
+so
+
+321
+00:13:03,200 --> 00:13:06,079
+this
+
+322
+00:13:04,240 --> 00:13:09,279
+language
+
+323
+00:13:06,079 --> 00:13:11,360
+actually satisfies
+
+324
+00:13:09,279 --> 00:13:14,000
+the criteria
+
+325
+00:13:11,360 --> 00:13:18,440
+actually has the property described by
+
+326
+00:13:14,000 --> 00:13:18,440
+pumping for context free language
+
+327
+00:13:22,000 --> 00:13:25,839
+then
+
+328
+00:13:23,920 --> 00:13:28,240
+we can use
+
+329
+00:13:25,839 --> 00:13:29,360
+oakland's name of context free languages
+
+330
+00:13:28,240 --> 00:13:31,279
+to prove
+
+331
+00:13:29,360 --> 00:13:33,440
+this language
+
+332
+00:13:31,279 --> 00:13:36,320
+not to be context-free
+
+333
+00:13:33,440 --> 00:13:37,680
+okay so how do we use that how do we do
+
+334
+00:13:36,320 --> 00:13:38,959
+that
+
+335
+00:13:37,680 --> 00:13:41,519
+actually we
+
+336
+00:13:38,959 --> 00:13:44,240
+the same since uh oakland's lemma for
+
+337
+00:13:41,519 --> 00:13:47,199
+context free languages is you know an
+
+338
+00:13:44,240 --> 00:13:49,920
+advanced version of pumpkin lemon so the
+
+339
+00:13:47,199 --> 00:13:50,639
+whole the usage is the same
+
+340
+00:13:49,920 --> 00:13:53,040
+so
+
+341
+00:13:50,639 --> 00:13:54,959
+we assume that
+
+342
+00:13:53,040 --> 00:13:57,839
+the language is a context free language
+
+343
+00:13:54,959 --> 00:13:59,440
+so it has the property described by
+
+344
+00:13:57,839 --> 00:14:01,360
+ogden's lemma
+
+345
+00:13:59,440 --> 00:14:03,120
+then
+
+346
+00:14:01,360 --> 00:14:07,519
+there is a p here
+
+347
+00:14:03,120 --> 00:14:10,720
+so we choose an s longer than p right so
+
+348
+00:14:07,519 --> 00:14:12,959
+here in this case we choose
+
+349
+00:14:10,720 --> 00:14:17,199
+one a and p
+
+350
+00:14:12,959 --> 00:14:18,079
+b c d so the string looks like a
+
+351
+00:14:17,199 --> 00:14:20,240
+and
+
+352
+00:14:18,079 --> 00:14:20,240
+b
+
+353
+00:14:20,560 --> 00:14:22,880
+pcs
+
+354
+00:14:21,839 --> 00:14:24,079
+and
+
+355
+00:14:22,880 --> 00:14:25,760
+pds
+
+356
+00:14:24,079 --> 00:14:29,360
+okay
+
+357
+00:14:25,760 --> 00:14:31,760
+see here we have
+
+358
+00:14:29,360 --> 00:14:33,199
+a control here let's
+
+359
+00:14:31,760 --> 00:14:35,440
+select
+
+360
+00:14:33,199 --> 00:14:37,040
+more p or more positions to be
+
+361
+00:14:35,440 --> 00:14:40,079
+distinguished
+
+362
+00:14:37,040 --> 00:14:40,079
+so we select
+
+363
+00:14:40,320 --> 00:14:44,560
+all this
+
+364
+00:14:41,839 --> 00:14:45,600
+okay and we don't select
+
+365
+00:14:44,560 --> 00:14:47,680
+a
+
+366
+00:14:45,600 --> 00:14:49,199
+so first uh sorry firstly
+
+367
+00:14:47,680 --> 00:14:52,800
+how long is s
+
+368
+00:14:49,199 --> 00:14:56,560
+that will be three p plus one right
+
+369
+00:14:52,800 --> 00:14:59,760
+and we select all symbols of b
+
+370
+00:14:56,560 --> 00:15:01,760
+c's and d's so how many position we
+
+371
+00:14:59,760 --> 00:15:03,519
+select we selected
+
+372
+00:15:01,760 --> 00:15:06,959
+which is 3p
+
+373
+00:15:03,519 --> 00:15:09,839
+since 3p bigger than p okay
+
+374
+00:15:06,959 --> 00:15:11,199
+we can do it because we select p or more
+
+375
+00:15:09,839 --> 00:15:12,560
+positions
+
+376
+00:15:11,199 --> 00:15:14,160
+in this case
+
+377
+00:15:12,560 --> 00:15:16,959
+see
+
+378
+00:15:14,160 --> 00:15:20,079
+according to wagton's lemma
+
+379
+00:15:16,959 --> 00:15:21,839
+for context with languages this string
+
+380
+00:15:20,079 --> 00:15:23,279
+this string
+
+381
+00:15:21,839 --> 00:15:26,240
+must be
+
+382
+00:15:23,279 --> 00:15:28,399
+there is a way to divide into this
+
+383
+00:15:26,240 --> 00:15:30,560
+string into five pieces
+
+384
+00:15:28,399 --> 00:15:32,720
+okay and the uv
+
+385
+00:15:30,560 --> 00:15:35,040
+sorry v y the second
+
+386
+00:15:32,720 --> 00:15:37,199
+piece and the fourth piece
+
+387
+00:15:35,040 --> 00:15:42,079
+must contain
+
+388
+00:15:37,199 --> 00:15:46,320
+one of b c d why because v y
+
+389
+00:15:42,079 --> 00:15:48,480
+has at least one selected distinguished
+
+390
+00:15:46,320 --> 00:15:49,519
+position
+
+391
+00:15:48,480 --> 00:15:52,399
+okay
+
+392
+00:15:49,519 --> 00:15:52,399
+and we know that
+
+393
+00:15:53,279 --> 00:15:56,079
+v
+
+394
+00:15:54,079 --> 00:16:00,000
+x y
+
+395
+00:15:56,079 --> 00:16:01,279
+has at most p positions
+
+396
+00:16:00,000 --> 00:16:02,399
+okay
+
+397
+00:16:01,279 --> 00:16:04,000
+then
+
+398
+00:16:02,399 --> 00:16:08,120
+consider where
+
+399
+00:16:04,000 --> 00:16:08,120
+v x y can go
+
+400
+00:16:08,399 --> 00:16:14,000
+you either
+
+401
+00:16:10,560 --> 00:16:14,000
+let's make it like this
+
+402
+00:16:17,440 --> 00:16:22,880
+so where v x y can go
+
+403
+00:16:20,720 --> 00:16:24,480
+you either go
+
+404
+00:16:22,880 --> 00:16:25,440
+this way
+
+405
+00:16:24,480 --> 00:16:26,480
+right
+
+406
+00:16:25,440 --> 00:16:28,800
+or
+
+407
+00:16:26,480 --> 00:16:28,800
+the
+
+408
+00:16:29,120 --> 00:16:33,040
+v x y
+
+409
+00:16:31,040 --> 00:16:34,160
+or o in b
+
+410
+00:16:33,040 --> 00:16:35,759
+or
+
+411
+00:16:34,160 --> 00:16:36,480
+cross b c
+
+412
+00:16:35,759 --> 00:16:37,759
+or
+
+413
+00:16:36,480 --> 00:16:42,000
+o in c
+
+414
+00:16:37,759 --> 00:16:44,079
+or cross c d or o in d
+
+415
+00:16:42,000 --> 00:16:46,639
+okay that's the only way
+
+416
+00:16:44,079 --> 00:16:50,000
+x b x y can go
+
+417
+00:16:46,639 --> 00:16:51,759
+but either way you know that
+
+418
+00:16:50,000 --> 00:16:53,759
+b y
+
+419
+00:16:51,759 --> 00:16:56,160
+cannot
+
+420
+00:16:53,759 --> 00:16:58,880
+v y contain
+
+421
+00:16:56,160 --> 00:17:02,240
+one of b or c or d
+
+422
+00:16:58,880 --> 00:17:06,799
+right so for example in this case
+
+423
+00:17:02,240 --> 00:17:07,919
+b y can possibly contain only b
+
+424
+00:17:06,799 --> 00:17:10,880
+right
+
+425
+00:17:07,919 --> 00:17:14,559
+and for this for this
+
+426
+00:17:10,880 --> 00:17:14,559
+possibility that will be b
+
+427
+00:17:15,760 --> 00:17:21,360
+and
+
+428
+00:17:17,600 --> 00:17:22,480
+for this possibility v y can contain b
+
+429
+00:17:21,360 --> 00:17:25,600
+and c
+
+430
+00:17:22,480 --> 00:17:29,360
+i'm not saying it contains b c but it
+
+431
+00:17:25,600 --> 00:17:32,880
+can contain b and c okay so for this
+
+432
+00:17:29,360 --> 00:17:33,760
+possibility c only for this possibility
+
+433
+00:17:32,880 --> 00:17:36,480
+c
+
+434
+00:17:33,760 --> 00:17:38,320
+d and for this
+
+435
+00:17:36,480 --> 00:17:40,559
+d
+
+436
+00:17:38,320 --> 00:17:40,559
+okay
+
+437
+00:17:40,720 --> 00:17:45,200
+so
+
+438
+00:17:41,679 --> 00:17:48,559
+because of the constraint here
+
+439
+00:17:45,200 --> 00:17:49,679
+v x y has at most p positions
+
+440
+00:17:48,559 --> 00:17:51,039
+and
+
+441
+00:17:49,679 --> 00:17:51,679
+we know that
+
+442
+00:17:51,039 --> 00:17:53,520
+v
+
+443
+00:17:51,679 --> 00:17:56,880
+y
+
+444
+00:17:53,520 --> 00:17:58,720
+cannot contain all vcds
+
+445
+00:17:56,880 --> 00:18:01,679
+so in any way
+
+446
+00:17:58,720 --> 00:18:03,600
+in any way
+
+447
+00:18:01,679 --> 00:18:07,440
+that's pumped
+
+448
+00:18:03,600 --> 00:18:08,320
+second or and fourth fourth piece
+
+449
+00:18:07,440 --> 00:18:10,880
+and
+
+450
+00:18:08,320 --> 00:18:12,480
+u v two x
+
+451
+00:18:10,880 --> 00:18:16,160
+y two z
+
+452
+00:18:12,480 --> 00:18:19,039
+will definitely not in l
+
+453
+00:18:16,160 --> 00:18:22,080
+right because you still have a
+
+454
+00:18:19,039 --> 00:18:25,039
+so for the resultant string
+
+455
+00:18:22,080 --> 00:18:27,120
+b and c and ds must be identical the
+
+456
+00:18:25,039 --> 00:18:28,960
+length of b and c and d must be
+
+457
+00:18:27,120 --> 00:18:30,240
+identical
+
+458
+00:18:28,960 --> 00:18:34,640
+and
+
+459
+00:18:30,240 --> 00:18:36,320
+since v and y do not have or
+
+460
+00:18:34,640 --> 00:18:40,080
+do not have
+
+461
+00:18:36,320 --> 00:18:44,480
+b and c and d at the same time
+
+462
+00:18:40,080 --> 00:18:47,919
+so the numbers in the resultant string
+
+463
+00:18:44,480 --> 00:18:49,919
+the b uh the numbers for of b and c and
+
+464
+00:18:47,919 --> 00:18:54,559
+these in the resultant string will not
+
+465
+00:18:49,919 --> 00:18:58,960
+be equal will not be identical so
+
+466
+00:18:54,559 --> 00:19:01,120
+the resultant string will not be in l
+
+467
+00:18:58,960 --> 00:19:03,280
+so the language is not
+
+468
+00:19:01,120 --> 00:19:04,240
+a context-free language
+
+469
+00:19:03,280 --> 00:19:07,120
+okay
+
+470
+00:19:04,240 --> 00:19:10,000
+and actually the analysis here is
+
+471
+00:19:07,120 --> 00:19:12,720
+exactly the same as we use pumping lemma
+
+472
+00:19:10,000 --> 00:19:16,400
+for context free languages to
+
+473
+00:19:12,720 --> 00:19:17,440
+proof a n b and c n
+
+474
+00:19:16,400 --> 00:19:20,080
+not
+
+475
+00:19:17,440 --> 00:19:20,880
+a context free language
+
+476
+00:19:20,080 --> 00:19:23,679
+okay
+
+477
+00:19:20,880 --> 00:19:25,919
+so you see when we can select
+
+478
+00:19:23,679 --> 00:19:27,679
+distinguished positions as long as we
+
+479
+00:19:25,919 --> 00:19:28,720
+follow the criteria
+
+480
+00:19:27,679 --> 00:19:31,919
+we have
+
+481
+00:19:28,720 --> 00:19:33,520
+one more control on constructing the
+
+482
+00:19:31,919 --> 00:19:37,120
+control examples
+
+483
+00:19:33,520 --> 00:19:39,840
+and therefore we can prove that
+
+484
+00:19:37,120 --> 00:19:39,840
+this language
+
+485
+00:19:40,640 --> 00:19:44,960
+we can prove that
+
+486
+00:19:42,240 --> 00:19:49,120
+this language
+
+487
+00:19:44,960 --> 00:19:51,200
+which cannot be proved by using
+
+488
+00:19:49,120 --> 00:19:53,679
+pumping number for countless languages
+
+489
+00:19:51,200 --> 00:19:56,000
+to be not context-free
+
+490
+00:19:53,679 --> 00:19:56,000
+okay
+
+491
+00:19:58,559 --> 00:20:04,080
+and if you have no problem here
+
+492
+00:20:01,600 --> 00:20:06,480
+we can consider
+
+493
+00:20:04,080 --> 00:20:08,799
+pumping layma sorry ogden's lemon for
+
+494
+00:20:06,480 --> 00:20:10,799
+countless three languages and you will
+
+495
+00:20:08,799 --> 00:20:12,159
+know that
+
+496
+00:20:10,799 --> 00:20:15,600
+we can have
+
+497
+00:20:12,159 --> 00:20:17,200
+ogden's lemma for contest-free grammars
+
+498
+00:20:15,600 --> 00:20:18,880
+okay
+
+499
+00:20:17,200 --> 00:20:20,960
+so
+
+500
+00:20:18,880 --> 00:20:23,360
+family number for oakton's name of
+
+501
+00:20:20,960 --> 00:20:26,640
+context languages are
+
+502
+00:20:23,360 --> 00:20:28,799
+description of the property of languages
+
+503
+00:20:26,640 --> 00:20:32,000
+countless free languages and now the
+
+504
+00:20:28,799 --> 00:20:33,760
+layman here is for grammars okay for
+
+505
+00:20:32,000 --> 00:20:34,400
+grammars but
+
+506
+00:20:33,760 --> 00:20:37,200
+they
+
+507
+00:20:34,400 --> 00:20:40,159
+they they actually comes from the same
+
+508
+00:20:37,200 --> 00:20:41,840
+phenomenon which we have already
+
+509
+00:20:40,159 --> 00:20:42,880
+described
+
+510
+00:20:41,840 --> 00:20:44,799
+okay
+
+511
+00:20:42,880 --> 00:20:46,080
+before because uh
+
+512
+00:20:44,799 --> 00:20:49,520
+to generate
+
+513
+00:20:46,080 --> 00:20:51,280
+a long enough terminal string
+
+514
+00:20:49,520 --> 00:20:53,760
+you must have some
+
+515
+00:20:51,280 --> 00:20:54,799
+properties of the parse trees
+
+516
+00:20:53,760 --> 00:20:55,600
+that's the
+
+517
+00:20:54,799 --> 00:20:58,400
+uh
+
+518
+00:20:55,600 --> 00:20:59,600
+proper that's the source of the lemma
+
+519
+00:20:58,400 --> 00:21:02,720
+anyway so
+
+520
+00:20:59,600 --> 00:21:04,960
+let's g be a context free grammar there
+
+521
+00:21:02,720 --> 00:21:06,880
+exists a number p
+
+522
+00:21:04,960 --> 00:21:10,080
+a natural number p
+
+523
+00:21:06,880 --> 00:21:15,960
+such that for all strings
+
+524
+00:21:10,080 --> 00:21:15,960
+in the language generated by the grammar
+
+525
+00:21:16,559 --> 00:21:21,520
+we can mark as
+
+526
+00:21:19,520 --> 00:21:24,159
+to uh
+
+527
+00:21:21,520 --> 00:21:27,600
+so that it has p or more distinguished
+
+528
+00:21:24,159 --> 00:21:30,799
+positions it's the same as we have in
+
+529
+00:21:27,600 --> 00:21:32,880
+ogden's lemma for pumping languages so
+
+530
+00:21:30,799 --> 00:21:35,760
+for context-free languages
+
+531
+00:21:32,880 --> 00:21:36,880
+there exists a variable in the grammar
+
+532
+00:21:35,760 --> 00:21:39,440
+see
+
+533
+00:21:36,880 --> 00:21:42,400
+we know that there will be a variable in
+
+534
+00:21:39,440 --> 00:21:43,120
+the grammar and terminal string
+
+535
+00:21:42,400 --> 00:21:46,159
+x
+
+536
+00:21:43,120 --> 00:21:48,960
+v sorry u v x y z
+
+537
+00:21:46,159 --> 00:21:50,400
+satisfying the following conditions okay
+
+538
+00:21:48,960 --> 00:21:53,919
+it looks like
+
+539
+00:21:50,400 --> 00:21:56,640
+many seven conditions but actually more
+
+540
+00:21:53,919 --> 00:21:59,919
+they are exactly the same
+
+541
+00:21:56,640 --> 00:22:01,440
+as those we described previously firstly
+
+542
+00:21:59,919 --> 00:22:04,720
+the string s
+
+543
+00:22:01,440 --> 00:22:07,440
+is composed of the five strings okay so
+
+544
+00:22:04,720 --> 00:22:08,480
+a string may be divided into five pieces
+
+545
+00:22:07,440 --> 00:22:12,480
+okay
+
+546
+00:22:08,480 --> 00:22:14,960
+and either v or y
+
+547
+00:22:12,480 --> 00:22:17,760
+has distinguished positions
+
+548
+00:22:14,960 --> 00:22:21,120
+that is the y
+
+549
+00:22:17,760 --> 00:22:21,919
+has at least one distinguished positions
+
+550
+00:22:21,120 --> 00:22:24,080
+okay
+
+551
+00:22:21,919 --> 00:22:26,880
+and the v x y
+
+552
+00:22:24,080 --> 00:22:29,919
+hat has no more than p distinguished
+
+553
+00:22:26,880 --> 00:22:32,000
+positions yes at most p okay so that's
+
+554
+00:22:29,919 --> 00:22:34,000
+the same description
+
+555
+00:22:32,000 --> 00:22:36,400
+then
+
+556
+00:22:34,000 --> 00:22:39,760
+the four conditions here
+
+557
+00:22:36,400 --> 00:22:42,559
+actually is the first condition we
+
+558
+00:22:39,760 --> 00:22:45,200
+were talking about so from the start
+
+559
+00:22:42,559 --> 00:22:46,799
+variable of that grammar
+
+560
+00:22:45,200 --> 00:22:48,559
+of g
+
+561
+00:22:46,799 --> 00:22:51,039
+it must be
+
+562
+00:22:48,559 --> 00:22:51,840
+able to derive to
+
+563
+00:22:51,039 --> 00:22:55,280
+u
+
+564
+00:22:51,840 --> 00:22:56,480
+which is the first terminal string here
+
+565
+00:22:55,280 --> 00:22:58,240
+a
+
+566
+00:22:56,480 --> 00:23:01,760
+the variable here
+
+567
+00:22:58,240 --> 00:23:01,760
+and z the
+
+568
+00:23:02,159 --> 00:23:06,720
+the fifth
+
+569
+00:23:03,760 --> 00:23:06,720
+terminal string here
+
+570
+00:23:07,120 --> 00:23:10,559
+we have already
+
+571
+00:23:08,480 --> 00:23:13,600
+uh drew the
+
+572
+00:23:10,559 --> 00:23:16,320
+part three right so we just
+
+573
+00:23:13,600 --> 00:23:19,440
+make it more formally as a
+
+574
+00:23:16,320 --> 00:23:21,520
+theorem here so from the start variable
+
+575
+00:23:19,440 --> 00:23:23,200
+of that grammar
+
+576
+00:23:21,520 --> 00:23:27,360
+there must be
+
+577
+00:23:23,200 --> 00:23:30,559
+a derivation to u a c
+
+578
+00:23:27,360 --> 00:23:30,559
+and from a
+
+579
+00:23:31,520 --> 00:23:35,679
+there is a derivation to
+
+580
+00:23:34,559 --> 00:23:36,880
+second
+
+581
+00:23:35,679 --> 00:23:37,760
+piece
+
+582
+00:23:36,880 --> 00:23:40,080
+v
+
+583
+00:23:37,760 --> 00:23:41,840
+and itself a
+
+584
+00:23:40,080 --> 00:23:43,919
+and
+
+585
+00:23:41,840 --> 00:23:47,679
+fourth piece y
+
+586
+00:23:43,919 --> 00:23:50,679
+and also from a you can have
+
+587
+00:23:47,679 --> 00:23:50,679
+x
+
+588
+00:23:53,039 --> 00:23:55,200
+and
+
+589
+00:23:57,039 --> 00:24:02,480
+make them together you get
+
+590
+00:23:59,440 --> 00:24:05,200
+oh i shouldn't use this
+
+591
+00:24:02,480 --> 00:24:08,559
+make a make make them together you get
+
+592
+00:24:05,200 --> 00:24:11,039
+the seventh condition
+
+593
+00:24:08,559 --> 00:24:13,039
+okay actually the sec uh we don't need
+
+594
+00:24:11,039 --> 00:24:14,640
+all of them
+
+595
+00:24:13,039 --> 00:24:16,960
+we need the
+
+596
+00:24:14,640 --> 00:24:21,279
+last two you get this
+
+597
+00:24:16,960 --> 00:24:21,279
+right because you repeatedly use
+
+598
+00:24:21,520 --> 00:24:27,200
+the fifth rule then you will get x
+
+599
+00:24:27,840 --> 00:24:31,760
+l a can derive to
+
+600
+00:24:29,840 --> 00:24:33,200
+be a y
+
+601
+00:24:31,760 --> 00:24:35,360
+then
+
+602
+00:24:33,200 --> 00:24:35,360
+v
+
+603
+00:24:36,960 --> 00:24:39,679
+a
+
+604
+00:24:37,679 --> 00:24:41,200
+y squared then
+
+605
+00:24:39,679 --> 00:24:42,559
+v
+
+606
+00:24:41,200 --> 00:24:46,640
+cubic y
+
+607
+00:24:42,559 --> 00:24:51,440
+and so on and then you make a becomes x
+
+608
+00:24:46,640 --> 00:24:53,360
+so you can get any i x y i
+
+609
+00:24:51,440 --> 00:24:54,960
+for i
+
+610
+00:24:53,360 --> 00:24:58,000
+zero
+
+611
+00:24:54,960 --> 00:25:01,200
+okay and also you'll know that
+
+612
+00:24:58,000 --> 00:25:02,559
+as the star variable can derive to
+
+613
+00:25:01,200 --> 00:25:04,720
+this thing
+
+614
+00:25:02,559 --> 00:25:04,720
+so
+
+615
+00:25:04,960 --> 00:25:11,120
+the final
+
+616
+00:25:07,520 --> 00:25:12,400
+resultant string is in the language
+
+617
+00:25:11,120 --> 00:25:15,919
+okay
+
+618
+00:25:12,400 --> 00:25:18,480
+so the point of this this lemma
+
+619
+00:25:15,919 --> 00:25:21,360
+is to describe the property of the lay
+
+620
+00:25:18,480 --> 00:25:23,360
+of the grammar so we know that from the
+
+621
+00:25:21,360 --> 00:25:27,600
+star variable there is some
+
+622
+00:25:23,360 --> 00:25:29,840
+variable has this property
+
+623
+00:25:27,600 --> 00:25:29,840
+okay
+
+624
+00:25:30,080 --> 00:25:35,440
+then
+
+625
+00:25:32,400 --> 00:25:38,400
+we can use this uh
+
+626
+00:25:35,440 --> 00:25:39,360
+optimus lemma for context reground us to
+
+627
+00:25:38,400 --> 00:25:42,320
+to
+
+628
+00:25:39,360 --> 00:25:45,279
+prove something about grammars right
+
+629
+00:25:42,320 --> 00:25:47,919
+because now you know that okay at least
+
+630
+00:25:45,279 --> 00:25:50,720
+one variable
+
+631
+00:25:47,919 --> 00:25:53,120
+have such properties and you can then we
+
+632
+00:25:50,720 --> 00:25:56,120
+can use this we can use it to do
+
+633
+00:25:53,120 --> 00:25:56,120
+something
+
+634
+00:25:59,200 --> 00:26:03,360
+and what we want to do we want to prove
+
+635
+00:26:01,279 --> 00:26:05,600
+that
+
+636
+00:26:03,360 --> 00:26:08,159
+this language l
+
+637
+00:26:05,600 --> 00:26:08,159
+let's say
+
+638
+00:26:09,440 --> 00:26:14,960
+the number of a's and b's are identical
+
+639
+00:26:12,480 --> 00:26:17,279
+or the number of b's and c's are
+
+640
+00:26:14,960 --> 00:26:19,840
+identical okay
+
+641
+00:26:17,279 --> 00:26:22,320
+and previously we said that this
+
+642
+00:26:19,840 --> 00:26:22,320
+language
+
+643
+00:26:22,559 --> 00:26:30,000
+is inherently ambiguous that means
+
+644
+00:26:26,240 --> 00:26:31,279
+all possible grammars
+
+645
+00:26:30,000 --> 00:26:33,760
+describing
+
+646
+00:26:31,279 --> 00:26:35,440
+generating this language must be
+
+647
+00:26:33,760 --> 00:26:38,400
+ambiguous
+
+648
+00:26:35,440 --> 00:26:41,120
+so we we want to prove that all grammars
+
+649
+00:26:38,400 --> 00:26:44,159
+generating this language must be
+
+650
+00:26:41,120 --> 00:26:46,679
+must be ambiguous okay so that's
+
+651
+00:26:44,159 --> 00:26:49,440
+something about grammar so we need
+
+652
+00:26:46,679 --> 00:26:50,960
+ultima for contextual grammar
+
+653
+00:26:49,440 --> 00:26:52,720
+okay
+
+654
+00:26:50,960 --> 00:26:54,480
+but firstly we need to prove that this
+
+655
+00:26:52,720 --> 00:26:57,200
+language is a context free language
+
+656
+00:26:54,480 --> 00:26:59,440
+right if it is not a context languages
+
+657
+00:26:57,200 --> 00:26:59,440
+then
+
+658
+00:27:00,640 --> 00:27:04,159
+we don't need to talk about that
+
+659
+00:27:02,880 --> 00:27:05,679
+so
+
+660
+00:27:04,159 --> 00:27:09,279
+how to prove a language to be
+
+661
+00:27:05,679 --> 00:27:12,159
+context-free you either design a pda
+
+662
+00:27:09,279 --> 00:27:12,159
+right or
+
+663
+00:27:12,799 --> 00:27:16,159
+give the
+
+664
+00:27:14,640 --> 00:27:18,960
+give the grammar generating this
+
+665
+00:27:16,159 --> 00:27:20,799
+language so let's give a grammar
+
+666
+00:27:18,960 --> 00:27:22,000
+actually it's pretty easy because you
+
+667
+00:27:20,799 --> 00:27:24,320
+see
+
+668
+00:27:22,000 --> 00:27:25,200
+i equals to j over
+
+669
+00:27:24,320 --> 00:27:28,000
+i
+
+670
+00:27:25,200 --> 00:27:30,799
+j equal to k so that's a two language a
+
+671
+00:27:28,000 --> 00:27:32,640
+union of two languages right so let's
+
+672
+00:27:30,799 --> 00:27:35,120
+write the first one so
+
+673
+00:27:32,640 --> 00:27:36,960
+we want to have a language we want to
+
+674
+00:27:35,120 --> 00:27:38,240
+have language like
+
+675
+00:27:36,960 --> 00:27:39,679
+a n
+
+676
+00:27:38,240 --> 00:27:41,360
+b n
+
+677
+00:27:39,679 --> 00:27:42,480
+c n
+
+678
+00:27:41,360 --> 00:27:43,360
+okay
+
+679
+00:27:42,480 --> 00:27:44,880
+so
+
+680
+00:27:43,360 --> 00:27:46,799
+n
+
+681
+00:27:44,880 --> 00:27:49,760
+and
+
+682
+00:27:46,799 --> 00:27:51,600
+0 something like that so let's say l1 is
+
+683
+00:27:49,760 --> 00:27:54,399
+the language here
+
+684
+00:27:51,600 --> 00:27:55,919
+and it's pretty easy to write grammar
+
+685
+00:27:54,399 --> 00:27:59,279
+for that we
+
+686
+00:27:55,919 --> 00:28:02,559
+here we uh ignore the formal description
+
+687
+00:27:59,279 --> 00:28:05,679
+okay so we just write rules so start
+
+688
+00:28:02,559 --> 00:28:06,720
+from the start variable
+
+689
+00:28:05,679 --> 00:28:10,080
+we
+
+690
+00:28:06,720 --> 00:28:10,080
+use one variable here
+
+691
+00:28:10,480 --> 00:28:13,440
+let me
+
+692
+00:28:11,440 --> 00:28:14,960
+change the variable okay
+
+693
+00:28:13,440 --> 00:28:16,399
+so that's a
+
+694
+00:28:14,960 --> 00:28:17,760
+star variable
+
+695
+00:28:16,399 --> 00:28:20,880
+we have
+
+696
+00:28:17,760 --> 00:28:24,080
+we use the variable here b and c
+
+697
+00:28:20,880 --> 00:28:25,600
+and we want b to generate identical
+
+698
+00:28:24,080 --> 00:28:28,799
+numbers of a
+
+699
+00:28:25,600 --> 00:28:31,679
+a's and b's and use c to generate you
+
+700
+00:28:28,799 --> 00:28:34,240
+know c so b
+
+701
+00:28:31,679 --> 00:28:35,360
+may become epsilon
+
+702
+00:28:34,240 --> 00:28:37,360
+right
+
+703
+00:28:35,360 --> 00:28:39,120
+so n equals to zero
+
+704
+00:28:37,360 --> 00:28:40,159
+or
+
+705
+00:28:39,120 --> 00:28:41,120
+a
+
+706
+00:28:40,159 --> 00:28:42,880
+b
+
+707
+00:28:41,120 --> 00:28:44,399
+b
+
+708
+00:28:42,880 --> 00:28:46,240
+see that's all
+
+709
+00:28:44,399 --> 00:28:48,640
+and c
+
+710
+00:28:46,240 --> 00:28:49,679
+generates epsilon
+
+711
+00:28:48,640 --> 00:28:50,720
+or
+
+712
+00:28:49,679 --> 00:28:52,240
+what
+
+713
+00:28:50,720 --> 00:28:54,399
+let's say c
+
+714
+00:28:52,240 --> 00:28:54,399
+c
+
+715
+00:28:54,559 --> 00:28:58,399
+okay you will see the five rules
+
+716
+00:28:57,600 --> 00:28:59,840
+three
+
+717
+00:28:58,399 --> 00:29:01,279
+variables
+
+718
+00:28:59,840 --> 00:29:02,320
+finishes the
+
+719
+00:29:01,279 --> 00:29:04,399
+grammar
+
+720
+00:29:02,320 --> 00:29:07,520
+if you want to write it formally you say
+
+721
+00:29:04,399 --> 00:29:09,120
+that okay grammar for l1
+
+722
+00:29:07,520 --> 00:29:10,080
+is a full tuple
+
+723
+00:29:09,120 --> 00:29:12,559
+the
+
+724
+00:29:10,080 --> 00:29:14,240
+variable is a and b and c
+
+725
+00:29:12,559 --> 00:29:15,840
+and then
+
+726
+00:29:14,240 --> 00:29:18,080
+terminals is a b
+
+727
+00:29:15,840 --> 00:29:19,679
+a small case this
+
+728
+00:29:18,080 --> 00:29:23,039
+small case a and b
+
+729
+00:29:19,679 --> 00:29:25,520
+and then rules the five rows here and
+
+730
+00:29:23,039 --> 00:29:28,480
+the star variable is a okay
+
+731
+00:29:25,520 --> 00:29:29,600
+and the same thing goes to l2
+
+732
+00:29:28,480 --> 00:29:30,880
+let's say
+
+733
+00:29:29,600 --> 00:29:36,320
+you have
+
+734
+00:29:30,880 --> 00:29:36,320
+some a and the same number of b and c
+
+735
+00:29:36,559 --> 00:29:42,320
+same thing okay
+
+736
+00:29:38,640 --> 00:29:43,200
+so we have that let's make it like uh
+
+737
+00:29:42,320 --> 00:29:44,559
+d
+
+738
+00:29:43,200 --> 00:29:46,640
+becomes
+
+739
+00:29:44,559 --> 00:29:49,279
+e f
+
+740
+00:29:46,640 --> 00:29:52,000
+and the e
+
+741
+00:29:49,279 --> 00:29:53,600
+let's make it generating a okay so
+
+742
+00:29:52,000 --> 00:29:54,480
+epsilon
+
+743
+00:29:53,600 --> 00:29:55,760
+a
+
+744
+00:29:54,480 --> 00:29:57,279
+e
+
+745
+00:29:55,760 --> 00:30:01,360
+and then f
+
+746
+00:29:57,279 --> 00:30:02,640
+that's then epsilon generates b and c so
+
+747
+00:30:01,360 --> 00:30:03,440
+b
+
+748
+00:30:02,640 --> 00:30:04,559
+f
+
+749
+00:30:03,440 --> 00:30:06,799
+c
+
+750
+00:30:04,559 --> 00:30:09,440
+so exactly the same
+
+751
+00:30:06,799 --> 00:30:10,960
+oh okay very very similar
+
+752
+00:30:09,440 --> 00:30:12,720
+just you know some
+
+753
+00:30:10,960 --> 00:30:14,080
+like symmetric
+
+754
+00:30:12,720 --> 00:30:16,000
+so
+
+755
+00:30:14,080 --> 00:30:16,960
+star variable is d
+
+756
+00:30:16,000 --> 00:30:18,480
+and
+
+757
+00:30:16,960 --> 00:30:22,399
+generates ef
+
+758
+00:30:18,480 --> 00:30:24,000
+e either generates some a's or not and f
+
+759
+00:30:22,399 --> 00:30:27,440
+either generates
+
+760
+00:30:24,000 --> 00:30:29,039
+equal numbers of b and c or not that's
+
+761
+00:30:27,440 --> 00:30:31,360
+it
+
+762
+00:30:29,039 --> 00:30:35,360
+then this language arrow here is just a
+
+763
+00:30:31,360 --> 00:30:38,000
+union of the two languages as we
+
+764
+00:30:35,360 --> 00:30:38,000
+introduced
+
+765
+00:30:39,039 --> 00:30:43,600
+uh
+
+766
+00:30:40,720 --> 00:30:45,520
+the concept of contextual grammar we
+
+767
+00:30:43,600 --> 00:30:48,720
+only need to add
+
+768
+00:30:45,520 --> 00:30:48,720
+a new variable s
+
+769
+00:30:48,840 --> 00:30:54,559
+which becomes may become a
+
+770
+00:30:53,440 --> 00:30:56,320
+or
+
+771
+00:30:54,559 --> 00:30:59,039
+d
+
+772
+00:30:56,320 --> 00:31:01,279
+right we add one new variable as our
+
+773
+00:30:59,039 --> 00:31:03,120
+star variable for the
+
+774
+00:31:01,279 --> 00:31:06,399
+grammar for l
+
+775
+00:31:03,120 --> 00:31:10,320
+and the two rules a may become a
+
+776
+00:31:06,399 --> 00:31:11,919
+and the second rule a may become d
+
+777
+00:31:10,320 --> 00:31:13,519
+so you see
+
+778
+00:31:11,919 --> 00:31:15,919
+the language here
+
+779
+00:31:13,519 --> 00:31:17,519
+l here can be
+
+780
+00:31:15,919 --> 00:31:19,039
+generated
+
+781
+00:31:17,519 --> 00:31:20,799
+by
+
+782
+00:31:19,039 --> 00:31:21,679
+how many variables
+
+783
+00:31:20,799 --> 00:31:23,200
+three
+
+784
+00:31:21,679 --> 00:31:25,360
+six
+
+785
+00:31:23,200 --> 00:31:26,399
+seven seven variables
+
+786
+00:31:25,360 --> 00:31:28,799
+a
+
+787
+00:31:26,399 --> 00:31:31,799
+s a b
+
+788
+00:31:28,799 --> 00:31:31,799
+f
+
+789
+00:31:33,120 --> 00:31:36,399
+f right
+
+790
+00:31:34,559 --> 00:31:37,919
+sorry
+
+791
+00:31:36,399 --> 00:31:40,000
+seven variables
+
+792
+00:31:37,919 --> 00:31:40,960
+and how many rows
+
+793
+00:31:40,000 --> 00:31:42,880
+five
+
+794
+00:31:40,960 --> 00:31:44,240
+ten twelve
+
+795
+00:31:42,880 --> 00:31:45,200
+twelve rules
+
+796
+00:31:44,240 --> 00:31:47,039
+right
+
+797
+00:31:45,200 --> 00:31:49,679
+so
+
+798
+00:31:47,039 --> 00:31:51,279
+apparently this language is a context
+
+799
+00:31:49,679 --> 00:31:54,000
+free language
+
+800
+00:31:51,279 --> 00:31:57,919
+now we want to prove that
+
+801
+00:31:54,000 --> 00:31:57,919
+all the grammar possibly
+
+802
+00:31:58,480 --> 00:32:03,120
+generating this language
+
+803
+00:32:01,120 --> 00:32:05,440
+must be ambiguous
+
+804
+00:32:03,120 --> 00:32:05,440
+okay
+
+805
+00:32:06,960 --> 00:32:10,399
+so what is a
+
+806
+00:32:08,960 --> 00:32:12,080
+what what what
+
+807
+00:32:10,399 --> 00:32:13,600
+what what what does it mean that the
+
+808
+00:32:12,080 --> 00:32:16,720
+grammation figures
+
+809
+00:32:13,600 --> 00:32:18,080
+for the language there is at least one
+
+810
+00:32:16,720 --> 00:32:21,840
+string
+
+811
+00:32:18,080 --> 00:32:24,640
+there will be two or more pastries
+
+812
+00:32:21,840 --> 00:32:26,159
+that's grammar ambiguous right
+
+813
+00:32:24,640 --> 00:32:29,840
+so
+
+814
+00:32:26,159 --> 00:32:29,840
+let's start a proof
+
+815
+00:32:30,000 --> 00:32:34,320
+since l is a contextual languages we
+
+816
+00:32:33,039 --> 00:32:38,399
+just prove it
+
+817
+00:32:34,320 --> 00:32:42,080
+and for any context free grammar g
+
+818
+00:32:38,399 --> 00:32:47,840
+generating l okay so g here is an
+
+819
+00:32:42,080 --> 00:32:47,840
+arbitrary grammar that can generate l
+
+820
+00:32:48,000 --> 00:32:52,480
+by octane's lemma for context-free
+
+821
+00:32:50,159 --> 00:32:55,039
+grammars there
+
+822
+00:32:52,480 --> 00:32:58,799
+is p
+
+823
+00:32:55,039 --> 00:32:58,799
+a natural number for g
+
+824
+00:32:59,279 --> 00:33:04,080
+and without loss of generality we assume
+
+825
+00:33:02,799 --> 00:33:06,240
+p
+
+826
+00:33:04,080 --> 00:33:07,440
+is greater than one
+
+827
+00:33:06,240 --> 00:33:09,279
+okay
+
+828
+00:33:07,440 --> 00:33:13,279
+usually p
+
+829
+00:33:09,279 --> 00:33:14,640
+is not it won't be zero or one okay so p
+
+830
+00:33:13,279 --> 00:33:17,360
+equal to
+
+831
+00:33:14,640 --> 00:33:17,360
+greater than one
+
+832
+00:33:18,399 --> 00:33:23,440
+so
+
+833
+00:33:20,320 --> 00:33:24,480
+let's uh check out a string
+
+834
+00:33:23,440 --> 00:33:26,720
+s
+
+835
+00:33:24,480 --> 00:33:30,799
+which we we will make it
+
+836
+00:33:26,720 --> 00:33:30,799
+pas pb and
+
+837
+00:33:31,519 --> 00:33:34,480
+p plus
+
+838
+00:33:35,519 --> 00:33:40,799
+p plus p
+
+839
+00:33:37,679 --> 00:33:40,799
+factorial c
+
+840
+00:33:41,039 --> 00:33:43,600
+and for
+
+841
+00:33:42,159 --> 00:33:46,640
+uh
+
+842
+00:33:43,600 --> 00:33:49,919
+contrast that's uh think about another
+
+843
+00:33:46,640 --> 00:33:53,519
+string okay another string
+
+844
+00:33:49,919 --> 00:33:54,640
+p plus p factorial a's and the p c's and
+
+845
+00:33:53,519 --> 00:33:56,640
+the p
+
+846
+00:33:54,640 --> 00:33:57,840
+p b's and the pcs
+
+847
+00:33:56,640 --> 00:33:59,440
+right
+
+848
+00:33:57,840 --> 00:34:02,960
+and
+
+849
+00:33:59,440 --> 00:34:06,480
+you'll you see that the two string here
+
+850
+00:34:02,960 --> 00:34:08,320
+the two string here are both in l okay
+
+851
+00:34:06,480 --> 00:34:10,000
+there's no problem with that
+
+852
+00:34:08,320 --> 00:34:12,879
+and
+
+853
+00:34:10,000 --> 00:34:14,720
+we mark all b's
+
+854
+00:34:12,879 --> 00:34:18,000
+as distinguished
+
+855
+00:34:14,720 --> 00:34:19,760
+okay we mark all b's as they distinguish
+
+856
+00:34:18,000 --> 00:34:21,760
+for oakland's landmark for complexity
+
+857
+00:34:19,760 --> 00:34:24,879
+grammar we
+
+858
+00:34:21,760 --> 00:34:28,240
+need to mark at least the p positions
+
+859
+00:34:24,879 --> 00:34:30,960
+now for both strings there are exactly p
+
+860
+00:34:28,240 --> 00:34:32,960
+b's so there's no problem here
+
+861
+00:34:30,960 --> 00:34:35,760
+then
+
+862
+00:34:32,960 --> 00:34:38,720
+by oakton's lemma we know that
+
+863
+00:34:35,760 --> 00:34:38,720
+for the grammar g
+
+864
+00:34:39,280 --> 00:34:46,320
+it must contain a variable a
+
+865
+00:34:43,119 --> 00:34:48,159
+such that start from the start variable
+
+866
+00:34:46,320 --> 00:34:49,520
+there is a derivation there is a
+
+867
+00:34:48,159 --> 00:34:53,280
+derivation
+
+868
+00:34:49,520 --> 00:34:54,480
+to some terminal string u and then
+
+869
+00:34:53,280 --> 00:34:55,919
+a
+
+870
+00:34:54,480 --> 00:34:56,960
+and then z
+
+871
+00:34:55,919 --> 00:34:59,680
+okay
+
+872
+00:34:56,960 --> 00:35:02,720
+and for the string s prime here let's
+
+873
+00:34:59,680 --> 00:35:04,720
+assume that there is a variable a and b
+
+874
+00:35:02,720 --> 00:35:06,880
+may be the same variable or maybe not we
+
+875
+00:35:04,720 --> 00:35:08,160
+just use another variable to talk about
+
+876
+00:35:06,880 --> 00:35:10,000
+it okay
+
+877
+00:35:08,160 --> 00:35:12,480
+so
+
+878
+00:35:10,000 --> 00:35:14,880
+the star variable has
+
+879
+00:35:12,480 --> 00:35:16,800
+a derivation to
+
+880
+00:35:14,880 --> 00:35:20,320
+perhaps some other
+
+881
+00:35:16,800 --> 00:35:22,560
+first piece and then b and then z prime
+
+882
+00:35:20,320 --> 00:35:23,680
+okay so according to orton's lemma we
+
+883
+00:35:22,560 --> 00:35:26,079
+have this
+
+884
+00:35:23,680 --> 00:35:27,280
+uh derivation
+
+885
+00:35:26,079 --> 00:35:30,400
+after
+
+886
+00:35:27,280 --> 00:35:33,280
+that we know that
+
+887
+00:35:30,400 --> 00:35:33,280
+the variable a
+
+888
+00:35:34,240 --> 00:35:38,240
+have
+
+889
+00:35:36,079 --> 00:35:42,160
+we will have derivations for error
+
+890
+00:35:38,240 --> 00:35:47,520
+variable a to arbitrary and greater or
+
+891
+00:35:42,160 --> 00:35:49,680
+equal to zero as vn x y n
+
+892
+00:35:47,520 --> 00:35:50,560
+and the same thing goes to
+
+893
+00:35:49,680 --> 00:35:52,079
+b
+
+894
+00:35:50,560 --> 00:35:53,280
+okay so that's
+
+895
+00:35:52,079 --> 00:35:56,480
+the
+
+896
+00:35:53,280 --> 00:35:58,960
+inference from octane's lemma
+
+897
+00:35:56,480 --> 00:36:00,880
+and then we pump s
+
+898
+00:35:58,960 --> 00:36:05,200
+okay we pump x
+
+899
+00:36:00,880 --> 00:36:07,280
+well how to how to how do we pump how uh
+
+900
+00:36:05,200 --> 00:36:10,000
+how do we pump it
+
+901
+00:36:07,280 --> 00:36:14,400
+since s is
+
+902
+00:36:10,000 --> 00:36:16,320
+u v x y z or x prime as u prime v prime
+
+903
+00:36:14,400 --> 00:36:19,599
+x y from z plus uh
+
+904
+00:36:16,320 --> 00:36:19,599
+y prime zero right
+
+905
+00:36:20,800 --> 00:36:26,000
+since the only way to pump s is that the
+
+906
+00:36:23,599 --> 00:36:27,280
+second
+
+907
+00:36:26,000 --> 00:36:29,359
+peace as
+
+908
+00:36:27,280 --> 00:36:30,960
+ks
+
+909
+00:36:29,359 --> 00:36:31,920
+and the
+
+910
+00:36:30,960 --> 00:36:33,200
+fourth
+
+911
+00:36:31,920 --> 00:36:35,599
+piece as
+
+912
+00:36:33,200 --> 00:36:36,560
+be case
+
+913
+00:36:35,599 --> 00:36:37,839
+why
+
+914
+00:36:36,560 --> 00:36:41,040
+because you see
+
+915
+00:36:37,839 --> 00:36:43,680
+if you don't if the let's say there is a
+
+916
+00:36:41,040 --> 00:36:45,920
+way to divide the string and it can be
+
+917
+00:36:43,680 --> 00:36:46,720
+pumped
+
+918
+00:36:45,920 --> 00:36:49,680
+but
+
+919
+00:36:46,720 --> 00:36:51,040
+the other way is not arbitrary because
+
+920
+00:36:49,680 --> 00:36:54,400
+uh and
+
+921
+00:36:51,040 --> 00:36:57,200
+we must have the second piece as kas and
+
+922
+00:36:54,400 --> 00:37:00,560
+the fourth piece as kb's otherwise
+
+923
+00:36:57,200 --> 00:37:02,960
+otherwise the pumping won't work
+
+924
+00:37:00,560 --> 00:37:05,680
+okay so the uh
+
+925
+00:37:02,960 --> 00:37:06,960
+according to ogden's lema the only way
+
+926
+00:37:05,680 --> 00:37:08,800
+to pump
+
+927
+00:37:06,960 --> 00:37:10,480
+is
+
+928
+00:37:08,800 --> 00:37:14,720
+b
+
+929
+00:37:10,480 --> 00:37:17,280
+as kx and y as kb
+
+930
+00:37:14,720 --> 00:37:20,400
+so in this case
+
+931
+00:37:17,280 --> 00:37:22,720
+okay and the k is
+
+932
+00:37:20,400 --> 00:37:24,320
+within 1 to p
+
+933
+00:37:22,720 --> 00:37:28,000
+okay
+
+934
+00:37:24,320 --> 00:37:28,000
+so that's that's n
+
+935
+00:37:29,280 --> 00:37:32,800
+p factorial
+
+936
+00:37:31,040 --> 00:37:34,960
+divided by k
+
+937
+00:37:32,800 --> 00:37:38,400
+plus 1 okay
+
+938
+00:37:34,960 --> 00:37:41,839
+well the question here is can we make n
+
+939
+00:37:38,400 --> 00:37:44,880
+as this figure as this value
+
+940
+00:37:41,839 --> 00:37:47,680
+because n here must be an integer okay
+
+941
+00:37:44,880 --> 00:37:48,880
+so let's talk about a little bit what is
+
+942
+00:37:47,680 --> 00:37:52,720
+p
+
+943
+00:37:48,880 --> 00:37:56,800
+p is 1 oh sorry what is p factorial
+
+944
+00:37:52,720 --> 00:37:58,240
+p factorial is 1 times 2
+
+945
+00:37:56,800 --> 00:37:59,280
+3
+
+946
+00:37:58,240 --> 00:38:01,760
+2
+
+947
+00:37:59,280 --> 00:38:02,720
+p right that's a definition
+
+948
+00:38:01,760 --> 00:38:04,640
+and
+
+949
+00:38:02,720 --> 00:38:06,320
+since k
+
+950
+00:38:04,640 --> 00:38:07,599
+is
+
+951
+00:38:06,320 --> 00:38:09,599
+something
+
+952
+00:38:07,599 --> 00:38:12,560
+let's say k is here
+
+953
+00:38:09,599 --> 00:38:13,599
+so the whole thing divided by k
+
+954
+00:38:12,560 --> 00:38:14,640
+is
+
+955
+00:38:13,599 --> 00:38:17,839
+like this
+
+956
+00:38:14,640 --> 00:38:19,440
+so it's an integer and plus one
+
+957
+00:38:17,839 --> 00:38:20,160
+individual of course
+
+958
+00:38:19,440 --> 00:38:23,760
+so
+
+959
+00:38:20,160 --> 00:38:25,920
+no problem we can set we can let n as
+
+960
+00:38:23,760 --> 00:38:28,640
+this figure
+
+961
+00:38:25,920 --> 00:38:31,359
+and we know that
+
+962
+00:38:28,640 --> 00:38:32,800
+the whole thing
+
+963
+00:38:31,359 --> 00:38:34,800
+can be derived
+
+964
+00:38:32,800 --> 00:38:37,280
+so what can be derived
+
+965
+00:38:34,800 --> 00:38:39,839
+that'll be
+
+966
+00:38:37,280 --> 00:38:39,839
+since v
+
+967
+00:38:40,160 --> 00:38:45,839
+v is a k right and
+
+968
+00:38:43,760 --> 00:38:46,720
+repeated
+
+969
+00:38:45,839 --> 00:38:48,880
+it
+
+970
+00:38:46,720 --> 00:38:51,599
+so many times
+
+971
+00:38:48,880 --> 00:38:54,320
+so many times so
+
+972
+00:38:51,599 --> 00:38:54,320
+like this
+
+973
+00:38:54,720 --> 00:38:58,320
+okay
+
+974
+00:38:55,680 --> 00:39:02,000
+so you will have
+
+975
+00:38:58,320 --> 00:39:03,200
+p factorial plus k a
+
+976
+00:39:02,000 --> 00:39:04,400
+and
+
+977
+00:39:03,200 --> 00:39:05,599
+x here
+
+978
+00:39:04,400 --> 00:39:08,079
+x here
+
+979
+00:39:05,599 --> 00:39:08,079
+and then
+
+980
+00:39:08,720 --> 00:39:13,359
+b
+
+981
+00:39:10,079 --> 00:39:15,680
+factorial plus kb
+
+982
+00:39:13,359 --> 00:39:19,599
+and for the other string we have this
+
+983
+00:39:15,680 --> 00:39:20,960
+with the same reason okay we have this
+
+984
+00:39:19,599 --> 00:39:23,040
+then
+
+985
+00:39:20,960 --> 00:39:24,480
+you see
+
+986
+00:39:23,040 --> 00:39:26,400
+according to obtain's name of a
+
+987
+00:39:24,480 --> 00:39:28,800
+contextry grammar
+
+988
+00:39:26,400 --> 00:39:33,680
+from the start variable
+
+989
+00:39:28,800 --> 00:39:34,960
+we will have a direction to uaz
+
+990
+00:39:33,680 --> 00:39:36,800
+and
+
+991
+00:39:34,960 --> 00:39:39,839
+a
+
+992
+00:39:36,800 --> 00:39:41,119
+we have a derivation from a to this
+
+993
+00:39:39,839 --> 00:39:45,760
+string
+
+994
+00:39:41,119 --> 00:39:47,040
+so we plug this string into here we got
+
+995
+00:39:45,760 --> 00:39:48,320
+this one
+
+996
+00:39:47,040 --> 00:39:51,839
+okay
+
+997
+00:39:48,320 --> 00:39:54,839
+and since the second three second pieces
+
+998
+00:39:51,839 --> 00:39:58,480
+is second piece is
+
+999
+00:39:54,839 --> 00:40:03,280
+kase these parts become
+
+1000
+00:39:58,480 --> 00:40:04,640
+v and these parts become y
+
+1001
+00:40:03,280 --> 00:40:05,680
+right
+
+1002
+00:40:04,640 --> 00:40:07,520
+and
+
+1003
+00:40:05,680 --> 00:40:11,040
+we know that
+
+1004
+00:40:07,520 --> 00:40:12,640
+what is u
+
+1005
+00:40:11,040 --> 00:40:13,520
+u v
+
+1006
+00:40:12,640 --> 00:40:14,319
+x
+
+1007
+00:40:13,520 --> 00:40:16,079
+y
+
+1008
+00:40:14,319 --> 00:40:16,880
+z what is it
+
+1009
+00:40:16,079 --> 00:40:18,800
+this
+
+1010
+00:40:16,880 --> 00:40:22,400
+is s
+
+1011
+00:40:18,800 --> 00:40:25,599
+right and oh sorry string s that's the
+
+1012
+00:40:22,400 --> 00:40:27,599
+variable not the star variable okay and
+
+1013
+00:40:25,599 --> 00:40:29,119
+what is this what is the string the
+
+1014
+00:40:27,599 --> 00:40:30,880
+string is
+
+1015
+00:40:29,119 --> 00:40:32,240
+a
+
+1016
+00:40:30,880 --> 00:40:33,440
+pas
+
+1017
+00:40:32,240 --> 00:40:34,480
+p b
+
+1018
+00:40:33,440 --> 00:40:37,040
+and
+
+1019
+00:40:34,480 --> 00:40:39,599
+p factorial plus p
+
+1020
+00:40:37,040 --> 00:40:40,480
+c
+
+1021
+00:40:39,599 --> 00:40:44,000
+so
+
+1022
+00:40:40,480 --> 00:40:46,640
+you plug p factorial a
+
+1023
+00:40:44,000 --> 00:40:46,640
+into
+
+1024
+00:40:46,960 --> 00:40:53,680
+somewhere inside this and also p
+
+1025
+00:40:50,400 --> 00:40:56,400
+factorial b somewhere inside this
+
+1026
+00:40:53,680 --> 00:40:56,400
+you get
+
+1027
+00:40:56,480 --> 00:40:59,760
+p plus p
+
+1028
+00:40:59,920 --> 00:41:04,960
+p factorial plus p a and the p factorial
+
+1029
+00:41:03,200 --> 00:41:08,640
+plus p b
+
+1030
+00:41:04,960 --> 00:41:09,920
+and also p factorial plus p c
+
+1031
+00:41:08,640 --> 00:41:10,960
+okay so
+
+1032
+00:41:09,920 --> 00:41:15,119
+number
+
+1033
+00:41:10,960 --> 00:41:15,119
+of abc are the same
+
+1034
+00:41:15,200 --> 00:41:19,040
+that means
+
+1035
+00:41:17,520 --> 00:41:21,599
+from some variable
+
+1036
+00:41:19,040 --> 00:41:25,200
+to derive
+
+1037
+00:41:21,599 --> 00:41:25,200
+to derive a string like this
+
+1038
+00:41:26,720 --> 00:41:31,680
+and for the same process we can we can
+
+1039
+00:41:29,440 --> 00:41:32,960
+know that from the start variable of the
+
+1040
+00:41:31,680 --> 00:41:35,440
+same the
+
+1041
+00:41:32,960 --> 00:41:37,599
+front variable of grammar g
+
+1042
+00:41:35,440 --> 00:41:38,960
+we also have a way
+
+1043
+00:41:37,599 --> 00:41:41,760
+via
+
+1044
+00:41:38,960 --> 00:41:44,960
+another probably another
+
+1045
+00:41:41,760 --> 00:41:46,240
+verbal and another terminal string to
+
+1046
+00:41:44,960 --> 00:41:50,720
+pump
+
+1047
+00:41:46,240 --> 00:41:51,520
+this string what is this string which is
+
+1048
+00:41:50,720 --> 00:41:54,319
+p
+
+1049
+00:41:51,520 --> 00:41:55,599
+plus p factorial a right and the
+
+1050
+00:41:54,319 --> 00:41:57,680
+pb's
+
+1051
+00:41:55,599 --> 00:42:00,640
+p c that's our
+
+1052
+00:41:57,680 --> 00:42:03,680
+that's our start starting point right
+
+1053
+00:42:00,640 --> 00:42:04,640
+and from this starting point by doing
+
+1054
+00:42:03,680 --> 00:42:06,480
+the
+
+1055
+00:42:04,640 --> 00:42:07,520
+pumping like this
+
+1056
+00:42:06,480 --> 00:42:10,240
+we can
+
+1057
+00:42:07,520 --> 00:42:13,040
+have the same string
+
+1058
+00:42:10,240 --> 00:42:16,280
+okay we have we can have the same the
+
+1059
+00:42:13,040 --> 00:42:16,280
+same string
+
+1060
+00:42:18,160 --> 00:42:20,400
+so
+
+1061
+00:42:22,720 --> 00:42:26,000
+up
+
+1062
+00:42:23,839 --> 00:42:30,720
+uh
+
+1063
+00:42:26,000 --> 00:42:32,960
+it looks like we have two derivations
+
+1064
+00:42:30,720 --> 00:42:36,400
+right we have two derivations from star
+
+1065
+00:42:32,960 --> 00:42:38,880
+variable going through two derivations
+
+1066
+00:42:36,400 --> 00:42:40,480
+getting the same string
+
+1067
+00:42:38,880 --> 00:42:43,599
+if so
+
+1068
+00:42:40,480 --> 00:42:46,319
+the grammar is ambiguous right if so the
+
+1069
+00:42:43,599 --> 00:42:48,160
+grammar is ambiguous so now we need to
+
+1070
+00:42:46,319 --> 00:42:52,640
+prove that
+
+1071
+00:42:48,160 --> 00:42:54,960
+the two process the two derivation here
+
+1072
+00:42:52,640 --> 00:42:57,680
+are actually different
+
+1073
+00:42:54,960 --> 00:42:58,560
+they represent different
+
+1074
+00:42:57,680 --> 00:43:01,599
+trees
+
+1075
+00:42:58,560 --> 00:43:02,720
+we must prove that okay otherwise it is
+
+1076
+00:43:01,599 --> 00:43:05,440
+possible
+
+1077
+00:43:02,720 --> 00:43:07,200
+the same derivation or corresponding to
+
+1078
+00:43:05,440 --> 00:43:10,000
+the same past tree
+
+1079
+00:43:07,200 --> 00:43:12,319
+you you just are writing the derivation
+
+1080
+00:43:10,000 --> 00:43:13,680
+of one pastry with different orders or
+
+1081
+00:43:12,319 --> 00:43:15,839
+something
+
+1082
+00:43:13,680 --> 00:43:17,040
+that's not what we want we want to prove
+
+1083
+00:43:15,839 --> 00:43:19,760
+that
+
+1084
+00:43:17,040 --> 00:43:22,240
+these two derivation this one and this
+
+1085
+00:43:19,760 --> 00:43:25,040
+one actually corresponds to different
+
+1086
+00:43:22,240 --> 00:43:26,720
+parts trees then we proved
+
+1087
+00:43:25,040 --> 00:43:28,079
+then we can prove the grammar is
+
+1088
+00:43:26,720 --> 00:43:28,880
+ambiguous
+
+1089
+00:43:28,079 --> 00:43:31,359
+so
+
+1090
+00:43:28,880 --> 00:43:34,480
+let's say
+
+1091
+00:43:31,359 --> 00:43:37,040
+the two parts three
+
+1092
+00:43:34,480 --> 00:43:38,839
+are different
+
+1093
+00:43:37,040 --> 00:43:42,480
+okay
+
+1094
+00:43:38,839 --> 00:43:45,680
+so left hand side we have from start
+
+1095
+00:43:42,480 --> 00:43:47,520
+variable we have uaz and finally gets
+
+1096
+00:43:45,680 --> 00:43:49,280
+the string like this
+
+1097
+00:43:47,520 --> 00:43:52,240
+and from the right hand side we have
+
+1098
+00:43:49,280 --> 00:43:53,680
+this and getting this
+
+1099
+00:43:52,240 --> 00:43:55,520
+and
+
+1100
+00:43:53,680 --> 00:43:59,520
+let's say
+
+1101
+00:43:55,520 --> 00:44:03,680
+the alpha is the string of this
+
+1102
+00:43:59,520 --> 00:44:04,960
+and the beta is a string of this okay
+
+1103
+00:44:03,680 --> 00:44:06,560
+we know that
+
+1104
+00:44:04,960 --> 00:44:11,520
+the variable a
+
+1105
+00:44:06,560 --> 00:44:14,000
+derived alpha and the variable c derives
+
+1106
+00:44:11,520 --> 00:44:15,200
+beta
+
+1107
+00:44:14,000 --> 00:44:16,319
+and
+
+1108
+00:44:15,200 --> 00:44:17,520
+let's say
+
+1109
+00:44:16,319 --> 00:44:19,760
+if
+
+1110
+00:44:17,520 --> 00:44:19,760
+if
+
+1111
+00:44:20,960 --> 00:44:28,400
+if they are
+
+1112
+00:44:23,760 --> 00:44:28,400
+describing the same pastry
+
+1113
+00:44:28,800 --> 00:44:34,440
+if they are describing the same pastry
+
+1114
+00:44:39,760 --> 00:44:42,480
+this part
+
+1115
+00:44:43,359 --> 00:44:46,960
+and
+
+1116
+00:44:44,240 --> 00:44:46,960
+this part
+
+1117
+00:44:48,160 --> 00:44:50,480
+must be
+
+1118
+00:44:49,359 --> 00:44:53,200
+either
+
+1119
+00:44:50,480 --> 00:44:53,200
+disjoint
+
+1120
+00:44:53,920 --> 00:44:56,160
+or
+
+1121
+00:44:57,200 --> 00:45:01,520
+one is the subtree of the other
+
+1122
+00:45:01,839 --> 00:45:06,640
+okay
+
+1123
+00:45:03,440 --> 00:45:09,119
+if the two derivation
+
+1124
+00:45:06,640 --> 00:45:11,200
+you think about this as this way
+
+1125
+00:45:09,119 --> 00:45:14,240
+if the two derivation
+
+1126
+00:45:11,200 --> 00:45:14,240
+corresponds to
+
+1127
+00:45:14,319 --> 00:45:18,119
+the same parse tree
+
+1128
+00:45:22,160 --> 00:45:26,960
+this part
+
+1129
+00:45:23,920 --> 00:45:26,960
+must be disjoint
+
+1130
+00:45:27,599 --> 00:45:32,880
+on the terminal strings
+
+1131
+00:45:30,000 --> 00:45:33,920
+or
+
+1132
+00:45:32,880 --> 00:45:37,040
+another
+
+1133
+00:45:33,920 --> 00:45:38,240
+sorry a subset one is the subset of
+
+1134
+00:45:37,040 --> 00:45:40,640
+another
+
+1135
+00:45:38,240 --> 00:45:42,640
+it is impossible that
+
+1136
+00:45:40,640 --> 00:45:45,119
+it is impossible that
+
+1137
+00:45:42,640 --> 00:45:47,839
+for some
+
+1138
+00:45:45,119 --> 00:45:49,280
+that make it this way for some variable
+
+1139
+00:45:47,839 --> 00:45:51,599
+here
+
+1140
+00:45:49,280 --> 00:45:53,280
+and if the variable is here the
+
+1141
+00:45:51,599 --> 00:45:54,240
+corresponding terminal will be here
+
+1142
+00:45:53,280 --> 00:45:56,720
+right
+
+1143
+00:45:54,240 --> 00:45:59,280
+and impossible that you have another
+
+1144
+00:45:56,720 --> 00:46:00,560
+variable here but generate overlap
+
+1145
+00:45:59,280 --> 00:46:02,480
+overlapped
+
+1146
+00:46:00,560 --> 00:46:04,400
+terminals it's impossible for
+
+1147
+00:46:02,480 --> 00:46:05,280
+context-free languages
+
+1148
+00:46:04,400 --> 00:46:07,599
+right
+
+1149
+00:46:05,280 --> 00:46:07,599
+so
+
+1150
+00:46:08,079 --> 00:46:13,040
+let's see
+
+1151
+00:46:09,440 --> 00:46:13,040
+since from the variable a
+
+1152
+00:46:13,200 --> 00:46:18,079
+a generate a generates this part of the
+
+1153
+00:46:16,720 --> 00:46:19,920
+terminal string
+
+1154
+00:46:18,079 --> 00:46:22,400
+and the b generate
+
+1155
+00:46:19,920 --> 00:46:26,319
+this part of terminal string
+
+1156
+00:46:22,400 --> 00:46:30,319
+let's say the whole terminal string is
+
+1157
+00:46:26,319 --> 00:46:32,240
+this right the whole terminal string
+
+1158
+00:46:30,319 --> 00:46:34,880
+and we we know that
+
+1159
+00:46:32,240 --> 00:46:36,319
+this terminal string has
+
+1160
+00:46:34,880 --> 00:46:40,560
+p plus
+
+1161
+00:46:36,319 --> 00:46:41,520
+p of p factorial plus pbs
+
+1162
+00:46:40,560 --> 00:46:42,720
+okay
+
+1163
+00:46:41,520 --> 00:46:45,920
+and we know
+
+1164
+00:46:42,720 --> 00:46:48,960
+alpha has zombies beta
+
+1165
+00:46:45,920 --> 00:46:49,760
+beta has some b
+
+1166
+00:46:48,960 --> 00:46:51,599
+and
+
+1167
+00:46:49,760 --> 00:46:54,480
+since p
+
+1168
+00:46:51,599 --> 00:46:54,480
+greater than one
+
+1169
+00:46:54,720 --> 00:46:59,680
+oh sorry not this
+
+1170
+00:46:56,960 --> 00:46:59,680
+since k
+
+1171
+00:46:59,760 --> 00:47:03,280
+is
+
+1172
+00:47:00,720 --> 00:47:07,680
+within 1 and p
+
+1173
+00:47:03,280 --> 00:47:09,119
+so alpha at least has at least p plus 1
+
+1174
+00:47:07,680 --> 00:47:12,880
+b
+
+1175
+00:47:09,119 --> 00:47:14,240
+beta or also has
+
+1176
+00:47:12,880 --> 00:47:17,760
+at least one
+
+1177
+00:47:14,240 --> 00:47:20,480
+factorial p factorial plus one b's
+
+1178
+00:47:17,760 --> 00:47:22,960
+but you we know that the the
+
+1179
+00:47:20,480 --> 00:47:25,680
+the whole terminal string has only
+
+1180
+00:47:22,960 --> 00:47:27,760
+p plus 1 p
+
+1181
+00:47:25,680 --> 00:47:27,760
+b
+
+1182
+00:47:27,920 --> 00:47:30,800
+so
+
+1183
+00:47:28,960 --> 00:47:34,720
+it cannot be
+
+1184
+00:47:30,800 --> 00:47:36,559
+separate to beta and alpha because p
+
+1185
+00:47:34,720 --> 00:47:39,359
+factorial plus 1
+
+1186
+00:47:36,559 --> 00:47:41,520
+is greater than
+
+1187
+00:47:39,359 --> 00:47:44,079
+p factorial plus p
+
+1188
+00:47:41,520 --> 00:47:46,319
+divided by 2.
+
+1189
+00:47:44,079 --> 00:47:46,319
+so
+
+1190
+00:47:46,559 --> 00:47:49,760
+alpha and the beta
+
+1191
+00:47:48,720 --> 00:47:51,280
+must
+
+1192
+00:47:49,760 --> 00:47:53,359
+overlap
+
+1193
+00:47:51,280 --> 00:47:54,720
+okay
+
+1194
+00:47:53,359 --> 00:47:57,520
+why because
+
+1195
+00:47:54,720 --> 00:47:58,480
+the total number of b's in the terminal
+
+1196
+00:47:57,520 --> 00:48:02,559
+string
+
+1197
+00:47:58,480 --> 00:48:04,640
+cannot be cannot satisfy the number of
+
+1198
+00:48:02,559 --> 00:48:05,359
+these contents
+
+1199
+00:48:04,640 --> 00:48:08,160
+in
+
+1200
+00:48:05,359 --> 00:48:09,599
+alpha and in beta
+
+1201
+00:48:08,160 --> 00:48:12,240
+so
+
+1202
+00:48:09,599 --> 00:48:14,400
+they must be overlapped there must be
+
+1203
+00:48:12,240 --> 00:48:15,440
+overlapped portion of the terminal
+
+1204
+00:48:14,400 --> 00:48:17,040
+string
+
+1205
+00:48:15,440 --> 00:48:20,960
+however
+
+1206
+00:48:17,040 --> 00:48:23,599
+however what is alpha
+
+1207
+00:48:20,960 --> 00:48:24,400
+alpha has some a's
+
+1208
+00:48:23,599 --> 00:48:29,200
+right
+
+1209
+00:48:24,400 --> 00:48:30,000
+and the beta has some b c's
+
+1210
+00:48:29,200 --> 00:48:32,839
+so
+
+1211
+00:48:30,000 --> 00:48:34,559
+neither alpha nor beta
+
+1212
+00:48:32,839 --> 00:48:37,839
+is
+
+1213
+00:48:34,559 --> 00:48:41,839
+a substring of the other
+
+1214
+00:48:37,839 --> 00:48:44,800
+and we know that as we just described
+
+1215
+00:48:41,839 --> 00:48:46,880
+if the two derivation here
+
+1216
+00:48:44,800 --> 00:48:48,720
+representing
+
+1217
+00:48:46,880 --> 00:48:50,880
+the same
+
+1218
+00:48:48,720 --> 00:48:53,760
+posture
+
+1219
+00:48:50,880 --> 00:48:55,599
+the portion of terminal string derived
+
+1220
+00:48:53,760 --> 00:48:57,920
+from a
+
+1221
+00:48:55,599 --> 00:49:00,160
+and the portion of terminal string
+
+1222
+00:48:57,920 --> 00:49:03,359
+derived from b
+
+1223
+00:49:00,160 --> 00:49:06,400
+are either disjoint okay are either
+
+1224
+00:49:03,359 --> 00:49:10,079
+disjoint on the terminal string that is
+
+1225
+00:49:06,400 --> 00:49:11,359
+determination here and this part derived
+
+1226
+00:49:10,079 --> 00:49:14,240
+from a
+
+1227
+00:49:11,359 --> 00:49:17,240
+and this part derived from b
+
+1228
+00:49:14,240 --> 00:49:17,240
+or
+
+1229
+00:49:18,480 --> 00:49:23,200
+this part arrived from a or b and the
+
+1230
+00:49:20,960 --> 00:49:25,280
+other part is a substring that's the
+
+1231
+00:49:23,200 --> 00:49:28,000
+only two possibilities
+
+1232
+00:49:25,280 --> 00:49:30,640
+for the derivation of context-free
+
+1233
+00:49:28,000 --> 00:49:32,640
+grammar contextual language it is not
+
+1234
+00:49:30,640 --> 00:49:36,000
+possible for the same
+
+1235
+00:49:32,640 --> 00:49:37,200
+parse tree to have something like this
+
+1236
+00:49:36,000 --> 00:49:42,400
+okay
+
+1237
+00:49:37,200 --> 00:49:42,400
+but now we seem to have this case so
+
+1238
+00:49:43,760 --> 00:49:47,200
+it's a contradiction
+
+1239
+00:49:45,920 --> 00:49:49,200
+that means
+
+1240
+00:49:47,200 --> 00:49:52,800
+that means
+
+1241
+00:49:49,200 --> 00:49:55,599
+for the particular string here
+
+1242
+00:49:52,800 --> 00:49:58,960
+for a particular string here
+
+1243
+00:49:55,599 --> 00:50:01,200
+any grammar g
+
+1244
+00:49:58,960 --> 00:50:03,280
+any grammar g
+
+1245
+00:50:01,200 --> 00:50:04,079
+for l
+
+1246
+00:50:03,280 --> 00:50:06,160
+has
+
+1247
+00:50:04,079 --> 00:50:07,280
+two
+
+1248
+00:50:06,160 --> 00:50:08,720
+different
+
+1249
+00:50:07,280 --> 00:50:12,599
+parse trees
+
+1250
+00:50:08,720 --> 00:50:12,599
+so we know that
+
+1251
+00:50:12,640 --> 00:50:19,760
+any grammar g for l must be
+
+1252
+00:50:15,280 --> 00:50:20,480
+ambiguous okay must be ambiguous
+
+1253
+00:50:19,760 --> 00:50:22,559
+so
+
+1254
+00:50:20,480 --> 00:50:24,079
+l is inherently
+
+1255
+00:50:22,559 --> 00:50:25,119
+ambiguous
+
+1256
+00:50:24,079 --> 00:50:29,839
+because
+
+1257
+00:50:25,119 --> 00:50:29,839
+all possible grammar generating l
+
+1258
+00:50:30,240 --> 00:50:36,680
+are ambiguous
+
+1259
+00:50:32,240 --> 00:50:36,680
+okay so we have it proved
+

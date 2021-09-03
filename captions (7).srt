@@ -1,0 +1,3588 @@
+1
+00:00:02,000 --> 00:00:08,000
+let's continue to
+
+2
+00:00:04,000 --> 00:00:11,120
+prove the equivalence of final taunta
+
+3
+00:00:08,000 --> 00:00:14,799
+and regular expression
+
+4
+00:00:11,120 --> 00:00:18,320
+last time we have proven that
+
+5
+00:00:14,799 --> 00:00:19,119
+if a language is described by a regular
+
+6
+00:00:18,320 --> 00:00:22,160
+expression
+
+7
+00:00:19,119 --> 00:00:26,240
+then it is regular
+
+8
+00:00:22,160 --> 00:00:29,359
+to prove this lemma we used
+
+9
+00:00:26,240 --> 00:00:32,640
+the definition of regular expression and
+
+10
+00:00:29,359 --> 00:00:33,600
+according to regular expression we can
+
+11
+00:00:32,640 --> 00:00:36,800
+construct
+
+12
+00:00:33,600 --> 00:00:37,680
+corresponding finite automata to any
+
+13
+00:00:36,800 --> 00:00:40,719
+possible
+
+14
+00:00:37,680 --> 00:00:44,399
+valid regular expression
+
+15
+00:00:40,719 --> 00:00:47,120
+that's why if a language is described
+
+16
+00:00:44,399 --> 00:00:47,920
+by a regular expression it is regular
+
+17
+00:00:47,120 --> 00:00:50,480
+because
+
+18
+00:00:47,920 --> 00:00:51,360
+that language can be recognized by an
+
+19
+00:00:50,480 --> 00:00:55,280
+nfa
+
+20
+00:00:51,360 --> 00:00:59,600
+and we already proved that any
+
+21
+00:00:55,280 --> 00:01:02,719
+nfa has a
+
+22
+00:00:59,600 --> 00:01:03,680
+equivalent dfa so by definition that
+
+23
+00:01:02,719 --> 00:01:06,960
+language
+
+24
+00:01:03,680 --> 00:01:10,720
+is regular okay so let's do
+
+25
+00:01:06,960 --> 00:01:14,080
+another direction that we want to prove
+
+26
+00:01:10,720 --> 00:01:17,840
+if a if a language is regular that means
+
+27
+00:01:14,080 --> 00:01:20,560
+if a language can be recognized
+
+28
+00:01:17,840 --> 00:01:23,600
+by some deterministic or
+
+29
+00:01:20,560 --> 00:01:28,159
+non-deterministic final automata
+
+30
+00:01:23,600 --> 00:01:31,680
+it can be described
+
+31
+00:01:28,159 --> 00:01:34,479
+by a regular expression
+
+32
+00:01:31,680 --> 00:01:35,759
+that means see if you have a machine
+
+33
+00:01:34,479 --> 00:01:40,240
+finite automata
+
+34
+00:01:35,759 --> 00:01:43,360
+deterministic or non-deterministic and
+
+35
+00:01:40,240 --> 00:01:46,399
+you can directly
+
+36
+00:01:43,360 --> 00:01:48,960
+use regular expression to specify
+
+37
+00:01:46,399 --> 00:01:49,840
+the language of that machine that we
+
+38
+00:01:48,960 --> 00:01:53,200
+want to
+
+39
+00:01:49,840 --> 00:01:56,719
+prove here
+
+40
+00:01:53,200 --> 00:01:59,759
+so how do we do that well basically
+
+41
+00:01:56,719 --> 00:02:04,079
+what we want we want to do is
+
+42
+00:01:59,759 --> 00:02:04,079
+to convert a dfa
+
+43
+00:02:04,320 --> 00:02:10,160
+into regular expression okay
+
+44
+00:02:10,479 --> 00:02:16,239
+since a language represented by a dfa
+
+45
+00:02:14,160 --> 00:02:17,760
+it is regular because that's our
+
+46
+00:02:16,239 --> 00:02:22,400
+deformation
+
+47
+00:02:17,760 --> 00:02:25,280
+so given a dfa we convert directly
+
+48
+00:02:22,400 --> 00:02:27,840
+converts that dfa into regular
+
+49
+00:02:25,280 --> 00:02:27,840
+expression
+
+50
+00:02:28,400 --> 00:02:36,000
+we by this way we can prove that
+
+51
+00:02:31,760 --> 00:02:39,760
+any regular language can be described
+
+52
+00:02:36,000 --> 00:02:43,840
+by regular expression okay
+
+53
+00:02:39,760 --> 00:02:46,879
+so before doing that
+
+54
+00:02:43,840 --> 00:02:50,480
+we need another
+
+55
+00:02:46,879 --> 00:02:53,200
+kind of machine as helper okay
+
+56
+00:02:50,480 --> 00:02:54,720
+so here we introduce a new machine yet
+
+57
+00:02:53,200 --> 00:02:57,519
+another new machine
+
+58
+00:02:54,720 --> 00:02:58,640
+it is called generalized
+
+59
+00:02:57,519 --> 00:03:02,080
+non-deterministic
+
+60
+00:02:58,640 --> 00:03:05,519
+finite automaton well long name but
+
+61
+00:03:02,080 --> 00:03:09,280
+let's call it gnfa okay
+
+62
+00:03:05,519 --> 00:03:12,720
+and what is a gnfa
+
+63
+00:03:09,280 --> 00:03:15,440
+a geometry is also a five table but uh
+
+64
+00:03:12,720 --> 00:03:16,879
+slightly different from what we have
+
+65
+00:03:15,440 --> 00:03:20,319
+previously
+
+66
+00:03:16,879 --> 00:03:23,360
+first one is also a finite set of states
+
+67
+00:03:20,319 --> 00:03:26,720
+okay a finite set of states
+
+68
+00:03:23,360 --> 00:03:30,400
+and the second one is also alphabet
+
+69
+00:03:26,720 --> 00:03:33,599
+that means the language of the machine
+
+70
+00:03:30,400 --> 00:03:37,440
+is composed of a sigma here
+
+71
+00:03:33,599 --> 00:03:40,560
+then let's say the fourth the fourth
+
+72
+00:03:37,440 --> 00:03:44,319
+uh component is a star state
+
+73
+00:03:40,560 --> 00:03:47,519
+of course q start is in
+
+74
+00:03:44,319 --> 00:03:50,720
+the states right and the
+
+75
+00:03:47,519 --> 00:03:54,159
+fifth uh fifth component is q
+
+76
+00:03:50,720 --> 00:03:57,599
+accept so uh gnfa has only
+
+77
+00:03:54,159 --> 00:04:00,080
+one accept state it's
+
+78
+00:03:57,599 --> 00:04:01,040
+it is uh slightly different from what we
+
+79
+00:04:00,080 --> 00:04:04,159
+previously have
+
+80
+00:04:01,040 --> 00:04:07,280
+right so the
+
+81
+00:04:04,159 --> 00:04:10,879
+accept states is also in
+
+82
+00:04:07,280 --> 00:04:14,000
+queue okay and since
+
+83
+00:04:10,879 --> 00:04:16,639
+the component
+
+84
+00:04:14,000 --> 00:04:18,799
+are different so the delta function the
+
+85
+00:04:16,639 --> 00:04:19,840
+definition of the transition function
+
+86
+00:04:18,799 --> 00:04:23,040
+delta
+
+87
+00:04:19,840 --> 00:04:26,160
+is also different so
+
+88
+00:04:23,040 --> 00:04:26,160
+for transition function
+
+89
+00:04:26,720 --> 00:04:30,639
+you can start from any state
+
+90
+00:04:30,720 --> 00:04:34,560
+to you can start from any state except
+
+91
+00:04:34,160 --> 00:04:38,720
+for
+
+92
+00:04:34,560 --> 00:04:43,280
+accept state to any state except
+
+93
+00:04:38,720 --> 00:04:46,800
+for start state and map to
+
+94
+00:04:43,280 --> 00:04:47,360
+a regular expression okay well if you
+
+95
+00:04:46,800 --> 00:04:49,440
+cannot
+
+96
+00:04:47,360 --> 00:04:50,720
+catch the definition here we have an
+
+97
+00:04:49,440 --> 00:04:54,000
+example
+
+98
+00:04:50,720 --> 00:04:58,800
+so see in the figure
+
+99
+00:04:54,000 --> 00:05:02,479
+it is an example for g n f a
+
+100
+00:04:58,800 --> 00:05:06,479
+there are four states here let's say one
+
+101
+00:05:02,479 --> 00:05:09,680
+two three four so
+
+102
+00:05:06,479 --> 00:05:12,720
+uh we write a tuple like
+
+103
+00:05:09,680 --> 00:05:15,360
+one two three four
+
+104
+00:05:12,720 --> 00:05:16,080
+that's the state right and the alphabets
+
+105
+00:05:15,360 --> 00:05:20,320
+will be
+
+106
+00:05:16,080 --> 00:05:23,520
+a b and transition function
+
+107
+00:05:20,320 --> 00:05:24,240
+and the state one is the star state and
+
+108
+00:05:23,520 --> 00:05:27,520
+the state
+
+109
+00:05:24,240 --> 00:05:30,560
+uh four is the final
+
+110
+00:05:27,520 --> 00:05:32,960
+accept state okay so that's the formal
+
+111
+00:05:30,560 --> 00:05:36,400
+description of the machine of course we
+
+112
+00:05:32,960 --> 00:05:40,560
+didn't write the delta yet
+
+113
+00:05:36,400 --> 00:05:43,360
+so for delta you can start you can
+
+114
+00:05:40,560 --> 00:05:43,360
+start from
+
+115
+00:05:45,840 --> 00:05:54,320
+any other state except for q accept
+
+116
+00:05:49,600 --> 00:05:54,320
+so that's a delta 1
+
+117
+00:05:54,960 --> 00:06:02,400
+2 actually we should have delta 1 1
+
+118
+00:05:59,360 --> 00:06:04,720
+oh no because the
+
+119
+00:06:02,400 --> 00:06:06,000
+you cannot go into star state so there
+
+120
+00:06:04,720 --> 00:06:09,520
+is no one one
+
+121
+00:06:06,000 --> 00:06:12,400
+and one two would be what in this case
+
+122
+00:06:09,520 --> 00:06:13,840
+a b star that's a regular expression
+
+123
+00:06:12,400 --> 00:06:18,240
+right
+
+124
+00:06:13,840 --> 00:06:21,600
+and one three is
+
+125
+00:06:18,240 --> 00:06:23,680
+uh nothing which is empty set
+
+126
+00:06:21,600 --> 00:06:25,199
+and actually that's a regular expression
+
+127
+00:06:23,680 --> 00:06:27,440
+of course the
+
+128
+00:06:25,199 --> 00:06:28,240
+language of the regular expression means
+
+129
+00:06:27,440 --> 00:06:32,560
+empty set
+
+130
+00:06:28,240 --> 00:06:37,759
+right and 1 4 be
+
+131
+00:06:32,560 --> 00:06:40,880
+b right so you can do that
+
+132
+00:06:37,759 --> 00:06:41,759
+from the figure and complete the formal
+
+133
+00:06:40,880 --> 00:06:44,960
+description
+
+134
+00:06:41,759 --> 00:06:49,360
+and that's our gnfa okay
+
+135
+00:06:44,960 --> 00:06:53,360
+so for a g and g and a glfa
+
+136
+00:06:49,360 --> 00:06:56,479
+you have several uh finite finite uh
+
+137
+00:06:53,360 --> 00:06:58,240
+states and then one of them is the q
+
+138
+00:06:56,479 --> 00:07:00,560
+start and the other of them
+
+139
+00:06:58,240 --> 00:07:02,160
+uh another of them would be q accept and
+
+140
+00:07:00,560 --> 00:07:05,680
+there are only one
+
+141
+00:07:02,160 --> 00:07:09,360
+accept states for gnfa and transition
+
+142
+00:07:05,680 --> 00:07:11,440
+are mapping from state to state
+
+143
+00:07:09,360 --> 00:07:13,120
+and the mapping would be regular
+
+144
+00:07:11,440 --> 00:07:17,039
+excavation
+
+145
+00:07:13,120 --> 00:07:22,000
+okay so how
+
+146
+00:07:17,039 --> 00:07:24,479
+does this machine work let's say
+
+147
+00:07:22,000 --> 00:07:26,000
+the formal description is like this and
+
+148
+00:07:24,479 --> 00:07:29,199
+pretty similar
+
+149
+00:07:26,000 --> 00:07:32,160
+to what we previously had and you can
+
+150
+00:07:29,199 --> 00:07:33,440
+compare them and check it check it but
+
+151
+00:07:32,160 --> 00:07:38,639
+in short
+
+152
+00:07:33,440 --> 00:07:38,639
+we said that a gnfa accepts a string w
+
+153
+00:07:38,800 --> 00:07:42,400
+in sigma star which is all possible
+
+154
+00:07:41,039 --> 00:07:45,680
+strings composed
+
+155
+00:07:42,400 --> 00:07:48,879
+by sigma right if
+
+156
+00:07:45,680 --> 00:07:49,360
+the string can be separate into several
+
+157
+00:07:48,879 --> 00:07:54,160
+parts
+
+158
+00:07:49,360 --> 00:07:54,160
+let's say k parts and usually k
+
+159
+00:07:54,879 --> 00:07:58,479
+is nothing to do with the length of the
+
+160
+00:07:57,599 --> 00:08:01,680
+language
+
+161
+00:07:58,479 --> 00:08:05,120
+the string and each of the parts
+
+162
+00:08:01,680 --> 00:08:06,560
+is also a string and it is possible
+
+163
+00:08:05,120 --> 00:08:10,479
+epson okay
+
+164
+00:08:06,560 --> 00:08:13,759
+but it each part of the
+
+165
+00:08:10,479 --> 00:08:17,280
+separated string is also in
+
+166
+00:08:13,759 --> 00:08:20,319
+sigma star and you can find the sequence
+
+167
+00:08:17,280 --> 00:08:24,240
+of states q1
+
+168
+00:08:20,319 --> 00:08:27,680
+q0 q1 to qk such that
+
+169
+00:08:24,240 --> 00:08:31,039
+three conditions are satisfied first one
+
+170
+00:08:27,680 --> 00:08:33,519
+is that the first stage in the sequence
+
+171
+00:08:31,039 --> 00:08:35,680
+is the start state of the machine and
+
+172
+00:08:33,519 --> 00:08:37,279
+the final one
+
+173
+00:08:35,680 --> 00:08:38,959
+would be the accept states of the
+
+174
+00:08:37,279 --> 00:08:42,240
+machine
+
+175
+00:08:38,959 --> 00:08:44,640
+and each for each
+
+176
+00:08:42,240 --> 00:08:44,640
+step
+
+177
+00:08:45,360 --> 00:08:54,160
+from q i minus 1
+
+178
+00:08:49,600 --> 00:08:57,360
+to q 1.
+
+179
+00:08:54,160 --> 00:09:00,399
+the corresponding string
+
+180
+00:08:57,360 --> 00:09:04,480
+corresponding string is
+
+181
+00:09:00,399 --> 00:09:07,519
+in the mapped
+
+182
+00:09:04,480 --> 00:09:11,040
+the language of the mapped
+
+183
+00:09:07,519 --> 00:09:14,880
+regular expression okay
+
+184
+00:09:11,040 --> 00:09:18,160
+so q w 2 is in
+
+185
+00:09:14,880 --> 00:09:23,120
+r 2 what is r 2
+
+186
+00:09:18,160 --> 00:09:26,320
+that would be
+
+187
+00:09:23,120 --> 00:09:29,680
+q one q
+
+188
+00:09:26,320 --> 00:09:35,200
+two like this
+
+189
+00:09:29,680 --> 00:09:35,200
+okay so that means
+
+190
+00:09:35,440 --> 00:09:42,000
+start from start state and when you
+
+191
+00:09:38,800 --> 00:09:42,000
+want to go to q1
+
+192
+00:09:42,240 --> 00:09:46,640
+you can use some strings
+
+193
+00:09:46,800 --> 00:09:56,000
+in the specified
+
+194
+00:09:51,360 --> 00:09:56,000
+the specified language by the
+
+195
+00:09:57,839 --> 00:10:05,680
+oh sorry by the
+
+196
+00:10:00,880 --> 00:10:08,800
+regular expression
+
+197
+00:10:05,680 --> 00:10:12,320
+of the transition function
+
+198
+00:10:08,800 --> 00:10:15,600
+okay so that's cn
+
+199
+00:10:12,320 --> 00:10:19,839
+uh exactly see an example then you can
+
+200
+00:10:15,600 --> 00:10:19,839
+get that better
+
+201
+00:10:22,800 --> 00:10:25,360
+let's say
+
+202
+00:10:26,079 --> 00:10:29,839
+if the input string is
+
+203
+00:10:29,920 --> 00:10:37,040
+simply b
+
+204
+00:10:33,360 --> 00:10:39,279
+okay so
+
+205
+00:10:37,040 --> 00:10:40,480
+we say that the machine can accept the
+
+206
+00:10:39,279 --> 00:10:44,240
+string b
+
+207
+00:10:40,480 --> 00:10:45,360
+why because you can let's say the state
+
+208
+00:10:44,240 --> 00:10:48,720
+will be 1
+
+209
+00:10:45,360 --> 00:10:52,880
+two three four
+
+210
+00:10:48,720 --> 00:10:56,000
+okay so
+
+211
+00:10:52,880 --> 00:10:58,800
+we can say that uh the sequence
+
+212
+00:10:56,000 --> 00:10:59,120
+will be the state a sequence of states
+
+213
+00:10:58,800 --> 00:11:02,480
+is
+
+214
+00:10:59,120 --> 00:11:06,079
+1 4 and
+
+215
+00:11:02,480 --> 00:11:08,640
+satisfy the three conditions first
+
+216
+00:11:06,079 --> 00:11:10,720
+the first state the first state is start
+
+217
+00:11:08,640 --> 00:11:12,839
+state and the final state is accept
+
+218
+00:11:10,720 --> 00:11:16,000
+states right
+
+219
+00:11:12,839 --> 00:11:19,040
+and the string b
+
+220
+00:11:16,000 --> 00:11:23,360
+is in the language of
+
+221
+00:11:19,040 --> 00:11:26,560
+delta what 1 4
+
+222
+00:11:23,360 --> 00:11:29,839
+which is the regular expression b
+
+223
+00:11:26,560 --> 00:11:33,600
+right and what is the regular
+
+224
+00:11:29,839 --> 00:11:37,519
+uh the language that is
+
+225
+00:11:33,600 --> 00:11:37,519
+b so
+
+226
+00:11:37,920 --> 00:11:44,320
+this g n f a accept
+
+227
+00:11:41,200 --> 00:11:48,079
+b let's say if you check
+
+228
+00:11:44,320 --> 00:11:52,079
+abstrom the empty string as input
+
+229
+00:11:48,079 --> 00:11:55,519
+i think the machine doesn't accept
+
+230
+00:11:52,079 --> 00:11:58,800
+epsilon because there are only
+
+231
+00:11:55,519 --> 00:12:02,720
+three uh h
+
+232
+00:11:58,800 --> 00:12:06,800
+out of start and you have no
+
+233
+00:12:02,720 --> 00:12:09,519
+empty string in it right
+
+234
+00:12:06,800 --> 00:12:10,399
+actually when we have a regular version
+
+235
+00:12:09,519 --> 00:12:13,040
+as
+
+236
+00:12:10,399 --> 00:12:16,399
+empty set here that means it's there's
+
+237
+00:12:13,040 --> 00:12:19,760
+no way from q star to three
+
+238
+00:12:16,399 --> 00:12:23,279
+and anything here and
+
+239
+00:12:19,760 --> 00:12:26,480
+here are not uh
+
+240
+00:12:23,279 --> 00:12:29,760
+uh does uh do and do the
+
+241
+00:12:26,480 --> 00:12:31,440
+the two languages do not contain empty
+
+242
+00:12:29,760 --> 00:12:34,639
+string so you have no way
+
+243
+00:12:31,440 --> 00:12:35,360
+from q star and go somewhere with empty
+
+244
+00:12:34,639 --> 00:12:39,360
+string
+
+245
+00:12:35,360 --> 00:12:43,519
+okay so no
+
+246
+00:12:39,360 --> 00:12:43,519
+let's say another example as
+
+247
+00:12:44,800 --> 00:12:53,839
+a a a
+
+248
+00:12:48,560 --> 00:12:53,839
+b e a okay
+
+249
+00:12:53,920 --> 00:13:02,000
+so we might think that uh you can go
+
+250
+00:12:57,920 --> 00:13:05,200
+since it's a
+
+251
+00:13:02,000 --> 00:13:07,440
+so it will be in this
+
+252
+00:13:05,200 --> 00:13:08,560
+language right because the language
+
+253
+00:13:07,440 --> 00:13:11,760
+would be
+
+254
+00:13:08,560 --> 00:13:14,959
+a a b
+
+255
+00:13:11,760 --> 00:13:18,079
+a b b a b
+
+256
+00:13:14,959 --> 00:13:21,120
+b b etc
+
+257
+00:13:18,079 --> 00:13:24,880
+right so a is in here
+
+258
+00:13:21,120 --> 00:13:28,320
+so you can go from 1 to 2
+
+259
+00:13:24,880 --> 00:13:28,320
+with a
+
+260
+00:13:29,440 --> 00:13:38,320
+then that if we go a
+
+261
+00:13:35,279 --> 00:13:40,720
+we go back to two right but
+
+262
+00:13:38,320 --> 00:13:41,440
+you will find that there is no way for
+
+263
+00:13:40,720 --> 00:13:45,199
+bba
+
+264
+00:13:41,440 --> 00:13:48,399
+here see you cannot go
+
+265
+00:13:45,199 --> 00:13:49,360
+this way although you think you can
+
+266
+00:13:48,399 --> 00:13:52,800
+think you have
+
+267
+00:13:49,360 --> 00:13:53,760
+a b or no va sorry so you have no way to
+
+268
+00:13:52,800 --> 00:13:57,839
+go
+
+269
+00:13:53,760 --> 00:14:00,079
+this way or you go this way
+
+270
+00:13:57,839 --> 00:14:01,279
+because there are empty string so you
+
+271
+00:14:00,079 --> 00:14:04,079
+can you know
+
+272
+00:14:01,279 --> 00:14:05,360
+not consuming anything and the goal here
+
+273
+00:14:04,079 --> 00:14:08,000
+after going here
+
+274
+00:14:05,360 --> 00:14:10,399
+there's no a b so you cannot go this way
+
+275
+00:14:08,000 --> 00:14:14,839
+you might be able to go this way with
+
+276
+00:14:10,399 --> 00:14:18,880
+spending 1b or 2 over
+
+277
+00:14:14,839 --> 00:14:21,519
+2b but this one
+
+278
+00:14:18,880 --> 00:14:22,160
+still there and after you arrive q
+
+279
+00:14:21,519 --> 00:14:25,199
+accept
+
+280
+00:14:22,160 --> 00:14:26,240
+not nowhere to go so it won't be able to
+
+281
+00:14:25,199 --> 00:14:30,000
+process the
+
+282
+00:14:26,240 --> 00:14:33,120
+whole string this way so
+
+283
+00:14:30,000 --> 00:14:33,680
+it looks like this machine cannot accept
+
+284
+00:14:33,120 --> 00:14:37,199
+this
+
+285
+00:14:33,680 --> 00:14:40,959
+this stream but yes it can
+
+286
+00:14:37,199 --> 00:14:43,519
+because don't forget that gnfa is
+
+287
+00:14:40,959 --> 00:14:44,639
+generalized non-deterministic finite
+
+288
+00:14:43,519 --> 00:14:48,480
+automata so
+
+289
+00:14:44,639 --> 00:14:50,959
+it's it has the
+
+290
+00:14:48,480 --> 00:14:52,160
+uh non-deterministic computation
+
+291
+00:14:50,959 --> 00:14:55,680
+capability
+
+292
+00:14:52,160 --> 00:14:58,720
+so any possible way
+
+293
+00:14:55,680 --> 00:14:59,199
+uh as long as one of them accept the
+
+294
+00:14:58,720 --> 00:15:01,760
+string
+
+295
+00:14:59,199 --> 00:15:02,959
+we have to consider the machine accept
+
+296
+00:15:01,760 --> 00:15:06,240
+the string
+
+297
+00:15:02,959 --> 00:15:12,800
+so which way let's see if
+
+298
+00:15:06,240 --> 00:15:15,920
+um if we go to
+
+299
+00:15:12,800 --> 00:15:20,079
+from 1 state 1 we go to
+
+300
+00:15:15,920 --> 00:15:22,399
+state 2 by using a right like this
+
+301
+00:15:20,079 --> 00:15:22,399
+then
+
+302
+00:15:24,720 --> 00:15:32,399
+we go another we use another a
+
+303
+00:15:28,480 --> 00:15:35,440
+go through this transition
+
+304
+00:15:32,399 --> 00:15:38,399
+to three stage three
+
+305
+00:15:35,440 --> 00:15:39,120
+we can do that right because what is a
+
+306
+00:15:38,399 --> 00:15:42,880
+star
+
+307
+00:15:39,120 --> 00:15:47,519
+a star means empty string a
+
+308
+00:15:42,880 --> 00:15:50,880
+a a a a a et cetera
+
+309
+00:15:47,519 --> 00:15:55,519
+right and then we
+
+310
+00:15:50,880 --> 00:15:59,120
+use this transition
+
+311
+00:15:55,519 --> 00:16:03,040
+go back to three okay
+
+312
+00:15:59,120 --> 00:16:06,880
+then we go through this transition
+
+313
+00:16:03,040 --> 00:16:10,639
+with empty string right because a a star
+
+314
+00:16:06,880 --> 00:16:14,160
+what is a star again it is empty string
+
+315
+00:16:10,639 --> 00:16:18,560
+a a a a a a
+
+316
+00:16:14,160 --> 00:16:22,079
+etc even numbers of a's
+
+317
+00:16:18,560 --> 00:16:25,040
+right so have an
+
+318
+00:16:22,079 --> 00:16:25,040
+abstract here
+
+319
+00:16:25,440 --> 00:16:33,600
+then go back to
+
+320
+00:16:29,120 --> 00:16:36,639
+two finally we use ba
+
+321
+00:16:33,600 --> 00:16:37,519
+go through release arc what is the
+
+322
+00:16:36,639 --> 00:16:40,560
+language here
+
+323
+00:16:37,519 --> 00:16:44,000
+the language will be a b and b
+
+324
+00:16:40,560 --> 00:16:49,440
+a two strings so
+
+325
+00:16:44,000 --> 00:16:51,920
+finally four so you see this string
+
+326
+00:16:49,440 --> 00:16:53,040
+in one computational branch can be
+
+327
+00:16:51,920 --> 00:16:57,519
+separate
+
+328
+00:16:53,040 --> 00:17:01,519
+as a a
+
+329
+00:16:57,519 --> 00:17:06,240
+a b epsilon
+
+330
+00:17:01,519 --> 00:17:10,000
+b a and the corresponding
+
+331
+00:17:06,240 --> 00:17:13,360
+sequence of states would be 1
+
+332
+00:17:10,000 --> 00:17:17,039
+2 3 3
+
+333
+00:17:13,360 --> 00:17:18,079
+2 4. and the satisfying the three
+
+334
+00:17:17,039 --> 00:17:20,480
+condition that
+
+335
+00:17:18,079 --> 00:17:21,839
+one is the start state four is the
+
+336
+00:17:20,480 --> 00:17:25,520
+accept state
+
+337
+00:17:21,839 --> 00:17:30,160
+and each separated string is in
+
+338
+00:17:25,520 --> 00:17:34,080
+is in the language specified
+
+339
+00:17:30,160 --> 00:17:36,160
+by the regular expression of the output
+
+340
+00:17:34,080 --> 00:17:37,360
+of the transition function of the two
+
+341
+00:17:36,160 --> 00:17:39,600
+states
+
+342
+00:17:37,360 --> 00:17:40,720
+right so you can you see that for
+
+343
+00:17:39,600 --> 00:17:44,799
+example for
+
+344
+00:17:40,720 --> 00:17:47,840
+2 3 the delta function
+
+345
+00:17:44,799 --> 00:17:51,440
+2 3 what is it
+
+346
+00:17:47,840 --> 00:17:55,039
+specified specify a star
+
+347
+00:17:51,440 --> 00:17:58,320
+right and the string a here
+
+348
+00:17:55,039 --> 00:18:01,679
+is really in
+
+349
+00:17:58,320 --> 00:18:05,520
+the language of a star
+
+350
+00:18:01,679 --> 00:18:08,799
+right which is empty string
+
+351
+00:18:05,520 --> 00:18:12,480
+a two a's three a's
+
+352
+00:18:08,799 --> 00:18:16,320
+etc right
+
+353
+00:18:12,480 --> 00:18:19,840
+so that's the that's how
+
+354
+00:18:16,320 --> 00:18:19,840
+gnfa's operate
+
+355
+00:18:20,000 --> 00:18:24,640
+so finally we can see that uh if you
+
+356
+00:18:22,880 --> 00:18:28,720
+want this string to process
+
+357
+00:18:24,640 --> 00:18:31,600
+b b b b let's say this string
+
+358
+00:18:28,720 --> 00:18:32,559
+you will find that it cannot go this way
+
+359
+00:18:31,600 --> 00:18:35,919
+not this way
+
+360
+00:18:32,559 --> 00:18:39,760
+only this way but this way in
+
+361
+00:18:35,919 --> 00:18:44,400
+for this language there is only one b
+
+362
+00:18:39,760 --> 00:18:48,400
+right b so after going through this
+
+363
+00:18:44,400 --> 00:18:51,120
+transition then you still have something
+
+364
+00:18:48,400 --> 00:18:52,000
+cannot process because there's no way
+
+365
+00:18:51,120 --> 00:18:56,640
+out of
+
+366
+00:18:52,000 --> 00:18:59,760
+q accept so no and yes
+
+367
+00:18:56,640 --> 00:19:03,280
+so that's the example of the operation
+
+368
+00:18:59,760 --> 00:19:03,280
+of gnf8
+
+369
+00:19:04,640 --> 00:19:12,400
+okay so if you have no
+
+370
+00:19:09,840 --> 00:19:15,120
+problem here then you can think about
+
+371
+00:19:12,400 --> 00:19:18,799
+the machines we have learned
+
+372
+00:19:15,120 --> 00:19:23,600
+for now and we have
+
+373
+00:19:18,799 --> 00:19:26,320
+dfa we have nfa and now we have gnfa
+
+374
+00:19:23,600 --> 00:19:27,120
+and of course like uh we when we
+
+375
+00:19:26,320 --> 00:19:30,080
+introduced
+
+376
+00:19:27,120 --> 00:19:30,400
+an fa we are talk we were talking about
+
+377
+00:19:30,080 --> 00:19:33,280
+uh
+
+378
+00:19:30,400 --> 00:19:34,400
+since we have a new machine and we
+
+379
+00:19:33,280 --> 00:19:37,919
+actually
+
+380
+00:19:34,400 --> 00:19:41,039
+don't know what kind of languages this
+
+381
+00:19:37,919 --> 00:19:42,400
+this new new machine can handle or
+
+382
+00:19:41,039 --> 00:19:46,640
+recognize
+
+383
+00:19:42,400 --> 00:19:47,600
+and now we have yet another new machine
+
+384
+00:19:46,640 --> 00:19:51,679
+gnfa
+
+385
+00:19:47,600 --> 00:19:55,600
+we don't know that either
+
+386
+00:19:51,679 --> 00:20:00,960
+but it is easy to see that
+
+387
+00:19:55,600 --> 00:20:04,400
+a dfa a dfa is really
+
+388
+00:20:00,960 --> 00:20:08,960
+a special case of gnfa okay
+
+389
+00:20:04,400 --> 00:20:12,799
+although uh they seem pretty different
+
+390
+00:20:08,960 --> 00:20:16,320
+but actually it's very easy to see that
+
+391
+00:20:12,799 --> 00:20:19,520
+by doing a conversion let's say
+
+392
+00:20:16,320 --> 00:20:23,039
+if you have a dfa like the
+
+393
+00:20:19,520 --> 00:20:26,159
+m1 we have here okay
+
+394
+00:20:23,039 --> 00:20:28,480
+so uh what
+
+395
+00:20:26,159 --> 00:20:30,000
+should we do for the conversion it's
+
+396
+00:20:28,480 --> 00:20:33,120
+pretty easy
+
+397
+00:20:30,000 --> 00:20:36,720
+you add one more state
+
+398
+00:20:33,120 --> 00:20:38,240
+as the new start state of the gnfa we
+
+399
+00:20:36,720 --> 00:20:41,280
+want to construct
+
+400
+00:20:38,240 --> 00:20:44,080
+and then and other new stars
+
+401
+00:20:41,280 --> 00:20:46,559
+sorry another state which will be the
+
+402
+00:20:44,080 --> 00:20:50,320
+accept state
+
+403
+00:20:46,559 --> 00:20:55,520
+and since gnfa is
+
+404
+00:20:50,320 --> 00:20:58,240
+uh non-deterministic okay and it has
+
+405
+00:20:55,520 --> 00:20:59,520
+regular expression on the transition we
+
+406
+00:20:58,240 --> 00:21:02,799
+add
+
+407
+00:20:59,520 --> 00:21:07,120
+absolute to the original
+
+408
+00:21:02,799 --> 00:21:10,480
+start state of the dfa and from
+
+409
+00:21:07,120 --> 00:21:11,600
+the accept states we add epsilon to our
+
+410
+00:21:10,480 --> 00:21:15,280
+new
+
+411
+00:21:11,600 --> 00:21:18,880
+accept state okay if you have multiple
+
+412
+00:21:15,280 --> 00:21:22,559
+accept states of the
+
+413
+00:21:18,880 --> 00:21:25,679
+dfa you for example if q3
+
+414
+00:21:22,559 --> 00:21:26,799
+is also us and accept states in the
+
+415
+00:21:25,679 --> 00:21:30,159
+original dfa
+
+416
+00:21:26,799 --> 00:21:34,640
+we also do this
+
+417
+00:21:30,159 --> 00:21:38,320
+okay for example and the original
+
+418
+00:21:34,640 --> 00:21:40,799
+accept state is no longer
+
+419
+00:21:38,320 --> 00:21:42,240
+accept states in our geon effect it's a
+
+420
+00:21:40,799 --> 00:21:46,480
+common state only that
+
+421
+00:21:42,240 --> 00:21:49,679
+it has only that it will has
+
+422
+00:21:46,480 --> 00:21:50,320
+will have a abstract as regular
+
+423
+00:21:49,679 --> 00:21:53,919
+expression
+
+424
+00:21:50,320 --> 00:21:56,960
+to the new accept states
+
+425
+00:21:53,919 --> 00:22:00,320
+okay and then the
+
+426
+00:21:56,960 --> 00:22:03,919
+interesting part is that we can treat
+
+427
+00:22:00,320 --> 00:22:08,080
+we can consider all the
+
+428
+00:22:03,919 --> 00:22:11,360
+symbol see that would be symbols
+
+429
+00:22:08,080 --> 00:22:14,559
+for the original dfa here we
+
+430
+00:22:11,360 --> 00:22:18,320
+directly make them
+
+431
+00:22:14,559 --> 00:22:22,159
+regular expressions okay
+
+432
+00:22:18,320 --> 00:22:26,080
+so for regular expression of 0
+
+433
+00:22:22,159 --> 00:22:29,679
+what language it specifies that will be
+
+434
+00:22:26,080 --> 00:22:32,799
+only one string zero right
+
+435
+00:22:29,679 --> 00:22:36,320
+and for example in here that would be
+
+436
+00:22:32,799 --> 00:22:40,480
+one something like this so here
+
+437
+00:22:36,320 --> 00:22:44,559
+will be
+
+438
+00:22:40,480 --> 00:22:49,679
+zero and one
+
+439
+00:22:44,559 --> 00:22:49,679
+right then we just need to
+
+440
+00:22:52,960 --> 00:22:59,120
+change that like uh change data type
+
+441
+00:22:56,320 --> 00:23:00,880
+and interpret the transition at
+
+442
+00:22:59,120 --> 00:23:04,799
+differently than we finished
+
+443
+00:23:00,880 --> 00:23:08,559
+we actually finished the construction
+
+444
+00:23:04,799 --> 00:23:12,000
+so formally described our new gene fa
+
+445
+00:23:08,559 --> 00:23:15,440
+converted from m1 will be
+
+446
+00:23:12,000 --> 00:23:18,559
+at two more states right
+
+447
+00:23:15,440 --> 00:23:21,679
+so five states and sigma is
+
+448
+00:23:18,559 --> 00:23:25,919
+also still 0 1 and q
+
+449
+00:23:21,679 --> 00:23:25,919
+not q1 anymore that would be
+
+450
+00:23:26,480 --> 00:23:34,960
+s right and accept state is a
+
+451
+00:23:31,760 --> 00:23:37,919
+there's no set here it's a
+
+452
+00:23:34,960 --> 00:23:38,720
+s accept states and for transition
+
+453
+00:23:37,919 --> 00:23:42,240
+function
+
+454
+00:23:38,720 --> 00:23:46,320
+it's not the of this type
+
+455
+00:23:42,240 --> 00:23:49,200
+anymore it will be pre uh slightly
+
+456
+00:23:46,320 --> 00:23:51,520
+complicated that would be abs are sorry
+
+457
+00:23:49,200 --> 00:23:54,559
+not episode
+
+458
+00:23:51,520 --> 00:23:58,480
+s 2
+
+459
+00:23:54,559 --> 00:24:02,240
+q 1 map to f zone
+
+460
+00:23:58,480 --> 00:24:05,760
+and what is s 2 q 2
+
+461
+00:24:02,240 --> 00:24:09,360
+and the q 3
+
+462
+00:24:05,760 --> 00:24:10,000
+that will be empty and mt so you see
+
+463
+00:24:09,360 --> 00:24:13,360
+that
+
+464
+00:24:10,000 --> 00:24:17,760
+uh in the g in gnfa
+
+465
+00:24:13,360 --> 00:24:19,760
+all the edges we don't draw on the
+
+466
+00:24:17,760 --> 00:24:22,799
+diagram that means
+
+467
+00:24:19,760 --> 00:24:26,559
+we you can consider there
+
+468
+00:24:22,799 --> 00:24:27,360
+are ages between all the possible pairs
+
+469
+00:24:26,559 --> 00:24:31,679
+of
+
+470
+00:24:27,360 --> 00:24:34,400
+pairs of states but many of them
+
+471
+00:24:31,679 --> 00:24:35,679
+there's no way to go on many of them
+
+472
+00:24:34,400 --> 00:24:39,039
+like
+
+473
+00:24:35,679 --> 00:24:42,720
+q3 to here it actually
+
+474
+00:24:39,039 --> 00:24:45,600
+is empty set and for example
+
+475
+00:24:42,720 --> 00:24:46,000
+there is an edge here but empty set
+
+476
+00:24:45,600 --> 00:24:47,840
+because
+
+477
+00:24:46,000 --> 00:24:49,520
+you cannot consume some part of the
+
+478
+00:24:47,840 --> 00:24:53,120
+input string to go that
+
+479
+00:24:49,520 --> 00:24:56,720
+uh state so in general phase like this
+
+480
+00:24:53,120 --> 00:25:00,000
+okay so we can
+
+481
+00:24:56,720 --> 00:25:03,679
+easily complete the transition
+
+482
+00:25:00,000 --> 00:25:07,039
+function for the constructed gnfa
+
+483
+00:25:03,679 --> 00:25:10,400
+so the new gnfa
+
+484
+00:25:07,039 --> 00:25:13,600
+constructed from m1 okay
+
+485
+00:25:10,400 --> 00:25:16,880
+the next question is why
+
+486
+00:25:13,600 --> 00:25:21,039
+can we say that okay m1 here
+
+487
+00:25:16,880 --> 00:25:25,600
+is the new gnf is is equivalent
+
+488
+00:25:21,039 --> 00:25:28,640
+as recognizing the identical language
+
+489
+00:25:25,600 --> 00:25:30,640
+to our newly constructed unifa
+
+490
+00:25:28,640 --> 00:25:31,919
+because it's pretty easy from the
+
+491
+00:25:30,640 --> 00:25:35,919
+definition
+
+492
+00:25:31,919 --> 00:25:40,240
+okay see from the definition
+
+493
+00:25:35,919 --> 00:25:44,640
+of the acceptance of a
+
+494
+00:25:40,240 --> 00:25:48,400
+dfa let's say if you have a dfa here
+
+495
+00:25:44,640 --> 00:25:52,480
+the this dfa accepts string
+
+496
+00:25:48,400 --> 00:25:54,799
+if a sequence of state
+
+497
+00:25:52,480 --> 00:25:57,039
+exists with the satisfying three
+
+498
+00:25:54,799 --> 00:26:00,880
+condition right
+
+499
+00:25:57,039 --> 00:26:02,080
+okay then by using our construction you
+
+500
+00:26:00,880 --> 00:26:05,440
+can easily
+
+501
+00:26:02,080 --> 00:26:06,320
+see that if there is a string satisfying
+
+502
+00:26:05,440 --> 00:26:12,400
+the condition
+
+503
+00:26:06,320 --> 00:26:15,600
+here then for the separate
+
+504
+00:26:12,400 --> 00:26:16,720
+for a separation for how the uh string
+
+505
+00:26:15,600 --> 00:26:19,760
+is divided
+
+506
+00:26:16,720 --> 00:26:22,640
+we add f song in the front of it
+
+507
+00:26:19,760 --> 00:26:22,640
+and f zone
+
+508
+00:26:22,799 --> 00:26:28,080
+append an epson to the end and
+
+509
+00:26:28,880 --> 00:26:32,960
+for the sequence we have our new star
+
+510
+00:26:32,320 --> 00:26:37,440
+state
+
+511
+00:26:32,960 --> 00:26:37,440
+and new accept state
+
+512
+00:26:37,520 --> 00:26:42,799
+okay then it's pretty easy to see that
+
+513
+00:26:43,120 --> 00:26:51,679
+this one let's say r minus 1
+
+514
+00:26:48,080 --> 00:26:56,000
+is our star state and r
+
+515
+00:26:51,679 --> 00:27:00,240
+n plus 1 is our accept state
+
+516
+00:26:56,000 --> 00:27:04,240
+and the definition
+
+517
+00:27:00,240 --> 00:27:07,520
+the condition for accept
+
+518
+00:27:04,240 --> 00:27:10,799
+the string here can convert
+
+519
+00:27:07,520 --> 00:27:12,480
+to the definition of acceptance of a
+
+520
+00:27:10,799 --> 00:27:16,159
+string of gnfa here
+
+521
+00:27:12,480 --> 00:27:19,200
+because everything is the same only that
+
+522
+00:27:16,159 --> 00:27:22,480
+you have a step from
+
+523
+00:27:19,200 --> 00:27:26,320
+s to the original
+
+524
+00:27:22,480 --> 00:27:28,720
+start state and when you accept the
+
+525
+00:27:26,320 --> 00:27:28,720
+string
+
+526
+00:27:29,600 --> 00:27:36,159
+it goes to our new accept
+
+527
+00:27:32,640 --> 00:27:39,360
+accept state with nothing right
+
+528
+00:27:36,159 --> 00:27:42,720
+so everything can be accepted by
+
+529
+00:27:39,360 --> 00:27:46,480
+this dfa will be accepted
+
+530
+00:27:42,720 --> 00:27:49,760
+by our newly construct
+
+531
+00:27:46,480 --> 00:27:52,799
+dnfa gnfa sorry and
+
+532
+00:27:49,760 --> 00:27:57,679
+vice versa because
+
+533
+00:27:52,799 --> 00:27:59,679
+when you when the newly constructed gnfa
+
+534
+00:27:57,679 --> 00:28:01,679
+accepts some string
+
+535
+00:27:59,679 --> 00:28:03,440
+the same thing happened you just need to
+
+536
+00:28:01,679 --> 00:28:07,320
+remove the start state
+
+537
+00:28:03,440 --> 00:28:11,039
+and the access state and the middle part
+
+538
+00:28:07,320 --> 00:28:11,840
+satisfying the definition of acceptance
+
+539
+00:28:11,039 --> 00:28:17,840
+of
+
+540
+00:28:11,840 --> 00:28:17,840
+the dfa right so as if
+
+541
+00:28:19,039 --> 00:28:22,799
+any for any input string
+
+542
+00:28:23,600 --> 00:28:30,960
+see for any input string
+
+543
+00:28:27,520 --> 00:28:33,760
+you add epsilon epsom here then
+
+544
+00:28:30,960 --> 00:28:35,919
+it goes from s to q one which is the
+
+545
+00:28:33,760 --> 00:28:40,000
+star state of the original dfa
+
+546
+00:28:35,919 --> 00:28:43,120
+and one of the accept states
+
+547
+00:28:40,000 --> 00:28:46,720
+of the dfa and two
+
+548
+00:28:43,120 --> 00:28:50,000
+our gnfa okay
+
+549
+00:28:46,720 --> 00:28:52,880
+so that's why it's easy to see that
+
+550
+00:28:50,000 --> 00:28:53,840
+the constructed gnfa is equivalent to
+
+551
+00:28:52,880 --> 00:28:57,279
+the original
+
+552
+00:28:53,840 --> 00:29:02,080
+dnfa because they recognize
+
+553
+00:28:57,279 --> 00:29:02,080
+exactly the same language
+
+554
+00:29:02,480 --> 00:29:10,399
+that's why i said we can consider that
+
+555
+00:29:06,520 --> 00:29:14,240
+dfa is a special case of gnfa
+
+556
+00:29:10,399 --> 00:29:18,080
+because every dfa
+
+557
+00:29:14,240 --> 00:29:21,200
+you can convert to a an equivalent
+
+558
+00:29:18,080 --> 00:29:24,840
+gnft so that also means
+
+559
+00:29:21,200 --> 00:29:28,080
+the language recognized
+
+560
+00:29:24,840 --> 00:29:31,200
+by gnfa
+
+561
+00:29:28,080 --> 00:29:34,320
+is a is possibly a superset
+
+562
+00:29:31,200 --> 00:29:37,440
+of regular language right
+
+563
+00:29:34,320 --> 00:29:40,320
+it cannot it can be more but not less
+
+564
+00:29:37,440 --> 00:29:42,559
+at least regular language so we know
+
+565
+00:29:40,320 --> 00:29:42,559
+that
+
+566
+00:29:43,919 --> 00:29:51,360
+legal language would be equal to
+
+567
+00:29:47,600 --> 00:29:54,799
+or a subset of the languages
+
+568
+00:29:51,360 --> 00:29:57,120
+recognized by gnfa
+
+569
+00:29:54,799 --> 00:29:57,120
+okay
+
+570
+00:30:02,159 --> 00:30:09,840
+now here comes the interesting part
+
+571
+00:30:12,080 --> 00:30:19,200
+when we check gnfa you can
+
+572
+00:30:15,520 --> 00:30:22,559
+see something interesting that see
+
+573
+00:30:19,200 --> 00:30:26,240
+from qstart
+
+574
+00:30:22,559 --> 00:30:30,480
+to queue accept as this example
+
+575
+00:30:26,240 --> 00:30:30,480
+you can go through
+
+576
+00:30:30,720 --> 00:30:37,440
+this way directly
+
+577
+00:30:34,080 --> 00:30:40,720
+to kill accept by
+
+578
+00:30:37,440 --> 00:30:45,120
+spending strings within
+
+579
+00:30:40,720 --> 00:30:49,360
+the language here right you can also do
+
+580
+00:30:45,120 --> 00:30:52,720
+this and repeat here
+
+581
+00:30:49,360 --> 00:30:52,720
+and then go here
+
+582
+00:30:52,960 --> 00:31:00,159
+of course you can also do another
+
+583
+00:30:56,640 --> 00:31:03,440
+possible way
+
+584
+00:31:00,159 --> 00:31:07,840
+like here here and here
+
+585
+00:31:03,440 --> 00:31:07,840
+but let's think about
+
+586
+00:31:08,399 --> 00:31:13,120
+this state okay
+
+587
+00:31:13,360 --> 00:31:17,120
+if you want if you want to get rid of
+
+588
+00:31:16,240 --> 00:31:22,080
+this state
+
+589
+00:31:17,120 --> 00:31:22,080
+it is possible why because
+
+590
+00:31:22,559 --> 00:31:29,519
+you just need to consider
+
+591
+00:31:26,080 --> 00:31:33,200
+the effect of the existence
+
+592
+00:31:29,519 --> 00:31:36,480
+of this of this state
+
+593
+00:31:33,200 --> 00:31:40,159
+what do i mean for example
+
+594
+00:31:36,480 --> 00:31:40,159
+for this gnfa
+
+595
+00:31:40,880 --> 00:31:48,080
+we have this
+
+596
+00:31:44,159 --> 00:31:50,159
+path and this page and this path right
+
+597
+00:31:48,080 --> 00:31:51,919
+except for this one we have the three
+
+598
+00:31:50,159 --> 00:31:55,760
+page
+
+599
+00:31:51,919 --> 00:31:59,360
+and as long as
+
+600
+00:31:55,760 --> 00:32:02,399
+all possible strings
+
+601
+00:31:59,360 --> 00:32:06,320
+leading some state to another
+
+602
+00:32:02,399 --> 00:32:10,000
+can be preserved this state
+
+603
+00:32:06,320 --> 00:32:14,720
+no longer need to be
+
+604
+00:32:10,000 --> 00:32:18,320
+here so full
+
+605
+00:32:14,720 --> 00:32:21,760
+example of this path only for this path
+
+606
+00:32:18,320 --> 00:32:25,279
+okay they can we can do
+
+607
+00:32:21,760 --> 00:32:28,399
+this one and go in through this
+
+608
+00:32:25,279 --> 00:32:31,919
+state and go to
+
+609
+00:32:28,399 --> 00:32:35,760
+kill accept if we want to
+
+610
+00:32:31,919 --> 00:32:38,880
+get rid of it we just need to
+
+611
+00:32:35,760 --> 00:32:42,799
+make what
+
+612
+00:32:38,880 --> 00:32:45,679
+can be consumed
+
+613
+00:32:42,799 --> 00:32:45,679
+on the path
+
+614
+00:32:46,240 --> 00:32:53,120
+we keep everything here
+
+615
+00:32:49,760 --> 00:32:56,559
+so we union with you can do
+
+616
+00:32:53,120 --> 00:33:00,240
+a b start right and
+
+617
+00:32:56,559 --> 00:33:04,320
+several times a a infinite uh indefinite
+
+618
+00:33:00,240 --> 00:33:07,440
+times of a a and then
+
+619
+00:33:04,320 --> 00:33:11,919
+a b b a
+
+620
+00:33:07,440 --> 00:33:15,360
+concatenate with this right
+
+621
+00:33:11,919 --> 00:33:19,519
+so if we add this one which is
+
+622
+00:33:15,360 --> 00:33:24,960
+a b and repeat on a a
+
+623
+00:33:19,519 --> 00:33:28,960
+and contain it with a b or b a
+
+624
+00:33:24,960 --> 00:33:32,480
+all possible strings are preserved
+
+625
+00:33:28,960 --> 00:33:38,720
+by this part right just for this path
+
+626
+00:33:32,480 --> 00:33:42,000
+okay just for this path so for this path
+
+627
+00:33:38,720 --> 00:33:45,200
+you we just need to add
+
+628
+00:33:42,000 --> 00:33:48,640
+this part and this part
+
+629
+00:33:45,200 --> 00:33:52,320
+repeat and this part
+
+630
+00:33:48,640 --> 00:33:55,600
+and the same goes to this one
+
+631
+00:33:52,320 --> 00:33:58,480
+then after considering all
+
+632
+00:33:55,600 --> 00:33:59,679
+effects we can get a get rid of these
+
+633
+00:33:58,480 --> 00:34:03,919
+states
+
+634
+00:33:59,679 --> 00:34:07,360
+okay so simply put
+
+635
+00:34:03,919 --> 00:34:10,879
+if we want to get rid of some state
+
+636
+00:34:07,360 --> 00:34:15,919
+we consider remember that all
+
+637
+00:34:10,879 --> 00:34:19,440
+possible pairs all possible pairs
+
+638
+00:34:15,919 --> 00:34:22,480
+of states okay
+
+639
+00:34:19,440 --> 00:34:26,960
+and how do we preserve the
+
+640
+00:34:22,480 --> 00:34:30,079
+path so the original one here
+
+641
+00:34:26,960 --> 00:34:33,440
+and the union with from this
+
+642
+00:34:30,079 --> 00:34:37,280
+state goes to this state
+
+643
+00:34:33,440 --> 00:34:37,280
+repeat on the read
+
+644
+00:34:37,760 --> 00:34:44,560
+state here and then r3
+
+645
+00:34:41,200 --> 00:34:47,760
+so r1 contain it with r2
+
+646
+00:34:44,560 --> 00:34:49,440
+star because you can you don't need to
+
+647
+00:34:47,760 --> 00:34:53,599
+stay here but you can
+
+648
+00:34:49,440 --> 00:34:58,079
+also do indeed definite numbers of loop
+
+649
+00:34:53,599 --> 00:34:58,079
+and then q and r3
+
+650
+00:34:58,480 --> 00:35:02,800
+so considering all pairs then you can
+
+651
+00:35:00,800 --> 00:35:06,480
+get rid of that state
+
+652
+00:35:02,800 --> 00:35:08,800
+okay so the procedure will be
+
+653
+00:35:06,480 --> 00:35:08,800
+here
+
+654
+00:35:10,079 --> 00:35:17,760
+changing the transition function
+
+655
+00:35:13,119 --> 00:35:21,440
+and then get rid of that state
+
+656
+00:35:17,760 --> 00:35:23,760
+so that's uh practice this whole thing
+
+657
+00:35:21,440 --> 00:35:24,960
+then you can know that firstly start
+
+658
+00:35:23,760 --> 00:35:28,320
+from dfa
+
+659
+00:35:24,960 --> 00:35:31,920
+okay let's say we have a two-state dfa
+
+660
+00:35:28,320 --> 00:35:35,119
+and like we already introduced that
+
+661
+00:35:31,920 --> 00:35:35,119
+we add one more
+
+662
+00:35:35,200 --> 00:35:43,200
+state as a new star state of our gnfa
+
+663
+00:35:39,520 --> 00:35:44,160
+and then uh one more new stage for
+
+664
+00:35:43,200 --> 00:35:47,520
+accept states
+
+665
+00:35:44,160 --> 00:35:51,680
+and we add epsilon and
+
+666
+00:35:47,520 --> 00:35:54,720
+epsilon and we treat
+
+667
+00:35:51,680 --> 00:35:58,720
+all the original symbols as
+
+668
+00:35:54,720 --> 00:36:03,040
+regular expressions okay then the gnfa
+
+669
+00:35:58,720 --> 00:36:06,320
+is constructed right then
+
+670
+00:36:03,040 --> 00:36:09,119
+we want to get rid of the state
+
+671
+00:36:06,320 --> 00:36:09,760
+so let's follow the example on the
+
+672
+00:36:09,119 --> 00:36:13,760
+textbook
+
+673
+00:36:09,760 --> 00:36:16,800
+first so if we want to get rid of two
+
+674
+00:36:13,760 --> 00:36:19,040
+right we need what uh
+
+675
+00:36:16,800 --> 00:36:20,320
+what path is we need to consider we need
+
+676
+00:36:19,040 --> 00:36:23,520
+to consider
+
+677
+00:36:20,320 --> 00:36:27,280
+as a as
+
+678
+00:36:23,520 --> 00:36:30,079
+one 1 a
+
+679
+00:36:27,280 --> 00:36:30,960
+why this because that's all possible
+
+680
+00:36:30,079 --> 00:36:33,359
+passes
+
+681
+00:36:30,960 --> 00:36:35,200
+all possible okay because there's
+
+682
+00:36:33,359 --> 00:36:39,280
+nothing out of a
+
+683
+00:36:35,200 --> 00:36:41,440
+and there's nothing 2s
+
+684
+00:36:39,280 --> 00:36:43,119
+okay so we don't have one s we don't
+
+685
+00:36:41,440 --> 00:36:47,040
+have a s
+
+686
+00:36:43,119 --> 00:36:51,599
+and we don't have a1 so all possible
+
+687
+00:36:47,040 --> 00:36:55,040
+paths are s1 1a and sa
+
+688
+00:36:51,599 --> 00:36:58,160
+so consider if we consider as
+
+689
+00:36:55,040 --> 00:37:01,440
+1 okay this path
+
+690
+00:36:58,160 --> 00:37:06,800
+consider this path what should we
+
+691
+00:37:01,440 --> 00:37:10,079
+write on s1 remember that
+
+692
+00:37:06,800 --> 00:37:14,640
+you need to get rid of r2 sorry 2
+
+693
+00:37:10,079 --> 00:37:18,079
+right state 2. so
+
+694
+00:37:14,640 --> 00:37:18,720
+r4 for s1 is epsilon that will be
+
+695
+00:37:18,079 --> 00:37:22,000
+epsilon
+
+696
+00:37:18,720 --> 00:37:25,440
+that's r4 in the previous
+
+697
+00:37:22,000 --> 00:37:28,160
+slide right and
+
+698
+00:37:25,440 --> 00:37:28,160
+union with
+
+699
+00:37:28,720 --> 00:37:31,760
+what is r1 here
+
+700
+00:37:32,880 --> 00:37:41,280
+r1 r2
+
+701
+00:37:37,599 --> 00:37:44,560
+r3 okay
+
+702
+00:37:41,280 --> 00:37:47,920
+so there's no uh arc from
+
+703
+00:37:44,560 --> 00:37:50,560
+s22 that means it's
+
+704
+00:37:47,920 --> 00:37:52,079
+empty set as regular expression and also
+
+705
+00:37:50,560 --> 00:37:55,760
+this one empty set as
+
+706
+00:37:52,079 --> 00:37:59,040
+regular expression so that will be
+
+707
+00:37:55,760 --> 00:38:02,560
+empty set and
+
+708
+00:37:59,040 --> 00:38:05,839
+r2 star then continue with
+
+709
+00:38:02,560 --> 00:38:09,040
+empty stat okay
+
+710
+00:38:05,839 --> 00:38:11,920
+so empty set container with anything
+
+711
+00:38:09,040 --> 00:38:14,240
+cancel out that will be empty set and
+
+712
+00:38:11,920 --> 00:38:17,760
+the union with empty set
+
+713
+00:38:14,240 --> 00:38:18,160
+only alpha which is epsilon so that's
+
+714
+00:38:17,760 --> 00:38:21,520
+why
+
+715
+00:38:18,160 --> 00:38:26,480
+epsom here the epsilon here is not
+
+716
+00:38:21,520 --> 00:38:26,480
+a copy of epsilon here
+
+717
+00:38:26,560 --> 00:38:32,000
+it is after operated all the
+
+718
+00:38:30,839 --> 00:38:35,280
+possibilities
+
+719
+00:38:32,000 --> 00:38:38,320
+still epsilon okay
+
+720
+00:38:35,280 --> 00:38:38,320
+then we consider
+
+721
+00:38:40,079 --> 00:38:47,440
+s a okay that's step by step s1 as
+
+722
+00:38:43,839 --> 00:38:50,640
+a so sa initially
+
+723
+00:38:47,440 --> 00:38:53,680
+is mt set because there's nothing there
+
+724
+00:38:50,640 --> 00:38:57,599
+right so r4 here
+
+725
+00:38:53,680 --> 00:39:00,800
+is empty set that'll be r4
+
+726
+00:38:57,599 --> 00:39:03,760
+then what is r1 still empty set
+
+727
+00:39:00,800 --> 00:39:03,760
+and then r2
+
+728
+00:39:04,800 --> 00:39:13,280
+a cup b and r3 epsilon here
+
+729
+00:39:08,880 --> 00:39:17,440
+so r1
+
+730
+00:39:13,280 --> 00:39:20,880
+r2 r4
+
+731
+00:39:17,440 --> 00:39:24,400
+okay but you can see that still empty
+
+732
+00:39:20,880 --> 00:39:29,839
+so nothing draws here
+
+733
+00:39:24,400 --> 00:39:33,040
+okay that would be empty
+
+734
+00:39:29,839 --> 00:39:36,079
+then we consider what
+
+735
+00:39:33,040 --> 00:39:39,599
+one a
+
+736
+00:39:36,079 --> 00:39:43,680
+okay so for one a
+
+737
+00:39:39,599 --> 00:39:46,720
+directly r4 nothing here so it's empty
+
+738
+00:39:43,680 --> 00:39:51,520
+so alpha is empty then
+
+739
+00:39:46,720 --> 00:39:55,359
+r1 what is r1 r1 here is the
+
+740
+00:39:51,520 --> 00:39:59,520
+b here okay b here
+
+741
+00:39:55,359 --> 00:40:02,720
+then r2 is still
+
+742
+00:39:59,520 --> 00:40:07,920
+a cup b star and
+
+743
+00:40:02,720 --> 00:40:07,920
+r3 empty empty string
+
+744
+00:40:08,839 --> 00:40:13,599
+so
+
+745
+00:40:10,960 --> 00:40:14,240
+union with empty sets you don't need to
+
+746
+00:40:13,599 --> 00:40:17,440
+write that
+
+747
+00:40:14,240 --> 00:40:18,400
+content is concatenate with empty string
+
+748
+00:40:17,440 --> 00:40:22,960
+you don't need that
+
+749
+00:40:18,400 --> 00:40:25,839
+so that's the regular expression here
+
+750
+00:40:22,960 --> 00:40:26,240
+okay see we can see the old possibility
+
+751
+00:40:25,839 --> 00:40:29,520
+here
+
+752
+00:40:26,240 --> 00:40:34,319
+so we got this one
+
+753
+00:40:29,520 --> 00:40:37,359
+here then
+
+754
+00:40:34,319 --> 00:40:38,000
+we want to get rid of one there's only
+
+755
+00:40:37,359 --> 00:40:42,079
+one path
+
+756
+00:40:38,000 --> 00:40:45,839
+to consider s2a so that would be
+
+757
+00:40:42,079 --> 00:40:49,920
+empty set which is r4 right r4 here
+
+758
+00:40:45,839 --> 00:40:49,920
+and then r1
+
+759
+00:40:50,839 --> 00:40:56,480
+r2
+
+760
+00:40:52,960 --> 00:40:56,480
+r 3
+
+761
+00:40:57,920 --> 00:41:04,800
+okay so we don't need to write this
+
+762
+00:41:01,520 --> 00:41:05,760
+and continue it with f song don't need
+
+763
+00:41:04,800 --> 00:41:09,040
+to write this
+
+764
+00:41:05,760 --> 00:41:14,079
+so that's the answer
+
+765
+00:41:09,040 --> 00:41:18,240
+okay so the interesting part is
+
+766
+00:41:14,079 --> 00:41:18,240
+see from s to a
+
+767
+00:41:18,480 --> 00:41:25,200
+all possible strings
+
+768
+00:41:21,839 --> 00:41:29,680
+apparently indicated
+
+769
+00:41:25,200 --> 00:41:33,040
+and specified by the regular expression
+
+770
+00:41:29,680 --> 00:41:36,160
+and what is the all possible string here
+
+771
+00:41:33,040 --> 00:41:40,079
+we know that this gnfa
+
+772
+00:41:36,160 --> 00:41:43,359
+is equivalent to this dfa
+
+773
+00:41:40,079 --> 00:41:46,400
+because their language
+
+774
+00:41:43,359 --> 00:41:49,599
+is identical
+
+775
+00:41:46,400 --> 00:41:53,040
+and after the process
+
+776
+00:41:49,599 --> 00:41:56,400
+here we make the whole gnfa
+
+777
+00:41:53,040 --> 00:41:59,839
+two states and
+
+778
+00:41:56,400 --> 00:42:02,880
+for the transition function mapping
+
+779
+00:41:59,839 --> 00:42:06,079
+star state to accept states
+
+780
+00:42:02,880 --> 00:42:08,400
+to this regular expression that
+
+781
+00:42:06,079 --> 00:42:08,400
+means
+
+782
+00:42:09,760 --> 00:42:16,480
+this regular expression specify
+
+783
+00:42:13,440 --> 00:42:20,079
+describes the language of
+
+784
+00:42:16,480 --> 00:42:24,400
+the gnfa so describe the language
+
+785
+00:42:20,079 --> 00:42:24,400
+of the dfa
+
+786
+00:42:24,800 --> 00:42:31,920
+so all possible regular languages
+
+787
+00:42:28,640 --> 00:42:35,119
+can be described by
+
+788
+00:42:31,920 --> 00:42:36,240
+regular expression and we know that all
+
+789
+00:42:35,119 --> 00:42:39,680
+languages
+
+790
+00:42:36,240 --> 00:42:43,119
+describing by regular expression
+
+791
+00:42:39,680 --> 00:42:46,400
+are regular right our previous
+
+792
+00:42:43,119 --> 00:42:50,160
+uh lesson so
+
+793
+00:42:46,400 --> 00:42:53,200
+we know that gnfa
+
+794
+00:42:50,160 --> 00:42:56,839
+and the language
+
+795
+00:42:53,200 --> 00:42:59,440
+recognized by gnfa is exactly regular
+
+796
+00:42:56,839 --> 00:43:02,640
+language
+
+797
+00:42:59,440 --> 00:43:05,680
+as a note here that uh
+
+798
+00:43:02,640 --> 00:43:09,440
+when we have gnfa
+
+799
+00:43:05,680 --> 00:43:12,880
+the order of the states
+
+800
+00:43:09,440 --> 00:43:16,560
+that we get rid of
+
+801
+00:43:12,880 --> 00:43:21,040
+may change the final result of the
+
+802
+00:43:16,560 --> 00:43:24,000
+regular expression but they
+
+803
+00:43:21,040 --> 00:43:24,880
+will describe the stand the same
+
+804
+00:43:24,000 --> 00:43:29,119
+language
+
+805
+00:43:24,880 --> 00:43:32,400
+only that their experience their
+
+806
+00:43:29,119 --> 00:43:36,319
+appearance may be different okay
+
+807
+00:43:32,400 --> 00:43:40,560
+so if in the examination
+
+808
+00:43:36,319 --> 00:43:43,680
+a gnfa need to be simplified
+
+809
+00:43:40,560 --> 00:43:47,040
+to only a star state and
+
+810
+00:43:43,680 --> 00:43:49,920
+and accept accept states to extract the
+
+811
+00:43:47,040 --> 00:43:49,920
+regular expression
+
+812
+00:43:50,400 --> 00:43:54,640
+at least in my examination we will give
+
+813
+00:43:53,359 --> 00:43:57,680
+the order
+
+814
+00:43:54,640 --> 00:44:00,960
+for you to get rid of the states
+
+815
+00:43:57,680 --> 00:44:04,319
+otherwise the result
+
+816
+00:44:00,960 --> 00:44:06,000
+may be different although they described
+
+817
+00:44:04,319 --> 00:44:09,119
+the same language
+
+818
+00:44:06,000 --> 00:44:12,079
+and for this
+
+819
+00:44:09,119 --> 00:44:13,440
+simple example in a textbook you
+
+820
+00:44:12,079 --> 00:44:16,720
+actually
+
+821
+00:44:13,440 --> 00:44:19,760
+have the same result if you do like
+
+822
+00:44:16,720 --> 00:44:22,400
+one first and then get rid of two
+
+823
+00:44:19,760 --> 00:44:23,440
+and you will give you will get the same
+
+824
+00:44:22,400 --> 00:44:26,720
+result
+
+825
+00:44:23,440 --> 00:44:30,079
+but generally may you may not
+
+826
+00:44:26,720 --> 00:44:33,440
+give that have the same result if the
+
+827
+00:44:30,079 --> 00:44:37,839
+the order is different okay
+
+828
+00:44:33,440 --> 00:44:41,119
+so what we have now
+
+829
+00:44:37,839 --> 00:44:44,319
+what we have firstly
+
+830
+00:44:41,119 --> 00:44:47,520
+uh in this chapter firstly
+
+831
+00:44:44,319 --> 00:44:51,680
+we define the effect
+
+832
+00:44:47,520 --> 00:44:55,599
+right after defining dfa we define
+
+833
+00:44:51,680 --> 00:44:59,520
+regular languages based on dfa
+
+834
+00:44:55,599 --> 00:45:04,000
+we said that any language
+
+835
+00:44:59,520 --> 00:45:07,359
+can be recognized by dfa
+
+836
+00:45:04,000 --> 00:45:10,720
+are regular that's our definition
+
+837
+00:45:07,359 --> 00:45:10,720
+then we introduce
+
+838
+00:45:12,640 --> 00:45:17,200
+final time top with the capability of
+
+839
+00:45:14,880 --> 00:45:20,240
+non-deterministic computation
+
+840
+00:45:17,200 --> 00:45:24,160
+and we prove that
+
+841
+00:45:20,240 --> 00:45:27,119
+any dfa is a special case of
+
+842
+00:45:24,160 --> 00:45:28,880
+nfa right it's pretty simple you just
+
+843
+00:45:27,119 --> 00:45:31,520
+need to rewrite the
+
+844
+00:45:28,880 --> 00:45:32,880
+transition function basically and we
+
+845
+00:45:31,520 --> 00:45:36,400
+also have a
+
+846
+00:45:32,880 --> 00:45:39,680
+theorem that every nfa
+
+847
+00:45:36,400 --> 00:45:43,119
+has an equivalent dfa so
+
+848
+00:45:39,680 --> 00:45:46,880
+the two kinds of computational model is
+
+849
+00:45:43,119 --> 00:45:50,319
+equivalent right then
+
+850
+00:45:46,880 --> 00:45:53,599
+we introduce our e regular expression
+
+851
+00:45:50,319 --> 00:45:57,760
+and firstly we
+
+852
+00:45:53,599 --> 00:46:01,599
+prove that any language
+
+853
+00:45:57,760 --> 00:46:06,000
+described by regular expression
+
+854
+00:46:01,599 --> 00:46:09,680
+we can simply construct a corresponding
+
+855
+00:46:06,000 --> 00:46:12,160
+nfa that's that means
+
+856
+00:46:09,680 --> 00:46:12,880
+every language described by regular
+
+857
+00:46:12,160 --> 00:46:16,319
+expression
+
+858
+00:46:12,880 --> 00:46:20,359
+are regular languages right
+
+859
+00:46:16,319 --> 00:46:23,359
+then we define
+
+860
+00:46:20,359 --> 00:46:26,400
+gnfa
+
+861
+00:46:23,359 --> 00:46:29,920
+and any dfa
+
+862
+00:46:26,400 --> 00:46:31,040
+is a special case of gnfa right you add
+
+863
+00:46:29,920 --> 00:46:34,240
+two more states
+
+864
+00:46:31,040 --> 00:46:35,440
+and treat all the symbols of the
+
+865
+00:46:34,240 --> 00:46:39,359
+original dfa
+
+866
+00:46:35,440 --> 00:46:42,640
+as regular expression and add
+
+867
+00:46:39,359 --> 00:46:44,160
+epsilon transition from new start state
+
+868
+00:46:42,640 --> 00:46:48,319
+to the original start state
+
+869
+00:46:44,160 --> 00:46:52,240
+and the ad transition epsilon transition
+
+870
+00:46:48,319 --> 00:46:55,760
+to all original accept states to the
+
+871
+00:46:52,240 --> 00:46:59,440
+new accept state of gnfa then you get
+
+872
+00:46:55,760 --> 00:47:02,800
+an equivalent one finally
+
+873
+00:46:59,440 --> 00:47:06,160
+we just proved that we can
+
+874
+00:47:02,800 --> 00:47:07,200
+simplify or we can delete some states of
+
+875
+00:47:06,160 --> 00:47:10,240
+gnfa
+
+876
+00:47:07,200 --> 00:47:13,680
+and finally gets the regular
+
+877
+00:47:10,240 --> 00:47:17,359
+expression describing
+
+878
+00:47:13,680 --> 00:47:20,960
+all possible strings in the language
+
+879
+00:47:17,359 --> 00:47:24,800
+of that gnfa right
+
+880
+00:47:20,960 --> 00:47:27,920
+so that means all the four
+
+881
+00:47:24,800 --> 00:47:33,440
+of the four computational models here
+
+882
+00:47:27,920 --> 00:47:36,960
+dfa nfa gnfa and regular expression
+
+883
+00:47:33,440 --> 00:47:41,040
+recognize regular
+
+884
+00:47:36,960 --> 00:47:44,720
+languages right
+
+885
+00:47:41,040 --> 00:47:49,280
+dfa is our
+
+886
+00:47:44,720 --> 00:47:51,520
+base for definition and
+
+887
+00:47:49,280 --> 00:47:52,960
+you have a dfa you can convert to
+
+888
+00:47:51,520 --> 00:47:56,640
+convert it to
+
+889
+00:47:52,960 --> 00:48:00,079
+nfa you have a dfa you can convert it
+
+890
+00:47:56,640 --> 00:48:06,079
+beer gnfa to regular expression
+
+891
+00:48:00,079 --> 00:48:09,680
+and you can convert between the four
+
+892
+00:48:06,079 --> 00:48:10,559
+any uh between the four computational
+
+893
+00:48:09,680 --> 00:48:13,760
+models
+
+894
+00:48:10,559 --> 00:48:17,119
+so the four models here i couldn't
+
+895
+00:48:13,760 --> 00:48:21,839
+and oh they can do
+
+896
+00:48:17,119 --> 00:48:21,839
+regular languages
+
+897
+00:48:22,520 --> 00:48:25,520
+okay
+

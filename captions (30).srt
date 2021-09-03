@@ -1,0 +1,5304 @@
+1
+00:00:02,399 --> 00:00:06,480
+after we defined the running time or
+
+2
+00:00:04,960 --> 00:00:11,360
+time complexity
+
+3
+00:00:06,480 --> 00:00:11,360
+of deterministic machine as a function
+
+4
+00:00:11,519 --> 00:00:15,280
+to capture
+
+5
+00:00:14,080 --> 00:00:16,560
+the
+
+6
+00:00:15,280 --> 00:00:19,439
+worst case
+
+7
+00:00:16,560 --> 00:00:21,520
+for that turing machine to process input
+
+8
+00:00:19,439 --> 00:00:25,359
+strings of every
+
+9
+00:00:21,520 --> 00:00:28,400
+uh of every possible lenses
+
+10
+00:00:25,359 --> 00:00:28,400
+then we
+
+11
+00:00:29,679 --> 00:00:37,200
+employ the definition of big o notation
+
+12
+00:00:34,480 --> 00:00:41,440
+to describe the
+
+13
+00:00:37,200 --> 00:00:44,440
+asymptotic behavior of that two machines
+
+14
+00:00:41,440 --> 00:00:44,440
+then
+
+15
+00:00:44,559 --> 00:00:52,960
+we can try to analyze some
+
+16
+00:00:48,320 --> 00:00:52,960
+two machines to see how the
+
+17
+00:00:54,399 --> 00:00:57,199
+how the running time and the time
+
+18
+00:00:55,760 --> 00:00:58,800
+complexity
+
+19
+00:00:57,199 --> 00:01:01,199
+works okay
+
+20
+00:00:58,800 --> 00:01:03,440
+so let's say uh
+
+21
+00:01:01,199 --> 00:01:04,640
+let's use the language here as an
+
+22
+00:01:03,440 --> 00:01:05,760
+example
+
+23
+00:01:04,640 --> 00:01:09,360
+so
+
+24
+00:01:05,760 --> 00:01:11,439
+since we now use n
+
+25
+00:01:09,360 --> 00:01:13,680
+as you know the
+
+26
+00:01:11,439 --> 00:01:16,960
+length of the input string to a turing
+
+27
+00:01:13,680 --> 00:01:19,680
+machine so we change you know the local
+
+28
+00:01:16,960 --> 00:01:22,720
+variable to k here
+
+29
+00:01:19,680 --> 00:01:27,840
+so uh this language this language
+
+30
+00:01:22,720 --> 00:01:29,200
+contains uh what strings like epson
+
+31
+00:01:27,840 --> 00:01:31,439
+0 1
+
+32
+00:01:29,200 --> 00:01:36,799
+0 0 1 1
+
+33
+00:01:31,439 --> 00:01:38,240
+0 0 0 1 1 1 etc right so that uh this is
+
+34
+00:01:36,799 --> 00:01:41,119
+the first
+
+35
+00:01:38,240 --> 00:01:43,439
+non-regular language in our
+
+36
+00:01:41,119 --> 00:01:47,360
+course right so uh
+
+37
+00:01:43,439 --> 00:01:47,360
+if you remember that we write it as
+
+38
+00:01:48,479 --> 00:01:54,399
+this language but as i said now we use n
+
+39
+00:01:52,840 --> 00:01:56,000
+mostly
+
+40
+00:01:54,399 --> 00:01:59,119
+for the
+
+41
+00:01:56,000 --> 00:02:01,600
+input string length so we use k here
+
+42
+00:01:59,119 --> 00:02:02,479
+doesn't really matter okay
+
+43
+00:02:01,600 --> 00:02:04,399
+then
+
+44
+00:02:02,479 --> 00:02:06,719
+uh
+
+45
+00:02:04,399 --> 00:02:09,840
+this language is apparently decidable
+
+46
+00:02:06,719 --> 00:02:10,640
+because it is a context-free language
+
+47
+00:02:09,840 --> 00:02:12,080
+right
+
+48
+00:02:10,640 --> 00:02:14,640
+and
+
+49
+00:02:12,080 --> 00:02:16,319
+we have proved that there is a theorem
+
+50
+00:02:14,640 --> 00:02:19,040
+proving that
+
+51
+00:02:16,319 --> 00:02:22,840
+every context-free language is decidable
+
+52
+00:02:19,040 --> 00:02:22,840
+so no doubt
+
+53
+00:02:24,239 --> 00:02:29,200
+we know that the decider for this
+
+54
+00:02:26,480 --> 00:02:31,519
+language exists and
+
+55
+00:02:29,200 --> 00:02:35,040
+actually we can easily write a decider
+
+56
+00:02:31,519 --> 00:02:39,200
+for that right so here is the example of
+
+57
+00:02:35,040 --> 00:02:41,920
+one decider for that language okay
+
+58
+00:02:39,200 --> 00:02:44,319
+so we described the turing machine for
+
+59
+00:02:41,920 --> 00:02:47,599
+the language
+
+60
+00:02:44,319 --> 00:02:49,680
+in a high level style well not really
+
+61
+00:02:47,599 --> 00:02:51,920
+high level but
+
+62
+00:02:49,680 --> 00:02:54,640
+we describe the behavior of the two
+
+63
+00:02:51,920 --> 00:02:58,159
+machine to some extent that
+
+64
+00:02:54,640 --> 00:03:00,400
+everyone can agree upon the existence of
+
+65
+00:02:58,159 --> 00:03:03,519
+the possibility of the two machines to
+
+66
+00:03:00,400 --> 00:03:05,040
+decide the language okay
+
+67
+00:03:03,519 --> 00:03:06,239
+and
+
+68
+00:03:05,040 --> 00:03:08,000
+let's say
+
+69
+00:03:06,239 --> 00:03:10,239
+for the uh
+
+70
+00:03:08,000 --> 00:03:11,920
+an input string w
+
+71
+00:03:10,239 --> 00:03:12,959
+the machine
+
+72
+00:03:11,920 --> 00:03:15,760
+firstly
+
+73
+00:03:12,959 --> 00:03:16,640
+scan across the tape
+
+74
+00:03:15,760 --> 00:03:19,040
+and
+
+75
+00:03:16,640 --> 00:03:22,480
+reject if
+
+76
+00:03:19,040 --> 00:03:25,440
+a zero is found to the right of
+
+77
+00:03:22,480 --> 00:03:27,680
+one so you can imagine that
+
+78
+00:03:25,440 --> 00:03:29,280
+the types here right and you have the
+
+79
+00:03:27,680 --> 00:03:32,239
+input here
+
+80
+00:03:29,280 --> 00:03:34,480
+and you have infinite right-hand side
+
+81
+00:03:32,239 --> 00:03:35,440
+and the machine
+
+82
+00:03:34,480 --> 00:03:37,680
+when
+
+83
+00:03:35,440 --> 00:03:40,239
+putting the mach the head is
+
+84
+00:03:37,680 --> 00:03:43,280
+as the first location
+
+85
+00:03:40,239 --> 00:03:46,799
+then scan across the tape
+
+86
+00:03:43,280 --> 00:03:49,120
+and see if there is a zero
+
+87
+00:03:46,799 --> 00:03:52,799
+so you see zero zero
+
+88
+00:03:49,120 --> 00:03:55,200
+zero and starts with c1
+
+89
+00:03:52,799 --> 00:03:56,159
+one and if you found if the machine
+
+90
+00:03:55,200 --> 00:03:57,920
+found
+
+91
+00:03:56,159 --> 00:03:59,439
+zero
+
+92
+00:03:57,920 --> 00:04:00,560
+to the right
+
+93
+00:03:59,439 --> 00:04:02,159
+of a one
+
+94
+00:04:00,560 --> 00:04:06,640
+then
+
+95
+00:04:02,159 --> 00:04:07,920
+it cannot be zero sorry let's say zero k
+
+96
+00:04:06,640 --> 00:04:08,290
+one k
+
+97
+00:04:07,920 --> 00:04:09,840
+k
+
+98
+00:04:08,290 --> 00:04:12,799
+[Music]
+
+99
+00:04:09,840 --> 00:04:14,879
+bigger than equal to zero right so
+
+100
+00:04:12,799 --> 00:04:17,280
+reject right
+
+101
+00:04:14,879 --> 00:04:20,239
+so after the scan
+
+102
+00:04:17,280 --> 00:04:20,239
+and the going back
+
+103
+00:04:20,479 --> 00:04:25,199
+after
+
+104
+00:04:22,000 --> 00:04:27,280
+the input stream passed the first
+
+105
+00:04:25,199 --> 00:04:30,160
+uh checking step
+
+106
+00:04:27,280 --> 00:04:32,400
+you'll get a bunch of zero and then a
+
+107
+00:04:30,160 --> 00:04:34,400
+bunch of one okay
+
+108
+00:04:32,400 --> 00:04:36,880
+any string
+
+109
+00:04:34,400 --> 00:04:40,840
+that is not in the format of
+
+110
+00:04:36,880 --> 00:04:44,240
+zeros ones will be rejected by the first
+
+111
+00:04:40,840 --> 00:04:48,400
+step okay so i think that's pretty
+
+112
+00:04:44,240 --> 00:04:48,400
+uh easy to understand and
+
+113
+00:04:48,479 --> 00:04:53,840
+it is also why
+
+114
+00:04:50,479 --> 00:04:57,759
+we need to introduce to machine
+
+115
+00:04:53,840 --> 00:04:59,199
+in the detail in the uh fundamental
+
+116
+00:04:57,759 --> 00:05:01,120
+level
+
+117
+00:04:59,199 --> 00:05:02,320
+for you to you know go through the
+
+118
+00:05:01,120 --> 00:05:04,400
+tracing
+
+119
+00:05:02,320 --> 00:05:05,600
+uh processing
+
+120
+00:05:04,400 --> 00:05:08,000
+and
+
+121
+00:05:05,600 --> 00:05:11,600
+write down the configuration on your own
+
+122
+00:05:08,000 --> 00:05:14,160
+so that you can get a get an idea
+
+123
+00:05:11,600 --> 00:05:15,360
+regarding how turing machine exactly
+
+124
+00:05:14,160 --> 00:05:17,919
+operates
+
+125
+00:05:15,360 --> 00:05:22,960
+and why do we want to know that because
+
+126
+00:05:17,919 --> 00:05:26,240
+after you know how tune machine operates
+
+127
+00:05:22,960 --> 00:05:28,880
+basically you can determine
+
+128
+00:05:26,240 --> 00:05:31,520
+if some step
+
+129
+00:05:28,880 --> 00:05:31,520
+like this one
+
+130
+00:05:31,919 --> 00:05:37,360
+whether or some step
+
+131
+00:05:33,840 --> 00:05:39,120
+can be implemented by turing machine or
+
+132
+00:05:37,360 --> 00:05:40,400
+not
+
+133
+00:05:39,120 --> 00:05:42,479
+okay
+
+134
+00:05:40,400 --> 00:05:45,039
+okay so for this case
+
+135
+00:05:42,479 --> 00:05:47,680
+i guess everyone uh
+
+136
+00:05:45,039 --> 00:05:49,840
+can agree that uh this step can be
+
+137
+00:05:47,680 --> 00:05:51,919
+implemented by turing machine actually
+
+138
+00:05:49,840 --> 00:05:53,840
+we have seen similar things in our
+
+139
+00:05:51,919 --> 00:05:54,960
+examples right
+
+140
+00:05:53,840 --> 00:05:56,160
+and
+
+141
+00:05:54,960 --> 00:05:57,840
+let's say
+
+142
+00:05:56,160 --> 00:06:00,080
+what kind of statement cannot be
+
+143
+00:05:57,840 --> 00:06:04,080
+implemented by two machine
+
+144
+00:06:00,080 --> 00:06:04,080
+it's pretty easy okay uh
+
+145
+00:06:05,039 --> 00:06:08,000
+for example uh
+
+146
+00:06:08,080 --> 00:06:13,680
+today is uh
+
+147
+00:06:09,919 --> 00:06:14,400
+i don't know thursday or tuesday right
+
+148
+00:06:13,680 --> 00:06:17,280
+so
+
+149
+00:06:14,400 --> 00:06:19,120
+uh we have lottery and the winning
+
+150
+00:06:17,280 --> 00:06:20,960
+numbers will be drawn
+
+151
+00:06:19,120 --> 00:06:24,319
+in the evening
+
+152
+00:06:20,960 --> 00:06:26,160
+and how about write down some step like
+
+153
+00:06:24,319 --> 00:06:28,720
+second step
+
+154
+00:06:26,160 --> 00:06:28,720
+output
+
+155
+00:06:30,400 --> 00:06:36,000
+the winning numbers that will be drawn
+
+156
+00:06:34,000 --> 00:06:38,160
+tonight for
+
+157
+00:06:36,000 --> 00:06:39,280
+lottery
+
+158
+00:06:38,160 --> 00:06:40,720
+i guess
+
+159
+00:06:39,280 --> 00:06:42,319
+i believe
+
+160
+00:06:40,720 --> 00:06:43,600
+nobody will
+
+161
+00:06:42,319 --> 00:06:45,120
+believe
+
+162
+00:06:43,600 --> 00:06:48,479
+this state
+
+163
+00:06:45,120 --> 00:06:50,800
+this statement can be implemented
+
+164
+00:06:48,479 --> 00:06:50,800
+right
+
+165
+00:06:52,160 --> 00:06:54,400
+so
+
+166
+00:06:56,160 --> 00:07:00,160
+understanding or
+
+167
+00:06:58,000 --> 00:07:01,280
+familiar with the operations of two
+
+168
+00:07:00,160 --> 00:07:03,360
+machines
+
+169
+00:07:01,280 --> 00:07:06,000
+in the detailed level
+
+170
+00:07:03,360 --> 00:07:08,240
+help you to understand what kind of
+
+171
+00:07:06,000 --> 00:07:09,840
+statement is you know
+
+172
+00:07:08,240 --> 00:07:13,520
+or
+
+173
+00:07:09,840 --> 00:07:17,039
+would highly probably can be
+
+174
+00:07:13,520 --> 00:07:19,039
+implemented by a two machine well if
+
+175
+00:07:17,039 --> 00:07:21,759
+some statements that really can be
+
+176
+00:07:19,039 --> 00:07:26,160
+implemented but you don't believe it
+
+177
+00:07:21,759 --> 00:07:29,120
+that's one writing the statement
+
+178
+00:07:26,160 --> 00:07:32,000
+writing the statement
+
+179
+00:07:29,120 --> 00:07:35,520
+uh the person writing the statement have
+
+180
+00:07:32,000 --> 00:07:39,680
+to uh has to provide more evidence to
+
+181
+00:07:35,520 --> 00:07:42,400
+you okay so if uh some statement is in
+
+182
+00:07:39,680 --> 00:07:43,840
+doubt the designer of the two machine
+
+183
+00:07:42,400 --> 00:07:45,599
+have
+
+184
+00:07:43,840 --> 00:07:47,599
+give you
+
+185
+00:07:45,599 --> 00:07:50,240
+you know seven machine uh two machines
+
+186
+00:07:47,599 --> 00:07:53,120
+seven tuple and everything
+
+187
+00:07:50,240 --> 00:07:54,639
+layout and proof that that statement can
+
+188
+00:07:53,120 --> 00:07:57,039
+be implemented
+
+189
+00:07:54,639 --> 00:07:59,520
+but most of the time we don't go that
+
+190
+00:07:57,039 --> 00:08:01,759
+kind of detail that's too much
+
+191
+00:07:59,520 --> 00:08:03,520
+just like when you write a c program
+
+192
+00:08:01,759 --> 00:08:05,199
+john program
+
+193
+00:08:03,520 --> 00:08:06,400
+you will not
+
+194
+00:08:05,199 --> 00:08:09,280
+ask
+
+195
+00:08:06,400 --> 00:08:10,240
+the programmer to compile that program
+
+196
+00:08:09,280 --> 00:08:13,120
+into
+
+197
+00:08:10,240 --> 00:08:17,120
+let's say arm assembly
+
+198
+00:08:13,120 --> 00:08:20,319
+or intel cpu assembly or a java virtual
+
+199
+00:08:17,120 --> 00:08:23,440
+machine by code for you to exam you know
+
+200
+00:08:20,319 --> 00:08:24,479
+that's that that step is doable
+
+201
+00:08:23,440 --> 00:08:27,280
+so
+
+202
+00:08:24,479 --> 00:08:30,960
+pretty much the same idea here that the
+
+203
+00:08:27,280 --> 00:08:32,719
+high level statement here is uh
+
+204
+00:08:30,960 --> 00:08:33,919
+we we would like to
+
+205
+00:08:32,719 --> 00:08:35,919
+uh
+
+206
+00:08:33,919 --> 00:08:39,039
+draw an analogy between high level
+
+207
+00:08:35,919 --> 00:08:39,039
+statement here and
+
+208
+00:08:39,279 --> 00:08:42,959
+as the
+
+209
+00:08:40,560 --> 00:08:44,800
+programming language and the details of
+
+210
+00:08:42,959 --> 00:08:46,240
+the two machine as the assembly or
+
+211
+00:08:44,800 --> 00:08:47,040
+machine code
+
+212
+00:08:46,240 --> 00:08:49,839
+and
+
+213
+00:08:47,040 --> 00:08:52,880
+as long as we believe this statement can
+
+214
+00:08:49,839 --> 00:08:55,519
+be implemented we believe that's okay
+
+215
+00:08:52,880 --> 00:08:58,080
+so that's pretty much the idea so first
+
+216
+00:08:55,519 --> 00:08:59,839
+step of the machine is that we uh we
+
+217
+00:08:58,080 --> 00:09:02,080
+asked them or
+
+218
+00:08:59,839 --> 00:09:02,880
+the machine is designed to scale cursor
+
+219
+00:09:02,080 --> 00:09:06,959
+tab
+
+220
+00:09:02,880 --> 00:09:09,680
+reject if you found a zero after a one
+
+221
+00:09:06,959 --> 00:09:12,720
+okay then after
+
+222
+00:09:09,680 --> 00:09:13,680
+step one every string and you can see
+
+223
+00:09:12,720 --> 00:09:16,480
+that
+
+224
+00:09:13,680 --> 00:09:18,399
+for many string
+
+225
+00:09:16,480 --> 00:09:20,240
+it make a
+
+226
+00:09:18,399 --> 00:09:22,720
+process for many strings processed by
+
+227
+00:09:20,240 --> 00:09:24,010
+this machine it is possible that the
+
+228
+00:09:22,720 --> 00:09:25,120
+machine don't need to
+
+229
+00:09:24,010 --> 00:09:27,920
+[Music]
+
+230
+00:09:25,120 --> 00:09:30,480
+do many steps to reject that string
+
+231
+00:09:27,920 --> 00:09:33,440
+right for example if you find a if you
+
+232
+00:09:30,480 --> 00:09:34,720
+have a string one zero blah blah blah
+
+233
+00:09:33,440 --> 00:09:37,120
+very long
+
+234
+00:09:34,720 --> 00:09:39,120
+the machine only need to check one
+
+235
+00:09:37,120 --> 00:09:41,440
+zero and reject
+
+236
+00:09:39,120 --> 00:09:43,600
+two steps right
+
+237
+00:09:41,440 --> 00:09:43,600
+so
+
+238
+00:09:44,640 --> 00:09:48,320
+for this machine
+
+239
+00:09:46,480 --> 00:09:50,640
+it's not necessary to go through many
+
+240
+00:09:48,320 --> 00:09:51,680
+steps it depends on the input
+
+241
+00:09:50,640 --> 00:09:54,320
+okay
+
+242
+00:09:51,680 --> 00:09:55,920
+and you know that now we are doing worst
+
+243
+00:09:54,320 --> 00:09:57,920
+case analysis
+
+244
+00:09:55,920 --> 00:10:01,839
+but the worst case here
+
+245
+00:09:57,920 --> 00:10:04,560
+means that finally the
+
+246
+00:10:01,839 --> 00:10:06,880
+input string got accepted
+
+247
+00:10:04,560 --> 00:10:10,000
+so for this particular machine
+
+248
+00:10:06,880 --> 00:10:13,600
+the worst case is
+
+249
+00:10:10,000 --> 00:10:16,000
+the input string to be accepted
+
+250
+00:10:13,600 --> 00:10:19,760
+right so it's pretty interesting to
+
+251
+00:10:16,000 --> 00:10:22,399
+think of this way so let's say after
+
+252
+00:10:19,760 --> 00:10:22,399
+first step
+
+253
+00:10:22,800 --> 00:10:30,240
+you know that you have a bunch of zeros
+
+254
+00:10:25,920 --> 00:10:33,120
+and a bunch of ones as your input right
+
+255
+00:10:30,240 --> 00:10:34,800
+then
+
+256
+00:10:33,120 --> 00:10:38,880
+the machine repeat
+
+257
+00:10:34,800 --> 00:10:40,640
+the machine repeat uh i guess it will be
+
+258
+00:10:38,880 --> 00:10:43,360
+one
+
+259
+00:10:40,640 --> 00:10:45,360
+two three or two three four depends on
+
+260
+00:10:43,360 --> 00:10:46,640
+how you interpret the whole thing
+
+261
+00:10:45,360 --> 00:10:49,279
+because it's a
+
+262
+00:10:46,640 --> 00:10:52,800
+text statement
+
+263
+00:10:49,279 --> 00:10:54,640
+so we repeat the loop here and
+
+264
+00:10:52,800 --> 00:10:56,160
+scan across the tape
+
+265
+00:10:54,640 --> 00:10:58,880
+and across
+
+266
+00:10:56,160 --> 00:11:00,959
+a zero and a one so
+
+267
+00:10:58,880 --> 00:11:03,360
+a 0 and a 1
+
+268
+00:11:00,959 --> 00:11:04,240
+then go back
+
+269
+00:11:03,360 --> 00:11:05,680
+0
+
+270
+00:11:04,240 --> 00:11:07,440
+1
+
+271
+00:11:05,680 --> 00:11:10,000
+go back
+
+272
+00:11:07,440 --> 00:11:14,079
+then 0 and 1
+
+273
+00:11:10,000 --> 00:11:16,079
+and go back 0 and 1 and you repeat the
+
+274
+00:11:14,079 --> 00:11:17,600
+whole thing here
+
+275
+00:11:16,079 --> 00:11:18,399
+okay
+
+276
+00:11:17,600 --> 00:11:21,360
+and
+
+277
+00:11:18,399 --> 00:11:22,560
+if you found there's no zero
+
+278
+00:11:21,360 --> 00:11:26,160
+and
+
+279
+00:11:22,560 --> 00:11:29,519
+still ones or vice versa
+
+280
+00:11:26,160 --> 00:11:32,079
+still zeros here but no ones then reject
+
+281
+00:11:29,519 --> 00:11:35,040
+it right that means one is more than
+
+282
+00:11:32,079 --> 00:11:38,720
+zero or zero is more than one
+
+283
+00:11:35,040 --> 00:11:39,920
+so those string got rejected
+
+284
+00:11:38,720 --> 00:11:41,519
+otherwise
+
+285
+00:11:39,920 --> 00:11:42,560
+neither one
+
+286
+00:11:41,519 --> 00:11:44,079
+nor
+
+287
+00:11:42,560 --> 00:11:48,480
+zero
+
+288
+00:11:44,079 --> 00:11:50,720
+remain annotate that means one and zero
+
+289
+00:11:48,480 --> 00:11:53,839
+disappear at the same
+
+290
+00:11:50,720 --> 00:11:56,240
+time okay at the same step then we
+
+291
+00:11:53,839 --> 00:11:58,240
+accept it
+
+292
+00:11:56,240 --> 00:12:03,120
+see
+
+293
+00:11:58,240 --> 00:12:05,920
+so we can match we can uh have a desire
+
+294
+00:12:03,120 --> 00:12:07,519
+for the language a here
+
+295
+00:12:05,920 --> 00:12:08,800
+i think the correctness of this
+
+296
+00:12:07,519 --> 00:12:11,519
+algorithm
+
+297
+00:12:08,800 --> 00:12:13,440
+has been you know uh we don't need
+
+298
+00:12:11,519 --> 00:12:14,880
+we don't really need to prove that
+
+299
+00:12:13,440 --> 00:12:18,320
+because
+
+300
+00:12:14,880 --> 00:12:19,360
+it's kind of uh follow our definition
+
+301
+00:12:18,320 --> 00:12:23,279
+for
+
+302
+00:12:19,360 --> 00:12:25,760
+you know one to one maybe stuff right
+
+303
+00:12:23,279 --> 00:12:28,800
+because you have a bunch
+
+304
+00:12:25,760 --> 00:12:31,440
+zero and bunch one so cross one girls
+
+305
+00:12:28,800 --> 00:12:33,760
+one cross one cross one
+
+306
+00:12:31,440 --> 00:12:33,760
+and
+
+307
+00:12:34,160 --> 00:12:37,360
+uh
+
+308
+00:12:35,040 --> 00:12:39,279
+they are both used up at the same time
+
+309
+00:12:37,360 --> 00:12:40,240
+they have the same numbers although you
+
+310
+00:12:39,279 --> 00:12:42,480
+don't know
+
+311
+00:12:40,240 --> 00:12:44,160
+how many
+
+312
+00:12:42,480 --> 00:12:46,800
+right we don't know how many ones and
+
+313
+00:12:44,160 --> 00:12:49,040
+zeros but we know
+
+314
+00:12:46,800 --> 00:12:50,000
+the amount of ones and zeros are the
+
+315
+00:12:49,040 --> 00:12:53,360
+same
+
+316
+00:12:50,000 --> 00:12:55,920
+okay so
+
+317
+00:12:53,360 --> 00:12:59,279
+this machine can be uh not this machine
+
+318
+00:12:55,920 --> 00:13:01,360
+is a decider for the language a
+
+319
+00:12:59,279 --> 00:13:03,200
+now we want to analyze
+
+320
+00:13:01,360 --> 00:13:05,760
+we want to analyze
+
+321
+00:13:03,200 --> 00:13:07,360
+the running time
+
+322
+00:13:05,760 --> 00:13:08,880
+of the machine
+
+323
+00:13:07,360 --> 00:13:10,560
+see uh
+
+324
+00:13:08,880 --> 00:13:14,480
+recall that our running time is the
+
+325
+00:13:10,560 --> 00:13:15,600
+worst case so we want to analyze
+
+326
+00:13:14,480 --> 00:13:18,240
+this case
+
+327
+00:13:15,600 --> 00:13:19,040
+right the accept case
+
+328
+00:13:18,240 --> 00:13:20,560
+so
+
+329
+00:13:19,040 --> 00:13:23,120
+let's say
+
+330
+00:13:20,560 --> 00:13:25,519
+how many steps
+
+331
+00:13:23,120 --> 00:13:27,120
+for the machine
+
+332
+00:13:25,519 --> 00:13:30,720
+to finish
+
+333
+00:13:27,120 --> 00:13:33,360
+step uh stage one here or step one uh
+
+334
+00:13:30,720 --> 00:13:36,720
+stage one here
+
+335
+00:13:33,360 --> 00:13:38,079
+see on the input tab the machine need to
+
+336
+00:13:36,720 --> 00:13:39,040
+go
+
+337
+00:13:38,079 --> 00:13:41,199
+once
+
+338
+00:13:39,040 --> 00:13:44,079
+to the end of the input string
+
+339
+00:13:41,199 --> 00:13:45,519
+and go back reposition
+
+340
+00:13:44,079 --> 00:13:46,320
+right
+
+341
+00:13:45,519 --> 00:13:49,320
+so
+
+342
+00:13:46,320 --> 00:13:49,320
+unless
+
+343
+00:13:51,040 --> 00:13:57,600
+the turing machine is designed in a very
+
+344
+00:13:54,079 --> 00:13:57,600
+very very bad way
+
+345
+00:13:59,600 --> 00:14:04,399
+unless in that case
+
+346
+00:14:03,120 --> 00:14:06,000
+the
+
+347
+00:14:04,399 --> 00:14:08,160
+total steps
+
+348
+00:14:06,000 --> 00:14:12,639
+the total step
+
+349
+00:14:08,160 --> 00:14:17,760
+for the machine to do step one
+
+350
+00:14:12,639 --> 00:14:19,760
+is will be linear to the length
+
+351
+00:14:17,760 --> 00:14:20,639
+of the input string
+
+352
+00:14:19,760 --> 00:14:23,120
+right
+
+353
+00:14:20,639 --> 00:14:26,720
+because the input string one symbol
+
+354
+00:14:23,120 --> 00:14:28,480
+occupies one type symbol uh one tab uh
+
+355
+00:14:26,720 --> 00:14:30,959
+space right
+
+356
+00:14:28,480 --> 00:14:34,160
+so
+
+357
+00:14:30,959 --> 00:14:36,480
+it doesn't matter how many steps
+
+358
+00:14:34,160 --> 00:14:37,519
+you need to do
+
+359
+00:14:36,480 --> 00:14:39,839
+check
+
+360
+00:14:37,519 --> 00:14:40,720
+and go
+
+361
+00:14:39,839 --> 00:14:44,079
+right
+
+362
+00:14:40,720 --> 00:14:45,920
+and check and go right and check and
+
+363
+00:14:44,079 --> 00:14:49,680
+then finally
+
+364
+00:14:45,920 --> 00:14:52,320
+go back go back go back go back
+
+365
+00:14:49,680 --> 00:14:56,839
+here no matter how
+
+366
+00:14:52,320 --> 00:15:00,720
+many steps you need to do one
+
+367
+00:14:56,839 --> 00:15:03,920
+operation now should be a constant
+
+368
+00:15:00,720 --> 00:15:05,760
+right like three steps for one operation
+
+369
+00:15:03,920 --> 00:15:06,800
+or five step for one position doesn't
+
+370
+00:15:05,760 --> 00:15:10,839
+matter
+
+371
+00:15:06,800 --> 00:15:13,920
+the three or five is not related to n
+
+372
+00:15:10,839 --> 00:15:16,320
+here unless
+
+373
+00:15:13,920 --> 00:15:19,440
+you do that on purpose
+
+374
+00:15:16,320 --> 00:15:20,480
+otherwise the machine should
+
+375
+00:15:19,440 --> 00:15:22,320
+behave
+
+376
+00:15:20,480 --> 00:15:24,839
+in a way that
+
+377
+00:15:22,320 --> 00:15:29,279
+it needs about
+
+378
+00:15:24,839 --> 00:15:32,959
+linear uh it needs a number of steps
+
+379
+00:15:29,279 --> 00:15:35,040
+number of steps linear to end here
+
+380
+00:15:32,959 --> 00:15:37,440
+and we don't know how many
+
+381
+00:15:35,040 --> 00:15:40,160
+of the step or how many steps we need
+
+382
+00:15:37,440 --> 00:15:41,040
+but we know it should be linear right
+
+383
+00:15:40,160 --> 00:15:43,279
+and
+
+384
+00:15:41,040 --> 00:15:46,480
+that's why we have
+
+385
+00:15:43,279 --> 00:15:50,399
+big o notation here we know that
+
+386
+00:15:46,480 --> 00:15:53,199
+big o of n which means linear to
+
+387
+00:15:50,399 --> 00:15:54,720
+the length of the input string
+
+388
+00:15:53,199 --> 00:15:57,279
+linear steps
+
+389
+00:15:54,720 --> 00:16:00,399
+for stage one
+
+390
+00:15:57,279 --> 00:16:02,399
+is probably it right we probably need
+
+391
+00:16:00,399 --> 00:16:05,279
+linear steps but we don't know the
+
+392
+00:16:02,399 --> 00:16:09,199
+constant but we know it should be linear
+
+393
+00:16:05,279 --> 00:16:11,920
+unless you design a very bad machine
+
+394
+00:16:09,199 --> 00:16:14,160
+okay so that's why see
+
+395
+00:16:11,920 --> 00:16:15,040
+we don't even know
+
+396
+00:16:14,160 --> 00:16:17,120
+when
+
+397
+00:16:15,040 --> 00:16:19,279
+we don't even know
+
+398
+00:16:17,120 --> 00:16:21,360
+for stage one
+
+399
+00:16:19,279 --> 00:16:25,680
+how many steps we can have because we
+
+400
+00:16:21,360 --> 00:16:25,680
+don't have the exact machine here
+
+401
+00:16:26,160 --> 00:16:28,800
+that's why we
+
+402
+00:16:27,600 --> 00:16:33,839
+introduce
+
+403
+00:16:28,800 --> 00:16:33,839
+big old notation to help us to capture
+
+404
+00:16:34,959 --> 00:16:39,040
+much a detailed machine
+
+405
+00:16:39,440 --> 00:16:42,639
+the uh
+
+406
+00:16:40,720 --> 00:16:46,160
+to capture the machine which we don't
+
+407
+00:16:42,639 --> 00:16:48,839
+have the exact uh instrumentation
+
+408
+00:16:46,160 --> 00:16:52,240
+okay so that's the powerful
+
+409
+00:16:48,839 --> 00:16:53,519
+mathematical construction we are using
+
+410
+00:16:52,240 --> 00:16:55,839
+okay
+
+411
+00:16:53,519 --> 00:16:57,120
+so we have linear
+
+412
+00:16:55,839 --> 00:16:59,680
+steps
+
+413
+00:16:57,120 --> 00:17:01,440
+we have steps linear to the input of a
+
+414
+00:16:59,680 --> 00:17:04,640
+then input length
+
+415
+00:17:01,440 --> 00:17:07,039
+for scan and reposition
+
+416
+00:17:04,640 --> 00:17:09,120
+okay you check if one is
+
+417
+00:17:07,039 --> 00:17:10,480
+zero is behind one something like that
+
+418
+00:17:09,120 --> 00:17:12,000
+and
+
+419
+00:17:10,480 --> 00:17:14,079
+uh
+
+420
+00:17:12,000 --> 00:17:15,919
+at the end of the input string go back
+
+421
+00:17:14,079 --> 00:17:17,120
+to the first one
+
+422
+00:17:15,919 --> 00:17:19,600
+okay so
+
+423
+00:17:17,120 --> 00:17:20,559
+now take so many steps
+
+424
+00:17:19,600 --> 00:17:24,160
+then
+
+425
+00:17:20,559 --> 00:17:27,520
+how many steps for the loop
+
+426
+00:17:24,160 --> 00:17:27,520
+how many steps for the loop
+
+427
+00:17:29,760 --> 00:17:34,480
+it's quite easy actually because you see
+
+428
+00:17:32,720 --> 00:17:37,760
+we have
+
+429
+00:17:34,480 --> 00:17:39,840
+after the first step we know that the
+
+430
+00:17:37,760 --> 00:17:43,039
+input stream would be
+
+431
+00:17:39,840 --> 00:17:44,400
+a bunch of 0 and at the function of 1.
+
+432
+00:17:43,039 --> 00:17:47,440
+so
+
+433
+00:17:44,400 --> 00:17:50,240
+how many
+
+434
+00:17:47,440 --> 00:17:53,600
+uh firstly how many steps you need to
+
+435
+00:17:50,240 --> 00:17:57,200
+cross a zero then go to
+
+436
+00:17:53,600 --> 00:17:57,200
+the part of one closer one
+
+437
+00:17:59,360 --> 00:18:04,640
+well you can say that it depends the
+
+438
+00:18:01,360 --> 00:18:05,520
+number of zeros and the number of ones
+
+439
+00:18:04,640 --> 00:18:08,480
+right
+
+440
+00:18:05,520 --> 00:18:10,640
+but don't forget that we are doing worst
+
+441
+00:18:08,480 --> 00:18:12,840
+case analysis we are doing the string
+
+442
+00:18:10,640 --> 00:18:15,360
+finally will get
+
+443
+00:18:12,840 --> 00:18:17,120
+accepted and that will be
+
+444
+00:18:15,360 --> 00:18:20,160
+half of n
+
+445
+00:18:17,120 --> 00:18:20,160
+and half of n
+
+446
+00:18:20,559 --> 00:18:24,720
+if you have only one zero and a lot of
+
+447
+00:18:23,120 --> 00:18:26,799
+one
+
+448
+00:18:24,720 --> 00:18:29,280
+this step will
+
+449
+00:18:26,799 --> 00:18:31,600
+down once
+
+450
+00:18:29,280 --> 00:18:34,880
+and then the string got rejected so you
+
+451
+00:18:31,600 --> 00:18:36,480
+will use fewer steps
+
+452
+00:18:34,880 --> 00:18:40,799
+right or
+
+453
+00:18:36,480 --> 00:18:42,799
+you have one another zero and you have
+
+454
+00:18:40,799 --> 00:18:44,080
+only a few ones
+
+455
+00:18:42,799 --> 00:18:46,480
+you will do
+
+456
+00:18:44,080 --> 00:18:48,080
+cross 0 cross 1
+
+457
+00:18:46,480 --> 00:18:49,280
+and then
+
+458
+00:18:48,080 --> 00:18:51,039
+reject it
+
+459
+00:18:49,280 --> 00:18:52,559
+you also get
+
+460
+00:18:51,039 --> 00:18:55,840
+fewer steps
+
+461
+00:18:52,559 --> 00:18:56,960
+so the worst case the
+
+462
+00:18:55,840 --> 00:18:59,760
+most
+
+463
+00:18:56,960 --> 00:19:01,039
+uh the most number of steps
+
+464
+00:18:59,760 --> 00:19:02,080
+will be
+
+465
+00:19:01,039 --> 00:19:03,760
+half
+
+466
+00:19:02,080 --> 00:19:05,120
+n and half m
+
+467
+00:19:03,760 --> 00:19:07,200
+zero and one
+
+468
+00:19:05,120 --> 00:19:08,559
+so
+
+469
+00:19:07,200 --> 00:19:11,600
+you will go
+
+470
+00:19:08,559 --> 00:19:14,720
+cross 1 a 0 and a 1
+
+471
+00:19:11,600 --> 00:19:17,039
+and go back right
+
+472
+00:19:14,720 --> 00:19:20,559
+so the same argument here
+
+473
+00:19:17,039 --> 00:19:23,280
+close 1 0 and 1 1
+
+474
+00:19:20,559 --> 00:19:26,799
+you need to close
+
+475
+00:19:23,280 --> 00:19:28,960
+you you do uh you need a step linear to
+
+476
+00:19:26,799 --> 00:19:31,840
+have n
+
+477
+00:19:28,960 --> 00:19:35,200
+right linear to that so we have here
+
+478
+00:19:31,840 --> 00:19:37,440
+do one crossing zero and one
+
+479
+00:19:35,200 --> 00:19:40,559
+and how many of them you want you uh you
+
+480
+00:19:37,440 --> 00:19:40,730
+you need to finish the job
+
+481
+00:19:40,559 --> 00:19:42,080
+to
+
+482
+00:19:40,730 --> 00:19:43,760
+[Music]
+
+483
+00:19:42,080 --> 00:19:45,840
+happen right
+
+484
+00:19:43,760 --> 00:19:49,520
+so we don't know exactly the steps here
+
+485
+00:19:45,840 --> 00:19:50,880
+but we know the iteration is exact
+
+486
+00:19:49,520 --> 00:19:54,160
+that's why
+
+487
+00:19:50,880 --> 00:19:55,520
+we write this way okay
+
+488
+00:19:54,160 --> 00:19:57,120
+so
+
+489
+00:19:55,520 --> 00:19:59,039
+have n
+
+490
+00:19:57,120 --> 00:20:01,520
+big o have n
+
+491
+00:19:59,039 --> 00:20:02,480
+however
+
+492
+00:20:01,520 --> 00:20:04,000
+half
+
+493
+00:20:02,480 --> 00:20:06,720
+is a constant
+
+494
+00:20:04,000 --> 00:20:09,360
+don't forget that half is a constant
+
+495
+00:20:06,720 --> 00:20:11,600
+so we write this one
+
+496
+00:20:09,360 --> 00:20:11,600
+okay
+
+497
+00:20:13,200 --> 00:20:18,400
+this one is an insane number and this
+
+498
+00:20:15,679 --> 00:20:21,840
+one is a big old notation
+
+499
+00:20:18,400 --> 00:20:21,840
+and we know that
+
+500
+00:20:34,799 --> 00:20:40,400
+and then we know that
+
+501
+00:20:37,120 --> 00:20:42,960
+what means by these
+
+502
+00:20:40,400 --> 00:20:42,960
+notation
+
+503
+00:20:43,280 --> 00:20:51,120
+you can think big o of n
+
+504
+00:20:47,120 --> 00:20:53,360
+is a description of some exact function
+
+505
+00:20:51,120 --> 00:20:53,360
+right
+
+506
+00:20:53,440 --> 00:20:59,360
+you know that
+
+507
+00:20:54,799 --> 00:21:01,440
+x there exists c a constant and n 0
+
+508
+00:20:59,360 --> 00:21:04,320
+another constant
+
+509
+00:21:01,440 --> 00:21:05,919
+after n0
+
+510
+00:21:04,320 --> 00:21:07,679
+this
+
+511
+00:21:05,919 --> 00:21:11,440
+function
+
+512
+00:21:07,679 --> 00:21:13,600
+is equal to or smaller than c
+
+513
+00:21:11,440 --> 00:21:16,080
+g of n which is n here
+
+514
+00:21:13,600 --> 00:21:18,320
+right
+
+515
+00:21:16,080 --> 00:21:22,400
+now you multiply
+
+516
+00:21:18,320 --> 00:21:24,720
+half and both sides
+
+517
+00:21:22,400 --> 00:21:26,559
+okay
+
+518
+00:21:24,720 --> 00:21:29,880
+then what you got
+
+519
+00:21:26,559 --> 00:21:29,880
+you got
+
+520
+00:21:31,600 --> 00:21:37,280
+and square here and have c here
+
+521
+00:21:35,440 --> 00:21:41,039
+and half c
+
+522
+00:21:37,280 --> 00:21:44,960
+is still constant let's say c prime
+
+523
+00:21:41,039 --> 00:21:48,480
+and we don't even need to change n0
+
+524
+00:21:44,960 --> 00:21:50,799
+that's why this term can be returned as
+
+525
+00:21:48,480 --> 00:21:53,200
+big o of n squared
+
+526
+00:21:50,799 --> 00:21:54,080
+because by definition
+
+527
+00:21:53,200 --> 00:21:55,280
+c
+
+528
+00:21:54,080 --> 00:21:59,600
+exists
+
+529
+00:21:55,280 --> 00:22:04,159
+and 0 exists so we can use
+
+530
+00:21:59,600 --> 00:22:07,679
+n square to be a big old description to
+
+531
+00:22:04,159 --> 00:22:10,640
+describe this exact function although we
+
+532
+00:22:07,679 --> 00:22:10,640
+don't know what that is
+
+533
+00:22:10,720 --> 00:22:14,480
+that is why
+
+534
+00:22:12,880 --> 00:22:15,760
+we can
+
+535
+00:22:14,480 --> 00:22:17,280
+write
+
+536
+00:22:15,760 --> 00:22:20,000
+this one
+
+537
+00:22:17,280 --> 00:22:22,240
+to depict
+
+538
+00:22:20,000 --> 00:22:24,480
+the whole thing here okay
+
+539
+00:22:22,240 --> 00:22:26,799
+so if you are in doubt you just need to
+
+540
+00:22:24,480 --> 00:22:29,360
+go back to definition and
+
+541
+00:22:26,799 --> 00:22:33,760
+think of it that would be
+
+542
+00:22:29,360 --> 00:22:34,880
+straightforward okay so you need so many
+
+543
+00:22:33,760 --> 00:22:38,000
+uh
+
+544
+00:22:34,880 --> 00:22:38,880
+steps for stage is it two and three
+
+545
+00:22:38,000 --> 00:22:41,440
+then
+
+546
+00:22:38,880 --> 00:22:43,120
+every time you do a final checking you
+
+547
+00:22:41,440 --> 00:22:45,200
+check if any
+
+548
+00:22:43,120 --> 00:22:47,840
+zero and the one left you scan across
+
+549
+00:22:45,200 --> 00:22:50,960
+the whole tab once so that's pretty much
+
+550
+00:22:47,840 --> 00:22:52,320
+the same thing as the stage one so
+
+551
+00:22:50,960 --> 00:22:55,120
+linear to
+
+552
+00:22:52,320 --> 00:22:56,799
+the length of input
+
+553
+00:22:55,120 --> 00:22:58,559
+okay
+
+554
+00:22:56,799 --> 00:23:00,159
+then what is the
+
+555
+00:22:58,559 --> 00:23:02,960
+uh
+
+556
+00:23:00,159 --> 00:23:06,799
+running time for the whole machine
+
+557
+00:23:02,960 --> 00:23:06,799
+basically we need to add them up
+
+558
+00:23:06,840 --> 00:23:11,039
+okay we need to add it up
+
+559
+00:23:09,840 --> 00:23:13,679
+so uh
+
+560
+00:23:11,039 --> 00:23:16,480
+you know that uh we can we can just uh
+
+561
+00:23:13,679 --> 00:23:18,640
+determine the highest order and we write
+
+562
+00:23:16,480 --> 00:23:23,600
+like this one but
+
+563
+00:23:18,640 --> 00:23:24,880
+without that we can have like this but
+
+564
+00:23:23,600 --> 00:23:27,679
+you
+
+565
+00:23:24,880 --> 00:23:28,640
+always go back to the definition and to
+
+566
+00:23:27,679 --> 00:23:29,520
+check it
+
+567
+00:23:28,640 --> 00:23:31,039
+okay
+
+568
+00:23:29,520 --> 00:23:34,720
+so
+
+569
+00:23:31,039 --> 00:23:37,360
+let's go uh do that once
+
+570
+00:23:34,720 --> 00:23:40,480
+so for this one that means there is an
+
+571
+00:23:37,360 --> 00:23:42,159
+f1 of n right
+
+572
+00:23:40,480 --> 00:23:44,159
+and
+
+573
+00:23:42,159 --> 00:23:47,520
+this one
+
+574
+00:23:44,159 --> 00:23:51,360
+there exists c1 and n1
+
+575
+00:23:47,520 --> 00:23:54,559
+when n is larger or equal to n1
+
+576
+00:23:51,360 --> 00:23:57,600
+f of 1 over n always smaller
+
+577
+00:23:54,559 --> 00:23:58,799
+than or equal to c 1
+
+578
+00:23:57,600 --> 00:24:01,520
+times
+
+579
+00:23:58,799 --> 00:24:03,440
+g of n which is m here
+
+580
+00:24:01,520 --> 00:24:04,640
+right
+
+581
+00:24:03,440 --> 00:24:06,880
+and then
+
+582
+00:24:04,640 --> 00:24:10,240
+same thing goes for uh goes to this one
+
+583
+00:24:06,880 --> 00:24:13,760
+so we say c2 and 2 exist
+
+584
+00:24:10,240 --> 00:24:16,960
+and the exact function f of 2 of n is
+
+585
+00:24:13,760 --> 00:24:18,240
+smaller than or equal to c 2 times n
+
+586
+00:24:16,960 --> 00:24:19,039
+square
+
+587
+00:24:18,240 --> 00:24:22,000
+right
+
+588
+00:24:19,039 --> 00:24:24,320
+and then there is another exact function
+
+589
+00:24:22,000 --> 00:24:26,880
+here
+
+590
+00:24:24,320 --> 00:24:30,400
+we have c three and three
+
+591
+00:24:26,880 --> 00:24:30,400
+f three of n
+
+592
+00:24:30,840 --> 00:24:35,440
+always smaller than here right
+
+593
+00:24:35,600 --> 00:24:39,200
+so the
+
+594
+00:24:36,799 --> 00:24:41,360
+function the exact function
+
+595
+00:24:39,200 --> 00:24:44,840
+for the whole machine
+
+596
+00:24:41,360 --> 00:24:50,400
+is a sum of f1 f2
+
+597
+00:24:44,840 --> 00:24:53,360
+f3 that is the f of n we want to have we
+
+598
+00:24:50,400 --> 00:24:55,919
+want to we want
+
+599
+00:24:53,360 --> 00:24:59,360
+to have as the running time or time
+
+600
+00:24:55,919 --> 00:25:01,840
+complexity of that to machine
+
+601
+00:24:59,360 --> 00:25:04,320
+and we already know that there are you
+
+602
+00:25:01,840 --> 00:25:08,159
+know uh
+
+603
+00:25:04,320 --> 00:25:08,159
+this part as we already know
+
+604
+00:25:08,559 --> 00:25:11,279
+so
+
+605
+00:25:09,360 --> 00:25:13,039
+go through some pretty
+
+606
+00:25:11,279 --> 00:25:15,440
+easy steps
+
+607
+00:25:13,039 --> 00:25:18,080
+you can find that
+
+608
+00:25:15,440 --> 00:25:18,080
+there must
+
+609
+00:25:19,840 --> 00:25:24,640
+exist some constant
+
+610
+00:25:22,799 --> 00:25:28,960
+and n0
+
+611
+00:25:24,640 --> 00:25:31,120
+probably the max n0 is probably the max
+
+612
+00:25:28,960 --> 00:25:33,360
+of um one
+
+613
+00:25:31,120 --> 00:25:35,840
+and two and three
+
+614
+00:25:33,360 --> 00:25:39,039
+okay probably i don't know but
+
+615
+00:25:35,840 --> 00:25:40,320
+we can uh do some derivation
+
+616
+00:25:39,039 --> 00:25:41,679
+and
+
+617
+00:25:40,320 --> 00:25:43,360
+that will be
+
+618
+00:25:41,679 --> 00:25:46,480
+end here
+
+619
+00:25:43,360 --> 00:25:46,480
+sorry not three sorry
+
+620
+00:25:48,880 --> 00:25:54,080
+it is possible to do the derivation here
+
+621
+00:25:51,840 --> 00:25:54,080
+and
+
+622
+00:25:54,799 --> 00:26:00,720
+if you are in doubt
+
+623
+00:25:57,039 --> 00:26:00,720
+you can make like a c
+
+624
+00:26:02,960 --> 00:26:07,600
+equal to some
+
+625
+00:26:04,799 --> 00:26:10,799
+plus something maybe one or two doesn't
+
+626
+00:26:07,600 --> 00:26:13,039
+really matter as long as c
+
+627
+00:26:10,799 --> 00:26:15,039
+larger than c two
+
+628
+00:26:13,039 --> 00:26:18,000
+these tan this term
+
+629
+00:26:15,039 --> 00:26:19,120
+and then you don't do it you change n
+
+630
+00:26:18,000 --> 00:26:21,120
+zero
+
+631
+00:26:19,120 --> 00:26:23,840
+as long as c
+
+632
+00:26:21,120 --> 00:26:26,480
+larger greater than c two
+
+633
+00:26:23,840 --> 00:26:26,480
+this term
+
+634
+00:26:26,559 --> 00:26:32,159
+will always
+
+635
+00:26:28,400 --> 00:26:33,360
+larger than the sum of the three
+
+636
+00:26:32,159 --> 00:26:37,200
+right
+
+637
+00:26:33,360 --> 00:26:39,840
+and like like we do that for
+
+638
+00:26:37,200 --> 00:26:39,840
+for this
+
+639
+00:26:40,159 --> 00:26:42,799
+see this one
+
+640
+00:26:41,520 --> 00:26:46,799
+imagine that
+
+641
+00:26:42,799 --> 00:26:49,760
+you have a five here then you choose c
+
+642
+00:26:46,799 --> 00:26:51,120
+larger than five then you can go back to
+
+643
+00:26:49,760 --> 00:26:53,120
+calculate
+
+644
+00:26:51,120 --> 00:26:55,919
+how many
+
+645
+00:26:53,120 --> 00:26:58,320
+for n0
+
+646
+00:26:55,919 --> 00:27:00,799
+then you will always the whole thing
+
+647
+00:26:58,320 --> 00:27:02,720
+bigger than the sum of this one
+
+648
+00:27:00,799 --> 00:27:07,600
+so the same thing goes to what we just
+
+649
+00:27:02,720 --> 00:27:10,080
+described then you can find c and n0
+
+650
+00:27:07,600 --> 00:27:13,679
+and then write
+
+651
+00:27:10,080 --> 00:27:16,000
+this notation to describe
+
+652
+00:27:13,679 --> 00:27:18,320
+the target function
+
+653
+00:27:16,000 --> 00:27:21,679
+of
+
+654
+00:27:18,320 --> 00:27:25,440
+something described by this one
+
+655
+00:27:21,679 --> 00:27:29,200
+okay that is why we can write
+
+656
+00:27:25,440 --> 00:27:31,279
+formula we can write equation this way
+
+657
+00:27:29,200 --> 00:27:35,840
+but you always need to go back to the
+
+658
+00:27:31,279 --> 00:27:35,840
+definition to derive the
+
+659
+00:27:37,200 --> 00:27:41,520
+expression you wanted to use
+
+660
+00:27:39,440 --> 00:27:42,880
+okay
+
+661
+00:27:41,520 --> 00:27:45,520
+okay now
+
+662
+00:27:42,880 --> 00:27:47,039
+since we
+
+663
+00:27:45,520 --> 00:27:50,960
+have uh the
+
+664
+00:27:47,039 --> 00:27:52,880
+time complexity described by
+
+665
+00:27:50,960 --> 00:27:55,520
+big o of
+
+666
+00:27:52,880 --> 00:27:55,520
+n squared
+
+667
+00:27:56,000 --> 00:28:00,840
+let's define
+
+668
+00:27:57,600 --> 00:28:05,360
+time complexity cost
+
+669
+00:28:00,840 --> 00:28:09,360
+okay let's t a function
+
+670
+00:28:05,360 --> 00:28:11,200
+map from natural number to positive
+
+671
+00:28:09,360 --> 00:28:13,840
+real numbers
+
+672
+00:28:11,200 --> 00:28:15,520
+we define
+
+673
+00:28:13,840 --> 00:28:17,200
+time
+
+674
+00:28:15,520 --> 00:28:18,000
+of
+
+675
+00:28:17,200 --> 00:28:20,080
+t
+
+676
+00:28:18,000 --> 00:28:23,039
+of n
+
+677
+00:28:20,080 --> 00:28:24,799
+okay that's pretty complicated but prime
+
+678
+00:28:23,039 --> 00:28:27,760
+of t of n
+
+679
+00:28:24,799 --> 00:28:29,679
+to be the collection
+
+680
+00:28:27,760 --> 00:28:32,240
+to be the collection of
+
+681
+00:28:29,679 --> 00:28:36,880
+all languages
+
+682
+00:28:32,240 --> 00:28:40,559
+that are decidable by and big o of t of
+
+683
+00:28:36,880 --> 00:28:41,440
+n time turing machine
+
+684
+00:28:40,559 --> 00:28:42,320
+okay
+
+685
+00:28:41,440 --> 00:28:45,840
+so
+
+686
+00:28:42,320 --> 00:28:45,840
+if we write time
+
+687
+00:28:46,320 --> 00:28:51,039
+of
+
+688
+00:28:48,080 --> 00:28:51,039
+n squared
+
+689
+00:28:51,520 --> 00:28:55,679
+so n squared here is t of n right
+
+690
+00:28:56,399 --> 00:29:02,480
+in this case plm t of n is n square
+
+691
+00:29:00,720 --> 00:29:04,000
+every language
+
+692
+00:29:02,480 --> 00:29:06,320
+every language
+
+693
+00:29:04,000 --> 00:29:09,440
+can be determined by
+
+694
+00:29:06,320 --> 00:29:12,640
+big o of n square
+
+695
+00:29:09,440 --> 00:29:14,640
+tier machine we say that that language
+
+696
+00:29:12,640 --> 00:29:16,000
+is in
+
+697
+00:29:14,640 --> 00:29:17,520
+this class
+
+698
+00:29:16,000 --> 00:29:19,200
+okay
+
+699
+00:29:17,520 --> 00:29:24,279
+so
+
+700
+00:29:19,200 --> 00:29:24,279
+you can think of this definition here
+
+701
+00:29:27,960 --> 00:29:31,279
+simultaneously
+
+702
+00:29:29,520 --> 00:29:34,000
+define
+
+703
+00:29:31,279 --> 00:29:37,760
+many many many many
+
+704
+00:29:34,000 --> 00:29:37,760
+sets of languages
+
+705
+00:29:38,840 --> 00:29:45,279
+okay
+
+706
+00:29:40,399 --> 00:29:48,320
+you have a time t of n you have one
+
+707
+00:29:45,279 --> 00:29:54,159
+collections one set of languages you
+
+708
+00:29:48,320 --> 00:29:55,760
+have another t of n you you have another
+
+709
+00:29:54,159 --> 00:29:59,200
+of languages
+
+710
+00:29:55,760 --> 00:30:02,240
+so this definition here is a very
+
+711
+00:29:59,200 --> 00:30:04,080
+uh well it contains many many many many
+
+712
+00:30:02,240 --> 00:30:05,679
+collections of languages
+
+713
+00:30:04,080 --> 00:30:08,960
+and the labels
+
+714
+00:30:05,679 --> 00:30:13,360
+labeled by t of n
+
+715
+00:30:08,960 --> 00:30:13,360
+so given n square you define
+
+716
+00:30:13,919 --> 00:30:21,440
+a time complexity class given n another
+
+717
+00:30:17,039 --> 00:30:24,320
+one and cubic another one or n log
+
+718
+00:30:21,440 --> 00:30:27,440
+another one so you have according to
+
+719
+00:30:24,320 --> 00:30:30,240
+this definition we have defined many
+
+720
+00:30:27,440 --> 00:30:31,200
+many many many time complexity classes
+
+721
+00:30:30,240 --> 00:30:33,919
+okay
+
+722
+00:30:31,200 --> 00:30:34,720
+so what languages is in some particular
+
+723
+00:30:33,919 --> 00:30:37,039
+time
+
+724
+00:30:34,720 --> 00:30:38,399
+time complexity classes
+
+725
+00:30:37,039 --> 00:30:40,720
+as long as
+
+726
+00:30:38,399 --> 00:30:44,960
+that's language
+
+727
+00:30:40,720 --> 00:30:48,799
+decidable is decidable by an big o of t
+
+728
+00:30:44,960 --> 00:30:51,039
+of n time time machine that language is
+
+729
+00:30:48,799 --> 00:30:53,679
+in the particular time
+
+730
+00:30:51,039 --> 00:30:54,480
+time time complexity class
+
+731
+00:30:53,679 --> 00:30:55,840
+okay
+
+732
+00:30:54,480 --> 00:30:58,640
+so
+
+733
+00:30:55,840 --> 00:31:00,159
+since we already know that m1
+
+734
+00:30:58,640 --> 00:31:04,880
+decides
+
+735
+00:31:00,159 --> 00:31:08,080
+the language a which is 0k 1k right in
+
+736
+00:31:04,880 --> 00:31:10,799
+time we go of n square which we have the
+
+737
+00:31:08,080 --> 00:31:10,799
+result here
+
+738
+00:31:12,559 --> 00:31:16,399
+by this definition
+
+739
+00:31:14,640 --> 00:31:20,240
+by this definition
+
+740
+00:31:16,399 --> 00:31:24,000
+we know that the language is in
+
+741
+00:31:20,240 --> 00:31:24,000
+time of n square
+
+742
+00:31:24,240 --> 00:31:26,480
+okay
+
+743
+00:31:28,240 --> 00:31:32,480
+so
+
+744
+00:31:29,200 --> 00:31:35,840
+according to what we have for pico
+
+745
+00:31:32,480 --> 00:31:40,720
+notation we know that
+
+746
+00:31:35,840 --> 00:31:40,720
+m1 is a big o of n square
+
+747
+00:31:40,799 --> 00:31:47,760
+time turing machine right
+
+748
+00:31:43,919 --> 00:31:49,440
+and for big o m ones
+
+749
+00:31:47,760 --> 00:31:53,519
+m ones
+
+750
+00:31:49,440 --> 00:31:58,720
+time complexity can also be written as
+
+751
+00:31:53,519 --> 00:31:58,720
+big o of n squared and cubic right
+
+752
+00:31:59,200 --> 00:32:04,720
+if you understand what we have
+
+753
+00:32:01,760 --> 00:32:06,559
+introduced the goal notation last
+
+754
+00:32:04,720 --> 00:32:08,880
+in last lecture
+
+755
+00:32:06,559 --> 00:32:10,880
+you know you can write the time
+
+756
+00:32:08,880 --> 00:32:13,360
+complexity for
+
+757
+00:32:10,880 --> 00:32:15,919
+m1s
+
+758
+00:32:13,360 --> 00:32:21,200
+because you can write it as n square you
+
+759
+00:32:15,919 --> 00:32:21,200
+can write it as n cubic and the even
+
+760
+00:32:21,279 --> 00:32:24,240
+higher orders
+
+761
+00:32:24,640 --> 00:32:30,640
+right so we know that a
+
+762
+00:32:27,679 --> 00:32:30,640
+is in time
+
+763
+00:32:32,000 --> 00:32:36,000
+square
+
+764
+00:32:32,960 --> 00:32:40,159
+also in time
+
+765
+00:32:36,000 --> 00:32:40,159
+cubic also in time
+
+766
+00:32:40,240 --> 00:32:45,679
+and to the first power and etc right
+
+767
+00:32:44,000 --> 00:32:48,880
+so
+
+768
+00:32:45,679 --> 00:32:50,720
+you can also imagine that let's say uh
+
+769
+00:32:48,880 --> 00:32:52,799
+this is
+
+770
+00:32:50,720 --> 00:32:55,120
+time
+
+771
+00:32:52,799 --> 00:32:57,360
+of n square
+
+772
+00:32:55,120 --> 00:33:00,159
+it contains all languages that are
+
+773
+00:32:57,360 --> 00:33:02,320
+decidable by
+
+774
+00:33:00,159 --> 00:33:05,120
+and big o of
+
+775
+00:33:02,320 --> 00:33:06,720
+n square machine
+
+776
+00:33:05,120 --> 00:33:08,960
+and then you have
+
+777
+00:33:06,720 --> 00:33:12,080
+cubic
+
+778
+00:33:08,960 --> 00:33:15,919
+time of cubic and the time
+
+779
+00:33:12,080 --> 00:33:16,880
+of force and the time
+
+780
+00:33:15,919 --> 00:33:19,679
+of
+
+781
+00:33:16,880 --> 00:33:22,080
+five right or you have something like
+
+782
+00:33:19,679 --> 00:33:24,480
+this one now be
+
+783
+00:33:22,080 --> 00:33:26,480
+n square log n
+
+784
+00:33:24,480 --> 00:33:29,200
+something like that so if you have
+
+785
+00:33:26,480 --> 00:33:30,880
+language here of course that language is
+
+786
+00:33:29,200 --> 00:33:33,039
+in
+
+787
+00:33:30,880 --> 00:33:34,480
+bigger superset
+
+788
+00:33:33,039 --> 00:33:36,640
+right so
+
+789
+00:33:34,480 --> 00:33:37,600
+don't be confused by the relationship
+
+790
+00:33:36,640 --> 00:33:40,000
+here
+
+791
+00:33:37,600 --> 00:33:42,000
+the definition if you
+
+792
+00:33:40,000 --> 00:33:45,519
+really understand the definition you
+
+793
+00:33:42,000 --> 00:33:47,440
+will not be confused okay
+
+794
+00:33:45,519 --> 00:33:51,600
+what we are
+
+795
+00:33:47,440 --> 00:33:54,399
+what we care about is how small that
+
+796
+00:33:51,600 --> 00:33:57,200
+language belong to not how large because
+
+797
+00:33:54,399 --> 00:33:58,799
+when you get higher order the of course
+
+798
+00:33:57,200 --> 00:34:01,440
+the uh
+
+799
+00:33:58,799 --> 00:34:02,399
+set will be larger right
+
+800
+00:34:01,440 --> 00:34:04,960
+then
+
+801
+00:34:02,399 --> 00:34:06,399
+that's uh
+
+802
+00:34:04,960 --> 00:34:08,480
+uh let's
+
+803
+00:34:06,399 --> 00:34:11,200
+continue the discussion here we know
+
+804
+00:34:08,480 --> 00:34:13,440
+that the language which is
+
+805
+00:34:11,200 --> 00:34:15,839
+you know in a concept for our course
+
+806
+00:34:13,440 --> 00:34:19,280
+corresponds to the problem right so we
+
+807
+00:34:15,839 --> 00:34:21,599
+know that okay there is a square time
+
+808
+00:34:19,280 --> 00:34:23,040
+algorithm
+
+809
+00:34:21,599 --> 00:34:25,359
+handle that
+
+810
+00:34:23,040 --> 00:34:27,520
+problem
+
+811
+00:34:25,359 --> 00:34:30,480
+so
+
+812
+00:34:27,520 --> 00:34:32,720
+is that problem uh
+
+813
+00:34:30,480 --> 00:34:32,720
+okay
+
+814
+00:34:33,679 --> 00:34:38,159
+so it's time uh square
+
+815
+00:34:36,000 --> 00:34:38,159
+the
+
+816
+00:34:38,800 --> 00:34:44,079
+uh in this uh here we actually uh
+
+817
+00:34:42,079 --> 00:34:46,560
+trying to use the
+
+818
+00:34:44,079 --> 00:34:49,839
+how much time you need to handle some
+
+819
+00:34:46,560 --> 00:34:52,960
+kind of problem to
+
+820
+00:34:49,839 --> 00:34:54,240
+evaluate to assess
+
+821
+00:34:52,960 --> 00:34:57,359
+to assess
+
+822
+00:34:54,240 --> 00:34:59,359
+the difficulty of a problem
+
+823
+00:34:57,359 --> 00:35:02,000
+okay the concept is that
+
+824
+00:34:59,359 --> 00:35:03,920
+if you need
+
+825
+00:35:02,000 --> 00:35:07,119
+for example if i i give you
+
+826
+00:35:03,920 --> 00:35:08,880
+a a homework assignment uh you can you
+
+827
+00:35:07,119 --> 00:35:09,920
+you need one hour to finish the
+
+828
+00:35:08,880 --> 00:35:12,640
+assignment
+
+829
+00:35:09,920 --> 00:35:14,400
+compared to you need five hours to five
+
+830
+00:35:12,640 --> 00:35:17,440
+hours to finish the
+
+831
+00:35:14,400 --> 00:35:19,040
+assignment you will think
+
+832
+00:35:17,440 --> 00:35:21,520
+the assignment
+
+833
+00:35:19,040 --> 00:35:24,480
+need uh
+
+834
+00:35:21,520 --> 00:35:27,520
+requires you to spend five hours is more
+
+835
+00:35:24,480 --> 00:35:29,760
+difficult or more complicated right
+
+836
+00:35:27,520 --> 00:35:32,480
+the same concept uh
+
+837
+00:35:29,760 --> 00:35:35,280
+applied here so
+
+838
+00:35:32,480 --> 00:35:37,119
+we know now we know that a the language
+
+839
+00:35:35,280 --> 00:35:38,800
+a language a here
+
+840
+00:35:37,119 --> 00:35:41,440
+is in
+
+841
+00:35:38,800 --> 00:35:44,480
+time of n square so that's
+
+842
+00:35:41,440 --> 00:35:48,400
+some kind of difficulty measurement you
+
+843
+00:35:44,480 --> 00:35:51,280
+can single it like that
+
+844
+00:35:48,400 --> 00:35:54,640
+then how about we use another algorithm
+
+845
+00:35:51,280 --> 00:35:58,560
+how about we use another algorithm so
+
+846
+00:35:54,640 --> 00:35:59,760
+we propose another algorithm as m2 here
+
+847
+00:35:58,560 --> 00:36:02,400
+okay
+
+848
+00:35:59,760 --> 00:36:04,240
+so what did uh what does this algorithm
+
+849
+00:36:02,400 --> 00:36:07,200
+do
+
+850
+00:36:04,240 --> 00:36:08,880
+this algorithm first step also format
+
+851
+00:36:07,200 --> 00:36:09,760
+checking okay
+
+852
+00:36:08,880 --> 00:36:10,880
+so
+
+853
+00:36:09,760 --> 00:36:11,839
+it checks
+
+854
+00:36:10,880 --> 00:36:12,960
+any
+
+855
+00:36:11,839 --> 00:36:14,960
+zero
+
+856
+00:36:12,960 --> 00:36:17,040
+to the right over one
+
+857
+00:36:14,960 --> 00:36:18,720
+if there's any then reject it so the
+
+858
+00:36:17,040 --> 00:36:19,920
+same steps
+
+859
+00:36:18,720 --> 00:36:23,440
+okay
+
+860
+00:36:19,920 --> 00:36:28,640
+then after that after that
+
+861
+00:36:23,440 --> 00:36:28,640
+as long as there are zeros and ones
+
+862
+00:36:29,119 --> 00:36:32,400
+the machine
+
+863
+00:36:31,359 --> 00:36:35,520
+check
+
+864
+00:36:32,400 --> 00:36:38,480
+scan across the tab again and checking
+
+865
+00:36:35,520 --> 00:36:41,520
+the total number of left
+
+866
+00:36:38,480 --> 00:36:42,880
+zeros and ones but we don't count the
+
+867
+00:36:41,520 --> 00:36:45,440
+number
+
+868
+00:36:42,880 --> 00:36:47,520
+not not one two three four five six
+
+869
+00:36:45,440 --> 00:36:51,520
+seven eight nine ten stuff like that no
+
+870
+00:36:47,520 --> 00:36:53,200
+we don't count the number we just count
+
+871
+00:36:51,520 --> 00:36:56,880
+if it's
+
+872
+00:36:53,200 --> 00:36:58,400
+even or odd
+
+873
+00:36:56,880 --> 00:37:00,400
+okay because if you want to count the
+
+874
+00:36:58,400 --> 00:37:03,040
+number you need to know the number you
+
+875
+00:37:00,400 --> 00:37:06,240
+need to store the number somewhere and
+
+876
+00:37:03,040 --> 00:37:08,320
+you cannot handle infinite number so it
+
+877
+00:37:06,240 --> 00:37:11,599
+cannot be implemented by two machines so
+
+878
+00:37:08,320 --> 00:37:13,680
+we don't do that but for odd and even
+
+879
+00:37:11,599 --> 00:37:16,079
+there are only two situations we can
+
+880
+00:37:13,680 --> 00:37:18,480
+handle that and we actually
+
+881
+00:37:16,079 --> 00:37:19,760
+have seen the example
+
+882
+00:37:18,480 --> 00:37:21,599
+in chapter
+
+883
+00:37:19,760 --> 00:37:23,760
+three right
+
+884
+00:37:21,599 --> 00:37:25,599
+so
+
+885
+00:37:23,760 --> 00:37:28,480
+imagine that
+
+886
+00:37:25,599 --> 00:37:30,240
+after step one you have a lot of zero
+
+887
+00:37:28,480 --> 00:37:31,280
+and ones like this
+
+888
+00:37:30,240 --> 00:37:32,640
+then
+
+889
+00:37:31,280 --> 00:37:36,359
+you count
+
+890
+00:37:32,640 --> 00:37:36,359
+the total length
+
+891
+00:37:36,960 --> 00:37:39,599
+of course the first
+
+892
+00:37:38,800 --> 00:37:41,520
+uh
+
+893
+00:37:39,599 --> 00:37:43,280
+the first round the first iteration that
+
+894
+00:37:41,520 --> 00:37:44,880
+would be n right
+
+895
+00:37:43,280 --> 00:37:46,240
+so you
+
+896
+00:37:44,880 --> 00:37:48,640
+count the
+
+897
+00:37:46,240 --> 00:37:50,960
+total number of zero and one
+
+898
+00:37:48,640 --> 00:37:53,280
+if it's odd
+
+899
+00:37:50,960 --> 00:37:55,280
+then reject
+
+900
+00:37:53,280 --> 00:37:56,079
+if it is odd
+
+901
+00:37:55,280 --> 00:37:59,119
+there
+
+902
+00:37:56,079 --> 00:38:02,640
+there will there will be no chance to
+
+903
+00:37:59,119 --> 00:38:04,720
+have zero k one k
+
+904
+00:38:02,640 --> 00:38:06,960
+right because
+
+905
+00:38:04,720 --> 00:38:10,320
+you need to have the same number of zero
+
+906
+00:38:06,960 --> 00:38:11,760
+and ones that'll be either
+
+907
+00:38:10,320 --> 00:38:14,079
+okay
+
+908
+00:38:11,760 --> 00:38:14,079
+then
+
+909
+00:38:14,400 --> 00:38:18,560
+if
+
+910
+00:38:15,200 --> 00:38:20,640
+it's even it's odd and reject right and
+
+911
+00:38:18,560 --> 00:38:22,560
+if it is even
+
+912
+00:38:20,640 --> 00:38:27,359
+then you cross
+
+913
+00:38:22,560 --> 00:38:27,359
+half of zero and half of one
+
+914
+00:38:28,160 --> 00:38:35,520
+okay so let's have an example here
+
+915
+00:38:31,280 --> 00:38:36,560
+so let's say we have zero zero zero zero
+
+916
+00:38:35,520 --> 00:38:40,079
+zero
+
+917
+00:38:36,560 --> 00:38:40,079
+one one one
+
+918
+00:38:40,720 --> 00:38:46,400
+okay over one more
+
+919
+00:38:44,560 --> 00:38:49,920
+that's let's do it this way
+
+920
+00:38:46,400 --> 00:38:53,680
+so we have one six zero four ones
+
+921
+00:38:49,920 --> 00:38:56,640
+okay so first that first stage use or we
+
+922
+00:38:53,680 --> 00:38:58,400
+scan across the tape and
+
+923
+00:38:56,640 --> 00:39:00,960
+format checking okay
+
+924
+00:38:58,400 --> 00:39:02,160
+right past format checking
+
+925
+00:39:00,960 --> 00:39:03,920
+then
+
+926
+00:39:02,160 --> 00:39:06,560
+we count
+
+927
+00:39:03,920 --> 00:39:09,280
+one two oh sorry
+
+928
+00:39:06,560 --> 00:39:11,599
+art even uh
+
+929
+00:39:09,280 --> 00:39:11,599
+okay
+
+930
+00:39:13,599 --> 00:39:21,599
+art even art even art even art even art
+
+931
+00:39:19,280 --> 00:39:22,560
+even okay so
+
+932
+00:39:21,599 --> 00:39:25,200
+go
+
+933
+00:39:22,560 --> 00:39:26,800
+to the fourth stage
+
+934
+00:39:25,200 --> 00:39:29,839
+then we cross
+
+935
+00:39:26,800 --> 00:39:29,839
+half of zero
+
+936
+00:39:30,160 --> 00:39:36,160
+and then half of one
+
+937
+00:39:33,119 --> 00:39:38,320
+okay and go back
+
+938
+00:39:36,160 --> 00:39:39,760
+to check so
+
+939
+00:39:38,320 --> 00:39:40,839
+this time
+
+940
+00:39:39,760 --> 00:39:42,960
+odd
+
+941
+00:39:40,839 --> 00:39:44,160
+even art
+
+942
+00:39:42,960 --> 00:39:48,160
+even
+
+943
+00:39:44,160 --> 00:39:48,160
+odd so reject
+
+944
+00:39:48,720 --> 00:39:53,200
+okay
+
+945
+00:39:50,320 --> 00:39:54,880
+because there is no way
+
+946
+00:39:53,200 --> 00:39:58,480
+to match
+
+947
+00:39:54,880 --> 00:40:01,920
+the number of zeros and ones
+
+948
+00:39:58,480 --> 00:40:03,680
+if zeros and ones are of the same
+
+949
+00:40:01,920 --> 00:40:06,720
+numbers
+
+950
+00:40:03,680 --> 00:40:09,280
+it will always be even
+
+951
+00:40:06,720 --> 00:40:10,720
+for the symbol left
+
+952
+00:40:09,280 --> 00:40:12,880
+on
+
+953
+00:40:10,720 --> 00:40:13,680
+the tape
+
+954
+00:40:12,880 --> 00:40:16,319
+right
+
+955
+00:40:13,680 --> 00:40:17,520
+so let's add one more
+
+956
+00:40:16,319 --> 00:40:19,760
+so
+
+957
+00:40:17,520 --> 00:40:19,760
+uh
+
+958
+00:40:20,960 --> 00:40:25,839
+so the first step okay right now
+
+959
+00:40:26,800 --> 00:40:32,480
+this one
+
+960
+00:40:28,000 --> 00:40:34,000
+then we have art even art even art
+
+961
+00:40:32,480 --> 00:40:36,319
+even
+
+962
+00:40:34,000 --> 00:40:37,359
+okay so let's continue
+
+963
+00:40:36,319 --> 00:40:38,640
+then
+
+964
+00:40:37,359 --> 00:40:40,319
+go back to
+
+965
+00:40:38,640 --> 00:40:41,920
+two
+
+966
+00:40:40,319 --> 00:40:45,200
+cross this one
+
+967
+00:40:41,920 --> 00:40:47,359
+cross this one every other zero okay
+
+968
+00:40:45,200 --> 00:40:49,760
+every other one
+
+969
+00:40:47,359 --> 00:40:51,760
+then again odd
+
+970
+00:40:49,760 --> 00:40:54,000
+even
+
+971
+00:40:51,760 --> 00:40:57,040
+then again we cross
+
+972
+00:40:54,000 --> 00:41:01,040
+this one and this one
+
+973
+00:40:57,040 --> 00:41:03,440
+there's no zero and the one on the tab
+
+974
+00:41:01,040 --> 00:41:03,440
+except
+
+975
+00:41:05,280 --> 00:41:09,280
+okay so that's how
+
+976
+00:41:07,359 --> 00:41:11,680
+m2
+
+977
+00:41:09,280 --> 00:41:13,680
+operates
+
+978
+00:41:11,680 --> 00:41:16,560
+how m2 operates
+
+979
+00:41:13,680 --> 00:41:18,640
+so you can check you can check
+
+980
+00:41:16,560 --> 00:41:21,040
+the uh
+
+981
+00:41:18,640 --> 00:41:23,680
+or verify the correctness of m2 actually
+
+982
+00:41:21,040 --> 00:41:25,920
+i have uh described that
+
+983
+00:41:23,680 --> 00:41:28,560
+it is correct because
+
+984
+00:41:25,920 --> 00:41:30,000
+firstly you know a bunch of zero before
+
+985
+00:41:28,560 --> 00:41:31,599
+a bunch of ones
+
+986
+00:41:30,000 --> 00:41:34,800
+then if
+
+987
+00:41:31,599 --> 00:41:36,720
+the number of zero and ones are exactly
+
+988
+00:41:34,800 --> 00:41:38,880
+the same
+
+989
+00:41:36,720 --> 00:41:41,839
+no matter how you
+
+990
+00:41:38,880 --> 00:41:44,880
+close out zero and one
+
+991
+00:41:41,839 --> 00:41:47,680
+i mean every time you cross half of zero
+
+992
+00:41:44,880 --> 00:41:50,319
+and have half of one
+
+993
+00:41:47,680 --> 00:41:54,640
+you always get the same numbers of zero
+
+994
+00:41:50,319 --> 00:41:57,200
+and one and finally there will be curls
+
+995
+00:41:54,640 --> 00:41:59,760
+together
+
+996
+00:41:57,200 --> 00:42:03,599
+then you will have no ones and zeros
+
+997
+00:41:59,760 --> 00:42:05,200
+left otherwise all strings are rejected
+
+998
+00:42:03,599 --> 00:42:07,440
+okay
+
+999
+00:42:05,200 --> 00:42:11,760
+now if we try to
+
+1000
+00:42:07,440 --> 00:42:13,520
+uh analyze if we try to analyze
+
+1001
+00:42:11,760 --> 00:42:16,400
+the
+
+1002
+00:42:13,520 --> 00:42:18,640
+running time of m2 we'll know that
+
+1003
+00:42:16,400 --> 00:42:20,079
+for every stage for every stage
+
+1004
+00:42:18,640 --> 00:42:22,640
+described here
+
+1005
+00:42:20,079 --> 00:42:22,640
+you got
+
+1006
+00:42:22,720 --> 00:42:27,200
+linear steps
+
+1007
+00:42:25,359 --> 00:42:29,520
+because you can consider
+
+1008
+00:42:27,200 --> 00:42:33,280
+it's either scan
+
+1009
+00:42:29,520 --> 00:42:34,560
+scan and operate on the whole
+
+1010
+00:42:33,280 --> 00:42:35,839
+input
+
+1011
+00:42:34,560 --> 00:42:38,240
+string
+
+1012
+00:42:35,839 --> 00:42:41,359
+or half of it
+
+1013
+00:42:38,240 --> 00:42:44,160
+well for m2 it's always the whole input
+
+1014
+00:42:41,359 --> 00:42:46,480
+string
+
+1015
+00:42:44,160 --> 00:42:48,560
+don't forget that when you close out
+
+1016
+00:42:46,480 --> 00:42:49,920
+some symbol that symbol is still on the
+
+1017
+00:42:48,560 --> 00:42:52,319
+tape
+
+1018
+00:42:49,920 --> 00:42:54,319
+okay the content of the tape
+
+1019
+00:42:52,319 --> 00:42:55,599
+since it would since we don't compress
+
+1020
+00:42:54,319 --> 00:42:56,319
+the content of
+
+1021
+00:42:55,599 --> 00:42:59,440
+uh
+
+1022
+00:42:56,319 --> 00:43:02,000
+the contents of
+
+1023
+00:42:59,440 --> 00:43:05,280
+input string on the tape the
+
+1024
+00:43:02,000 --> 00:43:08,240
+length will not will not be reduced to a
+
+1025
+00:43:05,280 --> 00:43:11,119
+smaller length right so
+
+1026
+00:43:08,240 --> 00:43:12,480
+your operation will always go through
+
+1027
+00:43:11,119 --> 00:43:14,960
+the whole
+
+1028
+00:43:12,480 --> 00:43:15,839
+the length of the whole original input
+
+1029
+00:43:14,960 --> 00:43:18,560
+string
+
+1030
+00:43:15,839 --> 00:43:22,400
+so that'll be big o of n
+
+1031
+00:43:18,560 --> 00:43:25,440
+so big o of n steps for every stage
+
+1032
+00:43:22,400 --> 00:43:28,000
+then the problem the problem is how many
+
+1033
+00:43:25,440 --> 00:43:30,160
+loop how many iterations you need
+
+1034
+00:43:28,000 --> 00:43:33,800
+to go through the
+
+1035
+00:43:30,160 --> 00:43:33,800
+iteration here
+
+1036
+00:43:46,960 --> 00:43:51,599
+so that would be
+
+1037
+00:43:49,359 --> 00:43:52,839
+it's not very
+
+1038
+00:43:51,599 --> 00:43:57,200
+difficult
+
+1039
+00:43:52,839 --> 00:43:57,200
+it's 1 plus
+
+1040
+00:43:57,520 --> 00:44:00,640
+log
+
+1041
+00:43:58,400 --> 00:44:01,920
+base 2 of n
+
+1042
+00:44:00,640 --> 00:44:04,640
+right because
+
+1043
+00:44:01,920 --> 00:44:04,640
+if you have
+
+1044
+00:44:07,359 --> 00:44:11,680
+so many
+
+1045
+00:44:08,800 --> 00:44:11,680
+zeros and ones
+
+1046
+00:44:12,319 --> 00:44:18,079
+every time you close half of them
+
+1047
+00:44:16,000 --> 00:44:22,480
+remember that since we are analyzed the
+
+1048
+00:44:18,079 --> 00:44:25,760
+worst case the worst case is that
+
+1049
+00:44:22,480 --> 00:44:28,240
+the string finally got accepted
+
+1050
+00:44:25,760 --> 00:44:28,960
+right that's the worst case
+
+1051
+00:44:28,240 --> 00:44:31,440
+for
+
+1052
+00:44:28,960 --> 00:44:34,319
+let's say if you have fewer ones uh
+
+1053
+00:44:31,440 --> 00:44:36,640
+fewer zeros a lot of ones
+
+1054
+00:44:34,319 --> 00:44:38,800
+you only you you won't have many
+
+1055
+00:44:36,640 --> 00:44:41,760
+iterations you just go through one or
+
+1056
+00:44:38,800 --> 00:44:43,920
+twice then the string got rejected
+
+1057
+00:44:41,760 --> 00:44:45,040
+so the worst case is that the string in
+
+1058
+00:44:43,920 --> 00:44:46,640
+this case
+
+1059
+00:44:45,040 --> 00:44:50,400
+the string
+
+1060
+00:44:46,640 --> 00:44:52,720
+finally got accepted in that case
+
+1061
+00:44:50,400 --> 00:44:55,440
+every time you cross half of zeros and
+
+1062
+00:44:52,720 --> 00:44:56,960
+half of ones that will be half of the
+
+1063
+00:44:55,440 --> 00:44:59,839
+whole input string
+
+1064
+00:44:56,960 --> 00:45:01,040
+and how many times
+
+1065
+00:44:59,839 --> 00:45:03,200
+what uh
+
+1066
+00:45:01,040 --> 00:45:05,440
+will the iteration
+
+1067
+00:45:03,200 --> 00:45:07,040
+goal that will be
+
+1068
+00:45:05,440 --> 00:45:10,880
+log
+
+1069
+00:45:07,040 --> 00:45:11,839
+base 2 and the length of the string
+
+1070
+00:45:10,880 --> 00:45:13,200
+right
+
+1071
+00:45:11,839 --> 00:45:15,920
+so plus 1
+
+1072
+00:45:13,200 --> 00:45:18,960
+that will be the number of iterations
+
+1073
+00:45:15,920 --> 00:45:21,440
+that's why we have
+
+1074
+00:45:18,960 --> 00:45:23,200
+number of durations
+
+1075
+00:45:21,440 --> 00:45:25,280
+and every stage is
+
+1076
+00:45:23,200 --> 00:45:28,240
+big of n so
+
+1077
+00:45:25,280 --> 00:45:30,839
+for the stages of 2 3 and 4 that would
+
+1078
+00:45:28,240 --> 00:45:34,079
+be this one
+
+1079
+00:45:30,839 --> 00:45:37,599
+okay and remember that this is the exact
+
+1080
+00:45:34,079 --> 00:45:40,480
+number not in big o so the base the base
+
+1081
+00:45:37,599 --> 00:45:42,800
+here still matters okay
+
+1082
+00:45:40,480 --> 00:45:46,800
+then we just need to
+
+1083
+00:45:42,800 --> 00:45:47,920
+add up the two
+
+1084
+00:45:46,800 --> 00:45:50,720
+that will be
+
+1085
+00:45:47,920 --> 00:45:53,599
+step stage one and two
+
+1086
+00:45:50,720 --> 00:45:55,839
+three four things like this
+
+1087
+00:45:53,599 --> 00:45:58,400
+and
+
+1088
+00:45:55,839 --> 00:46:01,440
+you can go through the calculation again
+
+1089
+00:45:58,400 --> 00:46:03,920
+and you will get you will find that
+
+1090
+00:46:01,440 --> 00:46:06,400
+these expression
+
+1091
+00:46:03,920 --> 00:46:07,440
+can be used via
+
+1092
+00:46:06,400 --> 00:46:09,040
+the goal
+
+1093
+00:46:07,440 --> 00:46:10,000
+to describe
+
+1094
+00:46:09,040 --> 00:46:12,000
+what
+
+1095
+00:46:10,000 --> 00:46:14,560
+these two
+
+1096
+00:46:12,000 --> 00:46:17,680
+expressions described although we don't
+
+1097
+00:46:14,560 --> 00:46:19,119
+know what exactly that is but we know we
+
+1098
+00:46:17,680 --> 00:46:22,319
+can use
+
+1099
+00:46:19,119 --> 00:46:24,560
+this notation to describe what this
+
+1100
+00:46:22,319 --> 00:46:28,119
+notation described
+
+1101
+00:46:24,560 --> 00:46:28,119
+okay well
+
+1102
+00:46:28,400 --> 00:46:33,280
+then we know that
+
+1103
+00:46:31,040 --> 00:46:35,920
+m2 decides a
+
+1104
+00:46:33,280 --> 00:46:39,920
+the same language 0k1k
+
+1105
+00:46:35,920 --> 00:46:39,920
+in time big of n log n
+
+1106
+00:46:41,280 --> 00:46:47,520
+by definition of time complexity class
+
+1107
+00:46:45,280 --> 00:46:49,040
+we know that a
+
+1108
+00:46:47,520 --> 00:46:52,000
+is in
+
+1109
+00:46:49,040 --> 00:46:52,720
+time and log n now
+
+1110
+00:46:52,000 --> 00:46:55,359
+see
+
+1111
+00:46:52,720 --> 00:46:59,040
+that's what i said
+
+1112
+00:46:55,359 --> 00:47:00,000
+for m for the existence of m1 we know
+
+1113
+00:46:59,040 --> 00:47:03,760
+that
+
+1114
+00:47:00,000 --> 00:47:06,720
+a is in time n squared
+
+1115
+00:47:03,760 --> 00:47:09,040
+okay a is in time n squared
+
+1116
+00:47:06,720 --> 00:47:12,480
+and of course by definition we know that
+
+1117
+00:47:09,040 --> 00:47:15,359
+since a is in time of n square
+
+1118
+00:47:12,480 --> 00:47:19,040
+a is in time of
+
+1119
+00:47:15,359 --> 00:47:19,040
+n cubic and
+
+1120
+00:47:20,079 --> 00:47:23,680
+four
+
+1121
+00:47:20,960 --> 00:47:26,079
+and etc right
+
+1122
+00:47:23,680 --> 00:47:29,119
+so we don't care how
+
+1123
+00:47:26,079 --> 00:47:30,160
+big the superstar is we are we usually
+
+1124
+00:47:29,119 --> 00:47:33,200
+we care
+
+1125
+00:47:30,160 --> 00:47:34,160
+how small the time complexity class can
+
+1126
+00:47:33,200 --> 00:47:35,200
+be
+
+1127
+00:47:34,160 --> 00:47:37,599
+so
+
+1128
+00:47:35,200 --> 00:47:38,400
+by having m2 here
+
+1129
+00:47:37,599 --> 00:47:41,040
+you know
+
+1130
+00:47:38,400 --> 00:47:43,440
+you write a better program in some sense
+
+1131
+00:47:41,040 --> 00:47:47,040
+you write a better program
+
+1132
+00:47:43,440 --> 00:47:48,319
+by the existence of n2 m2 here we know
+
+1133
+00:47:47,040 --> 00:47:51,119
+that
+
+1134
+00:47:48,319 --> 00:47:55,040
+a actually belongs to a smaller time
+
+1135
+00:47:51,119 --> 00:47:55,040
+complexity class that would be
+
+1136
+00:47:56,319 --> 00:48:01,119
+n log n
+
+1137
+00:47:59,200 --> 00:48:02,319
+okay
+
+1138
+00:48:01,119 --> 00:48:04,319
+so
+
+1139
+00:48:02,319 --> 00:48:05,119
+i think that's pretty clear so we know
+
+1140
+00:48:04,319 --> 00:48:08,160
+that
+
+1141
+00:48:05,119 --> 00:48:10,880
+now we know that n is a is in the
+
+1142
+00:48:08,160 --> 00:48:15,280
+language of a the language a is in and
+
+1143
+00:48:10,880 --> 00:48:17,520
+organ time comes time time of n log n
+
+1144
+00:48:15,280 --> 00:48:18,880
+okay
+
+1145
+00:48:17,520 --> 00:48:19,599
+so
+
+1146
+00:48:18,880 --> 00:48:23,119
+see
+
+1147
+00:48:19,599 --> 00:48:23,119
+if you write a better program
+
+1148
+00:48:23,680 --> 00:48:28,079
+you either
+
+1149
+00:48:24,960 --> 00:48:29,599
+sorry not only that you can solve the
+
+1150
+00:48:28,079 --> 00:48:31,839
+uh
+
+1151
+00:48:29,599 --> 00:48:34,240
+solve the problem faster
+
+1152
+00:48:31,839 --> 00:48:36,640
+well in the theoretical sense not
+
+1153
+00:48:34,240 --> 00:48:37,760
+practical sense theoretical sense solve
+
+1154
+00:48:36,640 --> 00:48:39,520
+the proc
+
+1155
+00:48:37,760 --> 00:48:41,680
+problem
+
+1156
+00:48:39,520 --> 00:48:44,640
+faster
+
+1157
+00:48:41,680 --> 00:48:49,359
+but also that you prove
+
+1158
+00:48:44,640 --> 00:48:51,359
+the problem is actually easier than we
+
+1159
+00:48:49,359 --> 00:48:54,480
+thought
+
+1160
+00:48:51,359 --> 00:48:56,800
+see that's the uh interesting part
+
+1161
+00:48:54,480 --> 00:48:56,800
+then
+
+1162
+00:48:56,960 --> 00:49:01,599
+how about we use a you know slightly
+
+1163
+00:48:59,920 --> 00:49:03,839
+different
+
+1164
+00:49:01,599 --> 00:49:03,839
+machine
+
+1165
+00:49:04,480 --> 00:49:09,760
+in chapter
+
+1166
+00:49:06,079 --> 00:49:12,160
+3 right we proved that the variance the
+
+1167
+00:49:09,760 --> 00:49:14,720
+variant of turing machine are basically
+
+1168
+00:49:12,160 --> 00:49:14,720
+equivalent
+
+1169
+00:49:14,839 --> 00:49:21,520
+but don't be confused here
+
+1170
+00:49:18,400 --> 00:49:25,440
+those equivalence
+
+1171
+00:49:21,520 --> 00:49:28,400
+is in terms of computability
+
+1172
+00:49:25,440 --> 00:49:30,559
+okay computability
+
+1173
+00:49:28,400 --> 00:49:33,040
+uh type a
+
+1174
+00:49:30,559 --> 00:49:35,520
+query machine of type a can do
+
+1175
+00:49:33,040 --> 00:49:38,800
+what type b can do and the vice versa
+
+1176
+00:49:35,520 --> 00:49:42,079
+that's we say they are equivalent and we
+
+1177
+00:49:38,800 --> 00:49:45,680
+didn't care about how many steps how
+
+1178
+00:49:42,079 --> 00:49:47,680
+many times it needs we only care about
+
+1179
+00:49:45,680 --> 00:49:51,040
+can or cannot
+
+1180
+00:49:47,680 --> 00:49:54,000
+okay in chapter three four five computer
+
+1181
+00:49:51,040 --> 00:49:55,200
+beauty but here let's see what will
+
+1182
+00:49:54,000 --> 00:49:59,839
+happen
+
+1183
+00:49:55,200 --> 00:49:59,839
+so if we use two type two machine
+
+1184
+00:50:00,240 --> 00:50:06,319
+then we design m3 for the language
+
+1185
+00:50:03,680 --> 00:50:07,839
+how do we do that
+
+1186
+00:50:06,319 --> 00:50:12,720
+here
+
+1187
+00:50:07,839 --> 00:50:14,960
+so m3 is actually easier than m2
+
+1188
+00:50:12,720 --> 00:50:14,960
+the
+
+1189
+00:50:15,920 --> 00:50:19,920
+so
+
+1190
+00:50:16,800 --> 00:50:24,319
+we have now uh the machine have has
+
+1191
+00:50:19,920 --> 00:50:26,319
+now has two type right so first type is
+
+1192
+00:50:24,319 --> 00:50:28,640
+you know a bunch of zero and bunch of
+
+1193
+00:50:26,319 --> 00:50:30,559
+one which is the input
+
+1194
+00:50:28,640 --> 00:50:33,839
+input type okay
+
+1195
+00:50:30,559 --> 00:50:34,720
+and the second tab initially empty
+
+1196
+00:50:33,839 --> 00:50:35,599
+okay
+
+1197
+00:50:34,720 --> 00:50:37,440
+then
+
+1198
+00:50:35,599 --> 00:50:39,839
+first step is the same
+
+1199
+00:50:37,440 --> 00:50:42,079
+we just
+
+1200
+00:50:39,839 --> 00:50:44,400
+scan across the tab to check the format
+
+1201
+00:50:42,079 --> 00:50:47,119
+if a bunch of zero and bunch of one then
+
+1202
+00:50:44,400 --> 00:50:48,400
+it's okay otherwise reject it okay
+
+1203
+00:50:47,119 --> 00:50:49,680
+then
+
+1204
+00:50:48,400 --> 00:50:52,400
+go again
+
+1205
+00:50:49,680 --> 00:50:54,800
+scan across zero part
+
+1206
+00:50:52,400 --> 00:50:56,079
+until the first one let's say here
+
+1207
+00:50:54,800 --> 00:50:58,559
+so we have
+
+1208
+00:50:56,079 --> 00:51:02,079
+zero here and one here and don't forget
+
+1209
+00:50:58,559 --> 00:51:03,520
+that we have two tape right so two head
+
+1210
+00:51:02,079 --> 00:51:06,640
+can work
+
+1211
+00:51:03,520 --> 00:51:08,160
+simultaneously so when we scan across
+
+1212
+00:51:06,640 --> 00:51:13,280
+zero
+
+1213
+00:51:08,160 --> 00:51:14,720
+we copy the zero to the second tip
+
+1214
+00:51:13,280 --> 00:51:17,760
+okay
+
+1215
+00:51:14,720 --> 00:51:21,040
+so it doesn't wan at that moment the
+
+1216
+00:51:17,760 --> 00:51:23,599
+head will be the at the first one
+
+1217
+00:51:21,040 --> 00:51:25,680
+and then ahead
+
+1218
+00:51:23,599 --> 00:51:27,280
+you can well depends on how you write
+
+1219
+00:51:25,680 --> 00:51:28,480
+the program doesn't really matter let's
+
+1220
+00:51:27,280 --> 00:51:30,800
+say here
+
+1221
+00:51:28,480 --> 00:51:33,119
+okay
+
+1222
+00:51:30,800 --> 00:51:33,119
+then
+
+1223
+00:51:34,720 --> 00:51:40,960
+for type for the first tape
+
+1224
+00:51:37,599 --> 00:51:44,480
+we continue in the scanning
+
+1225
+00:51:40,960 --> 00:51:46,640
+of one until the end of the input
+
+1226
+00:51:44,480 --> 00:51:46,640
+so
+
+1227
+00:51:47,520 --> 00:51:52,720
+we continue
+
+1228
+00:51:48,839 --> 00:51:53,520
+scanning but at the same time
+
+1229
+00:51:52,720 --> 00:51:56,079
+the
+
+1230
+00:51:53,520 --> 00:51:58,640
+head on the second tape
+
+1231
+00:51:56,079 --> 00:52:01,040
+go back
+
+1232
+00:51:58,640 --> 00:52:01,040
+you see
+
+1233
+00:52:01,200 --> 00:52:06,880
+we can go back here to zero right then
+
+1234
+00:52:04,880 --> 00:52:09,440
+we close
+
+1235
+00:52:06,880 --> 00:52:11,040
+one zero
+
+1236
+00:52:09,440 --> 00:52:13,599
+then
+
+1237
+00:52:11,040 --> 00:52:17,440
+one zero
+
+1238
+00:52:13,599 --> 00:52:18,880
+one zero so every step
+
+1239
+00:52:17,440 --> 00:52:21,760
+your first
+
+1240
+00:52:18,880 --> 00:52:25,119
+tap head go right and the
+
+1241
+00:52:21,760 --> 00:52:27,040
+second time head go left
+
+1242
+00:52:25,119 --> 00:52:29,599
+so it's like
+
+1243
+00:52:27,040 --> 00:52:33,200
+the whole thing would be
+
+1244
+00:52:29,599 --> 00:52:37,119
+zero zero zero one 1 1 and firstly we
+
+1245
+00:52:33,200 --> 00:52:40,400
+copy 0 0 0 on the second tab then cross
+
+1246
+00:52:37,119 --> 00:52:42,400
+1 cross 0 cross 1 cross 0 cross 1 cross
+
+1247
+00:52:40,400 --> 00:52:44,720
+0.
+
+1248
+00:52:42,400 --> 00:52:44,720
+if
+
+1249
+00:52:44,960 --> 00:52:48,720
+o zero
+
+1250
+00:52:46,800 --> 00:52:51,599
+let's say
+
+1251
+00:52:48,720 --> 00:52:54,319
+if o zero has been closed and you still
+
+1252
+00:52:51,599 --> 00:52:57,040
+have one or vice versa then the string
+
+1253
+00:52:54,319 --> 00:53:00,319
+is rejected otherwise
+
+1254
+00:52:57,040 --> 00:53:02,640
+accept it
+
+1255
+00:53:00,319 --> 00:53:04,720
+so it's pretty straightforward it's
+
+1256
+00:53:02,640 --> 00:53:06,559
+pretty easy
+
+1257
+00:53:04,720 --> 00:53:09,599
+actually easier than the
+
+1258
+00:53:06,559 --> 00:53:12,599
+easier easier than m2
+
+1259
+00:53:09,599 --> 00:53:12,599
+right
+
+1260
+00:53:14,880 --> 00:53:19,040
+so
+
+1261
+00:53:15,920 --> 00:53:20,640
+how many steps need the machine
+
+1262
+00:53:19,040 --> 00:53:23,359
+m3 needs to
+
+1263
+00:53:20,640 --> 00:53:26,240
+process a string
+
+1264
+00:53:23,359 --> 00:53:28,160
+the same thing that every
+
+1265
+00:53:26,240 --> 00:53:31,200
+stage
+
+1266
+00:53:28,160 --> 00:53:31,200
+is linear to
+
+1267
+00:53:31,280 --> 00:53:35,599
+the length of the input string
+
+1268
+00:53:33,359 --> 00:53:35,599
+so
+
+1269
+00:53:35,839 --> 00:53:39,520
+we have
+
+1270
+00:53:37,520 --> 00:53:42,319
+here
+
+1271
+00:53:39,520 --> 00:53:45,119
+and of course when you sum up sound when
+
+1272
+00:53:42,319 --> 00:53:47,680
+you sum up all these terms you get a
+
+1273
+00:53:45,119 --> 00:53:48,640
+linear time machine
+
+1274
+00:53:47,680 --> 00:53:50,400
+okay
+
+1275
+00:53:48,640 --> 00:53:54,160
+so we call the
+
+1276
+00:53:50,400 --> 00:53:54,160
+we call m2 linear time
+
+1277
+00:53:55,440 --> 00:54:01,680
+since m3 decides a in time because n
+
+1278
+00:53:59,920 --> 00:54:04,480
+which is linear time
+
+1279
+00:54:01,680 --> 00:54:07,200
+we know now we know that a
+
+1280
+00:54:04,480 --> 00:54:08,160
+is in time of n
+
+1281
+00:54:07,200 --> 00:54:12,720
+okay
+
+1282
+00:54:08,160 --> 00:54:14,559
+so previously we know a is in time log n
+
+1283
+00:54:12,720 --> 00:54:18,240
+that's m2 right
+
+1284
+00:54:14,559 --> 00:54:21,680
+now by using a different type of turing
+
+1285
+00:54:18,240 --> 00:54:24,400
+machine we can further
+
+1286
+00:54:21,680 --> 00:54:27,200
+say that a is even in
+
+1287
+00:54:24,400 --> 00:54:27,200
+time of n
+
+1288
+00:54:28,559 --> 00:54:32,720
+well
+
+1289
+00:54:30,640 --> 00:54:34,559
+that's okay but it create actually
+
+1290
+00:54:32,720 --> 00:54:35,920
+creates a problem
+
+1291
+00:54:34,559 --> 00:54:39,599
+okay
+
+1292
+00:54:35,920 --> 00:54:42,000
+if someone use a different machine
+
+1293
+00:54:39,599 --> 00:54:44,720
+and obtain a different
+
+1294
+00:54:42,000 --> 00:54:47,920
+okay let's go back
+
+1295
+00:54:44,720 --> 00:54:49,520
+for m2 and m1 you can say that we are
+
+1296
+00:54:47,920 --> 00:54:51,119
+using the same machine
+
+1297
+00:54:49,520 --> 00:54:55,839
+but
+
+1298
+00:54:51,119 --> 00:54:59,599
+the person who designed m2 is smarter
+
+1299
+00:54:55,839 --> 00:55:00,799
+he or she used a better algorithm
+
+1300
+00:54:59,599 --> 00:55:02,640
+to solve
+
+1301
+00:55:00,799 --> 00:55:06,000
+a
+
+1302
+00:55:02,640 --> 00:55:07,359
+so the second person successfully proved
+
+1303
+00:55:06,000 --> 00:55:08,960
+that
+
+1304
+00:55:07,359 --> 00:55:11,359
+a is
+
+1305
+00:55:08,960 --> 00:55:13,839
+easier than what we thought when we have
+
+1306
+00:55:11,359 --> 00:55:16,079
+only m1
+
+1307
+00:55:13,839 --> 00:55:17,440
+they are on the same computational model
+
+1308
+00:55:16,079 --> 00:55:19,200
+that's no problem
+
+1309
+00:55:17,440 --> 00:55:23,520
+but
+
+1310
+00:55:19,200 --> 00:55:23,520
+someone creates an other
+
+1311
+00:55:24,079 --> 00:55:30,240
+computational model another machine
+
+1312
+00:55:27,040 --> 00:55:32,319
+slightly different and prove that
+
+1313
+00:55:30,240 --> 00:55:34,960
+a is actually
+
+1314
+00:55:32,319 --> 00:55:37,040
+can be handled faster
+
+1315
+00:55:34,960 --> 00:55:39,119
+then that creates a problem the two
+
+1316
+00:55:37,040 --> 00:55:42,799
+results
+
+1317
+00:55:39,119 --> 00:55:43,920
+cannot really be compared
+
+1318
+00:55:42,799 --> 00:55:47,520
+right
+
+1319
+00:55:43,920 --> 00:55:50,480
+so at this point we need to
+
+1320
+00:55:47,520 --> 00:55:53,440
+discuss the difference between
+
+1321
+00:55:50,480 --> 00:55:58,000
+two machines between the variants of two
+
+1322
+00:55:53,440 --> 00:55:59,920
+machines to clarify or to unify what we
+
+1323
+00:55:58,000 --> 00:56:03,599
+will have
+
+1324
+00:55:59,920 --> 00:56:06,319
+for the derivation for the
+
+1325
+00:56:03,599 --> 00:56:09,319
+results we will have
+
+1326
+00:56:06,319 --> 00:56:09,319
+okay
+

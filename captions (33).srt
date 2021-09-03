@@ -1,0 +1,5144 @@
+1
+00:00:00,880 --> 00:00:06,799
+after introduce the class p let's
+
+2
+00:00:04,080 --> 00:00:09,200
+introduce another important time
+
+3
+00:00:06,799 --> 00:00:10,719
+complexity class mp
+
+4
+00:00:09,200 --> 00:00:12,719
+and
+
+5
+00:00:10,719 --> 00:00:16,720
+before that we need to introduce the
+
+6
+00:00:12,719 --> 00:00:18,720
+concept of a polynomial verifiability
+
+7
+00:00:16,720 --> 00:00:21,359
+and let's take a look at the two
+
+8
+00:00:18,720 --> 00:00:23,600
+languages the two problems here
+
+9
+00:00:21,359 --> 00:00:24,880
+uh hamiltonian path and
+
+10
+00:00:23,600 --> 00:00:27,519
+composite
+
+11
+00:00:24,880 --> 00:00:30,400
+for hematanium path actually i think
+
+12
+00:00:27,519 --> 00:00:33,040
+we've introduced the problem that
+
+13
+00:00:30,400 --> 00:00:35,280
+this problem right
+
+14
+00:00:33,040 --> 00:00:39,120
+when given
+
+15
+00:00:35,280 --> 00:00:40,559
+a directed graph and specify two nodes s
+
+16
+00:00:39,120 --> 00:00:42,000
+and t
+
+17
+00:00:40,559 --> 00:00:44,480
+if the
+
+18
+00:00:42,000 --> 00:00:47,840
+problem instance here
+
+19
+00:00:44,480 --> 00:00:47,840
+over the input string here
+
+20
+00:00:47,920 --> 00:00:52,160
+uh
+
+21
+00:00:49,120 --> 00:00:53,120
+is in hemitanium hematanium path that
+
+22
+00:00:52,160 --> 00:00:56,559
+means
+
+23
+00:00:53,120 --> 00:00:58,879
+on the directed graph g here there is a
+
+24
+00:00:56,559 --> 00:01:01,440
+hamiltonian path from
+
+25
+00:00:58,879 --> 00:01:04,640
+the first specified node as
+
+26
+00:01:01,440 --> 00:01:06,159
+to the second specified node t
+
+27
+00:01:04,640 --> 00:01:08,000
+okay
+
+28
+00:01:06,159 --> 00:01:10,799
+so
+
+29
+00:01:08,000 --> 00:01:10,799
+uh for this
+
+30
+00:01:11,280 --> 00:01:18,320
+for this problem let's take a look at
+
+31
+00:01:13,200 --> 00:01:18,320
+the one example here okay so uh
+
+32
+00:01:19,200 --> 00:01:25,799
+if we have uh
+
+33
+00:01:22,000 --> 00:01:25,799
+if we have a
+
+34
+00:01:26,560 --> 00:01:31,520
+path problem instance here
+
+35
+00:01:29,200 --> 00:01:31,520
+then
+
+36
+00:01:32,079 --> 00:01:37,119
+it is uh
+
+37
+00:01:33,759 --> 00:01:38,840
+of course uh the this one is a simple
+
+38
+00:01:37,119 --> 00:01:43,520
+uh directive graph
+
+39
+00:01:38,840 --> 00:01:45,680
+so it's fairly easy for us to observe
+
+40
+00:01:43,520 --> 00:01:48,159
+one hamiltonian path what is a
+
+41
+00:01:45,680 --> 00:01:52,320
+hamiltonian path that means uh you need
+
+42
+00:01:48,159 --> 00:01:56,799
+to pass all the nodes once and only once
+
+43
+00:01:52,320 --> 00:02:00,079
+okay so for example from s here and we
+
+44
+00:01:56,799 --> 00:02:01,520
+the the specified path goes to here
+
+45
+00:02:00,079 --> 00:02:04,640
+here here
+
+46
+00:02:01,520 --> 00:02:05,920
+here and by six
+
+47
+00:02:04,640 --> 00:02:09,520
+okay
+
+48
+00:02:05,920 --> 00:02:13,760
+so we have a hamiltonian path s
+
+49
+00:02:09,520 --> 00:02:15,200
+one two three four five six t
+
+50
+00:02:13,760 --> 00:02:17,120
+right
+
+51
+00:02:15,200 --> 00:02:20,080
+but if uh if you don't have that
+
+52
+00:02:17,120 --> 00:02:23,040
+information and the directed graph is
+
+53
+00:02:20,080 --> 00:02:25,920
+very large and the problem becomes very
+
+54
+00:02:23,040 --> 00:02:28,720
+difficult actually and
+
+55
+00:02:25,920 --> 00:02:30,000
+for lack of better information you may
+
+56
+00:02:28,720 --> 00:02:33,040
+need to
+
+57
+00:02:30,000 --> 00:02:36,160
+try all the permutation of the node of g
+
+58
+00:02:33,040 --> 00:02:37,680
+right because g is
+
+59
+00:02:36,160 --> 00:02:40,239
+v and e
+
+60
+00:02:37,680 --> 00:02:42,400
+and it is possible that you need to try
+
+61
+00:02:40,239 --> 00:02:42,400
+the
+
+62
+00:02:43,120 --> 00:02:46,800
+factorial here
+
+63
+00:02:44,560 --> 00:02:46,800
+so
+
+64
+00:02:47,519 --> 00:02:51,840
+uh this is a hamutan path and
+
+65
+00:02:51,920 --> 00:02:57,360
+with without better
+
+66
+00:02:54,160 --> 00:03:00,239
+uh algorithms we may need
+
+67
+00:02:57,360 --> 00:03:02,480
+a lot of times to try and get the answer
+
+68
+00:03:00,239 --> 00:03:05,519
+and the over ends
+
+69
+00:03:02,480 --> 00:03:08,239
+get the answer
+
+70
+00:03:05,519 --> 00:03:11,120
+as to yes or no yes there is a
+
+71
+00:03:08,239 --> 00:03:13,920
+hematologist from st or no there is no
+
+72
+00:03:11,120 --> 00:03:16,239
+hamiltonian path from snt
+
+73
+00:03:13,920 --> 00:03:18,319
+okay so a hematime path goes through
+
+74
+00:03:16,239 --> 00:03:19,599
+every node exactly once that's the
+
+75
+00:03:18,319 --> 00:03:21,840
+definition
+
+76
+00:03:19,599 --> 00:03:25,040
+and i'm telling you the problem of
+
+77
+00:03:21,840 --> 00:03:26,159
+hamiltonian path is that give you uh
+
+78
+00:03:25,040 --> 00:03:28,400
+again
+
+79
+00:03:26,159 --> 00:03:30,959
+uh given a directed graph and a two
+
+80
+00:03:28,400 --> 00:03:33,360
+specified node is there a hamiltonian
+
+81
+00:03:30,959 --> 00:03:34,560
+path from s to t
+
+82
+00:03:33,360 --> 00:03:38,879
+okay
+
+83
+00:03:34,560 --> 00:03:38,879
+and for this problem uh
+
+84
+00:03:39,519 --> 00:03:45,040
+let's think about if someone
+
+85
+00:03:42,239 --> 00:03:46,959
+if someone give you
+
+86
+00:03:45,040 --> 00:03:50,159
+an answer
+
+87
+00:03:46,959 --> 00:03:51,920
+okay for the for exactly the graph here
+
+88
+00:03:50,159 --> 00:03:53,200
+we have an answer right
+
+89
+00:03:51,920 --> 00:03:54,959
+the bold
+
+90
+00:03:53,200 --> 00:03:58,080
+arrows here
+
+91
+00:03:54,959 --> 00:04:00,480
+is the is the answer marked by i don't
+
+92
+00:03:58,080 --> 00:04:03,439
+know someone and
+
+93
+00:04:00,480 --> 00:04:06,720
+how long can you
+
+94
+00:04:03,439 --> 00:04:09,280
+uh how how much time you need to verify
+
+95
+00:04:06,720 --> 00:04:11,840
+if that's an answer and if that's an
+
+96
+00:04:09,280 --> 00:04:14,879
+answer then that means
+
+97
+00:04:11,840 --> 00:04:16,959
+this graph here
+
+98
+00:04:14,879 --> 00:04:18,959
+and s
+
+99
+00:04:16,959 --> 00:04:19,840
+t here
+
+100
+00:04:18,959 --> 00:04:21,280
+is
+
+101
+00:04:19,840 --> 00:04:24,080
+in
+
+102
+00:04:21,280 --> 00:04:25,919
+hamiltonian past
+
+103
+00:04:24,080 --> 00:04:28,919
+right
+
+104
+00:04:25,919 --> 00:04:28,919
+so
+
+105
+00:04:29,120 --> 00:04:32,160
+here we don't
+
+106
+00:04:30,720 --> 00:04:35,120
+need to
+
+107
+00:04:32,160 --> 00:04:37,600
+come up with an answer ourselves
+
+108
+00:04:35,120 --> 00:04:38,639
+we just need to verify we just need to
+
+109
+00:04:37,600 --> 00:04:41,919
+verify
+
+110
+00:04:38,639 --> 00:04:44,400
+if some given answer is really the
+
+111
+00:04:41,919 --> 00:04:47,520
+answer to proof that
+
+112
+00:04:44,400 --> 00:04:49,840
+the input string is
+
+113
+00:04:47,520 --> 00:04:52,960
+in the language
+
+114
+00:04:49,840 --> 00:04:55,280
+okay so let's see another example here
+
+115
+00:04:52,960 --> 00:04:59,120
+that's composite
+
+116
+00:04:55,280 --> 00:04:59,120
+and if you have an integer here
+
+117
+00:04:59,680 --> 00:05:03,039
+can this integer
+
+118
+00:05:01,759 --> 00:05:04,639
+be
+
+119
+00:05:03,039 --> 00:05:07,360
+written as
+
+120
+00:05:04,639 --> 00:05:09,360
+two integers
+
+121
+00:05:07,360 --> 00:05:11,759
+written as the multiplication the
+
+122
+00:05:09,360 --> 00:05:13,840
+product of the
+
+123
+00:05:11,759 --> 00:05:16,320
+two integers the result of the
+
+124
+00:05:13,840 --> 00:05:17,360
+multiplication of the two integers
+
+125
+00:05:16,320 --> 00:05:19,600
+can
+
+126
+00:05:17,360 --> 00:05:20,960
+x be written as
+
+127
+00:05:19,600 --> 00:05:22,080
+p
+
+128
+00:05:20,960 --> 00:05:26,000
+q
+
+129
+00:05:22,080 --> 00:05:27,919
+that's the problem okay so for example
+
+130
+00:05:26,000 --> 00:05:31,759
+if we have a
+
+131
+00:05:27,919 --> 00:05:31,759
+you know like 20 here
+
+132
+00:05:32,240 --> 00:05:37,120
+then we know that okay uh 20 can be
+
+133
+00:05:35,039 --> 00:05:41,199
+written as
+
+134
+00:05:37,120 --> 00:05:44,160
+10 times 2 probably right then
+
+135
+00:05:41,199 --> 00:05:45,199
+20 is in composite
+
+136
+00:05:44,160 --> 00:05:46,639
+right
+
+137
+00:05:45,199 --> 00:05:48,960
+and
+
+138
+00:05:46,639 --> 00:05:50,560
+here we come up with the answer
+
+139
+00:05:48,960 --> 00:05:52,160
+ourselves
+
+140
+00:05:50,560 --> 00:05:54,639
+okay
+
+141
+00:05:52,160 --> 00:05:56,000
+let's say
+
+142
+00:05:54,639 --> 00:05:57,440
+is a
+
+143
+00:05:56,000 --> 00:05:59,360
+57
+
+144
+00:05:57,440 --> 00:06:01,840
+a composite
+
+145
+00:05:59,360 --> 00:06:05,120
+well probably many of
+
+146
+00:06:01,840 --> 00:06:08,880
+many of you know that 57 is a composite
+
+147
+00:06:05,120 --> 00:06:11,840
+right but let's say it is a very large
+
+148
+00:06:08,880 --> 00:06:14,319
+composite it's very difficult or we need
+
+149
+00:06:11,840 --> 00:06:16,319
+a lot of time to
+
+150
+00:06:14,319 --> 00:06:18,960
+try a lot of
+
+151
+00:06:16,319 --> 00:06:21,120
+possible combinations of integers to
+
+152
+00:06:18,960 --> 00:06:24,080
+calculate if
+
+153
+00:06:21,120 --> 00:06:25,759
+they multiply together we get x which is
+
+154
+00:06:24,080 --> 00:06:27,840
+57 here
+
+155
+00:06:25,759 --> 00:06:29,360
+and on the other hand
+
+156
+00:06:27,840 --> 00:06:31,360
+if someone
+
+157
+00:06:29,360 --> 00:06:32,840
+okay if someone
+
+158
+00:06:31,360 --> 00:06:35,280
+gives you
+
+159
+00:06:32,840 --> 00:06:37,280
+three and
+
+160
+00:06:35,280 --> 00:06:40,400
+19
+
+161
+00:06:37,280 --> 00:06:44,240
+okay someone gives you 3 and 19
+
+162
+00:06:40,400 --> 00:06:47,759
+and all you have to do is
+
+163
+00:06:44,240 --> 00:06:49,680
+multiply 3 and 19 and you found that oh
+
+164
+00:06:47,759 --> 00:06:50,960
+it's 57
+
+165
+00:06:49,680 --> 00:06:55,840
+so
+
+166
+00:06:50,960 --> 00:06:55,840
+this information this information
+
+167
+00:06:56,319 --> 00:06:59,199
+proof that
+
+168
+00:06:58,400 --> 00:07:02,240
+x
+
+169
+00:06:59,199 --> 00:07:05,759
+or let's say more specifically this
+
+170
+00:07:02,240 --> 00:07:06,720
+information proved 57
+
+171
+00:07:05,759 --> 00:07:10,080
+to be
+
+172
+00:07:06,720 --> 00:07:10,080
+in composite
+
+173
+00:07:10,240 --> 00:07:16,639
+okay so remember this concept
+
+174
+00:07:13,280 --> 00:07:20,319
+if you are given
+
+175
+00:07:16,639 --> 00:07:21,840
+some extra information
+
+176
+00:07:20,319 --> 00:07:23,199
+firstly
+
+177
+00:07:21,840 --> 00:07:25,120
+can you
+
+178
+00:07:23,199 --> 00:07:28,840
+use that information
+
+179
+00:07:25,120 --> 00:07:32,400
+to prove the membership of the input
+
+180
+00:07:28,840 --> 00:07:34,400
+strings and if you can how much time you
+
+181
+00:07:32,400 --> 00:07:37,199
+need to do that job
+
+182
+00:07:34,400 --> 00:07:39,759
+that's what we are going to talk
+
+183
+00:07:37,199 --> 00:07:42,840
+about here okay
+
+184
+00:07:39,759 --> 00:07:44,400
+so let's uh
+
+185
+00:07:42,840 --> 00:07:47,199
+define
+
+186
+00:07:44,400 --> 00:07:49,440
+verifier which is basically turing
+
+187
+00:07:47,199 --> 00:07:50,400
+machine okay but
+
+188
+00:07:49,440 --> 00:07:51,599
+we
+
+189
+00:07:50,400 --> 00:07:54,879
+use some
+
+190
+00:07:51,599 --> 00:07:55,759
+slightly different definition here but
+
+191
+00:07:54,879 --> 00:07:57,840
+it's
+
+192
+00:07:55,759 --> 00:08:00,319
+uh
+
+193
+00:07:57,840 --> 00:08:01,120
+a verifier is a turing machine
+
+194
+00:08:00,319 --> 00:08:05,039
+okay
+
+195
+00:08:01,120 --> 00:08:09,280
+let's say a verifier for language a
+
+196
+00:08:05,039 --> 00:08:11,599
+is a turing machine b or an algorithm b
+
+197
+00:08:09,280 --> 00:08:14,240
+where
+
+198
+00:08:11,599 --> 00:08:16,800
+a the language a
+
+199
+00:08:14,240 --> 00:08:18,000
+is the string or the string
+
+200
+00:08:16,800 --> 00:08:18,879
+that
+
+201
+00:08:18,000 --> 00:08:20,960
+we
+
+202
+00:08:18,879 --> 00:08:22,560
+accept
+
+203
+00:08:20,960 --> 00:08:23,680
+with
+
+204
+00:08:22,560 --> 00:08:26,319
+some
+
+205
+00:08:23,680 --> 00:08:28,080
+extra information
+
+206
+00:08:26,319 --> 00:08:30,319
+okay
+
+207
+00:08:28,080 --> 00:08:30,319
+and
+
+208
+00:08:31,680 --> 00:08:36,800
+for the example we just have
+
+209
+00:08:35,039 --> 00:08:41,839
+we said that
+
+210
+00:08:36,800 --> 00:08:41,839
+a verifier for language composite
+
+211
+00:08:42,479 --> 00:08:47,200
+it will accept
+
+212
+00:08:44,640 --> 00:08:48,480
+v will accept o
+
+213
+00:08:47,200 --> 00:08:49,200
+x
+
+214
+00:08:48,480 --> 00:08:50,880
+p
+
+215
+00:08:49,200 --> 00:08:53,519
+q
+
+216
+00:08:50,880 --> 00:08:56,640
+right or you have some other kind of
+
+217
+00:08:53,519 --> 00:08:59,920
+encoding here anyway for this exam for
+
+218
+00:08:56,640 --> 00:09:02,000
+that example we already have like uh 15
+
+219
+00:08:59,920 --> 00:09:06,839
+57 and
+
+220
+00:09:02,000 --> 00:09:11,040
+3 19 something like that and by using 3
+
+221
+00:09:06,839 --> 00:09:13,200
+19 we know that 57 is in
+
+222
+00:09:11,040 --> 00:09:14,880
+compulsive right
+
+223
+00:09:13,200 --> 00:09:17,120
+so
+
+224
+00:09:14,880 --> 00:09:17,120
+we
+
+225
+00:09:17,200 --> 00:09:20,720
+can
+
+226
+00:09:18,800 --> 00:09:22,480
+determine
+
+227
+00:09:20,720 --> 00:09:25,760
+the membership
+
+228
+00:09:22,480 --> 00:09:27,360
+of some stream
+
+229
+00:09:25,760 --> 00:09:28,880
+to some language
+
+230
+00:09:27,360 --> 00:09:31,200
+based on
+
+231
+00:09:28,880 --> 00:09:33,120
+extra information
+
+232
+00:09:31,200 --> 00:09:34,800
+okay that's what we are talking about
+
+233
+00:09:33,120 --> 00:09:35,600
+here
+
+234
+00:09:34,800 --> 00:09:39,440
+and
+
+235
+00:09:35,600 --> 00:09:40,959
+since v uh sorry yeah since b is still a
+
+236
+00:09:39,440 --> 00:09:43,120
+two machine
+
+237
+00:09:40,959 --> 00:09:44,399
+uh we need to measure the running time
+
+238
+00:09:43,120 --> 00:09:46,720
+of b
+
+239
+00:09:44,399 --> 00:09:50,160
+and here is the different uh slight
+
+240
+00:09:46,720 --> 00:09:52,959
+different a slightly different part we
+
+241
+00:09:50,160 --> 00:09:54,320
+measure the time the run in time of a
+
+242
+00:09:52,959 --> 00:09:59,680
+verifier
+
+243
+00:09:54,320 --> 00:09:59,680
+only in terms of the length of w
+
+244
+00:10:00,240 --> 00:10:03,200
+and
+
+245
+00:10:01,279 --> 00:10:04,480
+what differences you say
+
+246
+00:10:03,200 --> 00:10:08,399
+actually
+
+247
+00:10:04,480 --> 00:10:09,519
+since b is a two machine and
+
+248
+00:10:08,399 --> 00:10:12,880
+the
+
+249
+00:10:09,519 --> 00:10:14,880
+the input string for v is actually
+
+250
+00:10:12,880 --> 00:10:15,760
+w and c
+
+251
+00:10:14,880 --> 00:10:18,640
+right
+
+252
+00:10:15,760 --> 00:10:20,079
+so how long is w and c that would be the
+
+253
+00:10:18,640 --> 00:10:22,160
+length of w
+
+254
+00:10:20,079 --> 00:10:23,360
+plus the length of c
+
+255
+00:10:22,160 --> 00:10:25,040
+right
+
+256
+00:10:23,360 --> 00:10:27,920
+then why
+
+257
+00:10:25,040 --> 00:10:30,640
+why can we just consider only in terms
+
+258
+00:10:27,920 --> 00:10:30,640
+of w
+
+259
+00:10:30,839 --> 00:10:38,640
+because here at least in this semester
+
+260
+00:10:35,600 --> 00:10:40,720
+at least in this chapter chapter 7 time
+
+261
+00:10:38,640 --> 00:10:43,279
+complexity
+
+262
+00:10:40,720 --> 00:10:46,320
+we only care about
+
+263
+00:10:43,279 --> 00:10:48,600
+polynomial time verifier
+
+264
+00:10:46,320 --> 00:10:51,440
+okay that's it we only talk about
+
+265
+00:10:48,600 --> 00:10:53,920
+polynomial time verifier we don't talk
+
+266
+00:10:51,440 --> 00:10:56,079
+about other possibilities
+
+267
+00:10:53,920 --> 00:10:58,160
+so
+
+268
+00:10:56,079 --> 00:11:02,320
+because we only talk about polynomial
+
+269
+00:10:58,160 --> 00:11:02,320
+time verifier and
+
+270
+00:11:04,160 --> 00:11:11,279
+if you remember that for turing machine
+
+271
+00:11:07,200 --> 00:11:11,279
+to do the job to execute
+
+272
+00:11:11,680 --> 00:11:15,040
+it reads
+
+273
+00:11:13,279 --> 00:11:16,240
+one
+
+274
+00:11:15,040 --> 00:11:18,720
+tape
+
+275
+00:11:16,240 --> 00:11:21,760
+location tab space
+
+276
+00:11:18,720 --> 00:11:25,440
+with one transition
+
+277
+00:11:21,760 --> 00:11:27,120
+so the time and space is connected by
+
+278
+00:11:25,440 --> 00:11:28,880
+this relationship
+
+279
+00:11:27,120 --> 00:11:32,640
+then
+
+280
+00:11:28,880 --> 00:11:33,600
+it doesn't matter if we consider both w
+
+281
+00:11:32,640 --> 00:11:36,800
+and c
+
+282
+00:11:33,600 --> 00:11:39,120
+or just w
+
+283
+00:11:36,800 --> 00:11:42,560
+because
+
+284
+00:11:39,120 --> 00:11:43,920
+we focus on polynomial time only
+
+285
+00:11:42,560 --> 00:11:46,560
+so
+
+286
+00:11:43,920 --> 00:11:47,839
+if a verifier
+
+287
+00:11:46,560 --> 00:11:50,079
+runs
+
+288
+00:11:47,839 --> 00:11:53,040
+in polynomial time
+
+289
+00:11:50,079 --> 00:11:55,200
+of the total length
+
+290
+00:11:53,040 --> 00:11:57,760
+then that verifier runs in polynomial
+
+291
+00:11:55,200 --> 00:12:00,720
+time of only w
+
+292
+00:11:57,760 --> 00:12:01,680
+and vice versa
+
+293
+00:12:00,720 --> 00:12:04,079
+right
+
+294
+00:12:01,680 --> 00:12:04,079
+because
+
+295
+00:12:06,079 --> 00:12:13,920
+the point verifier can cannot run longer
+
+296
+00:12:10,240 --> 00:12:15,600
+than polynomial time of w
+
+297
+00:12:13,920 --> 00:12:18,800
+the
+
+298
+00:12:15,600 --> 00:12:21,760
+length of c must be within polynomial
+
+299
+00:12:18,800 --> 00:12:22,959
+time of length w so it doesn't matter
+
+300
+00:12:21,760 --> 00:12:26,720
+which one
+
+301
+00:12:22,959 --> 00:12:30,959
+the total length or just w
+
+302
+00:12:26,720 --> 00:12:32,720
+we use to align the time calculation
+
+303
+00:12:30,959 --> 00:12:36,000
+because polynomials per number is still
+
+304
+00:12:32,720 --> 00:12:39,680
+polynomial right so that's the
+
+305
+00:12:36,000 --> 00:12:41,279
+that's the key here and why do we and
+
+306
+00:12:39,680 --> 00:12:42,160
+why do we choose to
+
+307
+00:12:41,279 --> 00:12:44,800
+uh
+
+308
+00:12:42,160 --> 00:12:47,839
+measure time of a verifier only in terms
+
+309
+00:12:44,800 --> 00:12:50,240
+of length w because that's easier
+
+310
+00:12:47,839 --> 00:12:53,360
+for uh
+
+311
+00:12:50,240 --> 00:12:55,519
+for putting verifier and the decider
+
+312
+00:12:53,360 --> 00:12:58,320
+together and talk about
+
+313
+00:12:55,519 --> 00:13:01,279
+some particular language
+
+314
+00:12:58,320 --> 00:13:04,320
+because the input string is always w
+
+315
+00:13:01,279 --> 00:13:07,040
+and we know that verify need extra
+
+316
+00:13:04,320 --> 00:13:09,680
+information and we also know that we
+
+317
+00:13:07,040 --> 00:13:12,320
+focus on polynomial time verifier so
+
+318
+00:13:09,680 --> 00:13:14,480
+that extra information must be within
+
+319
+00:13:12,320 --> 00:13:18,240
+the polynomial of
+
+320
+00:13:14,480 --> 00:13:20,800
+the input string w we talk about if that
+
+321
+00:13:18,240 --> 00:13:23,279
+string is in the
+
+322
+00:13:20,800 --> 00:13:26,880
+target language or not
+
+323
+00:13:23,279 --> 00:13:27,760
+okay so that's why we do things this way
+
+324
+00:13:26,880 --> 00:13:30,079
+okay
+
+325
+00:13:27,760 --> 00:13:30,079
+then
+
+326
+00:13:33,519 --> 00:13:39,120
+polynomial time verifier runs on
+
+327
+00:13:35,600 --> 00:13:40,399
+polynomial time in length of w okay
+
+328
+00:13:39,120 --> 00:13:43,120
+then we
+
+329
+00:13:40,399 --> 00:13:44,639
+define that a language a
+
+330
+00:13:43,120 --> 00:13:45,320
+a language a
+
+331
+00:13:44,639 --> 00:13:48,800
+is
+
+332
+00:13:45,320 --> 00:13:51,920
+polynomially verifiable
+
+333
+00:13:48,800 --> 00:13:56,639
+predominantly verifiable
+
+334
+00:13:51,920 --> 00:13:57,920
+if it has a polynomial time verifier
+
+335
+00:13:56,639 --> 00:14:00,880
+okay
+
+336
+00:13:57,920 --> 00:14:05,040
+so consider what we were talking about
+
+337
+00:14:00,880 --> 00:14:06,160
+previously we talked about a language a
+
+338
+00:14:05,040 --> 00:14:08,959
+is
+
+339
+00:14:06,160 --> 00:14:08,959
+decidable
+
+340
+00:14:14,160 --> 00:14:20,720
+right or not and if it is polynomially
+
+341
+00:14:18,079 --> 00:14:20,720
+decidable
+
+342
+00:14:24,560 --> 00:14:30,519
+if it has a polynomial time what
+
+343
+00:14:27,519 --> 00:14:30,519
+decider
+
+344
+00:14:31,600 --> 00:14:36,720
+right so we replace
+
+345
+00:14:34,399 --> 00:14:38,000
+decidable design
+
+346
+00:14:36,720 --> 00:14:42,399
+decider
+
+347
+00:14:38,000 --> 00:14:45,399
+here with verifiable verify
+
+348
+00:14:42,399 --> 00:14:45,399
+verifier
+
+349
+00:14:47,360 --> 00:14:53,279
+then we create
+
+350
+00:14:50,880 --> 00:14:55,440
+then we create
+
+351
+00:14:53,279 --> 00:14:57,279
+the class of
+
+352
+00:14:55,440 --> 00:14:59,279
+mp
+
+353
+00:14:57,279 --> 00:15:00,800
+sorry
+
+354
+00:14:59,279 --> 00:15:01,839
+we defined that
+
+355
+00:15:00,800 --> 00:15:04,399
+mp
+
+356
+00:15:01,839 --> 00:15:05,600
+is the class of languages
+
+357
+00:15:04,399 --> 00:15:10,120
+that have
+
+358
+00:15:05,600 --> 00:15:10,120
+polynomial time verifiers
+
+359
+00:15:15,519 --> 00:15:20,240
+okay
+
+360
+00:15:17,040 --> 00:15:22,560
+so compared to class p class p is the
+
+361
+00:15:20,240 --> 00:15:25,519
+class of languages that have polynomial
+
+362
+00:15:22,560 --> 00:15:26,720
+time deciders
+
+363
+00:15:25,519 --> 00:15:29,040
+okay so
+
+364
+00:15:26,720 --> 00:15:30,160
+that uh it's a symmetric definition
+
+365
+00:15:29,040 --> 00:15:33,040
+right so
+
+366
+00:15:30,160 --> 00:15:36,160
+a language a is polynomially decidable
+
+367
+00:15:33,040 --> 00:15:37,360
+if it is if it has a polynomial time
+
+368
+00:15:36,160 --> 00:15:41,519
+decider
+
+369
+00:15:37,360 --> 00:15:45,440
+a language a is polynomially verifiable
+
+370
+00:15:41,519 --> 00:15:47,360
+if it has a polynomial time verifier
+
+371
+00:15:45,440 --> 00:15:49,600
+and class p
+
+372
+00:15:47,360 --> 00:15:51,759
+is the class of languages that have
+
+373
+00:15:49,600 --> 00:15:56,560
+polynomial time deciders
+
+374
+00:15:51,759 --> 00:16:01,199
+and class mp is the class of languages
+
+375
+00:15:56,560 --> 00:16:01,199
+that have polynomial time very files
+
+376
+00:16:01,759 --> 00:16:04,240
+okay
+
+377
+00:16:03,440 --> 00:16:05,839
+then
+
+378
+00:16:04,240 --> 00:16:08,880
+for the
+
+379
+00:16:05,839 --> 00:16:10,079
+verifier we need to we the verifier
+
+380
+00:16:08,880 --> 00:16:12,240
+needs
+
+381
+00:16:10,079 --> 00:16:13,199
+extra information
+
+382
+00:16:12,240 --> 00:16:17,040
+okay
+
+383
+00:16:13,199 --> 00:16:18,399
+so the c is not constant here the c is
+
+384
+00:16:17,040 --> 00:16:21,839
+certificate
+
+385
+00:16:18,399 --> 00:16:25,680
+that's why we usually used we usually
+
+386
+00:16:21,839 --> 00:16:27,600
+use c here because that's a certificate
+
+387
+00:16:25,680 --> 00:16:29,040
+what certificate
+
+388
+00:16:27,600 --> 00:16:31,600
+certify
+
+389
+00:16:29,040 --> 00:16:34,959
+w is in
+
+390
+00:16:31,600 --> 00:16:37,759
+the language a so what is in language a
+
+391
+00:16:34,959 --> 00:16:42,160
+string w and what is c
+
+392
+00:16:37,759 --> 00:16:42,160
+c is the actual information
+
+393
+00:16:42,800 --> 00:16:46,160
+act as
+
+394
+00:16:44,240 --> 00:16:48,160
+a proof
+
+395
+00:16:46,160 --> 00:16:51,519
+for proving that
+
+396
+00:16:48,160 --> 00:16:52,800
+w is in a
+
+397
+00:16:51,519 --> 00:16:55,839
+okay
+
+398
+00:16:52,800 --> 00:16:57,839
+so let's go back to our
+
+399
+00:16:55,839 --> 00:17:00,079
+to our example here
+
+400
+00:16:57,839 --> 00:17:01,839
+see if you have the graph here you don't
+
+401
+00:17:00,079 --> 00:17:04,480
+know the answer and you need to
+
+402
+00:17:01,839 --> 00:17:07,919
+calculate it and to find find out if
+
+403
+00:17:04,480 --> 00:17:09,199
+there is a hamiltonian path
+
+404
+00:17:07,919 --> 00:17:12,000
+right
+
+405
+00:17:09,199 --> 00:17:16,240
+and on the on the other hand if someone
+
+406
+00:17:12,000 --> 00:17:18,720
+asks you this problem instance g
+
+407
+00:17:16,240 --> 00:17:21,679
+and specify s here
+
+408
+00:17:18,720 --> 00:17:21,679
+and t here
+
+409
+00:17:22,240 --> 00:17:25,360
+and
+
+410
+00:17:23,679 --> 00:17:26,959
+provide you
+
+411
+00:17:25,360 --> 00:17:31,360
+an extra
+
+412
+00:17:26,959 --> 00:17:31,360
+an item of actual information that
+
+413
+00:17:31,600 --> 00:17:35,760
+one two uh
+
+414
+00:17:33,600 --> 00:17:38,000
+that's i i mark
+
+415
+00:17:35,760 --> 00:17:39,200
+and mark the note the other way so it's
+
+416
+00:17:38,000 --> 00:17:43,520
+easier
+
+417
+00:17:39,200 --> 00:17:47,440
+uh okay uh anyway one two three four
+
+418
+00:17:43,520 --> 00:17:51,280
+five six okay and someone provides an
+
+419
+00:17:47,440 --> 00:17:52,640
+extra an item of extra information as
+
+420
+00:17:51,280 --> 00:17:53,679
+s
+
+421
+00:17:52,640 --> 00:17:54,559
+2
+
+422
+00:17:53,679 --> 00:17:55,600
+4
+
+423
+00:17:54,559 --> 00:17:56,400
+3
+
+424
+00:17:55,600 --> 00:17:58,799
+1
+
+425
+00:17:56,400 --> 00:18:00,720
+5 6 t
+
+426
+00:17:58,799 --> 00:18:02,480
+okay so somehow you've got the
+
+427
+00:18:00,720 --> 00:18:05,280
+information here
+
+428
+00:18:02,480 --> 00:18:08,080
+and according to this information
+
+429
+00:18:05,280 --> 00:18:08,080
+what can you do
+
+430
+00:18:08,240 --> 00:18:10,880
+you can
+
+431
+00:18:10,000 --> 00:18:11,840
+check
+
+432
+00:18:10,880 --> 00:18:14,480
+s
+
+433
+00:18:11,840 --> 00:18:17,760
+and okay next one's two check if there
+
+434
+00:18:14,480 --> 00:18:20,320
+is a directed path from so2
+
+435
+00:18:17,760 --> 00:18:22,559
+and then check if there is a directed
+
+436
+00:18:20,320 --> 00:18:25,679
+pass from s24
+
+437
+00:18:22,559 --> 00:18:28,160
+and repeat the checking here three
+
+438
+00:18:25,679 --> 00:18:29,760
+one five 6
+
+439
+00:18:28,160 --> 00:18:34,160
+t
+
+440
+00:18:29,760 --> 00:18:34,160
+then check if all nodes
+
+441
+00:18:34,320 --> 00:18:38,400
+in g
+
+442
+00:18:36,240 --> 00:18:39,679
+if all nodes in g
+
+443
+00:18:38,400 --> 00:18:44,960
+are passed
+
+444
+00:18:39,679 --> 00:18:45,919
+or let's say are on the path here so s
+
+445
+00:18:44,960 --> 00:18:46,960
+2
+
+446
+00:18:45,919 --> 00:18:49,679
+4
+
+447
+00:18:46,960 --> 00:18:53,039
+3 1 5 6 t
+
+448
+00:18:49,679 --> 00:18:55,120
+that's the oh that's
+
+449
+00:18:53,039 --> 00:18:58,880
+those are all the notes of g
+
+450
+00:18:55,120 --> 00:19:02,320
+so the path here is really the
+
+451
+00:18:58,880 --> 00:19:05,520
+hamiltonian path on g from s to t
+
+452
+00:19:02,320 --> 00:19:08,320
+so we know that yes
+
+453
+00:19:05,520 --> 00:19:10,000
+this problem instance is really
+
+454
+00:19:08,320 --> 00:19:11,440
+inheritance pass
+
+455
+00:19:10,000 --> 00:19:13,679
+okay
+
+456
+00:19:11,440 --> 00:19:13,679
+and
+
+457
+00:19:14,080 --> 00:19:21,120
+for example here we have 57 and someone
+
+458
+00:19:16,960 --> 00:19:22,080
+give you 3 19 okay
+
+459
+00:19:21,120 --> 00:19:25,679
+so
+
+460
+00:19:22,080 --> 00:19:28,799
+we know that okay 3 times 19 57
+
+461
+00:19:25,679 --> 00:19:30,720
+then so the existence of 3
+
+462
+00:19:28,799 --> 00:19:35,360
+19
+
+463
+00:19:30,720 --> 00:19:36,160
+proved that 57 is incomposite
+
+464
+00:19:35,360 --> 00:19:37,679
+okay
+
+465
+00:19:36,160 --> 00:19:38,480
+so that's why we
+
+466
+00:19:37,679 --> 00:19:39,679
+say
+
+467
+00:19:38,480 --> 00:19:43,360
+see there
+
+468
+00:19:39,679 --> 00:19:44,160
+is certif certificate or proof
+
+469
+00:19:43,360 --> 00:19:47,520
+okay
+
+470
+00:19:44,160 --> 00:19:49,520
+and your algorithm acts
+
+471
+00:19:47,520 --> 00:19:50,720
+on the proof
+
+472
+00:19:49,520 --> 00:19:52,640
+v
+
+473
+00:19:50,720 --> 00:19:53,840
+acts on the proof
+
+474
+00:19:52,640 --> 00:19:57,840
+okay
+
+475
+00:19:53,840 --> 00:19:57,840
+then here is the important part
+
+476
+00:19:59,679 --> 00:20:04,960
+previous uh
+
+477
+00:20:02,400 --> 00:20:07,039
+many students got confused here
+
+478
+00:20:04,960 --> 00:20:08,880
+that okay
+
+479
+00:20:07,039 --> 00:20:10,640
+for this example
+
+480
+00:20:08,880 --> 00:20:14,240
+57
+
+481
+00:20:10,640 --> 00:20:14,240
+what if the c is wrong
+
+482
+00:20:14,960 --> 00:20:19,120
+what is c is wrong like
+
+483
+00:20:17,840 --> 00:20:20,480
+someone give you
+
+484
+00:20:19,120 --> 00:20:22,799
+4
+
+485
+00:20:20,480 --> 00:20:22,799
+12
+
+486
+00:20:23,360 --> 00:20:27,120
+and what should be
+
+487
+00:20:25,600 --> 00:20:28,000
+here
+
+488
+00:20:27,120 --> 00:20:29,360
+do
+
+489
+00:20:28,000 --> 00:20:30,559
+what should we do
+
+490
+00:20:29,360 --> 00:20:32,840
+actually
+
+491
+00:20:30,559 --> 00:20:36,159
+we just need to
+
+492
+00:20:32,840 --> 00:20:37,679
+reject string w here
+
+493
+00:20:36,159 --> 00:20:40,320
+because
+
+494
+00:20:37,679 --> 00:20:41,679
+the evidence
+
+495
+00:20:40,320 --> 00:20:43,360
+doesn't
+
+496
+00:20:41,679 --> 00:20:44,880
+support
+
+497
+00:20:43,360 --> 00:20:46,159
+the membership
+
+498
+00:20:44,880 --> 00:20:48,960
+of
+
+499
+00:20:46,159 --> 00:20:51,679
+the input string here to be a member of
+
+500
+00:20:48,960 --> 00:20:51,679
+the language
+
+501
+00:20:54,880 --> 00:20:57,840
+okay so
+
+502
+00:20:58,320 --> 00:21:03,840
+the algorithm v
+
+503
+00:21:00,159 --> 00:21:03,840
+verifier here
+
+504
+00:21:05,600 --> 00:21:10,320
+doesn't need to know
+
+505
+00:21:07,919 --> 00:21:13,440
+the correct answer
+
+506
+00:21:10,320 --> 00:21:14,840
+it just need to act on
+
+507
+00:21:13,440 --> 00:21:18,400
+correct
+
+508
+00:21:14,840 --> 00:21:20,080
+evidence to report the answer
+
+509
+00:21:18,400 --> 00:21:24,080
+if the evidence
+
+510
+00:21:20,080 --> 00:21:26,799
+that if the given evidence is wrong
+
+511
+00:21:24,080 --> 00:21:27,760
+then that is
+
+512
+00:21:26,799 --> 00:21:28,840
+the
+
+513
+00:21:27,760 --> 00:21:30,720
+is not
+
+514
+00:21:28,840 --> 00:21:33,520
+responsible for
+
+515
+00:21:30,720 --> 00:21:36,159
+give out the correct answer
+
+516
+00:21:33,520 --> 00:21:39,760
+for this example if
+
+517
+00:21:36,159 --> 00:21:41,120
+the problem is 57 and someone pro
+
+518
+00:21:39,760 --> 00:21:42,840
+provides you
+
+519
+00:21:41,120 --> 00:21:47,280
+4 and
+
+520
+00:21:42,840 --> 00:21:48,000
+12 and the algorithm do
+
+521
+00:21:47,280 --> 00:21:49,280
+uh
+
+522
+00:21:48,000 --> 00:21:55,919
+that's
+
+523
+00:21:49,280 --> 00:22:00,320
+4 x 12 and 48 which is not 57 so the
+
+524
+00:21:55,919 --> 00:22:03,360
+evidence here does not support 57 to be
+
+525
+00:22:00,320 --> 00:22:05,200
+composite so we just need to reject the
+
+526
+00:22:03,360 --> 00:22:08,960
+string
+
+527
+00:22:05,200 --> 00:22:10,720
+okay so don't get con don't get confused
+
+528
+00:22:08,960 --> 00:22:14,159
+here
+
+529
+00:22:10,720 --> 00:22:16,159
+v doesn't need to know the answer read
+
+530
+00:22:14,159 --> 00:22:17,600
+that the job of v
+
+531
+00:22:16,159 --> 00:22:21,360
+is
+
+532
+00:22:17,600 --> 00:22:23,520
+acting on correct evidence and
+
+533
+00:22:21,360 --> 00:22:26,960
+when the evidence is correct when the
+
+534
+00:22:23,520 --> 00:22:28,720
+certificate is correct then it must give
+
+535
+00:22:26,960 --> 00:22:30,880
+the correct result
+
+536
+00:22:28,720 --> 00:22:34,640
+otherwise it doesn't matter it just need
+
+537
+00:22:30,880 --> 00:22:37,440
+to you know report rejection even though
+
+538
+00:22:34,640 --> 00:22:40,640
+57 is really the composite
+
+539
+00:22:37,440 --> 00:22:44,640
+or for the example here okay let's do
+
+540
+00:22:40,640 --> 00:22:46,080
+that again so one two three four five
+
+541
+00:22:44,640 --> 00:22:49,600
+six
+
+542
+00:22:46,080 --> 00:22:51,200
+we know that the graph from s to t
+
+543
+00:22:49,600 --> 00:22:52,799
+there is really
+
+544
+00:22:51,200 --> 00:22:56,400
+an inheritance path
+
+545
+00:22:52,799 --> 00:22:59,679
+but if for exactly the same proper
+
+546
+00:22:56,400 --> 00:23:01,919
+instance here and someone provides
+
+547
+00:22:59,679 --> 00:23:04,159
+for example uh like
+
+548
+00:23:01,919 --> 00:23:04,159
+s
+
+549
+00:23:05,280 --> 00:23:11,120
+one two three 4 5 6 t someone give you
+
+550
+00:23:10,240 --> 00:23:12,480
+c
+
+551
+00:23:11,120 --> 00:23:14,240
+as
+
+552
+00:23:12,480 --> 00:23:15,120
+this sequence
+
+553
+00:23:14,240 --> 00:23:18,559
+then
+
+554
+00:23:15,120 --> 00:23:21,520
+your verifier just need to verify
+
+555
+00:23:18,559 --> 00:23:23,600
+if that is a hamiltonian path
+
+556
+00:23:21,520 --> 00:23:25,919
+so from s
+
+557
+00:23:23,600 --> 00:23:28,159
+to 1
+
+558
+00:23:25,919 --> 00:23:32,320
+there is no
+
+559
+00:23:28,159 --> 00:23:35,440
+directive path right so the c is wrong
+
+560
+00:23:32,320 --> 00:23:38,480
+and because c is wrong in this case
+
+561
+00:23:35,440 --> 00:23:39,840
+the verifier just need to reject the
+
+562
+00:23:38,480 --> 00:23:44,000
+string
+
+563
+00:23:39,840 --> 00:23:45,520
+again verifier doesn't need to report
+
+564
+00:23:44,000 --> 00:23:46,960
+correct answer
+
+565
+00:23:45,520 --> 00:23:50,640
+if
+
+566
+00:23:46,960 --> 00:23:53,360
+the certificate or proof is wrong
+
+567
+00:23:50,640 --> 00:23:56,720
+okay don't get confused many times many
+
+568
+00:23:53,360 --> 00:24:00,159
+students get confused here they think
+
+569
+00:23:56,720 --> 00:24:01,760
+we must know the answer even
+
+570
+00:24:00,159 --> 00:24:02,840
+if
+
+571
+00:24:01,760 --> 00:24:05,360
+c is
+
+572
+00:24:02,840 --> 00:24:08,159
+wrong actually no
+
+573
+00:24:05,360 --> 00:24:10,159
+we just need to verify
+
+574
+00:24:08,159 --> 00:24:11,279
+go okay
+
+575
+00:24:10,159 --> 00:24:13,200
+so
+
+576
+00:24:11,279 --> 00:24:17,679
+basically it's quite different from
+
+577
+00:24:13,200 --> 00:24:20,559
+decider because decider look at w and
+
+578
+00:24:17,679 --> 00:24:23,679
+decider must be able to know the answer
+
+579
+00:24:20,559 --> 00:24:24,640
+but the verify here the job of verifier
+
+580
+00:24:23,679 --> 00:24:27,279
+is
+
+581
+00:24:24,640 --> 00:24:29,679
+to report the correct answer if the
+
+582
+00:24:27,279 --> 00:24:32,640
+certificate is correct otherwise it can
+
+583
+00:24:29,679 --> 00:24:34,960
+it just need to reject the string
+
+584
+00:24:32,640 --> 00:24:34,960
+w
+
+585
+00:24:35,840 --> 00:24:38,640
+okay
+
+586
+00:24:37,760 --> 00:24:40,799
+okay
+
+587
+00:24:38,640 --> 00:24:40,799
+so
+
+588
+00:24:43,120 --> 00:24:46,799
+if there is no problem here
+
+589
+00:24:45,200 --> 00:24:50,480
+that's
+
+590
+00:24:46,799 --> 00:24:50,480
+uh go on with the definition
+
+591
+00:24:50,559 --> 00:24:54,880
+and it's quite weird that the class is
+
+592
+00:24:53,760 --> 00:24:57,279
+called
+
+593
+00:24:54,880 --> 00:25:00,279
+mp
+
+594
+00:24:57,279 --> 00:25:00,279
+right
+
+595
+00:25:05,600 --> 00:25:10,720
+we call the class p because
+
+596
+00:25:08,559 --> 00:25:12,799
+the language there
+
+597
+00:25:10,720 --> 00:25:15,039
+the language in that class
+
+598
+00:25:12,799 --> 00:25:18,320
+the languages in that class are
+
+599
+00:25:15,039 --> 00:25:20,640
+polynomial time decidable
+
+600
+00:25:18,320 --> 00:25:22,240
+we probably call it pd or something but
+
+601
+00:25:20,640 --> 00:25:24,400
+we call it p
+
+602
+00:25:22,240 --> 00:25:26,000
+and since the language here
+
+603
+00:25:24,400 --> 00:25:27,039
+the languages
+
+604
+00:25:26,000 --> 00:25:29,600
+have
+
+605
+00:25:27,039 --> 00:25:31,919
+polynomial time verifiers why don't we
+
+606
+00:25:29,600 --> 00:25:34,159
+call it like a pv
+
+607
+00:25:31,919 --> 00:25:36,320
+something like that
+
+608
+00:25:34,159 --> 00:25:38,080
+actually np
+
+609
+00:25:36,320 --> 00:25:40,720
+is not from
+
+610
+00:25:38,080 --> 00:25:41,520
+polynomial time verifiers
+
+611
+00:25:40,720 --> 00:25:42,559
+okay
+
+612
+00:25:41,520 --> 00:25:45,080
+the name
+
+613
+00:25:42,559 --> 00:25:47,039
+np is not from
+
+614
+00:25:45,080 --> 00:25:50,000
+pronunciation
+
+615
+00:25:47,039 --> 00:25:51,760
+the term mp comes from
+
+616
+00:25:50,000 --> 00:25:54,159
+non-deterministic
+
+617
+00:25:51,760 --> 00:25:56,400
+polynomial time
+
+618
+00:25:54,159 --> 00:25:59,279
+okay non-deterministic
+
+619
+00:25:56,400 --> 00:26:00,880
+polynomial time so that's why
+
+620
+00:25:59,279 --> 00:26:02,960
+we call it np
+
+621
+00:26:00,880 --> 00:26:05,760
+so actually cross p
+
+622
+00:26:02,960 --> 00:26:05,760
+is dp
+
+623
+00:26:06,080 --> 00:26:11,840
+why because d
+
+624
+00:26:08,000 --> 00:26:14,080
+not decidable d is deterministic
+
+625
+00:26:11,840 --> 00:26:16,320
+okay deterministic
+
+626
+00:26:14,080 --> 00:26:18,559
+polynomial time
+
+627
+00:26:16,320 --> 00:26:20,480
+and
+
+628
+00:26:18,559 --> 00:26:24,400
+so for previous
+
+629
+00:26:20,480 --> 00:26:26,080
+so previous for previous definition
+
+630
+00:26:24,400 --> 00:26:27,919
+we define
+
+631
+00:26:26,080 --> 00:26:29,840
+deterministic
+
+632
+00:26:27,919 --> 00:26:32,000
+turing machines
+
+633
+00:26:29,840 --> 00:26:35,120
+can decide
+
+634
+00:26:32,000 --> 00:26:36,400
+some languages and other languages
+
+635
+00:26:35,120 --> 00:26:39,520
+are in
+
+636
+00:26:36,400 --> 00:26:42,080
+dp which is p actually
+
+637
+00:26:39,520 --> 00:26:46,080
+so dp
+
+638
+00:26:42,080 --> 00:26:49,520
+is the class of languages that can be
+
+639
+00:26:46,080 --> 00:26:51,600
+determined sorry decided by
+
+640
+00:26:49,520 --> 00:26:55,679
+deterministic
+
+641
+00:26:51,600 --> 00:26:57,679
+turing machine in polynomial time and
+
+642
+00:26:55,679 --> 00:26:59,919
+mp
+
+643
+00:26:57,679 --> 00:27:01,679
+are
+
+644
+00:26:59,919 --> 00:27:05,360
+languages
+
+645
+00:27:01,679 --> 00:27:07,640
+that can be determined decided
+
+646
+00:27:05,360 --> 00:27:09,600
+in polynomial time by
+
+647
+00:27:07,640 --> 00:27:11,840
+non-deterministic machine
+
+648
+00:27:09,600 --> 00:27:13,200
+that's the origin that's
+
+649
+00:27:11,840 --> 00:27:16,400
+those are
+
+650
+00:27:13,200 --> 00:27:20,720
+original definitions but now
+
+651
+00:27:16,400 --> 00:27:22,960
+we change the definition of mp
+
+652
+00:27:20,720 --> 00:27:26,080
+to
+
+653
+00:27:22,960 --> 00:27:27,679
+languages that have polynomial time
+
+654
+00:27:26,080 --> 00:27:31,279
+verifiers
+
+655
+00:27:27,679 --> 00:27:35,520
+okay so we adopt in in the textbook we
+
+656
+00:27:31,279 --> 00:27:38,399
+adopt the newer definition the new
+
+657
+00:27:35,520 --> 00:27:38,399
+definition here
+
+658
+00:27:38,559 --> 00:27:42,320
+and firstly
+
+659
+00:27:40,399 --> 00:27:44,480
+we need to prove
+
+660
+00:27:42,320 --> 00:27:45,840
+the old definition and the new
+
+661
+00:27:44,480 --> 00:27:47,360
+definition
+
+662
+00:27:45,840 --> 00:27:49,360
+are
+
+663
+00:27:47,360 --> 00:27:50,320
+equivalent
+
+664
+00:27:49,360 --> 00:27:52,480
+so
+
+665
+00:27:50,320 --> 00:27:55,760
+actually
+
+666
+00:27:52,480 --> 00:27:58,640
+the class and the class np
+
+667
+00:27:55,760 --> 00:28:01,360
+does not change at all
+
+668
+00:27:58,640 --> 00:28:02,799
+okay the old definition and new
+
+669
+00:28:01,360 --> 00:28:04,399
+definition
+
+670
+00:28:02,799 --> 00:28:06,399
+are equivalent
+
+671
+00:28:04,399 --> 00:28:07,799
+so that's our
+
+672
+00:28:06,399 --> 00:28:10,720
+theorem
+
+673
+00:28:07,799 --> 00:28:12,480
+7.20 okay
+
+674
+00:28:10,720 --> 00:28:13,760
+we want to prove that
+
+675
+00:28:12,480 --> 00:28:16,640
+a language
+
+676
+00:28:13,760 --> 00:28:20,080
+is in mp
+
+677
+00:28:16,640 --> 00:28:22,320
+okay remember that we have we we use new
+
+678
+00:28:20,080 --> 00:28:25,840
+definition here so
+
+679
+00:28:22,320 --> 00:28:31,559
+a language is in np means
+
+680
+00:28:25,840 --> 00:28:31,559
+that language is polynomially verifiable
+
+681
+00:28:31,600 --> 00:28:34,320
+or
+
+682
+00:28:33,039 --> 00:28:38,640
+you say that
+
+683
+00:28:34,320 --> 00:28:42,320
+it has a polynomial time verified
+
+684
+00:28:38,640 --> 00:28:42,320
+if and only if
+
+685
+00:28:42,480 --> 00:28:46,840
+the language is decided
+
+686
+00:28:45,760 --> 00:28:49,360
+by some
+
+687
+00:28:46,840 --> 00:28:51,360
+non-deterministic polynomial time to
+
+688
+00:28:49,360 --> 00:28:54,080
+emission
+
+689
+00:28:51,360 --> 00:28:56,080
+okay so you can see that
+
+690
+00:28:54,080 --> 00:28:56,840
+this part
+
+691
+00:28:56,080 --> 00:28:58,480
+is
+
+692
+00:28:56,840 --> 00:29:00,559
+actually
+
+693
+00:28:58,480 --> 00:29:01,679
+the old definition
+
+694
+00:29:00,559 --> 00:29:05,360
+and
+
+695
+00:29:01,679 --> 00:29:08,320
+we want to prove that new definition if
+
+696
+00:29:05,360 --> 00:29:10,320
+and only if all the definition
+
+697
+00:29:08,320 --> 00:29:12,480
+that's what we want to do here
+
+698
+00:29:10,320 --> 00:29:14,640
+okay
+
+699
+00:29:12,480 --> 00:29:16,799
+so how do we do that
+
+700
+00:29:14,640 --> 00:29:18,640
+well it's actually quite straightforward
+
+701
+00:29:16,799 --> 00:29:19,679
+it's not uh
+
+702
+00:29:18,640 --> 00:29:21,840
+well
+
+703
+00:29:19,679 --> 00:29:23,120
+it's not difficult but uh slightly
+
+704
+00:29:21,840 --> 00:29:24,840
+tricky so
+
+705
+00:29:23,120 --> 00:29:28,320
+pay attention to it
+
+706
+00:29:24,840 --> 00:29:30,799
+okay so firstly
+
+707
+00:29:28,320 --> 00:29:30,799
+firstly
+
+708
+00:29:31,520 --> 00:29:35,919
+if a language is in np by our definition
+
+709
+00:29:34,640 --> 00:29:39,279
+here
+
+710
+00:29:35,919 --> 00:29:42,720
+it has a polynomial time verifier
+
+711
+00:29:39,279 --> 00:29:44,880
+right it has a polynomial time verifier
+
+712
+00:29:42,720 --> 00:29:46,960
+so
+
+713
+00:29:44,880 --> 00:29:50,799
+if
+
+714
+00:29:46,960 --> 00:29:53,360
+a is in mp a language a is an mp by our
+
+715
+00:29:50,799 --> 00:29:57,120
+definition there is a verb
+
+716
+00:29:53,360 --> 00:29:58,320
+verifier that runs in polynomial time
+
+717
+00:29:57,120 --> 00:30:01,120
+okay
+
+718
+00:29:58,320 --> 00:30:03,360
+and given the information here we can
+
+719
+00:30:01,120 --> 00:30:06,000
+construct
+
+720
+00:30:03,360 --> 00:30:08,720
+a non-deterministic machine which can
+
+721
+00:30:06,000 --> 00:30:10,960
+decide that language
+
+722
+00:30:08,720 --> 00:30:13,760
+in polynomial time
+
+723
+00:30:10,960 --> 00:30:16,159
+that is if a language is
+
+724
+00:30:13,760 --> 00:30:20,960
+in mp by our new definition
+
+725
+00:30:16,159 --> 00:30:22,480
+it satisfies the old definition okay
+
+726
+00:30:20,960 --> 00:30:26,080
+so
+
+727
+00:30:22,480 --> 00:30:27,919
+how do we do the first uh step
+
+728
+00:30:26,080 --> 00:30:29,760
+so
+
+729
+00:30:27,919 --> 00:30:30,559
+for language a
+
+730
+00:30:29,760 --> 00:30:32,159
+we
+
+731
+00:30:30,559 --> 00:30:34,480
+have b here
+
+732
+00:30:32,159 --> 00:30:37,279
+then we construct a non-deterministic
+
+733
+00:30:34,480 --> 00:30:40,320
+machine m
+
+734
+00:30:37,279 --> 00:30:40,320
+since we know that
+
+735
+00:30:40,799 --> 00:30:45,440
+the running time of v
+
+736
+00:30:44,000 --> 00:30:46,320
+is bounded
+
+737
+00:30:45,440 --> 00:30:49,279
+by
+
+738
+00:30:46,320 --> 00:30:51,039
+polynomial of the length of the input
+
+739
+00:30:49,279 --> 00:30:52,159
+string
+
+740
+00:30:51,039 --> 00:30:53,600
+okay
+
+741
+00:30:52,159 --> 00:30:56,480
+so we just
+
+742
+00:30:53,600 --> 00:30:58,559
+need to non-deterministically
+
+743
+00:30:56,480 --> 00:31:02,240
+select c
+
+744
+00:30:58,559 --> 00:31:06,880
+of length at most k
+
+745
+00:31:02,240 --> 00:31:06,880
+the whole statement here means that we
+
+746
+00:31:08,080 --> 00:31:14,320
+well first if you uh read some other
+
+747
+00:31:11,360 --> 00:31:16,640
+books some other books use like guessing
+
+748
+00:31:14,320 --> 00:31:16,640
+here
+
+749
+00:31:16,880 --> 00:31:21,279
+guessing here but actually we don't
+
+750
+00:31:18,960 --> 00:31:23,279
+guess we try everything
+
+751
+00:31:21,279 --> 00:31:26,240
+and don't forget that
+
+752
+00:31:23,279 --> 00:31:27,840
+for non-deterministic computation
+
+753
+00:31:26,240 --> 00:31:30,480
+all the paths
+
+754
+00:31:27,840 --> 00:31:33,760
+you must you must take all possible
+
+755
+00:31:30,480 --> 00:31:35,600
+passes and to see the result
+
+756
+00:31:33,760 --> 00:31:38,480
+let's go through the proof and i'll give
+
+757
+00:31:35,600 --> 00:31:40,080
+you the example by using the
+
+758
+00:31:38,480 --> 00:31:41,440
+pentatonic path
+
+759
+00:31:40,080 --> 00:31:43,200
+okay
+
+760
+00:31:41,440 --> 00:31:46,960
+and then
+
+761
+00:31:43,200 --> 00:31:50,559
+for each branch we just wrong run
+
+762
+00:31:46,960 --> 00:31:53,760
+verifier on the string here
+
+763
+00:31:50,559 --> 00:31:58,720
+and also the certificate here
+
+764
+00:31:53,760 --> 00:31:58,720
+if any branch if any branch
+
+765
+00:31:59,120 --> 00:32:02,799
+accept
+
+766
+00:32:01,440 --> 00:32:05,200
+remember the definition of
+
+767
+00:32:02,799 --> 00:32:07,200
+non-deterministic computation
+
+768
+00:32:05,200 --> 00:32:09,279
+then we accept
+
+769
+00:32:07,200 --> 00:32:11,600
+and accept w
+
+770
+00:32:09,279 --> 00:32:15,279
+okay otherwise if
+
+771
+00:32:11,600 --> 00:32:18,559
+uh reject and if all branches reject
+
+772
+00:32:15,279 --> 00:32:18,559
+and reject w
+
+773
+00:32:18,640 --> 00:32:21,679
+okay
+
+774
+00:32:19,919 --> 00:32:24,799
+so
+
+775
+00:32:21,679 --> 00:32:27,360
+kind of confusing it right now right but
+
+776
+00:32:24,799 --> 00:32:28,640
+let's take a look at the example here
+
+777
+00:32:27,360 --> 00:32:29,919
+okay
+
+778
+00:32:28,640 --> 00:32:32,640
+so
+
+779
+00:32:29,919 --> 00:32:34,640
+imagine that
+
+780
+00:32:32,640 --> 00:32:37,279
+you are given
+
+781
+00:32:34,640 --> 00:32:39,120
+a problem instance we construct a
+
+782
+00:32:37,279 --> 00:32:41,200
+non-deterministic computation and we
+
+783
+00:32:39,120 --> 00:32:44,159
+have verifier
+
+784
+00:32:41,200 --> 00:32:47,200
+okay and then
+
+785
+00:32:44,159 --> 00:32:47,200
+we construct a
+
+786
+00:32:47,519 --> 00:32:52,640
+non-deterministic uh non-deterministic
+
+787
+00:32:50,159 --> 00:32:53,360
+turing machine what does the two machine
+
+788
+00:32:52,640 --> 00:32:56,480
+do
+
+789
+00:32:53,360 --> 00:32:59,919
+okay let's say s here right and that
+
+790
+00:32:56,480 --> 00:33:02,240
+number the note one two three four five
+
+791
+00:32:59,919 --> 00:33:04,320
+seven oh sorry one two three four five
+
+792
+00:33:02,240 --> 00:33:05,679
+six and t seven
+
+793
+00:33:04,320 --> 00:33:07,919
+then
+
+794
+00:33:05,679 --> 00:33:10,880
+what uh
+
+795
+00:33:07,919 --> 00:33:13,840
+for the proof we just
+
+796
+00:33:10,880 --> 00:33:17,279
+described what does n what does the
+
+797
+00:33:13,840 --> 00:33:17,279
+non-deterministic machine do
+
+798
+00:33:19,200 --> 00:33:21,519
+firstly
+
+799
+00:33:20,320 --> 00:33:22,640
+it starts
+
+800
+00:33:21,519 --> 00:33:25,360
+right
+
+801
+00:33:22,640 --> 00:33:27,519
+then we know start from s
+
+802
+00:33:25,360 --> 00:33:28,480
+i mean uh the path
+
+803
+00:33:27,519 --> 00:33:29,279
+now
+
+804
+00:33:28,480 --> 00:33:32,080
+let's
+
+805
+00:33:29,279 --> 00:33:34,559
+imagine that the non-deterministic
+
+806
+00:33:32,080 --> 00:33:36,640
+turing machine we are designing right
+
+807
+00:33:34,559 --> 00:33:41,600
+now it
+
+808
+00:33:36,640 --> 00:33:42,720
+tries to construct a hamiltonian path
+
+809
+00:33:41,600 --> 00:33:45,440
+okay
+
+810
+00:33:42,720 --> 00:33:46,480
+so you can imagine that
+
+811
+00:33:45,440 --> 00:33:49,360
+from
+
+812
+00:33:46,480 --> 00:33:50,159
+the specified node as
+
+813
+00:33:49,360 --> 00:33:52,720
+what
+
+814
+00:33:50,159 --> 00:33:54,720
+should the next note
+
+815
+00:33:52,720 --> 00:33:57,360
+b
+
+816
+00:33:54,720 --> 00:34:01,039
+okay consider this problem
+
+817
+00:33:57,360 --> 00:34:02,480
+then it is possible that from one
+
+818
+00:34:01,039 --> 00:34:03,840
+two
+
+819
+00:34:02,480 --> 00:34:05,200
+three
+
+820
+00:34:03,840 --> 00:34:06,480
+four
+
+821
+00:34:05,200 --> 00:34:07,760
+5
+
+822
+00:34:06,480 --> 00:34:09,760
+6
+
+823
+00:34:07,760 --> 00:34:12,480
+right
+
+824
+00:34:09,760 --> 00:34:14,960
+start from s and the next
+
+825
+00:34:12,480 --> 00:34:18,079
+then start from 1
+
+826
+00:34:14,960 --> 00:34:19,119
+you will have try have to try 2
+
+827
+00:34:18,079 --> 00:34:20,079
+3
+
+828
+00:34:19,119 --> 00:34:21,919
+four
+
+829
+00:34:20,079 --> 00:34:24,079
+five six
+
+830
+00:34:21,919 --> 00:34:25,200
+and start from through two
+
+831
+00:34:24,079 --> 00:34:26,240
+one
+
+832
+00:34:25,200 --> 00:34:27,280
+three
+
+833
+00:34:26,240 --> 00:34:29,599
+four
+
+834
+00:34:27,280 --> 00:34:32,800
+five six
+
+835
+00:34:29,599 --> 00:34:36,639
+okay from three then you got one two
+
+836
+00:34:32,800 --> 00:34:38,399
+four five six from five
+
+837
+00:34:36,639 --> 00:34:42,320
+one two
+
+838
+00:34:38,399 --> 00:34:45,200
+three four six and from six one two
+
+839
+00:34:42,320 --> 00:34:46,800
+three four five
+
+840
+00:34:45,200 --> 00:34:48,879
+okay
+
+841
+00:34:46,800 --> 00:34:52,000
+then
+
+842
+00:34:48,879 --> 00:34:55,280
+keep if you keep doing that
+
+843
+00:34:52,000 --> 00:34:56,560
+finally you will get
+
+844
+00:34:55,280 --> 00:34:59,520
+a path
+
+845
+00:34:56,560 --> 00:35:00,320
+possible path on the graph like
+
+846
+00:34:59,520 --> 00:35:01,760
+as
+
+847
+00:35:00,320 --> 00:35:03,440
+uh
+
+848
+00:35:01,760 --> 00:35:04,240
+3 1
+
+849
+00:35:03,440 --> 00:35:06,480
+4
+
+850
+00:35:04,240 --> 00:35:09,440
+6 5 2
+
+851
+00:35:06,480 --> 00:35:09,440
+and t right
+
+852
+00:35:09,520 --> 00:35:15,440
+and then you give the path to v
+
+853
+00:35:12,800 --> 00:35:18,320
+to check if
+
+854
+00:35:15,440 --> 00:35:20,640
+a given problem instance
+
+855
+00:35:18,320 --> 00:35:20,640
+with
+
+856
+00:35:20,800 --> 00:35:26,000
+with the c here
+
+857
+00:35:23,200 --> 00:35:30,079
+if the verifier can verify the
+
+858
+00:35:26,000 --> 00:35:33,280
+membership of the problem instance
+
+859
+00:35:30,079 --> 00:35:33,280
+of time item path
+
+860
+00:35:33,680 --> 00:35:37,560
+if all possibilities
+
+861
+00:35:38,720 --> 00:35:44,640
+all computational branches
+
+862
+00:35:42,079 --> 00:35:45,599
+result in rejection
+
+863
+00:35:44,640 --> 00:35:48,880
+then
+
+864
+00:35:45,599 --> 00:35:50,000
+our non-deterministic tuition here
+
+865
+00:35:48,880 --> 00:35:53,040
+reject
+
+866
+00:35:50,000 --> 00:35:56,640
+the problem instance
+
+867
+00:35:53,040 --> 00:35:58,960
+and for this example exactly
+
+868
+00:35:56,640 --> 00:36:01,440
+we will have at least
+
+869
+00:35:58,960 --> 00:36:05,599
+one
+
+870
+00:36:01,440 --> 00:36:07,440
+right uh there is a like here
+
+871
+00:36:05,599 --> 00:36:09,680
+two
+
+872
+00:36:07,440 --> 00:36:09,680
+one
+
+873
+00:36:10,079 --> 00:36:13,200
+sorry a two
+
+874
+00:36:11,839 --> 00:36:15,599
+2 4
+
+875
+00:36:13,200 --> 00:36:17,839
+3 1 5 6 t
+
+876
+00:36:15,599 --> 00:36:19,280
+so we will have a computational branch
+
+877
+00:36:17,839 --> 00:36:20,320
+here
+
+878
+00:36:19,280 --> 00:36:23,040
+try
+
+879
+00:36:20,320 --> 00:36:24,480
+certificate s
+
+880
+00:36:23,040 --> 00:36:27,200
+as
+
+881
+00:36:24,480 --> 00:36:28,160
+two three
+
+882
+00:36:27,200 --> 00:36:32,480
+two
+
+883
+00:36:28,160 --> 00:36:35,359
+four three one five six t
+
+884
+00:36:32,480 --> 00:36:37,359
+with this certificate
+
+885
+00:36:35,359 --> 00:36:41,520
+our verifier
+
+886
+00:36:37,359 --> 00:36:43,599
+verifies the problem instance here to be
+
+887
+00:36:41,520 --> 00:36:44,720
+in hamiltonian path
+
+888
+00:36:43,599 --> 00:36:49,520
+so
+
+889
+00:36:44,720 --> 00:36:49,520
+this case will result in accept
+
+890
+00:36:49,599 --> 00:36:55,680
+as long as there is one branch
+
+891
+00:36:53,520 --> 00:36:59,119
+accepted then
+
+892
+00:36:55,680 --> 00:37:00,480
+the whole time machine accepted
+
+893
+00:36:59,119 --> 00:37:03,200
+right
+
+894
+00:37:00,480 --> 00:37:05,520
+so we constructed a non-determination
+
+895
+00:37:03,200 --> 00:37:05,520
+machine
+
+896
+00:37:07,040 --> 00:37:12,240
+this which can decide hamiltonian
+
+897
+00:37:09,760 --> 00:37:13,280
+pathway
+
+898
+00:37:12,240 --> 00:37:14,800
+and
+
+899
+00:37:13,280 --> 00:37:17,359
+the verifier
+
+900
+00:37:14,800 --> 00:37:19,680
+is a deterministic machine so
+
+901
+00:37:17,359 --> 00:37:22,800
+each branch of our non-dimensional
+
+902
+00:37:19,680 --> 00:37:25,920
+machine can simulate that two mission
+
+903
+00:37:22,800 --> 00:37:28,800
+so the key point here is that
+
+904
+00:37:25,920 --> 00:37:33,520
+our non-deterministic machine
+
+905
+00:37:28,800 --> 00:37:33,520
+try actually generate all possible
+
+906
+00:37:35,359 --> 00:37:40,400
+solutions
+
+907
+00:37:36,880 --> 00:37:40,400
+and give v
+
+908
+00:37:41,200 --> 00:37:45,440
+try
+
+909
+00:37:43,440 --> 00:37:47,040
+all possible problem
+
+910
+00:37:45,440 --> 00:37:49,599
+possibilities
+
+911
+00:37:47,040 --> 00:37:52,960
+and as long as one of them
+
+912
+00:37:49,599 --> 00:37:56,320
+accepted then the whole machine accepted
+
+913
+00:37:52,960 --> 00:37:56,320
+and you can see that
+
+914
+00:37:58,720 --> 00:38:05,440
+the number here
+
+915
+00:38:01,200 --> 00:38:09,280
+in this case is actually about
+
+916
+00:38:05,440 --> 00:38:10,240
+the factorial of the number of vertex
+
+917
+00:38:09,280 --> 00:38:12,000
+right
+
+918
+00:38:10,240 --> 00:38:14,960
+so this one
+
+919
+00:38:12,000 --> 00:38:17,520
+is greater than polynomial of the input
+
+920
+00:38:14,960 --> 00:38:18,720
+string but it doesn't matter
+
+921
+00:38:17,520 --> 00:38:21,520
+because
+
+922
+00:38:18,720 --> 00:38:23,920
+what we care about of
+
+923
+00:38:21,520 --> 00:38:27,280
+running time is the height
+
+924
+00:38:23,920 --> 00:38:29,040
+of computational tree not the width
+
+925
+00:38:27,280 --> 00:38:32,240
+okay not the width
+
+926
+00:38:29,040 --> 00:38:34,079
+so that's a very important concept here
+
+927
+00:38:32,240 --> 00:38:35,520
+okay
+
+928
+00:38:34,079 --> 00:38:37,680
+so
+
+929
+00:38:35,520 --> 00:38:40,560
+and we know that
+
+930
+00:38:37,680 --> 00:38:43,280
+the verifier the
+
+931
+00:38:40,560 --> 00:38:47,119
+the running time of the verifier
+
+932
+00:38:43,280 --> 00:38:49,200
+is within polynomial of the input string
+
+933
+00:38:47,119 --> 00:38:50,079
+and
+
+934
+00:38:49,200 --> 00:38:52,000
+our
+
+935
+00:38:50,079 --> 00:38:55,200
+non-deterministic
+
+936
+00:38:52,000 --> 00:38:56,880
+turing machine only need
+
+937
+00:38:55,200 --> 00:39:00,079
+about also
+
+938
+00:38:56,880 --> 00:39:02,800
+polynomial time of the input to generate
+
+939
+00:39:00,079 --> 00:39:02,800
+to generate
+
+940
+00:39:02,960 --> 00:39:09,359
+the certificate all possible certificate
+
+941
+00:39:06,480 --> 00:39:12,960
+see so for this example how
+
+942
+00:39:09,359 --> 00:39:15,920
+for exactly this example containing path
+
+943
+00:39:12,960 --> 00:39:18,800
+how many steps approximately
+
+944
+00:39:15,920 --> 00:39:21,520
+our the non-deterministic machine need
+
+945
+00:39:18,800 --> 00:39:21,520
+to generate
+
+946
+00:39:21,920 --> 00:39:27,040
+a certificate
+
+947
+00:39:23,359 --> 00:39:29,680
+it's about the number of verdicts right
+
+948
+00:39:27,040 --> 00:39:31,359
+that's well within the
+
+949
+00:39:29,680 --> 00:39:33,520
+polynomial time
+
+950
+00:39:31,359 --> 00:39:36,079
+polynomial of the
+
+951
+00:39:33,520 --> 00:39:39,760
+length of the input string
+
+952
+00:39:36,079 --> 00:39:39,760
+so that's what
+
+953
+00:39:40,560 --> 00:39:44,320
+the proof described here
+
+954
+00:39:44,400 --> 00:39:46,720
+okay
+
+955
+00:39:48,880 --> 00:39:52,320
+so
+
+956
+00:39:49,920 --> 00:39:54,000
+if you have if for language if the
+
+957
+00:39:52,320 --> 00:39:56,480
+language has
+
+958
+00:39:54,000 --> 00:39:57,520
+a polynomial time verifier
+
+959
+00:39:56,480 --> 00:40:01,760
+we can
+
+960
+00:39:57,520 --> 00:40:04,079
+construct a polynomial time decider
+
+961
+00:40:01,760 --> 00:40:05,599
+by
+
+962
+00:40:04,079 --> 00:40:08,720
+generating
+
+963
+00:40:05,599 --> 00:40:08,720
+all possible
+
+964
+00:40:08,800 --> 00:40:14,960
+by generating all possible certificate
+
+965
+00:40:12,480 --> 00:40:18,240
+and let's
+
+966
+00:40:14,960 --> 00:40:19,359
+verify to verify
+
+967
+00:40:18,240 --> 00:40:20,800
+based on
+
+968
+00:40:19,359 --> 00:40:24,480
+the certificate
+
+969
+00:40:20,800 --> 00:40:26,350
+to verify if that string
+
+970
+00:40:24,480 --> 00:40:27,920
+is in the language
+
+971
+00:40:26,350 --> 00:40:30,000
+[Applause]
+
+972
+00:40:27,920 --> 00:40:31,520
+okay
+
+973
+00:40:30,000 --> 00:40:34,079
+okay so
+
+974
+00:40:31,520 --> 00:40:36,960
+if you have a polynomial time
+
+975
+00:40:34,079 --> 00:40:38,880
+a non-deterministic machine to decide a
+
+976
+00:40:36,960 --> 00:40:40,880
+language
+
+977
+00:40:38,880 --> 00:40:42,800
+why
+
+978
+00:40:40,880 --> 00:40:44,800
+can we say that
+
+979
+00:40:42,800 --> 00:40:48,079
+there is a
+
+980
+00:40:44,800 --> 00:40:53,280
+there is a polynomial time verifier
+
+981
+00:40:48,079 --> 00:40:55,200
+okay that the tricky part here okay
+
+982
+00:40:53,280 --> 00:40:57,359
+let's say
+
+983
+00:40:55,200 --> 00:40:59,280
+it's quite a tricky okay it is quite
+
+984
+00:40:57,359 --> 00:41:00,079
+tricky so you need to pay attention to
+
+985
+00:40:59,280 --> 00:41:01,680
+this
+
+986
+00:41:00,079 --> 00:41:03,839
+so let's say
+
+987
+00:41:01,680 --> 00:41:06,880
+if if there is a
+
+988
+00:41:03,839 --> 00:41:10,560
+non-deterministic machine which can
+
+989
+00:41:06,880 --> 00:41:10,560
+decide language a
+
+990
+00:41:11,200 --> 00:41:16,560
+okay so that's the old definition of
+
+991
+00:41:13,839 --> 00:41:19,200
+class np we have a non-deterministic
+
+992
+00:41:16,560 --> 00:41:20,960
+machine running in polynomial time
+
+993
+00:41:19,200 --> 00:41:22,240
+and
+
+994
+00:41:20,960 --> 00:41:25,520
+how
+
+995
+00:41:22,240 --> 00:41:28,160
+the non-deterministic machine decide
+
+996
+00:41:25,520 --> 00:41:30,720
+the language
+
+997
+00:41:28,160 --> 00:41:33,760
+for a string w
+
+998
+00:41:30,720 --> 00:41:34,800
+for a string w
+
+999
+00:41:33,760 --> 00:41:36,720
+the
+
+1000
+00:41:34,800 --> 00:41:39,359
+non-deterministic machine
+
+1001
+00:41:36,720 --> 00:41:42,079
+well you know run
+
+1002
+00:41:39,359 --> 00:41:44,640
+like this right if you remember
+
+1003
+00:41:42,079 --> 00:41:46,079
+a computational tree we talked about
+
+1004
+00:41:44,640 --> 00:41:50,240
+previously
+
+1005
+00:41:46,079 --> 00:41:51,760
+so you will have something like
+
+1006
+00:41:50,240 --> 00:41:53,839
+this and that
+
+1007
+00:41:51,760 --> 00:41:55,520
+and this and this
+
+1008
+00:41:53,839 --> 00:41:56,640
+and and so on
+
+1009
+00:41:55,520 --> 00:41:58,560
+right
+
+1010
+00:41:56,640 --> 00:42:00,560
+so the process
+
+1011
+00:41:58,560 --> 00:42:02,880
+the process
+
+1012
+00:42:00,560 --> 00:42:05,839
+of the non-deterministic machine
+
+1013
+00:42:02,880 --> 00:42:06,720
+is running this way
+
+1014
+00:42:05,839 --> 00:42:09,119
+then
+
+1015
+00:42:06,720 --> 00:42:10,319
+we stimulate and
+
+1016
+00:42:09,119 --> 00:42:11,839
+enter
+
+1017
+00:42:10,319 --> 00:42:14,560
+and the question you were asked
+
+1018
+00:42:11,839 --> 00:42:16,560
+immediately is that how can we do that
+
+1019
+00:42:14,560 --> 00:42:18,640
+if we simulate
+
+1020
+00:42:16,560 --> 00:42:20,480
+and here
+
+1021
+00:42:18,640 --> 00:42:22,319
+then we will re we will have an
+
+1022
+00:42:20,480 --> 00:42:24,720
+exponential time
+
+1023
+00:42:22,319 --> 00:42:26,960
+determination machine right
+
+1024
+00:42:24,720 --> 00:42:29,440
+because the tree node the total number
+
+1025
+00:42:26,960 --> 00:42:32,720
+of tree nodes is about the polynomial
+
+1026
+00:42:29,440 --> 00:42:34,480
+time sorry polynomial of the length of
+
+1027
+00:42:32,720 --> 00:42:36,400
+the input string
+
+1028
+00:42:34,480 --> 00:42:38,560
+well
+
+1029
+00:42:36,400 --> 00:42:42,920
+we want to simulate the n but not
+
+1030
+00:42:38,560 --> 00:42:42,920
+exactly simulate everything
+
+1031
+00:42:44,720 --> 00:42:51,760
+remember that verifier can ask for
+
+1032
+00:42:49,040 --> 00:42:52,880
+extra information
+
+1033
+00:42:51,760 --> 00:42:56,319
+why we
+
+1034
+00:42:52,880 --> 00:42:58,960
+use the term extra information instead
+
+1035
+00:42:56,319 --> 00:43:00,400
+of and answer
+
+1036
+00:42:58,960 --> 00:43:01,760
+in the first place
+
+1037
+00:43:00,400 --> 00:43:04,800
+because
+
+1038
+00:43:01,760 --> 00:43:09,280
+the c here certificate certificate or
+
+1039
+00:43:04,800 --> 00:43:10,640
+proof here doesn't need to be the answer
+
+1040
+00:43:09,280 --> 00:43:13,280
+okay although
+
+1041
+00:43:10,640 --> 00:43:16,160
+for the previous examples we
+
+1042
+00:43:13,280 --> 00:43:18,800
+gave the answers as certificate
+
+1043
+00:43:16,160 --> 00:43:20,079
+but certificate doesn't need to be the
+
+1044
+00:43:18,800 --> 00:43:21,440
+answer
+
+1045
+00:43:20,079 --> 00:43:23,040
+in this case
+
+1046
+00:43:21,440 --> 00:43:26,800
+we ask
+
+1047
+00:43:23,040 --> 00:43:27,800
+the certificate to provide
+
+1048
+00:43:26,800 --> 00:43:33,280
+which
+
+1049
+00:43:27,800 --> 00:43:35,040
+computational branch we need to simulate
+
+1050
+00:43:33,280 --> 00:43:37,920
+okay pretty tricky
+
+1051
+00:43:35,040 --> 00:43:41,119
+so for this example let's say
+
+1052
+00:43:37,920 --> 00:43:43,280
+and eventually accept w
+
+1053
+00:43:41,119 --> 00:43:45,200
+and the path
+
+1054
+00:43:43,280 --> 00:43:46,240
+the computational path
+
+1055
+00:43:45,200 --> 00:43:48,000
+for n
+
+1056
+00:43:46,240 --> 00:43:50,880
+to accept w
+
+1057
+00:43:48,000 --> 00:43:52,640
+uh let's say is like this
+
+1058
+00:43:50,880 --> 00:43:54,240
+this one
+
+1059
+00:43:52,640 --> 00:43:57,599
+and
+
+1060
+00:43:54,240 --> 00:43:59,520
+this one and this one
+
+1061
+00:43:57,599 --> 00:44:02,400
+and this one
+
+1062
+00:43:59,520 --> 00:44:03,280
+and this one and accept
+
+1063
+00:44:02,400 --> 00:44:04,800
+okay
+
+1064
+00:44:03,280 --> 00:44:06,240
+for example here
+
+1065
+00:44:04,800 --> 00:44:08,560
+so
+
+1066
+00:44:06,240 --> 00:44:09,520
+let's see
+
+1067
+00:44:08,560 --> 00:44:12,400
+here
+
+1068
+00:44:09,520 --> 00:44:13,680
+the certificate c here
+
+1069
+00:44:12,400 --> 00:44:15,359
+we want
+
+1070
+00:44:13,680 --> 00:44:18,960
+it to be
+
+1071
+00:44:15,359 --> 00:44:22,480
+the branch selector okay
+
+1072
+00:44:18,960 --> 00:44:24,480
+so when we simulate and here
+
+1073
+00:44:22,480 --> 00:44:26,960
+we know that okay
+
+1074
+00:44:24,480 --> 00:44:30,079
+from the starting configuration
+
+1075
+00:44:26,960 --> 00:44:33,839
+there are four branches
+
+1076
+00:44:30,079 --> 00:44:37,800
+then we took a look at c
+
+1077
+00:44:33,839 --> 00:44:37,800
+okay we look at the c
+
+1078
+00:44:38,000 --> 00:44:41,280
+and c is a sequence
+
+1079
+00:44:41,440 --> 00:44:44,160
+and so
+
+1080
+00:44:42,640 --> 00:44:46,640
+c tell us
+
+1081
+00:44:44,160 --> 00:44:49,599
+for the first step although you have
+
+1082
+00:44:46,640 --> 00:44:51,839
+four branches you need to take the third
+
+1083
+00:44:49,599 --> 00:44:51,839
+one
+
+1084
+00:44:52,079 --> 00:44:56,640
+very tricky huh so
+
+1085
+00:44:54,319 --> 00:44:58,400
+three here then we know that okay we
+
+1086
+00:44:56,640 --> 00:44:59,839
+don't need to simulate this part this
+
+1087
+00:44:58,400 --> 00:45:02,880
+part and this part we just need to
+
+1088
+00:44:59,839 --> 00:45:06,000
+simulate this one okay
+
+1089
+00:45:02,880 --> 00:45:08,160
+then when we hit
+
+1090
+00:45:06,000 --> 00:45:11,280
+the second configuration here
+
+1091
+00:45:08,160 --> 00:45:13,359
+and c tell us you only need to go the
+
+1092
+00:45:11,280 --> 00:45:15,520
+first branch you don't need to take
+
+1093
+00:45:13,359 --> 00:45:19,040
+about uh take you don't need to care
+
+1094
+00:45:15,520 --> 00:45:21,200
+about the third and the second oh okay
+
+1095
+00:45:19,040 --> 00:45:22,960
+so let's
+
+1096
+00:45:21,200 --> 00:45:24,560
+ignore that
+
+1097
+00:45:22,960 --> 00:45:26,319
+again
+
+1098
+00:45:24,560 --> 00:45:28,560
+we need to
+
+1099
+00:45:26,319 --> 00:45:30,480
+simulate the second one
+
+1100
+00:45:28,560 --> 00:45:33,440
+and for example
+
+1101
+00:45:30,480 --> 00:45:36,079
+assume that it is the fourth
+
+1102
+00:45:33,440 --> 00:45:37,760
+branches and
+
+1103
+00:45:36,079 --> 00:45:41,040
+six branches
+
+1104
+00:45:37,760 --> 00:45:41,040
+okay then accept it
+
+1105
+00:45:42,560 --> 00:45:47,359
+so you see
+
+1106
+00:45:43,760 --> 00:45:49,760
+it's quite weird but if you have a
+
+1107
+00:45:47,359 --> 00:45:52,160
+non-deterministic machine which can
+
+1108
+00:45:49,760 --> 00:45:53,680
+decide
+
+1109
+00:45:52,160 --> 00:45:56,640
+the language
+
+1110
+00:45:53,680 --> 00:45:59,280
+in polynomial time that means
+
+1111
+00:45:56,640 --> 00:45:59,280
+that means
+
+1112
+00:45:59,760 --> 00:46:05,119
+the height here
+
+1113
+00:46:02,480 --> 00:46:06,560
+is a polynomial of the length of length
+
+1114
+00:46:05,119 --> 00:46:07,760
+string
+
+1115
+00:46:06,560 --> 00:46:10,319
+right
+
+1116
+00:46:07,760 --> 00:46:12,640
+since the height here is the polynomial
+
+1117
+00:46:10,319 --> 00:46:16,720
+of the length of intersting
+
+1118
+00:46:12,640 --> 00:46:16,720
+how many branches you have
+
+1119
+00:46:17,040 --> 00:46:22,079
+about polynomial amount of the
+
+1120
+00:46:20,480 --> 00:46:24,720
+uh
+
+1121
+00:46:22,079 --> 00:46:26,400
+you you uh of the input string length of
+
+1122
+00:46:24,720 --> 00:46:29,839
+the input chain right
+
+1123
+00:46:26,400 --> 00:46:33,119
+so the length of c here
+
+1124
+00:46:29,839 --> 00:46:36,800
+will be within the a polynomial will be
+
+1125
+00:46:33,119 --> 00:46:39,599
+bounded of a polynomial of the length of
+
+1126
+00:46:36,800 --> 00:46:40,880
+the input string which is w here
+
+1127
+00:46:39,599 --> 00:46:43,839
+okay
+
+1128
+00:46:40,880 --> 00:46:43,839
+so you see
+
+1129
+00:46:44,000 --> 00:46:46,720
+in this way
+
+1130
+00:46:47,119 --> 00:46:51,040
+v
+
+1131
+00:46:47,920 --> 00:46:51,920
+here the v we construct here
+
+1132
+00:46:51,040 --> 00:46:54,000
+can
+
+1133
+00:46:51,920 --> 00:46:55,520
+verify any
+
+1134
+00:46:54,000 --> 00:46:57,040
+input string
+
+1135
+00:46:55,520 --> 00:46:58,319
+to see if it
+
+1136
+00:46:57,040 --> 00:47:01,119
+if this
+
+1137
+00:46:58,319 --> 00:47:04,560
+if the input string is in
+
+1138
+00:47:01,119 --> 00:47:04,560
+language a or not
+
+1139
+00:47:04,640 --> 00:47:08,839
+if you provide
+
+1140
+00:47:06,960 --> 00:47:11,680
+suitable
+
+1141
+00:47:08,839 --> 00:47:14,640
+appropriate information
+
+1142
+00:47:11,680 --> 00:47:17,440
+to guide our simulation
+
+1143
+00:47:14,640 --> 00:47:20,720
+to reach the accept
+
+1144
+00:47:17,440 --> 00:47:20,720
+accepting configuration
+
+1145
+00:47:20,960 --> 00:47:26,880
+okay
+
+1146
+00:47:23,280 --> 00:47:29,760
+and as we explained the whole process is
+
+1147
+00:47:26,880 --> 00:47:32,400
+polynomial so verify the verify here is
+
+1148
+00:47:29,760 --> 00:47:35,359
+total polynomial time verifier
+
+1149
+00:47:32,400 --> 00:47:38,800
+and it is pronoun the highest polynomial
+
+1150
+00:47:35,359 --> 00:47:41,520
+the length of c is of course
+
+1151
+00:47:38,800 --> 00:47:44,000
+bounded by the polynomial of the length
+
+1152
+00:47:41,520 --> 00:47:44,000
+of w
+
+1153
+00:47:44,640 --> 00:47:47,920
+okay
+
+1154
+00:47:45,520 --> 00:47:50,559
+so as long as
+
+1155
+00:47:47,920 --> 00:47:52,960
+a language has
+
+1156
+00:47:50,559 --> 00:47:55,760
+some polynomial a non-deterministic
+
+1157
+00:47:52,960 --> 00:47:58,480
+polynomial timer uh decider
+
+1158
+00:47:55,760 --> 00:48:00,400
+we can construct a polynomial time
+
+1159
+00:47:58,480 --> 00:48:02,000
+verify
+
+1160
+00:48:00,400 --> 00:48:03,520
+so
+
+1161
+00:48:02,000 --> 00:48:05,520
+any language
+
+1162
+00:48:03,520 --> 00:48:08,480
+any language
+
+1163
+00:48:05,520 --> 00:48:10,960
+satisfy the old definition
+
+1164
+00:48:08,480 --> 00:48:10,960
+it is
+
+1165
+00:48:11,280 --> 00:48:15,839
+it is in class mp by
+
+1166
+00:48:14,400 --> 00:48:16,880
+new definition
+
+1167
+00:48:15,839 --> 00:48:18,160
+okay
+
+1168
+00:48:16,880 --> 00:48:20,400
+so
+
+1169
+00:48:18,160 --> 00:48:23,040
+we prove that
+
+1170
+00:48:20,400 --> 00:48:24,480
+new definition and all definition are
+
+1171
+00:48:23,040 --> 00:48:25,920
+equivalent
+
+1172
+00:48:24,480 --> 00:48:28,480
+that means
+
+1173
+00:48:25,920 --> 00:48:28,480
+that means
+
+1174
+00:48:29,119 --> 00:48:35,760
+we can use the new definition as
+
+1175
+00:48:33,760 --> 00:48:38,640
+okay we can use the new definition as
+
+1176
+00:48:35,760 --> 00:48:40,160
+the definition of class and p here
+
+1177
+00:48:38,640 --> 00:48:42,880
+okay
+
+1178
+00:48:40,160 --> 00:48:43,920
+then why why why do we want to do that
+
+1179
+00:48:42,880 --> 00:48:45,920
+or
+
+1180
+00:48:43,920 --> 00:48:48,160
+what's the reason for the textbook
+
+1181
+00:48:45,920 --> 00:48:50,000
+author to choose new definition instead
+
+1182
+00:48:48,160 --> 00:48:51,040
+of all definition
+
+1183
+00:48:50,000 --> 00:48:53,760
+well
+
+1184
+00:48:51,040 --> 00:48:54,720
+i'm not sure i'm not i'm not sure why
+
+1185
+00:48:53,760 --> 00:48:57,040
+they
+
+1186
+00:48:54,720 --> 00:49:00,000
+do it but
+
+1187
+00:48:57,040 --> 00:49:01,839
+but i think there are some reasons and
+
+1188
+00:49:00,000 --> 00:49:05,200
+first one
+
+1189
+00:49:01,839 --> 00:49:06,319
+okay the most important reason is that
+
+1190
+00:49:05,200 --> 00:49:08,640
+you see
+
+1191
+00:49:06,319 --> 00:49:10,480
+for all definition determines the two
+
+1192
+00:49:08,640 --> 00:49:12,800
+machine polynomial time and the
+
+1193
+00:49:10,480 --> 00:49:13,599
+non-deterministic to machine polynomial
+
+1194
+00:49:12,800 --> 00:49:16,480
+time
+
+1195
+00:49:13,599 --> 00:49:19,119
+they both we consider
+
+1196
+00:49:16,480 --> 00:49:21,599
+a decider for both
+
+1197
+00:49:19,119 --> 00:49:24,079
+computational models right because
+
+1198
+00:49:21,599 --> 00:49:25,920
+deterministic non-deterministic
+
+1199
+00:49:24,079 --> 00:49:28,640
+however non-deterministic computational
+
+1200
+00:49:25,920 --> 00:49:31,920
+models are
+
+1201
+00:49:28,640 --> 00:49:35,200
+not so practical it's very it's kind of
+
+1202
+00:49:31,920 --> 00:49:36,720
+difficult to imagine
+
+1203
+00:49:35,200 --> 00:49:37,920
+right
+
+1204
+00:49:36,720 --> 00:49:40,160
+now
+
+1205
+00:49:37,920 --> 00:49:43,280
+we use the same
+
+1206
+00:49:40,160 --> 00:49:45,680
+computational model from in in our new
+
+1207
+00:49:43,280 --> 00:49:48,000
+definition we use same complete
+
+1208
+00:49:45,680 --> 00:49:51,680
+computational model which is
+
+1209
+00:49:48,000 --> 00:49:55,119
+deterministic two machine
+
+1210
+00:49:51,680 --> 00:49:55,119
+that's easier to imagine
+
+1211
+00:49:55,680 --> 00:50:01,040
+that's easier for us to think about it
+
+1212
+00:49:58,480 --> 00:50:03,040
+right because
+
+1213
+00:50:01,040 --> 00:50:04,319
+for example our computers are
+
+1214
+00:50:03,040 --> 00:50:06,079
+deterministic
+
+1215
+00:50:04,319 --> 00:50:07,200
+computational models
+
+1216
+00:50:06,079 --> 00:50:10,160
+so
+
+1217
+00:50:07,200 --> 00:50:10,160
+based on
+
+1218
+00:50:10,839 --> 00:50:15,119
+identical computational models
+
+1219
+00:50:13,680 --> 00:50:17,920
+we define
+
+1220
+00:50:15,119 --> 00:50:20,319
+polynomial class p as
+
+1221
+00:50:17,920 --> 00:50:22,480
+you can use this computational model to
+
+1222
+00:50:20,319 --> 00:50:23,440
+decide the languages
+
+1223
+00:50:22,480 --> 00:50:26,480
+and
+
+1224
+00:50:23,440 --> 00:50:32,000
+mps you can use the same computational
+
+1225
+00:50:26,480 --> 00:50:33,040
+model to verify to verify the languages
+
+1226
+00:50:32,000 --> 00:50:34,319
+okay
+
+1227
+00:50:33,040 --> 00:50:36,079
+so by
+
+1228
+00:50:34,319 --> 00:50:38,880
+using the same
+
+1229
+00:50:36,079 --> 00:50:42,480
+computational models it's easier for us
+
+1230
+00:50:38,880 --> 00:50:44,000
+to get idea regarding
+
+1231
+00:50:42,480 --> 00:50:47,040
+how difficult
+
+1232
+00:50:44,000 --> 00:50:47,040
+the languages are
+
+1233
+00:50:47,680 --> 00:50:52,240
+easier than you know switch to different
+
+1234
+00:50:50,880 --> 00:50:55,200
+computation model which is
+
+1235
+00:50:52,240 --> 00:50:56,720
+non-deterministic that's uh
+
+1236
+00:50:55,200 --> 00:50:58,800
+more difficult
+
+1237
+00:50:56,720 --> 00:51:00,319
+okay
+
+1238
+00:50:58,800 --> 00:51:01,680
+okay then
+
+1239
+00:51:00,319 --> 00:51:03,680
+let's
+
+1240
+00:51:01,680 --> 00:51:06,880
+extend uh sorry
+
+1241
+00:51:03,680 --> 00:51:08,640
+follow the same definition let's say we
+
+1242
+00:51:06,880 --> 00:51:11,920
+define
+
+1243
+00:51:08,640 --> 00:51:15,440
+n time of t of n
+
+1244
+00:51:11,920 --> 00:51:18,880
+remember that we define t time of t of n
+
+1245
+00:51:15,440 --> 00:51:21,760
+now we define n time of t of n
+
+1246
+00:51:18,880 --> 00:51:24,000
+okay we define that
+
+1247
+00:51:21,760 --> 00:51:26,960
+a language
+
+1248
+00:51:24,000 --> 00:51:30,520
+can be decided by a
+
+1249
+00:51:26,960 --> 00:51:33,599
+big o of t of n times
+
+1250
+00:51:30,520 --> 00:51:35,440
+non-deterministic machine
+
+1251
+00:51:33,599 --> 00:51:40,319
+we say that
+
+1252
+00:51:35,440 --> 00:51:41,760
+the language is in n time of t of n
+
+1253
+00:51:40,319 --> 00:51:45,200
+okay
+
+1254
+00:51:41,760 --> 00:51:47,200
+so for example if the t of n
+
+1255
+00:51:45,200 --> 00:51:49,200
+is
+
+1256
+00:51:47,200 --> 00:51:53,359
+n squared
+
+1257
+00:51:49,200 --> 00:51:53,359
+so n time
+
+1258
+00:51:54,000 --> 00:51:57,440
+of
+
+1259
+00:51:55,680 --> 00:51:58,880
+n square
+
+1260
+00:51:57,440 --> 00:52:02,160
+means
+
+1261
+00:51:58,880 --> 00:52:04,800
+the language has a decider
+
+1262
+00:52:02,160 --> 00:52:06,559
+running in big o of t of n and the
+
+1263
+00:52:04,800 --> 00:52:10,240
+computational model
+
+1264
+00:52:06,559 --> 00:52:11,599
+is non-deterministic transmission
+
+1265
+00:52:10,240 --> 00:52:13,280
+okay
+
+1266
+00:52:11,599 --> 00:52:15,440
+and
+
+1267
+00:52:13,280 --> 00:52:18,880
+by using this different
+
+1268
+00:52:15,440 --> 00:52:21,440
+definition and firstly connect back to
+
+1269
+00:52:18,880 --> 00:52:22,800
+old definition
+
+1270
+00:52:21,440 --> 00:52:24,720
+we know that
+
+1271
+00:52:22,800 --> 00:52:26,160
+mp
+
+1272
+00:52:24,720 --> 00:52:28,720
+is actually
+
+1273
+00:52:26,160 --> 00:52:30,400
+union of all possible k
+
+1274
+00:52:28,720 --> 00:52:32,640
+n time of
+
+1275
+00:52:30,400 --> 00:52:33,520
+n to the case power
+
+1276
+00:52:32,640 --> 00:52:35,359
+okay
+
+1277
+00:52:33,520 --> 00:52:39,599
+so
+
+1278
+00:52:35,359 --> 00:52:42,880
+the expression here is exactly described
+
+1279
+00:52:39,599 --> 00:52:44,720
+the class divided by the old definition
+
+1280
+00:52:42,880 --> 00:52:46,559
+of class mp
+
+1281
+00:52:44,720 --> 00:52:49,440
+since what we already
+
+1282
+00:52:46,559 --> 00:52:54,720
+proved the equivalence of our definition
+
+1283
+00:52:49,440 --> 00:52:57,760
+a new definition so we can surely have
+
+1284
+00:52:54,720 --> 00:53:00,480
+mp equals to
+
+1285
+00:52:57,760 --> 00:53:03,480
+expressions here
+
+1286
+00:53:00,480 --> 00:53:03,480
+okay
+

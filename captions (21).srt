@@ -1,0 +1,4916 @@
+1
+00:00:01,599 --> 00:00:09,759
+now let's trace the example of 3.7 m2
+
+2
+00:00:07,520 --> 00:00:09,759
+to
+
+3
+00:00:10,400 --> 00:00:15,679
+get ourselves familiar rice riced with
+
+4
+00:00:14,000 --> 00:00:18,240
+our two machines
+
+5
+00:00:15,679 --> 00:00:18,240
+let's see
+
+6
+00:00:18,720 --> 00:00:25,119
+with configurations and we can with
+
+7
+00:00:21,840 --> 00:00:26,240
+configurations and the diagram we can
+
+8
+00:00:25,119 --> 00:00:28,240
+trace
+
+9
+00:00:26,240 --> 00:00:29,519
+how the machine operates while
+
+10
+00:00:28,240 --> 00:00:30,560
+processing
+
+11
+00:00:29,519 --> 00:00:32,079
+string
+
+12
+00:00:30,560 --> 00:00:34,960
+for example
+
+13
+00:00:32,079 --> 00:00:36,000
+zero zero zero zero four
+
+14
+00:00:34,960 --> 00:00:37,120
+zeros
+
+15
+00:00:36,000 --> 00:00:38,559
+okay
+
+16
+00:00:37,120 --> 00:00:40,320
+so
+
+17
+00:00:38,559 --> 00:00:42,879
+the string
+
+18
+00:00:40,320 --> 00:00:46,160
+as usual starts
+
+19
+00:00:42,879 --> 00:00:47,840
+from the store state which is q1 of this
+
+20
+00:00:46,160 --> 00:00:48,640
+machine right
+
+21
+00:00:47,840 --> 00:00:53,120
+so
+
+22
+00:00:48,640 --> 00:00:54,399
+from and the uh assume that the
+
+23
+00:00:53,120 --> 00:00:57,520
+input string
+
+24
+00:00:54,399 --> 00:01:00,239
+is 0 0 0 0
+
+25
+00:00:57,520 --> 00:01:04,080
+which is supposed to be 1 of the
+
+26
+00:01:00,239 --> 00:01:05,600
+language a right because language a is 2
+
+27
+00:01:04,080 --> 00:01:07,360
+[Music]
+
+28
+00:01:05,600 --> 00:01:09,680
+sorry 0
+
+29
+00:01:07,360 --> 00:01:10,560
+2 to the nth power
+
+30
+00:01:09,680 --> 00:01:13,280
+0
+
+31
+00:01:10,560 --> 00:01:14,560
+and n equal to zero
+
+32
+00:01:13,280 --> 00:01:15,759
+something like that
+
+33
+00:01:14,560 --> 00:01:17,119
+right
+
+34
+00:01:15,759 --> 00:01:18,960
+so
+
+35
+00:01:17,119 --> 00:01:20,799
+that's our star
+
+36
+00:01:18,960 --> 00:01:22,479
+start conv uh
+
+37
+00:01:20,799 --> 00:01:24,240
+that's our
+
+38
+00:01:22,479 --> 00:01:26,400
+start configuration
+
+39
+00:01:24,240 --> 00:01:27,439
+and we see that
+
+40
+00:01:26,400 --> 00:01:29,920
+when
+
+41
+00:01:27,439 --> 00:01:29,920
+q1
+
+42
+00:01:31,119 --> 00:01:35,280
+with zero you will go
+
+43
+00:01:33,920 --> 00:01:36,240
+this direction
+
+44
+00:01:35,280 --> 00:01:38,479
+right
+
+45
+00:01:36,240 --> 00:01:38,479
+so
+
+46
+00:01:39,600 --> 00:01:44,079
+it will become
+
+47
+00:01:40,960 --> 00:01:46,000
+it will uh firstly the zero the first
+
+48
+00:01:44,079 --> 00:01:48,560
+zero here will be
+
+49
+00:01:46,000 --> 00:01:49,759
+changed to blank okay
+
+50
+00:01:48,560 --> 00:01:53,040
+and
+
+51
+00:01:49,759 --> 00:01:54,479
+q1 will be q2 and go
+
+52
+00:01:53,040 --> 00:01:57,200
+right
+
+53
+00:01:54,479 --> 00:01:58,880
+go right next time it will read
+
+54
+00:01:57,200 --> 00:02:01,600
+uh q
+
+55
+00:01:58,880 --> 00:02:04,799
+it will read zero the second zero right
+
+56
+00:02:01,600 --> 00:02:07,200
+and this blank here is the original zero
+
+57
+00:02:04,799 --> 00:02:09,119
+becomes blank
+
+58
+00:02:07,200 --> 00:02:11,360
+right goes to q2
+
+59
+00:02:09,119 --> 00:02:12,560
+so that's one step
+
+60
+00:02:11,360 --> 00:02:15,280
+okay
+
+61
+00:02:12,560 --> 00:02:19,120
+and interestingly uh
+
+62
+00:02:15,280 --> 00:02:21,680
+see that's also it's very uh the
+
+63
+00:02:19,120 --> 00:02:24,080
+this exactly transition here this
+
+64
+00:02:21,680 --> 00:02:25,520
+particular transition here is very
+
+65
+00:02:24,080 --> 00:02:28,480
+similar to
+
+66
+00:02:25,520 --> 00:02:31,360
+what we put dollar sign onto the stack
+
+67
+00:02:28,480 --> 00:02:33,440
+as the first step in pda it's a
+
+68
+00:02:31,360 --> 00:02:36,400
+programming skill
+
+69
+00:02:33,440 --> 00:02:38,080
+why because firstly we know that
+
+70
+00:02:36,400 --> 00:02:39,840
+blank
+
+71
+00:02:38,080 --> 00:02:42,319
+is not in
+
+72
+00:02:39,840 --> 00:02:43,519
+the input alphabet right that means
+
+73
+00:02:42,319 --> 00:02:46,480
+blank
+
+74
+00:02:43,519 --> 00:02:50,400
+is not a part of in you know that blank
+
+75
+00:02:46,480 --> 00:02:53,440
+is not a part of input string
+
+76
+00:02:50,400 --> 00:02:54,400
+and you change the first symbol to be
+
+77
+00:02:53,440 --> 00:02:57,120
+blank
+
+78
+00:02:54,400 --> 00:03:00,080
+basically you mark you try to mark the
+
+79
+00:02:57,120 --> 00:03:02,720
+start of the tape
+
+80
+00:03:00,080 --> 00:03:05,200
+if you go back to see the definition of
+
+81
+00:03:02,720 --> 00:03:06,080
+our turing machine you will know that
+
+82
+00:03:05,200 --> 00:03:09,040
+you
+
+83
+00:03:06,080 --> 00:03:12,319
+you will not know
+
+84
+00:03:09,040 --> 00:03:14,720
+when you were when the tape had
+
+85
+00:03:12,319 --> 00:03:16,640
+tap head is located
+
+86
+00:03:14,720 --> 00:03:18,400
+at the first
+
+87
+00:03:16,640 --> 00:03:21,440
+tab space
+
+88
+00:03:18,400 --> 00:03:23,280
+just like we don't know
+
+89
+00:03:21,440 --> 00:03:26,239
+the bottom of the stack
+
+90
+00:03:23,280 --> 00:03:28,959
+is the same it's not in the formal
+
+91
+00:03:26,239 --> 00:03:30,239
+description of the definition
+
+92
+00:03:28,959 --> 00:03:32,400
+okay
+
+93
+00:03:30,239 --> 00:03:34,879
+so as a programmer
+
+94
+00:03:32,400 --> 00:03:38,080
+we use some skills to you know to do
+
+95
+00:03:34,879 --> 00:03:40,319
+that so firstly we read the first zero
+
+96
+00:03:38,080 --> 00:03:42,720
+in this case and we change that to the
+
+97
+00:03:40,319 --> 00:03:43,760
+blank and we know that blank is not a
+
+98
+00:03:42,720 --> 00:03:46,799
+part of
+
+99
+00:03:43,760 --> 00:03:48,799
+input string so we can safely use blank
+
+100
+00:03:46,799 --> 00:03:50,239
+as a separator
+
+101
+00:03:48,799 --> 00:03:53,360
+or as
+
+102
+00:03:50,239 --> 00:03:55,599
+a boundary of the tape
+
+103
+00:03:53,360 --> 00:03:58,720
+and now
+
+104
+00:03:55,599 --> 00:04:01,120
+this machine reads the first
+
+105
+00:03:58,720 --> 00:04:02,319
+zero right it knows
+
+106
+00:04:01,120 --> 00:04:05,920
+it is the
+
+107
+00:04:02,319 --> 00:04:09,040
+uh it is a 0 1 0.
+
+108
+00:04:05,920 --> 00:04:10,480
+so that's a let's uh assume that
+
+109
+00:04:09,040 --> 00:04:13,439
+the input
+
+110
+00:04:10,480 --> 00:04:15,680
+the input has only one zero
+
+111
+00:04:13,439 --> 00:04:17,919
+let's assume that okay
+
+112
+00:04:15,680 --> 00:04:20,239
+so there will be no
+
+113
+00:04:17,919 --> 00:04:23,199
+this zero right
+
+114
+00:04:20,239 --> 00:04:25,840
+so if the input string is exactly
+
+115
+00:04:23,199 --> 00:04:25,840
+one zero
+
+116
+00:04:26,840 --> 00:04:32,880
+then there will be
+
+117
+00:04:29,440 --> 00:04:36,160
+okay let's go back a bit further that
+
+118
+00:04:32,880 --> 00:04:37,680
+if our input string is the empty string
+
+119
+00:04:36,160 --> 00:04:40,960
+right nothing
+
+120
+00:04:37,680 --> 00:04:43,840
+so the start configuration would be q1
+
+121
+00:04:40,960 --> 00:04:44,800
+blank right because there's nothing on
+
+122
+00:04:43,840 --> 00:04:46,240
+the
+
+123
+00:04:44,800 --> 00:04:49,680
+there's no
+
+124
+00:04:46,240 --> 00:04:52,400
+string of input symbols on the tape
+
+125
+00:04:49,680 --> 00:04:54,320
+right so that would be our
+
+126
+00:04:52,400 --> 00:04:56,560
+star configuration
+
+127
+00:04:54,320 --> 00:04:58,400
+so by this
+
+128
+00:04:56,560 --> 00:04:59,280
+what would we have we have this one
+
+129
+00:04:58,400 --> 00:05:00,800
+right
+
+130
+00:04:59,280 --> 00:05:03,280
+and
+
+131
+00:05:00,800 --> 00:05:03,280
+reject
+
+132
+00:05:03,759 --> 00:05:08,000
+right so the machine will
+
+133
+00:05:08,400 --> 00:05:11,400
+reject
+
+134
+00:05:12,240 --> 00:05:14,880
+empty string
+
+135
+00:05:14,960 --> 00:05:17,120
+right
+
+136
+00:05:15,919 --> 00:05:20,479
+so
+
+137
+00:05:17,120 --> 00:05:21,680
+no problem in this case then
+
+138
+00:05:20,479 --> 00:05:25,120
+let's say
+
+139
+00:05:21,680 --> 00:05:28,479
+if our input string is 1 0
+
+140
+00:05:25,120 --> 00:05:31,520
+then after going to q 2 and change that
+
+141
+00:05:28,479 --> 00:05:31,520
+0 to blank
+
+142
+00:05:31,840 --> 00:05:37,280
+q 2 will encounter what blank right
+
+143
+00:05:35,199 --> 00:05:41,039
+because only 1 0
+
+144
+00:05:37,280 --> 00:05:41,039
+and when q2 encountered
+
+145
+00:05:41,919 --> 00:05:45,759
+blank
+
+146
+00:05:43,280 --> 00:05:48,479
+it will accept
+
+147
+00:05:45,759 --> 00:05:50,840
+right so this machine will accept
+
+148
+00:05:48,479 --> 00:05:52,400
+a string of one
+
+149
+00:05:50,840 --> 00:05:53,520
+zero
+
+150
+00:05:52,400 --> 00:05:55,600
+so
+
+151
+00:05:53,520 --> 00:05:57,680
+let's say
+
+152
+00:05:55,600 --> 00:06:00,560
+now
+
+153
+00:05:57,680 --> 00:06:03,360
+if we have two zeros okay let's go one
+
+154
+00:06:00,560 --> 00:06:06,479
+by one if we have two zeros
+
+155
+00:06:03,360 --> 00:06:08,160
+then it will be like this and here are
+
+156
+00:06:06,479 --> 00:06:09,919
+blank
+
+157
+00:06:08,160 --> 00:06:11,120
+and q2
+
+158
+00:06:09,919 --> 00:06:14,880
+will
+
+159
+00:06:11,120 --> 00:06:16,000
+read 0 which transition this one
+
+160
+00:06:14,880 --> 00:06:19,840
+right
+
+161
+00:06:16,000 --> 00:06:22,000
+so q2 reads 0 it becomes q3 so that's
+
+162
+00:06:19,840 --> 00:06:22,880
+why we have q3 here
+
+163
+00:06:22,000 --> 00:06:24,400
+and
+
+164
+00:06:22,880 --> 00:06:27,759
+the head
+
+165
+00:06:24,400 --> 00:06:29,680
+that's 0 will be marked read
+
+166
+00:06:27,759 --> 00:06:34,319
+marks red actually
+
+167
+00:06:29,680 --> 00:06:35,360
+then this x is the original zero here
+
+168
+00:06:34,319 --> 00:06:38,720
+and
+
+169
+00:06:35,360 --> 00:06:40,800
+q2 become q3 and the move
+
+170
+00:06:38,720 --> 00:06:42,160
+right
+
+171
+00:06:40,800 --> 00:06:44,160
+move right
+
+172
+00:06:42,160 --> 00:06:47,280
+and don't forget that we are assuming
+
+173
+00:06:44,160 --> 00:06:49,360
+that there are only two zeros so here
+
+174
+00:06:47,280 --> 00:06:51,840
+blank
+
+175
+00:06:49,360 --> 00:06:54,160
+right so the next step
+
+176
+00:06:51,840 --> 00:06:57,599
+q3 read blank
+
+177
+00:06:54,160 --> 00:06:59,919
+then we'll go left and on and
+
+178
+00:06:57,599 --> 00:07:01,039
+not change anything
+
+179
+00:06:59,919 --> 00:07:03,280
+and
+
+180
+00:07:01,039 --> 00:07:08,240
+so we will have
+
+181
+00:07:03,280 --> 00:07:09,370
+q3 becomes q channel c to q5 and the
+
+182
+00:07:08,240 --> 00:07:11,120
+position will be
+
+183
+00:07:09,370 --> 00:07:13,599
+[Music]
+
+184
+00:07:11,120 --> 00:07:14,880
+before x because we want to read x next
+
+185
+00:07:13,599 --> 00:07:18,880
+time
+
+186
+00:07:14,880 --> 00:07:21,599
+so for the machine states at q5 it will
+
+187
+00:07:18,880 --> 00:07:22,639
+read x and go to zero without changing
+
+188
+00:07:21,599 --> 00:07:25,440
+anything
+
+189
+00:07:22,639 --> 00:07:28,400
+so next time still q5
+
+190
+00:07:25,440 --> 00:07:29,520
+but position will be blank
+
+191
+00:07:28,400 --> 00:07:31,840
+right
+
+192
+00:07:29,520 --> 00:07:34,000
+and q5
+
+193
+00:07:31,840 --> 00:07:35,360
+blank
+
+194
+00:07:34,000 --> 00:07:37,199
+it will go
+
+195
+00:07:35,360 --> 00:07:39,360
+right
+
+196
+00:07:37,199 --> 00:07:40,160
+and it becomes q2
+
+197
+00:07:39,360 --> 00:07:43,880
+okay
+
+198
+00:07:40,160 --> 00:07:43,880
+so it will become
+
+199
+00:07:46,160 --> 00:07:50,240
+q2
+
+200
+00:07:47,919 --> 00:07:50,240
+sorry
+
+201
+00:07:53,599 --> 00:07:56,080
+it will
+
+202
+00:07:56,840 --> 00:08:00,000
+q5
+
+203
+00:07:58,400 --> 00:08:01,360
+blank right
+
+204
+00:08:00,000 --> 00:08:05,199
+and
+
+205
+00:08:01,360 --> 00:08:05,199
+it will become q2
+
+206
+00:08:05,360 --> 00:08:09,520
+and the q2 what will read
+
+207
+00:08:10,319 --> 00:08:15,759
+this x right
+
+208
+00:08:13,599 --> 00:08:19,440
+and
+
+209
+00:08:15,759 --> 00:08:23,120
+q to read x and the state
+
+210
+00:08:19,440 --> 00:08:27,440
+at q 2 and it goes right so we'll
+
+211
+00:08:23,120 --> 00:08:29,280
+go right again and here i'll blank
+
+212
+00:08:27,440 --> 00:08:30,639
+right then
+
+213
+00:08:29,280 --> 00:08:31,759
+blank
+
+214
+00:08:30,639 --> 00:08:35,039
+accept
+
+215
+00:08:31,759 --> 00:08:35,039
+so it will accept
+
+216
+00:08:36,719 --> 00:08:41,200
+zero
+
+217
+00:08:38,240 --> 00:08:43,279
+and two zeros
+
+218
+00:08:41,200 --> 00:08:44,640
+right
+
+219
+00:08:43,279 --> 00:08:45,920
+then let's
+
+220
+00:08:44,640 --> 00:08:48,720
+go further
+
+221
+00:08:45,920 --> 00:08:49,839
+so we if we have three zeros
+
+222
+00:08:48,720 --> 00:08:50,720
+okay
+
+223
+00:08:49,839 --> 00:08:53,839
+then
+
+224
+00:08:50,720 --> 00:08:56,080
+q1 read the first zero change to blank
+
+225
+00:08:53,839 --> 00:08:58,320
+and translate to q2
+
+226
+00:08:56,080 --> 00:09:02,160
+and the queue to read 0
+
+227
+00:08:58,320 --> 00:09:06,240
+marked 0x and change it to q3
+
+228
+00:09:02,160 --> 00:09:10,240
+right and the q3 read 0s
+
+229
+00:09:06,240 --> 00:09:11,200
+and three z read zeros is this one
+
+230
+00:09:10,240 --> 00:09:14,399
+right
+
+231
+00:09:11,200 --> 00:09:15,279
+then it becomes q a change transit to q
+
+232
+00:09:14,399 --> 00:09:18,160
+four
+
+233
+00:09:15,279 --> 00:09:21,120
+and not change zero to anything
+
+234
+00:09:18,160 --> 00:09:25,040
+and as soon as we have only three
+
+235
+00:09:21,120 --> 00:09:28,320
+0s here then q4 will encounters blank
+
+236
+00:09:25,040 --> 00:09:30,480
+when q4 encounters blank
+
+237
+00:09:28,320 --> 00:09:33,760
+it will reject
+
+238
+00:09:30,480 --> 00:09:38,160
+so see what we have now is
+
+239
+00:09:33,760 --> 00:09:42,560
+empty string reject one accept one as a
+
+240
+00:09:38,160 --> 00:09:45,279
+read one zero except two zeros accept
+
+241
+00:09:42,560 --> 00:09:48,720
+three zeros reject
+
+242
+00:09:45,279 --> 00:09:51,600
+right that's what we have now
+
+243
+00:09:48,720 --> 00:09:54,640
+then if we have five sorry four zeros
+
+244
+00:09:51,600 --> 00:09:58,160
+like this then we already goes here
+
+245
+00:09:54,640 --> 00:10:00,720
+right and when this step
+
+246
+00:09:58,160 --> 00:10:02,839
+q4 encounters zero
+
+247
+00:10:00,720 --> 00:10:06,959
+it will go back to
+
+248
+00:10:02,839 --> 00:10:10,640
+q3 okay go back to q3
+
+249
+00:10:06,959 --> 00:10:10,640
+go back to q3 then
+
+250
+00:10:11,600 --> 00:10:19,839
+mark the read
+
+251
+00:10:13,519 --> 00:10:22,800
+sorry mark the red 0 to x so this
+
+252
+00:10:19,839 --> 00:10:25,360
+this zero becomes x
+
+253
+00:10:22,800 --> 00:10:26,399
+that would be this one
+
+254
+00:10:25,360 --> 00:10:27,839
+okay
+
+255
+00:10:26,399 --> 00:10:30,839
+and
+
+256
+00:10:27,839 --> 00:10:34,640
+the head goes to
+
+257
+00:10:30,839 --> 00:10:36,480
+right so that's q3d here because q4
+
+258
+00:10:34,640 --> 00:10:39,760
+becomes q3
+
+259
+00:10:36,480 --> 00:10:42,480
+and see this blank that's our
+
+260
+00:10:39,760 --> 00:10:44,720
+uh special cases because you have
+
+261
+00:10:42,480 --> 00:10:47,360
+infinite blank
+
+262
+00:10:44,720 --> 00:10:49,440
+you just don't write it
+
+263
+00:10:47,360 --> 00:10:51,839
+now we have to write it because we want
+
+264
+00:10:49,440 --> 00:10:53,200
+to know that what is the next symbol
+
+265
+00:10:51,839 --> 00:10:56,160
+read by
+
+266
+00:10:53,200 --> 00:10:58,880
+uh what's the next symbol read by
+
+267
+00:10:56,160 --> 00:11:02,399
+the machine right so that would be blank
+
+268
+00:10:58,880 --> 00:11:05,120
+so q q 3 read blank
+
+269
+00:11:02,399 --> 00:11:07,920
+will go left without changing anything
+
+270
+00:11:05,120 --> 00:11:10,640
+so it will go to here
+
+271
+00:11:07,920 --> 00:11:13,600
+head will go to here and it becomes q5
+
+272
+00:11:10,640 --> 00:11:17,920
+so next time that will be
+
+273
+00:11:13,600 --> 00:11:18,880
+state q5 and x will be red
+
+274
+00:11:17,920 --> 00:11:20,720
+okay
+
+275
+00:11:18,880 --> 00:11:26,000
+so
+
+276
+00:11:20,720 --> 00:11:29,600
+as you can see q5 here it will skip any
+
+277
+00:11:26,000 --> 00:11:30,720
+zero and x and go keep going to
+
+278
+00:11:29,600 --> 00:11:33,519
+left
+
+279
+00:11:30,720 --> 00:11:35,200
+so you will go here
+
+280
+00:11:33,519 --> 00:11:37,680
+and then go here
+
+281
+00:11:35,200 --> 00:11:37,680
+and then
+
+282
+00:11:37,760 --> 00:11:40,480
+go
+
+283
+00:11:38,480 --> 00:11:43,839
+here
+
+284
+00:11:40,480 --> 00:11:43,839
+until this step
+
+285
+00:11:44,560 --> 00:11:46,800
+right
+
+286
+00:11:47,920 --> 00:11:51,440
+and
+
+287
+00:11:49,200 --> 00:11:54,720
+this step
+
+288
+00:11:51,440 --> 00:11:57,360
+at state q5
+
+289
+00:11:54,720 --> 00:12:02,079
+symbol blank symbol is red
+
+290
+00:11:57,360 --> 00:12:04,880
+so blank symbol is red it will become q2
+
+291
+00:12:02,079 --> 00:12:07,040
+and goes to right
+
+292
+00:12:04,880 --> 00:12:07,040
+so
+
+293
+00:12:07,200 --> 00:12:12,880
+goes to right that will be
+
+294
+00:12:10,800 --> 00:12:15,200
+in this position
+
+295
+00:12:12,880 --> 00:12:16,880
+and becomes q2
+
+296
+00:12:15,200 --> 00:12:19,680
+okay
+
+297
+00:12:16,880 --> 00:12:20,800
+so becomes q2 then
+
+298
+00:12:19,680 --> 00:12:22,800
+it will
+
+299
+00:12:20,800 --> 00:12:25,360
+skip every x
+
+300
+00:12:22,800 --> 00:12:27,600
+which is already processed
+
+301
+00:12:25,360 --> 00:12:29,680
+right skip x so
+
+302
+00:12:27,600 --> 00:12:30,959
+q 2 will go here
+
+303
+00:12:29,680 --> 00:12:31,920
+then
+
+304
+00:12:30,959 --> 00:12:32,959
+in this
+
+305
+00:12:31,920 --> 00:12:35,839
+state
+
+306
+00:12:32,959 --> 00:12:40,399
+in this configuration
+
+307
+00:12:35,839 --> 00:12:43,440
+when q 2 encounters 0 it will
+
+308
+00:12:40,399 --> 00:12:43,440
+mark the 0
+
+309
+00:12:43,519 --> 00:12:47,680
+right
+
+310
+00:12:44,800 --> 00:12:50,399
+and goes to q3
+
+311
+00:12:47,680 --> 00:12:51,519
+so mark the 0x
+
+312
+00:12:50,399 --> 00:12:55,040
+and
+
+313
+00:12:51,519 --> 00:12:58,639
+becomes q3 and the goal right
+
+314
+00:12:55,040 --> 00:13:00,880
+so will be this state
+
+315
+00:12:58,639 --> 00:13:00,880
+okay
+
+316
+00:13:04,839 --> 00:13:10,160
+then
+
+317
+00:13:06,480 --> 00:13:12,560
+q3 at q3
+
+318
+00:13:10,160 --> 00:13:14,880
+it will ignore any
+
+319
+00:13:12,560 --> 00:13:18,560
+processed symbol so
+
+320
+00:13:14,880 --> 00:13:19,519
+go this state become this one
+
+321
+00:13:18,560 --> 00:13:23,120
+and
+
+322
+00:13:19,519 --> 00:13:24,320
+when it's encounters blank it will go
+
+323
+00:13:23,120 --> 00:13:27,519
+left
+
+324
+00:13:24,320 --> 00:13:31,120
+when q3 encounters blank it knows we
+
+325
+00:13:27,519 --> 00:13:35,279
+know that it's the end of the tape okay
+
+326
+00:13:31,120 --> 00:13:38,240
+so go becomes q5 go
+
+327
+00:13:35,279 --> 00:13:41,519
+left and it becomes q5
+
+328
+00:13:38,240 --> 00:13:42,480
+and the q5 will do what skip o
+
+329
+00:13:41,519 --> 00:13:44,240
+x
+
+330
+00:13:42,480 --> 00:13:45,760
+and t o here
+
+331
+00:13:44,240 --> 00:13:48,800
+so that will be
+
+332
+00:13:45,760 --> 00:13:53,199
+this configuration
+
+333
+00:13:48,800 --> 00:13:55,839
+and then q5 read blank goes right and
+
+334
+00:13:53,199 --> 00:13:59,279
+change transit to q2 that would be this
+
+335
+00:13:55,839 --> 00:14:00,399
+blank at least configuration
+
+336
+00:13:59,279 --> 00:14:03,839
+right
+
+337
+00:14:00,399 --> 00:14:07,920
+and then q2 goes to
+
+338
+00:14:03,839 --> 00:14:10,720
+skip all process the symbol skip all
+
+339
+00:14:07,920 --> 00:14:13,839
+processes symbol
+
+340
+00:14:10,720 --> 00:14:16,399
+until here
+
+341
+00:14:13,839 --> 00:14:17,920
+and when q2 encounters
+
+342
+00:14:16,399 --> 00:14:19,440
+blank
+
+343
+00:14:17,920 --> 00:14:21,839
+it will
+
+344
+00:14:19,440 --> 00:14:23,279
+enter q accept
+
+345
+00:14:21,839 --> 00:14:25,440
+so
+
+346
+00:14:23,279 --> 00:14:27,600
+this machine will accept
+
+347
+00:14:25,440 --> 00:14:29,519
+a string of four
+
+348
+00:14:27,600 --> 00:14:32,720
+zeros
+
+349
+00:14:29,519 --> 00:14:32,720
+okay four zeros
+
+350
+00:14:43,040 --> 00:14:49,120
+okay so
+
+351
+00:14:45,440 --> 00:14:50,959
+compare the diagram here to
+
+352
+00:14:49,120 --> 00:14:56,600
+what we want to do
+
+353
+00:14:50,959 --> 00:14:56,600
+uh described by a bunch of text here
+
+354
+00:14:58,240 --> 00:15:01,360
+some major
+
+355
+00:14:59,600 --> 00:15:04,000
+steps include
+
+356
+00:15:01,360 --> 00:15:07,839
+sweep left to right across the tab
+
+357
+00:15:04,000 --> 00:15:09,600
+closing of every other zero
+
+358
+00:15:07,839 --> 00:15:10,959
+least
+
+359
+00:15:09,600 --> 00:15:12,959
+concept
+
+360
+00:15:10,959 --> 00:15:14,800
+is actually
+
+361
+00:15:12,959 --> 00:15:18,800
+implemented as
+
+362
+00:15:14,800 --> 00:15:18,800
+q3 and the q4 right
+
+363
+00:15:19,199 --> 00:15:25,199
+q3 and the q4 and the
+
+364
+00:15:22,000 --> 00:15:27,839
+initial step of q2
+
+365
+00:15:25,199 --> 00:15:27,839
+see
+
+366
+00:15:28,399 --> 00:15:33,839
+across a 0
+
+367
+00:15:31,199 --> 00:15:36,880
+that's we change 0 to x
+
+368
+00:15:33,839 --> 00:15:38,399
+and we change 0 to x
+
+369
+00:15:36,880 --> 00:15:41,120
+across
+
+370
+00:15:38,399 --> 00:15:45,360
+the tape and the change 0 to x
+
+371
+00:15:41,120 --> 00:15:50,160
+so that means that becomes q2 to q3
+
+372
+00:15:45,360 --> 00:15:53,680
+and close one x and the skip 1 0 cross 1
+
+373
+00:15:50,160 --> 00:15:55,839
+0 skip 1 0 cross 1 0
+
+374
+00:15:53,680 --> 00:15:55,839
+so
+
+375
+00:15:56,880 --> 00:16:03,759
+every other 0 is closed
+
+376
+00:15:59,360 --> 00:16:04,720
+during q3 q's 4 q3 q4
+
+377
+00:16:03,759 --> 00:16:09,519
+steps
+
+378
+00:16:04,720 --> 00:16:12,320
+and initi initiated by q2 goes to q3
+
+379
+00:16:09,519 --> 00:16:14,399
+so let's initiate q2
+
+380
+00:16:12,320 --> 00:16:16,560
+goes to q3 then
+
+381
+00:16:14,399 --> 00:16:19,519
+three four three four three four three
+
+382
+00:16:16,560 --> 00:16:23,240
+four three four imagine that you have a
+
+383
+00:16:19,519 --> 00:16:23,240
+lot of zeros
+
+384
+00:16:23,279 --> 00:16:28,320
+then somehow you got initiated by q2 and
+
+385
+00:16:26,399 --> 00:16:30,959
+goes to q3
+
+386
+00:16:28,320 --> 00:16:34,399
+and q3 will skip one zero
+
+387
+00:16:30,959 --> 00:16:35,440
+and q4 will cross one zero goes back to
+
+388
+00:16:34,399 --> 00:16:37,680
+q3
+
+389
+00:16:35,440 --> 00:16:40,560
+and let's keep one zero
+
+390
+00:16:37,680 --> 00:16:41,600
+close skip close
+
+391
+00:16:40,560 --> 00:16:44,720
+okay
+
+392
+00:16:41,600 --> 00:16:47,360
+and for any other for any
+
+393
+00:16:44,720 --> 00:16:47,360
+processed
+
+394
+00:16:47,519 --> 00:16:53,360
+zeros that will be
+
+395
+00:16:49,519 --> 00:16:56,639
+that will be uh skipped by q3 and q4
+
+396
+00:16:53,360 --> 00:17:00,399
+so when the symbols when the zeros on
+
+397
+00:16:56,639 --> 00:17:03,120
+the tab has been processed has been
+
+398
+00:17:00,399 --> 00:17:05,679
+processed by this these two one of these
+
+399
+00:17:03,120 --> 00:17:07,600
+two transition
+
+400
+00:17:05,679 --> 00:17:11,280
+it will never be
+
+401
+00:17:07,600 --> 00:17:13,039
+red again right you can see that
+
+402
+00:17:11,280 --> 00:17:16,079
+only
+
+403
+00:17:13,039 --> 00:17:19,439
+this transition and this transition
+
+404
+00:17:16,079 --> 00:17:20,720
+change 0 to x for all other transitions
+
+405
+00:17:19,439 --> 00:17:23,600
+on
+
+406
+00:17:20,720 --> 00:17:24,959
+our diagram there is no change of type
+
+407
+00:17:23,600 --> 00:17:25,919
+symbol right
+
+408
+00:17:24,959 --> 00:17:27,439
+and
+
+409
+00:17:25,919 --> 00:17:30,400
+for the major
+
+410
+00:17:27,439 --> 00:17:30,400
+uh state here
+
+411
+00:17:30,840 --> 00:17:34,880
+all processed the symbol
+
+412
+00:17:33,919 --> 00:17:36,799
+are
+
+413
+00:17:34,880 --> 00:17:37,919
+skipped
+
+414
+00:17:36,799 --> 00:17:40,640
+right
+
+415
+00:17:37,919 --> 00:17:41,520
+so any x on the type
+
+416
+00:17:40,640 --> 00:17:42,720
+they
+
+417
+00:17:41,520 --> 00:17:44,320
+are
+
+418
+00:17:42,720 --> 00:17:46,080
+seemingly
+
+419
+00:17:44,320 --> 00:17:48,720
+uh
+
+420
+00:17:46,080 --> 00:17:50,559
+this disappeared from the tape from the
+
+421
+00:17:48,720 --> 00:17:52,400
+scope of the machine
+
+422
+00:17:50,559 --> 00:17:55,520
+because
+
+423
+00:17:52,400 --> 00:17:56,880
+the machine never looked at x again
+
+424
+00:17:55,520 --> 00:17:58,960
+okay
+
+425
+00:17:56,880 --> 00:18:00,480
+so that's what
+
+426
+00:17:58,960 --> 00:18:01,440
+we have here
+
+427
+00:18:00,480 --> 00:18:02,640
+like
+
+428
+00:18:01,440 --> 00:18:05,520
+uh
+
+429
+00:18:02,640 --> 00:18:08,080
+sweep left to right across the tape
+
+430
+00:18:05,520 --> 00:18:10,720
+closing of every other zero that's what
+
+431
+00:18:08,080 --> 00:18:14,480
+it does it means
+
+432
+00:18:10,720 --> 00:18:17,520
+okay and
+
+433
+00:18:14,480 --> 00:18:17,520
+you can see that
+
+434
+00:18:18,559 --> 00:18:20,799
+for
+
+435
+00:18:22,080 --> 00:18:27,039
+the loop here closing zero and we
+
+436
+00:18:24,960 --> 00:18:28,960
+actually are
+
+437
+00:18:27,039 --> 00:18:31,760
+trying to
+
+438
+00:18:28,960 --> 00:18:33,840
+record uh
+
+439
+00:18:31,760 --> 00:18:35,520
+odd or even
+
+440
+00:18:33,840 --> 00:18:37,039
+of the number
+
+441
+00:18:35,520 --> 00:18:37,919
+of zeros
+
+442
+00:18:37,039 --> 00:18:42,320
+okay
+
+443
+00:18:37,919 --> 00:18:45,600
+uh we we we cannot uh use the state to
+
+444
+00:18:42,320 --> 00:18:48,320
+store to record the number
+
+445
+00:18:45,600 --> 00:18:49,679
+of zeros but we can use
+
+446
+00:18:48,320 --> 00:18:51,840
+state
+
+447
+00:18:49,679 --> 00:18:51,840
+to
+
+448
+00:18:52,559 --> 00:18:54,559
+count
+
+449
+00:18:53,520 --> 00:18:58,160
+the
+
+450
+00:18:54,559 --> 00:19:00,480
+identity of the number
+
+451
+00:18:58,160 --> 00:19:01,679
+we we know that uh it's
+
+452
+00:19:00,480 --> 00:19:03,360
+the uh
+
+453
+00:19:01,679 --> 00:19:04,080
+the number of residuals
+
+454
+00:19:03,360 --> 00:19:08,559
+is
+
+455
+00:19:04,080 --> 00:19:11,600
+even odd even art uh things like that
+
+456
+00:19:08,559 --> 00:19:14,320
+so you see uh after
+
+457
+00:19:11,600 --> 00:19:15,919
+marking the first zero
+
+458
+00:19:14,320 --> 00:19:16,799
+s blank
+
+459
+00:19:15,919 --> 00:19:18,160
+from
+
+460
+00:19:16,799 --> 00:19:20,160
+q1
+
+461
+00:19:18,160 --> 00:19:21,120
+to q2
+
+462
+00:19:20,160 --> 00:19:22,559
+okay
+
+463
+00:19:21,120 --> 00:19:25,440
+after this
+
+464
+00:19:22,559 --> 00:19:27,840
+we know that there's one zero here
+
+465
+00:19:25,440 --> 00:19:29,919
+right i mean initially initially
+
+466
+00:19:27,840 --> 00:19:33,600
+and then
+
+467
+00:19:29,919 --> 00:19:36,960
+we accept one zero right that's the one
+
+468
+00:19:33,600 --> 00:19:39,280
+zero part then if there are one more
+
+469
+00:19:36,960 --> 00:19:40,160
+zero
+
+470
+00:19:39,280 --> 00:19:44,240
+then
+
+471
+00:19:40,160 --> 00:19:46,720
+it will be marked x and goes to q3 and
+
+472
+00:19:44,240 --> 00:19:50,799
+you can think of q3 is
+
+473
+00:19:46,720 --> 00:19:50,799
+somewhat like a even
+
+474
+00:19:51,280 --> 00:19:57,440
+state okay we know there are even
+
+475
+00:19:54,400 --> 00:20:00,799
+numbers left on the tape
+
+476
+00:19:57,440 --> 00:20:02,159
+and then q4 is like odd state
+
+477
+00:20:00,799 --> 00:20:05,919
+you know not
+
+478
+00:20:02,159 --> 00:20:07,760
+odd but identity of the number of zeros
+
+479
+00:20:05,919 --> 00:20:08,640
+so even
+
+480
+00:20:07,760 --> 00:20:09,600
+uh
+
+481
+00:20:08,640 --> 00:20:11,200
+sorry
+
+482
+00:20:09,600 --> 00:20:14,559
+odds even
+
+483
+00:20:11,200 --> 00:20:15,760
+odd even odd even
+
+484
+00:20:14,559 --> 00:20:16,880
+that's why
+
+485
+00:20:15,760 --> 00:20:20,880
+if
+
+486
+00:20:16,880 --> 00:20:23,840
+at q4 you hit blank it will be rejected
+
+487
+00:20:20,880 --> 00:20:25,440
+because it knows it's even oh sorry it's
+
+488
+00:20:23,840 --> 00:20:27,039
+odd
+
+489
+00:20:25,440 --> 00:20:31,600
+and then so
+
+490
+00:20:27,039 --> 00:20:32,720
+more or less q3 represents like odd uh
+
+491
+00:20:31,600 --> 00:20:34,480
+zeros
+
+492
+00:20:32,720 --> 00:20:35,840
+so
+
+493
+00:20:34,480 --> 00:20:37,520
+if
+
+494
+00:20:35,840 --> 00:20:40,720
+when you hit
+
+495
+00:20:37,520 --> 00:20:43,840
+blank that's the end of the string
+
+496
+00:20:40,720 --> 00:20:48,400
+with q3 you know okay uh
+
+497
+00:20:43,840 --> 00:20:50,320
+now that the number of zeros left
+
+498
+00:20:48,400 --> 00:20:53,919
+remaining on the tab
+
+499
+00:20:50,320 --> 00:20:56,080
+is an even number then you go back
+
+500
+00:20:53,919 --> 00:20:59,360
+and doing over again
+
+501
+00:20:56,080 --> 00:21:03,200
+so you know even out even out this way
+
+502
+00:20:59,360 --> 00:21:04,080
+see that's the interesting part of
+
+503
+00:21:03,200 --> 00:21:05,360
+using
+
+504
+00:21:04,080 --> 00:21:06,799
+turing machine
+
+505
+00:21:05,360 --> 00:21:08,799
+to processing
+
+506
+00:21:06,799 --> 00:21:10,559
+strings
+
+507
+00:21:08,799 --> 00:21:13,200
+well
+
+508
+00:21:10,559 --> 00:21:16,720
+the design of this machine may be very
+
+509
+00:21:13,200 --> 00:21:18,640
+interesting and
+
+510
+00:21:16,720 --> 00:21:22,159
+usually we don't
+
+511
+00:21:18,640 --> 00:21:25,280
+directly design this level this
+
+512
+00:21:22,159 --> 00:21:26,320
+machine of this label okay that's just
+
+513
+00:21:25,280 --> 00:21:28,159
+uh
+
+514
+00:21:26,320 --> 00:21:29,520
+for
+
+515
+00:21:28,159 --> 00:21:32,880
+the purpose
+
+516
+00:21:29,520 --> 00:21:37,360
+of giving examples okay
+
+517
+00:21:32,880 --> 00:21:40,000
+okay uh let's see another example of 3.9
+
+518
+00:21:37,360 --> 00:21:41,120
+which is m1 you can see that it's
+
+519
+00:21:40,000 --> 00:21:42,799
+actually
+
+520
+00:21:41,120 --> 00:21:46,240
+uh
+
+521
+00:21:42,799 --> 00:21:48,799
+first example then the second one m2 we
+
+522
+00:21:46,240 --> 00:21:52,240
+just described and traced
+
+523
+00:21:48,799 --> 00:21:55,039
+okay for m1 which we use to
+
+524
+00:21:52,240 --> 00:21:58,720
+recognize okay actually deciding we will
+
+525
+00:21:55,039 --> 00:22:00,720
+see that again deciding a language b
+
+526
+00:21:58,720 --> 00:22:03,520
+as this one
+
+527
+00:22:00,720 --> 00:22:05,840
+that is you have some zero one string
+
+528
+00:22:03,520 --> 00:22:07,840
+and a separator here and a zero one
+
+529
+00:22:05,840 --> 00:22:09,760
+string and
+
+530
+00:22:07,840 --> 00:22:12,400
+string like this is in this language
+
+531
+00:22:09,760 --> 00:22:14,080
+like zero zero one 1 0
+
+532
+00:22:12,400 --> 00:22:16,480
+and separator
+
+533
+00:22:14,080 --> 00:22:17,600
+0 0 1 1 0.
+
+534
+00:22:16,480 --> 00:22:20,000
+and
+
+535
+00:22:17,600 --> 00:22:23,120
+as i uh
+
+536
+00:22:20,000 --> 00:22:25,039
+described it is very easy to prove that
+
+537
+00:22:23,120 --> 00:22:26,400
+this language
+
+538
+00:22:25,039 --> 00:22:28,640
+is
+
+539
+00:22:26,400 --> 00:22:31,200
+not even in context free language
+
+540
+00:22:28,640 --> 00:22:35,120
+because it's impossible for you to do
+
+541
+00:22:31,200 --> 00:22:37,440
+the same thing here okay you can do
+
+542
+00:22:35,120 --> 00:22:39,520
+things like this but not
+
+543
+00:22:37,440 --> 00:22:42,320
+this one because thick
+
+544
+00:22:39,520 --> 00:22:44,240
+you won't be able to do it via
+
+545
+00:22:42,320 --> 00:22:46,080
+using the
+
+546
+00:22:44,240 --> 00:22:47,520
+steak as the storage
+
+547
+00:22:46,080 --> 00:22:50,320
+okay anyway
+
+548
+00:22:47,520 --> 00:22:52,480
+so here is the example to
+
+549
+00:22:50,320 --> 00:22:57,360
+recognize in the uh for for this
+
+550
+00:22:52,480 --> 00:23:01,600
+language we have 16 16 states here
+
+551
+00:22:57,360 --> 00:23:02,720
+q1 q2 through q4 uh for 14 accept and
+
+552
+00:23:01,600 --> 00:23:06,480
+reject
+
+553
+00:23:02,720 --> 00:23:09,200
+and then the input input symbol you can
+
+554
+00:23:06,480 --> 00:23:12,559
+see that zero one and the separator so
+
+555
+00:23:09,200 --> 00:23:15,200
+three uh symbols for input symbols input
+
+556
+00:23:12,559 --> 00:23:19,280
+input alphabet and then
+
+557
+00:23:15,200 --> 00:23:22,640
+for uh type alphabet we have all
+
+558
+00:23:19,280 --> 00:23:24,880
+those in the input alphabet and then
+
+559
+00:23:22,640 --> 00:23:27,520
+one required by our theoretical
+
+560
+00:23:24,880 --> 00:23:30,320
+framework on
+
+561
+00:23:27,520 --> 00:23:32,480
+blank symbol and
+
+562
+00:23:30,320 --> 00:23:35,200
+something we want to use as
+
+563
+00:23:32,480 --> 00:23:37,360
+you know our own mark
+
+564
+00:23:35,200 --> 00:23:40,400
+so
+
+565
+00:23:37,360 --> 00:23:43,600
+we have uh states input symbol
+
+566
+00:23:40,400 --> 00:23:45,840
+input alphabet type alphabet star state
+
+567
+00:23:43,600 --> 00:23:47,600
+q accept q reject and the transition
+
+568
+00:23:45,840 --> 00:23:49,279
+function is
+
+569
+00:23:47,600 --> 00:23:50,559
+this one so
+
+570
+00:23:49,279 --> 00:23:54,799
+we
+
+571
+00:23:50,559 --> 00:23:54,799
+make the transition function index 116
+
+572
+00:23:56,960 --> 00:24:00,840
+state
+
+573
+00:23:57,840 --> 00:24:00,840
+but
+
+574
+00:24:13,279 --> 00:24:17,600
+so for the transition function
+
+575
+00:24:16,000 --> 00:24:22,799
+we didn't give
+
+576
+00:24:17,600 --> 00:24:22,799
+all state out right you see that
+
+577
+00:24:24,799 --> 00:24:31,520
+we have uh
+
+578
+00:24:26,880 --> 00:24:33,600
+according to the textbook we have some
+
+579
+00:24:31,520 --> 00:24:35,840
+for a state here but
+
+580
+00:24:33,600 --> 00:24:37,120
+not all of them shows on here
+
+581
+00:24:35,840 --> 00:24:39,360
+and
+
+582
+00:24:37,120 --> 00:24:41,840
+all for complete
+
+583
+00:24:39,360 --> 00:24:44,240
+uh for complete operations of the tuning
+
+584
+00:24:41,840 --> 00:24:45,279
+machine we need that but
+
+585
+00:24:44,240 --> 00:24:47,279
+to
+
+586
+00:24:45,279 --> 00:24:48,480
+accept all the strings
+
+587
+00:24:47,279 --> 00:24:50,000
+and
+
+588
+00:24:48,480 --> 00:24:51,919
+not accept
+
+589
+00:24:50,000 --> 00:24:53,840
+the string not in the language we only
+
+590
+00:24:51,919 --> 00:24:55,679
+need a transition like
+
+591
+00:24:53,840 --> 00:24:57,360
+what we have here
+
+592
+00:24:55,679 --> 00:24:58,720
+okay
+
+593
+00:24:57,360 --> 00:25:01,360
+so
+
+594
+00:24:58,720 --> 00:25:04,159
+let's trace the machine
+
+595
+00:25:01,360 --> 00:25:05,520
+with the input string we
+
+596
+00:25:04,159 --> 00:25:07,840
+had
+
+597
+00:25:05,520 --> 00:25:12,400
+in the beginning of the
+
+598
+00:25:07,840 --> 00:25:14,640
+chapter so when start with q1 right
+
+599
+00:25:12,400 --> 00:25:15,840
+with q1
+
+600
+00:25:14,640 --> 00:25:18,720
+and then
+
+601
+00:25:15,840 --> 00:25:19,840
+0 is read so you can see that
+
+602
+00:25:18,720 --> 00:25:22,320
+it will
+
+603
+00:25:19,840 --> 00:25:26,720
+go this way and
+
+604
+00:25:22,320 --> 00:25:29,360
+mark 0x right and goes right so next one
+
+605
+00:25:26,720 --> 00:25:34,080
+is like this and then
+
+606
+00:25:29,360 --> 00:25:36,159
+now we enter q2 so here we are in q1 and
+
+607
+00:25:34,080 --> 00:25:37,360
+at q1 and q2
+
+608
+00:25:36,159 --> 00:25:43,200
+and then
+
+609
+00:25:37,360 --> 00:25:46,720
+for q2 it will remain q2 and skip every
+
+610
+00:25:43,200 --> 00:25:48,720
+zero one okay skip every zero one
+
+611
+00:25:46,720 --> 00:25:50,000
+so it will
+
+612
+00:25:48,720 --> 00:25:53,360
+goes
+
+613
+00:25:50,000 --> 00:25:55,120
+here until here and then
+
+614
+00:25:53,360 --> 00:25:57,600
+goes to q4
+
+615
+00:25:55,120 --> 00:26:00,799
+so after
+
+616
+00:25:57,600 --> 00:26:02,240
+here is q2 but after this
+
+617
+00:26:00,799 --> 00:26:06,080
+after
+
+618
+00:26:02,240 --> 00:26:08,640
+going here will be q4 okay
+
+619
+00:26:06,080 --> 00:26:10,640
+and q4 will skip every x
+
+620
+00:26:08,640 --> 00:26:13,840
+that's that is uh
+
+621
+00:26:10,640 --> 00:26:16,000
+the symbol has been processed okay
+
+622
+00:26:13,840 --> 00:26:17,440
+and then
+
+623
+00:26:16,000 --> 00:26:19,200
+reach
+
+624
+00:26:17,440 --> 00:26:20,240
+it's originally
+
+625
+00:26:19,200 --> 00:26:25,200
+uh
+
+626
+00:26:20,240 --> 00:26:26,960
+reached 0 right so when q4 so so so this
+
+627
+00:26:25,200 --> 00:26:28,640
+one should be here okay
+
+628
+00:26:26,960 --> 00:26:30,480
+so not this one
+
+629
+00:26:28,640 --> 00:26:31,679
+when q4
+
+630
+00:26:30,480 --> 00:26:36,000
+0
+
+631
+00:26:31,679 --> 00:26:39,279
+match 0 and change to x change to x
+
+632
+00:26:36,000 --> 00:26:41,919
+and then goes to q6 and go back no
+
+633
+00:26:39,279 --> 00:26:46,080
+matter 0 or 1 or x
+
+634
+00:26:41,919 --> 00:26:47,360
+okay so you can see that 0 0
+
+635
+00:26:46,080 --> 00:26:48,400
+here
+
+636
+00:26:47,360 --> 00:26:51,679
+matched
+
+637
+00:26:48,400 --> 00:26:56,159
+so match the 0 with the 0
+
+638
+00:26:51,679 --> 00:26:59,520
+x and the then go back q6
+
+639
+00:26:56,159 --> 00:26:59,520
+go back until
+
+640
+00:27:00,080 --> 00:27:04,559
+the separator then goes to
+
+641
+00:27:02,320 --> 00:27:07,200
+7
+
+642
+00:27:04,559 --> 00:27:09,120
+goes
+
+643
+00:27:07,200 --> 00:27:10,640
+skip every
+
+644
+00:27:09,120 --> 00:27:12,880
+skip every
+
+645
+00:27:10,640 --> 00:27:15,360
+0 and 1
+
+646
+00:27:12,880 --> 00:27:16,880
+and then reach x so
+
+647
+00:27:15,360 --> 00:27:17,679
+when 7 reads
+
+648
+00:27:16,880 --> 00:27:21,360
+x
+
+649
+00:27:17,679 --> 00:27:23,440
+it goes back to q 1. okay so you can see
+
+650
+00:27:21,360 --> 00:27:24,720
+that
+
+651
+00:27:23,440 --> 00:27:26,320
+match 0
+
+652
+00:27:24,720 --> 00:27:28,640
+0 with
+
+653
+00:27:26,320 --> 00:27:31,600
+this path
+
+654
+00:27:28,640 --> 00:27:35,000
+and match 1 1 with
+
+655
+00:27:31,600 --> 00:27:35,000
+this path
+
+656
+00:27:36,559 --> 00:27:39,919
+okay
+
+657
+00:27:37,679 --> 00:27:39,919
+so
+
+658
+00:27:40,000 --> 00:27:42,559
+finally
+
+659
+00:27:41,360 --> 00:27:48,039
+if
+
+660
+00:27:42,559 --> 00:27:48,039
+it goes through everything so
+
+661
+00:27:48,399 --> 00:27:51,679
+it will um
+
+662
+00:27:54,480 --> 00:28:02,000
+when q uh you when we when we enter q6
+
+663
+00:27:58,399 --> 00:28:03,200
+when you enter q6
+
+664
+00:28:02,000 --> 00:28:07,200
+will go
+
+665
+00:28:03,200 --> 00:28:09,600
+to the separator then
+
+666
+00:28:07,200 --> 00:28:10,960
+through everything
+
+667
+00:28:09,600 --> 00:28:14,720
+and the
+
+668
+00:28:10,960 --> 00:28:18,799
+cx go back to q1 right
+
+669
+00:28:14,720 --> 00:28:18,799
+so imagine that after
+
+670
+00:28:19,200 --> 00:28:23,120
+the x here
+
+671
+00:28:22,320 --> 00:28:26,799
+sum
+
+672
+00:28:23,120 --> 00:28:30,399
+this one or this one but
+
+673
+00:28:26,799 --> 00:28:31,279
+mark this one here then it will be q
+
+674
+00:28:30,399 --> 00:28:34,720
+6
+
+675
+00:28:31,279 --> 00:28:36,159
+going through this one until here and
+
+676
+00:28:34,720 --> 00:28:40,559
+change to q
+
+677
+00:28:36,159 --> 00:28:42,559
+7 right and q 7 will c x and go back
+
+678
+00:28:40,559 --> 00:28:47,440
+here to q 1
+
+679
+00:28:42,559 --> 00:28:49,440
+so that's why we have q1 read separator
+
+680
+00:28:47,440 --> 00:28:51,919
+then we change it
+
+681
+00:28:49,440 --> 00:28:55,440
+we change to q8
+
+682
+00:28:51,919 --> 00:28:56,399
+to check if there's anything wrong here
+
+683
+00:28:55,440 --> 00:29:00,000
+if no
+
+684
+00:28:56,399 --> 00:29:01,520
+q8 will reach the blank which is the end
+
+685
+00:29:00,000 --> 00:29:05,039
+of the string
+
+686
+00:29:01,520 --> 00:29:05,039
+right so accept
+
+687
+00:29:05,600 --> 00:29:07,840
+okay
+
+688
+00:29:07,919 --> 00:29:10,880
+so
+
+689
+00:29:08,960 --> 00:29:11,840
+as you can see
+
+690
+00:29:10,880 --> 00:29:13,679
+if
+
+691
+00:29:11,840 --> 00:29:16,799
+0 0
+
+692
+00:29:13,679 --> 00:29:18,000
+this way as i said and 1 1
+
+693
+00:29:16,799 --> 00:29:21,279
+this way
+
+694
+00:29:18,000 --> 00:29:23,600
+and if everything works out then here
+
+695
+00:29:21,279 --> 00:29:24,480
+here accept
+
+696
+00:29:23,600 --> 00:29:26,399
+okay
+
+697
+00:29:24,480 --> 00:29:28,320
+so imagine that
+
+698
+00:29:26,399 --> 00:29:30,240
+imagine that
+
+699
+00:29:28,320 --> 00:29:31,919
+if you have zero
+
+700
+00:29:30,240 --> 00:29:35,120
+here
+
+701
+00:29:31,919 --> 00:29:40,480
+and the skip through separator
+
+702
+00:29:35,120 --> 00:29:41,840
+what if at q4 you encounter one
+
+703
+00:29:40,480 --> 00:29:43,679
+right
+
+704
+00:29:41,840 --> 00:29:45,919
+okay let's see
+
+705
+00:29:43,679 --> 00:29:48,880
+actually we can uh
+
+706
+00:29:45,919 --> 00:29:51,520
+complete we can make the whole
+
+707
+00:29:48,880 --> 00:29:52,640
+uh turing machine complete with
+
+708
+00:29:51,520 --> 00:29:56,240
+everything
+
+709
+00:29:52,640 --> 00:29:58,480
+then you can go to reject and to reject
+
+710
+00:29:56,240 --> 00:30:00,159
+the string or something
+
+711
+00:29:58,480 --> 00:30:02,399
+okay but
+
+712
+00:30:00,159 --> 00:30:03,600
+for this
+
+713
+00:30:02,399 --> 00:30:06,320
+for the
+
+714
+00:30:03,600 --> 00:30:08,640
+partial machine here partial transition
+
+715
+00:30:06,320 --> 00:30:10,799
+function here you can find that
+
+716
+00:30:08,640 --> 00:30:13,279
+it is very interesting that
+
+717
+00:30:10,799 --> 00:30:14,159
+for this partial transition function
+
+718
+00:30:13,279 --> 00:30:17,679
+see
+
+719
+00:30:14,159 --> 00:30:20,720
+when as i said if you start with zero
+
+720
+00:30:17,679 --> 00:30:24,640
+and here you got one what happened
+
+721
+00:30:20,720 --> 00:30:27,039
+start from here then q4 you got one then
+
+722
+00:30:24,640 --> 00:30:28,480
+not defined right
+
+723
+00:30:27,039 --> 00:30:29,360
+and in
+
+724
+00:30:28,480 --> 00:30:32,399
+if
+
+725
+00:30:29,360 --> 00:30:34,840
+this is the whole if this uh
+
+726
+00:30:32,399 --> 00:30:38,799
+machine is the whole turing machine
+
+727
+00:30:34,840 --> 00:30:41,200
+then according to the acceptance
+
+728
+00:30:38,799 --> 00:30:44,159
+according to the acceptance
+
+729
+00:30:41,200 --> 00:30:46,480
+see this one
+
+730
+00:30:44,159 --> 00:30:46,480
+here
+
+731
+00:30:47,520 --> 00:30:52,720
+according to the definition
+
+732
+00:30:49,679 --> 00:30:55,760
+for two machine to accept
+
+733
+00:30:52,720 --> 00:30:55,760
+the input string
+
+734
+00:30:56,799 --> 00:31:00,720
+there
+
+735
+00:30:58,159 --> 00:31:02,720
+a sequence of configurations existing
+
+736
+00:31:00,720 --> 00:31:06,000
+the three conditions
+
+737
+00:31:02,720 --> 00:31:08,080
+must be must exist so we say that the
+
+738
+00:31:06,000 --> 00:31:10,399
+machine accept that string
+
+739
+00:31:08,080 --> 00:31:10,399
+and
+
+740
+00:31:10,559 --> 00:31:14,480
+for this for the
+
+741
+00:31:12,640 --> 00:31:15,519
+situation here
+
+742
+00:31:14,480 --> 00:31:18,640
+when
+
+743
+00:31:15,519 --> 00:31:19,840
+the machine is at q4 and encounter
+
+744
+00:31:18,640 --> 00:31:22,159
+one
+
+745
+00:31:19,840 --> 00:31:24,480
+then it's undefined okay
+
+746
+00:31:22,159 --> 00:31:28,080
+so we see that the machine
+
+747
+00:31:24,480 --> 00:31:30,559
+does not accept this string
+
+748
+00:31:28,080 --> 00:31:30,559
+however
+
+749
+00:31:31,279 --> 00:31:37,919
+for this state of the machine
+
+750
+00:31:35,200 --> 00:31:40,000
+we have to consider the machine is still
+
+751
+00:31:37,919 --> 00:31:42,960
+running
+
+752
+00:31:40,000 --> 00:31:44,159
+without accept the string and
+
+753
+00:31:42,960 --> 00:31:46,399
+without
+
+754
+00:31:44,159 --> 00:31:48,880
+reject the string it's just running and
+
+755
+00:31:46,399 --> 00:31:50,399
+running and running and with no answer
+
+756
+00:31:48,880 --> 00:31:54,399
+something like that
+
+757
+00:31:50,399 --> 00:31:56,159
+so it is important to see that uh
+
+758
+00:31:54,399 --> 00:32:00,399
+to see that the turing machine works
+
+759
+00:31:56,159 --> 00:32:02,960
+differently from final automata and
+
+760
+00:32:00,399 --> 00:32:02,960
+pda
+
+761
+00:32:03,039 --> 00:32:07,600
+for final automata
+
+762
+00:32:04,960 --> 00:32:08,799
+and pda we have accept
+
+763
+00:32:07,600 --> 00:32:10,320
+right
+
+764
+00:32:08,799 --> 00:32:13,640
+and we have
+
+765
+00:32:10,320 --> 00:32:13,640
+not accept
+
+766
+00:32:14,799 --> 00:32:19,200
+and for pda and the
+
+767
+00:32:17,039 --> 00:32:23,279
+final automata another accept is
+
+768
+00:32:19,200 --> 00:32:26,960
+basically reject no problem
+
+769
+00:32:23,279 --> 00:32:28,399
+because the machine anyway stops
+
+770
+00:32:26,960 --> 00:32:30,720
+when the input
+
+771
+00:32:28,399 --> 00:32:33,360
+input string is uh
+
+772
+00:32:30,720 --> 00:32:35,600
+the whole input string is processed so
+
+773
+00:32:33,360 --> 00:32:37,440
+we can also say that
+
+774
+00:32:35,600 --> 00:32:39,840
+the machine not a
+
+775
+00:32:37,440 --> 00:32:42,640
+pda nfa
+
+776
+00:32:39,840 --> 00:32:44,320
+dfa not accepting a string is rejecting
+
+777
+00:32:42,640 --> 00:32:45,919
+the string is no problem because the
+
+778
+00:32:44,320 --> 00:32:48,480
+machine stops
+
+779
+00:32:45,919 --> 00:32:49,760
+but for turing machine it doesn't work
+
+780
+00:32:48,480 --> 00:32:52,799
+that way
+
+781
+00:32:49,760 --> 00:32:53,919
+for tuning machine not accept
+
+782
+00:32:52,799 --> 00:32:57,120
+basically
+
+783
+00:32:53,919 --> 00:32:59,440
+is not reject because
+
+784
+00:32:57,120 --> 00:33:01,919
+if turing machine does not enter the
+
+785
+00:32:59,440 --> 00:33:02,880
+state of reject it doesn't reject the
+
+786
+00:33:01,919 --> 00:33:05,360
+machine
+
+787
+00:33:02,880 --> 00:33:08,000
+and if it doesn't enter
+
+788
+00:33:05,360 --> 00:33:10,240
+either reject or accept
+
+789
+00:33:08,000 --> 00:33:12,880
+we have to consider the machine
+
+790
+00:33:10,240 --> 00:33:16,240
+continues to operate
+
+791
+00:33:12,880 --> 00:33:19,440
+it is still running and we
+
+792
+00:33:16,240 --> 00:33:21,760
+cannot say that okay the stops no that's
+
+793
+00:33:19,440 --> 00:33:23,760
+why we call accepting configuration and
+
+794
+00:33:21,760 --> 00:33:26,720
+the rejecting configuration
+
+795
+00:33:23,760 --> 00:33:28,480
+holding configuration only
+
+796
+00:33:26,720 --> 00:33:32,480
+the machine enters
+
+797
+00:33:28,480 --> 00:33:33,919
+accept or reject state then we set the
+
+798
+00:33:32,480 --> 00:33:36,559
+machine holds
+
+799
+00:33:33,919 --> 00:33:39,279
+other than that we have to consider the
+
+800
+00:33:36,559 --> 00:33:42,159
+machine keep running keeps running
+
+801
+00:33:39,279 --> 00:33:44,960
+and never accept
+
+802
+00:33:42,159 --> 00:33:46,880
+you know have no answer for you
+
+803
+00:33:44,960 --> 00:33:49,440
+that's why
+
+804
+00:33:46,880 --> 00:33:53,039
+we need to
+
+805
+00:33:49,440 --> 00:33:54,960
+more precisely to describe the situation
+
+806
+00:33:53,039 --> 00:33:58,000
+here so
+
+807
+00:33:54,960 --> 00:33:59,679
+we firstly follow we firstly follow the
+
+808
+00:33:58,000 --> 00:34:01,519
+definition that
+
+809
+00:33:59,679 --> 00:34:04,960
+let's say
+
+810
+00:34:01,519 --> 00:34:07,200
+the collections of strings that's
+
+811
+00:34:04,960 --> 00:34:10,720
+turing machine accept
+
+812
+00:34:07,200 --> 00:34:15,119
+is the language of the machine m
+
+813
+00:34:10,720 --> 00:34:16,800
+or the language recognized by m denoted
+
+814
+00:34:15,119 --> 00:34:20,000
+l of m
+
+815
+00:34:16,800 --> 00:34:25,440
+okay so you can see that the definition
+
+816
+00:34:20,000 --> 00:34:27,359
+is exactly the same as we have for
+
+817
+00:34:25,440 --> 00:34:29,520
+final automata and the push down
+
+818
+00:34:27,359 --> 00:34:30,399
+automata
+
+819
+00:34:29,520 --> 00:34:33,359
+okay
+
+820
+00:34:30,399 --> 00:34:36,560
+so the language of some machine
+
+821
+00:34:33,359 --> 00:34:37,919
+is still the collection of strings that
+
+822
+00:34:36,560 --> 00:34:39,760
+machine
+
+823
+00:34:37,919 --> 00:34:42,800
+accepts
+
+824
+00:34:39,760 --> 00:34:42,800
+okay accept
+
+825
+00:34:43,520 --> 00:34:48,480
+then
+
+826
+00:34:44,800 --> 00:34:50,000
+if you can find a turing machine
+
+827
+00:34:48,480 --> 00:34:52,399
+recognize
+
+828
+00:34:50,000 --> 00:34:54,000
+some language
+
+829
+00:34:52,399 --> 00:34:55,119
+we call
+
+830
+00:34:54,000 --> 00:34:57,200
+that
+
+831
+00:34:55,119 --> 00:35:00,079
+turin recognizable
+
+832
+00:34:57,200 --> 00:35:03,760
+we call that language tune recognizable
+
+833
+00:35:00,079 --> 00:35:05,359
+okay so for this definition you can see
+
+834
+00:35:03,760 --> 00:35:08,720
+we defined that
+
+835
+00:35:05,359 --> 00:35:10,880
+if you can find some finite recognize
+
+836
+00:35:08,720 --> 00:35:12,160
+some language then we call that language
+
+837
+00:35:10,880 --> 00:35:14,240
+what
+
+838
+00:35:12,160 --> 00:35:18,000
+regular language
+
+839
+00:35:14,240 --> 00:35:21,119
+and for pda we call that context free
+
+840
+00:35:18,000 --> 00:35:22,800
+language of course we use that for
+
+841
+00:35:21,119 --> 00:35:25,599
+we we have to prove the equivalence
+
+842
+00:35:22,800 --> 00:35:27,920
+between context-free grammar and the pda
+
+843
+00:35:25,599 --> 00:35:31,040
+then we can do that but
+
+844
+00:35:27,920 --> 00:35:32,960
+it's quite straightforward to see
+
+845
+00:35:31,040 --> 00:35:36,240
+the
+
+846
+00:35:32,960 --> 00:35:37,839
+resemblance of the of these definitions
+
+847
+00:35:36,240 --> 00:35:39,200
+right
+
+848
+00:35:37,839 --> 00:35:41,520
+so
+
+849
+00:35:39,200 --> 00:35:44,720
+following the same definition
+
+850
+00:35:41,520 --> 00:35:46,160
+if there is a machine
+
+851
+00:35:44,720 --> 00:35:50,640
+and
+
+852
+00:35:46,160 --> 00:35:50,640
+l of m denotes the set
+
+853
+00:35:51,280 --> 00:35:54,000
+which said
+
+854
+00:35:54,560 --> 00:36:03,040
+the collection of strings that m accept
+
+855
+00:36:00,000 --> 00:36:05,520
+accept okay accept
+
+856
+00:36:03,040 --> 00:36:07,520
+so that's
+
+857
+00:36:05,520 --> 00:36:10,400
+accepts and we say that machine m
+
+858
+00:36:07,520 --> 00:36:12,160
+recognized this language and
+
+859
+00:36:10,400 --> 00:36:14,720
+any language recognized by turing
+
+860
+00:36:12,160 --> 00:36:16,800
+machine we say that the language is
+
+861
+00:36:14,720 --> 00:36:19,839
+tubulin recognizable
+
+862
+00:36:16,800 --> 00:36:22,560
+okay and for some ancient
+
+863
+00:36:19,839 --> 00:36:25,240
+pretty old
+
+864
+00:36:22,560 --> 00:36:28,400
+terminology we also call it
+
+865
+00:36:25,240 --> 00:36:31,359
+recursively innumerable
+
+866
+00:36:28,400 --> 00:36:34,000
+innumerable language sometimes you can
+
+867
+00:36:31,359 --> 00:36:35,599
+see r dot e dot
+
+868
+00:36:34,000 --> 00:36:37,599
+or r e
+
+869
+00:36:35,599 --> 00:36:40,640
+in other textbooks not a regular
+
+870
+00:36:37,599 --> 00:36:42,800
+language but recursively in your
+
+871
+00:36:40,640 --> 00:36:45,119
+innumerable language
+
+872
+00:36:42,800 --> 00:36:45,119
+right
+
+873
+00:36:45,760 --> 00:36:50,240
+and we just said that we just described
+
+874
+00:36:47,920 --> 00:36:54,480
+that for two machines there are actually
+
+875
+00:36:50,240 --> 00:36:55,920
+another situation that for a string
+
+876
+00:36:54,480 --> 00:36:57,359
+the machine
+
+877
+00:36:55,920 --> 00:37:00,800
+does not
+
+878
+00:36:57,359 --> 00:37:00,800
+reject that string
+
+879
+00:37:01,040 --> 00:37:07,200
+but the machine keep running and without
+
+880
+00:37:03,920 --> 00:37:10,000
+giving give give you any answers
+
+881
+00:37:07,200 --> 00:37:12,240
+you can consider the machine
+
+882
+00:37:10,000 --> 00:37:13,520
+as in an infinite loop or stuff like
+
+883
+00:37:12,240 --> 00:37:15,359
+that
+
+884
+00:37:13,520 --> 00:37:19,920
+and in that case
+
+885
+00:37:15,359 --> 00:37:23,079
+we have an other definition for
+
+886
+00:37:19,920 --> 00:37:23,079
+a more
+
+887
+00:37:26,000 --> 00:37:33,760
+for our concept it's more uh
+
+888
+00:37:29,680 --> 00:37:33,760
+restricted definition that
+
+889
+00:37:34,079 --> 00:37:42,640
+let's use the example
+
+890
+00:37:38,880 --> 00:37:44,240
+for alphabet it's all possible strings
+
+891
+00:37:42,640 --> 00:37:47,200
+sigma star right
+
+892
+00:37:44,240 --> 00:37:47,200
+and let's say
+
+893
+00:37:47,920 --> 00:37:52,800
+for the
+
+894
+00:37:49,440 --> 00:37:53,839
+give you a if there's a machine here
+
+895
+00:37:52,800 --> 00:37:56,960
+and then
+
+896
+00:37:53,839 --> 00:38:01,920
+the language accepted by this machine we
+
+897
+00:37:56,960 --> 00:38:04,079
+call fm and if a language can be found
+
+898
+00:38:01,920 --> 00:38:06,960
+recognized recognized by some two
+
+899
+00:38:04,079 --> 00:38:09,119
+machine we call alpha m2 recognizable
+
+900
+00:38:06,960 --> 00:38:11,200
+that's no problem here
+
+901
+00:38:09,119 --> 00:38:14,320
+the problem we want to
+
+902
+00:38:11,200 --> 00:38:16,480
+describe more precisely here is that for
+
+903
+00:38:14,320 --> 00:38:18,640
+strings outside of
+
+904
+00:38:16,480 --> 00:38:22,160
+l of m all right
+
+905
+00:38:18,640 --> 00:38:25,040
+for strings outside of l of m
+
+906
+00:38:22,160 --> 00:38:26,960
+for example this string
+
+907
+00:38:25,040 --> 00:38:28,960
+if you give m
+
+908
+00:38:26,960 --> 00:38:30,000
+you make n process it
+
+909
+00:38:28,960 --> 00:38:34,400
+and
+
+910
+00:38:30,000 --> 00:38:34,400
+it is possible that m rejected
+
+911
+00:38:34,560 --> 00:38:37,680
+okay that's possible
+
+912
+00:38:38,320 --> 00:38:45,359
+and also possible that n gives no answer
+
+913
+00:38:42,880 --> 00:38:48,160
+just keep looping and
+
+914
+00:38:45,359 --> 00:38:49,359
+no answer forever
+
+915
+00:38:48,160 --> 00:38:53,359
+so
+
+916
+00:38:49,359 --> 00:38:55,680
+for the string outside of
+
+917
+00:38:53,359 --> 00:38:57,520
+l of m
+
+918
+00:38:55,680 --> 00:39:01,839
+for turing machine there
+
+919
+00:38:57,520 --> 00:39:01,839
+are possibly two results
+
+920
+00:39:02,400 --> 00:39:08,079
+so here we give a more restricted
+
+921
+00:39:05,520 --> 00:39:10,640
+different definition that
+
+922
+00:39:08,079 --> 00:39:15,560
+if the language here
+
+923
+00:39:10,640 --> 00:39:15,560
+or if the turing machine you have
+
+924
+00:39:16,720 --> 00:39:22,960
+can accept all the string it accept
+
+925
+00:39:22,000 --> 00:39:24,480
+and
+
+926
+00:39:22,960 --> 00:39:28,480
+reject
+
+927
+00:39:24,480 --> 00:39:29,520
+all the string not in l of m
+
+928
+00:39:28,480 --> 00:39:32,400
+that means
+
+929
+00:39:29,520 --> 00:39:34,320
+for the for all the string outside of
+
+930
+00:39:32,400 --> 00:39:35,119
+error of m
+
+931
+00:39:34,320 --> 00:39:37,359
+and
+
+932
+00:39:35,119 --> 00:39:40,480
+reject
+
+933
+00:39:37,359 --> 00:39:43,200
+there is no if there is no
+
+934
+00:39:40,480 --> 00:39:44,079
+infinite loop situation here we call
+
+935
+00:39:43,200 --> 00:39:47,440
+that
+
+936
+00:39:44,079 --> 00:39:51,119
+the language is turing decidable or
+
+937
+00:39:47,440 --> 00:39:54,640
+simply decidable
+
+938
+00:39:51,119 --> 00:39:57,680
+and we call this action decide
+
+939
+00:39:54,640 --> 00:40:00,400
+okay decide
+
+940
+00:39:57,680 --> 00:40:00,400
+so again
+
+941
+00:40:00,960 --> 00:40:03,520
+if
+
+942
+00:40:01,839 --> 00:40:05,520
+there is a language
+
+943
+00:40:03,520 --> 00:40:07,440
+and you can find a tool machine to
+
+944
+00:40:05,520 --> 00:40:10,760
+recognize it
+
+945
+00:40:07,440 --> 00:40:10,760
+that means
+
+946
+00:40:10,800 --> 00:40:16,640
+lateral machine can accept
+
+947
+00:40:13,599 --> 00:40:18,960
+all the strings in that language
+
+948
+00:40:16,640 --> 00:40:18,960
+okay
+
+949
+00:40:19,280 --> 00:40:24,720
+and such a definition is identical to
+
+950
+00:40:22,240 --> 00:40:27,440
+those we have for
+
+951
+00:40:24,720 --> 00:40:30,079
+final automata and the pdas or yeah
+
+952
+00:40:27,440 --> 00:40:31,920
+context-free languages
+
+953
+00:40:30,079 --> 00:40:34,160
+we use recognize
+
+954
+00:40:31,920 --> 00:40:36,640
+for that purpose
+
+955
+00:40:34,160 --> 00:40:38,400
+but for two machines there are
+
+956
+00:40:36,640 --> 00:40:39,839
+slightly more
+
+957
+00:40:38,400 --> 00:40:43,520
+complicated
+
+958
+00:40:39,839 --> 00:40:44,640
+because for the you see for pdas or dfas
+
+959
+00:40:43,520 --> 00:40:48,319
+nfas
+
+960
+00:40:44,640 --> 00:40:51,520
+the string outside of l of n
+
+961
+00:40:48,319 --> 00:40:53,359
+those machine eventually stops and
+
+962
+00:40:51,520 --> 00:40:56,240
+always stops and
+
+963
+00:40:53,359 --> 00:40:57,599
+you know it's not accepted it does not
+
+964
+00:40:56,240 --> 00:41:00,079
+accept the string
+
+965
+00:40:57,599 --> 00:41:00,960
+means it rejects the string but for tool
+
+966
+00:41:00,079 --> 00:41:03,599
+machine
+
+967
+00:41:00,960 --> 00:41:07,280
+there is a possibility that the machine
+
+968
+00:41:03,599 --> 00:41:09,599
+goes into an infinite loop
+
+969
+00:41:07,280 --> 00:41:10,560
+and without giving answers
+
+970
+00:41:09,599 --> 00:41:12,000
+okay
+
+971
+00:41:10,560 --> 00:41:16,560
+so we
+
+972
+00:41:12,000 --> 00:41:19,839
+have one more definition for that uh to
+
+973
+00:41:16,560 --> 00:41:22,720
+describe a language more precisely that
+
+974
+00:41:19,839 --> 00:41:25,680
+we say that a language is turin
+
+975
+00:41:22,720 --> 00:41:28,160
+decidable or simply decidable
+
+976
+00:41:25,680 --> 00:41:31,359
+if we found we can we know some tuning
+
+977
+00:41:28,160 --> 00:41:33,440
+machine decides the language what means
+
+978
+00:41:31,359 --> 00:41:36,240
+decides the language
+
+979
+00:41:33,440 --> 00:41:38,720
+besides the language means the machine
+
+980
+00:41:36,240 --> 00:41:40,319
+will accept all the string in the
+
+981
+00:41:38,720 --> 00:41:41,599
+language
+
+982
+00:41:40,319 --> 00:41:42,720
+and
+
+983
+00:41:41,599 --> 00:41:47,119
+reject
+
+984
+00:41:42,720 --> 00:41:49,920
+all the strings outside of the language
+
+985
+00:41:47,119 --> 00:41:51,440
+for all possible strings for all
+
+986
+00:41:49,920 --> 00:41:54,240
+possible strings
+
+987
+00:41:51,440 --> 00:41:55,520
+there is no string
+
+988
+00:41:54,240 --> 00:41:57,920
+given
+
+989
+00:41:55,520 --> 00:42:00,160
+uh feeding into the machine and that you
+
+990
+00:41:57,920 --> 00:42:03,280
+don't get answer you don't get either
+
+991
+00:42:00,160 --> 00:42:06,160
+reject or accept there's no such string
+
+992
+00:42:03,280 --> 00:42:08,000
+okay so you can think of that if a
+
+993
+00:42:06,160 --> 00:42:10,480
+machine always
+
+994
+00:42:08,000 --> 00:42:11,680
+stops and give you
+
+995
+00:42:10,480 --> 00:42:15,599
+yes
+
+996
+00:42:11,680 --> 00:42:19,280
+we accept or no reject answer
+
+997
+00:42:15,599 --> 00:42:20,640
+then we say that the machine decides
+
+998
+00:42:19,280 --> 00:42:22,640
+that language
+
+999
+00:42:20,640 --> 00:42:25,560
+and if the machine is a tool machine we
+
+1000
+00:42:22,640 --> 00:42:28,560
+say that that language is a
+
+1001
+00:42:25,560 --> 00:42:33,200
+turin-decidable language or simply that
+
+1002
+00:42:28,560 --> 00:42:33,200
+language is a decidable language
+
+1003
+00:42:33,839 --> 00:42:40,240
+okay
+
+1004
+00:42:36,079 --> 00:42:42,560
+so again recognize recognize means
+
+1005
+00:42:40,240 --> 00:42:44,880
+a machine recognizer language means for
+
+1006
+00:42:42,560 --> 00:42:46,079
+that language every string in that
+
+1007
+00:42:44,880 --> 00:42:48,400
+language
+
+1008
+00:42:46,079 --> 00:42:50,960
+will be accepted by the machine every
+
+1009
+00:42:48,400 --> 00:42:53,040
+string in that language well
+
+1010
+00:42:50,960 --> 00:42:54,079
+not accepted by that
+
+1011
+00:42:53,040 --> 00:42:55,520
+machine
+
+1012
+00:42:54,079 --> 00:42:58,560
+and again
+
+1013
+00:42:55,520 --> 00:43:01,119
+there's no problem for pda and the dfa
+
+1014
+00:42:58,560 --> 00:43:02,800
+because they always stop and if they
+
+1015
+00:43:01,119 --> 00:43:05,200
+don't accept the string you can consider
+
+1016
+00:43:02,800 --> 00:43:08,160
+they reject that string so there's no
+
+1017
+00:43:05,200 --> 00:43:10,960
+problem for those two types of of
+
+1018
+00:43:08,160 --> 00:43:13,920
+machines but for two machine there's a
+
+1019
+00:43:10,960 --> 00:43:16,720
+slightly diff it's slightly different
+
+1020
+00:43:13,920 --> 00:43:18,400
+because for two machine it is par it is
+
+1021
+00:43:16,720 --> 00:43:21,760
+possible for
+
+1022
+00:43:18,400 --> 00:43:25,280
+uh the machine goes into a you know
+
+1023
+00:43:21,760 --> 00:43:27,839
+infinite loop if we consider it that way
+
+1024
+00:43:25,280 --> 00:43:30,160
+and
+
+1025
+00:43:27,839 --> 00:43:30,960
+that's why we need
+
+1026
+00:43:30,160 --> 00:43:33,440
+a
+
+1027
+00:43:30,960 --> 00:43:37,280
+more restricted definition
+
+1028
+00:43:33,440 --> 00:43:37,280
+to clearly separate
+
+1029
+00:43:37,520 --> 00:43:40,720
+recognize
+
+1030
+00:43:38,800 --> 00:43:44,000
+and decides
+
+1031
+00:43:40,720 --> 00:43:44,800
+okay so design means that every string
+
+1032
+00:43:44,000 --> 00:43:45,839
+not
+
+1033
+00:43:44,800 --> 00:43:46,880
+in
+
+1034
+00:43:45,839 --> 00:43:48,880
+the
+
+1035
+00:43:46,880 --> 00:43:51,200
+language will be rejected
+
+1036
+00:43:48,880 --> 00:43:53,200
+but recognize
+
+1037
+00:43:51,200 --> 00:43:55,280
+it's not necessary that
+
+1038
+00:43:53,200 --> 00:43:57,920
+if you give the machine
+
+1039
+00:43:55,280 --> 00:43:59,280
+a string in a language you will get
+
+1040
+00:43:57,920 --> 00:44:00,480
+accept
+
+1041
+00:43:59,280 --> 00:44:03,280
+accepted
+
+1042
+00:44:00,480 --> 00:44:06,800
+if you give the machine a string outside
+
+1043
+00:44:03,280 --> 00:44:07,680
+of the language you either get rejected
+
+1044
+00:44:06,800 --> 00:44:10,000
+or
+
+1045
+00:44:07,680 --> 00:44:11,280
+you will have no answer and the machine
+
+1046
+00:44:10,000 --> 00:44:14,560
+will never
+
+1047
+00:44:11,280 --> 00:44:15,680
+give you answer
+
+1048
+00:44:14,560 --> 00:44:17,599
+okay
+
+1049
+00:44:15,680 --> 00:44:19,920
+so that's the
+
+1050
+00:44:17,599 --> 00:44:20,839
+uh that's different for the case of
+
+1051
+00:44:19,920 --> 00:44:24,079
+turing
+
+1052
+00:44:20,839 --> 00:44:27,599
+machine and
+
+1053
+00:44:24,079 --> 00:44:30,720
+for also an ancient terminology
+
+1054
+00:44:27,599 --> 00:44:32,480
+for decidable languages
+
+1055
+00:44:30,720 --> 00:44:35,359
+and
+
+1056
+00:44:32,480 --> 00:44:37,520
+it was called it was called
+
+1057
+00:44:35,359 --> 00:44:40,319
+recursive language
+
+1058
+00:44:37,520 --> 00:44:41,839
+okay recursive language because there
+
+1059
+00:44:40,319 --> 00:44:43,599
+was a time
+
+1060
+00:44:41,839 --> 00:44:46,319
+mathematicians use
+
+1061
+00:44:43,599 --> 00:44:48,319
+recursive recursion to consider
+
+1062
+00:44:46,319 --> 00:44:50,720
+computation so
+
+1063
+00:44:48,319 --> 00:44:52,960
+they already identified similar
+
+1064
+00:44:50,720 --> 00:44:55,599
+uh set
+
+1065
+00:44:52,960 --> 00:44:56,560
+as we well introduced and they use
+
+1066
+00:44:55,599 --> 00:44:59,119
+different
+
+1067
+00:44:56,560 --> 00:45:00,079
+terminology terminologies for that
+
+1068
+00:44:59,119 --> 00:45:02,960
+because
+
+1069
+00:45:00,079 --> 00:45:04,319
+they are originated from different
+
+1070
+00:45:02,960 --> 00:45:06,480
+you know
+
+1071
+00:45:04,319 --> 00:45:08,880
+thinkings and the concepts
+
+1072
+00:45:06,480 --> 00:45:11,040
+so sometimes
+
+1073
+00:45:08,880 --> 00:45:14,880
+you will see recursive language that
+
+1074
+00:45:11,040 --> 00:45:16,800
+means decidable or too indecidable
+
+1075
+00:45:14,880 --> 00:45:20,800
+and you will find the tune machine
+
+1076
+00:45:16,800 --> 00:45:22,560
+decides besides that language
+
+1077
+00:45:20,800 --> 00:45:23,440
+okay
+
+1078
+00:45:22,560 --> 00:45:28,000
+so
+
+1079
+00:45:23,440 --> 00:45:29,680
+let's go back to the example so actually
+
+1080
+00:45:28,000 --> 00:45:30,839
+this language
+
+1081
+00:45:29,680 --> 00:45:32,640
+this
+
+1082
+00:45:30,839 --> 00:45:35,440
+language
+
+1083
+00:45:32,640 --> 00:45:38,319
+can be easily decidable right because
+
+1084
+00:45:35,440 --> 00:45:40,079
+you can write a machine to you know just
+
+1085
+00:45:38,319 --> 00:45:43,119
+check if not
+
+1086
+00:45:40,079 --> 00:45:46,560
+if the string pass the check then
+
+1087
+00:45:43,119 --> 00:45:49,040
+accept otherwise reject so that's why
+
+1088
+00:45:46,560 --> 00:45:52,160
+the example described
+
+1089
+00:45:49,040 --> 00:45:54,160
+we can have a two machine for deciding
+
+1090
+00:45:52,160 --> 00:45:55,119
+the language okay
+
+1091
+00:45:54,160 --> 00:45:58,800
+although
+
+1092
+00:45:55,119 --> 00:46:01,200
+the partial machine displayed here
+
+1093
+00:45:58,800 --> 00:46:04,160
+is not a decider
+
+1094
+00:46:01,200 --> 00:46:08,160
+it this machine partial machine
+
+1095
+00:46:04,160 --> 00:46:10,720
+is only a recognizer okay it can accept
+
+1096
+00:46:08,160 --> 00:46:12,880
+all strings
+
+1097
+00:46:10,720 --> 00:46:15,839
+in
+
+1098
+00:46:12,880 --> 00:46:15,839
+this language
+
+1099
+00:46:16,480 --> 00:46:20,400
+it can accept
+
+1100
+00:46:18,480 --> 00:46:23,200
+i shouldn't say
+
+1101
+00:46:20,400 --> 00:46:27,599
+all string in this language
+
+1102
+00:46:23,200 --> 00:46:29,040
+but it will not reject any string
+
+1103
+00:46:27,599 --> 00:46:31,599
+and also
+
+1104
+00:46:29,040 --> 00:46:35,599
+that this partial machine has no uh
+
+1105
+00:46:31,599 --> 00:46:37,920
+reject state it will never enter reject
+
+1106
+00:46:35,599 --> 00:46:40,880
+so you must con we must consider by
+
+1107
+00:46:37,920 --> 00:46:45,359
+definition the machine is always
+
+1108
+00:46:40,880 --> 00:46:46,960
+running and without giving any
+
+1109
+00:46:45,359 --> 00:46:50,319
+answers
+
+1110
+00:46:46,960 --> 00:46:52,960
+it's quite easy to imagine for
+
+1111
+00:46:50,319 --> 00:46:54,319
+you know using our common regular
+
+1112
+00:46:52,960 --> 00:46:56,720
+computer
+
+1113
+00:46:54,319 --> 00:46:58,319
+there are times that you don't know if
+
+1114
+00:46:56,720 --> 00:47:01,520
+the app
+
+1115
+00:46:58,319 --> 00:47:03,920
+is still calculating doing computation
+
+1116
+00:47:01,520 --> 00:47:05,520
+or just you know going somewhere you
+
+1117
+00:47:03,920 --> 00:47:06,720
+don't know and you will never have
+
+1118
+00:47:05,520 --> 00:47:09,359
+answers
+
+1119
+00:47:06,720 --> 00:47:10,800
+but you have no way to
+
+1120
+00:47:09,359 --> 00:47:13,520
+determine
+
+1121
+00:47:10,800 --> 00:47:14,319
+which situation it is something like
+
+1122
+00:47:13,520 --> 00:47:16,560
+that
+
+1123
+00:47:14,319 --> 00:47:18,880
+anyway so
+
+1124
+00:47:16,560 --> 00:47:21,119
+this partial machine is merely a
+
+1125
+00:47:18,880 --> 00:47:24,160
+recognizer because any string in that
+
+1126
+00:47:21,119 --> 00:47:25,920
+language can be accepted and any string
+
+1127
+00:47:24,160 --> 00:47:27,520
+not in that language will not be
+
+1128
+00:47:25,920 --> 00:47:31,359
+accepted
+
+1129
+00:47:27,520 --> 00:47:35,040
+and will not be rejected so
+
+1130
+00:47:31,359 --> 00:47:35,040
+then for this example
+
+1131
+00:47:35,440 --> 00:47:40,559
+we also describe that machine m2 decides
+
+1132
+00:47:39,760 --> 00:47:42,160
+see
+
+1133
+00:47:40,559 --> 00:47:45,520
+that's where
+
+1134
+00:47:42,160 --> 00:47:46,559
+decides the the verb decides has been
+
+1135
+00:47:45,520 --> 00:47:48,160
+used
+
+1136
+00:47:46,559 --> 00:47:50,480
+besides a
+
+1137
+00:47:48,160 --> 00:47:52,720
+the language here
+
+1138
+00:47:50,480 --> 00:47:53,520
+because any string
+
+1139
+00:47:52,720 --> 00:47:55,520
+in
+
+1140
+00:47:53,520 --> 00:47:57,040
+0 star
+
+1141
+00:47:55,520 --> 00:47:59,599
+right because
+
+1142
+00:47:57,040 --> 00:48:01,359
+a is a substring of
+
+1143
+00:47:59,599 --> 00:48:02,319
+0 star
+
+1144
+00:48:01,359 --> 00:48:06,920
+right
+
+1145
+00:48:02,319 --> 00:48:06,920
+and any string in 0 star
+
+1146
+00:48:08,319 --> 00:48:12,240
+processed by this machine
+
+1147
+00:48:10,880 --> 00:48:13,520
+you will get
+
+1148
+00:48:12,240 --> 00:48:15,839
+like
+
+1149
+00:48:13,520 --> 00:48:17,200
+reject right we have we have already
+
+1150
+00:48:15,839 --> 00:48:22,319
+described that
+
+1151
+00:48:17,200 --> 00:48:24,880
+and 1 0 accept 2 0 accept 3d row
+
+1152
+00:48:22,319 --> 00:48:26,079
+reject 4 0
+
+1153
+00:48:24,880 --> 00:48:28,640
+accept
+
+1154
+00:48:26,079 --> 00:48:30,480
+and so on
+
+1155
+00:48:28,640 --> 00:48:32,880
+of course we are not trying to prove
+
+1156
+00:48:30,480 --> 00:48:35,680
+that the machine decides that language
+
+1157
+00:48:32,880 --> 00:48:38,160
+but at least we have traced the machine
+
+1158
+00:48:35,680 --> 00:48:41,119
+for these cases right
+
+1159
+00:48:38,160 --> 00:48:43,760
+so you know that for every
+
+1160
+00:48:41,119 --> 00:48:46,559
+string this machine will give a give an
+
+1161
+00:48:43,760 --> 00:48:47,680
+answer either reject or
+
+1162
+00:48:46,559 --> 00:48:50,079
+accept
+
+1163
+00:48:47,680 --> 00:48:54,160
+so that's why
+
+1164
+00:48:50,079 --> 00:48:56,960
+we describe that machine m2 besides
+
+1165
+00:48:54,160 --> 00:49:00,480
+a instead of recognize a
+
+1166
+00:48:56,960 --> 00:49:00,480
+okay instead of recognizing
+
+1167
+00:49:00,839 --> 00:49:07,920
+and also by the definition here
+
+1168
+00:49:05,200 --> 00:49:09,839
+let's say tune recognizable and
+
+1169
+00:49:07,920 --> 00:49:11,920
+decidable
+
+1170
+00:49:09,839 --> 00:49:14,160
+what is recognizable let's say a
+
+1171
+00:49:11,920 --> 00:49:16,800
+language you can find a recognizer to
+
+1172
+00:49:14,160 --> 00:49:18,400
+your machine recognizer right and the
+
+1173
+00:49:16,800 --> 00:49:21,119
+decidable is that
+
+1174
+00:49:18,400 --> 00:49:22,559
+a language you can find a tuning machine
+
+1175
+00:49:21,119 --> 00:49:25,599
+as a decider
+
+1176
+00:49:22,559 --> 00:49:27,760
+and by definition you'll know that
+
+1177
+00:49:25,599 --> 00:49:30,800
+decider has
+
+1178
+00:49:27,760 --> 00:49:33,040
+we have one more criteria criteria for
+
+1179
+00:49:30,800 --> 00:49:35,359
+decider
+
+1180
+00:49:33,040 --> 00:49:35,359
+right
+
+1181
+00:49:35,440 --> 00:49:40,480
+decider have to reject strings outside
+
+1182
+00:49:38,240 --> 00:49:42,079
+the language
+
+1183
+00:49:40,480 --> 00:49:44,640
+so by the
+
+1184
+00:49:42,079 --> 00:49:46,160
+way we define the whole thing we know
+
+1185
+00:49:44,640 --> 00:49:49,520
+that
+
+1186
+00:49:46,160 --> 00:49:52,079
+decidable language let's say decidable
+
+1187
+00:49:49,520 --> 00:49:55,440
+languages that is
+
+1188
+00:49:52,079 --> 00:49:59,520
+all the language in decidable language
+
+1189
+00:49:55,440 --> 00:50:01,440
+uh this this class you can find too
+
+1190
+00:49:59,520 --> 00:50:03,359
+machine to decide it
+
+1191
+00:50:01,440 --> 00:50:07,599
+and a
+
+1192
+00:50:03,359 --> 00:50:09,760
+language is decidable it is recognizable
+
+1193
+00:50:07,599 --> 00:50:12,800
+right because you can discard the
+
+1194
+00:50:09,760 --> 00:50:15,599
+answers from the reject part and that
+
+1195
+00:50:12,800 --> 00:50:17,040
+machine is automatically by definition a
+
+1196
+00:50:15,599 --> 00:50:18,640
+recognizer
+
+1197
+00:50:17,040 --> 00:50:22,319
+so
+
+1198
+00:50:18,640 --> 00:50:24,480
+decidable must be a subset of
+
+1199
+00:50:22,319 --> 00:50:28,960
+recognizable
+
+1200
+00:50:24,480 --> 00:50:28,960
+so there are two possibilities for
+
+1201
+00:50:29,119 --> 00:50:32,640
+the two class
+
+1202
+00:50:31,119 --> 00:50:34,079
+one is that
+
+1203
+00:50:32,640 --> 00:50:37,200
+decidable
+
+1204
+00:50:34,079 --> 00:50:40,319
+and recognizable
+
+1205
+00:50:37,200 --> 00:50:42,800
+is the same class
+
+1206
+00:50:40,319 --> 00:50:44,160
+and the other is that
+
+1207
+00:50:42,800 --> 00:50:47,800
+decidable
+
+1208
+00:50:44,160 --> 00:50:47,800
+and recognizable
+
+1209
+00:50:47,920 --> 00:50:52,720
+are
+
+1210
+00:50:49,440 --> 00:50:55,280
+like this decidable is a proper subset
+
+1211
+00:50:52,720 --> 00:50:57,280
+of the site are recognizable
+
+1212
+00:50:55,280 --> 00:50:58,400
+in this case in the
+
+1213
+00:50:57,280 --> 00:51:00,559
+right
+
+1214
+00:50:58,400 --> 00:51:03,839
+the in the case of on the right hand
+
+1215
+00:51:00,559 --> 00:51:06,640
+side there must be some languages
+
+1216
+00:51:03,839 --> 00:51:09,520
+here right so that's
+
+1217
+00:51:06,640 --> 00:51:10,480
+so so that decidable
+
+1218
+00:51:09,520 --> 00:51:12,559
+is
+
+1219
+00:51:10,480 --> 00:51:14,720
+a proper subset of recognizable
+
+1220
+00:51:12,559 --> 00:51:16,079
+otherwise it should be the same
+
+1221
+00:51:14,720 --> 00:51:16,960
+okay
+
+1222
+00:51:16,079 --> 00:51:22,000
+so
+
+1223
+00:51:16,960 --> 00:51:25,359
+later we will try to know which one
+
+1224
+00:51:22,000 --> 00:51:26,960
+is the uh is what we encountered
+
+1225
+00:51:25,359 --> 00:51:28,800
+so uh
+
+1226
+00:51:26,960 --> 00:51:31,200
+that uh that's the
+
+1227
+00:51:28,800 --> 00:51:34,800
+from the definition we know
+
+1228
+00:51:31,200 --> 00:51:37,599
+either this one or this one
+
+1229
+00:51:34,800 --> 00:51:37,599
+okay
+

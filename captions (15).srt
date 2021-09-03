@@ -1,0 +1,5940 @@
+1
+00:00:03,919 --> 00:00:08,240
+in order to
+
+2
+00:00:06,160 --> 00:00:10,639
+prove the equivalence between
+
+3
+00:00:08,240 --> 00:00:12,240
+context-free grammars and
+
+4
+00:00:10,639 --> 00:00:14,240
+push down automata
+
+5
+00:00:12,240 --> 00:00:17,279
+we need to prove that
+
+6
+00:00:14,240 --> 00:00:20,240
+a language is context-free if and only
+
+7
+00:00:17,279 --> 00:00:22,080
+if some push-down automata recognize it
+
+8
+00:00:20,240 --> 00:00:24,000
+and
+
+9
+00:00:22,080 --> 00:00:27,119
+for this direction
+
+10
+00:00:24,000 --> 00:00:29,359
+if a language is context-free
+
+11
+00:00:27,119 --> 00:00:32,160
+we can
+
+12
+00:00:29,359 --> 00:00:34,239
+uh construct
+
+13
+00:00:32,160 --> 00:00:36,480
+a push down automaton
+
+14
+00:00:34,239 --> 00:00:39,600
+according to the given contextual
+
+15
+00:00:36,480 --> 00:00:42,079
+grammar because a language is context
+
+16
+00:00:39,600 --> 00:00:44,399
+free by definition
+
+17
+00:00:42,079 --> 00:00:47,120
+there is a language l
+
+18
+00:00:44,399 --> 00:00:49,280
+there is a context free grammar
+
+19
+00:00:47,120 --> 00:00:49,280
+g
+
+20
+00:00:49,360 --> 00:00:52,800
+which language of which the language is
+
+21
+00:00:52,079 --> 00:00:55,680
+l
+
+22
+00:00:52,800 --> 00:00:57,520
+then we use g
+
+23
+00:00:55,680 --> 00:00:59,840
+to build
+
+24
+00:00:57,520 --> 00:01:01,840
+a push-down automata p
+
+25
+00:00:59,840 --> 00:01:02,879
+such that p
+
+26
+00:01:01,840 --> 00:01:03,760
+is
+
+27
+00:01:02,879 --> 00:01:05,199
+l
+
+28
+00:01:03,760 --> 00:01:08,240
+so that
+
+29
+00:01:05,199 --> 00:01:13,200
+uh that's what we have proven
+
+30
+00:01:08,240 --> 00:01:15,759
+uh the such a pda can be well basically
+
+31
+00:01:13,200 --> 00:01:19,920
+easily constructed
+
+32
+00:01:15,759 --> 00:01:23,600
+by using the given context free grammar
+
+33
+00:01:19,920 --> 00:01:25,520
+and then now we want to prove the other
+
+34
+00:01:23,600 --> 00:01:26,720
+way that
+
+35
+00:01:25,520 --> 00:01:29,920
+given
+
+36
+00:01:26,720 --> 00:01:29,920
+a push down automata
+
+37
+00:01:30,880 --> 00:01:34,320
+given a pushdown automata
+
+38
+00:01:35,040 --> 00:01:39,840
+the language
+
+39
+00:01:36,960 --> 00:01:41,200
+recognized by that automata we want to
+
+40
+00:01:39,840 --> 00:01:43,759
+prove that
+
+41
+00:01:41,200 --> 00:01:46,320
+that language is contextual
+
+42
+00:01:43,759 --> 00:01:48,159
+okay so that's the other direction
+
+43
+00:01:46,320 --> 00:01:49,119
+for
+
+44
+00:01:48,159 --> 00:01:51,520
+uh
+
+45
+00:01:49,119 --> 00:01:53,840
+theorem
+
+46
+00:01:51,520 --> 00:01:56,000
+220
+
+47
+00:01:53,840 --> 00:01:57,680
+so the idea here
+
+48
+00:01:56,000 --> 00:02:00,640
+is uh quite
+
+49
+00:01:57,680 --> 00:02:02,240
+similar to the previous one that given a
+
+50
+00:02:00,640 --> 00:02:04,799
+pda we
+
+51
+00:02:02,240 --> 00:02:07,439
+according to this pda
+
+52
+00:02:04,799 --> 00:02:08,879
+we convert the pda
+
+53
+00:02:07,439 --> 00:02:12,560
+into
+
+54
+00:02:08,879 --> 00:02:14,640
+an equivalent context-free grammar okay
+
+55
+00:02:12,560 --> 00:02:15,680
+and
+
+56
+00:02:14,640 --> 00:02:18,080
+firstly
+
+57
+00:02:15,680 --> 00:02:21,120
+given any pda
+
+58
+00:02:18,080 --> 00:02:24,480
+given any pda
+
+59
+00:02:21,120 --> 00:02:28,080
+we modify the given pda
+
+60
+00:02:24,480 --> 00:02:32,239
+to fit the framework
+
+61
+00:02:28,080 --> 00:02:33,360
+then we can easily do the conversion
+
+62
+00:02:32,239 --> 00:02:34,480
+okay
+
+63
+00:02:33,360 --> 00:02:37,760
+so how
+
+64
+00:02:34,480 --> 00:02:39,200
+do we modify the given any given pda
+
+65
+00:02:37,760 --> 00:02:44,319
+firstly
+
+66
+00:02:39,200 --> 00:02:47,280
+we want to modify a given pda into that
+
+67
+00:02:44,319 --> 00:02:49,440
+the modified pda has
+
+68
+00:02:47,280 --> 00:02:50,800
+a single accept state
+
+69
+00:02:49,440 --> 00:02:54,319
+okay
+
+70
+00:02:50,800 --> 00:02:56,720
+a single accept state because for any
+
+71
+00:02:54,319 --> 00:02:58,400
+given pda there might be
+
+72
+00:02:56,720 --> 00:03:00,959
+well several
+
+73
+00:02:58,400 --> 00:03:02,080
+or a lot of accept states right as long
+
+74
+00:03:00,959 --> 00:03:05,360
+as it's
+
+75
+00:03:02,080 --> 00:03:07,040
+and sub is a subset of the states of
+
+76
+00:03:05,360 --> 00:03:10,000
+that pda
+
+77
+00:03:07,040 --> 00:03:11,200
+and we require that there is only one
+
+78
+00:03:10,000 --> 00:03:14,560
+accept state
+
+79
+00:03:11,200 --> 00:03:16,959
+and such modification is quite easy
+
+80
+00:03:14,560 --> 00:03:20,800
+because our pda
+
+81
+00:03:16,959 --> 00:03:23,120
+is intrinsically non-deterministic right
+
+82
+00:03:20,800 --> 00:03:26,159
+so you just need to
+
+83
+00:03:23,120 --> 00:03:29,040
+for example you have a pda you are given
+
+84
+00:03:26,159 --> 00:03:31,760
+a pda and there is
+
+85
+00:03:29,040 --> 00:03:33,280
+some accept state
+
+86
+00:03:31,760 --> 00:03:36,480
+and then you cut
+
+87
+00:03:33,280 --> 00:03:38,480
+basically copy everything of that pda
+
+88
+00:03:36,480 --> 00:03:41,040
+and add one more
+
+89
+00:03:38,480 --> 00:03:41,840
+state one more new state
+
+90
+00:03:41,040 --> 00:03:46,239
+and
+
+91
+00:03:41,840 --> 00:03:48,720
+make it accept state and cancel all
+
+92
+00:03:46,239 --> 00:03:50,959
+original accept state
+
+93
+00:03:48,720 --> 00:03:52,799
+right and
+
+94
+00:03:50,959 --> 00:03:56,159
+make
+
+95
+00:03:52,799 --> 00:03:57,360
+transition from those states at one
+
+96
+00:03:56,159 --> 00:04:01,680
+epsilon
+
+97
+00:03:57,360 --> 00:04:05,280
+abstrom absorb transition to
+
+98
+00:04:01,680 --> 00:04:06,560
+the new accept state then it's easy to
+
+99
+00:04:05,280 --> 00:04:09,040
+see that
+
+100
+00:04:06,560 --> 00:04:09,040
+if the
+
+101
+00:04:10,799 --> 00:04:15,439
+if the process
+
+102
+00:04:13,120 --> 00:04:17,120
+stop by for example
+
+103
+00:04:15,439 --> 00:04:19,680
+this state
+
+104
+00:04:17,120 --> 00:04:21,120
+then it will go through here
+
+105
+00:04:19,680 --> 00:04:24,639
+so that will make
+
+106
+00:04:21,120 --> 00:04:29,759
+a equivalent make an equivalent
+
+107
+00:04:24,639 --> 00:04:33,120
+pda but with only a single state
+
+108
+00:04:29,759 --> 00:04:35,199
+uh sorry a single accept state okay
+
+109
+00:04:33,120 --> 00:04:37,759
+then
+
+110
+00:04:35,199 --> 00:04:42,080
+we also require that
+
+111
+00:04:37,759 --> 00:04:43,919
+the pda empty its stack before accepting
+
+112
+00:04:42,080 --> 00:04:46,080
+okay
+
+113
+00:04:43,919 --> 00:04:49,680
+so
+
+114
+00:04:46,080 --> 00:04:51,280
+we don't need to let's say
+
+115
+00:04:49,680 --> 00:04:54,320
+how do we do that
+
+116
+00:04:51,280 --> 00:04:54,320
+it's also a
+
+117
+00:04:55,199 --> 00:04:57,280
+known skill
+
+118
+00:04:56,400 --> 00:05:00,080
+used
+
+119
+00:04:57,280 --> 00:05:01,840
+it's already used by the example
+
+120
+00:05:00,080 --> 00:05:03,840
+we introduced
+
+121
+00:05:01,840 --> 00:05:06,320
+firstly we
+
+122
+00:05:03,840 --> 00:05:09,360
+the the given pdf has a
+
+123
+00:05:06,320 --> 00:05:11,199
+star state right and firstly we add one
+
+124
+00:05:09,360 --> 00:05:12,560
+new star state
+
+125
+00:05:11,199 --> 00:05:17,600
+and
+
+126
+00:05:12,560 --> 00:05:21,600
+make it a new the new star state and we
+
+127
+00:05:17,600 --> 00:05:25,840
+add initially some special character
+
+128
+00:05:21,600 --> 00:05:25,840
+onto the stack for example
+
+129
+00:05:25,919 --> 00:05:30,240
+we do let's say dollar sign right assume
+
+130
+00:05:29,360 --> 00:05:32,160
+that
+
+131
+00:05:30,240 --> 00:05:35,680
+dollar sign
+
+132
+00:05:32,160 --> 00:05:38,960
+is not used by the given pda okay assume
+
+133
+00:05:35,680 --> 00:05:41,759
+that dollar sign is a whole new symbol
+
+134
+00:05:38,960 --> 00:05:43,039
+to the whole
+
+135
+00:05:41,759 --> 00:05:44,639
+model here
+
+136
+00:05:43,039 --> 00:05:47,840
+and then
+
+137
+00:05:44,639 --> 00:05:49,600
+we make it we make the pda here
+
+138
+00:05:47,840 --> 00:05:52,880
+only one
+
+139
+00:05:49,600 --> 00:05:55,360
+accepts it but not yet we make it a
+
+140
+00:05:52,880 --> 00:05:57,680
+single uh
+
+141
+00:05:55,360 --> 00:06:00,400
+middle state then
+
+142
+00:05:57,680 --> 00:06:00,400
+we do
+
+143
+00:06:01,680 --> 00:06:06,720
+maybe do in this way or we make another
+
+144
+00:06:04,400 --> 00:06:09,440
+middle state and the pop
+
+145
+00:06:06,720 --> 00:06:10,400
+pop every stack symbol doing the loop
+
+146
+00:06:09,440 --> 00:06:11,840
+here
+
+147
+00:06:10,400 --> 00:06:14,240
+then
+
+148
+00:06:11,840 --> 00:06:17,680
+when we see
+
+149
+00:06:14,240 --> 00:06:17,680
+the spatial character here
+
+150
+00:06:18,160 --> 00:06:22,400
+we pop it out then accept
+
+151
+00:06:21,360 --> 00:06:24,720
+okay
+
+152
+00:06:22,400 --> 00:06:28,160
+so by doing this
+
+153
+00:06:24,720 --> 00:06:30,800
+at one more accept date at like three or
+
+154
+00:06:28,160 --> 00:06:36,240
+maybe two uh maybe two here so totally
+
+155
+00:06:30,800 --> 00:06:39,360
+three or four new states we can we can
+
+156
+00:06:36,240 --> 00:06:40,639
+achieve the modification required
+
+157
+00:06:39,360 --> 00:06:43,039
+right
+
+158
+00:06:40,639 --> 00:06:45,919
+so for any given pda it's very easy to
+
+159
+00:06:43,039 --> 00:06:47,759
+do it then the third
+
+160
+00:06:45,919 --> 00:06:49,360
+criteria is here
+
+161
+00:06:47,759 --> 00:06:50,479
+we need each
+
+162
+00:06:49,360 --> 00:06:54,240
+transition
+
+163
+00:06:50,479 --> 00:06:55,120
+either pushes a symbol or pops a symbol
+
+164
+00:06:54,240 --> 00:06:57,599
+okay
+
+165
+00:06:55,120 --> 00:06:58,800
+either pushes a symbol or a public
+
+166
+00:06:57,599 --> 00:07:01,440
+symbol
+
+167
+00:06:58,800 --> 00:07:03,599
+it's it's even easy
+
+168
+00:07:01,440 --> 00:07:05,520
+it's even easier than the previous two
+
+169
+00:07:03,599 --> 00:07:07,840
+because we can
+
+170
+00:07:05,520 --> 00:07:10,240
+we use it as an example okay
+
+171
+00:07:07,840 --> 00:07:11,520
+so for a given pda
+
+172
+00:07:10,240 --> 00:07:13,199
+then
+
+173
+00:07:11,520 --> 00:07:16,560
+this one is a
+
+174
+00:07:13,199 --> 00:07:18,960
+push only push only push operation
+
+175
+00:07:16,560 --> 00:07:21,280
+so there's no problem and only push
+
+176
+00:07:18,960 --> 00:07:24,960
+operation no problem only power
+
+177
+00:07:21,280 --> 00:07:26,319
+operation no problem right so pop pop
+
+178
+00:07:24,960 --> 00:07:27,840
+pop
+
+179
+00:07:26,319 --> 00:07:29,520
+and
+
+180
+00:07:27,840 --> 00:07:30,800
+push push
+
+181
+00:07:29,520 --> 00:07:31,759
+push
+
+182
+00:07:30,800 --> 00:07:33,360
+right
+
+183
+00:07:31,759 --> 00:07:36,680
+so
+
+184
+00:07:33,360 --> 00:07:39,039
+there are three transitions here
+
+185
+00:07:36,680 --> 00:07:40,720
+simultaneously push and pop
+
+186
+00:07:39,039 --> 00:07:43,680
+well not simultaneously
+
+187
+00:07:40,720 --> 00:07:46,960
+tenuously they have push and pop right
+
+188
+00:07:43,680 --> 00:07:48,080
+so we just need to add one more
+
+189
+00:07:46,960 --> 00:07:50,800
+state
+
+190
+00:07:48,080 --> 00:07:50,800
+so make it
+
+191
+00:07:51,280 --> 00:07:54,160
+pop
+
+192
+00:07:52,879 --> 00:07:55,039
+strong
+
+193
+00:07:54,160 --> 00:07:57,520
+as
+
+194
+00:07:55,039 --> 00:07:59,840
+pop right then
+
+195
+00:07:57,520 --> 00:07:59,840
+push
+
+196
+00:08:02,080 --> 00:08:08,639
+right so that's it so we also make it
+
+197
+00:08:06,000 --> 00:08:11,759
+one more here and
+
+198
+00:08:08,639 --> 00:08:13,520
+one more here sorry
+
+199
+00:08:11,759 --> 00:08:14,960
+go back here
+
+200
+00:08:13,520 --> 00:08:17,520
+okay
+
+201
+00:08:14,960 --> 00:08:20,319
+then you may ask that
+
+202
+00:08:17,520 --> 00:08:23,440
+uh if you have a
+
+203
+00:08:20,319 --> 00:08:25,120
+apps on app strong like that's you know
+
+204
+00:08:23,440 --> 00:08:25,919
+actually
+
+205
+00:08:25,120 --> 00:08:27,840
+to
+
+206
+00:08:25,919 --> 00:08:30,240
+if there is a
+
+207
+00:08:27,840 --> 00:08:32,880
+something like this
+
+208
+00:08:30,240 --> 00:08:35,039
+then you can do the same thing you add
+
+209
+00:08:32,880 --> 00:08:38,000
+one more state
+
+210
+00:08:35,039 --> 00:08:40,479
+and arbitrarily push something and then
+
+211
+00:08:38,000 --> 00:08:43,039
+pop out right so
+
+212
+00:08:40,479 --> 00:08:44,320
+arbitrary push let's say
+
+213
+00:08:43,039 --> 00:08:46,560
+c
+
+214
+00:08:44,320 --> 00:08:48,959
+then
+
+215
+00:08:46,560 --> 00:08:52,080
+pop out
+
+216
+00:08:48,959 --> 00:08:54,880
+right so simply put if
+
+217
+00:08:52,080 --> 00:08:57,760
+the transition is already push only or
+
+218
+00:08:54,880 --> 00:09:01,519
+pop only then there's no problem
+
+219
+00:08:57,760 --> 00:09:03,279
+then you might have both push and pop up
+
+220
+00:09:01,519 --> 00:09:06,240
+operation like
+
+221
+00:09:03,279 --> 00:09:06,240
+something like this
+
+222
+00:09:06,560 --> 00:09:11,600
+then you change it
+
+223
+00:09:09,440 --> 00:09:11,600
+to
+
+224
+00:09:12,560 --> 00:09:16,560
+pop first push next
+
+225
+00:09:18,399 --> 00:09:22,399
+right
+
+226
+00:09:19,680 --> 00:09:25,600
+or you have nothing
+
+227
+00:09:22,399 --> 00:09:27,680
+no push no pop let's say
+
+228
+00:09:25,600 --> 00:09:29,920
+like
+
+229
+00:09:27,680 --> 00:09:33,360
+no push no pop
+
+230
+00:09:29,920 --> 00:09:33,360
+then you change it to
+
+231
+00:09:34,480 --> 00:09:40,720
+push arbitrary symbol and pop it out
+
+232
+00:09:38,320 --> 00:09:40,720
+next
+
+233
+00:09:41,360 --> 00:09:45,120
+okay
+
+234
+00:09:42,720 --> 00:09:46,560
+so it's quite easy to
+
+235
+00:09:45,120 --> 00:09:48,720
+have an
+
+236
+00:09:46,560 --> 00:09:51,200
+equivalent pdh
+
+237
+00:09:48,720 --> 00:09:53,519
+and with the
+
+238
+00:09:51,200 --> 00:09:53,519
+three
+
+239
+00:09:53,600 --> 00:09:57,040
+criteria here
+
+240
+00:09:55,519 --> 00:09:58,640
+okay
+
+241
+00:09:57,040 --> 00:10:02,560
+so
+
+242
+00:09:58,640 --> 00:10:05,600
+if we have a pda has such properties
+
+243
+00:10:02,560 --> 00:10:09,279
+then we can
+
+244
+00:10:05,600 --> 00:10:11,680
+generate we can convert the pda
+
+245
+00:10:09,279 --> 00:10:12,640
+to a context free grammar
+
+246
+00:10:11,680 --> 00:10:14,320
+okay
+
+247
+00:10:12,640 --> 00:10:17,360
+and
+
+248
+00:10:14,320 --> 00:10:18,560
+remember that what we want what we want
+
+249
+00:10:17,360 --> 00:10:21,760
+to have
+
+250
+00:10:18,560 --> 00:10:23,360
+is that given a pda
+
+251
+00:10:21,760 --> 00:10:25,279
+and
+
+252
+00:10:23,360 --> 00:10:27,360
+writing a grammar
+
+253
+00:10:25,279 --> 00:10:30,320
+such that
+
+254
+00:10:27,360 --> 00:10:32,959
+the language recognized by the pda
+
+255
+00:10:30,320 --> 00:10:34,880
+is the language generated by the grammar
+
+256
+00:10:32,959 --> 00:10:35,760
+that's that's actually what we want to
+
+257
+00:10:34,880 --> 00:10:36,640
+do
+
+258
+00:10:35,760 --> 00:10:40,320
+but
+
+259
+00:10:36,640 --> 00:10:41,839
+the conversion here from pda to grammar
+
+260
+00:10:40,320 --> 00:10:45,600
+actually more
+
+261
+00:10:41,839 --> 00:10:47,040
+give us more than this relation
+
+262
+00:10:45,600 --> 00:10:51,040
+okay
+
+263
+00:10:47,040 --> 00:10:55,360
+because this relation requires that
+
+264
+00:10:51,040 --> 00:10:55,360
+from the start variable of this grammar
+
+265
+00:10:55,600 --> 00:10:58,320
+all the
+
+266
+00:10:56,880 --> 00:11:00,640
+string
+
+267
+00:10:58,320 --> 00:11:02,720
+or the terminal string
+
+268
+00:11:00,640 --> 00:11:04,959
+generated
+
+269
+00:11:02,720 --> 00:11:04,959
+is
+
+270
+00:11:05,360 --> 00:11:11,040
+the terminal string recognized uh
+
+271
+00:11:07,920 --> 00:11:14,480
+accepted by the pda right
+
+272
+00:11:11,040 --> 00:11:17,120
+but actually the grammar we we will be
+
+273
+00:11:14,480 --> 00:11:20,560
+generate we will be constructed
+
+274
+00:11:17,120 --> 00:11:24,640
+constructed here has a even closer
+
+275
+00:11:20,560 --> 00:11:24,640
+relation with the pda
+
+276
+00:11:25,200 --> 00:11:28,320
+we will
+
+277
+00:11:26,399 --> 00:11:31,440
+we will
+
+278
+00:11:28,320 --> 00:11:32,480
+use one variable
+
+279
+00:11:31,440 --> 00:11:35,839
+for
+
+280
+00:11:32,480 --> 00:11:38,640
+each pair of states
+
+281
+00:11:35,839 --> 00:11:39,440
+for each pair of states
+
+282
+00:11:38,640 --> 00:11:43,600
+and
+
+283
+00:11:39,440 --> 00:11:45,279
+that variable can generate
+
+284
+00:11:43,600 --> 00:11:48,320
+all the strings
+
+285
+00:11:45,279 --> 00:11:51,600
+that are processed by the pda for the
+
+286
+00:11:48,320 --> 00:11:53,839
+transitions from the first state to the
+
+287
+00:11:51,600 --> 00:11:54,880
+second state
+
+288
+00:11:53,839 --> 00:11:57,760
+okay
+
+289
+00:11:54,880 --> 00:12:00,079
+so the grammar would we will be gen we
+
+290
+00:11:57,760 --> 00:12:03,760
+will be constructed
+
+291
+00:12:00,079 --> 00:12:07,200
+actually has a even closer relationship
+
+292
+00:12:03,760 --> 00:12:10,560
+with the pda not only you know globally
+
+293
+00:12:07,200 --> 00:12:12,800
+the their languages are identical
+
+294
+00:12:10,560 --> 00:12:12,800
+but
+
+295
+00:12:13,440 --> 00:12:16,880
+for
+
+296
+00:12:14,160 --> 00:12:18,959
+at a more fundamental level
+
+297
+00:12:16,880 --> 00:12:20,000
+they are equivalent
+
+298
+00:12:18,959 --> 00:12:22,720
+okay
+
+299
+00:12:20,000 --> 00:12:25,600
+so let's see how do we construct such
+
+300
+00:12:22,720 --> 00:12:26,399
+grammar given a pda
+
+301
+00:12:25,600 --> 00:12:29,360
+so
+
+302
+00:12:26,399 --> 00:12:33,200
+for pda for the given pda we say that it
+
+303
+00:12:29,360 --> 00:12:35,519
+is a sixth purple right so you have
+
+304
+00:12:33,200 --> 00:12:39,839
+state you have
+
+305
+00:12:35,519 --> 00:12:42,000
+input alphabet you have stake alphabet
+
+306
+00:12:39,839 --> 00:12:44,399
+you have transition function
+
+307
+00:12:42,000 --> 00:12:47,200
+you have star state and
+
+308
+00:12:44,399 --> 00:12:48,800
+since we have only a single
+
+309
+00:12:47,200 --> 00:12:51,519
+accept state so
+
+310
+00:12:48,800 --> 00:12:54,000
+the accept states here is a single
+
+311
+00:12:51,519 --> 00:12:56,320
+accept state but you know definition is
+
+312
+00:12:54,000 --> 00:12:58,399
+a stat so it's still a set
+
+313
+00:12:56,320 --> 00:13:01,200
+we want to construct a context free
+
+314
+00:12:58,399 --> 00:13:04,480
+grammar here pontius county free grammar
+
+315
+00:13:01,200 --> 00:13:06,800
+is a full tuple so variables
+
+316
+00:13:04,480 --> 00:13:08,880
+alphabet terminals
+
+317
+00:13:06,800 --> 00:13:11,279
+so you can see that the terminals is
+
+318
+00:13:08,880 --> 00:13:12,480
+exactly the input alphabet so there's no
+
+319
+00:13:11,279 --> 00:13:14,399
+problem there
+
+320
+00:13:12,480 --> 00:13:17,040
+and
+
+321
+00:13:14,399 --> 00:13:19,120
+inside the variable there is a starch
+
+322
+00:13:17,040 --> 00:13:21,120
+variable and
+
+323
+00:13:19,120 --> 00:13:23,200
+rules okay
+
+324
+00:13:21,120 --> 00:13:26,079
+then how do we construct it the
+
+325
+00:13:23,200 --> 00:13:27,200
+construction is easy so
+
+326
+00:13:26,079 --> 00:13:28,880
+for
+
+327
+00:13:27,200 --> 00:13:30,160
+air uh for
+
+328
+00:13:28,880 --> 00:13:31,040
+every pair
+
+329
+00:13:30,160 --> 00:13:36,320
+in
+
+330
+00:13:31,040 --> 00:13:36,320
+the state of the pda not say pq
+
+331
+00:13:36,560 --> 00:13:42,240
+we have we have a variable for that
+
+332
+00:13:40,639 --> 00:13:44,880
+okay
+
+333
+00:13:42,240 --> 00:13:48,880
+we have a variable for that
+
+334
+00:13:44,880 --> 00:13:51,680
+so for every pair in q we have a p q a
+
+335
+00:13:48,880 --> 00:13:54,639
+verbal and all possible
+
+336
+00:13:51,680 --> 00:13:56,240
+all such possible variables
+
+337
+00:13:54,639 --> 00:14:00,000
+is our variable
+
+338
+00:13:56,240 --> 00:14:03,240
+is our variable set of the grammar
+
+339
+00:14:00,000 --> 00:14:03,240
+then since
+
+340
+00:14:03,680 --> 00:14:08,639
+the start variable
+
+341
+00:14:05,279 --> 00:14:10,079
+is q0 and there is only one except
+
+342
+00:14:08,639 --> 00:14:11,440
+accept variable
+
+343
+00:14:10,079 --> 00:14:15,519
+sorry starts
+
+344
+00:14:11,440 --> 00:14:17,199
+the star star the star state is q0 and
+
+345
+00:14:15,519 --> 00:14:18,639
+there's only one
+
+346
+00:14:17,199 --> 00:14:20,800
+accept state
+
+347
+00:14:18,639 --> 00:14:20,800
+so
+
+348
+00:14:20,880 --> 00:14:26,959
+we have a variable
+
+349
+00:14:23,120 --> 00:14:28,839
+a q 0 q accept right and that variable
+
+350
+00:14:26,959 --> 00:14:32,560
+is our start
+
+351
+00:14:28,839 --> 00:14:35,760
+variable is our star variable
+
+352
+00:14:32,560 --> 00:14:38,240
+see that's what that's why we want to
+
+353
+00:14:35,760 --> 00:14:40,320
+have only single accept states and we
+
+354
+00:14:38,240 --> 00:14:43,279
+want to write a grammar
+
+355
+00:14:40,320 --> 00:14:46,000
+use one variable for each pair of states
+
+356
+00:14:43,279 --> 00:14:47,360
+and generate all the strings processed
+
+357
+00:14:46,000 --> 00:14:48,959
+by the pda
+
+358
+00:14:47,360 --> 00:14:51,519
+so you see
+
+359
+00:14:48,959 --> 00:14:54,959
+from the start state to
+
+360
+00:14:51,519 --> 00:14:56,880
+the accept states those string
+
+361
+00:14:54,959 --> 00:14:58,800
+can be generated
+
+362
+00:14:56,880 --> 00:15:01,279
+so
+
+363
+00:14:58,800 --> 00:15:03,279
+that's why start variable of the grammar
+
+364
+00:15:01,279 --> 00:15:04,399
+is this variable
+
+365
+00:15:03,279 --> 00:15:06,320
+okay
+
+366
+00:15:04,399 --> 00:15:08,160
+then
+
+367
+00:15:06,320 --> 00:15:11,120
+the sigma is the same so we don't need
+
+368
+00:15:08,160 --> 00:15:13,600
+to discuss that so we want to discuss
+
+369
+00:15:11,120 --> 00:15:16,480
+the rules the productions right
+
+370
+00:15:13,600 --> 00:15:19,839
+so there are three kinds of rules three
+
+371
+00:15:16,480 --> 00:15:20,800
+sets of rules let's see the last one
+
+372
+00:15:19,839 --> 00:15:21,920
+first
+
+373
+00:15:20,800 --> 00:15:23,120
+so
+
+374
+00:15:21,920 --> 00:15:24,639
+for each
+
+375
+00:15:23,120 --> 00:15:26,959
+state
+
+376
+00:15:24,639 --> 00:15:30,880
+we have rule
+
+377
+00:15:26,959 --> 00:15:33,839
+app may become epsom
+
+378
+00:15:30,880 --> 00:15:35,120
+okay so that's easy right so if you have
+
+379
+00:15:33,839 --> 00:15:36,399
+q
+
+380
+00:15:35,120 --> 00:15:39,040
+states
+
+381
+00:15:36,399 --> 00:15:42,079
+you will have so many
+
+382
+00:15:39,040 --> 00:15:43,199
+rules for the third kind
+
+383
+00:15:42,079 --> 00:15:44,399
+right
+
+384
+00:15:43,199 --> 00:15:46,800
+then
+
+385
+00:15:44,399 --> 00:15:48,000
+for the second kind of rules for the
+
+386
+00:15:46,800 --> 00:15:51,040
+second set
+
+387
+00:15:48,000 --> 00:15:51,920
+for every pqr
+
+388
+00:15:51,040 --> 00:15:54,639
+three
+
+389
+00:15:51,920 --> 00:15:56,000
+states for every pqr
+
+390
+00:15:54,639 --> 00:15:57,920
+in q
+
+391
+00:15:56,000 --> 00:15:59,360
+we write a rule
+
+392
+00:15:57,920 --> 00:16:01,040
+apq
+
+393
+00:15:59,360 --> 00:16:05,440
+may become
+
+394
+00:16:01,040 --> 00:16:06,800
+a p r and arq
+
+395
+00:16:05,440 --> 00:16:09,120
+okay
+
+396
+00:16:06,800 --> 00:16:10,240
+so there will be so
+
+397
+00:16:09,120 --> 00:16:11,759
+many
+
+398
+00:16:10,240 --> 00:16:14,800
+rules
+
+399
+00:16:11,759 --> 00:16:17,519
+for the second one second kind
+
+400
+00:16:14,800 --> 00:16:19,519
+okay so you see the third kind and the
+
+401
+00:16:17,519 --> 00:16:23,440
+second kind there's nothing to do with
+
+402
+00:16:19,519 --> 00:16:26,560
+the operation of the pda exactly right
+
+403
+00:16:23,440 --> 00:16:29,199
+because the transition of pda
+
+404
+00:16:26,560 --> 00:16:31,839
+has no role for the two
+
+405
+00:16:29,199 --> 00:16:32,800
+kinds of rules
+
+406
+00:16:31,839 --> 00:16:37,040
+so
+
+407
+00:16:32,800 --> 00:16:39,920
+the first kind of rules here
+
+408
+00:16:37,040 --> 00:16:41,040
+for pqrs in queue
+
+409
+00:16:39,920 --> 00:16:44,480
+and
+
+410
+00:16:41,040 --> 00:16:45,519
+some symbol in stack variable
+
+411
+00:16:44,480 --> 00:16:50,680
+and
+
+412
+00:16:45,519 --> 00:16:50,680
+for some input symbol or epsilon
+
+413
+00:16:50,959 --> 00:16:54,160
+if
+
+414
+00:16:52,079 --> 00:16:55,279
+if
+
+415
+00:16:54,160 --> 00:16:57,440
+the
+
+416
+00:16:55,279 --> 00:16:59,839
+machine at p
+
+417
+00:16:57,440 --> 00:17:02,079
+read input
+
+418
+00:16:59,839 --> 00:17:02,079
+a
+
+419
+00:17:02,839 --> 00:17:09,520
+becomes
+
+420
+00:17:04,559 --> 00:17:12,240
+r the state becomes r and push t
+
+421
+00:17:09,520 --> 00:17:14,559
+and you find another entry that the
+
+422
+00:17:12,240 --> 00:17:16,720
+machine adds s
+
+423
+00:17:14,559 --> 00:17:19,839
+reading b
+
+424
+00:17:16,720 --> 00:17:19,839
+and the part t
+
+425
+00:17:20,000 --> 00:17:23,760
+and the s
+
+426
+00:17:21,439 --> 00:17:25,280
+goes to q
+
+427
+00:17:23,760 --> 00:17:26,640
+and pop
+
+428
+00:17:25,280 --> 00:17:30,799
+t right
+
+429
+00:17:26,640 --> 00:17:32,480
+so the key point is the stacks in both t
+
+430
+00:17:30,799 --> 00:17:34,320
+stacks in both t
+
+431
+00:17:32,480 --> 00:17:38,160
+see
+
+432
+00:17:34,320 --> 00:17:40,960
+so you see initially the stack will be
+
+433
+00:17:38,160 --> 00:17:44,400
+empty right but initially the stack is
+
+434
+00:17:40,960 --> 00:17:47,440
+empty so everything in the stack
+
+435
+00:17:44,400 --> 00:17:49,440
+is pushed at some steps
+
+436
+00:17:47,440 --> 00:17:51,039
+and the pop
+
+437
+00:17:49,440 --> 00:17:53,520
+popped
+
+438
+00:17:51,039 --> 00:17:55,760
+in the later state right
+
+439
+00:17:53,520 --> 00:17:55,760
+so
+
+440
+00:17:56,080 --> 00:18:02,320
+we see where
+
+441
+00:17:59,120 --> 00:18:05,039
+some stack symbol may be
+
+442
+00:18:02,320 --> 00:18:09,280
+pushed and where
+
+443
+00:18:05,039 --> 00:18:12,799
+the symbol may be popped then we connect
+
+444
+00:18:09,280 --> 00:18:16,720
+we connect these two transition
+
+445
+00:18:12,799 --> 00:18:19,039
+and then write down the rules like
+
+446
+00:18:16,720 --> 00:18:19,039
+you see
+
+447
+00:18:19,440 --> 00:18:22,160
+at p
+
+448
+00:18:20,880 --> 00:18:23,760
+goes to
+
+449
+00:18:22,160 --> 00:18:24,720
+r
+
+450
+00:18:23,760 --> 00:18:25,520
+at
+
+451
+00:18:24,720 --> 00:18:30,240
+s
+
+452
+00:18:25,520 --> 00:18:30,240
+goes to q right
+
+453
+00:18:30,320 --> 00:18:34,640
+so
+
+454
+00:18:32,000 --> 00:18:36,960
+when the machine at the p
+
+455
+00:18:34,640 --> 00:18:38,160
+goes to r
+
+456
+00:18:36,960 --> 00:18:40,000
+and
+
+457
+00:18:38,160 --> 00:18:41,280
+and push t right
+
+458
+00:18:40,000 --> 00:18:42,400
+push t
+
+459
+00:18:41,280 --> 00:18:43,200
+and
+
+460
+00:18:42,400 --> 00:18:44,080
+from
+
+461
+00:18:43,200 --> 00:18:46,000
+s
+
+462
+00:18:44,080 --> 00:18:48,160
+goes to q
+
+463
+00:18:46,000 --> 00:18:49,120
+pop t
+
+464
+00:18:48,160 --> 00:18:51,360
+right
+
+465
+00:18:49,120 --> 00:18:51,360
+and
+
+466
+00:18:52,160 --> 00:18:57,520
+the step here we don't know
+
+467
+00:18:56,400 --> 00:19:00,400
+okay
+
+468
+00:18:57,520 --> 00:19:00,400
+but we know that
+
+469
+00:19:00,720 --> 00:19:06,240
+at this step a
+
+470
+00:19:02,880 --> 00:19:10,000
+of the input symbol is consumed
+
+471
+00:19:06,240 --> 00:19:11,360
+and b of the input symbol is consumed
+
+472
+00:19:10,000 --> 00:19:14,080
+right
+
+473
+00:19:11,360 --> 00:19:14,080
+and we know
+
+474
+00:19:15,600 --> 00:19:22,640
+this part of string can be generated by
+
+475
+00:19:19,360 --> 00:19:22,640
+a r s
+
+476
+00:19:22,880 --> 00:19:32,080
+right so from p to q
+
+477
+00:19:27,039 --> 00:19:33,440
+that is the mission of the variable apq
+
+478
+00:19:32,080 --> 00:19:37,600
+so we write
+
+479
+00:19:33,440 --> 00:19:38,880
+write down a rule that apq may become
+
+480
+00:19:37,600 --> 00:19:42,160
+what
+
+481
+00:19:38,880 --> 00:19:42,160
+may become a
+
+482
+00:19:42,559 --> 00:19:45,360
+a r s
+
+483
+00:19:45,600 --> 00:19:47,760
+b
+
+484
+00:19:49,360 --> 00:19:54,000
+okay
+
+485
+00:19:50,720 --> 00:19:55,600
+that's why we have the rule here
+
+486
+00:19:54,000 --> 00:19:56,480
+because
+
+487
+00:19:55,600 --> 00:19:59,440
+when
+
+488
+00:19:56,480 --> 00:20:01,919
+the states from p to r
+
+489
+00:19:59,440 --> 00:20:03,520
+a symbol of
+
+490
+00:20:01,919 --> 00:20:05,600
+a stack symbol
+
+491
+00:20:03,520 --> 00:20:08,640
+for example t here
+
+492
+00:20:05,600 --> 00:20:12,240
+is pushed onto the stack
+
+493
+00:20:08,640 --> 00:20:15,360
+and somehow from s to q
+
+494
+00:20:12,240 --> 00:20:17,919
+that symbol that stack symbol t
+
+495
+00:20:15,360 --> 00:20:19,280
+is popped from stack
+
+496
+00:20:17,919 --> 00:20:22,880
+okay
+
+497
+00:20:19,280 --> 00:20:25,840
+and for the first step a is consumed and
+
+498
+00:20:22,880 --> 00:20:27,280
+for the last step b is consumed
+
+499
+00:20:25,840 --> 00:20:29,679
+and for the
+
+500
+00:20:27,280 --> 00:20:31,520
+step in the middle we don't know what
+
+501
+00:20:29,679 --> 00:20:35,280
+happened but we know
+
+502
+00:20:31,520 --> 00:20:40,720
+what we want to have is that ars
+
+503
+00:20:35,280 --> 00:20:41,760
+can generate the string from r to s
+
+504
+00:20:40,720 --> 00:20:44,000
+okay
+
+505
+00:20:41,760 --> 00:20:46,640
+then that's our
+
+506
+00:20:44,000 --> 00:20:46,640
+conversion
+
+507
+00:20:46,840 --> 00:20:53,760
+procedure for a given pda to
+
+508
+00:20:50,480 --> 00:20:56,000
+the equivalent cfg
+
+509
+00:20:53,760 --> 00:20:56,000
+okay
+
+510
+00:20:56,720 --> 00:20:58,960
+so
+
+511
+00:21:01,280 --> 00:21:05,760
+let's have a example
+
+512
+00:21:04,159 --> 00:21:08,000
+with
+
+513
+00:21:05,760 --> 00:21:09,520
+this one
+
+514
+00:21:08,000 --> 00:21:12,720
+okay
+
+515
+00:21:09,520 --> 00:21:14,159
+it is not the original one we have
+
+516
+00:21:12,720 --> 00:21:16,320
+because
+
+517
+00:21:14,159 --> 00:21:19,039
+originally
+
+518
+00:21:16,320 --> 00:21:21,280
+for the previous example we have this
+
+519
+00:21:19,039 --> 00:21:21,280
+and
+
+520
+00:21:22,720 --> 00:21:25,840
+this
+
+521
+00:21:23,600 --> 00:21:25,840
+right
+
+522
+00:21:26,799 --> 00:21:33,440
+but now we use another pda
+
+523
+00:21:30,559 --> 00:21:35,840
+like this why we want to use this why
+
+524
+00:21:33,440 --> 00:21:37,919
+don't we use the previous one
+
+525
+00:21:35,840 --> 00:21:39,520
+well you can use the previous one
+
+526
+00:21:37,919 --> 00:21:42,000
+because
+
+527
+00:21:39,520 --> 00:21:44,640
+you can do the modification to make it
+
+528
+00:21:42,000 --> 00:21:45,520
+you know symbol accept states or other
+
+529
+00:21:44,640 --> 00:21:46,720
+things
+
+530
+00:21:45,520 --> 00:21:51,120
+but
+
+531
+00:21:46,720 --> 00:21:52,960
+it's easier for us to use the pda
+
+532
+00:21:51,120 --> 00:21:55,039
+this pda
+
+533
+00:21:52,960 --> 00:21:56,159
+as example because we don't need to do
+
+534
+00:21:55,039 --> 00:21:59,760
+any
+
+535
+00:21:56,159 --> 00:22:01,840
+multiplications that's it for simple uh
+
+536
+00:21:59,760 --> 00:22:03,919
+for simplicity
+
+537
+00:22:01,840 --> 00:22:06,240
+and you see that
+
+538
+00:22:03,919 --> 00:22:08,559
+for the second kind of
+
+539
+00:22:06,240 --> 00:22:08,559
+rule
+
+540
+00:22:08,960 --> 00:22:15,760
+we will have
+
+541
+00:22:10,960 --> 00:22:15,760
+cubic of the number of states right
+
+542
+00:22:16,240 --> 00:22:20,400
+then
+
+543
+00:22:18,559 --> 00:22:23,520
+for four states here
+
+544
+00:22:20,400 --> 00:22:25,280
+we will have 64 rules
+
+545
+00:22:23,520 --> 00:22:28,480
+if you have one more
+
+546
+00:22:25,280 --> 00:22:32,240
+like five states that'll be 125 so many
+
+547
+00:22:28,480 --> 00:22:36,679
+of them so for simplicity we use the
+
+548
+00:22:32,240 --> 00:22:36,679
+pda here as our example
+
+549
+00:22:41,440 --> 00:22:48,000
+now let's check it again if this pda has
+
+550
+00:22:46,480 --> 00:22:50,559
+all the three
+
+551
+00:22:48,000 --> 00:22:52,159
+well properties
+
+552
+00:22:50,559 --> 00:22:55,520
+firstly
+
+553
+00:22:52,159 --> 00:23:00,159
+it has only one single
+
+554
+00:22:55,520 --> 00:23:01,200
+accept state right it's uh state four
+
+555
+00:23:00,159 --> 00:23:02,880
+then
+
+556
+00:23:01,200 --> 00:23:04,000
+this pda
+
+557
+00:23:02,880 --> 00:23:07,120
+pops
+
+558
+00:23:04,000 --> 00:23:09,440
+everything in the stack before accepting
+
+559
+00:23:07,120 --> 00:23:11,200
+right before acceptance
+
+560
+00:23:09,440 --> 00:23:12,880
+then let's check
+
+561
+00:23:11,200 --> 00:23:15,120
+this pda
+
+562
+00:23:12,880 --> 00:23:16,799
+the transition of this pda
+
+563
+00:23:15,120 --> 00:23:18,480
+is either
+
+564
+00:23:16,799 --> 00:23:20,799
+push
+
+565
+00:23:18,480 --> 00:23:23,600
+push
+
+566
+00:23:20,799 --> 00:23:26,880
+or pop pop pop
+
+567
+00:23:23,600 --> 00:23:29,600
+there is no nothing or push and pop
+
+568
+00:23:26,880 --> 00:23:32,960
+right so we don't need to do any
+
+569
+00:23:29,600 --> 00:23:35,520
+modification to this pda
+
+570
+00:23:32,960 --> 00:23:38,159
+and we can convert to the grammar we
+
+571
+00:23:35,520 --> 00:23:41,360
+want to have
+
+572
+00:23:38,159 --> 00:23:43,760
+so let's construct a grammar
+
+573
+00:23:41,360 --> 00:23:46,080
+variable what is the variable
+
+574
+00:23:43,760 --> 00:23:48,880
+every pair of the states
+
+575
+00:23:46,080 --> 00:23:51,760
+so we will have
+
+576
+00:23:48,880 --> 00:23:53,440
+so many variables
+
+577
+00:23:51,760 --> 00:23:54,799
+right that would be
+
+578
+00:23:53,440 --> 00:23:57,679
+16
+
+579
+00:23:54,799 --> 00:24:03,760
+in this example so that those variables
+
+580
+00:23:57,679 --> 00:24:06,799
+are a 1 1 a 1 2 a 1 3 a 1 4 a 2 1 a a22
+
+581
+00:24:03,760 --> 00:24:07,919
+estrada 2 a44
+
+582
+00:24:06,799 --> 00:24:10,000
+okay
+
+583
+00:24:07,919 --> 00:24:13,400
+and we know that
+
+584
+00:24:10,000 --> 00:24:14,960
+our start variable will be
+
+585
+00:24:13,400 --> 00:24:17,200
+q0q
+
+586
+00:24:14,960 --> 00:24:20,799
+accept right
+
+587
+00:24:17,200 --> 00:24:24,480
+so the curio now is one except this four
+
+588
+00:24:20,799 --> 00:24:27,440
+so a14 here is our
+
+589
+00:24:24,480 --> 00:24:29,279
+start variable for grammar g
+
+590
+00:24:27,440 --> 00:24:32,240
+okay then
+
+591
+00:24:29,279 --> 00:24:33,200
+the sigma here is apparently zero and
+
+592
+00:24:32,240 --> 00:24:35,679
+one
+
+593
+00:24:33,200 --> 00:24:38,240
+remember the zero here is symbol the
+
+594
+00:24:35,679 --> 00:24:39,200
+zero here is integer okay
+
+595
+00:24:38,240 --> 00:24:41,679
+then
+
+596
+00:24:39,200 --> 00:24:44,159
+now we have need to write rules and for
+
+597
+00:24:41,679 --> 00:24:47,919
+rules it's easy that
+
+598
+00:24:44,159 --> 00:24:49,120
+firstly we will have third kind of rules
+
+599
+00:24:47,919 --> 00:24:51,520
+that would be
+
+600
+00:24:49,120 --> 00:24:54,240
+a one one may become epsilon
+
+601
+00:24:51,520 --> 00:24:56,480
+a two two may become epsilon a three
+
+602
+00:24:54,240 --> 00:25:00,159
+three may become epsilon
+
+603
+00:24:56,480 --> 00:25:02,480
+a four four may become epsilon okay so
+
+604
+00:25:00,159 --> 00:25:04,799
+four rules like this
+
+605
+00:25:02,480 --> 00:25:09,039
+and then
+
+606
+00:25:04,799 --> 00:25:12,400
+cubic of number of states rules here so
+
+607
+00:25:09,039 --> 00:25:16,080
+a one one may become a one one a one one
+
+608
+00:25:12,400 --> 00:25:19,679
+okay so a lot of the rules like this and
+
+609
+00:25:16,080 --> 00:25:21,600
+a11 may become you know 2 inside this so
+
+610
+00:25:19,679 --> 00:25:25,600
+a 1 2 a 2 1
+
+611
+00:25:21,600 --> 00:25:26,840
+then 3 inside this so a 1 1 b may become
+
+612
+00:25:25,600 --> 00:25:31,440
+a 3 1
+
+613
+00:25:26,840 --> 00:25:35,440
+a sorry a one three a three one and then
+
+614
+00:25:31,440 --> 00:25:38,559
+a one four a four one right then
+
+615
+00:25:35,440 --> 00:25:41,679
+a one two a one two may become a one one
+
+616
+00:25:38,559 --> 00:25:42,559
+a one two because you stick one into
+
+617
+00:25:41,679 --> 00:25:44,480
+that
+
+618
+00:25:42,559 --> 00:25:45,440
+and then two
+
+619
+00:25:44,480 --> 00:25:46,400
+and then
+
+620
+00:25:45,440 --> 00:25:48,080
+three
+
+621
+00:25:46,400 --> 00:25:51,360
+and then four
+
+622
+00:25:48,080 --> 00:25:55,200
+and repeat all the process you have
+
+623
+00:25:51,360 --> 00:25:56,400
+uh this case 64 rules right for this
+
+624
+00:25:55,200 --> 00:25:59,120
+kind of rules
+
+625
+00:25:56,400 --> 00:26:00,960
+just write it write them down okay
+
+626
+00:25:59,120 --> 00:26:04,799
+finish them
+
+627
+00:26:00,960 --> 00:26:07,120
+finally the rules we want to have is
+
+628
+00:26:04,799 --> 00:26:08,400
+the first time first one first kind of
+
+629
+00:26:07,120 --> 00:26:11,520
+rules
+
+630
+00:26:08,400 --> 00:26:14,559
+so how to do that it's quite simple
+
+631
+00:26:11,520 --> 00:26:15,440
+because you just need to align
+
+632
+00:26:14,559 --> 00:26:17,919
+you
+
+633
+00:26:15,440 --> 00:26:19,360
+just need to find matched
+
+634
+00:26:17,919 --> 00:26:20,880
+stack symbol
+
+635
+00:26:19,360 --> 00:26:22,720
+okay
+
+636
+00:26:20,880 --> 00:26:26,240
+you try to check
+
+637
+00:26:22,720 --> 00:26:29,440
+try to examine where some stack symbol
+
+638
+00:26:26,240 --> 00:26:30,480
+is pushed and popped and write them
+
+639
+00:26:29,440 --> 00:26:31,279
+together
+
+640
+00:26:30,480 --> 00:26:32,720
+so
+
+641
+00:26:31,279 --> 00:26:36,000
+first thing
+
+642
+00:26:32,720 --> 00:26:39,200
+you see a dollar sign is pushed and a
+
+643
+00:26:36,000 --> 00:26:40,720
+dollar sign is popped right
+
+644
+00:26:39,200 --> 00:26:44,400
+so we
+
+645
+00:26:40,720 --> 00:26:44,400
+pair these two
+
+646
+00:26:44,799 --> 00:26:47,440
+transitions
+
+647
+00:26:46,400 --> 00:26:49,360
+okay
+
+648
+00:26:47,440 --> 00:26:51,120
+so what what is the first transition
+
+649
+00:26:49,360 --> 00:26:54,880
+here
+
+650
+00:26:51,120 --> 00:26:57,279
+the first transition here is
+
+651
+00:26:54,880 --> 00:26:59,440
+you go from state 1
+
+652
+00:26:57,279 --> 00:27:02,880
+to state 2
+
+653
+00:26:59,440 --> 00:27:05,360
+right and you consume
+
+654
+00:27:02,880 --> 00:27:05,360
+epsilon
+
+655
+00:27:05,440 --> 00:27:13,039
+right and push down the side of course
+
+656
+00:27:08,240 --> 00:27:16,080
+and so for the second transition here
+
+657
+00:27:13,039 --> 00:27:19,520
+it goes from three
+
+658
+00:27:16,080 --> 00:27:20,799
+states three to four and consumed
+
+659
+00:27:19,520 --> 00:27:22,159
+what
+
+660
+00:27:20,799 --> 00:27:25,120
+epsilon
+
+661
+00:27:22,159 --> 00:27:26,720
+and the pop dollar sign right
+
+662
+00:27:25,120 --> 00:27:29,679
+so
+
+663
+00:27:26,720 --> 00:27:31,200
+we don't know what happened in here but
+
+664
+00:27:29,679 --> 00:27:34,799
+we know
+
+665
+00:27:31,200 --> 00:27:35,600
+in here is the responsibility of a
+
+666
+00:27:34,799 --> 00:27:37,679
+two
+
+667
+00:27:35,600 --> 00:27:38,640
+three
+
+668
+00:27:37,679 --> 00:27:42,480
+okay
+
+669
+00:27:38,640 --> 00:27:45,200
+and start from one finally four so we
+
+670
+00:27:42,480 --> 00:27:46,559
+write the rule a14
+
+671
+00:27:45,200 --> 00:27:48,880
+may become
+
+672
+00:27:46,559 --> 00:27:51,440
+epsilon here
+
+673
+00:27:48,880 --> 00:27:52,640
+epsom here
+
+674
+00:27:51,440 --> 00:27:55,760
+that's it
+
+675
+00:27:52,640 --> 00:27:59,120
+so it's the first one of the
+
+676
+00:27:55,760 --> 00:28:01,520
+first kinds of rules
+
+677
+00:27:59,120 --> 00:28:04,559
+then download sign there's no pair other
+
+678
+00:28:01,520 --> 00:28:07,440
+pairs right so let's see
+
+679
+00:28:04,559 --> 00:28:12,000
+check stack symbol zero okay there is a
+
+680
+00:28:07,440 --> 00:28:15,039
+push here so we find okay two pop here
+
+681
+00:28:12,000 --> 00:28:17,840
+so you make them two pairs
+
+682
+00:28:15,039 --> 00:28:17,840
+first pair
+
+683
+00:28:18,320 --> 00:28:22,399
+and second pair
+
+684
+00:28:20,720 --> 00:28:23,200
+okay
+
+685
+00:28:22,399 --> 00:28:26,720
+so
+
+686
+00:28:23,200 --> 00:28:29,039
+so first pair that use uh well
+
+687
+00:28:26,720 --> 00:28:31,440
+let's use a okay
+
+688
+00:28:29,039 --> 00:28:34,720
+so a is not
+
+689
+00:28:31,440 --> 00:28:37,760
+is a bad idea so let's use
+
+690
+00:28:34,720 --> 00:28:38,720
+small a and small b okay
+
+691
+00:28:37,760 --> 00:28:39,760
+so
+
+692
+00:28:38,720 --> 00:28:42,640
+let's say
+
+693
+00:28:39,760 --> 00:28:42,640
+for small a
+
+694
+00:28:42,720 --> 00:28:45,120
+for
+
+695
+00:28:43,679 --> 00:28:48,320
+folder
+
+696
+00:28:45,120 --> 00:28:50,240
+transition here that's
+
+697
+00:28:48,320 --> 00:28:53,840
+a1 okay
+
+698
+00:28:50,240 --> 00:28:53,840
+for trans transition a1
+
+699
+00:28:54,720 --> 00:28:58,720
+it
+
+700
+00:28:55,919 --> 00:29:03,200
+goes from 2
+
+701
+00:28:58,720 --> 00:29:05,840
+to state 2 right consumes 0
+
+702
+00:29:03,200 --> 00:29:08,080
+and of course push is 0
+
+703
+00:29:05,840 --> 00:29:09,200
+and then
+
+704
+00:29:08,080 --> 00:29:13,120
+for
+
+705
+00:29:09,200 --> 00:29:13,919
+transition a2 here
+
+706
+00:29:13,120 --> 00:29:17,120
+okay
+
+707
+00:29:13,919 --> 00:29:17,120
+so it goes to
+
+708
+00:29:18,080 --> 00:29:22,480
+it from goes from
+
+709
+00:29:20,320 --> 00:29:28,559
+2
+
+710
+00:29:22,480 --> 00:29:31,200
+to 3 state 2 to state 3 and consumed one
+
+711
+00:29:28,559 --> 00:29:32,960
+right one is here
+
+712
+00:29:31,200 --> 00:29:35,200
+one is here okay
+
+713
+00:29:32,960 --> 00:29:36,399
+and of course pop 0 that's why they are
+
+714
+00:29:35,200 --> 00:29:37,360
+paired
+
+715
+00:29:36,399 --> 00:29:40,000
+then
+
+716
+00:29:37,360 --> 00:29:43,360
+we don't know what happened here but we
+
+717
+00:29:40,000 --> 00:29:45,360
+know this part is the responsibility of
+
+718
+00:29:43,360 --> 00:29:47,120
+a22
+
+719
+00:29:45,360 --> 00:29:50,080
+and then
+
+720
+00:29:47,120 --> 00:29:52,960
+one sorry zero here
+
+721
+00:29:50,080 --> 00:29:56,720
+one here and
+
+722
+00:29:52,960 --> 00:30:00,399
+star front two ends with three so a
+
+723
+00:29:56,720 --> 00:30:03,440
+two three may become
+
+724
+00:30:00,399 --> 00:30:04,880
+zero a two two one
+
+725
+00:30:03,440 --> 00:30:05,679
+okay
+
+726
+00:30:04,880 --> 00:30:08,399
+so
+
+727
+00:30:05,679 --> 00:30:10,720
+for the second
+
+728
+00:30:08,399 --> 00:30:12,559
+pair here
+
+729
+00:30:10,720 --> 00:30:15,520
+for a
+
+730
+00:30:12,559 --> 00:30:16,720
+the the the first row is also a one
+
+731
+00:30:15,520 --> 00:30:19,440
+right
+
+732
+00:30:16,720 --> 00:30:21,279
+so that's same thing
+
+733
+00:30:19,440 --> 00:30:23,360
+two to two
+
+734
+00:30:21,279 --> 00:30:24,320
+constant 0
+
+735
+00:30:23,360 --> 00:30:26,960
+but
+
+736
+00:30:24,320 --> 00:30:28,000
+b2 here
+
+737
+00:30:26,960 --> 00:30:28,880
+is
+
+738
+00:30:28,000 --> 00:30:29,679
+3
+
+739
+00:30:28,880 --> 00:30:31,840
+2
+
+740
+00:30:29,679 --> 00:30:33,520
+3 consumes
+
+741
+00:30:31,840 --> 00:30:36,640
+1
+
+742
+00:30:33,520 --> 00:30:40,240
+and same thing this part
+
+743
+00:30:36,640 --> 00:30:42,399
+will be handled by a23
+
+744
+00:30:40,240 --> 00:30:44,559
+and the zero here
+
+745
+00:30:42,399 --> 00:30:46,320
+and the one here
+
+746
+00:30:44,559 --> 00:30:48,960
+and
+
+747
+00:30:46,320 --> 00:30:51,840
+first one last one a
+
+748
+00:30:48,960 --> 00:30:51,840
+two three
+
+749
+00:30:52,080 --> 00:30:54,399
+okay
+
+750
+00:30:53,600 --> 00:30:57,200
+so
+
+751
+00:30:54,399 --> 00:30:59,360
+no other pairs possible for the pdas
+
+752
+00:30:57,200 --> 00:31:00,480
+right
+
+753
+00:30:59,360 --> 00:31:02,799
+so
+
+754
+00:31:00,480 --> 00:31:05,440
+that's why we have
+
+755
+00:31:02,799 --> 00:31:09,039
+a three rules here
+
+756
+00:31:05,440 --> 00:31:11,200
+a1 4 to a 2 3
+
+757
+00:31:09,039 --> 00:31:14,960
+a 2 3 2
+
+758
+00:31:11,200 --> 00:31:18,320
+may become 0 a 2 2 1 and also may become
+
+759
+00:31:14,960 --> 00:31:19,519
+0 a 2 3 1.
+
+760
+00:31:18,320 --> 00:31:20,640
+okay
+
+761
+00:31:19,519 --> 00:31:22,559
+so
+
+762
+00:31:20,640 --> 00:31:24,640
+that's it we have
+
+763
+00:31:22,559 --> 00:31:27,519
+uh return the
+
+764
+00:31:24,640 --> 00:31:29,760
+equivalent context free grammar
+
+765
+00:31:27,519 --> 00:31:29,760
+for
+
+766
+00:31:30,840 --> 00:31:34,720
+this
+
+767
+00:31:32,399 --> 00:31:34,720
+okay
+
+768
+00:31:38,640 --> 00:31:40,880
+so
+
+769
+00:31:41,039 --> 00:31:44,159
+the problem
+
+770
+00:31:42,240 --> 00:31:46,320
+here
+
+771
+00:31:44,159 --> 00:31:47,840
+may be that
+
+772
+00:31:46,320 --> 00:31:51,039
+how
+
+773
+00:31:47,840 --> 00:31:53,919
+how can we be sure
+
+774
+00:31:51,039 --> 00:31:53,919
+such a grammar
+
+775
+00:31:54,159 --> 00:31:58,480
+is really equivalent
+
+776
+00:31:57,120 --> 00:32:00,720
+to
+
+777
+00:31:58,480 --> 00:32:03,760
+this pda
+
+778
+00:32:00,720 --> 00:32:03,760
+right why
+
+779
+00:32:04,159 --> 00:32:09,039
+it's not so intuitive it's it's not so
+
+780
+00:32:07,360 --> 00:32:11,519
+straightforward
+
+781
+00:32:09,039 --> 00:32:13,039
+everybody needs to think about that a
+
+782
+00:32:11,519 --> 00:32:16,240
+lot and
+
+783
+00:32:13,039 --> 00:32:17,760
+may not be sure of the equivalence
+
+784
+00:32:16,240 --> 00:32:18,880
+so we need to
+
+785
+00:32:17,760 --> 00:32:21,760
+prove it
+
+786
+00:32:18,880 --> 00:32:25,679
+okay we need to do a
+
+787
+00:32:21,760 --> 00:32:27,679
+do a further step to prove that they are
+
+788
+00:32:25,679 --> 00:32:30,640
+really equivalent
+
+789
+00:32:27,679 --> 00:32:34,240
+like what we did for the equivalence
+
+790
+00:32:30,640 --> 00:32:37,120
+between dfa and nfa they are not so
+
+791
+00:32:34,240 --> 00:32:38,159
+straightforward so we need to prove it
+
+792
+00:32:37,120 --> 00:32:40,640
+okay
+
+793
+00:32:38,159 --> 00:32:42,960
+so what we want to do is that
+
+794
+00:32:40,640 --> 00:32:44,720
+we want to prove
+
+795
+00:32:42,960 --> 00:32:46,720
+given a pda
+
+796
+00:32:44,720 --> 00:32:49,679
+with the three
+
+797
+00:32:46,720 --> 00:32:52,799
+uh satisfying the three criteria here
+
+798
+00:32:49,679 --> 00:32:56,640
+and according to
+
+799
+00:32:52,799 --> 00:32:58,240
+according to the construction rule here
+
+800
+00:32:56,640 --> 00:32:59,919
+we will get
+
+801
+00:32:58,240 --> 00:33:02,480
+we will obtain
+
+802
+00:32:59,919 --> 00:33:04,080
+a contextual grammar
+
+803
+00:33:02,480 --> 00:33:06,720
+and
+
+804
+00:33:04,080 --> 00:33:09,200
+for that context free grammar we have we
+
+805
+00:33:06,720 --> 00:33:11,440
+can prove two things
+
+806
+00:33:09,200 --> 00:33:13,279
+first one here
+
+807
+00:33:11,440 --> 00:33:16,559
+if apq
+
+808
+00:33:13,279 --> 00:33:19,200
+of that context free grammar generates x
+
+809
+00:33:16,559 --> 00:33:20,960
+some terminal string
+
+810
+00:33:19,200 --> 00:33:24,799
+then
+
+811
+00:33:20,960 --> 00:33:26,080
+this terminal string can bring p
+
+812
+00:33:24,799 --> 00:33:27,679
+from
+
+813
+00:33:26,080 --> 00:33:30,640
+state p
+
+814
+00:33:27,679 --> 00:33:32,240
+with empty stack
+
+815
+00:33:30,640 --> 00:33:35,919
+to q
+
+816
+00:33:32,240 --> 00:33:38,960
+also with empty stack
+
+817
+00:33:35,919 --> 00:33:39,840
+okay so there are two notes here
+
+818
+00:33:38,960 --> 00:33:42,960
+first
+
+819
+00:33:39,840 --> 00:33:45,840
+why do we want to say that with empty
+
+820
+00:33:42,960 --> 00:33:46,960
+stack and with empty stack
+
+821
+00:33:45,840 --> 00:33:48,720
+because
+
+822
+00:33:46,960 --> 00:33:50,720
+first one
+
+823
+00:33:48,720 --> 00:33:52,480
+means we don't
+
+824
+00:33:50,720 --> 00:33:56,399
+make assumption
+
+825
+00:33:52,480 --> 00:33:58,559
+to the content of steak
+
+826
+00:33:56,399 --> 00:34:01,760
+okay we don't rely on that okay your
+
+827
+00:33:58,559 --> 00:34:03,760
+stack must have like a symbol t first
+
+828
+00:34:01,760 --> 00:34:05,440
+then it works no
+
+829
+00:34:03,760 --> 00:34:07,519
+we don't make assumption
+
+830
+00:34:05,440 --> 00:34:10,079
+okay and then
+
+831
+00:34:07,519 --> 00:34:12,240
+we don't leave every anything on the
+
+832
+00:34:10,079 --> 00:34:13,280
+stick
+
+833
+00:34:12,240 --> 00:34:15,520
+if you
+
+834
+00:34:13,280 --> 00:34:18,960
+leave anything on the stack it might
+
+835
+00:34:15,520 --> 00:34:19,760
+affect the later the future operations
+
+836
+00:34:18,960 --> 00:34:21,599
+so
+
+837
+00:34:19,760 --> 00:34:26,240
+we don't make assumption
+
+838
+00:34:21,599 --> 00:34:27,679
+of the contents of mistake and we don't
+
+839
+00:34:26,240 --> 00:34:29,839
+leave
+
+840
+00:34:27,679 --> 00:34:32,079
+something behind us
+
+841
+00:34:29,839 --> 00:34:34,560
+okay so that's why we describe it this
+
+842
+00:34:32,079 --> 00:34:36,879
+way so that's the first note
+
+843
+00:34:34,560 --> 00:34:39,280
+the second note is that
+
+844
+00:34:36,879 --> 00:34:42,320
+what we want to prove is that
+
+845
+00:34:39,280 --> 00:34:45,040
+the variable apq the variable of grammar
+
+846
+00:34:42,320 --> 00:34:47,200
+apq generate x
+
+847
+00:34:45,040 --> 00:34:48,960
+then s can bring
+
+848
+00:34:47,200 --> 00:34:51,440
+you know
+
+849
+00:34:48,960 --> 00:34:51,440
+this one
+
+850
+00:34:55,119 --> 00:34:57,359
+so
+
+851
+00:35:01,280 --> 00:35:03,839
+if
+
+852
+00:35:04,160 --> 00:35:07,680
+our grammar apq
+
+853
+00:35:13,040 --> 00:35:16,720
+generates
+
+854
+00:35:15,599 --> 00:35:17,839
+nothing
+
+855
+00:35:16,720 --> 00:35:19,920
+let's say
+
+856
+00:35:17,839 --> 00:35:21,440
+it can generate
+
+857
+00:35:19,920 --> 00:35:25,440
+no
+
+858
+00:35:21,440 --> 00:35:26,320
+not empty string okay not m md string
+
+859
+00:35:25,440 --> 00:35:27,599
+if
+
+860
+00:35:26,320 --> 00:35:28,560
+apq
+
+861
+00:35:27,599 --> 00:35:29,760
+can
+
+862
+00:35:28,560 --> 00:35:31,040
+generate
+
+863
+00:35:29,760 --> 00:35:34,079
+no
+
+864
+00:35:31,040 --> 00:35:36,079
+terminal strings okay absolutely no
+
+865
+00:35:34,079 --> 00:35:37,920
+terminal strings
+
+866
+00:35:36,079 --> 00:35:40,880
+then
+
+867
+00:35:37,920 --> 00:35:44,560
+the sentence here
+
+868
+00:35:40,880 --> 00:35:45,760
+is trivially true
+
+869
+00:35:44,560 --> 00:35:48,320
+okay
+
+870
+00:35:45,760 --> 00:35:50,960
+is trivially true
+
+871
+00:35:48,320 --> 00:35:54,079
+so of course we want to prove it prove
+
+872
+00:35:50,960 --> 00:35:55,520
+it that this claim right now but
+
+873
+00:35:54,079 --> 00:35:57,119
+it must be
+
+874
+00:35:55,520 --> 00:35:59,119
+noted that
+
+875
+00:35:57,119 --> 00:36:02,400
+if apq
+
+876
+00:35:59,119 --> 00:36:04,079
+eventually generates nothing then the
+
+877
+00:36:02,400 --> 00:36:06,000
+statement is true
+
+878
+00:36:04,079 --> 00:36:07,520
+okay
+
+879
+00:36:06,000 --> 00:36:10,240
+so
+
+880
+00:36:07,520 --> 00:36:14,560
+let's see the proof first and we need to
+
+881
+00:36:10,240 --> 00:36:17,839
+do this combined with the next proof
+
+882
+00:36:14,560 --> 00:36:19,520
+so how do we prove this statement
+
+883
+00:36:17,839 --> 00:36:20,640
+firstly we use the
+
+884
+00:36:19,520 --> 00:36:23,920
+induction
+
+885
+00:36:20,640 --> 00:36:27,920
+on the number of steps in the derivation
+
+886
+00:36:23,920 --> 00:36:28,800
+okay because apu generates x
+
+887
+00:36:27,920 --> 00:36:29,599
+okay
+
+888
+00:36:28,800 --> 00:36:32,400
+so
+
+889
+00:36:29,599 --> 00:36:33,599
+since we want to derive from
+
+890
+00:36:32,400 --> 00:36:35,680
+a variable
+
+891
+00:36:33,599 --> 00:36:38,160
+we need to check
+
+892
+00:36:35,680 --> 00:36:41,040
+how many steps we
+
+893
+00:36:38,160 --> 00:36:42,160
+need to derive from apq to a terminal
+
+894
+00:36:41,040 --> 00:36:44,800
+string
+
+895
+00:36:42,160 --> 00:36:47,280
+so the induction basis is
+
+896
+00:36:44,800 --> 00:36:48,800
+the derivation has only one step
+
+897
+00:36:47,280 --> 00:36:51,280
+okay
+
+898
+00:36:48,800 --> 00:36:54,400
+so is there any
+
+899
+00:36:51,280 --> 00:36:55,839
+uh derivation from apq
+
+900
+00:36:54,400 --> 00:36:59,119
+to
+
+901
+00:36:55,839 --> 00:37:00,240
+a terminal swing with breathing only one
+
+902
+00:36:59,119 --> 00:37:03,520
+step
+
+903
+00:37:00,240 --> 00:37:05,920
+for the grammar there is only
+
+904
+00:37:03,520 --> 00:37:06,960
+the third kind of rules can do that
+
+905
+00:37:05,920 --> 00:37:09,520
+right
+
+906
+00:37:06,960 --> 00:37:15,119
+because you check this
+
+907
+00:37:09,520 --> 00:37:17,359
+this will be a p q may become a a r s b
+
+908
+00:37:15,119 --> 00:37:20,000
+so you still have an uh you still have
+
+909
+00:37:17,359 --> 00:37:22,240
+variable you need other durations it
+
+910
+00:37:20,000 --> 00:37:25,280
+won't be
+
+911
+00:37:22,240 --> 00:37:26,079
+a terminal string within one step
+
+912
+00:37:25,280 --> 00:37:26,960
+right
+
+913
+00:37:26,079 --> 00:37:29,200
+and
+
+914
+00:37:26,960 --> 00:37:31,440
+for this kind of rules
+
+915
+00:37:29,200 --> 00:37:33,760
+one variable becomes two variable you
+
+916
+00:37:31,440 --> 00:37:36,720
+only will have more derivations
+
+917
+00:37:33,760 --> 00:37:40,480
+derivation steps okay so only these kind
+
+918
+00:37:36,720 --> 00:37:41,760
+rules you have one step and become
+
+919
+00:37:40,480 --> 00:37:44,640
+terminal string
+
+920
+00:37:41,760 --> 00:37:44,640
+and let's check
+
+921
+00:37:47,839 --> 00:37:50,720
+app
+
+922
+00:37:51,119 --> 00:37:54,560
+with one step
+
+923
+00:37:52,560 --> 00:37:57,680
+get epsilon
+
+924
+00:37:54,560 --> 00:38:01,760
+and we check epsilon
+
+925
+00:37:57,680 --> 00:38:03,280
+is this empty string can bring p
+
+926
+00:38:01,760 --> 00:38:04,960
+from
+
+927
+00:38:03,280 --> 00:38:08,400
+p
+
+928
+00:38:04,960 --> 00:38:09,680
+to p the same state with empty stack and
+
+929
+00:38:08,400 --> 00:38:11,520
+empty stack
+
+930
+00:38:09,680 --> 00:38:12,480
+of course because there's nothing
+
+931
+00:38:11,520 --> 00:38:16,960
+happened
+
+932
+00:38:12,480 --> 00:38:19,760
+right so our induction basis is true
+
+933
+00:38:16,960 --> 00:38:22,000
+okay so let's assume that let's assume
+
+934
+00:38:19,760 --> 00:38:23,359
+that
+
+935
+00:38:22,000 --> 00:38:26,880
+for
+
+936
+00:38:23,359 --> 00:38:28,640
+derivation of length at most k
+
+937
+00:38:26,880 --> 00:38:32,079
+where k
+
+938
+00:38:28,640 --> 00:38:34,160
+is equal to one or greater than 1
+
+939
+00:38:32,079 --> 00:38:36,079
+we assume that
+
+940
+00:38:34,160 --> 00:38:39,280
+remember its assumption
+
+941
+00:38:36,079 --> 00:38:42,800
+we assume that it's true
+
+942
+00:38:39,280 --> 00:38:44,400
+for the claim here
+
+943
+00:38:42,800 --> 00:38:48,079
+then based on
+
+944
+00:38:44,400 --> 00:38:49,200
+the assumption here we will be trying to
+
+945
+00:38:48,079 --> 00:38:52,640
+prove
+
+946
+00:38:49,200 --> 00:38:54,880
+if the terminal string requires k plus
+
+947
+00:38:52,640 --> 00:38:56,079
+one steps to the right
+
+948
+00:38:54,880 --> 00:38:57,200
+okay
+
+949
+00:38:56,079 --> 00:39:01,000
+so
+
+950
+00:38:57,200 --> 00:39:01,000
+since apq
+
+951
+00:39:01,920 --> 00:39:04,640
+can derive
+
+952
+00:39:05,520 --> 00:39:10,880
+yields uh this terminal string with k
+
+953
+00:39:08,480 --> 00:39:12,000
+plus one steps okay
+
+954
+00:39:10,880 --> 00:39:15,040
+we check
+
+955
+00:39:12,000 --> 00:39:17,760
+what is the first step
+
+956
+00:39:15,040 --> 00:39:19,920
+okay we check what is the first step
+
+957
+00:39:17,760 --> 00:39:23,359
+since k
+
+958
+00:39:19,920 --> 00:39:25,440
+is equal to or greater than 1 k plus 1
+
+959
+00:39:23,359 --> 00:39:26,839
+equal to or greater
+
+960
+00:39:25,440 --> 00:39:29,440
+than
+
+961
+00:39:26,839 --> 00:39:30,800
+2. right
+
+962
+00:39:29,440 --> 00:39:31,920
+and
+
+963
+00:39:30,800 --> 00:39:34,880
+you see
+
+964
+00:39:31,920 --> 00:39:35,920
+from the three kinds of rules
+
+965
+00:39:34,880 --> 00:39:38,880
+if
+
+966
+00:39:35,920 --> 00:39:41,040
+the first step is this kind of rules
+
+967
+00:39:38,880 --> 00:39:42,960
+then there's no next step so you won't
+
+968
+00:39:41,040 --> 00:39:44,560
+have two steps
+
+969
+00:39:42,960 --> 00:39:47,200
+so
+
+970
+00:39:44,560 --> 00:39:50,800
+for for derivation
+
+971
+00:39:47,200 --> 00:39:52,800
+equal to or greater than two steps the
+
+972
+00:39:50,800 --> 00:39:56,320
+first step must be
+
+973
+00:39:52,800 --> 00:39:58,800
+this kind of rules or this kind of rules
+
+974
+00:39:56,320 --> 00:40:00,640
+right you have no other choices
+
+975
+00:39:58,800 --> 00:40:02,960
+so let's say
+
+976
+00:40:00,640 --> 00:40:05,520
+if the first step
+
+977
+00:40:02,960 --> 00:40:08,319
+is the first kind of rules
+
+978
+00:40:05,520 --> 00:40:11,200
+then apq
+
+979
+00:40:08,319 --> 00:40:12,240
+derives actually eos
+
+980
+00:40:11,200 --> 00:40:14,240
+a
+
+981
+00:40:12,240 --> 00:40:16,400
+ars
+
+982
+00:40:14,240 --> 00:40:16,400
+b
+
+983
+00:40:17,280 --> 00:40:20,720
+right
+
+984
+00:40:18,079 --> 00:40:21,599
+and we know that apq eventually becomes
+
+985
+00:40:20,720 --> 00:40:24,640
+x
+
+986
+00:40:21,599 --> 00:40:26,640
+so we know that ars
+
+987
+00:40:24,640 --> 00:40:28,960
+becomes y
+
+988
+00:40:26,640 --> 00:40:33,760
+and the x here
+
+989
+00:40:28,960 --> 00:40:33,760
+should can be rewritten as a y b
+
+990
+00:40:34,960 --> 00:40:39,599
+and
+
+991
+00:40:36,240 --> 00:40:43,599
+a p q becomes x with what plus one k
+
+992
+00:40:39,599 --> 00:40:44,880
+plus one steps that means a r s
+
+993
+00:40:43,599 --> 00:40:47,839
+yields y
+
+994
+00:40:44,880 --> 00:40:50,240
+with k steps right because the first
+
+995
+00:40:47,839 --> 00:40:52,480
+step is here
+
+996
+00:40:50,240 --> 00:40:55,440
+since ars
+
+997
+00:40:52,480 --> 00:40:57,680
+derived y with k steps
+
+998
+00:40:55,440 --> 00:40:59,680
+it is true that
+
+999
+00:40:57,680 --> 00:41:01,119
+we assume
+
+1000
+00:40:59,680 --> 00:41:03,119
+the clan
+
+1001
+00:41:01,119 --> 00:41:05,119
+is true
+
+1002
+00:41:03,119 --> 00:41:07,760
+right well assume that is true
+
+1003
+00:41:05,119 --> 00:41:09,359
+within
+
+1004
+00:41:07,760 --> 00:41:11,760
+derivation of
+
+1005
+00:41:09,359 --> 00:41:14,319
+length at most k
+
+1006
+00:41:11,760 --> 00:41:15,920
+so this part connects to
+
+1007
+00:41:14,319 --> 00:41:19,520
+the true
+
+1008
+00:41:15,920 --> 00:41:21,680
+of the hypothesis hypothesis assumed to
+
+1009
+00:41:19,520 --> 00:41:24,480
+be true
+
+1010
+00:41:21,680 --> 00:41:24,480
+then we know that
+
+1011
+00:41:25,359 --> 00:41:29,119
+y here
+
+1012
+00:41:27,920 --> 00:41:30,400
+can make
+
+1013
+00:41:29,119 --> 00:41:31,440
+can bring
+
+1014
+00:41:30,400 --> 00:41:34,880
+p
+
+1015
+00:41:31,440 --> 00:41:36,400
+go from r
+
+1016
+00:41:34,880 --> 00:41:38,319
+go from r
+
+1017
+00:41:36,400 --> 00:41:39,839
+on empty stack
+
+1018
+00:41:38,319 --> 00:41:41,680
+to s
+
+1019
+00:41:39,839 --> 00:41:44,000
+on empty stack
+
+1020
+00:41:41,680 --> 00:41:44,000
+right
+
+1021
+00:41:44,480 --> 00:41:49,599
+and we also know that
+
+1022
+00:41:46,800 --> 00:41:52,400
+why can we have
+
+1023
+00:41:49,599 --> 00:41:57,200
+the first derivation here why
+
+1024
+00:41:52,400 --> 00:41:57,200
+because there is a rule in the grammar
+
+1025
+00:41:57,920 --> 00:42:02,000
+and then why there is such a rule in the
+
+1026
+00:42:00,160 --> 00:42:03,200
+grammar
+
+1027
+00:42:02,000 --> 00:42:04,480
+because
+
+1028
+00:42:03,200 --> 00:42:06,960
+the p
+
+1029
+00:42:04,480 --> 00:42:08,560
+has a transition
+
+1030
+00:42:06,960 --> 00:42:10,400
+contains
+
+1031
+00:42:08,560 --> 00:42:11,599
+something like this
+
+1032
+00:42:10,400 --> 00:42:13,760
+right
+
+1033
+00:42:11,599 --> 00:42:13,760
+p
+
+1034
+00:42:14,560 --> 00:42:21,200
+r
+
+1035
+00:42:17,200 --> 00:42:21,200
+and also a transition like this
+
+1036
+00:42:22,880 --> 00:42:25,200
+as
+
+1037
+00:42:25,520 --> 00:42:27,680
+q
+
+1038
+00:42:28,839 --> 00:42:32,640
+and a here
+
+1039
+00:42:32,800 --> 00:42:36,960
+a b here
+
+1040
+00:42:34,400 --> 00:42:38,720
+and they
+
+1041
+00:42:36,960 --> 00:42:41,920
+and the
+
+1042
+00:42:38,720 --> 00:42:44,319
+stack simple t is pushed
+
+1043
+00:42:41,920 --> 00:42:46,480
+for the first step and the popped into
+
+1044
+00:42:44,319 --> 00:42:47,839
+the last step
+
+1045
+00:42:46,480 --> 00:42:49,920
+okay
+
+1046
+00:42:47,839 --> 00:42:52,079
+so
+
+1047
+00:42:49,920 --> 00:42:57,640
+it's similar to the
+
+1048
+00:42:52,079 --> 00:42:57,640
+can be represented as a graph here that
+
+1049
+00:43:00,400 --> 00:43:05,119
+apr
+
+1050
+00:43:02,160 --> 00:43:08,319
+the whole string here
+
+1051
+00:43:05,119 --> 00:43:09,119
+generates apq sorry generate by apq
+
+1052
+00:43:08,319 --> 00:43:12,640
+right
+
+1053
+00:43:09,119 --> 00:43:13,599
+and the first symbol is a last symbol is
+
+1054
+00:43:12,640 --> 00:43:16,880
+b
+
+1055
+00:43:13,599 --> 00:43:19,440
+and this part generated by rs
+
+1056
+00:43:16,880 --> 00:43:20,800
+and which is y
+
+1057
+00:43:19,440 --> 00:43:22,480
+previously
+
+1058
+00:43:20,800 --> 00:43:25,599
+and
+
+1059
+00:43:22,480 --> 00:43:27,520
+the machine from r
+
+1060
+00:43:25,599 --> 00:43:29,760
+to s
+
+1061
+00:43:27,520 --> 00:43:31,920
+there is the
+
+1062
+00:43:29,760 --> 00:43:33,440
+the stack here because we don't make
+
+1063
+00:43:31,920 --> 00:43:35,200
+assumption
+
+1064
+00:43:33,440 --> 00:43:37,599
+on empty stick right we don't make
+
+1065
+00:43:35,200 --> 00:43:39,040
+assumption here so the machine can go
+
+1066
+00:43:37,599 --> 00:43:40,319
+from r
+
+1067
+00:43:39,040 --> 00:43:43,359
+2s
+
+1068
+00:43:40,319 --> 00:43:44,560
+go from r to
+
+1069
+00:43:43,359 --> 00:43:47,760
+s
+
+1070
+00:43:44,560 --> 00:43:50,160
+and leave nothing on the stack
+
+1071
+00:43:47,760 --> 00:43:52,319
+and since the machine has a
+
+1072
+00:43:50,160 --> 00:43:56,960
+transition
+
+1073
+00:43:52,319 --> 00:43:56,960
+from p consume a
+
+1074
+00:43:57,040 --> 00:43:59,280
+and
+
+1075
+00:43:59,680 --> 00:44:02,079
+push
+
+1076
+00:44:04,000 --> 00:44:07,760
+so i should write this way
+
+1077
+00:44:06,400 --> 00:44:08,960
+and r
+
+1078
+00:44:07,760 --> 00:44:11,280
+push t
+
+1079
+00:44:08,960 --> 00:44:11,280
+here
+
+1080
+00:44:11,680 --> 00:44:14,640
+t
+
+1081
+00:44:12,720 --> 00:44:18,640
+is pushed onto the stack
+
+1082
+00:44:14,640 --> 00:44:20,960
+and then finally at the the last step
+
+1083
+00:44:18,640 --> 00:44:23,200
+the machine from
+
+1084
+00:44:20,960 --> 00:44:24,560
+s
+
+1085
+00:44:23,200 --> 00:44:26,880
+consume b
+
+1086
+00:44:24,560 --> 00:44:29,119
+pop the
+
+1087
+00:44:26,880 --> 00:44:32,640
+key here
+
+1088
+00:44:29,119 --> 00:44:32,640
+and goes to q
+
+1089
+00:44:33,760 --> 00:44:36,480
+and
+
+1090
+00:44:34,839 --> 00:44:38,160
+nothing
+
+1091
+00:44:36,480 --> 00:44:39,760
+right
+
+1092
+00:44:38,160 --> 00:44:42,480
+the transition
+
+1093
+00:44:39,760 --> 00:44:47,599
+of this machine is the
+
+1094
+00:44:42,480 --> 00:44:49,119
+reason why we have a p q may become a a
+
+1095
+00:44:47,599 --> 00:44:51,440
+r s b
+
+1096
+00:44:49,119 --> 00:44:54,640
+why we have a rule here
+
+1097
+00:44:51,440 --> 00:44:56,880
+that's why for the grammar
+
+1098
+00:44:54,640 --> 00:44:58,560
+we know that
+
+1099
+00:44:56,880 --> 00:45:00,000
+this
+
+1100
+00:44:58,560 --> 00:45:01,920
+statement
+
+1101
+00:45:00,000 --> 00:45:04,480
+is true
+
+1102
+00:45:01,920 --> 00:45:06,160
+you can see that you can think of that
+
+1103
+00:45:04,480 --> 00:45:08,880
+as
+
+1104
+00:45:06,160 --> 00:45:10,480
+the some terminal string generated by
+
+1105
+00:45:08,880 --> 00:45:13,359
+apq
+
+1106
+00:45:10,480 --> 00:45:13,359
+and the first step
+
+1107
+00:45:13,599 --> 00:45:16,319
+the
+
+1108
+00:45:14,720 --> 00:45:20,240
+you put that
+
+1109
+00:45:16,319 --> 00:45:21,200
+you put this terminal string onto p
+
+1110
+00:45:20,240 --> 00:45:24,079
+from
+
+1111
+00:45:21,200 --> 00:45:26,079
+state q state p
+
+1112
+00:45:24,079 --> 00:45:31,200
+and the first step is
+
+1113
+00:45:26,079 --> 00:45:34,720
+the machine from p to r consume a
+
+1114
+00:45:31,200 --> 00:45:36,800
+and push some stack symbol let's say
+
+1115
+00:45:34,720 --> 00:45:40,640
+t
+
+1116
+00:45:36,800 --> 00:45:44,240
+and somehow it goes to s
+
+1117
+00:45:40,640 --> 00:45:46,400
+from r to s and the consume input symbol
+
+1118
+00:45:44,240 --> 00:45:49,440
+y
+
+1119
+00:45:46,400 --> 00:45:51,520
+and leave nothing on the stick
+
+1120
+00:45:49,440 --> 00:45:52,480
+in this case what is on the top of the
+
+1121
+00:45:51,520 --> 00:45:54,800
+thick
+
+1122
+00:45:52,480 --> 00:45:56,640
+exactly t right
+
+1123
+00:45:54,800 --> 00:46:00,560
+so the machine
+
+1124
+00:45:56,640 --> 00:46:03,680
+can come from can go from s consume the
+
+1125
+00:46:00,560 --> 00:46:03,680
+last the symbol b
+
+1126
+00:46:04,640 --> 00:46:10,319
+and the top t
+
+1127
+00:46:07,119 --> 00:46:11,839
+then go to state q
+
+1128
+00:46:10,319 --> 00:46:14,640
+then
+
+1129
+00:46:11,839 --> 00:46:18,160
+it is proof that the claim is true for
+
+1130
+00:46:14,640 --> 00:46:21,040
+the first situation
+
+1131
+00:46:18,160 --> 00:46:24,000
+so the second situation is that the
+
+1132
+00:46:21,040 --> 00:46:25,920
+first step of the derivation
+
+1133
+00:46:24,000 --> 00:46:30,319
+is that apq
+
+1134
+00:46:25,920 --> 00:46:31,760
+becomes apr and arq
+
+1135
+00:46:30,319 --> 00:46:34,640
+right
+
+1136
+00:46:31,760 --> 00:46:37,359
+and this is your this situation is even
+
+1137
+00:46:34,640 --> 00:46:37,940
+easier why because
+
+1138
+00:46:37,359 --> 00:46:40,160
+now
+
+1139
+00:46:37,940 --> 00:46:43,839
+[Music]
+
+1140
+00:46:40,160 --> 00:46:43,839
+you consume one step
+
+1141
+00:46:44,079 --> 00:46:46,560
+so
+
+1142
+00:46:45,119 --> 00:46:49,119
+for apr
+
+1143
+00:46:46,560 --> 00:46:52,160
+and arq
+
+1144
+00:46:49,119 --> 00:46:52,160
+let's say you need
+
+1145
+00:46:52,800 --> 00:46:59,200
+u steps for apr
+
+1146
+00:46:55,520 --> 00:46:59,200
+to become some string
+
+1147
+00:46:59,440 --> 00:47:04,240
+u-steps
+
+1148
+00:47:00,640 --> 00:47:04,240
+and for aiq
+
+1149
+00:47:04,319 --> 00:47:11,920
+b steps and you know that u plus b
+
+1150
+00:47:08,319 --> 00:47:15,920
+equal to k and
+
+1151
+00:47:11,920 --> 00:47:16,720
+both of both of them is less than
+
+1152
+00:47:15,920 --> 00:47:18,000
+k
+
+1153
+00:47:16,720 --> 00:47:19,599
+right
+
+1154
+00:47:18,000 --> 00:47:20,800
+u
+
+1155
+00:47:19,599 --> 00:47:22,800
+less than k
+
+1156
+00:47:20,800 --> 00:47:25,440
+not even equal to
+
+1157
+00:47:22,800 --> 00:47:28,559
+and v also less than k
+
+1158
+00:47:25,440 --> 00:47:31,040
+so they are both
+
+1159
+00:47:28,559 --> 00:47:31,040
+within
+
+1160
+00:47:32,960 --> 00:47:36,000
+the induction step
+
+1161
+00:47:36,160 --> 00:47:39,760
+since
+
+1162
+00:47:37,520 --> 00:47:43,520
+for the machine
+
+1163
+00:47:39,760 --> 00:47:47,040
+to go from p to r with empty stack and
+
+1164
+00:47:43,520 --> 00:47:48,960
+from r to q with empty stack
+
+1165
+00:47:47,040 --> 00:47:51,599
+then the clan
+
+1166
+00:47:48,960 --> 00:47:52,400
+is proved
+
+1167
+00:47:51,599 --> 00:47:54,240
+okay
+
+1168
+00:47:52,400 --> 00:47:56,800
+so now we prove that
+
+1169
+00:47:54,240 --> 00:48:00,960
+for the grammar we constructed for each
+
+1170
+00:47:56,800 --> 00:48:02,800
+variable apq as known as apq generates a
+
+1171
+00:48:00,960 --> 00:48:05,119
+terminal string x
+
+1172
+00:48:02,800 --> 00:48:07,839
+that x can bring
+
+1173
+00:48:05,119 --> 00:48:07,839
+p from
+
+1174
+00:48:08,480 --> 00:48:11,200
+can bring
+
+1175
+00:48:10,240 --> 00:48:14,160
+p
+
+1176
+00:48:11,200 --> 00:48:16,559
+can bring p from state p
+
+1177
+00:48:14,160 --> 00:48:20,079
+with empty stack that means we don't do
+
+1178
+00:48:16,559 --> 00:48:24,160
+assumption on stack contents and go to q
+
+1179
+00:48:20,079 --> 00:48:27,280
+with empty stack leave no
+
+1180
+00:48:24,160 --> 00:48:28,480
+stack symbol leave nothing on the stack
+
+1181
+00:48:27,280 --> 00:48:31,599
+okay
+
+1182
+00:48:28,480 --> 00:48:34,800
+again i want to stress that
+
+1183
+00:48:31,599 --> 00:48:36,000
+we proved this claim is not enough
+
+1184
+00:48:34,800 --> 00:48:39,839
+because
+
+1185
+00:48:36,000 --> 00:48:42,559
+for this claim to be true if your apq
+
+1186
+00:48:39,839 --> 00:48:45,920
+generates nothing then
+
+1187
+00:48:42,559 --> 00:48:46,960
+this claim is truly true so we we need
+
+1188
+00:48:45,920 --> 00:48:50,319
+another
+
+1189
+00:48:46,960 --> 00:48:53,200
+claim here we need to say that
+
+1190
+00:48:50,319 --> 00:48:54,960
+all strings
+
+1191
+00:48:53,200 --> 00:48:56,480
+which can bring
+
+1192
+00:48:54,960 --> 00:48:59,599
+pdap
+
+1193
+00:48:56,480 --> 00:49:03,920
+from the states p with empty stack
+
+1194
+00:48:59,599 --> 00:49:07,839
+to q with empty stack the ap q the
+
+1195
+00:49:03,920 --> 00:49:10,800
+grammar we constructed each variable apq
+
+1196
+00:49:07,839 --> 00:49:12,240
+can generate such x
+
+1197
+00:49:10,800 --> 00:49:15,280
+okay
+
+1198
+00:49:12,240 --> 00:49:18,400
+we also need to prove it
+
+1199
+00:49:15,280 --> 00:49:19,520
+again if we do not have
+
+1200
+00:49:18,400 --> 00:49:20,880
+proven
+
+1201
+00:49:19,520 --> 00:49:22,960
+claim
+
+1202
+00:49:20,880 --> 00:49:24,800
+230
+
+1203
+00:49:22,960 --> 00:49:27,359
+if we only
+
+1204
+00:49:24,800 --> 00:49:28,559
+prove clan 231
+
+1205
+00:49:27,359 --> 00:49:32,319
+then
+
+1206
+00:49:28,559 --> 00:49:34,480
+231 can also be trivially true
+
+1207
+00:49:32,319 --> 00:49:36,319
+if apq
+
+1208
+00:49:34,480 --> 00:49:39,040
+can generate
+
+1209
+00:49:36,319 --> 00:49:42,040
+all possible strings
+
+1210
+00:49:39,040 --> 00:49:42,040
+right
+
+1211
+00:49:44,400 --> 00:49:47,359
+it says
+
+1212
+00:49:46,000 --> 00:49:50,480
+the string
+
+1213
+00:49:47,359 --> 00:49:53,520
+can bring p from p to q
+
+1214
+00:49:50,480 --> 00:49:56,000
+apq can generate it doesn't say fpq
+
+1215
+00:49:53,520 --> 00:49:58,800
+cannot generate other stuff
+
+1216
+00:49:56,000 --> 00:50:01,040
+so if you have your apq can generate all
+
+1217
+00:49:58,800 --> 00:50:02,559
+possible strings
+
+1218
+00:50:01,040 --> 00:50:06,960
+claim
+
+1219
+00:50:02,559 --> 00:50:10,800
+231 alone is also trivially true
+
+1220
+00:50:06,960 --> 00:50:14,000
+that that's why we need both of them 230
+
+1221
+00:50:10,800 --> 00:50:16,000
+and 231 so we can ensure
+
+1222
+00:50:14,000 --> 00:50:17,839
+if there is a terminal string
+
+1223
+00:50:16,000 --> 00:50:21,040
+bring p
+
+1224
+00:50:17,839 --> 00:50:21,920
+bring pdap from state p with empty stack
+
+1225
+00:50:21,040 --> 00:50:25,200
+to
+
+1226
+00:50:21,920 --> 00:50:28,960
+state q with empty stack apq can
+
+1227
+00:50:25,200 --> 00:50:31,599
+generate that string and apq can only
+
+1228
+00:50:28,960 --> 00:50:32,960
+generate those string and
+
+1229
+00:50:31,599 --> 00:50:36,319
+nothing else
+
+1230
+00:50:32,960 --> 00:50:37,839
+okay that's why we need both of them
+
+1231
+00:50:36,319 --> 00:50:39,520
+anyway
+
+1232
+00:50:37,839 --> 00:50:41,200
+so how to prove it
+
+1233
+00:50:39,520 --> 00:50:42,559
+since we are not talking about the
+
+1234
+00:50:41,200 --> 00:50:45,280
+string print
+
+1235
+00:50:42,559 --> 00:50:45,280
+pdap
+
+1236
+00:50:45,440 --> 00:50:49,200
+from state
+
+1237
+00:50:46,800 --> 00:50:50,000
+p to q
+
+1238
+00:50:49,200 --> 00:50:52,400
+we
+
+1239
+00:50:50,000 --> 00:50:55,440
+need to do the induction on the number
+
+1240
+00:50:52,400 --> 00:50:58,720
+of steps in computation okay the number
+
+1241
+00:50:55,440 --> 00:50:58,720
+of steps in computation
+
+1242
+00:51:01,520 --> 00:51:05,040
+so our
+
+1243
+00:51:03,119 --> 00:51:07,119
+induction basis is that if the
+
+1244
+00:51:05,040 --> 00:51:09,040
+computation has only
+
+1245
+00:51:07,119 --> 00:51:11,040
+zero steps okay
+
+1246
+00:51:09,040 --> 00:51:12,720
+actually nothing happened
+
+1247
+00:51:11,040 --> 00:51:15,200
+since nothing happened
+
+1248
+00:51:12,720 --> 00:51:17,760
+the episode here can only be
+
+1249
+00:51:15,200 --> 00:51:20,319
+sorry the x here can only be absorbed
+
+1250
+00:51:17,760 --> 00:51:22,720
+and nothing happened right that states
+
+1251
+00:51:20,319 --> 00:51:24,960
+on the stem state
+
+1252
+00:51:22,720 --> 00:51:24,960
+so
+
+1253
+00:51:25,359 --> 00:51:29,040
+of course the clan
+
+1254
+00:51:27,599 --> 00:51:32,480
+of course claimed
+
+1255
+00:51:29,040 --> 00:51:34,960
+231 is true because
+
+1256
+00:51:32,480 --> 00:51:39,839
+for all state
+
+1257
+00:51:34,960 --> 00:51:41,680
+in p we have rule app may become epsilon
+
+1258
+00:51:39,839 --> 00:51:42,800
+and therefore
+
+1259
+00:51:41,680 --> 00:51:45,200
+app
+
+1260
+00:51:42,800 --> 00:51:46,160
+can generate epsilon
+
+1261
+00:51:45,200 --> 00:51:48,839
+right
+
+1262
+00:51:46,160 --> 00:51:53,520
+so the state the statement is
+
+1263
+00:51:48,839 --> 00:51:56,079
+true then again we do the hypothesis
+
+1264
+00:51:53,520 --> 00:51:59,760
+assume that it is true
+
+1265
+00:51:56,079 --> 00:52:00,960
+for computations of length at most k
+
+1266
+00:51:59,760 --> 00:52:01,920
+and k
+
+1267
+00:52:00,960 --> 00:52:04,640
+is
+
+1268
+00:52:01,920 --> 00:52:06,720
+greater than or equal to zero
+
+1269
+00:52:04,640 --> 00:52:09,200
+its assumption then based on this
+
+1270
+00:52:06,720 --> 00:52:12,240
+assumption we want to prove that
+
+1271
+00:52:09,200 --> 00:52:13,200
+computation of length k plus one also
+
+1272
+00:52:12,240 --> 00:52:14,319
+true
+
+1273
+00:52:13,200 --> 00:52:17,280
+then by
+
+1274
+00:52:14,319 --> 00:52:19,599
+induction we can prove the whole thing
+
+1275
+00:52:17,280 --> 00:52:22,319
+okay so assume that
+
+1276
+00:52:19,599 --> 00:52:23,680
+there is a string brings
+
+1277
+00:52:22,319 --> 00:52:26,559
+pdap
+
+1278
+00:52:23,680 --> 00:52:28,720
+from p to q with empty stacks in
+
+1279
+00:52:26,559 --> 00:52:31,520
+k plus one steps
+
+1280
+00:52:28,720 --> 00:52:33,280
+okay since we already
+
+1281
+00:52:31,520 --> 00:52:37,040
+assumed that
+
+1282
+00:52:33,280 --> 00:52:39,760
+k steps at most k steps is
+
+1283
+00:52:37,040 --> 00:52:41,200
+true so we want to prove with k plus one
+
+1284
+00:52:39,760 --> 00:52:42,160
+step
+
+1285
+00:52:41,200 --> 00:52:44,240
+and
+
+1286
+00:52:42,160 --> 00:52:46,960
+you can see that there are only two
+
+1287
+00:52:44,240 --> 00:52:50,000
+conditions during the whole computation
+
+1288
+00:52:46,960 --> 00:52:52,880
+okay whole computation from small p
+
+1289
+00:52:50,000 --> 00:52:55,359
+states p to state q
+
+1290
+00:52:52,880 --> 00:52:55,359
+let's say
+
+1291
+00:52:55,839 --> 00:53:02,720
+let's observe the height of the
+
+1292
+00:52:59,839 --> 00:53:07,200
+so first condition is that the stack is
+
+1293
+00:53:02,720 --> 00:53:08,079
+empty only at the beginning and end
+
+1294
+00:53:07,200 --> 00:53:11,280
+okay
+
+1295
+00:53:08,079 --> 00:53:13,440
+it must be beginning and end at least
+
+1296
+00:53:11,280 --> 00:53:16,240
+beginning and end right because we say
+
+1297
+00:53:13,440 --> 00:53:18,640
+that with empty stack
+
+1298
+00:53:16,240 --> 00:53:21,040
+so begin with empty stack and end with
+
+1299
+00:53:18,640 --> 00:53:24,480
+empty stack so of course
+
+1300
+00:53:21,040 --> 00:53:27,200
+you have begin and end
+
+1301
+00:53:24,480 --> 00:53:29,839
+but the first condition we say that only
+
+1302
+00:53:27,200 --> 00:53:30,640
+at beginning and end
+
+1303
+00:53:29,839 --> 00:53:31,359
+right
+
+1304
+00:53:30,640 --> 00:53:33,680
+so
+
+1305
+00:53:31,359 --> 00:53:36,160
+for this condition it's like
+
+1306
+00:53:33,680 --> 00:53:36,160
+this one
+
+1307
+00:53:37,680 --> 00:53:40,800
+only begin
+
+1308
+00:53:39,359 --> 00:53:43,599
+and end
+
+1309
+00:53:40,800 --> 00:53:46,880
+and you can see that for the first step
+
+1310
+00:53:43,599 --> 00:53:47,680
+see our transition has only
+
+1311
+00:53:46,880 --> 00:53:50,400
+two
+
+1312
+00:53:47,680 --> 00:53:54,400
+types one is push only the other is pop
+
+1313
+00:53:50,400 --> 00:53:57,680
+only so you you you either push or pop
+
+1314
+00:53:54,400 --> 00:53:59,119
+and since you start with an empty stack
+
+1315
+00:53:57,680 --> 00:54:01,280
+the first
+
+1316
+00:53:59,119 --> 00:54:05,119
+transition must be a
+
+1317
+00:54:01,280 --> 00:54:08,079
+push transition so let's say it pushes
+
+1318
+00:54:05,119 --> 00:54:08,960
+some stack symbol onto the stack
+
+1319
+00:54:08,079 --> 00:54:10,640
+okay
+
+1320
+00:54:08,960 --> 00:54:12,240
+and you know that
+
+1321
+00:54:10,640 --> 00:54:15,440
+at the end
+
+1322
+00:54:12,240 --> 00:54:17,680
+at the end only at the end
+
+1323
+00:54:15,440 --> 00:54:18,480
+the stack is empty again
+
+1324
+00:54:17,680 --> 00:54:21,839
+so
+
+1325
+00:54:18,480 --> 00:54:22,839
+the last step must involve
+
+1326
+00:54:21,839 --> 00:54:24,559
+popping
+
+1327
+00:54:22,839 --> 00:54:27,839
+tea
+
+1328
+00:54:24,559 --> 00:54:30,079
+right last that must involve popping t
+
+1329
+00:54:27,839 --> 00:54:34,880
+okay so now we know that
+
+1330
+00:54:30,079 --> 00:54:38,400
+the total computation is k plus one
+
+1331
+00:54:34,880 --> 00:54:40,640
+so when you go from p to q you need k
+
+1332
+00:54:38,400 --> 00:54:44,160
+plus one and
+
+1333
+00:54:40,640 --> 00:54:45,520
+first one you spent here and the last
+
+1334
+00:54:44,160 --> 00:54:48,799
+one here
+
+1335
+00:54:45,520 --> 00:54:51,040
+so how many computation steps during
+
+1336
+00:54:48,799 --> 00:54:54,079
+from r to s
+
+1337
+00:54:51,040 --> 00:54:57,839
+that will be k minus one right
+
+1338
+00:54:54,079 --> 00:55:00,880
+k minus minus one step and we know it it
+
+1339
+00:54:57,839 --> 00:55:02,640
+falls into the hypothesis right we
+
+1340
+00:55:00,880 --> 00:55:03,920
+assume that to be true
+
+1341
+00:55:02,640 --> 00:55:04,839
+so
+
+1342
+00:55:03,920 --> 00:55:06,480
+we know
+
+1343
+00:55:04,839 --> 00:55:09,119
+that
+
+1344
+00:55:06,480 --> 00:55:09,119
+we know that
+
+1345
+00:55:09,359 --> 00:55:14,400
+this part
+
+1346
+00:55:10,640 --> 00:55:14,400
+these parts let's say y
+
+1347
+00:55:14,880 --> 00:55:22,160
+can bring the pda p here from r
+
+1348
+00:55:18,799 --> 00:55:23,920
+from r to s with empty stack
+
+1349
+00:55:22,160 --> 00:55:26,960
+but the stack of course there's a t
+
+1350
+00:55:23,920 --> 00:55:29,440
+there but we assume nothing on the stack
+
+1351
+00:55:26,960 --> 00:55:32,559
+so it starts from r
+
+1352
+00:55:29,440 --> 00:55:34,799
+and it doesn't look at the stack and
+
+1353
+00:55:32,559 --> 00:55:36,319
+doing the computation okay
+
+1354
+00:55:34,799 --> 00:55:37,839
+so we know that
+
+1355
+00:55:36,319 --> 00:55:40,319
+a r s
+
+1356
+00:55:37,839 --> 00:55:43,040
+can generate y
+
+1357
+00:55:40,319 --> 00:55:46,640
+why because we assume to be true because
+
+1358
+00:55:43,040 --> 00:55:49,440
+it takes k minus one steps so ais really
+
+1359
+00:55:46,640 --> 00:55:51,280
+can generate y
+
+1360
+00:55:49,440 --> 00:55:53,680
+based on this
+
+1361
+00:55:51,280 --> 00:55:55,599
+we know that
+
+1362
+00:55:53,680 --> 00:55:58,559
+x
+
+1363
+00:55:55,599 --> 00:56:01,040
+is a y b
+
+1364
+00:55:58,559 --> 00:56:03,040
+right x is a y b
+
+1365
+00:56:01,040 --> 00:56:04,559
+then
+
+1366
+00:56:03,040 --> 00:56:06,319
+we have a rule
+
+1367
+00:56:04,559 --> 00:56:08,000
+we have rule
+
+1368
+00:56:06,319 --> 00:56:08,960
+here
+
+1369
+00:56:08,000 --> 00:56:10,640
+so
+
+1370
+00:56:08,960 --> 00:56:12,480
+we know that
+
+1371
+00:56:10,640 --> 00:56:13,760
+and we know that
+
+1372
+00:56:12,480 --> 00:56:14,880
+a
+
+1373
+00:56:13,760 --> 00:56:16,960
+y
+
+1374
+00:56:14,880 --> 00:56:19,680
+b which is x
+
+1375
+00:56:16,960 --> 00:56:19,680
+can bring
+
+1376
+00:56:20,319 --> 00:56:25,920
+the pdf p from p
+
+1377
+00:56:22,880 --> 00:56:29,119
+to q with empty stack
+
+1378
+00:56:25,920 --> 00:56:33,280
+and we have a rule here so
+
+1379
+00:56:29,119 --> 00:56:34,799
+our variable apq can really
+
+1380
+00:56:33,280 --> 00:56:36,799
+derived
+
+1381
+00:56:34,799 --> 00:56:39,200
+a a r
+
+1382
+00:56:36,799 --> 00:56:42,319
+s b and we know
+
+1383
+00:56:39,200 --> 00:56:45,839
+this one can derive to y
+
+1384
+00:56:42,319 --> 00:56:49,280
+which is x so we prove that
+
+1385
+00:56:45,839 --> 00:56:52,799
+if the fir if the first condition that
+
+1386
+00:56:49,280 --> 00:56:55,440
+the stake only empty at the beginning
+
+1387
+00:56:52,799 --> 00:56:57,839
+and end
+
+1388
+00:56:55,440 --> 00:57:00,079
+is true
+
+1389
+00:56:57,839 --> 00:57:02,480
+the other condition is that
+
+1390
+00:57:00,079 --> 00:57:03,839
+the stack empty
+
+1391
+00:57:02,480 --> 00:57:05,760
+elsewhere
+
+1392
+00:57:03,839 --> 00:57:08,000
+somewhere anywhere
+
+1393
+00:57:05,760 --> 00:57:09,920
+more than once doesn't matter
+
+1394
+00:57:08,000 --> 00:57:13,040
+only once or more than once doesn't
+
+1395
+00:57:09,920 --> 00:57:15,599
+matter as long as the stack is empty
+
+1396
+00:57:13,040 --> 00:57:18,240
+elsewhere we know that
+
+1397
+00:57:15,599 --> 00:57:18,240
+we know that
+
+1398
+00:57:19,839 --> 00:57:25,680
+we know that
+
+1399
+00:57:21,200 --> 00:57:28,079
+from p to somewhere right so let's say
+
+1400
+00:57:25,680 --> 00:57:30,319
+state r
+
+1401
+00:57:28,079 --> 00:57:33,280
+we know that
+
+1402
+00:57:30,319 --> 00:57:35,440
+how many steps computational step
+
+1403
+00:57:33,280 --> 00:57:38,640
+of this one and this one
+
+1404
+00:57:35,440 --> 00:57:42,960
+let's say u steps b steps so
+
+1405
+00:57:38,640 --> 00:57:44,799
+u plus b will exactly be k plus 1
+
+1406
+00:57:42,960 --> 00:57:47,040
+right
+
+1407
+00:57:44,799 --> 00:57:47,040
+and
+
+1408
+00:57:47,119 --> 00:57:51,599
+and we know that
+
+1409
+00:57:49,680 --> 00:57:53,280
+they are
+
+1410
+00:57:51,599 --> 00:57:55,520
+respectively
+
+1411
+00:57:53,280 --> 00:57:57,680
+equal to or smaller than
+
+1412
+00:57:55,520 --> 00:57:57,680
+k
+
+1413
+00:57:57,760 --> 00:58:00,240
+right
+
+1414
+00:57:59,040 --> 00:58:02,640
+then
+
+1415
+00:58:00,240 --> 00:58:06,079
+we know that
+
+1416
+00:58:02,640 --> 00:58:07,520
+this part of string can be generated
+
+1417
+00:58:06,079 --> 00:58:10,720
+by a
+
+1418
+00:58:07,520 --> 00:58:10,720
+sorry ap
+
+1419
+00:58:11,440 --> 00:58:14,319
+r
+
+1420
+00:58:12,480 --> 00:58:15,680
+and this part of the string can be
+
+1421
+00:58:14,319 --> 00:58:18,480
+generated
+
+1422
+00:58:15,680 --> 00:58:20,880
+by a rq
+
+1423
+00:58:18,480 --> 00:58:23,680
+and of course we
+
+1424
+00:58:20,880 --> 00:58:24,799
+do have a rule like this remember our
+
+1425
+00:58:23,680 --> 00:58:28,079
+second
+
+1426
+00:58:24,799 --> 00:58:30,240
+kind of rules we add all possible rules
+
+1427
+00:58:28,079 --> 00:58:33,359
+like this into the grammar
+
+1428
+00:58:30,240 --> 00:58:34,839
+so we have a p q
+
+1429
+00:58:33,359 --> 00:58:37,760
+may
+
+1430
+00:58:34,839 --> 00:58:38,799
+become apr arq
+
+1431
+00:58:37,760 --> 00:58:40,240
+so
+
+1432
+00:58:38,799 --> 00:58:41,839
+let's say
+
+1433
+00:58:40,240 --> 00:58:43,119
+a b
+
+1434
+00:58:41,839 --> 00:58:46,559
+a p q
+
+1435
+00:58:43,119 --> 00:58:48,480
+derive yields a p r
+
+1436
+00:58:46,559 --> 00:58:51,839
+a r q
+
+1437
+00:58:48,480 --> 00:58:51,839
+and finally
+
+1438
+00:58:52,799 --> 00:58:56,079
+y
+
+1439
+00:58:53,599 --> 00:58:56,960
+z which is x
+
+1440
+00:58:56,079 --> 00:59:01,119
+so
+
+1441
+00:58:56,960 --> 00:59:01,119
+for the second condition we prove that
+
+1442
+00:59:01,680 --> 00:59:05,359
+we prove that
+
+1443
+00:59:03,520 --> 00:59:08,880
+if x can bring
+
+1444
+00:59:05,359 --> 00:59:12,400
+pdfp from p with empty stack and to q
+
+1445
+00:59:08,880 --> 00:59:14,000
+with md stack our variable apq can
+
+1446
+00:59:12,400 --> 00:59:16,160
+really generate
+
+1447
+00:59:14,000 --> 00:59:17,200
+x
+
+1448
+00:59:16,160 --> 00:59:19,760
+okay
+
+1449
+00:59:17,200 --> 00:59:24,319
+so
+
+1450
+00:59:19,760 --> 00:59:26,799
+combine clean 2 30 and the 231 you will
+
+1451
+00:59:24,319 --> 00:59:29,520
+have that
+
+1452
+00:59:26,799 --> 00:59:29,520
+any string
+
+1453
+00:59:29,760 --> 00:59:32,799
+can bring the
+
+1454
+00:59:31,200 --> 00:59:35,119
+pda from p
+
+1455
+00:59:32,799 --> 00:59:38,319
+to q with empty stack can be generated
+
+1456
+00:59:35,119 --> 00:59:40,400
+by apq and vice versa
+
+1457
+00:59:38,319 --> 00:59:42,319
+so
+
+1458
+00:59:40,400 --> 00:59:44,559
+by definition
+
+1459
+00:59:42,319 --> 00:59:48,400
+what is the
+
+1460
+00:59:44,559 --> 00:59:50,480
+language recognized by the pda
+
+1461
+00:59:48,400 --> 00:59:53,520
+all the strings
+
+1462
+00:59:50,480 --> 00:59:56,559
+goes from start state to
+
+1463
+00:59:53,520 --> 01:00:01,839
+accept state right
+
+1464
+00:59:56,559 --> 01:00:01,839
+and those lines can be generated by
+
+1465
+01:00:06,000 --> 01:00:09,280
+a
+
+1466
+01:00:07,119 --> 01:00:10,400
+star state of substance
+
+1467
+01:00:09,280 --> 01:00:13,520
+okay
+
+1468
+01:00:10,400 --> 01:00:14,480
+so we have proven that the constructed
+
+1469
+01:00:13,520 --> 01:00:16,480
+grammar
+
+1470
+01:00:14,480 --> 01:00:17,680
+is equivalent
+
+1471
+01:00:16,480 --> 01:00:21,040
+to
+
+1472
+01:00:17,680 --> 01:00:22,000
+the given pda
+
+1473
+01:00:21,040 --> 01:00:24,240
+okay
+
+1474
+01:00:22,000 --> 01:00:24,240
+so
+
+1475
+01:00:25,119 --> 01:00:31,040
+let's go back to the
+
+1476
+01:00:28,480 --> 01:00:34,000
+equivalence with contextual grammar then
+
+1477
+01:00:31,040 --> 01:00:36,960
+we already proved that
+
+1478
+01:00:34,000 --> 01:00:39,680
+a language is context free
+
+1479
+01:00:36,960 --> 01:00:43,200
+if and only if
+
+1480
+01:00:39,680 --> 01:00:44,799
+some push down
+
+1481
+01:00:43,200 --> 01:00:48,319
+recognize it
+
+1482
+01:00:44,799 --> 01:00:53,520
+okay because given a grammar we can get
+
+1483
+01:00:48,319 --> 01:00:57,599
+a pda and given a pda we can convert it
+
+1484
+01:00:53,520 --> 01:01:00,599
+into the equivalent grammar
+
+1485
+01:00:57,599 --> 01:01:00,599
+okay
+

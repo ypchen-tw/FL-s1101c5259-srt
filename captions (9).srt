@@ -1,0 +1,4328 @@
+1
+00:00:00,480 --> 00:00:04,720
+now we know that regular languages are
+
+2
+00:00:02,800 --> 00:00:07,200
+not all possible languages
+
+3
+00:00:04,720 --> 00:00:09,120
+then we will discuss closure properties
+
+4
+00:00:07,200 --> 00:00:11,120
+of regular languages
+
+5
+00:00:09,120 --> 00:00:12,160
+and we will discuss the following
+
+6
+00:00:11,120 --> 00:00:15,360
+operations
+
+7
+00:00:12,160 --> 00:00:18,400
+for regular languages
+
+8
+00:00:15,360 --> 00:00:21,760
+so the first one is union
+
+9
+00:00:18,400 --> 00:00:24,240
+uh the we have used two
+
+10
+00:00:21,760 --> 00:00:26,640
+kinds of computational model to prove
+
+11
+00:00:24,240 --> 00:00:30,400
+the closure property of the operation
+
+12
+00:00:26,640 --> 00:00:37,040
+of union the first one would be dfa
+
+13
+00:00:30,400 --> 00:00:40,160
+we proved that theorem 1.25 yes
+
+14
+00:00:37,040 --> 00:00:44,239
+and by constructing a new
+
+15
+00:00:40,160 --> 00:00:47,680
+dfa for
+
+16
+00:00:44,239 --> 00:00:50,000
+to ch to to track to keep track
+
+17
+00:00:47,680 --> 00:00:51,600
+of the transition of the two
+
+18
+00:00:50,000 --> 00:00:56,320
+corresponding dfas
+
+19
+00:00:51,600 --> 00:00:59,680
+if you uh remember that then
+
+20
+00:00:56,320 --> 00:01:04,159
+in short
+
+21
+00:00:59,680 --> 00:01:08,960
+since a is a regular language there is a
+
+22
+00:01:04,159 --> 00:01:12,479
+dfa m1 recognize a and the b
+
+23
+00:01:08,960 --> 00:01:16,000
+has m2 as its organizer
+
+24
+00:01:12,479 --> 00:01:19,600
+and we construct a new machine
+
+25
+00:01:16,000 --> 00:01:22,560
+m by simulating
+
+26
+00:01:19,600 --> 00:01:23,920
+you know the concept uh is stimulating
+
+27
+00:01:22,560 --> 00:01:27,040
+the two machines
+
+28
+00:01:23,920 --> 00:01:28,159
+but with the m's own states transition
+
+29
+00:01:27,040 --> 00:01:33,200
+function
+
+30
+00:01:28,159 --> 00:01:36,000
+etc and the transition function of m
+
+31
+00:01:33,200 --> 00:01:36,640
+is actually composed of transitions of
+
+32
+00:01:36,000 --> 00:01:39,759
+m1
+
+33
+00:01:36,640 --> 00:01:43,280
+and m2 and effectively
+
+34
+00:01:39,759 --> 00:01:44,320
+if we want m1 and m2 to process some
+
+35
+00:01:43,280 --> 00:01:48,560
+string
+
+36
+00:01:44,320 --> 00:01:52,720
+the computational path of m1 would be
+
+37
+00:01:48,560 --> 00:01:56,240
+like this and therefore m2 would be
+
+38
+00:01:52,720 --> 00:01:57,439
+like this and the m which constructed
+
+39
+00:01:56,240 --> 00:02:01,600
+considers the
+
+40
+00:01:57,439 --> 00:02:04,960
+two states a combination of the two
+
+41
+00:02:01,600 --> 00:02:08,479
+states of the machines m1 and m2 as
+
+42
+00:02:04,960 --> 00:02:11,039
+one state of the uh
+
+43
+00:02:08,479 --> 00:02:11,840
+newly constructed machine so the whole
+
+44
+00:02:11,039 --> 00:02:15,120
+process
+
+45
+00:02:11,840 --> 00:02:15,120
+for n is
+
+46
+00:02:16,000 --> 00:02:26,400
+something like this
+
+47
+00:02:22,239 --> 00:02:30,720
+then as long as one
+
+48
+00:02:26,400 --> 00:02:30,720
+of the two machines
+
+49
+00:02:30,879 --> 00:02:34,160
+as well as the one states of the two
+
+50
+00:02:33,040 --> 00:02:37,920
+states
+
+51
+00:02:34,160 --> 00:02:41,360
+of the two machines m1 m2 is a
+
+52
+00:02:37,920 --> 00:02:44,400
+is an accept state of the original
+
+53
+00:02:41,360 --> 00:02:47,040
+machine then we set the state
+
+54
+00:02:44,400 --> 00:02:48,239
+accept state otherwise it's not an
+
+55
+00:02:47,040 --> 00:02:52,239
+accept state
+
+56
+00:02:48,239 --> 00:02:56,160
+by doing this we can construct a machine
+
+57
+00:02:52,239 --> 00:03:00,319
+dfam recognized
+
+58
+00:02:56,160 --> 00:03:03,120
+to the union of two regular languages
+
+59
+00:03:00,319 --> 00:03:03,680
+okay so that's the actually the first
+
+60
+00:03:03,120 --> 00:03:07,200
+proof
+
+61
+00:03:03,680 --> 00:03:11,120
+in this course and we also use nfa
+
+62
+00:03:07,200 --> 00:03:13,920
+another computational model equivalent
+
+63
+00:03:11,120 --> 00:03:13,920
+to dfa
+
+64
+00:03:14,640 --> 00:03:19,040
+to prove the closure property of
+
+65
+00:03:17,599 --> 00:03:22,080
+operation union
+
+66
+00:03:19,040 --> 00:03:25,360
+so how do we do that since we have
+
+67
+00:03:22,080 --> 00:03:28,640
+two nfa and
+
+68
+00:03:25,360 --> 00:03:33,040
+let's say n1 for a and
+
+69
+00:03:28,640 --> 00:03:36,560
+n2 for b then we
+
+70
+00:03:33,040 --> 00:03:40,080
+add a new start
+
+71
+00:03:36,560 --> 00:03:43,280
+we copy all states from n1 and n2
+
+72
+00:03:40,080 --> 00:03:44,480
+assuming they are disjoint and add one
+
+73
+00:03:43,280 --> 00:03:48,080
+more states
+
+74
+00:03:44,480 --> 00:03:51,280
+and for this one more states we
+
+75
+00:03:48,080 --> 00:03:54,799
+have epson arrow epsilon transition
+
+76
+00:03:51,280 --> 00:03:57,599
+to the star state of n1 and n2
+
+77
+00:03:54,799 --> 00:03:58,159
+and basically the construction are like
+
+78
+00:03:57,599 --> 00:04:02,000
+this
+
+79
+00:03:58,159 --> 00:04:04,400
+we copy everything of n1 and n2
+
+80
+00:04:02,000 --> 00:04:05,200
+and add one more states which is the new
+
+81
+00:04:04,400 --> 00:04:08,799
+state
+
+82
+00:04:05,200 --> 00:04:11,920
+and so when we want this
+
+83
+00:04:08,799 --> 00:04:14,560
+new machine let's say n to process a
+
+84
+00:04:11,920 --> 00:04:18,560
+string w
+
+85
+00:04:14,560 --> 00:04:21,680
+initially start from the start state
+
+86
+00:04:18,560 --> 00:04:24,720
+there is a process going to n1 and
+
+87
+00:04:21,680 --> 00:04:27,680
+going to and the other going to n2
+
+88
+00:04:24,720 --> 00:04:29,040
+and we don't need to care about the
+
+89
+00:04:27,680 --> 00:04:32,720
+following operations
+
+90
+00:04:29,040 --> 00:04:33,440
+as known as one of the n1 and n2 except
+
+91
+00:04:32,720 --> 00:04:36,240
+the string
+
+92
+00:04:33,440 --> 00:04:36,560
+we consider our newly constructed nfa
+
+93
+00:04:36,240 --> 00:04:41,360
+and
+
+94
+00:04:36,560 --> 00:04:44,720
+accepts the string right so that's for
+
+95
+00:04:41,360 --> 00:04:44,720
+the union of a and b
+
+96
+00:04:48,479 --> 00:04:52,720
+by using the computational power
+
+97
+00:04:51,360 --> 00:04:56,080
+actually the property
+
+98
+00:04:52,720 --> 00:05:00,800
+of non-deterministic computation it's
+
+99
+00:04:56,080 --> 00:05:03,520
+quite easy to prove the closure property
+
+100
+00:05:00,800 --> 00:05:04,160
+of regular languages under the operation
+
+101
+00:05:03,520 --> 00:05:08,000
+of
+
+102
+00:05:04,160 --> 00:05:11,440
+concretion and the star right so
+
+103
+00:05:08,000 --> 00:05:13,759
+if we want to do concatenation we copy
+
+104
+00:05:11,440 --> 00:05:13,759
+the
+
+105
+00:05:14,240 --> 00:05:21,039
+string sorry the machine for a and
+
+106
+00:05:17,440 --> 00:05:24,080
+the machine for b then
+
+107
+00:05:21,039 --> 00:05:27,199
+the original accept states of n1
+
+108
+00:05:24,080 --> 00:05:28,400
+we make it we make them not accepting
+
+109
+00:05:27,199 --> 00:05:31,520
+state anymore
+
+110
+00:05:28,400 --> 00:05:35,600
+but we also add
+
+111
+00:05:31,520 --> 00:05:38,800
+additional abstrom
+
+112
+00:05:35,600 --> 00:05:42,560
+transition to 2
+
+113
+00:05:38,800 --> 00:05:42,560
+star state then
+
+114
+00:05:42,639 --> 00:05:47,280
+n1's original star states is the star
+
+115
+00:05:45,280 --> 00:05:50,720
+states of our whole machine so
+
+116
+00:05:47,280 --> 00:05:53,360
+our machine looks like this right
+
+117
+00:05:50,720 --> 00:05:54,160
+so by using this machine we can
+
+118
+00:05:53,360 --> 00:05:56,880
+recognize
+
+119
+00:05:54,160 --> 00:05:56,880
+the language
+
+120
+00:05:57,360 --> 00:06:04,080
+of combination of a and b
+
+121
+00:06:00,720 --> 00:06:04,080
+so combination
+
+122
+00:06:05,600 --> 00:06:08,639
+regular languages are closed that are
+
+123
+00:06:08,080 --> 00:06:11,280
+closed
+
+124
+00:06:08,639 --> 00:06:12,319
+under the class of regular languages is
+
+125
+00:06:11,280 --> 00:06:15,600
+closed
+
+126
+00:06:12,319 --> 00:06:19,520
+under the operation of concatenation
+
+127
+00:06:15,600 --> 00:06:21,199
+and then finally for star operation it's
+
+128
+00:06:19,520 --> 00:06:24,720
+an
+
+129
+00:06:21,199 --> 00:06:27,360
+mixture actually it's a mixture of union
+
+130
+00:06:24,720 --> 00:06:28,800
+and the conconnation so let's say there
+
+131
+00:06:27,360 --> 00:06:32,319
+is uh
+
+132
+00:06:28,800 --> 00:06:34,720
+if a is a regular language now
+
+133
+00:06:32,319 --> 00:06:35,600
+if a is a regular language now we know
+
+134
+00:06:34,720 --> 00:06:39,280
+that uh
+
+135
+00:06:35,600 --> 00:06:43,520
+there is there exists nfa recognizing a
+
+136
+00:06:39,280 --> 00:06:48,960
+so let's say the nfa is n1
+
+137
+00:06:43,520 --> 00:06:52,400
+there is a star state of n1 and some
+
+138
+00:06:48,960 --> 00:06:54,639
+acceptance right and other states so
+
+139
+00:06:52,400 --> 00:06:56,400
+what we need to do is add one more
+
+140
+00:06:54,639 --> 00:07:00,840
+states
+
+141
+00:06:56,400 --> 00:07:04,400
+see that part is like concatenation
+
+142
+00:07:00,840 --> 00:07:08,160
+right and
+
+143
+00:07:04,400 --> 00:07:12,479
+epson and this is our new star state and
+
+144
+00:07:08,160 --> 00:07:13,919
+this state also plays a role of accept
+
+145
+00:07:12,479 --> 00:07:17,599
+state
+
+146
+00:07:13,919 --> 00:07:20,880
+by doing this we add we artificially add
+
+147
+00:07:17,599 --> 00:07:24,000
+epsilon into the language of the
+
+148
+00:07:20,880 --> 00:07:27,919
+newly construct
+
+149
+00:07:24,000 --> 00:07:32,160
+nfa can recognize right and then
+
+150
+00:07:27,919 --> 00:07:36,400
+we have absorbed back to here
+
+151
+00:07:32,160 --> 00:07:40,240
+the original star state so see that's
+
+152
+00:07:36,400 --> 00:07:45,280
+also concatenation stuff and
+
+153
+00:07:40,240 --> 00:07:49,039
+the app strong here here and here
+
+154
+00:07:45,280 --> 00:07:51,919
+is more union stuff
+
+155
+00:07:49,039 --> 00:07:54,080
+so the proof the construction of star
+
+156
+00:07:51,919 --> 00:07:57,520
+operations
+
+157
+00:07:54,080 --> 00:07:59,680
+is basically composed of
+
+158
+00:07:57,520 --> 00:08:01,360
+something from concentration and
+
+159
+00:07:59,680 --> 00:08:06,000
+something from union
+
+160
+00:08:01,360 --> 00:08:09,199
+so uh we constructed we we construct a
+
+161
+00:08:06,000 --> 00:08:11,360
+and dfa recognizing
+
+162
+00:08:09,199 --> 00:08:12,479
+the stock the result of the star
+
+163
+00:08:11,360 --> 00:08:15,360
+operation on
+
+164
+00:08:12,479 --> 00:08:16,560
+a regular language so the class of
+
+165
+00:08:15,360 --> 00:08:20,240
+regular languages
+
+166
+00:08:16,560 --> 00:08:24,240
+is closed under the star operation
+
+167
+00:08:20,240 --> 00:08:27,919
+okay so that's the three operation
+
+168
+00:08:24,240 --> 00:08:32,680
+we already proved previously
+
+169
+00:08:27,919 --> 00:08:35,279
+theorem 1.25 and
+
+170
+00:08:32,680 --> 00:08:38,399
+1.45 and
+
+171
+00:08:35,279 --> 00:08:41,839
+theorem 1.47
+
+172
+00:08:38,399 --> 00:08:41,839
+and the 1.4
+
+173
+00:08:42,640 --> 00:08:50,080
+okay so
+
+174
+00:08:45,680 --> 00:08:50,080
+they are called regular
+
+175
+00:08:52,839 --> 00:08:55,839
+operations
+
+176
+00:08:59,200 --> 00:09:07,360
+then we have one more operation
+
+177
+00:09:03,760 --> 00:09:10,480
+which is intersection here so if a
+
+178
+00:09:07,360 --> 00:09:13,040
+and b are regular languages we want to
+
+179
+00:09:10,480 --> 00:09:13,040
+prove that
+
+180
+00:09:14,399 --> 00:09:19,440
+the intersection of a and b is also a
+
+181
+00:09:17,920 --> 00:09:22,240
+regular language
+
+182
+00:09:19,440 --> 00:09:24,399
+that's yes cultural probability uh
+
+183
+00:09:22,240 --> 00:09:26,240
+closure property
+
+184
+00:09:24,399 --> 00:09:28,640
+and how do we do that actually we
+
+185
+00:09:26,240 --> 00:09:32,800
+already know how to do that
+
+186
+00:09:28,640 --> 00:09:36,080
+in theorem 1.25
+
+187
+00:09:32,800 --> 00:09:39,120
+we actually proved this result
+
+188
+00:09:36,080 --> 00:09:43,600
+right so let's go back
+
+189
+00:09:39,120 --> 00:09:46,880
+to there we just need to
+
+190
+00:09:43,600 --> 00:09:50,560
+change the construction process
+
+191
+00:09:46,880 --> 00:09:54,080
+by changing the or here
+
+192
+00:09:50,560 --> 00:09:58,399
+to end
+
+193
+00:09:54,080 --> 00:10:01,519
+then we got ourself
+
+194
+00:09:58,399 --> 00:10:02,480
+and a dfa that recognized the
+
+195
+00:10:01,519 --> 00:10:05,839
+intersection
+
+196
+00:10:02,480 --> 00:10:09,680
+of the two given regular languages
+
+197
+00:10:05,839 --> 00:10:13,600
+or you can use this form
+
+198
+00:10:09,680 --> 00:10:17,839
+they are equivalent okay so if you d
+
+199
+00:10:13,600 --> 00:10:20,240
+you feel this this form that will be
+
+200
+00:10:17,839 --> 00:10:20,240
+also
+
+201
+00:10:22,079 --> 00:10:27,200
+dfa recognizing the intersection
+
+202
+00:10:27,360 --> 00:10:30,240
+okay so
+
+203
+00:10:30,399 --> 00:10:34,240
+this is the proof of the crucial
+
+204
+00:10:32,320 --> 00:10:36,959
+property of
+
+205
+00:10:34,240 --> 00:10:36,959
+intersection
+
+206
+00:10:41,680 --> 00:10:46,240
+then the next one is complement okay for
+
+207
+00:10:45,040 --> 00:10:49,440
+complement
+
+208
+00:10:46,240 --> 00:10:52,480
+uh you need to pay attention to the
+
+209
+00:10:49,440 --> 00:10:56,000
+uh definition of the
+
+210
+00:10:52,480 --> 00:10:56,000
+word here complement
+
+211
+00:10:56,640 --> 00:11:00,640
+you know because uh in computer science
+
+212
+00:10:59,360 --> 00:11:03,519
+there are many
+
+213
+00:11:00,640 --> 00:11:04,000
+complements for example for logic design
+
+214
+00:11:03,519 --> 00:11:07,680
+you have
+
+215
+00:11:04,000 --> 00:11:10,959
+one's complement two's complements
+
+216
+00:11:07,680 --> 00:11:13,760
+stuff like that right so for for example
+
+217
+00:11:10,959 --> 00:11:14,000
+once complement just changed to zero to
+
+218
+00:11:13,760 --> 00:11:16,320
+one
+
+219
+00:11:14,000 --> 00:11:17,360
+one to zero so if you have string a
+
+220
+00:11:16,320 --> 00:11:20,640
+string zero
+
+221
+00:11:17,360 --> 00:11:24,640
+zero one let's say so the com
+
+222
+00:11:20,640 --> 00:11:27,920
+once complement of this string will be
+
+223
+00:11:24,640 --> 00:11:32,160
+one one zero right just 0
+
+224
+00:11:27,920 --> 00:11:35,360
+becomes 1 1 becomes 0. but
+
+225
+00:11:32,160 --> 00:11:36,880
+for complement here it's a complement on
+
+226
+00:11:35,360 --> 00:11:40,079
+set
+
+227
+00:11:36,880 --> 00:11:43,680
+okay because languages are
+
+228
+00:11:40,079 --> 00:11:46,000
+sets of strings so the complement
+
+229
+00:11:43,680 --> 00:11:46,000
+here
+
+230
+00:11:46,880 --> 00:11:51,680
+is a set complement instead of any
+
+231
+00:11:49,920 --> 00:11:56,240
+string complement
+
+232
+00:11:51,680 --> 00:11:59,600
+it usually is very confusing because
+
+233
+00:11:56,240 --> 00:12:03,519
+we many times we use
+
+234
+00:11:59,600 --> 00:12:06,959
+alphabets like 0 and 1.
+
+235
+00:12:03,519 --> 00:12:10,240
+so you might think 0 and 1 integer
+
+236
+00:12:06,959 --> 00:12:14,560
+0 and 1 or bit 0 and 1.
+
+237
+00:12:10,240 --> 00:12:17,440
+that's why i repeat many times
+
+238
+00:12:14,560 --> 00:12:18,000
+if we are talking about an alphabet 0
+
+239
+00:12:17,440 --> 00:12:21,279
+and 1
+
+240
+00:12:18,000 --> 00:12:21,920
+is not integers or value 0 numerical
+
+241
+00:12:21,279 --> 00:12:25,040
+values
+
+242
+00:12:21,920 --> 00:12:26,880
+0 and 1 they are just symbols so for
+
+243
+00:12:25,040 --> 00:12:29,920
+example we have a
+
+244
+00:12:26,880 --> 00:12:32,959
+language zero and one and
+
+245
+00:12:29,920 --> 00:12:32,959
+let's say and
+
+246
+00:12:33,279 --> 00:12:39,839
+grade equal to or greater than
+
+247
+00:12:36,839 --> 00:12:43,040
+zero the 0 here is
+
+248
+00:12:39,839 --> 00:12:47,360
+value 0 integer 0 but 0
+
+249
+00:12:43,040 --> 00:12:52,079
+here is not individual values so
+
+250
+00:12:47,360 --> 00:12:55,040
+0 and 1n what is the complement
+
+251
+00:12:52,079 --> 00:12:55,600
+in one's complement sense you've got a
+
+252
+00:12:55,040 --> 00:12:58,959
+language
+
+253
+00:12:55,600 --> 00:13:02,800
+1 and 0 and
+
+254
+00:12:58,959 --> 00:13:04,880
+n greater than 0 right but it's wrong
+
+255
+00:13:02,800 --> 00:13:06,240
+it's not where it's not what we are
+
+256
+00:13:04,880 --> 00:13:08,959
+talking about here
+
+257
+00:13:06,240 --> 00:13:10,800
+what we are talking about here is that
+
+258
+00:13:08,959 --> 00:13:13,519
+all possible strings
+
+259
+00:13:10,800 --> 00:13:14,399
+okay given an alphabet for example this
+
+260
+00:13:13,519 --> 00:13:17,519
+one
+
+261
+00:13:14,399 --> 00:13:20,639
+you have all given
+
+262
+00:13:17,519 --> 00:13:23,760
+all possible strings by
+
+263
+00:13:20,639 --> 00:13:27,200
+the given alphabet then
+
+264
+00:13:23,760 --> 00:13:29,920
+you remove all the given
+
+265
+00:13:27,200 --> 00:13:30,560
+strings in the language all the other
+
+266
+00:13:29,920 --> 00:13:33,279
+language
+
+267
+00:13:30,560 --> 00:13:34,880
+sorry all the strings in the given
+
+268
+00:13:33,279 --> 00:13:37,680
+language
+
+269
+00:13:34,880 --> 00:13:38,880
+so what is the complement of this
+
+270
+00:13:37,680 --> 00:13:42,079
+language
+
+271
+00:13:38,880 --> 00:13:45,600
+well it's pretty messy right
+
+272
+00:13:42,079 --> 00:13:48,480
+for example o0
+
+273
+00:13:45,600 --> 00:13:49,519
+is in the complement or once in a
+
+274
+00:13:48,480 --> 00:13:52,560
+complement
+
+275
+00:13:49,519 --> 00:13:52,880
+zero one zero one one zero stuff like
+
+276
+00:13:52,560 --> 00:13:56,480
+that
+
+277
+00:13:52,880 --> 00:14:02,399
+in the complement and as etc okay
+
+278
+00:13:56,480 --> 00:14:06,160
+so complement here is the set complement
+
+279
+00:14:02,399 --> 00:14:09,440
+then how do we prove that the class of
+
+280
+00:14:06,160 --> 00:14:12,959
+regular languages is um is closed
+
+281
+00:14:09,440 --> 00:14:16,639
+under the operation of complement
+
+282
+00:14:12,959 --> 00:14:19,680
+well if you think about how we define
+
+283
+00:14:16,639 --> 00:14:22,000
+regular languages then it will be pretty
+
+284
+00:14:19,680 --> 00:14:25,199
+straightforward
+
+285
+00:14:22,000 --> 00:14:26,240
+the definition our definition of regular
+
+286
+00:14:25,199 --> 00:14:31,199
+languages
+
+287
+00:14:26,240 --> 00:14:33,519
+is that if there is
+
+288
+00:14:31,199 --> 00:14:34,240
+a finite automata recognized in that
+
+289
+00:14:33,519 --> 00:14:38,000
+language
+
+290
+00:14:34,240 --> 00:14:42,000
+that language is regular language right
+
+291
+00:14:38,000 --> 00:14:45,279
+and for any regular languages
+
+292
+00:14:42,000 --> 00:14:48,240
+by that definition there is
+
+293
+00:14:45,279 --> 00:14:49,040
+at least one dfa recognizing that
+
+294
+00:14:48,240 --> 00:14:52,639
+language
+
+295
+00:14:49,040 --> 00:14:56,240
+so we just take
+
+296
+00:14:52,639 --> 00:15:00,639
+that dfa for example the m1 here
+
+297
+00:14:56,240 --> 00:15:04,160
+okay so let's assume that
+
+298
+00:15:00,639 --> 00:15:07,279
+the language of m1 is what we are
+
+299
+00:15:04,160 --> 00:15:08,399
+talking about so given a language a
+
+300
+00:15:07,279 --> 00:15:10,839
+regular language
+
+301
+00:15:08,399 --> 00:15:12,399
+you just need to take the dfa
+
+302
+00:15:10,839 --> 00:15:15,760
+recognizing that
+
+303
+00:15:12,399 --> 00:15:18,000
+regular language and then
+
+304
+00:15:15,760 --> 00:15:18,000
+you
+
+305
+00:15:19,279 --> 00:15:26,160
+re copy everything okay that say
+
+306
+00:15:23,120 --> 00:15:28,320
+we copy the states of the dfa
+
+307
+00:15:26,160 --> 00:15:30,800
+of course alphabet and the transition
+
+308
+00:15:28,320 --> 00:15:35,199
+function and the star state
+
+309
+00:15:30,800 --> 00:15:35,199
+then we
+
+310
+00:15:36,000 --> 00:15:45,360
+make the new
+
+311
+00:15:40,320 --> 00:15:49,120
+accept states the
+
+312
+00:15:45,360 --> 00:15:49,120
+states of the dfa
+
+313
+00:15:49,920 --> 00:15:58,160
+minus the original star states
+
+314
+00:15:54,000 --> 00:16:01,519
+okay so we change the accept states as
+
+315
+00:15:58,160 --> 00:16:02,399
+this one so for this example that would
+
+316
+00:16:01,519 --> 00:16:06,480
+be
+
+317
+00:16:02,399 --> 00:16:09,519
+q2 becomes no more state
+
+318
+00:16:06,480 --> 00:16:13,199
+not accept states anymore and
+
+319
+00:16:09,519 --> 00:16:17,120
+q1 becomes one of
+
+320
+00:16:13,199 --> 00:16:20,839
+the accept states and the q3
+
+321
+00:16:17,120 --> 00:16:22,560
+is also one of the accept states of this
+
+322
+00:16:20,839 --> 00:16:25,920
+machine
+
+323
+00:16:22,560 --> 00:16:26,880
+so it's pretty easy to see that any
+
+324
+00:16:25,920 --> 00:16:29,120
+string
+
+325
+00:16:26,880 --> 00:16:29,120
+in
+
+326
+00:16:30,320 --> 00:16:34,839
+the all possible string constructed by
+
+327
+00:16:32,720 --> 00:16:37,360
+the given
+
+328
+00:16:34,839 --> 00:16:41,199
+alphabet if a string
+
+329
+00:16:37,360 --> 00:16:45,199
+accepted by m1 it will not
+
+330
+00:16:41,199 --> 00:16:47,440
+accept it by let's say m1 prime
+
+331
+00:16:45,199 --> 00:16:47,440
+right
+
+332
+00:16:49,519 --> 00:16:51,839
+otherwise
+
+333
+00:16:53,920 --> 00:17:01,920
+it will not in this language
+
+334
+00:16:58,720 --> 00:17:05,679
+on the contrary if it's not
+
+335
+00:17:01,920 --> 00:17:08,880
+in here it will
+
+336
+00:17:05,679 --> 00:17:12,480
+be in here right
+
+337
+00:17:08,880 --> 00:17:15,600
+because after processing any stream
+
+338
+00:17:12,480 --> 00:17:19,280
+the machine has to stop
+
+339
+00:17:15,600 --> 00:17:22,319
+on one of its states originally
+
+340
+00:17:19,280 --> 00:17:25,839
+for m1 if it stops
+
+341
+00:17:22,319 --> 00:17:29,200
+on q2 then that
+
+342
+00:17:25,839 --> 00:17:32,880
+string is considered accepted otherwise
+
+343
+00:17:29,200 --> 00:17:36,799
+it's not now we have a new machine here
+
+344
+00:17:32,880 --> 00:17:40,320
+and the accept state is exactly
+
+345
+00:17:36,799 --> 00:17:41,520
+the complement of the original accept
+
+346
+00:17:40,320 --> 00:17:45,440
+states
+
+347
+00:17:41,520 --> 00:17:49,120
+then of course the answer is exactly
+
+348
+00:17:45,440 --> 00:17:52,880
+opposite to the original answers right
+
+349
+00:17:49,120 --> 00:17:56,320
+so we can easily construct a new
+
+350
+00:17:52,880 --> 00:18:00,480
+dfa recognizing the
+
+351
+00:17:56,320 --> 00:18:04,000
+complement of the given regular language
+
+352
+00:18:00,480 --> 00:18:07,200
+so the class of
+
+353
+00:18:04,000 --> 00:18:12,640
+regular languages is closed
+
+354
+00:18:07,200 --> 00:18:12,640
+under the operation of complement
+
+355
+00:18:12,840 --> 00:18:18,960
+okay
+
+356
+00:18:14,960 --> 00:18:21,440
+then let's talk about our difference
+
+357
+00:18:18,960 --> 00:18:22,880
+so what is different we actually already
+
+358
+00:18:21,440 --> 00:18:26,799
+talked about it
+
+359
+00:18:22,880 --> 00:18:30,080
+if you have a set let's say a
+
+360
+00:18:26,799 --> 00:18:32,080
+and if you have a set that's a let's say
+
+361
+00:18:30,080 --> 00:18:35,120
+b
+
+362
+00:18:32,080 --> 00:18:36,960
+what is a minus b here by definition it
+
+363
+00:18:35,120 --> 00:18:41,039
+would be
+
+364
+00:18:36,960 --> 00:18:44,960
+a remove all the elements
+
+365
+00:18:41,039 --> 00:18:50,160
+within b something like this
+
+366
+00:18:44,960 --> 00:18:53,200
+so by removing these parts
+
+367
+00:18:50,160 --> 00:18:56,400
+we got something like this
+
+368
+00:18:53,200 --> 00:18:59,440
+right this part will be a
+
+369
+00:18:56,400 --> 00:19:03,280
+minus b so that's
+
+370
+00:18:59,440 --> 00:19:03,280
+a minus b and
+
+371
+00:19:03,840 --> 00:19:11,280
+a minus b is also you see
+
+372
+00:19:07,840 --> 00:19:14,480
+if you have a universal set here and a
+
+373
+00:19:11,280 --> 00:19:19,360
+and b are both subset
+
+374
+00:19:14,480 --> 00:19:19,360
+of the universal set in our case
+
+375
+00:19:19,520 --> 00:19:26,880
+they'll be sigma star and
+
+376
+00:19:22,960 --> 00:19:26,880
+what is a minus b here
+
+377
+00:19:28,320 --> 00:19:35,200
+that would be let's say
+
+378
+00:19:32,480 --> 00:19:37,039
+sigma star here right and you have b
+
+379
+00:19:35,200 --> 00:19:39,440
+here
+
+380
+00:19:37,039 --> 00:19:40,559
+and what is b's complement b's
+
+381
+00:19:39,440 --> 00:19:43,679
+complement
+
+382
+00:19:40,559 --> 00:19:43,679
+is this part right
+
+383
+00:19:46,080 --> 00:19:53,840
+and a is here
+
+384
+00:19:50,400 --> 00:19:57,600
+and you see a intersect
+
+385
+00:19:53,840 --> 00:19:57,600
+with b's complement
+
+386
+00:19:58,080 --> 00:20:04,400
+is a minus b
+
+387
+00:20:01,600 --> 00:20:05,039
+okay so that that actually can be
+
+388
+00:20:04,400 --> 00:20:07,840
+derived
+
+389
+00:20:05,039 --> 00:20:09,760
+from the definition of these operations
+
+390
+00:20:07,840 --> 00:20:14,480
+so we draw diagrams for
+
+391
+00:20:09,760 --> 00:20:17,679
+you know you know easier explanation
+
+392
+00:20:14,480 --> 00:20:21,360
+so if you have no problem with the
+
+393
+00:20:17,679 --> 00:20:24,480
+difference between a and b
+
+394
+00:20:21,360 --> 00:20:29,520
+is equivalent to the intersection
+
+395
+00:20:24,480 --> 00:20:33,520
+of a and the complement of b
+
+396
+00:20:29,520 --> 00:20:37,440
+then the proof is almost
+
+397
+00:20:33,520 --> 00:20:40,400
+finished right why because
+
+398
+00:20:37,440 --> 00:20:41,919
+if a and b are regular languages then
+
+399
+00:20:40,400 --> 00:20:45,200
+you will have a machine
+
+400
+00:20:41,919 --> 00:20:49,039
+m for a recognizing a
+
+401
+00:20:45,200 --> 00:20:52,480
+and you also have a machine
+
+402
+00:20:49,039 --> 00:20:54,799
+m or sorry m1 and also have a machine m2
+
+403
+00:20:52,480 --> 00:20:59,919
+for recognizing b
+
+404
+00:20:54,799 --> 00:21:02,720
+then by doing a construction we just
+
+405
+00:20:59,919 --> 00:21:04,640
+described for the crucial property of
+
+406
+00:21:02,720 --> 00:21:08,320
+the complement
+
+407
+00:21:04,640 --> 00:21:12,640
+operation you can do an
+
+408
+00:21:08,320 --> 00:21:16,000
+m2 prime which recognizing
+
+409
+00:21:12,640 --> 00:21:19,039
+b prime right
+
+410
+00:21:16,000 --> 00:21:22,720
+and then you take m1 and
+
+411
+00:21:19,039 --> 00:21:25,800
+m2 prime doing the construction
+
+412
+00:21:22,720 --> 00:21:27,840
+of the intersection
+
+413
+00:21:25,800 --> 00:21:31,200
+[Music]
+
+414
+00:21:27,840 --> 00:21:34,400
+process right we just do
+
+415
+00:21:31,200 --> 00:21:37,760
+something like you know union then
+
+416
+00:21:34,400 --> 00:21:37,760
+change the final
+
+417
+00:21:40,000 --> 00:21:45,919
+part of the definition of the accepts
+
+418
+00:21:43,679 --> 00:21:47,200
+states to this one then you've got
+
+419
+00:21:45,919 --> 00:21:51,760
+intersection
+
+420
+00:21:47,200 --> 00:21:54,640
+then finally you construct
+
+421
+00:21:51,760 --> 00:21:54,640
+some machine
+
+422
+00:21:54,799 --> 00:22:02,240
+which recognized a
+
+423
+00:21:59,120 --> 00:22:04,000
+b complement the intersection of a and
+
+424
+00:22:02,240 --> 00:22:07,280
+the b's complement
+
+425
+00:22:04,000 --> 00:22:10,400
+and this one will be a minus
+
+426
+00:22:07,280 --> 00:22:13,840
+b the difference between a and b
+
+427
+00:22:10,400 --> 00:22:17,039
+okay so
+
+428
+00:22:13,840 --> 00:22:18,400
+we can construct and a dfa recognizing
+
+429
+00:22:17,039 --> 00:22:21,440
+the difference of a
+
+430
+00:22:18,400 --> 00:22:25,039
+and b so uh
+
+431
+00:22:21,440 --> 00:22:28,720
+the languages of sorry the class of
+
+432
+00:22:25,039 --> 00:22:33,840
+regular languages is closed under the
+
+433
+00:22:28,720 --> 00:22:33,840
+operation of difference okay
+
+434
+00:22:38,880 --> 00:22:46,720
+then the reversal okay
+
+435
+00:22:43,440 --> 00:22:49,679
+okay uh for the reversal operation it's
+
+436
+00:22:46,720 --> 00:22:51,360
+uh slightly complicated complicated
+
+437
+00:22:49,679 --> 00:22:54,960
+because uh
+
+438
+00:22:51,360 --> 00:22:58,880
+you know a string let's say a string
+
+439
+00:22:54,960 --> 00:23:02,480
+zero zero one we say
+
+440
+00:22:58,880 --> 00:23:06,640
+reversal of a string will be what
+
+441
+00:23:02,480 --> 00:23:07,520
+one zero zero you reverse the order of
+
+442
+00:23:06,640 --> 00:23:10,320
+the symbol
+
+443
+00:23:07,520 --> 00:23:11,520
+in that string that's the reversal on
+
+444
+00:23:10,320 --> 00:23:15,679
+string
+
+445
+00:23:11,520 --> 00:23:19,760
+okay that's a string operation but
+
+446
+00:23:15,679 --> 00:23:23,679
+the operation reversal on a set
+
+447
+00:23:19,760 --> 00:23:27,200
+of string that means
+
+448
+00:23:23,679 --> 00:23:30,480
+for all the string
+
+449
+00:23:27,200 --> 00:23:34,720
+in that set we do
+
+450
+00:23:30,480 --> 00:23:37,679
+the string reversal and then
+
+451
+00:23:34,720 --> 00:23:41,600
+collect all the string here we call we
+
+452
+00:23:37,679 --> 00:23:41,600
+do the reversal of that string
+
+453
+00:23:41,840 --> 00:23:45,679
+sorry on all the string in that
+
+454
+00:23:48,840 --> 00:23:51,840
+language
+
+455
+00:23:52,400 --> 00:23:56,240
+okay so
+
+456
+00:23:56,960 --> 00:24:01,120
+let's say you have a language a regular
+
+457
+00:23:59,200 --> 00:24:04,320
+language how do you prove that
+
+458
+00:24:01,120 --> 00:24:07,440
+uh the every string
+
+459
+00:24:04,320 --> 00:24:10,000
+in that given regular language
+
+460
+00:24:07,440 --> 00:24:11,600
+you do a reversal operation string
+
+461
+00:24:10,000 --> 00:24:14,880
+reversal operation
+
+462
+00:24:11,600 --> 00:24:18,880
+and collect all the results and
+
+463
+00:24:14,880 --> 00:24:22,240
+the set the newly formed
+
+464
+00:24:18,880 --> 00:24:24,400
+set of the strings is also a regular
+
+465
+00:24:22,240 --> 00:24:27,440
+language how do we prove that
+
+466
+00:24:24,400 --> 00:24:28,720
+and we still can start from our
+
+467
+00:24:27,440 --> 00:24:33,120
+definition
+
+468
+00:24:28,720 --> 00:24:36,000
+since uh regular language uh
+
+469
+00:24:33,120 --> 00:24:36,720
+since the given for any given regular
+
+470
+00:24:36,000 --> 00:24:39,520
+language
+
+471
+00:24:36,720 --> 00:24:40,159
+we have dfa for recognizing that
+
+472
+00:24:39,520 --> 00:24:43,840
+language
+
+473
+00:24:40,159 --> 00:24:47,840
+right so let's go back to
+
+474
+00:24:43,840 --> 00:24:47,840
+m1 here that say
+
+475
+00:24:47,919 --> 00:24:53,360
+the given language a
+
+476
+00:24:51,039 --> 00:24:53,360
+here
+
+477
+00:24:54,080 --> 00:25:02,559
+is recognized by m1
+
+478
+00:24:58,640 --> 00:25:06,640
+okay then how do we prove that
+
+479
+00:25:02,559 --> 00:25:06,640
+the reversal of a
+
+480
+00:25:07,919 --> 00:25:11,600
+is still a regular language
+
+481
+00:25:12,640 --> 00:25:20,080
+now we want to construct a new dfa
+
+482
+00:25:16,960 --> 00:25:23,279
+to recognize the reversal of a
+
+483
+00:25:20,080 --> 00:25:24,720
+and we can start from oh sorry we
+
+484
+00:25:23,279 --> 00:25:28,720
+actually want to construct
+
+485
+00:25:24,720 --> 00:25:31,919
+an nfa
+
+486
+00:25:28,720 --> 00:25:33,200
+the reversal of a and we start from the
+
+487
+00:25:31,919 --> 00:25:37,279
+dfa
+
+488
+00:25:33,200 --> 00:25:39,120
+of a so we basically copy everything
+
+489
+00:25:37,279 --> 00:25:43,840
+here
+
+490
+00:25:39,120 --> 00:25:43,840
+everything of m1 then
+
+491
+00:25:45,200 --> 00:25:52,559
+we make a new
+
+492
+00:25:48,240 --> 00:25:54,240
+state which is our the star state of our
+
+493
+00:25:52,559 --> 00:25:59,760
+new
+
+494
+00:25:54,240 --> 00:25:59,760
+nfa then we use
+
+495
+00:26:00,400 --> 00:26:06,320
+abs long transition to the
+
+496
+00:26:03,760 --> 00:26:06,880
+from the start state to every accept
+
+497
+00:26:06,320 --> 00:26:10,400
+state
+
+498
+00:26:06,880 --> 00:26:13,840
+of the original dfa okay
+
+499
+00:26:10,400 --> 00:26:19,279
+then we add another new state
+
+500
+00:26:13,840 --> 00:26:22,480
+which is our only accept state
+
+501
+00:26:19,279 --> 00:26:24,720
+and we also have apps wrong here
+
+502
+00:26:22,480 --> 00:26:25,600
+from the start state original star state
+
+503
+00:26:24,720 --> 00:26:29,360
+of the dfa
+
+504
+00:26:25,600 --> 00:26:29,360
+to our uh
+
+505
+00:26:30,960 --> 00:26:40,640
+to the safe states of our new nfa and
+
+506
+00:26:35,919 --> 00:26:43,760
+that state it will be s and will be a
+
+507
+00:26:40,640 --> 00:26:44,400
+and the q2 here or all original accept
+
+508
+00:26:43,760 --> 00:26:47,520
+states
+
+509
+00:26:44,400 --> 00:26:50,799
+no longer accept states okay
+
+510
+00:26:47,520 --> 00:26:53,840
+so let's say we copy all the states
+
+511
+00:26:50,799 --> 00:26:56,960
+of the original dfa and at s
+
+512
+00:26:53,840 --> 00:27:00,480
+and a at two states uh
+
+513
+00:26:56,960 --> 00:27:03,520
+yes two states and we actually
+
+514
+00:27:00,480 --> 00:27:06,720
+have seen the similar operations on
+
+515
+00:27:03,520 --> 00:27:10,159
+gnfa right so now there
+
+516
+00:27:06,720 --> 00:27:12,159
+are let's say in this case five states
+
+517
+00:27:10,159 --> 00:27:13,679
+and of course alphabet is still zero and
+
+518
+00:27:12,159 --> 00:27:18,320
+one
+
+519
+00:27:13,679 --> 00:27:22,720
+and then we reverse
+
+520
+00:27:18,320 --> 00:27:26,320
+all the transition on the original dfa
+
+521
+00:27:22,720 --> 00:27:29,520
+and make them an fa okay
+
+522
+00:27:26,320 --> 00:27:32,880
+uh make them the uh
+
+523
+00:27:29,520 --> 00:27:36,080
+transition in nfa way so let's say
+
+524
+00:27:32,880 --> 00:27:39,440
+uh it goes back to here
+
+525
+00:27:36,080 --> 00:27:42,559
+zero same thing right and
+
+526
+00:27:39,440 --> 00:27:45,600
+it goes back to here one then
+
+527
+00:27:42,559 --> 00:27:49,440
+no distance something like this
+
+528
+00:27:45,600 --> 00:27:54,159
+and then one no need to change
+
+529
+00:27:49,440 --> 00:27:59,600
+still one right and the zero here
+
+530
+00:27:54,159 --> 00:27:59,600
+here and the zero and one here
+
+531
+00:28:00,559 --> 00:28:07,919
+and i think that'll be
+
+532
+00:28:04,159 --> 00:28:10,159
+everything yeah
+
+533
+00:28:07,919 --> 00:28:10,159
+so
+
+534
+00:28:11,679 --> 00:28:19,520
+in this way you will see that um
+
+535
+00:28:16,000 --> 00:28:21,919
+if you want to uh list everything here
+
+536
+00:28:19,520 --> 00:28:22,880
+so the newly a new transition function
+
+537
+00:28:21,919 --> 00:28:26,000
+will be
+
+538
+00:28:22,880 --> 00:28:30,000
+let's say q1
+
+539
+00:28:26,000 --> 00:28:34,399
+if zero then goes back to
+
+540
+00:28:30,000 --> 00:28:37,520
+q1 right and if one
+
+541
+00:28:34,399 --> 00:28:40,399
+goes to nowhere and
+
+542
+00:28:37,520 --> 00:28:40,399
+if epsilon
+
+543
+00:28:40,559 --> 00:28:47,279
+goes to nowhere something like that and
+
+544
+00:28:44,880 --> 00:28:48,799
+you can list everything here i've
+
+545
+00:28:47,279 --> 00:28:53,279
+transitioned here to
+
+546
+00:28:48,799 --> 00:28:56,559
+our controller nfa and the
+
+547
+00:28:53,279 --> 00:28:59,840
+s is the start state
+
+548
+00:28:56,559 --> 00:29:04,159
+and the accept states only contains
+
+549
+00:28:59,840 --> 00:29:04,159
+one state of a
+
+550
+00:29:04,320 --> 00:29:13,840
+then it goes our
+
+551
+00:29:08,640 --> 00:29:13,840
+constructed nfa for
+
+552
+00:29:14,880 --> 00:29:21,360
+the reversal why it works
+
+553
+00:29:17,919 --> 00:29:25,120
+okay why it works because you can
+
+554
+00:29:21,360 --> 00:29:26,240
+you can do that according according to
+
+555
+00:29:25,120 --> 00:29:29,679
+the definition
+
+556
+00:29:26,240 --> 00:29:33,919
+of acceptance of a string of dfa and
+
+557
+00:29:29,679 --> 00:29:39,039
+an fa right for example
+
+558
+00:29:33,919 --> 00:29:42,240
+if a string can be recognized
+
+559
+00:29:39,039 --> 00:29:42,240
+by the original
+
+560
+00:29:44,960 --> 00:29:52,640
+dfa that means there is a
+
+561
+00:29:48,399 --> 00:29:52,640
+sequence of the state right
+
+562
+00:29:52,720 --> 00:29:59,679
+corresponding to w 1 w
+
+563
+00:29:56,159 --> 00:30:02,399
+2 to w n and
+
+564
+00:29:59,679 --> 00:30:03,200
+satisfying the three conditions first
+
+565
+00:30:02,399 --> 00:30:06,640
+one
+
+566
+00:30:03,200 --> 00:30:09,279
+r 0 is the start state and n is one of
+
+567
+00:30:06,640 --> 00:30:12,399
+the accept states right
+
+568
+00:30:09,279 --> 00:30:17,200
+and you can see how we constructed
+
+569
+00:30:12,399 --> 00:30:19,919
+an fa here when we process a string
+
+570
+00:30:17,200 --> 00:30:21,760
+the same string the reversal of the same
+
+571
+00:30:19,919 --> 00:30:26,480
+string
+
+572
+00:30:21,760 --> 00:30:29,760
+it will firstly go through an epsilon
+
+573
+00:30:26,480 --> 00:30:33,840
+transition to the accept states
+
+574
+00:30:29,760 --> 00:30:38,240
+right to the accept state
+
+575
+00:30:33,840 --> 00:30:43,200
+of one of the original dfa
+
+576
+00:30:38,240 --> 00:30:43,200
+right for the exam in this example rn
+
+577
+00:30:44,159 --> 00:30:47,760
+sorry i shouldn't write r n there i
+
+578
+00:30:46,960 --> 00:30:51,440
+should write
+
+579
+00:30:47,760 --> 00:30:55,120
+r n here and it will be s here
+
+580
+00:30:51,440 --> 00:30:58,559
+right then since the
+
+581
+00:30:55,120 --> 00:31:01,840
+arrows are all reversed
+
+582
+00:30:58,559 --> 00:31:01,840
+so for the nfa
+
+583
+00:31:02,799 --> 00:31:10,320
+when you process wn
+
+584
+00:31:05,840 --> 00:31:14,159
+that's a symbol there is a path
+
+585
+00:31:10,320 --> 00:31:18,880
+trust trace bay trade sorry
+
+586
+00:31:14,159 --> 00:31:24,559
+trace back to
+
+587
+00:31:18,880 --> 00:31:27,519
+this way so w and minus 1
+
+588
+00:31:24,559 --> 00:31:28,720
+are m minus 1 stuff like this and
+
+589
+00:31:27,519 --> 00:31:32,240
+finally you reach
+
+590
+00:31:28,720 --> 00:31:35,600
+w 1.
+
+591
+00:31:32,240 --> 00:31:39,200
+that will be r0 that's the star state
+
+592
+00:31:35,600 --> 00:31:42,240
+right and we have an epsilon
+
+593
+00:31:39,200 --> 00:31:42,240
+transition here
+
+594
+00:31:42,480 --> 00:31:49,760
+you append epsilon here
+
+595
+00:31:46,320 --> 00:31:53,519
+to a right
+
+596
+00:31:49,760 --> 00:31:54,399
+so every string accepted by the original
+
+597
+00:31:53,519 --> 00:31:58,840
+dfa
+
+598
+00:31:54,399 --> 00:32:02,000
+will be accepted by our
+
+599
+00:31:58,840 --> 00:32:05,039
+newly constructed that's saying
+
+600
+00:32:02,000 --> 00:32:08,240
+another n we use n
+
+601
+00:32:05,039 --> 00:32:08,240
+here right
+
+602
+00:32:08,480 --> 00:32:16,480
+because the definition of acceptance
+
+603
+00:32:12,640 --> 00:32:19,519
+so uh these way works then
+
+604
+00:32:16,480 --> 00:32:21,840
+for another direction every string
+
+605
+00:32:19,519 --> 00:32:24,399
+accepted by the constructed
+
+606
+00:32:21,840 --> 00:32:24,399
+nfa
+
+607
+00:32:24,960 --> 00:32:29,840
+you can find that way
+
+608
+00:32:30,000 --> 00:32:35,679
+here and remove
+
+609
+00:32:33,200 --> 00:32:37,200
+this part and this part and the reverse
+
+610
+00:32:35,679 --> 00:32:40,960
+the whole thing here
+
+611
+00:32:37,200 --> 00:32:44,640
+then becomes the requirement
+
+612
+00:32:40,960 --> 00:32:47,919
+of the different in the definition
+
+613
+00:32:44,640 --> 00:32:49,519
+for a dfa to accept that string so every
+
+614
+00:32:47,919 --> 00:32:53,039
+string
+
+615
+00:32:49,519 --> 00:32:55,840
+every string oh sorry
+
+616
+00:32:53,039 --> 00:32:58,720
+every string accepted by the original
+
+617
+00:32:55,840 --> 00:32:59,440
+dfa the reversal will be accepted by our
+
+618
+00:32:58,720 --> 00:33:02,559
+nfa
+
+619
+00:32:59,440 --> 00:33:06,320
+and every string accepted by
+
+620
+00:33:02,559 --> 00:33:09,760
+the nfa the reversal will be accepted by
+
+621
+00:33:06,320 --> 00:33:13,360
+the dfa okay so
+
+622
+00:33:09,760 --> 00:33:16,799
+that's one way to uh
+
+623
+00:33:13,360 --> 00:33:20,480
+prove the closure property of the
+
+624
+00:33:16,799 --> 00:33:21,679
+uh operation of reversal and the other
+
+625
+00:33:20,480 --> 00:33:24,880
+will be
+
+626
+00:33:21,679 --> 00:33:29,120
+well in a way much easier you can use
+
+627
+00:33:24,880 --> 00:33:33,600
+a regular expression since every
+
+628
+00:33:29,120 --> 00:33:36,720
+regular language can be described by
+
+629
+00:33:33,600 --> 00:33:39,840
+regular expressions so let's say if you
+
+630
+00:33:36,720 --> 00:33:39,840
+have a language a
+
+631
+00:33:40,159 --> 00:33:49,519
+which is described by let's say
+
+632
+00:33:45,039 --> 00:33:53,840
+a star and the c
+
+633
+00:33:49,519 --> 00:33:53,840
+b a
+
+634
+00:33:54,480 --> 00:34:00,559
+cup b b
+
+635
+00:33:58,240 --> 00:34:02,640
+okay something like this i just
+
+636
+00:34:00,559 --> 00:34:04,480
+arbitrarily do that
+
+637
+00:34:02,640 --> 00:34:05,919
+you just need to reverse the whole thing
+
+638
+00:34:04,480 --> 00:34:06,960
+then you get the reversal of the
+
+639
+00:34:05,919 --> 00:34:10,399
+language
+
+640
+00:34:06,960 --> 00:34:13,520
+right for example for this example
+
+641
+00:34:10,399 --> 00:34:15,760
+you reverse the there's no reverse for
+
+642
+00:34:13,520 --> 00:34:19,599
+star operation because it's a unary
+
+643
+00:34:15,760 --> 00:34:20,399
+operation okay so you reverse the circle
+
+644
+00:34:19,599 --> 00:34:23,760
+here
+
+645
+00:34:20,399 --> 00:34:27,599
+okay so a star and
+
+646
+00:34:23,760 --> 00:34:30,399
+this part and you reverse um
+
+647
+00:34:27,599 --> 00:34:30,960
+there's no need to do reverse on this
+
+648
+00:34:30,399 --> 00:34:34,879
+but we
+
+649
+00:34:30,960 --> 00:34:38,240
+can still do that okay so let's try this
+
+650
+00:34:34,879 --> 00:34:42,800
+dba okay so that will be
+
+651
+00:34:38,240 --> 00:34:42,800
+a b b cup
+
+652
+00:34:42,879 --> 00:34:49,359
+we do that a b c
+
+653
+00:34:46,720 --> 00:34:50,560
+okay so that will be the reverse of
+
+654
+00:34:49,359 --> 00:34:54,000
+reversal of
+
+655
+00:34:50,560 --> 00:34:57,920
+a so a is that
+
+656
+00:34:54,000 --> 00:34:59,359
+a r is this one you just need to reverse
+
+657
+00:34:57,920 --> 00:35:01,920
+the regular expression
+
+658
+00:34:59,359 --> 00:35:04,800
+and after reverse the regular expression
+
+659
+00:35:01,920 --> 00:35:07,520
+describing the reversal of the language
+
+660
+00:35:04,800 --> 00:35:08,480
+since the reversal of the language can
+
+661
+00:35:07,520 --> 00:35:11,760
+be described
+
+662
+00:35:08,480 --> 00:35:13,440
+by a regular expression we already
+
+663
+00:35:11,760 --> 00:35:15,920
+proved that
+
+664
+00:35:13,440 --> 00:35:16,720
+the equivalence of verbal expressions
+
+665
+00:35:15,920 --> 00:35:20,320
+and
+
+666
+00:35:16,720 --> 00:35:23,440
+final automata right so the reversal of
+
+667
+00:35:20,320 --> 00:35:26,960
+a language a is also
+
+668
+00:35:23,440 --> 00:35:28,240
+a regular language okay so that's
+
+669
+00:35:26,960 --> 00:35:30,720
+another
+
+670
+00:35:28,240 --> 00:35:31,440
+way to prove the closure property of the
+
+671
+00:35:30,720 --> 00:35:34,800
+operation
+
+672
+00:35:31,440 --> 00:35:37,280
+of reversal then
+
+673
+00:35:34,800 --> 00:35:38,480
+next well we have an operation called
+
+674
+00:35:37,280 --> 00:35:41,760
+homomorphism
+
+675
+00:35:38,480 --> 00:35:44,480
+well some of you may not
+
+676
+00:35:41,760 --> 00:35:45,119
+be familiar with the operation here so
+
+677
+00:35:44,480 --> 00:35:48,720
+let's
+
+678
+00:35:45,119 --> 00:35:48,720
+introduce it a little bit
+
+679
+00:35:54,720 --> 00:35:59,920
+so what is a homomorphism homovision is
+
+680
+00:35:58,320 --> 00:36:02,560
+a string substitution
+
+681
+00:35:59,920 --> 00:36:05,359
+okay it's a operation of string
+
+682
+00:36:02,560 --> 00:36:08,480
+substitution
+
+683
+00:36:05,359 --> 00:36:12,720
+and each
+
+684
+00:36:08,480 --> 00:36:18,240
+symbol it is important here each symbol
+
+685
+00:36:12,720 --> 00:36:21,680
+is replaced by a single string
+
+686
+00:36:18,240 --> 00:36:25,280
+one symbol replaced by
+
+687
+00:36:21,680 --> 00:36:29,599
+a string and then they uh
+
+688
+00:36:25,280 --> 00:36:29,599
+they they don't
+
+689
+00:36:29,920 --> 00:36:36,640
+need to be from the same alphabet
+
+690
+00:36:34,160 --> 00:36:37,440
+they can be from different alphabets
+
+691
+00:36:36,640 --> 00:36:40,079
+without
+
+692
+00:36:37,440 --> 00:36:42,320
+loss of generality of course sometimes
+
+693
+00:36:40,079 --> 00:36:45,280
+you can do the same alphabet but
+
+694
+00:36:42,320 --> 00:36:45,760
+here we say we say that they are from
+
+695
+00:36:45,280 --> 00:36:48,800
+different
+
+696
+00:36:45,760 --> 00:36:52,400
+alphabet okay so for
+
+697
+00:36:48,800 --> 00:36:55,520
+homomorphism is actually a function
+
+698
+00:36:52,400 --> 00:36:59,280
+mapping symbols of one
+
+699
+00:36:55,520 --> 00:37:02,320
+alphabet two strings of
+
+700
+00:36:59,280 --> 00:37:06,720
+probably another alphabet or
+
+701
+00:37:02,320 --> 00:37:10,240
+identical alphabet it still works okay
+
+702
+00:37:06,720 --> 00:37:10,560
+so as long as you define a you know in a
+
+703
+00:37:10,240 --> 00:37:14,560
+way
+
+704
+00:37:10,560 --> 00:37:18,640
+a table for each
+
+705
+00:37:14,560 --> 00:37:21,200
+for each symbol of the
+
+706
+00:37:18,640 --> 00:37:22,640
+source alphabet for example if we have a
+
+707
+00:37:21,200 --> 00:37:26,480
+source alphabet
+
+708
+00:37:22,640 --> 00:37:30,640
+a b and c and our target alphabet
+
+709
+00:37:26,480 --> 00:37:33,680
+is zero and one so
+
+710
+00:37:30,640 --> 00:37:36,800
+this is one example
+
+711
+00:37:33,680 --> 00:37:39,920
+okay just one example so
+
+712
+00:37:36,800 --> 00:37:43,359
+in this example we map a the symbol a
+
+713
+00:37:39,920 --> 00:37:47,520
+here 2 1 1 the string in
+
+714
+00:37:43,359 --> 00:37:52,320
+pi star and the symbol b to 1 0
+
+715
+00:37:47,520 --> 00:37:56,079
+sorry 0 1 0 and a c to empty string
+
+716
+00:37:52,320 --> 00:37:58,480
+okay so that would be one possible
+
+717
+00:37:56,079 --> 00:38:02,800
+homomorphism
+
+718
+00:37:58,480 --> 00:38:05,920
+so as long again as long as you define
+
+719
+00:38:02,800 --> 00:38:09,680
+a table mapping each symbol
+
+720
+00:38:05,920 --> 00:38:14,640
+from sigma to a string
+
+721
+00:38:09,680 --> 00:38:17,200
+any string just one string in pi star
+
+722
+00:38:14,640 --> 00:38:18,960
+that would be a homomorphism so you can
+
+723
+00:38:17,200 --> 00:38:21,200
+define
+
+724
+00:38:18,960 --> 00:38:22,560
+many many many many possible
+
+725
+00:38:21,200 --> 00:38:27,359
+homomorphisms
+
+726
+00:38:22,560 --> 00:38:27,359
+okay so in our example here
+
+727
+00:38:27,440 --> 00:38:33,599
+we have a homomorphism defined
+
+728
+00:38:30,480 --> 00:38:36,640
+as this one so any a b
+
+729
+00:38:33,599 --> 00:38:39,380
+string string in sigma star
+
+730
+00:38:36,640 --> 00:38:40,800
+can be mapped to
+
+731
+00:38:39,380 --> 00:38:44,240
+[Music]
+
+732
+00:38:40,800 --> 00:38:49,040
+the target alphabet
+
+733
+00:38:44,240 --> 00:38:52,160
+okay so let's say abba
+
+734
+00:38:49,040 --> 00:38:55,359
+after making this string since
+
+735
+00:38:52,160 --> 00:38:58,720
+a is what 1 1 right
+
+736
+00:38:55,359 --> 00:39:02,400
+b is 0 1 0
+
+737
+00:38:58,720 --> 00:39:05,920
+b 0 1 0 8 1 1
+
+738
+00:39:02,400 --> 00:39:05,920
+then becomes
+
+739
+00:39:06,880 --> 00:39:14,000
+0 1 string here and the same thing
+
+740
+00:39:10,720 --> 00:39:17,920
+we map a b b c a
+
+741
+00:39:14,000 --> 00:39:21,119
+c c so a b
+
+742
+00:39:17,920 --> 00:39:23,200
+b okay so c what is c
+
+743
+00:39:21,119 --> 00:39:26,160
+in this mapping of the empty string so
+
+744
+00:39:23,200 --> 00:39:29,760
+you have empty string here
+
+745
+00:39:26,160 --> 00:39:32,880
+and a and empty string empty string
+
+746
+00:39:29,760 --> 00:39:37,119
+then since empty string is nothing so
+
+747
+00:39:32,880 --> 00:39:42,000
+the same zero one string mapping
+
+748
+00:39:37,119 --> 00:39:45,920
+by the homomorphism from different
+
+749
+00:39:42,000 --> 00:39:45,920
+a b string okay
+
+750
+00:39:46,320 --> 00:39:53,119
+so homomobian is a mapping you can over
+
+751
+00:39:50,000 --> 00:39:57,119
+string substitution if you will
+
+752
+00:39:53,119 --> 00:40:01,040
+so how do we prove that
+
+753
+00:39:57,119 --> 00:40:04,079
+if you have a language on sigma star
+
+754
+00:40:01,040 --> 00:40:07,599
+that's uh use something like this
+
+755
+00:40:04,079 --> 00:40:08,640
+so given sigma star here given sigma
+
+756
+00:40:07,599 --> 00:40:11,680
+here
+
+757
+00:40:08,640 --> 00:40:14,400
+it is all possible strings right we call
+
+758
+00:40:11,680 --> 00:40:19,040
+sigma star
+
+759
+00:40:14,400 --> 00:40:23,040
+and you define a homomorphism
+
+760
+00:40:19,040 --> 00:40:26,079
+this way sigma
+
+761
+00:40:23,040 --> 00:40:30,720
+between two pi star
+
+762
+00:40:26,079 --> 00:40:34,560
+so there is a pi star here right
+
+763
+00:40:30,720 --> 00:40:37,440
+so a mapping is defined
+
+764
+00:40:34,560 --> 00:40:38,000
+outside any string sorry any languages
+
+765
+00:40:37,440 --> 00:40:41,920
+yes any
+
+766
+00:40:38,000 --> 00:40:42,720
+string too then what we want to prove is
+
+767
+00:40:41,920 --> 00:40:47,119
+that
+
+768
+00:40:42,720 --> 00:40:51,440
+if you have a language ang
+
+769
+00:40:47,119 --> 00:40:51,440
+sigma in sigma star on sigma star
+
+770
+00:40:51,680 --> 00:40:59,760
+you can imagine that every string
+
+771
+00:40:56,480 --> 00:41:03,520
+in l can
+
+772
+00:40:59,760 --> 00:41:07,040
+be mapped to some string
+
+773
+00:41:03,520 --> 00:41:10,079
+in pi star right like we have this
+
+774
+00:41:07,040 --> 00:41:10,319
+here something like this so every string
+
+775
+00:41:10,079 --> 00:41:12,480
+in
+
+776
+00:41:10,319 --> 00:41:14,400
+arrow can be mapped to pi star every
+
+777
+00:41:12,480 --> 00:41:17,760
+string arrow can be mapped to pi
+
+778
+00:41:14,400 --> 00:41:20,960
+star right and all
+
+779
+00:41:17,760 --> 00:41:24,400
+strings may be in
+
+780
+00:41:20,960 --> 00:41:27,760
+in l map to
+
+781
+00:41:24,400 --> 00:41:31,680
+those strings on pi star
+
+782
+00:41:27,760 --> 00:41:35,119
+we call the image here
+
+783
+00:41:31,680 --> 00:41:38,319
+h of l
+
+784
+00:41:35,119 --> 00:41:41,599
+the homomorphism of the language
+
+785
+00:41:38,319 --> 00:41:43,839
+on sigma star
+
+786
+00:41:41,599 --> 00:41:43,839
+okay
+
+787
+00:41:46,800 --> 00:41:55,119
+then what we want to prove is that
+
+788
+00:41:50,480 --> 00:41:58,160
+if the language l here you know
+
+789
+00:41:55,119 --> 00:42:02,400
+is a regular language we want to prove
+
+790
+00:41:58,160 --> 00:42:06,240
+h h l here is
+
+791
+00:42:02,400 --> 00:42:10,079
+also a regular language
+
+792
+00:42:06,240 --> 00:42:13,359
+okay that's what we want to prove
+
+793
+00:42:10,079 --> 00:42:17,520
+and how do we prove that
+
+794
+00:42:13,359 --> 00:42:21,119
+it's also quite straightforward here
+
+795
+00:42:17,520 --> 00:42:25,520
+if l is a regular language
+
+796
+00:42:21,119 --> 00:42:28,400
+then it must be described
+
+797
+00:42:25,520 --> 00:42:29,599
+by a regular expression right for
+
+798
+00:42:28,400 --> 00:42:32,880
+example
+
+799
+00:42:29,599 --> 00:42:34,560
+we have a regular expression let's say a
+
+800
+00:42:32,880 --> 00:42:37,599
+star
+
+801
+00:42:34,560 --> 00:42:41,200
+the same c b a cop
+
+802
+00:42:37,599 --> 00:42:44,400
+b b okay so if we have a
+
+803
+00:42:41,200 --> 00:42:47,599
+regular language described as
+
+804
+00:42:44,400 --> 00:42:48,000
+regular expression this way we just need
+
+805
+00:42:47,599 --> 00:42:51,680
+to
+
+806
+00:42:48,000 --> 00:42:54,240
+change the symbol according to
+
+807
+00:42:51,680 --> 00:42:56,000
+for this example okay let's the hormone
+
+808
+00:42:54,240 --> 00:42:59,920
+movement here
+
+809
+00:42:56,000 --> 00:43:03,599
+one one the same star here
+
+810
+00:42:59,920 --> 00:43:03,599
+then c
+
+811
+00:43:03,680 --> 00:43:10,839
+right concatenates with
+
+812
+00:43:07,040 --> 00:43:14,800
+b contain it with
+
+813
+00:43:10,839 --> 00:43:19,040
+a and still cup then
+
+814
+00:43:14,800 --> 00:43:19,040
+b b
+
+815
+00:43:19,520 --> 00:43:25,920
+so we will get 1 1
+
+816
+00:43:23,760 --> 00:43:26,800
+star then you don't need to write this
+
+817
+00:43:25,920 --> 00:43:30,000
+because
+
+818
+00:43:26,800 --> 00:43:33,760
+empty string won't
+
+819
+00:43:30,000 --> 00:43:35,280
+affect the result under the operation of
+
+820
+00:43:33,760 --> 00:43:39,040
+concatenation right
+
+821
+00:43:35,280 --> 00:43:42,720
+so 1 0 1
+
+822
+00:43:39,040 --> 00:43:46,800
+yeah we actually can write one one
+
+823
+00:43:42,720 --> 00:43:50,560
+cup one zero one zero
+
+824
+00:43:46,800 --> 00:43:54,000
+zero one zero okay so
+
+825
+00:43:50,560 --> 00:43:57,760
+this will be
+
+826
+00:43:54,000 --> 00:44:02,000
+homomorphism on the pi star
+
+827
+00:43:57,760 --> 00:44:04,240
+of the original language
+
+828
+00:44:02,000 --> 00:44:04,240
+so
+
+829
+00:44:05,680 --> 00:44:10,640
+the homomorphism has the closure
+
+830
+00:44:08,720 --> 00:44:13,839
+property for regular languages
+
+831
+00:44:10,640 --> 00:44:17,359
+because h over l here
+
+832
+00:44:13,839 --> 00:44:17,359
+can be described by
+
+833
+00:44:17,440 --> 00:44:24,800
+the i and regular expression okay
+
+834
+00:44:21,599 --> 00:44:29,440
+so that's the uh proof
+
+835
+00:44:24,800 --> 00:44:33,680
+for the crucial property of homomorphism
+
+836
+00:44:29,440 --> 00:44:36,720
+okay finally we want
+
+837
+00:44:33,680 --> 00:44:37,920
+we want to prove the inverse
+
+838
+00:44:36,720 --> 00:44:41,680
+homomorphism
+
+839
+00:44:37,920 --> 00:44:41,680
+okay inverse homomorphism
+
+840
+00:44:43,040 --> 00:44:50,319
+and don't think
+
+841
+00:44:47,520 --> 00:44:51,520
+don't be confused by the term inverse
+
+842
+00:44:50,319 --> 00:44:55,599
+here
+
+843
+00:44:51,520 --> 00:44:58,720
+because it is not it is not
+
+844
+00:44:55,599 --> 00:45:00,079
+an inverse operation what is an inverse
+
+845
+00:44:58,720 --> 00:45:02,400
+operation
+
+846
+00:45:00,079 --> 00:45:03,440
+it's like if you have operation map
+
+847
+00:45:02,400 --> 00:45:07,119
+something
+
+848
+00:45:03,440 --> 00:45:08,000
+then inverse operation map the things
+
+849
+00:45:07,119 --> 00:45:10,240
+back
+
+850
+00:45:08,000 --> 00:45:12,480
+right that's called inverse operation
+
+851
+00:45:10,240 --> 00:45:16,000
+but inverse homomorphism
+
+852
+00:45:12,480 --> 00:45:19,680
+is not inverse operation
+
+853
+00:45:16,000 --> 00:45:22,720
+what is uh
+
+854
+00:45:19,680 --> 00:45:26,640
+let's say if if you have a language a
+
+855
+00:45:22,720 --> 00:45:31,440
+and you do an homomorphism and
+
+856
+00:45:26,640 --> 00:45:31,440
+generally inverse homomorphism
+
+857
+00:45:31,599 --> 00:45:37,520
+may not be a okay it might be a but may
+
+858
+00:45:34,960 --> 00:45:40,880
+not be a so it's not
+
+859
+00:45:37,520 --> 00:45:41,359
+it's not an inverse operation okay but
+
+860
+00:45:40,880 --> 00:45:46,319
+what
+
+861
+00:45:41,359 --> 00:45:49,280
+it is
+
+862
+00:45:46,319 --> 00:45:50,960
+and what what is the uh inverse
+
+863
+00:45:49,280 --> 00:45:54,319
+homomorphism
+
+864
+00:45:50,960 --> 00:46:00,240
+is that homomorphism
+
+865
+00:45:54,319 --> 00:46:02,480
+mapping strings maybe in symbols
+
+866
+00:46:00,240 --> 00:46:05,440
+from sigma to pi right given at
+
+867
+00:46:02,480 --> 00:46:08,880
+homomorphism
+
+868
+00:46:05,440 --> 00:46:08,880
+given an homomorphism
+
+869
+00:46:09,040 --> 00:46:16,800
+from sigma 2 pi so
+
+870
+00:46:12,319 --> 00:46:20,160
+the direction of the mapping
+
+871
+00:46:16,800 --> 00:46:24,720
+is the same but you
+
+872
+00:46:20,160 --> 00:46:27,760
+look it you look at the direction
+
+873
+00:46:24,720 --> 00:46:31,440
+inversely okay so
+
+874
+00:46:27,760 --> 00:46:35,040
+you have a language on pi
+
+875
+00:46:31,440 --> 00:46:38,720
+you have a language l on pi not sigma
+
+876
+00:46:35,040 --> 00:46:42,720
+on pi okay
+
+877
+00:46:38,720 --> 00:46:47,680
+then imagine that you try
+
+878
+00:46:42,720 --> 00:46:49,839
+all possible strings on sigma star
+
+879
+00:46:47,680 --> 00:46:52,240
+you try all possible string on single
+
+880
+00:46:49,839 --> 00:46:56,079
+master
+
+881
+00:46:52,240 --> 00:47:00,000
+may pain via the homomorphism
+
+882
+00:46:56,079 --> 00:47:02,960
+to pi okay for example this string
+
+883
+00:47:00,000 --> 00:47:04,240
+may be mapped to here and this string
+
+884
+00:47:02,960 --> 00:47:07,440
+may be mapped to here
+
+885
+00:47:04,240 --> 00:47:09,599
+and this string may be mapped to here
+
+886
+00:47:07,440 --> 00:47:10,640
+and the least string may be mapped map2
+
+887
+00:47:09,599 --> 00:47:13,839
+here
+
+888
+00:47:10,640 --> 00:47:17,520
+okay so you try
+
+889
+00:47:13,839 --> 00:47:17,520
+all possible strings
+
+890
+00:47:18,720 --> 00:47:26,160
+in sigma star and you see
+
+891
+00:47:22,800 --> 00:47:28,120
+which one which one falls
+
+892
+00:47:26,160 --> 00:47:29,680
+into the language you
+
+893
+00:47:28,120 --> 00:47:32,800
+[Music]
+
+894
+00:47:29,680 --> 00:47:36,000
+have on pi star
+
+895
+00:47:32,800 --> 00:47:39,680
+okay which one you
+
+896
+00:47:36,000 --> 00:47:43,280
+have on pasta and
+
+897
+00:47:39,680 --> 00:47:43,280
+you collect those
+
+898
+00:47:43,359 --> 00:47:45,839
+strings
+
+899
+00:47:46,720 --> 00:47:54,720
+on pi star via the hormone vision
+
+900
+00:47:51,440 --> 00:47:58,720
+to the language on pi star
+
+901
+00:47:54,720 --> 00:47:58,720
+you call this part
+
+902
+00:47:59,280 --> 00:48:07,200
+inverse of a
+
+903
+00:48:03,440 --> 00:48:10,880
+okay you collect all strings on pi star
+
+904
+00:48:07,200 --> 00:48:14,319
+which will be mapped
+
+905
+00:48:10,880 --> 00:48:18,640
+into l over a here
+
+906
+00:48:14,319 --> 00:48:21,440
+on pi star via the given homomorphism
+
+907
+00:48:18,640 --> 00:48:22,960
+we call all the the collection of all
+
+908
+00:48:21,440 --> 00:48:26,960
+these kind of string
+
+909
+00:48:22,960 --> 00:48:30,000
+the inverse of l over a here
+
+910
+00:48:26,960 --> 00:48:33,200
+okay okay so let's change it to a
+
+911
+00:48:30,000 --> 00:48:36,319
+inverse of a here
+
+912
+00:48:33,200 --> 00:48:39,040
+inverse of inverse homomorphism
+
+913
+00:48:36,319 --> 00:48:39,040
+of a here
+
+914
+00:48:40,960 --> 00:48:48,160
+we just look at the in the direction
+
+915
+00:48:44,800 --> 00:48:53,520
+of homomorphism inversely so we call it
+
+916
+00:48:48,160 --> 00:48:53,520
+inverse homomorphism so in general
+
+917
+00:48:53,920 --> 00:49:01,359
+if you have a language b
+
+918
+00:48:57,520 --> 00:49:05,440
+here then you do the homomorphism
+
+919
+00:49:01,359 --> 00:49:10,240
+you will get h of b here right
+
+920
+00:49:05,440 --> 00:49:13,599
+but in general all possible
+
+921
+00:49:10,240 --> 00:49:18,000
+strings in sigma star mapping into
+
+922
+00:49:13,599 --> 00:49:21,760
+h of b may be just maybe
+
+923
+00:49:18,000 --> 00:49:25,440
+a superset of b so usually
+
+924
+00:49:21,760 --> 00:49:28,640
+b will not be not sure
+
+925
+00:49:25,440 --> 00:49:32,559
+sometimes will sometimes will not be h
+
+926
+00:49:28,640 --> 00:49:37,359
+minus 1 h of b
+
+927
+00:49:32,559 --> 00:49:37,359
+okay so
+
+928
+00:49:38,240 --> 00:49:45,760
+how do we prove that the cause of
+
+929
+00:49:42,079 --> 00:49:47,520
+regular languages is closed
+
+930
+00:49:45,760 --> 00:49:49,119
+under the operation of inverse
+
+931
+00:49:47,520 --> 00:49:51,760
+homomorphism
+
+932
+00:49:49,119 --> 00:49:51,760
+given that
+
+933
+00:49:52,880 --> 00:50:02,240
+we know
+
+934
+00:49:59,760 --> 00:50:02,880
+we know the definition of regular
+
+935
+00:50:02,240 --> 00:50:06,880
+languages
+
+936
+00:50:02,880 --> 00:50:10,319
+is that we have a dfa recognized in the
+
+937
+00:50:06,880 --> 00:50:14,960
+language right so again
+
+938
+00:50:10,319 --> 00:50:17,280
+let's say if we have a language on pi
+
+939
+00:50:14,960 --> 00:50:17,280
+star
+
+940
+00:50:18,000 --> 00:50:20,319
+then
+
+941
+00:50:21,200 --> 00:50:24,160
+how do we prove
+
+942
+00:50:24,559 --> 00:50:27,839
+the inverse
+
+943
+00:50:29,680 --> 00:50:37,119
+which is on sigma star actually
+
+944
+00:50:34,079 --> 00:50:40,480
+oh sorry this one we want to
+
+945
+00:50:37,119 --> 00:50:45,599
+construct a dfa or an f
+
+946
+00:50:40,480 --> 00:50:49,599
+anyway a finite automata for that so
+
+947
+00:50:45,599 --> 00:50:49,599
+what we want to do here is that
+
+948
+00:50:49,760 --> 00:50:56,400
+for the language a here
+
+949
+00:50:53,200 --> 00:50:58,160
+we already know that by definition we
+
+950
+00:50:56,400 --> 00:51:00,960
+have a
+
+951
+00:50:58,160 --> 00:51:00,960
+dfam
+
+952
+00:51:01,760 --> 00:51:08,000
+then for every string
+
+953
+00:51:04,960 --> 00:51:11,040
+m will give us accept or
+
+954
+00:51:08,000 --> 00:51:13,839
+not accept answer right
+
+955
+00:51:11,040 --> 00:51:13,839
+and we want to
+
+956
+00:51:16,240 --> 00:51:23,599
+build a dfa
+
+957
+00:51:19,839 --> 00:51:26,640
+based on the m here
+
+958
+00:51:23,599 --> 00:51:30,160
+and merge the homomorphism
+
+959
+00:51:26,640 --> 00:51:33,839
+into a such that
+
+960
+00:51:30,160 --> 00:51:38,000
+it will work on sigma
+
+961
+00:51:33,839 --> 00:51:41,119
+okay we already know that on pi star
+
+962
+00:51:38,000 --> 00:51:44,240
+the m on pi star
+
+963
+00:51:41,119 --> 00:51:45,359
+work like language recognizing the given
+
+964
+00:51:44,240 --> 00:51:48,480
+language
+
+965
+00:51:45,359 --> 00:51:51,599
+then we try to merge
+
+966
+00:51:48,480 --> 00:51:52,160
+the homomorphism here then make this
+
+967
+00:51:51,599 --> 00:51:55,359
+machine
+
+968
+00:51:52,160 --> 00:51:57,040
+on sigma star and the processing the
+
+969
+00:51:55,359 --> 00:52:00,480
+string
+
+970
+00:51:57,040 --> 00:52:05,440
+mapping into pi star
+
+971
+00:52:00,480 --> 00:52:08,559
+and accept by this machine and all the
+
+972
+00:52:05,440 --> 00:52:09,920
+strings on sigma star accepted by this
+
+973
+00:52:08,559 --> 00:52:14,000
+machine
+
+974
+00:52:09,920 --> 00:52:17,119
+will be the inverse homomorphism
+
+975
+00:52:14,000 --> 00:52:18,079
+of the language a okay so that's the
+
+976
+00:52:17,119 --> 00:52:21,599
+idea
+
+977
+00:52:18,079 --> 00:52:25,440
+so let's do an example here
+
+978
+00:52:21,599 --> 00:52:28,880
+go back to our m1 here
+
+979
+00:52:25,440 --> 00:52:33,839
+let's assume that remember the direction
+
+980
+00:52:28,880 --> 00:52:36,880
+okay so we have a sigma star
+
+981
+00:52:33,839 --> 00:52:38,000
+sigma is abc here we use the same
+
+982
+00:52:36,880 --> 00:52:41,200
+hormone vision
+
+983
+00:52:38,000 --> 00:52:44,839
+in that slide okay and the pi
+
+984
+00:52:41,200 --> 00:52:50,000
+will be 0 1 here right
+
+985
+00:52:44,839 --> 00:52:50,000
+so in here
+
+986
+00:52:50,240 --> 00:52:53,359
+the language is
+
+987
+00:52:55,200 --> 00:53:02,319
+arrow of m1 okay
+
+988
+00:52:58,880 --> 00:53:02,319
+so we want to prove that
+
+989
+00:53:02,800 --> 00:53:10,559
+h minus 1 of l of m1
+
+990
+00:53:06,800 --> 00:53:15,680
+which is the l of m1
+
+991
+00:53:10,559 --> 00:53:18,240
+inverse homomorphism
+
+992
+00:53:15,680 --> 00:53:20,720
+is still regular we want to construct a
+
+993
+00:53:18,240 --> 00:53:23,599
+dfa for that
+
+994
+00:53:20,720 --> 00:53:25,520
+so we copy everything basically of
+
+995
+00:53:23,599 --> 00:53:28,720
+everything
+
+996
+00:53:25,520 --> 00:53:31,680
+from m1 we have three states
+
+997
+00:53:28,720 --> 00:53:31,680
+and now
+
+998
+00:53:33,280 --> 00:53:40,319
+we want to have this
+
+999
+00:53:36,319 --> 00:53:43,920
+dfa on abc right
+
+1000
+00:53:40,319 --> 00:53:47,280
+then q1 is still star state and q2
+
+1001
+00:53:43,920 --> 00:53:50,640
+is still the only accepted
+
+1002
+00:53:47,280 --> 00:53:52,480
+now we want to rewrite the transition
+
+1003
+00:53:50,640 --> 00:53:55,440
+here
+
+1004
+00:53:52,480 --> 00:53:56,319
+and how do we rewrite that remember that
+
+1005
+00:53:55,440 --> 00:53:59,520
+in our
+
+1006
+00:53:56,319 --> 00:54:03,119
+example here h of a is
+
+1007
+00:53:59,520 --> 00:54:06,800
+1 1 h of b is
+
+1008
+00:54:03,119 --> 00:54:10,000
+1 0 1 0 and h of c
+
+1009
+00:54:06,800 --> 00:54:13,040
+is epsilon okay so
+
+1010
+00:54:10,000 --> 00:54:16,079
+we want to write a new
+
+1011
+00:54:13,040 --> 00:54:18,400
+transition function so
+
+1012
+00:54:16,079 --> 00:54:19,359
+for this transition function we will
+
+1013
+00:54:18,400 --> 00:54:23,760
+need to write
+
+1014
+00:54:19,359 --> 00:54:26,880
+okay q1 a b c
+
+1015
+00:54:23,760 --> 00:54:30,640
+q 2 q 3 abc
+
+1016
+00:54:26,880 --> 00:54:35,839
+right so when
+
+1017
+00:54:30,640 --> 00:54:35,839
+the state of the machine is at q 1
+
+1018
+00:54:36,160 --> 00:54:39,839
+what will where where it goes when
+
+1019
+00:54:39,119 --> 00:54:43,920
+processing
+
+1020
+00:54:39,839 --> 00:54:46,960
+a and remember that a is
+
+1021
+00:54:43,920 --> 00:54:50,000
+1 1 so we just need to check
+
+1022
+00:54:46,960 --> 00:54:53,920
+1 1
+
+1023
+00:54:50,000 --> 00:54:57,680
+right so q1 encounters a
+
+1024
+00:54:53,920 --> 00:55:01,040
+goes to q 2. that's it
+
+1025
+00:54:57,680 --> 00:55:04,720
+so 0 1
+
+1026
+00:55:01,040 --> 00:55:08,160
+0 right so
+
+1027
+00:55:04,720 --> 00:55:12,480
+q 3 and nothing
+
+1028
+00:55:08,160 --> 00:55:15,599
+and stays at the same stage right q1
+
+1029
+00:55:12,480 --> 00:55:21,839
+so you will get something like
+
+1030
+00:55:15,599 --> 00:55:21,839
+a b
+
+1031
+00:55:22,559 --> 00:55:30,000
+c okay so
+
+1032
+00:55:26,240 --> 00:55:33,599
+use the same construction q 2
+
+1033
+00:55:30,000 --> 00:55:38,559
+1 1 still q 2 right and
+
+1034
+00:55:33,599 --> 00:55:38,559
+0 0 1
+
+1035
+00:55:39,520 --> 00:55:47,040
+0 1 0 q 3
+
+1036
+00:55:43,920 --> 00:55:51,280
+and the q 2 because nothing okay
+
+1037
+00:55:47,040 --> 00:55:54,880
+so that will be a
+
+1038
+00:55:51,280 --> 00:55:58,319
+b and c
+
+1039
+00:55:54,880 --> 00:56:02,400
+okay so for q three
+
+1040
+00:55:58,319 --> 00:56:06,079
+one one goes to q two
+
+1041
+00:56:02,400 --> 00:56:10,319
+0 1
+
+1042
+00:56:06,079 --> 00:56:15,200
+0 go back to itself and nothing
+
+1043
+00:56:10,319 --> 00:56:15,200
+so a
+
+1044
+00:56:15,359 --> 00:56:21,920
+b c
+
+1045
+00:56:18,799 --> 00:56:25,280
+okay so we have a
+
+1046
+00:56:21,920 --> 00:56:30,400
+machine here works on
+
+1047
+00:56:25,280 --> 00:56:34,559
+abc and then
+
+1048
+00:56:30,400 --> 00:56:38,400
+if you have an a it will interpret as
+
+1049
+00:56:34,559 --> 00:56:42,839
+in a way interpret as one one
+
+1050
+00:56:38,400 --> 00:56:44,799
+and let's say for any a b c
+
+1051
+00:56:42,839 --> 00:56:48,000
+string well
+
+1052
+00:56:44,799 --> 00:56:51,920
+for example let's say a
+
+1053
+00:56:48,000 --> 00:56:56,799
+b b a c
+
+1054
+00:56:51,920 --> 00:56:56,799
+so we can go this way a
+
+1055
+00:56:56,839 --> 00:57:05,599
+b b
+
+1056
+00:57:01,280 --> 00:57:10,319
+a so accept right
+
+1057
+00:57:05,599 --> 00:57:13,839
+y is accept because the rho 0
+
+1058
+00:57:10,319 --> 00:57:18,000
+0 sorry one one zero one
+
+1059
+00:57:13,839 --> 00:57:20,880
+zero zero one zero one one
+
+1060
+00:57:18,000 --> 00:57:22,240
+will be accepted by the original machine
+
+1061
+00:57:20,880 --> 00:57:25,599
+let's say
+
+1062
+00:57:22,240 --> 00:57:29,280
+uh okay it's kind of messy here but
+
+1063
+00:57:25,599 --> 00:57:31,599
+let's say 1 1
+
+1064
+00:57:29,280 --> 00:57:31,599
+0
+
+1065
+00:57:33,200 --> 00:57:39,760
+1 0
+
+1066
+00:57:36,240 --> 00:57:44,880
+0 1 0 1 1
+
+1067
+00:57:39,760 --> 00:57:44,880
+c accepted so
+
+1068
+00:57:45,200 --> 00:57:53,520
+for any dfa on pi star
+
+1069
+00:57:49,200 --> 00:57:58,720
+given a hormone vision we can construct
+
+1070
+00:57:53,520 --> 00:57:58,720
+a dfa to recognize
+
+1071
+00:57:59,920 --> 00:58:04,240
+the inverse homomorphism
+
+1072
+00:58:04,880 --> 00:58:09,599
+on sigma star so the inverse
+
+1073
+00:58:08,359 --> 00:58:13,040
+homomorphism
+
+1074
+00:58:09,599 --> 00:58:16,319
+is recognized by a dfa
+
+1075
+00:58:13,040 --> 00:58:21,040
+constructed based on that dfa on
+
+1076
+00:58:16,319 --> 00:58:24,480
+pi star so we proved that
+
+1077
+00:58:21,040 --> 00:58:28,480
+the cost of regular languages
+
+1078
+00:58:24,480 --> 00:58:31,520
+is closed under the
+
+1079
+00:58:28,480 --> 00:58:35,520
+operation of inverse homomorphism
+
+1080
+00:58:31,520 --> 00:58:38,799
+okay so we have proved the
+
+1081
+00:58:35,520 --> 00:58:38,799
+closure properties of
+
+1082
+00:58:39,040 --> 00:58:47,119
+operations that we have here
+
